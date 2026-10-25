@@ -5161,9 +5161,9 @@ was2_str
 ;-----------------------------------------------------------------------------
 logos
 	.long	T_HAWKS_L		; 0 ATLANTA	(124)
-	.long	T_CELTS		; 1 BOSTON
+	.long	T_CELTS_L		; 1 BOSTON
 	.long	T_HORS_L		; 2 CHARLOTTE
-	.long	T_BULLS		; 3 CHICAGO
+	.long	T_BULLS_L		; 3 CHICAGO
 	.long	T_CAVS_L		; 4 CLEVELAND
 	.long	T_MAVS_L		; 5 DALLAS
 	.long	T_NUGS_L		; 6 DENVER
@@ -5172,28 +5172,28 @@ logos
 ;DJT End
 	.long	T_WARS_L		; 8 GOLDEN STATE
 	.long	T_ROCKS		; 9 HOUSTON
-	.long	T_PACER		;10 INDIANA
+	.long	T_PACER_L		;10 INDIANA
 ;FIXX!!!
 	.long	T_CLIPS_L		;12 LOS ANGELES (LAKERS)
-	.long	T_CLIPS		;11 LOS ANGELES (CLIPPERS)
+	.long	T_LAKS_L		;11 LOS ANGELES (CLIPPERS)
 ;FIXX!!!
-	.long	T_HEAT		;13 MIAMI
+	.long	T_HEAT_L		;13 MIAMI
 	.long	T_BUCKS_L		;14 MILWAUKEE
 ;DJT Start
 	.long	T_TWOLV_L	;15 MINNESOTA
 ;DJT End
 	.long	T_NETS_L		;16 NEW JERSEY
-	.long	T_KNIKS		;17 NEW YORK
+	.long	T_KNIKS_L		;17 NEW YORK
 	.long	T_MAGIC_L		;18 ORLANDO
 	.long	T_76RS_L		;19 PHILADELPHIA
 	.long	T_SUNS_L		;20 PHOENIX
 	.long	T_BLAZ_L		;21 PORTLAND
 	.long	T_KINGS_L		;22 SACRAMENTO
 	.long	T_SPURS_L		;23 SAN ANTONIO
-	.long	T_SONICS	;24 SEATTLE
-	.long	T_RAPT		;25 TORONTO
+	.long	T_SONICS_L	;24 SEATTLE
+	.long	T_RAPT_L		;25 TORONTO
 ;DJT Start
-	.long	T_JAZZ_N	;26 UTAH
+	.long	T_JAZZ_L	;26 UTAH
 ;DJT End
 	.long	T_GRIZZ_L		;27 VANCOUVER
 	.long	T_BULTS		;28 WASHINGTON	(150)

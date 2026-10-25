@@ -720,6 +720,24 @@ lgonjn.img
 ---> T_NETS_L
 lgocha.img
 ---> T_HORS_L
+lgosea.img
+---> T_SONICS_L
+lgotor.img
+---> T_RAPT_L
+lgonyk.img
+---> T_KNIKS_L
+lgomia.img
+---> T_HEAT_L
+lgolal.img
+---> T_LAKS_L
+lgochi.img
+---> T_BULLS_L
+lgobos.img
+---> T_CELTS_L
+lgoind.img
+---> T_PACER_L
+lgouta.img
+---> T_JAZZ_L
 ;Team Zone meter (cut feature) imgs
 ASM> TEAMZONE.TBL
 GLO> XXXHD.GLO
