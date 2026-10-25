@@ -373,8 +373,6 @@
 	.ref	Bird_h
 	.ref	Arnold_h
 	.ref	Term_h
-	.ref	Walker_h
-	.ref	Ellis_h
 
 ;symbols refined in this file
 

@@ -300,8 +300,6 @@
 	.def	Bird_h
 	.def	Arnold_h
 	.def	Term_h
-	.def	Walker_h
-	.def	Ellis_h
 	.def	Giannis_h
 	.def	Kareem_h
 	.def	Steph_h
@@ -416,12 +414,6 @@ Arnold_h
 
 Term_h
 	HDMAC2	TERM01
-	
-Walker_h
-	HDMAC	WALKER1
-	
-Ellis_h
-	HDMAC2	ELLIS1
 
 Giannis_h
 	HDMAC	GIAN01	; 16 heads, from NBA Jam 50 (Double Z & Wake)

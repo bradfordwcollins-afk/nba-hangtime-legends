@@ -2187,7 +2187,7 @@ taovx	RETP
 	move	*a0(0),*a8(OSIZE),L
 	move	*a0(ISAG),*a8(OSAG),L
 
-	setf	5,0,0
+	setf	8,0,0			;z comp + pixel depth (was 5: z comp only)
 	move	*a0(ICTRL+7),*a8(OCTRL+7) ;Write 5 z comp bits
 	setf	6,0,0
 	move	a1,*a8(OCTRL)		;Write 6 low bits
