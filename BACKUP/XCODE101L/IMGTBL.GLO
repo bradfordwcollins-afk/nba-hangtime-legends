@@ -1518,8 +1518,10 @@
 	.globl	LED_P
 ;[pruned] .globl	robo_p
 ; roster rebuild
+	.global	ABDULJAB
 	.global	ADEBAYO
 	.global	ALDRIDGE
+	.global	ANTETOKO
 	.global	ARTEST
 	.global	BALL_NP
 	.global	BANE

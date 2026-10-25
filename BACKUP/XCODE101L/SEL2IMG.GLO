@@ -228,8 +228,10 @@
 	.global	TMATE
 	.global	CHALENG
 ; roster rebuild
+	.global	ABDULJAB
 	.global	ADEBAYO
 	.global	ALDRIDGE
+	.global	ANTETOKO
 	.global	ARTEST
 	.global	BALL_NP
 	.global	BANE
