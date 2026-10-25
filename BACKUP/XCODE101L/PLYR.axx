@@ -588,6 +588,13 @@ csprnofat
 	move	a0,@pup_hypspeed
 	move	a0,@pup_trbstealth
 	move	a0,@pup_trbinfinite
+	calla	READ_DIP		;DIP A sw5 on (bit 8 after READ_DIP) = unlimited turbo, all players
+	andi	8,a0
+	jrz	csprnoturb
+	movk	0Fh,a0			;bits 0-3 = players 1-4
+	move	a0,@pup_trbinfinite
+csprnoturb
+	clr	a0
 	move	a0,@pup_nopush
 	move	a0,@pup_fastpass
 
