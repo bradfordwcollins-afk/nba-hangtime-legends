@@ -553,12 +553,19 @@ IBZ_DEF2	.equ	CZMID+70
 ;-----------------------------------------------------------------------------
  SUBR	clear_secret_powerup_ram
 
-	.ref	READ_DIP
+	.ref	READ_DIP,GET_ADJ
 	calla	READ_DIP		;DIP A sw4 on (bit 16 after READ_DIP) = fatality pushes always on
 	andi	16,a0
-	jrz	csprnofat
+	jrnz	csprfaton
+	movi	ADJFATAL,a0		;or Super Maximum Settings: FATALITY PUSHES (0 = enabled)
+	calla	GET_ADJ
+	jrnz	csprnofat
+csprfaton
 	movk	3,a0			;bit 0=tm1, bit 1=tm2
+	jruc	csprfatset
 csprnofat
+	clr	a0
+csprfatset
 	move	a0,@fatality
 	clr	a0
 	move	a0,@fatcheck
@@ -590,7 +597,11 @@ csprnofat
 	move	a0,@pup_trbinfinite
 	calla	READ_DIP		;DIP A sw5 on (bit 8 after READ_DIP) = unlimited turbo, all players
 	andi	8,a0
-	jrz	csprnoturb
+	jrnz	csprturbon
+	movi	ADJTURBO,a0		;or Super Maximum Settings: UNLIMITED TURBO (0 = enabled)
+	calla	GET_ADJ
+	jrnz	csprnoturb
+csprturbon
 	movk	0Fh,a0			;bits 0-3 = players 1-4
 	move	a0,@pup_trbinfinite
 csprnoturb

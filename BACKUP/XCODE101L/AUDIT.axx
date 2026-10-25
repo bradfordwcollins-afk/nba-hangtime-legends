@@ -3074,6 +3074,8 @@ FACTORY_TABLE
 	.WORD	1	;ADJHUGE	44	;Huge Head Mode (Funko pop style)
 	.WORD	1	;ADJHSPOT	45	;Show Hotspot
 	.WORD	1	;ADJPROFA	46	;Profanity
+	.WORD	1	;ADJFATAL	47	;Fatality pushes (1=off)
+	.WORD	1	;ADJTURBO	48	;Unlimited turbo (1=off)
 	;LAST_ADJUST	equ	46
 
 
