@@ -5171,7 +5171,7 @@ logos
 	.long	T_PISS_L	; 7 DETROIT
 ;DJT End
 	.long	T_WARS_L		; 8 GOLDEN STATE
-	.long	T_ROCKS		; 9 HOUSTON
+	.long	T_ROCKS_L		; 9 HOUSTON
 	.long	T_PACER_L		;10 INDIANA
 ;FIXX!!!
 	.long	T_CLIPS_L		;12 LOS ANGELES (LAKERS)
@@ -5196,7 +5196,7 @@ logos
 	.long	T_JAZZ_L	;26 UTAH
 ;DJT End
 	.long	T_GRIZZ_L		;27 VANCOUVER
-	.long	T_BULTS		;28 WASHINGTON	(150)
+	.long	T_BULTS_L		;28 WASHINGTON	(150)
 ;FIX!!! Defeated all teams special logo
 	.long	T_BULTS		; Special team
 

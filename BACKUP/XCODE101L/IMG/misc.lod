@@ -550,6 +550,8 @@ Lbj.img
 ---> LBJ_MUG
 Luk.img
 ---> LUK_MUG
+; new mugs and logos: 6 bits/pixel (64-colour palettes) to save image ROM
+PPP> 6
 XMCHm.img
 ---> XMCH_MUG
 XPIEm.img
@@ -738,6 +740,11 @@ lgoind.img
 ---> T_PACER_L
 lgouta.img
 ---> T_JAZZ_L
+lgohou.img
+---> T_ROCKS_L
+lgowas.img
+---> T_BULTS_L
+PPP> 1
 ;Team Zone meter (cut feature) imgs
 ASM> TEAMZONE.TBL
 GLO> XXXHD.GLO

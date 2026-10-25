@@ -553,8 +553,14 @@ IBZ_DEF2	.equ	CZMID+70
 ;-----------------------------------------------------------------------------
  SUBR	clear_secret_powerup_ram
 
-	clr	a0
+	.ref	READ_DIP
+	calla	READ_DIP		;DIP A sw4 on (bit 16 after READ_DIP) = fatality pushes always on
+	andi	16,a0
+	jrz	csprnofat
+	movk	3,a0			;bit 0=tm1, bit 1=tm2
+csprnofat
 	move	a0,@fatality
+	clr	a0
 	move	a0,@fatcheck
 	move	a0,@pup_lockcombo
 	move	a0,@pup_bighead
