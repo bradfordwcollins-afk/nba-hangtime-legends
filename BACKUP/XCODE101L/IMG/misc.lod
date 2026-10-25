@@ -692,6 +692,8 @@ lgocle.img
 ---> T_CAVS_L
 lgoatl.img
 ---> T_HAWKS_L
+lgodal.img
+---> T_MAVS_L
 ;Team Zone meter (cut feature) imgs
 ASM> TEAMZONE.TBL
 GLO> XXXHD.GLO

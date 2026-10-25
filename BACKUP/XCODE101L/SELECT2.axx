@@ -5165,7 +5165,7 @@ logos
 	.long	T_HORS		; 2 CHARLOTTE
 	.long	T_BULLS		; 3 CHICAGO
 	.long	T_CAVS_L		; 4 CLEVELAND
-	.long	T_MAVS		; 5 DALLAS
+	.long	T_MAVS_L		; 5 DALLAS
 	.long	T_NUGS_L		; 6 DENVER
 ;DJT Start
 	.long	T_PISS_N	; 7 DETROIT
