@@ -248,6 +248,7 @@
 	.global	DAUGHE_NP
 	.global	DAVIS_NP
 	.global	DEROZAN
+	.global	DONCIC_NP
 	.global	DUNCAN
 	.global	EMBIID
 	.global	ERVING
@@ -256,9 +257,11 @@
 	.global	GILGEOUS
 	.global	GINOBILI
 	.global	GRIFFIN
+	.global	HALIBURTON
 	.global	HARDEN
 	.global	HOWARD
 	.global	IRVING
+	.global	JAMES_NP
 	.global	JOKIC
 	.global	KERR
 	.global	KORVER
@@ -271,6 +274,7 @@
 	.global	MCGRADY
 	.global	MCHALE
 	.global	MIDDLETON
+	.global	MING
 	.global	MITCHE_NP
 	.global	MURRAY_NP
 	.global	NASH
@@ -282,13 +286,11 @@
 	.global	TATUM
 	.global	THOMAS_NP
 	.global	THOMPS_NP
-	.global	TYRESE
 	.global	WADE
 	.global	WALLAC_NP
 	.global	WEBB_NP
-	.global	WEMBY
+	.global	WEMBANYAMA
 	.global	WESTBROOK
 	.global	WILKINS
 	.global	WORTHY_NP
-	.global	YAO
 	.global	YOUNG
