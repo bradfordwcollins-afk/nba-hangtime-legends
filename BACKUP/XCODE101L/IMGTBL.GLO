@@ -1543,6 +1543,7 @@
 	.global	ERVING
 	.global	GASOL
 	.global	GEORGE_NP
+	.global	GILGEOUS
 	.global	GINOBILI
 	.global	GRIFFIN
 	.global	HARDEN
@@ -1568,7 +1569,6 @@
 	.global	PARKER
 	.global	PAUL_NP
 	.global	PIERCE_NP
-	.global	SHAI
 	.global	TATUM
 	.global	THOMAS_NP
 	.global	THOMPS_NP
