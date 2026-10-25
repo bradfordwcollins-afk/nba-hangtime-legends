@@ -5160,13 +5160,13 @@ was2_str
 ;-----------------------------------------------------------------------------
 ;-----------------------------------------------------------------------------
 logos
-	.long	T_HAWKS		; 0 ATLANTA	(124)
+	.long	T_HAWKS_L		; 0 ATLANTA	(124)
 	.long	T_CELTS		; 1 BOSTON
 	.long	T_HORS		; 2 CHARLOTTE
 	.long	T_BULLS		; 3 CHICAGO
-	.long	T_CAVS		; 4 CLEVELAND
+	.long	T_CAVS_L		; 4 CLEVELAND
 	.long	T_MAVS		; 5 DALLAS
-	.long	T_NUGS		; 6 DENVER
+	.long	T_NUGS_L		; 6 DENVER
 ;DJT Start
 	.long	T_PISS_N	; 7 DETROIT
 ;DJT End
@@ -5178,7 +5178,7 @@ logos
 	.long	T_CLIPS		;11 LOS ANGELES (CLIPPERS)
 ;FIXX!!!
 	.long	T_HEAT		;13 MIAMI
-	.long	T_BUCKS		;14 MILWAUKEE
+	.long	T_BUCKS_L		;14 MILWAUKEE
 ;DJT Start
 	.long	T_TWOLV_N	;15 MINNESOTA
 ;DJT End

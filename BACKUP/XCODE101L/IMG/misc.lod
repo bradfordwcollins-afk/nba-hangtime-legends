@@ -684,6 +684,14 @@ XMANm.img
 ---> XMAN_MUG
 XWEMm.img
 ---> XWEM_MUG
+lgoden.img
+---> T_NUGS_L
+lgomil.img
+---> T_BUCKS_L
+lgocle.img
+---> T_CAVS_L
+lgoatl.img
+---> T_HAWKS_L
 ;Team Zone meter (cut feature) imgs
 ASM> TEAMZONE.TBL
 GLO> XXXHD.GLO
