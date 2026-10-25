@@ -74,6 +74,7 @@
 	.globl	XANT_P
 	.globl	XLAM_P
 	.globl	XWES_P
+	.globl	XSGA_P
 	.globl	XLIL_P
 	.globl	XALD_P
 	.globl	XMAR_P
@@ -347,6 +348,7 @@
 	.def	Xant_h
 	.def	Xlam_h
 	.def	Xwes_h
+	.def	Xsga_h
 	.def	Xlil_h
 	.def	Xald_h
 	.def	Xmar_h
@@ -555,6 +557,9 @@ Xlam_h
 
 Xwes_h
 	HDMAC	XWES01	; Jam #51, from NBA Jam 50 (Double Z & Wake)
+
+Xsga_h
+	HDMAC	XSGA01	; Jam #dark|81|0.55, from NBA Jam 50 (Double Z & Wake)
 
 Xlil_h
 	HDMAC	XLIL01	; Jam #49, from NBA Jam 50 (Double Z & Wake)

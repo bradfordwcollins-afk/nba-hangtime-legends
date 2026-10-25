@@ -136,6 +136,7 @@
 	.def	XANT_P
 	.def	XLAM_P
 	.def	XWES_P
+	.def	XSGA_P
 	.def	XLIL_P
 	.def	XALD_P
 	.def	XMAR_P

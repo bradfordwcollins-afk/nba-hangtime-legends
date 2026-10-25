@@ -209,6 +209,7 @@
 	.ref	Xant_h
 	.ref	Xlam_h
 	.ref	Xwes_h
+	.ref	Xsga_h
 	.ref	Xlil_h
 	.ref	Xald_h
 	.ref	Xmar_h
@@ -1424,7 +1425,7 @@ SEA_t
 	.long	LSW_SEAP_P,LSW_SEAS_P,LVP_SEAP_P,LVP_SEAS_P
 ;kill
 	LWWWWWW	scale66t_t,BV9,SHT9,DNK6,DEF4,SDEF8,DSKL5	;SHAI GILGEOUS-ALEXANDER
-	.long	BRAND_F, LUN_SEAP_P,LUN_SEAS_P, LTR_SEAP_P,LTR_SEAS_P,Xive_h
+	.long	MASON_F, LUN_SEAP_P,LUN_SEAS_P, LTR_SEAP_P,LTR_SEAS_P,Xsga_h
 	.word	7,4,10,0
 	.long	LSW_SEAP_P,LSW_SEAS_P,LVP_SEAP_P,LVP_SEAS_P
 
