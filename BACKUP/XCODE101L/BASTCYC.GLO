@@ -6,19 +6,19 @@
 	.global	B8TCYC_E
 	.global	B8TCYC_F
 	.global	B8TCYC_G
-	.global	B8TCYC_H
+;[pruned] .global	B8TCYC_H
 	.global	B8TCYC_I
 	.global	B8TCYC_J
 	.global	B8TCYC_K
 	.global	B8TCYC_L
 	.global	B8TCYC_M
 	.global	B8TCYC_N
-	.global	B8TCYC_O
-	.global	B8TCYC_P
+;[pruned] .global	B8TCYC_O
+;[pruned] .global	B8TCYC_P
 	.global	B8TCYC_Q
 	.global	B8TCYC_R
-	.global	B8TCYC_S
-	.global	B8TCYC_T
+;[pruned] .global	B8TCYC_S
+;[pruned] .global	B8TCYC_T
 	.global	B8TCYC_U
 	.global	B8TCYC_V
 	.global	B8TCYC_W

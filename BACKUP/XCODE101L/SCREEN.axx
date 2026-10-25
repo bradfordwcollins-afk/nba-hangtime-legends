@@ -42,7 +42,7 @@ SKIP_ALT_TBL_PTR   equ	32
 	.def	wipe_stack_vertical,un_wipe_vertical
 	.def	wipe_horz_comb
 	.def	wipe_stack_vert_up
-	.def	wipe_center_up_dwn,unwipe_center_up_dwn
+	.def	wipe_center_up_dwn
 	.def	transition_flag
 	.def	CREATE_DEL_OBJS,CREATE_NO_DEL_OBJS
 	.def	NO_CREATE_DEL_OBJS,NO_CREATE_NO_DEL_OBJS

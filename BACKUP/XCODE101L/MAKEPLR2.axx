@@ -35,7 +35,7 @@
 
 	.global	player1_data,player2_data,player3_data,player4_data
 
-	.def	PASSWORD
+;[pruned] .def	PASSWORD
 	.def	stx_avgallow,stx_avgscore
 
 	.def	NUM_NICK_NAMES

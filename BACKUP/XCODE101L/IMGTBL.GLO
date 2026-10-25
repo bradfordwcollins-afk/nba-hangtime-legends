@@ -18,6 +18,11 @@
 	.global	WALKER
 	.global	ELLIS
 	.global	D_ELLIS
+	.global	GIANNIS
+	.global	KAREEM
+	.global	DURANT
+	.global	LUKA
+	.global	LEBRON
 
 ;
 	.globl	DIAGP
@@ -50,10 +55,10 @@
 	.global	overtime
 	.global	final
 	.globl	MBOX2_P
-	.global	HTSTAT01
-	.global	HTSTAT02
-	.global	HTSTAT03
-	.global	HTSTAT04
+;[pruned] .global	HTSTAT01
+;[pruned] .global	HTSTAT02
+;[pruned] .global	HTSTAT03
+;[pruned] .global	HTSTAT04
 	.globl	HTFIRE_P
 	.global	HTFIRE01
 	.global	HTFIRE02
@@ -186,13 +191,13 @@
 	.globl	NOS_P
 	.global	NO
 	.globl	NOP_P
-	.global	NOP
+;[pruned] .global	NOP
 	.globl	YESS_P
 	.global	YES
 	.globl	YESP_P
-	.global	YESP
-	.global	SMNOP
-	.global	SMYESP
+;[pruned] .global	YESP
+;[pruned] .global	SMNOP
+;[pruned] .global	SMYESP
 	.global	SMYES
 	.global	SMNO
 	.globl	SMNSHP_P
@@ -228,9 +233,9 @@
 	.globl	PRIV_W_P
 	.global	TEX_HA
 	.global	TEX_SD
-	.global	TEX_AR
-	.global	TEX_BD
-	.global	TEX_BB
+;[pruned] .global	TEX_AR
+;[pruned] .global	TEX_BD
+;[pruned] .global	TEX_BB
 	.global	TEX_ST
 	.global	TEX_BH
 	.globl	HDAROW_P
@@ -244,7 +249,7 @@
 	.global	BIGBOX
 	.global	TUBE01
 	.global	TUBE02
-	.global	TUBE03
+;[pruned] .global	TUBE03
 	.globl	DITH_P
 	.global	DITH_A
 	.global	DITH_B
@@ -274,11 +279,11 @@
 	.global	M_HYPRSP
 	.global	M_FSTPAS
 	.global	M_MAXSPD
-	.global	M_BIGBAL
+;[pruned] .global	M_BIGBAL
 	.global	M_NOPUSH
 	.global	M_MAXPOW
 	.global	M_SHTPCT
-	.global	M_BABYMD
+;[pruned] .global	M_BABYMD
 	.global	M_STELTH
 	.globl	BUTGRN_P
 	.global	BUTTON_A
@@ -316,7 +321,7 @@
 	.global	TXT_PRIV
 	.global	TXT_NICK1
 	.globl	TUBE_B_P
-	.global	TEAMBR
+;[pruned] .global	TEAMBR
 	.global	HEADER
 	.globl	SQAD_VB_P
 	.global	SQUAD1
@@ -484,14 +489,14 @@
 	.global	ABDULRAU
 	.global	AHARDAWAY
 	.global	AJOHNSON
-	.global	WANDERSON
+;[pruned] .global	WANDERSON
 	.global	ANTHONY
 	.global	AUGMON
-	.global	BAKER
+;[pruned] .global	BAKER
 	.global	BARROS
 	.global	BBARRY
 	.global	BENJAMIN
-	.global	BENOIT
+;[pruned] .global	BENOIT
 	.global	BGRANT
 	.global	BLAYLOCK
 	.global	BOWENS
@@ -500,15 +505,15 @@
 	.global	BREEVES
 	.global	BROWN
 	.global	BWILLIAM
-	.global	CAMPBELL
+;[pruned] .global	CAMPBELL
 	.global	CASSELL
 	.global	CEBALLOS
-	.global	CHEANEY
+;[pruned] .global	CHEANEY
 	.global	CHILDRES
 	.global	CMILLS
 	.global	CMORRIS
 	.global	COLEMAN
-	.global	COLES
+;[pruned] .global	COLES
 	.global	CROBINSON
 	.global	CROGERS
 	.global	CURRY
@@ -525,39 +530,39 @@
 	.global	EDNEY
 	.global	EDWARDS
 	.global	EJONES
-	.global	ELLIOT
-	.global	EMURDOCK
+;[pruned] .global	ELLIOT
+;[pruned] .global	EMURDOCK
 	.global	EWING
 	.global	FERRY
 	.global	FINLEY
 	.global	FOX
 	.global	GARNETT
-	.global	GATTISON
+;[pruned] .global	GATTISON
 	.global	GHILL
 	.global	GILL
 	.global	GILLIAM
 	.global	GRANT_HC
 	.global	GROBINSO
-	.global	GUGLI
+;[pruned] .global	GUGLI
 	.global	HARPER_D
 	.global	HAWKINS
-	.global	HENDERSO
+;[pruned] .global	HENDERSO
 	.global	HORNACEK
 	.global	HORRY
 	.global	HOUSTON
-	.global	HOWARD
+;[pruned] .global	HOWARD
 	.global	JACK
 	.global	JHOWARD
 	.global	JOHNSN_L
-	.global	JSMITH
+;[pruned] .global	JSMITH
 	.global	KANDERSON
 	.global	KEDWARDS
 	.global	KEMP
-	.global	KERR
+;[pruned] .global	KERR
 	.global	KIDD
 	.global	KJOHNSON
 	.global	KNORMAN
-	.global	KONCAK
+;[pruned] .global	KONCAK
 	.global	KUKOC
 	.global	LAETTNER
 	.global	LMURRAY
@@ -569,7 +574,7 @@
 	.global	MASON
 	.global	MCCLOUD
 	.global	MCDYESS
-	.global	MCKEE
+;[pruned] .global	MCKEE
 	.global	MILLER
 	.global	MJACKSON
 	.global	MONTROSS
@@ -580,7 +585,7 @@
 	.global	MUTUMBO
 	.global	NANDERSON
 	.global	OAKLEY
-	.global	OBANNON
+;[pruned] .global	OBANNON
 	.global	OLAJUWON
 	.global	OMILLER
 	.global	PACK
@@ -591,12 +596,12 @@
 	.global	PJONES
 	.global	PRICHARD
 	.global	RADJA
-	.global	RESPERT
+;[pruned] .global	RESPERT
 	.global	RICE
 	.global	RICH
 	.global	RIDER
 	.global	RODMAN
-	.global	ROOKS
+;[pruned] .global	ROOKS
 	.global	ROSE
 	.global	RROGERS
 	.global	SABONIS
@@ -615,25 +620,25 @@
 	.global	THARDAWAY
 	.global	THILL
 	.global	THORPE
-	.global	TISDALE
+;[pruned] .global	TISDALE
 	.global	TMILLS
 	.global	VANEXEL
 	.global	VAUGHT
 	.global	VMAXWELL
-	.global	WEATH
+;[pruned] .global	WEATH
 	.global	WEBBER
 	.global	WILLIS
 	.global	WPERSON
-	.global	WRIGHT
+;[pruned] .global	WRIGHT
 	.global	WWILLIAM
 	.global	ZIDEK
 	.global	DIVITA
 	.globl	spark_p
-	.global	spark2
-	.global	spark3
-	.global	spark4
-	.global	spark5
-	.global	spark1
+;[pruned] .global	spark2
+;[pruned] .global	spark3
+;[pruned] .global	spark4
+;[pruned] .global	spark5
+;[pruned] .global	spark1
 	.globl	PRESS_P
 	.global	PRESSBUTT
 	.global	PRESSTURB
@@ -649,9 +654,9 @@
 	.global	insert3
 	.global	freplay3
 	.global	join3
-	.global	start2
-	.global	insert2
-	.global	freeplay
+;[pruned] .global	start2
+;[pruned] .global	insert2
+;[pruned] .global	freeplay
 	.global	FulGamered
 	.global	FulGameblu
 	.global	FulGamegrn
@@ -668,10 +673,10 @@
 	.global	TopFivgrn
 	.global	TopFivyel
 	.global	TopFivred
-	.global	TournDblu
-	.global	TournDgrn
-	.global	TournDyel
-	.global	TournDred
+;[pruned] .global	TournDblu
+;[pruned] .global	TournDgrn
+;[pruned] .global	TournDyel
+;[pruned] .global	TournDred
 	.global	TurnNSblu
 	.global	TurnNSgrn
 	.global	TurnNSyel
@@ -712,10 +717,10 @@
 	.global	INCRECTgrn
 	.global	INCRECTyel
 	.global	INCRECTred
-	.global	InvaldNMblu
-	.global	InvaldNMgrn
-	.global	InvaldNMyel
-	.global	InvaldNMred
+;[pruned] .global	InvaldNMblu
+;[pruned] .global	InvaldNMgrn
+;[pruned] .global	InvaldNMyel
+;[pruned] .global	InvaldNMred
 	.global	TRIVIA1
 	.global	TRIVIA2
 	.global	TRIVIA3
@@ -789,7 +794,7 @@
 	.global	INGA16NUM
 	.global	INGA16DOL
 	.global	INGA16PCT
-	.global	INGA16AND
+;[pruned] .global	INGA16AND
 	.global	INGA16AST
 	.global	INGA16PRL
 	.global	INGA16PRR
@@ -862,7 +867,7 @@
 	.global	BAST7TAND
 	.global	BAST7TLPR
 	.global	BAST7TRPR
-	.global	BAST7TDSH
+;[pruned] .global	BAST7TDSH
 	.global	BAST7TPLS
 	.global	BAST7TCOM
 	.global	BAST7TPER
@@ -872,16 +877,16 @@
 	.global	BAST7TCOL
 	.global	BAST7TSEM
 	.global	WIN4FREE
-	.global	WINSTAY
-	.global	WNRSSTAY
+;[pruned] .global	WINSTAY
+;[pruned] .global	WNRSSTAY
 	.globl	BAST_R_P
-	.global	ASISTOFF
-	.global	NOPUSH
-	.global	SHOTPERC
-	.global	BABYPLAY
-	.global	TOURMODE
-	.global	NOCPU
-	.global	SECRETS
+;[pruned] .global	ASISTOFF
+;[pruned] .global	NOPUSH
+;[pruned] .global	SHOTPERC
+;[pruned] .global	BABYPLAY
+;[pruned] .global	TOURMODE
+;[pruned] .global	NOCPU
+;[pruned] .global	SECRETS
 	.global	TEAMST
 	.global	TEAMST4
 	.global	TRIVPTS
@@ -939,12 +944,12 @@
 	.global	BAST8PRR
 	.global	BAST8PER
 	.global	BAST8COM
-	.global	BAST8PLS
+;[pruned] .global	BAST8PLS
 	.global	BAST8QUE
 	.global	BAST8SLS
 	.global	BAST8APO
-	.global	BAST8SEM
-	.global	BAST8SPC
+;[pruned] .global	BAST8SEM
+;[pruned] .global	BAST8SPC
 	.global	BAST8EXC
 	.global	BAST8T_A
 	.global	BAST8T_B
@@ -992,10 +997,10 @@
 	.global	BAST8TPER
 	.global	BAST8TCOM
 	.global	BAST8TAPO
-	.global	BAST8TPLS
+;[pruned] .global	BAST8TPLS
 	.global	BAST8TQUE
 	.global	BAST8TSLS
-	.global	BAST8TSEM
+;[pruned] .global	BAST8TSEM
 	.global	BAST8TSPC
 	.global	BAST8TEXC
 	.global	BAST10_A
@@ -1037,7 +1042,7 @@
 	.global	BAST10EXC
 	.global	BAST10NUM
 	.global	BAST10DOL
-	.global	BAST10PCT
+;[pruned] .global	BAST10PCT
 	.global	BAST10AND
 	.global	BAST10PRL
 	.global	BAST10PRR
@@ -1103,7 +1108,7 @@
 	.global	BAST18NUM
 	.global	BAST18DOL
 	.global	BAST18PCT
-	.global	BAST18AND
+;[pruned] .global	BAST18AND
 	.global	BAST18PRL
 	.global	BAST18PRR
 	.global	BAST18ADD
@@ -1113,7 +1118,7 @@
 	.global	BAST18COM
 	.global	BAST18COL
 	.global	BAST18APO
-	.global	BAST18_1a
+;[pruned] .global	BAST18_1a
 	.globl	BRSH50W_P
 	.global	BRSH50_A
 	.globl	BRSH50V_P
@@ -1299,7 +1304,7 @@
 	.global	BRSH12COM
 	.global	BRSH12SLS
 	.global	BRSH12NUM
-	.global	BRSH12PCT
+;[pruned] .global	BRSH12PCT
 	.global	BRSH12AND
 	.global	BRSH12PRL
 	.global	BRSH12PRR
@@ -1346,18 +1351,18 @@
 	.global	BRSH10QUE
 	.global	BRSH10EXC
 	.global	BRSH10DOL
-	.global	BRSH10PCT
+;[pruned] .global	BRSH10PCT
 	.global	BRSH10AND
 	.global	BRSH10NUM
 	.global	BRSH10PRL
 	.global	BRSH10PRR
 	.global	BRSH10COL
 	.globl	METLPALC
-	.global	scorshad1
-	.global	scorshad2
+;[pruned] .global	scorshad1
+;[pruned] .global	scorshad2
 	.global	stx_all
-	.global	stx_aveallow
-	.global	stx_avescore
+;[pruned] .global	stx_aveallow
+;[pruned] .global	stx_avescore
 	.global	stx_created
 	.global	stx_current
 	.global	stx_defeated
@@ -1375,36 +1380,36 @@
 	.global	stx_worldrec
 	.global	stx_youhave
 	.global	stx_avepoint
-	.global	stx_lostto
+;[pruned] .global	stx_lostto
 	.global	stx_norecord
 	.global	stx_pct
 	.global	stx_wins
 	.globl	METLPGRA
-	.global	credbox
+;[pruned] .global	credbox
 	.globl	SHADOW
-	.global	stshad1
-	.global	stshad2
+;[pruned] .global	stshad1
+;[pruned] .global	stshad2
 	.globl	THRP10_P
 	.global	THREPNTS
 	.globl	THRP1_P
 	.global	THREP1
 	.globl	THRP2_P
-	.global	THREP2
+;[pruned] .global	THREP2
 	.globl	THRP3_P
-	.global	THREP3
+;[pruned] .global	THREP3
 	.globl	THRP4_P
-	.global	THREP4
+;[pruned] .global	THREP4
 	.globl	THRP5_P
-	.global	THREP5
+;[pruned] .global	THREP5
 	.globl	THRP6_P
-	.global	THREP6
+;[pruned] .global	THREP6
 	.globl	THRP7_P
-	.global	THREP7
+;[pruned] .global	THREP7
 	.globl	THRP8_P
-	.global	THREP8
+;[pruned] .global	THREP8
 	.globl	THRP9_P
-	.global	THREP9
-	.global	THREP10
+;[pruned] .global	THREP9
+;[pruned] .global	THREP10
 	.globl	SGMD8RED
 	.global	plyr1
 	.globl	SGMD8WHT
@@ -1417,11 +1422,11 @@
 	.global	_2quart
 	.global	_3quart
 	.global	_4quart
-	.global	overtme
+;[pruned] .global	overtme
 	.global	congrats_l
-	.global	winstay_l
+;[pruned] .global	winstay_l
 	.global	chalneed_l
-	.global	chalacc_l
+;[pruned] .global	chalacc_l
 	.global	winfree
 	.global	TMATE
 	.global	CHALENG
@@ -1449,26 +1454,26 @@
 	.global	CREDNOT
 	.global	WINPIECE
 	.globl	GREYPAL
-	.global	CLD1A
+;[pruned] .global	CLD1A
 	.globl	BLUBOOM
-	.global	CLDB1
+;[pruned] .global	CLDB1
 	.globl	YELLPAL
-	.global	CLDB1YELL
+;[pruned] .global	CLDB1YELL
 	.globl	WHTPAL
-	.global	CLDB1WHT
+;[pruned] .global	CLDB1WHT
 	.globl	ORNGPAL
 	.global	CLDB1ORNG
 	.globl	LGRYPAL
-	.global	CLDB1LGRY
+;[pruned] .global	CLDB1LGRY
 	.globl	GRNPAL
-	.global	CLDB1GRN
+;[pruned] .global	CLDB1GRN
 	.globl	PURPPAL
-	.global	CLDB1PURP
-	.global	CLD2
-	.global	CLD3
-	.global	CLD4
-	.global	CLD4A
-	.global	CLD4B
+;[pruned] .global	CLDB1PURP
+;[pruned] .global	CLD2
+;[pruned] .global	CLD3
+;[pruned] .global	CLD4
+;[pruned] .global	CLD4A
+;[pruned] .global	CLD4B
 	.global	CLD5
 	.global	CLD6
 	.global	CLD7
@@ -1480,35 +1485,98 @@
 	.global	CLDB3
 	.global	CLDB4
 	.globl	camflsh_p
-	.global	flash1
-	.global	flash4
-	.global	flash3
-	.global	flash3a
-	.global	flash5
-	.global	flash6
-	.global	flash2
+;[pruned] .global	flash1
+;[pruned] .global	flash4
+;[pruned] .global	flash3
+;[pruned] .global	flash3a
+;[pruned] .global	flash5
+;[pruned] .global	flash6
+;[pruned] .global	flash2
 	.globl	arw4p
-	.global	arrow1l
-	.global	arrow1r
+;[pruned] .global	arrow1l
+;[pruned] .global	arrow1r
 	.globl	arw3p
-	.global	arrow2l
-	.global	arrow2r
+;[pruned] .global	arrow2l
+;[pruned] .global	arrow2r
 	.globl	arw2p
-	.global	arrow3l
-	.global	arrow3r
+;[pruned] .global	arrow3l
+;[pruned] .global	arrow3r
 	.globl	arw1p
-	.global	arrow4l
-	.global	arrow4r
-	.global	arrow1t
-	.global	arrow2t
-	.global	arrow3t
-	.global	arrow4t
-	.global	arrow1l2p
-	.global	arrow1r2p
-	.global	arrow2l2p
-	.global	arrow2r2p
-	.global	arrow1t2p
-	.global	arrow2t2p
+;[pruned] .global	arrow4l
+;[pruned] .global	arrow4r
+;[pruned] .global	arrow1t
+;[pruned] .global	arrow2t
+;[pruned] .global	arrow3t
+;[pruned] .global	arrow4t
+;[pruned] .global	arrow1l2p
+;[pruned] .global	arrow1r2p
+;[pruned] .global	arrow2l2p
+;[pruned] .global	arrow2r2p
+;[pruned] .global	arrow1t2p
+;[pruned] .global	arrow2t2p
 	.globl	TIMPLT_P
 	.globl	LED_P
-	.globl	robo_p
+;[pruned] .globl	robo_p
+; roster rebuild
+	.global	ADEBAYO
+	.global	ALDRIDGE
+	.global	ARTEST
+	.global	BALL_NP
+	.global	BANE
+	.global	BEAL
+	.global	BILLUPS
+	.global	BOGUES
+	.global	BOOKER
+	.global	BOSH
+	.global	BRUNSON
+	.global	BUTLER
+	.global	CARTER
+	.global	CLARK
+	.global	COUSINS
+	.global	DAUGHE_NP
+	.global	DAVIS_NP
+	.global	DEROZAN
+	.global	DUNCAN
+	.global	EMBIID
+	.global	ERVING
+	.global	GASOL
+	.global	GEORGE_NP
+	.global	GINOBILI
+	.global	GRIFFIN
+	.global	HARDEN
+	.global	HOWARD
+	.global	IRVING
+	.global	JOKIC
+	.global	KERR
+	.global	KORVER
+	.global	LAIMBE_NP
+	.global	LEONARD
+	.global	LILLARD
+	.global	MAJERLE
+	.global	MALONE_NP
+	.global	MARAVICH
+	.global	MCGRADY
+	.global	MCHALE
+	.global	MIDDLETON
+	.global	MITCHE_NP
+	.global	MURRAY_NP
+	.global	NASH
+	.global	NOWITZKI
+	.global	PARISH
+	.global	PARKER
+	.global	PAUL_NP
+	.global	PIERCE_NP
+	.global	SHAI
+	.global	TATUM
+	.global	THOMAS_NP
+	.global	THOMPS_NP
+	.global	TYRESE
+	.global	WADE
+	.global	WALLAC_NP
+	.global	WEBB_NP
+	.global	WEMBY
+	.global	WESTBROOK
+	.global	WILKINS
+	.global	WORTHY_NP
+	.global	YAO
+	.global	YOUNG

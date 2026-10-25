@@ -19,7 +19,7 @@
 	.global	shadow18
 	.global	ballshad5
 	.global	ballshad2
-	.global	ballshad3
+;[pruned] .global	ballshad3
 	.global	ballshad4
-	.global	ballshad6
+;[pruned] .global	ballshad6
 	.global	ballshad7

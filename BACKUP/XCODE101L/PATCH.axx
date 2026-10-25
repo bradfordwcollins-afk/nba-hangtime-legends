@@ -18,7 +18,7 @@
 	.include	"macros.hdr"
 	
 
-	.def	TVPATCH,TVPATCHX
+;[pruned] .def	TVPATCH,TVPATCHX
 
 
 	.ref	dirq_wait

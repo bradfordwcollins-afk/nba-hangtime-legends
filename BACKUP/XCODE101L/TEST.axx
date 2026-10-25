@@ -37,11 +37,11 @@
 ;in this module
 
 	.def		fudge_switches, fudge_switches2, fudge_switches_diag
-	.DEF		DIAG,CHK_CMOS
+	.DEF		DIAG
 	.DEF		GEN_MENU,B_MENU
 	.DEF		TOP_BOX			;,WT_ADV
 ;	.DEF		WW_ADV
-	.DEF		MAIN_RET,GMENULEV
+	.DEF		MAIN_RET
 ;	.DEF		CK_DOOR
 	.DEF		AREUSURE
 	.DEF		F_TITLE

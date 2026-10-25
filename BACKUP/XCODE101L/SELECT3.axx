@@ -129,7 +129,7 @@
 	.ref	compute_plyr_def_rank
 
 	.def	TUBE_O_P,TUBE_R_P,TUBE_Y_P,TUBE_G_P
-	.def	PLTF5_B_P,PLTF5_G_P,PLTF5_Y_P,PLTF5_R_P
+;[pruned] .def	PLTF5_B_P,PLTF5_G_P,PLTF5_Y_P,PLTF5_R_P
 	.def	plaque_xs,plaque_flsh_pals
 	.def	plaque_snds,plaque_lnds_snds
 

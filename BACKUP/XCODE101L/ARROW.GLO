@@ -1,25 +1,25 @@
 	.globl	ARR_B_P
-	.global	arrown1l
+;[pruned] .global	arrown1l
 	.global	arrown1r
 	.globl	ARR_G_P
-	.global	arrown2l
+;[pruned] .global	arrown2l
 	.global	arrown2r
 	.globl	ARR_Y_P
-	.global	arrown3l
+;[pruned] .global	arrown3l
 	.global	arrown3r
 	.globl	ARR_R_P
-	.global	arrown4l
+;[pruned] .global	arrown4l
 	.global	arrown4r
-	.global	arrown1t
-	.global	arrown2t
-	.global	arrown3t
-	.global	arrown4t
-	.global	arrown1l2p
+;[pruned] .global	arrown1t
+;[pruned] .global	arrown2t
+;[pruned] .global	arrown3t
+;[pruned] .global	arrown4t
+;[pruned] .global	arrown1l2p
 	.global	arrown1r2p
-	.global	arrown2l2p
+;[pruned] .global	arrown2l2p
 	.global	arrown2r2p
-	.global	arrown1t2p
-	.global	arrown2t2p
+;[pruned] .global	arrown1t2p
+;[pruned] .global	arrown2t2p
 	.globl	BBALFLA_P
 	.global	nflash1
 	.global	nflash2

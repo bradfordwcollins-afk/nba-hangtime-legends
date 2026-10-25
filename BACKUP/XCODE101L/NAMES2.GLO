@@ -1,60 +1,60 @@
 	.globl	BAST_Y_P
-	.global	SCOTT
-	.global	ROBERTSON
-	.global	CHAPMAN
-	.global	WEBB
-	.global	LANG
-	.global	RUFFIN
-	.global	MARCI2
+;[pruned] .global	SCOTT
+;[pruned] .global	ROBERTSON
+;[pruned] .global	CHAPMAN
+;[pruned] .global	WEBB
+;[pruned] .global	LANG
+;[pruned] .global	RUFFIN
+;[pruned] .global	MARCI2
 	.global	WEATHSPN
-	.global	AMRICH
-	.global	ANZALONE
-	.global	BENSON
-	.global	BUTATA
-	.global	FUNK
-	.global	HAEGERJR
-	.global	JIGGETTS
-	.global	KELLER
-	.global	LAWMAN
-	.global	LEE
-	.global	MDOC
-	.global	MIKE
-	.global	MUNDAY
-	.global	NORTH
-	.global	PERRY
-	.global	RIVETT
-	.global	SEAN
-	.global	ZIRIN
-	.global	HBETT
-	.global	MBETT
+;[pruned] .global	AMRICH
+;[pruned] .global	ANZALONE
+;[pruned] .global	BENSON
+;[pruned] .global	BUTATA
+;[pruned] .global	FUNK
+;[pruned] .global	HAEGERJR
+;[pruned] .global	JIGGETTS
+;[pruned] .global	KELLER
+;[pruned] .global	LAWMAN
+;[pruned] .global	LEE
+;[pruned] .global	MDOC
+;[pruned] .global	MIKE
+;[pruned] .global	MUNDAY
+;[pruned] .global	NORTH
+;[pruned] .global	PERRY
+;[pruned] .global	RIVETT
+;[pruned] .global	SEAN
+;[pruned] .global	ZIRIN
+;[pruned] .global	HBETT
+;[pruned] .global	MBETT
 	.global	GUGLI2
-	.global	MCKEE2
+;[pruned] .global	MCKEE2
 	.global	ELLIOT2
-	.global	TURMELL
-	.global	CARLTON
-	.global	HEY
-	.global	FITZ
-	.global	AIRMOR
-	.global	BARDO
-	.global	HEDRICK
-	.global	MINIFE
-	.global	MARTIN
-	.global	PESINA
-	.global	THOMPS
-	.global	GEER
-	.global	JAPPLE
-	.global	FERRIER
-	.global	VINIK
-	.global	EHRLICH
-	.global	LIPTAK
-	.global	ROOT
-	.global	MEDNICK
-	.global	ROAN
-	.global	OURSLER
-	.global	QUINN
-	.global	TOBIAS
-	.global	BOON
-	.globl	PNAME_W_P
+;[pruned] .global	TURMELL
+;[pruned] .global	CARLTON
+;[pruned] .global	HEY
+;[pruned] .global	FITZ
+;[pruned] .global	AIRMOR
+;[pruned] .global	BARDO
+;[pruned] .global	HEDRICK
+;[pruned] .global	MINIFE
+;[pruned] .global	MARTIN
+;[pruned] .global	PESINA
+;[pruned] .global	THOMPS
+;[pruned] .global	GEER
+;[pruned] .global	JAPPLE
+;[pruned] .global	FERRIER
+;[pruned] .global	VINIK
+;[pruned] .global	EHRLICH
+;[pruned] .global	LIPTAK
+;[pruned] .global	ROOT
+;[pruned] .global	MEDNICK
+;[pruned] .global	ROAN
+;[pruned] .global	OURSLER
+;[pruned] .global	QUINN
+;[pruned] .global	TOBIAS
+;[pruned] .global	BOON
+;[pruned] .globl	PNAME_W_P
 	.global	ATLNAUG
 	.global	ATLNBLA
 	.global	ATLNSMI
@@ -84,7 +84,7 @@
 	.global	DALNKID
 	.global	DALNMAS
 	.global	DALNJON
-	.global	DALNMcC
+;[pruned] .global	DALNMcC
 	.global	DENNRAU
 	.global	DENNMUT
 	.global	DENNMcD
@@ -92,7 +92,7 @@
 	.global	DENNELL
 	.global	DETNDUM
 	.global	DETNHIL
-	.global	DETNMIL
+;[pruned] .global	DETNMIL
 	.global	DETNTHO
 	.global	DETNHOU
 	.global	GOLNWIL
@@ -104,11 +104,11 @@
 	.global	HOUNDRE
 	.global	HOUNHOR
 	.global	HOUNCAS
-	.global	HOUNSMI
+;[pruned] .global	HOUNSMI
 	.global	INDNMIL
 	.global	INDNDAV
 	.global	INDNSMI
-	.global	INDNMcK
+;[pruned] .global	INDNMcK
 	.global	INDNJAC
 	.global	LACNVAU
 	.global	LACNROG
@@ -122,27 +122,27 @@
 	.global	LALNJON
 	.global	MIANMOU
 	.global	MIANWIL
-	.global	MIANCHA
+;[pruned] .global	MIANCHA
 	.global	MIANHAR
 	.global	MIANDAN
 	.global	MILNBAK
 	.global	MILNROB
 	.global	MILNRES
-	.global	MILNBEN
-	.global	MILNDOU
+;[pruned] .global	MILNBEN
+;[pruned] .global	MILNDOU
 	.global	MINNRID
 	.global	MINNLAN
-	.global	MINNWEB
+;[pruned] .global	MINNWEB
 	.global	MINNGUG
 	.global	MINNGAR
 	.global	NWJNGIL
 	.global	NWJNBRA
 	.global	NWJNOBA
-	.global	NWJNEDW
+;[pruned] .global	NWJNEDW
 	.global	NWYNEWI
 	.global	NWYNMAS
 	.global	NWYNHAR
-	.global	NWYNOAK
+;[pruned] .global	NWYNOAK
 	.global	NWYNSTA
 	.global	ORLNHAR
 	.global	ORLNGRA
@@ -152,17 +152,17 @@
 	.global	PHINSTA
 	.global	PHINCOL
 	.global	PHINWEA
-	.global	PHINRUF
+;[pruned] .global	PHINRUF
 	.global	PHINMAX
 	.global	PHONJOH
 	.global	PHONTIS
 	.global	PHONMAN
-	.global	PHONPER
-	.global	PHONFIN
+;[pruned] .global	PHONPER
+;[pruned] .global	PHONFIN
 	.global	PORNSTR
 	.global	PORNROB
 	.global	PORNSAB
-	.global	PORNWIL
+;[pruned] .global	PORNWIL
 	.global	PORNCHI
 	.global	SACNOWE
 	.global	SACNRIT
@@ -172,7 +172,7 @@
 	.global	SANNELL
 	.global	SANNROB
 	.global	SANNJOH
-	.global	SANNPER
+;[pruned] .global	SANNPER
 	.global	SANNNEG
 	.global	SEANKEM
 	.global	SEANPAY
@@ -181,25 +181,25 @@
 	.global	SEANFOR
 	.global	TORNROG
 	.global	TORNSTO
-	.global	TORNROB
-	.global	TORNMIL
-	.global	TORNMUR
+;[pruned] .global	TORNROB
+;[pruned] .global	TORNMIL
+;[pruned] .global	TORNMUR
 	.global	UTANSTO
 	.global	UTANMAL
 	.global	UTANHOR
-	.global	UTANBEN
+;[pruned] .global	UTANBEN
 	.global	UTANMOR
 	.global	VANNANT
 	.global	VANNEDW
 	.global	VANNSCO
 	.global	VANNREE
-	.global	VANNMUR
+;[pruned] .global	VANNMUR
 	.global	WASNHOW
 	.global	WASNWEB
 	.global	WASNCHE
 	.global	WASNPAC
 	.global	WASNMUR
-	.globl	GAINED_P
+;[pruned] .globl	GAINED_P
 	.global	GAINED_TXT
-	.globl	IDIOTS_P
-	.global	IDIOTS_TXT
+;[pruned] .globl	IDIOTS_P
+;[pruned] .global	IDIOTS_TXT

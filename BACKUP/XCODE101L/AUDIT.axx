@@ -67,7 +67,7 @@ COINCNT2	.EQU	COINCNTR+8
 	.def	L_MESS,AUD,AUD1,GET_ADJ
 	.def	GET_AUD,SLAM_SW,STORE_AUDIT
 	.def	CAT_A0
-	.def	CCCC
+;[pruned] .def	CCCC
 	.def	CK_MAX
 ;	.def	CLRSWPRC
 	.def	CLR_AUD,FAC_SET
@@ -78,14 +78,14 @@ COINCNT2	.EQU	COINCNTR+8
 ;	.def	COINIRQ
 	.def	CR_STRTP
 	.def	CR_CONTP
-	.def	CRD_SCRN
+;[pruned] .def	CRD_SCRN
 	.def	CRED_P	
 	.def	DEF_PAGE
 ;	.def	DUMP_FS
 	.def	FORM_ADC
 	.def	F_ADC_S
-	.def	GET_CREDITS
-	.def	GET_CSTR
+;[pruned] .def	GET_CREDITS
+;[pruned] .def	GET_CSTR
 	.def	HTOHXASC
 ;	.def	KILL_CRD
 	.def	L_TIMER

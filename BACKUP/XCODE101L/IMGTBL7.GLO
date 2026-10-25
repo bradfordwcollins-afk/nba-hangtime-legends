@@ -15,7 +15,7 @@
 	.globl	OAK_NEYP
 	.globl	HOU_OLAP
 	.globl	CHI_PIPP
-	.globl	RAD_MK2P
+;[pruned] .globl	RAD_MK2P
 	.globl	ROB_SANP
 	.globl	SAL_DIVP
 	.globl	SCH_SEAP
@@ -358,7 +358,7 @@
 	.globl	HANGF_Y_P
 	.globl	HANGF_R_P
 	.globl	HANGF_G_P
-	.globl	HANGF_B_P
+;[pruned] .globl	HANGF_B_P
 	.globl	HANGF_W_P
 	.globl	BASTC_W_P
 	.globl	NUB_B_P

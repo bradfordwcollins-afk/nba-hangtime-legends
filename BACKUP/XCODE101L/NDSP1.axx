@@ -28,7 +28,7 @@
 
 
 
-	.def	scale_t,scale_t_sm,scale_t_size
+	.def	scale_t_size
 	.def	scalebaby_t,scalehead_t,scalebighead_t,scalehugehead_t
 	.def	scale57_t,scale57et_t,scale57t_t,scale57f_t,scale57ef_t
 	.def	scale58_t,scale58et_t,scale58t_t,scale58f_t,scale58ef_t

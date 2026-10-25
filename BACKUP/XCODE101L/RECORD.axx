@@ -34,7 +34,7 @@
 ******************************************************************************
 
 	.global	sort_wins
-	.global	save_record
+;[pruned] .global	save_record
 	.global	save_player_records
 
 	.global	get_player_record,get_free_record,put_plr_record
@@ -62,7 +62,7 @@
 	.global	print_string_R,print_string_R2
 	.global	get_name_string
 	.global	player_stats
-	.global	hiscore_type
+;[pruned] .global	hiscore_type
 
 ******************************************************************************
 
@@ -3490,7 +3490,7 @@ COLTAB2
 	.word	-1
 
 
-   .def	BSTCYCB_P,BSTCYCY_P
+   .def	BSTCYCB_P
 
 BSTCYCY_P
 ;   .word   64 

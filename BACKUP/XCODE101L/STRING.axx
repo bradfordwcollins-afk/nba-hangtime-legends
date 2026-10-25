@@ -1759,7 +1759,7 @@ bast7t_ascii
 
 ;DJT Start
 	.def	B8TCYC_PER
-	.def	B8TCYC_H,B8TCYC_O,B8TCYC_P,B8TCYC_S,B8TCYC_T
+;[pruned] .def	B8TCYC_H,B8TCYC_O,B8TCYC_P,B8TCYC_S,B8TCYC_T
 ;DJT End
 bast8tcyc_ascii
  .long 0,0,0,0,0,0,0,0								;$00

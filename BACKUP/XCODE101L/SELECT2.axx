@@ -34,7 +34,7 @@
 ;	.include	"names3.glo"		;New added player names - moved inc to imgtbl.axx
 
 	.include	"mugshot.glo"
-	.include	"imgtbl.glo"
+	.include	"sel2img.glo"	; trimmed imgtbl.glo (memory)
 	.include	"imgtblp.glo"
 	.include	"imgtbl2.glo"
 	.include	"imgtbl7.glo"
@@ -251,9 +251,9 @@ MAX_CRTIME	equ	07fffH		;30*60
 	.asg	0131fH,y1a
 
 
-	.def	ladder_imgs0
-	.def	ladder_imgs1,ladder_imgs2,ladder_imgs3,ladder_imgs4
-	.def	ladder_imgs5,ladder_imgs6
+;[pruned] .def	ladder_imgs0
+;[pruned] .def	ladder_imgs1,ladder_imgs2,ladder_imgs3,ladder_imgs4
+;[pruned] .def	ladder_imgs5,ladder_imgs6
 
 
 ladder_imgs0
@@ -5268,17 +5268,17 @@ player_attribs
 
 ;00 ATLANTA HAWKS
 
+	.word  09,01,09,01
+	.word  06,01,10,09	;TRAE YOUNG
+
+	.word  08,07,07,10
+	.word  06,04,05,09	;DOMINIQUE WILKINS
+
 	.word  09,02,07,01
-	.word  09,01,07,08	;MOOKIE BLAYLOCK	6'1"	185 reg 
+	.word  09,01,07,08	;BLAYLOCK
 
-	.word  06,09,03,08
-	.word  04,10,04,07	;DIKEMBE MUTOMBO	7'2"	245 reg
-
-	.word  07,07,05,06
-	.word  04,05,05,06	;CHRISTIAN LAETTNER	6'11"	235 reg
-
-	.word  07,05,08,05
-	.word  05,02,05,06	;STEVE SMITH		6'8"	208 reg
+	.word  06,04,10,02
+	.word  04,02,05,08	;KYLE KORVER
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5288,40 +5288,40 @@ player_attribs
 
 ;01 BOSTON CELTICS
 
-	.word  07,05,07,05
-	.word  07,05,06,06	;RICK FOX		6'7"	231 reg
+	.word  08,07,10,06
+	.word  08,06,09,10	;BIRD
 	
-	.word  06,06,06,06
-	.word  05,06,03,05	;ANTOINE WALKER
+	.word  05,08,08,06
+	.word  03,08,05,08	;KEVIN MCHALE
 
-	.word  06,07,04,07
-	.word  04,07,05,04	;DINO RADJA		6'11"	225 thin 
+	.word  07,07,09,06
+	.word  06,03,06,10	;PAUL PIERCE
 
-	.word  08,01,08,01
-	.word  06,01,06,04	;DANA BARROS		5'11"	165 reg
+	.word  08,06,09,07
+	.word  06,05,06,08	;JAYSON TATUM
 
-	.word  09,02,06,08
-	.word  06,01,07,04	;DEE BROWN		6'1"	161 reg
+	.word  05,09,07,07
+	.word  04,09,04,07	;ROBERT PARISH
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;02 CHARLOTTE HORNETS
 
+	.word  07,07,06,08
+	.word  04,05,06,07	;JOHNSN_L
+
 	.word  07,05,10,05
-	.word  06,03,04,08	;GLEN RICE		6'8"	220 reg
-
-	.word  06,09,05,07
-	.word  02,06,06,07	;ANTHONY MASON		6'7"	250 fat
-
-	.word  05,08,05,05
-	.word  04,08,06,06	;VLADE DIVAC		7'1"	260 thin
+	.word  06,03,04,08	;RICE
 
 	.word  07,02,09,01
-	.word  06,01,04,06	;DELL CURRY		6'5"	200 thin
+	.word  06,01,04,06	;CURRY
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  10,01,07,00
+	.word  10,00,10,07	;MUGGSY BOGUES
+
+	.word  07,06,06,06
+	.word  04,05,05,06	;MASH
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
@@ -5329,113 +5329,113 @@ player_attribs
 ;03 CHICAGO BULLS
 
 	.word  08,06,10,09
-	.word  09,06,08,10	;MICHAEL JORDAN		6'6"	225 thin
+	.word  09,06,08,10	;JORDAN
 
 	.word  08,06,07,09
-	.word  09,08,07,08	;SCOTTIE PIPPEN		6'7"	225 thin
+	.word  09,08,07,08	;PIPPEN
 
 	.word  07,07,01,05
-	.word  07,07,04,04	;DENNIS RODMAN		6'8"	210 thin
+	.word  07,07,04,04	;RODMAN
 
-	.word  07,05,07,06
-	.word  07,05,08,08	;TONI KUKOC		6'11"	230 ex thin
+	.word  10,05,07,09
+	.word  06,02,08,08	;DERRICK ROSE
 
-	.word  05,08,04,05
-	.word  02,07,06,03	;LUC LONGLEY		7'2"	265 fat
+	.word  07,02,10,00
+	.word  05,00,06,09	;STEVE KERR
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;04 CLEVELAND CAVALIERS
 
-	.word  09,02,07,01
-	.word  08,01,08,08	;TERRELL BRANDON	6'0"	180 thin
+	.word  09,10,08,10
+	.word  08,06,10,09	;LEBRON
 
-	.word  07,05,07,05
-	.word  05,06,05,06	;CHRIS MILLS		6'6"	216 fat
+	.word  09,03,09,05
+	.word  07,02,08,10	;KYRIE IRVING
 
-	.word  07,04,07,05
-	.word  07,04,06,06	;BOBBY PHILLS		6'5"	217 reg
+	.word  09,05,08,08
+	.word  06,02,06,09	;DONOVAN MITCHELL
 
-	.word  06,06,04,07
-	.word  03,07,04,04	;TYRONE HILL		6'9"	245 reg
+	.word  05,08,07,07
+	.word  04,06,07,07	;BRAD DAUGHERTY
 
-	.word  05,04,08,02
-	.word  05,02,05,04	;DANNY FERRY		6'10"	245 reg
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;05 DALLAS MAVERICKS
 
+	.word  06,07,10,06
+	.word  04,06,06,10	;DIRK NOWITZKI
+
+	.word  07,07,09,05
+	.word  06,03,10,10	;LUKA
+
 	.word  07,04,06,08
-	.word  07,03,06,06	;MICHAEL FINLEY   ____________
+	.word  07,03,06,06	;FINLEY
 
 	.word  04,04,04,07
-	.word  02,10,03,03	;SHAWN BRADLEY		7'6"	248 ex thin
+	.word  02,10,03,03	;BRADLEY
 
-	.word  05,03,07,02
-	.word  02,02,04,04	;SASHA DANILOVIC	_______________
-
-	.word  07,03,05,05
-	.word  07,01,09,04	;ROBERT PACK		6'2"	180 thin
-
-	.word  06,03,06,01
-	.word  06,01,05,04	;DEREK HARPER		6'4"	206 reg
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;06 DENVER NUGGETS
 
-	.word  07,06,06,07
-	.word  06,05,05,06	;Laphonso Ellis
+	.word  04,10,09,06
+	.word  06,05,10,10	;NIKOLA JOKIC
 	
-	.word  07,04,06,02
-	.word  06,01,05,05	;DALE ELLIS		6'7"	215 reg
+	.word  08,04,09,05
+	.word  06,02,07,10	;JAMAL MURRAY
 
-	.word  06,06,05,07
-	.word  03,06,03,04	;ANTONIO McDYESS	_______________
+	.word  06,09,03,08
+	.word  04,10,04,07	;MUTUMBO
 
-	.word  04,02,06,01
-	.word  06,01,05,03	;SARUNAS MARCIULIONIS	6'5"	215 reg
+	.word  07,08,09,07
+	.word  05,03,05,09	;CARMELO ANTHONY
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  08,05,08,03
+	.word  07,02,08,10	;CHAUNCEY BILLUPS
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;07 DETROIT PISTONS
 
-	.word  08,06,08,08
-	.word  08,06,08,09	;GRANT HILL		_______________
+	.word  10,03,08,03
+	.word  09,01,10,10	;ISIAH THOMAS
 
 	.word  07,03,07,01
-	.word  06,01,08,07	;JOE DUMARS		6'3"	195 thin
+	.word  06,01,08,07	;DUMARS
 
-	.word  06,09,03,07
-	.word  02,07,05,04	;OTIS THORPE		6'10"	246 reg
+	.word  08,06,08,08
+	.word  08,06,08,09	;GHILL
 
-	.word  04,06,07,02
-	.word  03,02,05,06	;TERRY MILLS          6'10" 250 fat
+	.word  04,09,07,04
+	.word  04,07,04,07	;BILL LAIMBEER
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  06,10,02,07
+	.word  08,10,04,06	;BEN WALLACE
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;08 GOLDEN STATE WARRIORS
 
-	.word  09,04,07,08
-	.word  07,02,05,07	;LATRELL SPREWELL	6'5"	190 ex thin
+	.word  09,03,10,02
+	.word  07,02,09,10	;CURRY
+
+	.word  07,05,10,04
+	.word  06,04,04,09	;KLAY THOMPSON
 
 	.word  05,04,09,02
-	.word  07,03,06,06	;CHRIS MULLIN		6'7"	215 reg
-
-	.word  06,05,05,08
-	.word  04,07,02,05	;JOE SMITH		_______________
+	.word  07,03,06,06	;MULLIN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5449,16 +5449,16 @@ player_attribs
 ;09 HOUSTON ROCKETS
 
 	.word  06,09,06,08
-	.word  05,10,07,09	;HAKEEM OLAJUWON	7'0"	255 reg
+	.word  05,10,07,09	;OLAJUWON
 
-	.word  07,08,06,08
-	.word  04,07,06,08	;CHARLES BARKLEY
+	.word  08,07,09,06
+	.word  07,03,10,08	;JAMES HARDEN
 
-	.word  08,03,07,07
-	.word  08,03,08,08	;CLYDE DREXLER		6'7"	222 thin
+	.word  03,09,08,06
+	.word  02,09,04,06	;YAO MING
 
-	.word  04,09,04,06
-	.word  03,05,03,03	;KEVIN WILLIS		7'0"	240 reg
+	.word  09,06,09,10
+	.word  06,05,07,09	;TRACY MCGRADY
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5469,36 +5469,36 @@ player_attribs
 ;10 INDIANA PACERS
 
 	.word  07,04,10,06
-	.word  06,04,06,10	;REGGIE MILLER		6'7"	185 ex thin
+	.word  06,04,06,10	;MILLER
 
-	.word  08,03,06,01
-	.word  08,02,09,07	;MARK JACKSON		6'3"	192 fat
-
-	.word  06,08,05,07
-	.word  02,08,04,07	;RIK SMITS		7'4"	265 ex thin
-
-	.word  04,08,03,06
-	.word  03,07,02,03	;DALE DAVIS		6'11"	230 reg
+	.word  08,02,08,04
+	.word  07,03,10,09	;TYRESE HALIBURTON
 
 	.word  07,03,06,07
-	.word  07,03,07,05	;JALEN ROSE		_______________
+	.word  07,03,07,05	;ROSE
+
+	.word  06,08,05,07
+	.word  02,08,04,07	;SMITS
+
+	.word  08,02,09,01
+	.word  06,01,10,09	;CAITLIN CLARK
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;11 L.A. CLIPPERS
 
-	.word  07,06,06,06
-	.word  05,05,03,05	;LOY VAUGHT		6'9"	240 reg
+	.word  09,04,08,01
+	.word  10,01,10,09	;CHRIS PAUL
 
-	.word  06,07,06,05
-	.word  03,05,04,06	;RODNEY ROGERS		_______________
+	.word  08,10,06,10
+	.word  05,04,07,07	;BLAKE GRIFFIN
 
-	.word  07,03,06,08
-	.word  06,03,05,05	;BRENT BARRY		_______________
+	.word  08,06,08,08
+	.word  09,05,06,08	;PAUL GEORGE
 
-	.word  08,01,06,01
-	.word  05,01,07,04	;POOH RICHARDS		_______________
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5508,60 +5508,60 @@ player_attribs
 
 ;12 L.A. LAKERS
 
-	.word  07,10,03,10
-	.word  02,09,05,09	;SHAQUILLE O'NEAL
+	.word  09,06,10,09
+	.word  08,04,07,10	;BRYANT
 	
-	.word  08,03,07,08
-	.word  07,04,07,07	;EDDIE JONES		_______________
+	.word  10,06,07,07
+	.word  10,04,10,10	;JOHNSON_M
 
-	.word  09,02,07,01
-	.word  05,01,08,07	;NICK VAN EXEL		6'1"	170 ex thin
+	.word  07,08,07,06
+	.word  10,04,04,07	;RON ARTEST
 
-	.word  08,03,05,08
-	.word  05,03,05,05	;KOBE BRYANT
+	.word  06,08,09,07
+	.word  04,10,06,09	;KAREEM
 	
-	.word  07,06,06,06
-	.word  04,07,05,07	;ROBERT HORRY		6'10"	220 thin
+	.word  08,06,08,09
+	.word  06,04,06,09	;JAMES WORTHY
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;13 MIAMI HEAT
 
-	.word  09,04,07,01
-	.word  08,02,08,08	;TIM HARDAWAY		6'0"	195 reg
+	.word  09,06,08,10
+	.word  09,06,08,10	;DWYANE WADE
 
 	.word  07,09,06,09
-	.word  03,09,04,07	;ALONZO MOURNING	6'10"	240 reg
+	.word  03,09,04,07	;MOURN
 
-	.word  07,06,06,06
-	.word  04,05,05,06	;JAMAL MASHBURN		6'8"	240 thin
+	.word  09,04,07,01
+	.word  08,02,08,08	;THARDAWAY
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  07,07,07,07
+	.word  08,04,07,10	;JIMMY BUTLER
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  07,09,05,09
+	.word  06,08,07,06	;BAM ADEBAYO
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;14 MILWAUKEE BUCKS
 
-	.word  07,07,06,08
-	.word  04,06,04,06	;VIN BAKER		6'11"	234 thin
+	.word  08,10,06,10
+	.word  06,08,07,08	;GIANNIS
+
+	.word  07,05,09,05
+	.word  06,03,06,09	;KHRIS MIDDLETON
+
+	.word  08,05,10,06
+	.word  06,02,06,10	;ALLEN
 
 	.word  07,06,07,06
-	.word  06,03,04,05	;GLENN ROBINSON		_______________
+	.word  06,03,04,05	;GROBINSO
 
-	.word  07,03,07,06
-	.word  06,02,05,05	;RAY ALLEN		_______________
-
-	.word  07,02,06,01
-	.word  05,01,07,04	;SHERMAN DOUGLAS    6'1"  180  fat
-
-	.word  06,06,05,06
-	.word  03,05,03,03	;ARMON GILLIAM      6'9" 245  fat
+	.word  08,01,06,01
+	.word  06,01,07,05	;CASSELL
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
@@ -5569,16 +5569,16 @@ player_attribs
 ;15 MINNESOTA TIMBERWOLVES
 
 	.word  07,05,06,08
-	.word  05,08,04,06	;KEVIN GARNETT		_______________
+	.word  05,08,04,06	;GARNETT
 
-	.word  07,05,07,06
-	.word  06,06,06,05	;TOM GUGLIOTTA		6'10"	240 reg
+	.word  09,08,08,10
+	.word  07,04,06,09	;ANTHONY EDWARDS
 
-	.word  08,03,06,04
-	.word  06,02,07,05	;STEPHON MARBURY	_______________
+	.word  08,04,08,06
+	.word  07,03,10,07	;LAMELO BALL
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  09,04,07,08
+	.word  07,02,05,07	;SPREWELL
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5588,20 +5588,20 @@ player_attribs
 
 ;16 NEW JERSEY NETS
 
-	.word  07,04,05,07
-	.word  07,03,06,06	;KENDALL GILL		6'5"	200 thin
+	.word  09,04,05,04
+	.word  07,03,10,07	;KIDD
+
+	.word  05,07,05,06
+	.word  04,06,04,04	;COLEMAN
 
 	.word  07,02,06,06
-	.word  07,03,05,05	;KERRY KITTLES		_______________
+	.word  07,03,05,05	;KITTLES
 
-	.word  08,01,06,01
-	.word  06,01,07,05	;SAM CASSELL		6'3"	195 thin
+	.word  08,03,06,04
+	.word  06,02,07,05	;MARBURY
 
-	.word  07,04,06,07
-	.word  05,04,05,04	;JIM JACKSON		6'6"	220 reg
-
-	.word  04,08,03,06
-	.word  01,06,03,02	;ERIC MONTROSS		_______________
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
@@ -5609,56 +5609,56 @@ player_attribs
 ;17 NEW YORK KNICKS
 
 	.word  06,09,06,08
-	.word  03,10,04,08	;PATRICK EWING		7'0"	240 reg
-
-	.word  07,07,06,08
-	.word  04,05,06,07	;LARRY JOHNSON		6'7"	250 fat
+	.word  03,10,04,08	;EWING
 
 	.word  08,03,08,03
-	.word  05,03,05,07	;ALAN HOUSTON		6'6"	200 thin
-
-	.word  08,03,07,06
-	.word  07,03,07,08	;JOHN STARKS		6'5"	185 thin
+	.word  05,03,05,07	;HOUSTON
 
 	.word  05,08,04,06
-	.word  04,03,04,05	;CHARLES OAKLEY    6'9" 245 fat
+	.word  04,03,04,05	;OAKLEY
+
+	.word  08,03,07,06
+	.word  07,03,07,08	;STARKS
+
+	.word  09,04,09,03
+	.word  06,01,08,10	;JALEN BRUNSON
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;18 ORLANDO MAGIC
 
-	.word  10,05,08,08
-	.word  08,05,08,08	;ANFERNEE HARDAWAY	6'7"	200 ex thin
+	.word  07,10,03,10
+	.word  02,09,05,09	;ONEAL
 
-	.word  07,08,05,07
-	.word  04,07,05,05	;HORACE GRANT		6'10"	220 reg
+	.word  10,05,08,08
+	.word  08,05,08,08	;AHARDAWAY
 
 	.word  07,04,08,04
-	.word  06,04,04,06	;NICK ANDERSON		6'6"	205 reg
+	.word  06,04,04,06	;NANDERSON
 
-	.word  05,08,05,05
-	.word  03,07,03,03	;RONY SEIKALY		6'11"	252 reg
+	.word  07,10,03,10
+	.word  05,10,03,05	;DWIGHT HOWARD
 
-	.word  07,03,08,03
-	.word  05,03,03,04	;DENNIS SCOTT		6'8"	229 reg
+	.word  07,08,05,07
+	.word  04,07,05,05	;GRANT_HC
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;19 PHILADELPHIA  76ers
 
-	.word  09,02,07,04
-	.word  06,01,07,06	;ALLEN IVERSON		_______________
+	.word  10,03,09,04
+	.word  10,01,07,10	;IVERSON
 
-	.word  05,07,05,06
-	.word  04,06,04,04	;DERRICK COLEMAN	6'10"	260 fat
+	.word  05,10,08,08
+	.word  04,09,05,08	;JOEL EMBIID
 
-	.word  07,03,05,08
-	.word  05,03,04,04	;JERRY STACKHOUSE	_______________
+	.word  05,10,06,09
+	.word  04,07,03,07	;MOSES MALONE
 
-	.word  05,07,04,06
-	.word  03,06,03,03	;CLARENCE WEATHERSPOON	6'7"	240 fat
+	.word  09,06,07,10
+	.word  08,06,07,09	;JULIUS ERVING
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5668,37 +5668,37 @@ player_attribs
 
 ;20 PHOENIX SUNS
 
-	.word  08,02,07,05
-	.word  07,02,08,08	;KEVIN JOHNSON		6'1"	190 ex thin
+	.word  08,04,10,05
+	.word  05,02,07,10	;DEVIN BOOKER
 
-	.word  09,04,05,04
-	.word  07,03,10,07	;JASON KIDD		_______________
+	.word  07,08,06,08
+	.word  04,07,06,08	;BARKLEY
 
-	.word  07,03,07,04
-	.word  06,02,04,06	;WESLEY PERSON    ____________
+	.word  08,02,10,01
+	.word  05,00,10,09	;STEVE NASH
 
-	.word  05,06,05,07
-	.word  04,06,04,05	;DANNY MANNING		6'10"	234 reg
+	.word  07,06,08,07
+	.word  07,03,05,07	;DAN MAJERLE
 
-	.word  06,04,06,07
-	.word  06,02,03,05	;CEDRIC CEBALLOS	6'7"	220 thin
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;21 PORTLAND TRAILBLAZERS
 
+	.word  09,04,10,04
+	.word  05,01,08,10	;DAMIAN LILLARD
+
+	.word  08,03,07,07
+	.word  08,03,08,08	;DREXLER
+
+	.word  05,08,08,06
+	.word  03,06,03,07	;LAMARCUS ALDRIDGE
+
 	.word  06,09,06,07
-	.word  03,08,08,08	;ARVYDAS SABONIS	_______________
-
-	.word  08,03,06,01
-	.word  07,01,08,07	;KENNY ANDERSON		6'1"	168 ex thin 
-
-	.word  06,06,07,06
-	.word  04,06,04,06	;CLIFF ROBINSON		6'10"	225 thin
-
-	.word  07,03,06,08
-	.word  03,03,03,05	;ISIAH RIDER		6'5"	215 thin
+	.word  03,08,08,08	;SABONIS
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5709,16 +5709,16 @@ player_attribs
 ;22 SACRAMENTO KINGS
 
 	.word  07,05,10,03
-	.word  08,02,06,07	;MITCH RICHMOND		6'5"	215 reg
+	.word  08,02,06,07	;RICH
 
-	.word  06,07,04,07
-	.word  03,06,05,05	;BILLY OWENS		6'9"	220 reg
+	.word  05,08,05,05
+	.word  04,08,06,06	;DIVAC
 
-	.word  08,02,06,01
-	.word  06,01,06,05	;MAHMOUD ABDUL-RAUF	6'1"	168 ex thin
+	.word  10,02,07,09
+	.word  08,01,08,07	;SPUD WEBB
 
-	.word  09,01,04,01
-	.word  05,01,07,03	;TYUS EDNEY      ______________
+	.word  05,10,07,08
+	.word  05,07,05,06	;DEMARCUS COUSINS
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5728,57 +5728,57 @@ player_attribs
 
 ;23 SAN ANTONIO SPURS
 
+	.word  05,09,08,07
+	.word  04,10,06,10	;TIM DUNCAN
+
 	.word  07,08,06,09
-	.word  05,10,06,08	;DAVID ROBINSON		7'1"	235 reg
+	.word  05,10,06,08	;DROBINSON
 
-	.word  08,05,08,07
-	.word  06,03,06,07	;SEAN ELLIOTT		6'8"	215 thin
+	.word  10,03,08,03
+	.word  06,01,08,08	;TONY PARKER
 
-	.word  10,02,05,01
-	.word  07,01,09,06	;AVERY JOHNSON		5'11"	175 ex thin
+	.word  08,05,08,06
+	.word  07,02,08,09	;MANU GINOBILI
 
-	.word  07,03,07,01
-	.word  05,01,06,05	;VINNY DEL NEGRO	6'4"	200 thin
-
-	.word  06,02,07,01
-	.word  05,01,05,05	;VERNON MAXWELL		6'4"	190 thin
+	.word  06,06,08,08
+	.word  06,10,05,08	;VICTOR WEMBANYAMA
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;24 SEATTLE SUPERSONICS
 
+	.word  08,06,10,08
+	.word  06,06,06,10	;DURANT
+
 	.word  10,03,08,01
-	.word  10,02,08,09	;GARY PAYTON		6'4"	190 ex thin
+	.word  10,02,08,09	;PAYTON
+
+	.word  10,07,06,09
+	.word  07,03,09,07	;RUSSELL WESTBROOK
 
 	.word  08,08,06,10
-	.word  06,08,04,08	;SHAWN KEMP		6'10"	245 reg
+	.word  06,08,04,08	;KEMP
 
-	.word  07,03,07,01
-	.word  07,02,05,07	;HERSEY HAWKINS		6'3"	190 thin
-
-	.word  06,06,07,05
-	.word  06,04,05,06	;DETLEF SCHREMPF	6'10"	230 thin
-
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  09,04,09,06
+	.word  08,04,07,10	;SHAI GILGEOUS-ALEXANDER
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;25 TORONTO RAPTORS
 
-	.word  08,01,06,01
-	.word  06,01,07,06	;DAMON STOUDAMIRE	_______________
+	.word  09,06,08,10
+	.word  06,04,06,09	;VINCE CARTER
 
-	.word  05,05,07,05
-	.word  05,04,05,05	;WALT WILLIAMS		6'8"	230 reg
+	.word  07,08,09,07
+	.word  10,05,05,10	;KAWHI LEONARD
 
-	.word  07,03,04,07
-	.word  03,08,03,05	;MARCUS CAMBY		_______________
+	.word  06,07,08,07
+	.word  04,07,04,07	;CHRIS BOSH
 
-	.word  04,07,03,06
-	.word  03,06,03,02	;POPEYE JONES		6'8"	250 reg
+	.word  08,05,08,08
+	.word  05,02,06,08	;DEMAR DEROZAN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5789,16 +5789,16 @@ player_attribs
 ;26 UTAH JAZZ
 
 	.word  07,10,07,09
-	.word  06,06,06,07	;KARL MALONE		6'9"	256 fat
+	.word  06,06,06,07	;MALONE_K
 
 	.word  08,02,08,01
-	.word  10,01,10,09	;JOHN STOCKTON		6'1"	175 ex thin
+	.word  10,01,10,09	;STOCKTON
         
 	.word  07,03,08,02
-	.word  07,02,06,06	;JEFF HORNACEK		6'4"	190 reg
+	.word  07,02,06,06	;HORNACEK
 
-	.word  05,06,05,06
-	.word  05,06,04,03	;CHRIS MORRIS		6'8"	220 reg
+	.word  08,03,09,04
+	.word  06,01,10,08	;PETE MARAVICH
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5808,14 +5808,14 @@ player_attribs
 
 ;27 VANCOUVER GRIZZLIES
 
-	.word  03,08,03,06
-	.word  02,08,02,02	;BRYANT REEVES		_______________
+	.word  08,02,06,01
+	.word  06,01,06,05	;ABDULRAU
 
-	.word  08,03,05,01
-	.word  07,02,07,06	;GREG ANTHONY		6'2"	185 ex thin
+	.word  07,06,08,05
+	.word  05,02,05,08	;DESMOND BANE
 
-	.word  06,03,04,04
-	.word  04,04,03,07	;BLUE EDWARDS		6'4"	228 reg
+	.word  05,08,08,07
+	.word  03,08,07,07	;PAU GASOL
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5828,20 +5828,20 @@ player_attribs
 
 ;28 WASHINGTON BULLETS
 
-	.word  07,08,06,08
-	.word  05,05,06,07	;CHRIS WEBBER		6'10"	260 fat
-
-	.word  08,03,06,01
-	.word  07,01,09,07	;ROD STRICKLAND		6'3"	185 reg
-
 	.word  06,08,05,07
-	.word  03,07,04,06	;JUWAN HOWARD		_______________
+	.word  03,07,04,06	;JHOWARD
 
-	.word  04,09,03,06
-	.word  02,09,01,03	;GHEORGHE MURESAN	7'7"	315 thin
+	.word  08,05,09,06
+	.word  05,02,06,08	;BRADLEY BEAL
 
-	.word  06,04,06,05
-	.word  05,04,03,05	;TRACY MURRAY        6'7" 228 reg
+	.word  07,08,06,08
+	.word  05,05,06,07	;WEBBER
+
+	.word  07,09,07,09
+	.word  06,10,04,07	;ANTHONY DAVIS
+
+	.word  00,00,00,00
+	.word  00,00,00,00
 ;DJT End
 
 ;FIX!!!
@@ -5890,35 +5890,35 @@ player_attribs
 	.ref	MARBURY,MINOR,RILEY,WALLACE
 
 name_sort
- .long	BLAYLOCK,MUTUMBO,LAETTNER,SSMITH, KNORMAN		;00 HAWKS
- .long	FOX,WALKER,RADJA,BARROS,BROWN					;01 CELTICS
- .long	RICE,MASON,DIVAC,CURRY, ZIDEK					;02 HORNETS
- .long	JORDAN,PIPPEN,RODMAN,KUKOC,LONGLEY				;03 BULLS
- .long	BRANDON,CMILLS,PHILLS,THILL,FERRY				;04 CAVALIERS
- .long	FINLEY,BRADLEY,DANILOVI,PACK,HARPER_D			;05 MAVERICKS
- .long	ELLIS,D_ELLIS,MCDYESS,MARCIULO,DELLIS			;06 NUGGETS
- .long	GHILL,DUMARS,THORPE,TMILLS, AUGMON 				;07 PISTONS
- .long	SPREWELL,MULLIN,JSMITH, MULLIN, MULLIN			;08 WARRIORS
- .long	OLAJUWON,BARKLEY,DREXLER,WILLIS, WILLIS 		;09 ROCKETS
- .long	MILLER,MJACKSON,SMITS,DDAVIS,ROSE				;10 PACERS
- .long	VAUGHT,RROGERS,BBARRY,PRICHARD, LMURRAY			;11 CLIPPERS
- .long	ONEAL,EJONES,VANEXEL,BRYANT,HORRY				;12 LAKERS
- .long	THARDAWAY,MOURN,MASH, MASH , MASH				;13 HEAT
- .long	BAKER,GROBINSO, ALLEN ,DOUGLAS,GILLIAM			;14 BUCKS
- .long	GARNETT,GUGLI2, MARBURY , MARBURY , MARBURY		;15 TIMBERWOLVES
- .long	GILL, KITTLES ,CASSELL,JACK,MONTROSS			;16 NETS
- .long	EWING,JOHNSN_L,HOUSTON,STARKS,OAKLEY			;17 KNICKS
- .long	AHARDAWAY,GRANT_HC,NANDERSON,SEIKALY,DSCOTT		;18 MAGIC
- .long	IVERSON ,COLEMAN,STACKHOU,WEATHSPN, MINOR		;19 76ers
- .long	KJOHNSON,KIDD,WPERSON,MANNING,CEBALLOS			;20 SUNS
- .long	SABONIS,KANDERSON,CROBINSON,RIDER, CHILDRES		;21 TRAILBLAZERS
- .long	RICH,BOWENS,ABDULRAU,EDNEY, BGRANT 				;22 KINGS
- .long	DROBINSON,ELLIOT2,AJOHNSON,DELNEGRO,VMAXWELL	;23 SPURS
- .long	PAYTON,KEMP,HAWKINS,SCHREMPF, SFORD				;24 SUPERSONICS
- .long	STOUDAMI,WWILLIAM, CAMBY ,PJONES, CROGERS 		;25 RAPTORS
- .long	MALONE_K,STOCKTON,HORNACEK,CMORRIS, CMORRIS		;26 JAZZ
- .long	BREEVES,ANTHONY,EDWARDS, EDWARDS , EDWARDS		;27 GRIZZLIES
- .long	WEBBER,STRICKLA,JHOWARD,MURESAN,TMURRAY			;28 BULLETS
+ .long	YOUNG,WILKINS,BLAYLOCK,KORVER,KORVER		;00 ATL
+ .long	BIRD,MCHALE,PIERCE_NP,TATUM,PARISH		;01 BOS
+ .long	JOHNSN_L,RICE,CURRY,BOGUES,MASH		;02 CHA
+ .long	JORDAN,PIPPEN,RODMAN,ROSE,KERR		;03 CHI
+ .long	LEBRON,IRVING,MITCHE_NP,DAUGHE_NP,DAUGHE_NP		;04 CLE
+ .long	NOWITZKI,LUKA,FINLEY,BRADLEY,BRADLEY		;05 DAL
+ .long	JOKIC,MURRAY_NP,MUTUMBO,ANTHONY,BILLUPS		;06 DEN
+ .long	THOMAS_NP,DUMARS,GHILL,LAIMBE_NP,WALLAC_NP		;07 DET
+ .long	CURRY,THOMPS_NP,MULLIN,MULLIN,MULLIN		;08 GSW
+ .long	OLAJUWON,HARDEN,YAO,MCGRADY,MCGRADY		;09 HOU
+ .long	MILLER,TYRESE,ROSE,SMITS,CLARK		;10 IND
+ .long	PAUL_NP,GRIFFIN,GEORGE_NP,GEORGE_NP,GEORGE_NP		;11 LAC
+ .long	BRYANT,JOHNSON_M,ARTEST,KAREEM,WORTHY_NP		;12 LAL
+ .long	WADE,MOURN,THARDAWAY,BUTLER,ADEBAYO		;13 MIA
+ .long	GIANNIS,MIDDLETON,ALLEN,GROBINSO,CASSELL		;14 MIL
+ .long	GARNETT,EDWARDS,BALL_NP,SPREWELL,SPREWELL		;15 MIN
+ .long	KIDD,COLEMAN,KITTLES,MARBURY,MARBURY		;16 NJN
+ .long	EWING,HOUSTON,OAKLEY,STARKS,BRUNSON		;17 NYK
+ .long	ONEAL,AHARDAWAY,NANDERSON,HOWARD,GRANT_HC		;18 ORL
+ .long	IVERSON,EMBIID,MALONE_NP,ERVING,ERVING		;19 PHI
+ .long	BOOKER,BARKLEY,NASH,MAJERLE,MAJERLE		;20 PHX
+ .long	LILLARD,DREXLER,ALDRIDGE,SABONIS,SABONIS		;21 POR
+ .long	RICH,DIVAC,WEBB_NP,COUSINS,COUSINS		;22 SAC
+ .long	DUNCAN,DROBINSON,PARKER,GINOBILI,WEMBY		;23 SAS
+ .long	DURANT,PAYTON,WESTBROOK,KEMP,SHAI		;24 SEA
+ .long	CARTER,LEONARD,BOSH,DEROZAN,DEROZAN		;25 TOR
+ .long	MALONE_K,STOCKTON,HORNACEK,MARAVICH,MARAVICH		;26 UTA
+ .long	ABDULRAU,BANE,GASOL,GASOL,GASOL		;27 VAN
+ .long	JHOWARD,BEAL,WEBBER,DAVIS_NP,DAVIS_NP		;28 WAS
  .long	0
 
 ;Removed
@@ -5967,35 +5967,35 @@ hnrxxtbl	.word	57,148,251,342
 ;-----------------------------------------------------------------------------
 team_sqaud_cnts
 ;DJT Start
-	.word	12	;ATLANTA
-	.word	20	;BOSTON
-	.word	12	;CHARLOTTE
-	.word	20	;CHICAGO
-	.word	20	;CLEVELAND
-	.word	20	;DALLAS
-	.word	12	;DENVER
-	.word	12	;DETROIT
-	.word	6	;GOLDEN STATE
-	.word	12	;HOUSTON
-	.word	20	;INDIANA
-	.word	12	;L.A. CLIPPERS
-	.word	20	;L.A. LAKERS
-	.word	6	;MIAMI
-	.word	20	;MILWAUKEE
-	.word	6	;MINNESOTTA
-	.word	20	;NEW JERSEY
-	.word	20	;NEW YORK
-	.word	20	;ORLANDO
-	.word	12	;PHILADELPHIA
-	.word	20	;PHOENIX
-	.word	12	;PORTLAND
-	.word	12	;SACRAMENTO
-	.word	20	;SAN ANTONIO
-	.word	12	;SEATTLE
-	.word	12	;TORONTO
-	.word	12	;UTAH
-	.word	6	;VANCOUVER
-	.word	20	;WASHINGTON
+	.word	12	;ATL (4 players)
+	.word	20	;BOS (5 players)
+	.word	20	;CHA (5 players)
+	.word	20	;CHI (5 players)
+	.word	12	;CLE (4 players)
+	.word	12	;DAL (4 players)
+	.word	20	;DEN (5 players)
+	.word	20	;DET (5 players)
+	.word	6	;GSW (3 players)
+	.word	12	;HOU (4 players)
+	.word	20	;IND (5 players)
+	.word	6	;LAC (3 players)
+	.word	20	;LAL (5 players)
+	.word	20	;MIA (5 players)
+	.word	20	;MIL (5 players)
+	.word	12	;MIN (4 players)
+	.word	12	;NJN (4 players)
+	.word	20	;NYK (5 players)
+	.word	20	;ORL (5 players)
+	.word	12	;PHI (4 players)
+	.word	12	;PHX (4 players)
+	.word	12	;POR (4 players)
+	.word	12	;SAC (4 players)
+	.word	20	;SAS (5 players)
+	.word	20	;SEA (5 players)
+	.word	12	;TOR (4 players)
+	.word	12	;UTA (4 players)
+	.word	6	;VAN (3 players)
+	.word	12	;WAS (4 players)
 
 ;-----------------------------------------------------------------------------
 ;-----------------------------------------------------------------------------

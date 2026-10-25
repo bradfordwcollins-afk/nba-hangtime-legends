@@ -56,7 +56,7 @@
 	.def	done_creating			;exit flag for CREATE PLAYER
 	.def	fog_obj_ptr
 	.def	yes_no_buttons_ptr
-	.def	restart_clock_timer,stop_clock_timer
+;[pruned] .def	restart_clock_timer,stop_clock_timer
 	.def	stop_clock
 	.def	p1_slide_box_flag,p2_slide_box_flag
 	.def	p3_slide_box_flag,p4_slide_box_flag

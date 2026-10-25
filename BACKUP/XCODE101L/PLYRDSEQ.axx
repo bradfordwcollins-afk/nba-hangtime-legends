@@ -31,7 +31,7 @@
 	.include	"dunks.glo"
 	.include	"dunks2.glo"
 
-	.def	zwilpal,PLYRFX2_P,PLYRFX3_P,XEWILPAL
+	.def	PLYRFX3_P,XEWILPAL
 	.def	PLYRFIX_P
 	.def	NEWILFIX
 	.def	NEWILPAL

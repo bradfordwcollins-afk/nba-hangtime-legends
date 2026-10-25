@@ -110,7 +110,7 @@
 	.ref	BALLBAK1
 
 	.def	plate1_objs,plate2_objs
-	.def	tm1_cur_pos,tm2_cur_pos
+;[pruned] .def	tm1_cur_pos,tm2_cur_pos
 	.def	update_statbox_images
 	.def	create_menu,create_pin_nbr_objs
 	.def	pin_nbr_table,name_table
@@ -118,10 +118,10 @@
 	.def	move_cursor,update_cursor
 	.def	button_actions
 	.def	scrnrel_off
-	.def	tm1_random_cycle_cnt,tm2_random_cycle_cnt
-	.def	tm1_random_team_nbr,tm2_random_team_nbr
+;[pruned] .def	tm1_random_cycle_cnt,tm2_random_cycle_cnt
+;[pruned] .def	tm1_random_team_nbr,tm2_random_team_nbr
 	.def	create_plyr
-	.def	p1_pin_nbr,p2_pin_nbr,p3_pin_nbr,p4_pin_nbr
+;[pruned] .def	p1_pin_nbr,p2_pin_nbr,p3_pin_nbr,p4_pin_nbr
 	.def	create_and_watch_credits
 	.def	create_credit_plate
 	.def	cur_pos			;cursor pos. 0,1 or 2 on OPTIONS scrn

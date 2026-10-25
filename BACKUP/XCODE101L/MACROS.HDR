@@ -9,6 +9,11 @@ SCRIPT1	.macro S
 	calla	script_play1
 	.endm
 
+SXL	.macro	lbl,w1,w2,w3	; SX without .def (label used only in its own file)
+:lbl:
+	.word	:w1:,:w2:,:w3:
+	.endm
+
 SX	.macro	lbl,w1,w2,w3
 	.def	:lbl:
 :lbl:

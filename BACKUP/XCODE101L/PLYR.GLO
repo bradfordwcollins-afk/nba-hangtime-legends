@@ -1,7 +1,7 @@
 ;pals globl
 ;imgs global
 	.globl	side_p
-	.global	sidebot
+;[pruned] .global	sidebot
 
 	.globl  BRUSH_R_P
 	.globl  HINT_B_P

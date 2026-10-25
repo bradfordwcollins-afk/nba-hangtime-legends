@@ -59,7 +59,7 @@
 
 	.if	IMGVIEW
 	.else
-	.def	W5ST1
+;[pruned] .def	W5ST1
 	.endif
 
 M_YF	.equ	08000H	;Y free (OFLAGS)

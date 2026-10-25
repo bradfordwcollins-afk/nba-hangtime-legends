@@ -2,9 +2,9 @@
 	.global	NSHOTCLK
 	.globl	MUGPLAT_P
 	.global	MUGPLAT
-	.global	TUBEPIEC
+;[pruned] .global	TUBEPIEC
 	.globl	ledw
-	.global	colon
+;[pruned] .global	colon
 	.globl	scorep
 	.global	cpu
 	.global	freeply
@@ -24,14 +24,14 @@
 	.global	font68
 	.global	font69
 	.globl	scorepw
-	.global	font60w
+;[pruned] .global	font60w
 	.globl	scoreprd
-	.global	font60r
+;[pruned] .global	font60r
 	.globl	scorepg
-	.global	font60g
+;[pruned] .global	font60g
 	.global	font6?
 	.globl	ledr
-	.global	font90r
+;[pruned] .global	font90r
 	.global	S_LED_0
 	.global	S_LED_1
 	.global	S_LED_2
@@ -42,9 +42,9 @@
 	.global	S_LED_7
 	.global	S_LED_8
 	.global	S_LED_9
-	.global	S_LED_MAX
+;[pruned] .global	S_LED_MAX
 	.globl	cred_p
-	.global	CRED_00
+;[pruned] .global	CRED_00
 	.globl	TURBO_B_P
 	.global	TURBO_01b
 	.globl	TURBO_Y_P
@@ -53,4 +53,4 @@
 	.global	TURBO_01g
 	.globl	TURBO_R_P
 	.global	TURBO_01r
-	.global	S_LED_0r
+;[pruned] .global	S_LED_0r

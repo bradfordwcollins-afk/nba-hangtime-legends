@@ -2649,7 +2649,7 @@ cnmyd5l_t	.word	2-1
 	.def	Horry_h
 	.def	Smits_h
 	.def	Campbell_h
-	.def	Baker_h
+;[pruned] .def	Baker_h
 	.def	Rider_h
 	.def	Morris_h
 	.def	Mason_h

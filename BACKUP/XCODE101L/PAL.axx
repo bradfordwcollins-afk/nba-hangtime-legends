@@ -91,6 +91,75 @@
 	.def	TERM_P
 	.def	WALKER_P
 	.def	ELLIS_P
+	.def	GIAN_P
+	.def	KAR_P
+	.def	STC_P
+	.def	KDU_P
+	.def	LBJ_P
+	.def	LUK_P
+	.def	XMCH_P
+	.def	XPIE_P
+	.def	XTAT_P
+	.def	XPAR_P
+	.def	XBRU_P
+	.def	XIVE_P
+	.def	XEMB_P
+	.def	XMMA_P
+	.def	XERV_P
+	.def	XCAR_P
+	.def	XKAW_P
+	.def	XBOS_P
+	.def	XDER_P
+	.def	XDRO_P
+	.def	XKYR_P
+	.def	XMIT_P
+	.def	XDAU_P
+	.def	XISI_P
+	.def	XLAI_P
+	.def	XBWA_P
+	.def	XHAL_P
+	.def	XCLA_P
+	.def	XMID_P
+	.def	XALL_P
+	.def	XTAE_P
+	.def	XWIL_P
+	.def	XKOR_P
+	.def	XBOG_P
+	.def	XWAD_P
+	.def	XBUT_P
+	.def	XBAM_P
+	.def	XBEA_P
+	.def	XADA_P
+	.def	XJOK_P
+	.def	XJMU_P
+	.def	XMEL_P
+	.def	XBIL_P
+	.def	XGAR_P
+	.def	XANT_P
+	.def	XLAM_P
+	.def	XWES_P
+	.def	XLIL_P
+	.def	XALD_P
+	.def	XMAR_P
+	.def	XKLA_P
+	.def	XCCP_P
+	.def	XGRI_P
+	.def	XPGE_P
+	.def	XART_P
+	.def	XWOR_P
+	.def	XBOO_P
+	.def	XMAJ_P
+	.def	XCOU_P
+	.def	XDIR_P
+	.def	XHAR_P
+	.def	XYAO_P
+	.def	XTMA_P
+	.def	XBAN_P
+	.def	XGAS_P
+	.def	XDUN_P
+	.def	XPRK_P
+	.def	XMAN_P
+	.def	XWEM_P
 ;AMM end
 
 

@@ -15,35 +15,35 @@
 	.globl	A4P
 	.globl	maximBMOD
 	.globl	hangtimeBMOD
-	.globl	RPALS
-	.globl	REDBAR_P
-	.globl	BLUBAR_P
-	.globl	TOPBAR2P
-	.globl	B50YP
+;[pruned] .globl	RPALS
+;[pruned] .globl	REDBAR_P
+;[pruned] .globl	BLUBAR_P
+;[pruned] .globl	TOPBAR2P
+;[pruned] .globl	B50YP
 	.globl	VSSCRBMOD
-	.globl	statPALS
-	.globl	TS_BOTP
-	.globl	TS_MIDP
-	.globl	TS_TOPP
-	.globl	STATRP
-	.globl	STATWP
-	.globl	TOPBAR2P
-	.globl	STATBP
-	.globl	BASTYP
-	.globl	BAS7WP
-	.globl	SLBK8_P
-	.globl	SLBK7_P
-	.globl	SLBK6_P
-	.globl	SLBK1_P
-	.globl	SLBK2_P
-	.globl	SLBK3_P
-	.globl	SLBK4_P
-	.globl	SLBK5_P
-	.globl	HTSBVP
-	.globl	FIN_SCORP
-	.globl	TUBELBP
-	.globl	FIN_PLYRP
-	.globl	TUBE_LR_P
-	.globl	FIN_TEXTP
-	.globl	teamstatBMOD
+;[pruned] .globl	statPALS
+;[pruned] .globl	TS_BOTP
+;[pruned] .globl	TS_MIDP
+;[pruned] .globl	TS_TOPP
+;[pruned] .globl	STATRP
+;[pruned] .globl	STATWP
+;[pruned] .globl	TOPBAR2P
+;[pruned] .globl	STATBP
+;[pruned] .globl	BASTYP
+;[pruned] .globl	BAS7WP
+;[pruned] .globl	SLBK8_P
+;[pruned] .globl	SLBK7_P
+;[pruned] .globl	SLBK6_P
+;[pruned] .globl	SLBK1_P
+;[pruned] .globl	SLBK2_P
+;[pruned] .globl	SLBK3_P
+;[pruned] .globl	SLBK4_P
+;[pruned] .globl	SLBK5_P
+;[pruned] .globl	HTSBVP
+;[pruned] .globl	FIN_SCORP
+;[pruned] .globl	TUBELBP
+;[pruned] .globl	FIN_PLYRP
+;[pruned] .globl	TUBE_LR_P
+;[pruned] .globl	FIN_TEXTP
+;[pruned] .globl	teamstatBMOD
 	.globl	finalresBMOD

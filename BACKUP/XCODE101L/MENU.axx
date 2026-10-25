@@ -193,7 +193,7 @@
 
 	.globl	_rtc_seconds, _rtc_day, _rtc_date, _rtc_month
 	.globl	_rtc_minutes, _rtc_hours, _rtc_year
-	.globl	_tseconds,_tminutes,_thours,_tday,_tdate,_tmonth,_tyear
+	.globl	_tseconds,_tminutes,_thours,_tdate,_tmonth
 	.globl	_serial_number,_month,_day,_year,_man_date
 
 	.bss	_setup_mess,10*16	;Used for built messages

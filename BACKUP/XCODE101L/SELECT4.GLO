@@ -32,7 +32,7 @@
 	.global  WILLIS
 	.global  STOUDAMI
 	.global  PAYTON
-	.global  RESPERT
+;[pruned] .global  RESPERT
 	.globl  BAST_R_P
 	.global  GILL
 	.global  VANEXEL
@@ -58,7 +58,7 @@
 	.global  ANTHONY
 	.global  TMURRAY
 	.global  RIDER
-	.global  KERR
+;[pruned] .global  KERR
 	.global  CMILLS
 	.global  SSMITH
 	.global  GROBINSO
@@ -71,7 +71,7 @@
 	.global  ATTBAR04
 	.global  ATTBAR05
 	.global  ATTBAR06
-	.global  EMURDOCK
+;[pruned] .global  EMURDOCK
 	.global  BRSHGWKP
 	.global  ATTBAR07
 	.globl  BRSHGYGP
@@ -88,7 +88,7 @@
 	.global  CHALENG
 	.global  STOCKTON
 	.global  RODMAN
-	.global  OBANNON
+;[pruned] .global  OBANNON
 	.global  RICE
 	.global  MALONE_K
 	.globl  BRSHGYOP
@@ -97,7 +97,7 @@
 	.global  BRADLEY
 	.global  DIVAC
 	.global  chalneed_l
-	.global  CHEANEY
+;[pruned] .global  CHEANEY
 	.global  FOX
 	.global  CHILDRES
 	.global  PRESSTURB
@@ -112,7 +112,7 @@
 	.global  MANNING
 	.global  getready
 	.global  WPERSON
-	.global  KONCAK
+;[pruned] .global  KONCAK
 	.global  THILL
 	.global  JOHNSN_L
 	.global  AUGMON
@@ -141,7 +141,7 @@
 	.global  ABDULRAU
 	.global  FERRY
 	.global  city_det
-	.global  TISDALE
+;[pruned] .global  TISDALE
 	.global  GRANT_HC
 	.global  city_lac
 	.global  ROSE
@@ -159,7 +159,7 @@
 	.global  city_lal
 	.globl  BST18Y_P
 	.global  city_ind
-	.global  BENOIT
+;[pruned] .global  BENOIT
 	.global  SMITS
 	.global  STRICKLA
 	.global  city_gol
@@ -189,11 +189,11 @@
 	.global  PHILLS
 	.global  CROGERS
 	.global  PRESSBUTT
-	.global  BAKER
+;[pruned] .global  BAKER
 	.globl  PRESS_P
 	.global  DELLIS
 	.global  city_van
-	.global  JSMITH
+;[pruned] .global  JSMITH
 	.global  AJOHNSON
 	.global  SPREWELL
 	.global  city_orl
@@ -205,7 +205,7 @@
 	.global  EWING
 	.global  city_por
 	.global  MASON
-	.global  CAMPBELL
+;[pruned] .global  CAMPBELL
 	.global  city_was
 	.global  CORECTgrn
 	.globl  BSTGWWOP

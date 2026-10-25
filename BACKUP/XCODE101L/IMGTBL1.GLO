@@ -1,59 +1,59 @@
 	.globl	ewing_f
-	.globl	EWING_P
+;[pruned] .globl	EWING_P
 	.globl	stock_f
-	.globl	STOCK_P
+;[pruned] .globl	STOCK_P
 	.globl	shiek_f
-	.globl	SHEIK_p
+;[pruned] .globl	SHEIK_p
 	.globl	kmalone_f
-	.globl	MALONE_P
+;[pruned] .globl	MALONE_P
 	.globl	Person_f
-	.globl	PERSON_p
+;[pruned] .globl	PERSON_p
 	.globl	Augmon_f
-	.globl	AUGMON_p
+;[pruned] .globl	AUGMON_p
 	.globl	Benja_f
-	.globl	BENJA_p
+;[pruned] .globl	BENJA_p
 	.globl	Cole_f
-	.globl	COLE_p
+;[pruned] .globl	COLE_p
 	.globl	Drex_f
-	.globl	DREXLER_p
+;[pruned] .globl	DREXLER_p
 	.globl	Elliot_f
-	.globl	ELLIOT_p
+;[pruned] .globl	ELLIOT_p
 	.globl	Hrdaway_f
-	.globl	HARDAW_p
-	.globl	Miller_f
-	.globl	MILLER_P
+;[pruned] .globl	HARDAW_p
+;[pruned] .globl	Miller_f
+;[pruned] .globl	MILLER_P
 	.globl	Mutumbo_f
-	.globl	MUTUMBO_P
+;[pruned] .globl	MUTUMBO_P
 	.globl	Oakley_f
-	.globl	OAKLEY_P
+;[pruned] .globl	OAKLEY_P
 	.globl	Hakeem_f
-	.globl	HAKEEM_P
+;[pruned] .globl	HAKEEM_P
 	.globl	Rice_f
-	.globl	RICE_P
+;[pruned] .globl	RICE_P
 	.globl	Robins_f
-	.globl	ROBINSONP
+;[pruned] .globl	ROBINSONP
 	.globl	schremp_f
-	.globl	SCHREMP_P
+;[pruned] .globl	SCHREMP_P
 	.globl	smith_f
-	.globl	SMITH_P
-	.globl	tisdale_f
-	.globl	TISDALE_P
+;[pruned] .globl	SMITH_P
+;[pruned] .globl	tisdale_f
+;[pruned] .globl	TISDALE_P
 	.globl	laet_f
-	.globl	LAET_P
+;[pruned] .globl	LAET_P
 	.globl	hawkins_f
-	.globl	HAWKINS_P
+;[pruned] .globl	HAWKINS_P
 	.globl	johnson_f
-	.globl	JOHNSON_P
+;[pruned] .globl	JOHNSON_P
 	.globl	divac_f
-	.globl	DIVAC_P
+;[pruned] .globl	DIVAC_P
 	.globl	kemp_f
-	.globl	KEMP_P
+;[pruned] .globl	KEMP_P
 	.globl	pippin_f
-	.globl	PIPPIN_P
+;[pruned] .globl	PIPPIN_P
 	.globl	gill_f
-	.globl	GILL_P
+;[pruned] .globl	GILL_P
 	.globl	mullin_f
-	.globl	MULLIN_P
+;[pruned] .globl	MULLIN_P
 	.globl	BEdwrd_f
 	.globl	EDWARD_P
 	.globl	gug_f

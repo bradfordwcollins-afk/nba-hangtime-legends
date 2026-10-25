@@ -33,7 +33,7 @@
 ******************************************************************************
 
 ;	.def	name_speech
-	.def	pass_speech
+;[pruned] .def	pass_speech
 	.def	welcome_sc
 
 	.ref	ballobj_p
@@ -118,130 +118,130 @@
  SX	cheer4_snd,  01004H,110,01d5H
 
  SX	crwdbed_kill,07102H,25, 0dcH
- SX	crwdbed_tune,07002H,799,0ddH
- SX	crwdbd2_tune,07002H,799,0dbH
+ SXL	crwdbed_tune,07002H,799,0ddH
+ SXL	crwdbd2_tune,07002H,799,0dbH
  SX	crwd_arbl_sp,02404H,135,01edH	;f0
 
- SX	midway_sp,   0200DH,67, 0b00H	;"Midway Presents"
+ SXL	midway_sp,   0200DH,67, 0b00H	;"Midway Presents"
 ;DJT Start
- SX	max_hngtm_sp,0200DH,93, 07beH	;"Super Maximum Hangtime"
+ SXL	max_hngtm_sp,0200DH,93, 07beH	;"Super Maximum Hangtime"
 ; SX	max_hngtm_sp,0200DH,93, 0b8fH	;"maximum hangtime"
 ; SX	nba_hngtm_sp,0200DH,99, 0b02H	;"nba hangtime"
 ;DJT End
  SX	at_hlftme_sp,0150DH,61, 0adcH   ;"We're at halftime!"
- SX	gm_undrwy_sp,0150DH,70, 0adbH	;"And this game is underway!"
+ SXL	gm_undrwy_sp,0150DH,70, 0adbH	;"And this game is underway!"
  SX	heres_tip_sp,0150DH,61, 0b20H	;"Here's the tip"
  SX	overtime_sp, 0200DH,60, 0addH	;"Overtime!"
  SX	showtm,      0250DH,75, 0a9bH	;"Showtime!"
- SX	tst_triva_sp,0100DH,76, 0afdH	;"Test your trivia knowledge"
+ SXL	tst_triva_sp,0100DH,76, 0afdH	;"Test your trivia knowledge"
 
 
- SX	has_sp,      0100DH,20, 0af1H	;"Has"
+ SXL	has_sp,      0100DH,20, 0af1H	;"Has"
 ;DJT Start
- SX	with_sp,     0100DH,16, 0aefH	;"With"
- SX	leadng_by_sp,0100DH,56, 084eH   ;"Leading by"
- SX	leads_by_sp, 0100DH,51, 084bH   ;"Leads by"
- SX	lead_by_sp,  0100DH,41, 0849H   ;"Lead by"
- SX	out_front_sp,0100DH,48, 0850H   ;"Out in front" 
- SX	by_sp,       0100DH,18, 0851H   ;"By"
+ SXL	with_sp,     0100DH,16, 0aefH	;"With"
+ SXL	leadng_by_sp,0100DH,56, 084eH   ;"Leading by"
+ SXL	leads_by_sp, 0100DH,51, 084bH   ;"Leads by"
+ SXL	lead_by_sp,  0100DH,41, 0849H   ;"Lead by"
+ SXL	out_front_sp,0100DH,48, 0850H   ;"Out in front" 
+ SXL	by_sp,       0100DH,18, 0851H   ;"By"
 ;DJT End
- SX	have_lead_sp,0100DH,57, 084fH   ;"Have the lead"
- SX	take_lead_sp,0100DH,49, 084cH	;"take the lead"
- SX	taks_lead_sp,0100DH,56, 084dH	;"takes the lead"
+ SXL	have_lead_sp,0100DH,57, 084fH   ;"Have the lead"
+ SXL	take_lead_sp,0100DH,49, 084cH	;"take the lead"
+ SXL	taks_lead_sp,0100DH,56, 084dH	;"takes the lead"
 
 ;DJT Start
- SX	longway_sp,  0100DH,73, 086eH	;"A long way to go"
- SX	downby_sp,   0100DH,36, 0845H	;"Down by"
- SX	behind_by_sp,0100DH,49, 0853H	;"Behind by"
- SX	catchg_up_sp,0100DH,41, 0873H	;"Catching up"
+ SXL	longway_sp,  0100DH,73, 086eH	;"A long way to go"
+ SXL	downby_sp,   0100DH,36, 0845H	;"Down by"
+ SXL	behind_by_sp,0100DH,49, 0853H	;"Behind by"
+ SXL	catchg_up_sp,0100DH,41, 0873H	;"Catching up"
 
- SX	tiegm_sp,    0100DH,44, 0864H	;"Tie game"
- SX	tiethegm_sp, 0100DH,51, 0869H	;"Tie the game"
- SX	tied_at_sp,  0100DH,69, 0866H	;"tied at"
+ SXL	tiegm_sp,    0100DH,44, 0864H	;"Tie game"
+ SXL	tiethegm_sp, 0100DH,51, 0869H	;"Tie the game"
+ SXL	tied_at_sp,  0100DH,69, 0866H	;"tied at"
 ;DJT End
  SX	minute_sp,   0100DH,59, 0ab4H	;"One minute to go"
 
- SX     vs_sp,       0100DH,47, 0509H	;"Versus"
- SX	wingame_sp,  0200DH,45, 0863H	;"Win the game!"
+ SXL     vs_sp,       0100DH,47, 0509H	;"Versus"
+ SXL	wingame_sp,  0200DH,45, 0863H	;"Win the game!"
  SX	baddec_sp,   0100DH,56, 09ebH	;"Bad decision!"
  SX	ohmy,  	     0100DH,62, 096fH	;"Oh My!"
- SX	fancy,	     0100DH,51, 0ae6H	;"Fancy Footwork!"
- SX	matchup_sp,  0100DH,65, 0ab1H	;"Tonight's matchup"
- SX	wideopen_sp, 0100DH,41, 0939H	;"Wide open!"
- SX	no_prsure_sp,0100DH,48, 0a3dH	;"No pressure"
- SX	opn_for_3_sp,0100DH,69, 0b0aH	;"Open for three!"
- SX	all_alone_sp,0100DH,42, 091cH	;"All alone.."
- SX	its_good_sp, 0130DH,61, 0819H	;"It's good!"
- SX	it_is_sp,    0100DH,65, 0816H	;"It is.."
- SX	off_in_time, 0100DH,93, 0814H	;"Got it away in time"
- SX	shrt_rng_sp, 0100DH,56, 07ebH	;"From short range"
- SX	finese_it_sp,0100DH,47, 080fH	;"Finesses it!"
- SX	frm_post_sp, 0100DH,41, 07e4H	;"From the post"
- SX	baby_hook_sp,0100DH,47, 0802H	;"A baby hook!"
- SX	half_hook_sp,0100DH,46, 0804H	;"A half hook"
- SX	hook_shot_sp,0100DH,41, 0805H	;"A hook shot"
- SX	sky_hook_sp, 0100DH,74, 083fH	;"Launches a sky hook"
- SX	sky_hook2_sp,0100DH,72, 0b09H	;"With the sky hook!"
- SX	rgt_hndr_sp, 0100DH,69, 0830H	;"A running right hander"
- SX	lft_hndr_sp, 0100DH,67, 0831H	;"A running left hander"
- SX	for_two_sp,  0100DH,40, 0b08H	;"For two!"
- SX	from_15_sp,  0100DH,45, 0b0dH	;"From fifteen!"
- SX	from_18_sp,  0100DH,45, 0b0eH	;"From eighteen!"
- SX	from_20_sp,  0100DH,35, 0b0fH	;"From twenty!"
- SX	shoots1_sp,  0100DH,37, 083cH	;"He shoots!"
- SX	shoots2_sp,  0100DH,42, 083cH	;"He shoots!"
- SX	shoots3_sp,  0100DH,33, 083dH	;"Shoots!"
- SX	from_arc_sp, 0100DH,40, 07e1H	;"From the arc!"
+ SXL	fancy,	     0100DH,51, 0ae6H	;"Fancy Footwork!"
+ SXL	matchup_sp,  0100DH,65, 0ab1H	;"Tonight's matchup"
+ SXL	wideopen_sp, 0100DH,41, 0939H	;"Wide open!"
+ SXL	no_prsure_sp,0100DH,48, 0a3dH	;"No pressure"
+ SXL	opn_for_3_sp,0100DH,69, 0b0aH	;"Open for three!"
+ SXL	all_alone_sp,0100DH,42, 091cH	;"All alone.."
+ SXL	its_good_sp, 0130DH,61, 0819H	;"It's good!"
+ SXL	it_is_sp,    0100DH,65, 0816H	;"It is.."
+ SXL	off_in_time, 0100DH,93, 0814H	;"Got it away in time"
+ SXL	shrt_rng_sp, 0100DH,56, 07ebH	;"From short range"
+ SXL	finese_it_sp,0100DH,47, 080fH	;"Finesses it!"
+ SXL	frm_post_sp, 0100DH,41, 07e4H	;"From the post"
+ SXL	baby_hook_sp,0100DH,47, 0802H	;"A baby hook!"
+ SXL	half_hook_sp,0100DH,46, 0804H	;"A half hook"
+ SXL	hook_shot_sp,0100DH,41, 0805H	;"A hook shot"
+ SXL	sky_hook_sp, 0100DH,74, 083fH	;"Launches a sky hook"
+ SXL	sky_hook2_sp,0100DH,72, 0b09H	;"With the sky hook!"
+ SXL	rgt_hndr_sp, 0100DH,69, 0830H	;"A running right hander"
+ SXL	lft_hndr_sp, 0100DH,67, 0831H	;"A running left hander"
+ SXL	for_two_sp,  0100DH,40, 0b08H	;"For two!"
+ SXL	from_15_sp,  0100DH,45, 0b0dH	;"From fifteen!"
+ SXL	from_18_sp,  0100DH,45, 0b0eH	;"From eighteen!"
+ SXL	from_20_sp,  0100DH,35, 0b0fH	;"From twenty!"
+ SXL	shoots1_sp,  0100DH,37, 083cH	;"He shoots!"
+ SXL	shoots2_sp,  0100DH,42, 083cH	;"He shoots!"
+ SXL	shoots3_sp,  0100DH,33, 083dH	;"Shoots!"
+ SXL	from_arc_sp, 0100DH,40, 07e1H	;"From the arc!"
 ;DJT Start
- SX	tp_circle_sp,0100DH,63, 0b1cH	;"From the top of the circle"
- SX	fm_3pline_sp,0100DH,80, 07e5H	;"From the three point line"
+ SXL	tp_circle_sp,0100DH,63, 0b1cH	;"From the top of the circle"
+ SXL	fm_3pline_sp,0100DH,80, 07e5H	;"From the three point line"
 ;DJT End
- SX	for_thre1_sp,0100DH,47, 07e6H	;"For three!"
- SX	frm_dwntn_sp,0100DH,67, 07e9H	;"From down town"
- SX	bhd_3_arc_sp,0100DH,69, 0825H	;"Behind the three point arc"
- SX	frm_3_arc_sp,0100DH,65, 0826H	;"From the three point arc"
- SX	for_thre2_sp,0100DH,45, 082aH	;"For three!"
- SX	for_thre3_sp,0100DH,51, 0839H	;"For three!"
- SX	frm_outsd_sp,0100DH,63, 083bH	;"From outside!"
- SX	unlod_one_sp,0100DH,68, 07ffH	;"He unload one!"
- SX	frm_l_rng_sp,0100DH,63, 0801H	;"From long range"
- SX	hail_mary_sp,0100DH,59, 0a22H	;"A hail mary"
- SX	agn_shoot_sp,0100DH,55, 080dH	;"Again with a shot"
- SX	it_culdbe_sp,0100DH,60, 080cH	;"It could be.."
- SX	could_tie_sp,0100DH,77, 0b04H	;"This could tie the game!"
- SX	outof_rng_sp,0100DH,84, 09b9H	;"Way out of his range"
- SX	outof_rg2_sp,0100DH,84, 09b9H	;"Way out of his range"
- SX	out_cntrl_sp,0100DH,58, 09bdH	;"He's out of control!"
+ SXL	for_thre1_sp,0100DH,47, 07e6H	;"For three!"
+ SXL	frm_dwntn_sp,0100DH,67, 07e9H	;"From down town"
+ SXL	bhd_3_arc_sp,0100DH,69, 0825H	;"Behind the three point arc"
+ SXL	frm_3_arc_sp,0100DH,65, 0826H	;"From the three point arc"
+ SXL	for_thre2_sp,0100DH,45, 082aH	;"For three!"
+ SXL	for_thre3_sp,0100DH,51, 0839H	;"For three!"
+ SXL	frm_outsd_sp,0100DH,63, 083bH	;"From outside!"
+ SXL	unlod_one_sp,0100DH,68, 07ffH	;"He unload one!"
+ SXL	frm_l_rng_sp,0100DH,63, 0801H	;"From long range"
+ SXL	hail_mary_sp,0100DH,59, 0a22H	;"A hail mary"
+ SXL	agn_shoot_sp,0100DH,55, 080dH	;"Again with a shot"
+ SXL	it_culdbe_sp,0100DH,60, 080cH	;"It could be.."
+ SXL	could_tie_sp,0100DH,77, 0b04H	;"This could tie the game!"
+ SXL	outof_rng_sp,0100DH,84, 09b9H	;"Way out of his range"
+ SXL	outof_rg2_sp,0100DH,84, 09b9H	;"Way out of his range"
+ SXL	out_cntrl_sp,0100DH,58, 09bdH	;"He's out of control!"
  SX	rainbow_sp,  0110DH,70, 09f2H	;"With the rainbow"
- SX	difficult_sp,0100DH,56, 09afH	;"Difficult shot.."
+ SXL	difficult_sp,0100DH,56, 09afH	;"Difficult shot.."
 
  SX	swith_hnd_sp,0110DH,53, 0823H	;"He switches hands!"
  SX	spn_shtup_sp,0110DH,56, 07fdH	;"He spins a shot off"
- SX	a_fngr_rl_sp,0110DH,55, 0902H	;"A finger roll"
+ SXL	a_fngr_rl_sp,0110DH,55, 0902H	;"A finger roll"
                                                              
- SX	hnd_face_sp, 0100DH,67, 0b24H	;"With a hand in his face"
- SX	ill_shot_sp, 0100DH,60, 0b25H	;"Ill advised shot"
- SX	frcd_shot_sp,0100DH,56, 0b2dH	;"Forced a shot off"
- SX	wild_shot_sp,0100DH,56, 0b2eH	;"Wild Shot!"
+ SXL	hnd_face_sp, 0100DH,67, 0b24H	;"With a hand in his face"
+ SXL	ill_shot_sp, 0100DH,60, 0b25H	;"Ill advised shot"
+ SXL	frcd_shot_sp,0100DH,56, 0b2dH	;"Forced a shot off"
+ SXL	wild_shot_sp,0100DH,56, 0b2eH	;"Wild Shot!"
 ;DJT Start
- SX	lfts_wild_sp,0100DH,87, 09bbH	;"He lifts a wild shot"
+ SXL	lfts_wild_sp,0100DH,87, 09bbH	;"He lifts a wild shot"
 ;DJT End
 
- SX	alley_oop_sp,0100DH,63, 0a18H	;"There's the alley-oop!"
- SX	alyoop_ps_sp,0100DH,63, 0a1aH	;"Alley-oop pass"
- SX	thr_tmwrk_sp,0100DH,61, 0a9dH	;"There's teamwork!"
+ SXL	alley_oop_sp,0100DH,63, 0a18H	;"There's the alley-oop!"
+ SXL	alyoop_ps_sp,0100DH,63, 0a1aH	;"Alley-oop pass"
+ SXL	thr_tmwrk_sp,0100DH,61, 0a9dH	;"There's teamwork!"
  SX	thr_smkn_sp, 0100DH,57, 0af5H	;"They are smoking!"
- SX	thr_zone_sp, 0100DH,65, 0b05H	;"They're in the zone!"
- SX	whta_show_sp,0100DH,57, 0958H	;"What a show!"
+ SXL	thr_zone_sp, 0100DH,65, 0b05H	;"They're in the zone!"
+ SXL	whta_show_sp,0100DH,57, 0958H	;"What a show!"
 
- SX	dble_dnk_sp, 0120DH,55, 0b3aH	;"Double dunk!"				x
- SX	dble_dnk2_sp,0120DH,78, 0b38H	;"It's a double dunk!"			x
- SX	lob_pass_sp, 0120DH,55, 0a1cH	;"A lob pass"
- SX	scp_tmate_sp,0120DH,85, 0b3bH	;"He scoops to his teammate!"
+ SXL	dble_dnk_sp, 0120DH,55, 0b3aH	;"Double dunk!"				x
+ SXL	dble_dnk2_sp,0120DH,78, 0b38H	;"It's a double dunk!"			x
+ SXL	lob_pass_sp, 0120DH,55, 0a1cH	;"A lob pass"
+ SXL	scp_tmate_sp,0120DH,85, 0b3bH	;"He scoops to his teammate!"
 ;DJT Start
- SX	the_scoop_sp,0120DH,51, 0b3cH	;"The scoop!"
+ SXL	the_scoop_sp,0120DH,51, 0b3cH	;"The scoop!"
 ;DJT End
- SX	lev_tmate_sp,0120DH,83, 0b3dH	;"Scoops it to his teammate!"
+ SXL	lev_tmate_sp,0120DH,83, 0b3dH	;"Scoops it to his teammate!"
 ;DJT Start
  SX	is_legal_sp ,00F0DH,65, 0b21H	;"Is that legal!?"
 ;DJT End
@@ -250,78 +250,78 @@
  SX	got_hspot_sp,0140DH,76, 0b40H	;"He's got a hotspot"
 ;DJT End
 
- SX	cantbuy_sp,  0100DH,68, 09ecH	;"Can't buy a bucket"
- SX	rtle_arnd_sp,0100DH,77, 09d2H	;"Rattles around and rolls out"
- SX	ugly_shot_sp,0100DH,71, 09e6H	;"Ugly shot!"
- SX	putup_brk_sp,0100DH,66, 09b2H	;"Puts up a brick!"
+ SXL	cantbuy_sp,  0100DH,68, 09ecH	;"Can't buy a bucket"
+ SXL	rtle_arnd_sp,0100DH,77, 09d2H	;"Rattles around and rolls out"
+ SXL	ugly_shot_sp,0100DH,71, 09e6H	;"Ugly shot!"
+ SXL	putup_brk_sp,0100DH,66, 09b2H	;"Puts up a brick!"
 ;DJT Start
- SX	look_out_sp, 0100DH,41, 0a6fH	;"Look out!"
+ SXL	look_out_sp, 0100DH,41, 0a6fH	;"Look out!"
 ;DJT End
- SX	nogood_sp,   0130DH,31, 09d4H	;"No good!"
- SX	mis_fires_sp,0100DH,56, 09d8H	;"He misfired"
+ SXL	nogood_sp,   0130DH,31, 09d4H	;"No good!"
+ SXL	mis_fires_sp,0100DH,56, 09d8H	;"He misfired"
 ;DJT Start
- SX	what_was_sp, 0100DH,66, 0b2bH	;"What was that!"
+ SXL	what_was_sp, 0100DH,66, 0b2bH	;"What was that!"
 ;DJT End
- SX	there_brk_sp,0100DH,66, 09b5H	;"There's a brick!"
- SX	dwn_luck_sp, 0100DH,54, 0ac9H	;"Down on his luck!"
- SX	missed_sp,   0100DH,30, 09d6H	;"Missed!"
- SX	mised_agn_sp,0100DH,59, 09d7H	;"Missed again!"
- SX	he_misagn_sp,0100DH,65, 09b7H	;"He missed again!"
- SX	hita_barn_sp,0100DH,124,0a98H	;"He couldn't hit the back side of a barn!"
- SX	wht_thnk2_sp,0100DH,88, 09edH	;"What was he thinking?"
- SX	wht_distr_sp,0100DH,73, 0aa8H	;"What a disaster!"
- SX	at_buzzer_sp,0100DH,57, 07e8H	;"At the buzzer"
+ SXL	there_brk_sp,0100DH,66, 09b5H	;"There's a brick!"
+ SXL	dwn_luck_sp, 0100DH,54, 0ac9H	;"Down on his luck!"
+ SXL	missed_sp,   0100DH,30, 09d6H	;"Missed!"
+ SXL	mised_agn_sp,0100DH,59, 09d7H	;"Missed again!"
+ SXL	he_misagn_sp,0100DH,65, 09b7H	;"He missed again!"
+ SXL	hita_barn_sp,0100DH,124,0a98H	;"He couldn't hit the back side of a barn!"
+ SXL	wht_thnk2_sp,0100DH,88, 09edH	;"What was he thinking?"
+ SXL	wht_distr_sp,0100DH,73, 0aa8H	;"What a disaster!"
+ SXL	at_buzzer_sp,0100DH,57, 07e8H	;"At the buzzer"
  SX	sht_ball_sp, 0100DH,53, 0aadH	;"Shoot the ball!"
 
- SX	off_rim_sp,  0100DH,46, 09bfH	;"Off the rim"
- SX	off_frnt_sp, 0100DH,54, 09c9H	;"Off the front of the rim"
- SX	holes_out_sp,0100DH,58, 09adH	;"And it holes out"
- SX	bnce_out_sp, 0100DH,42, 09d0H	;"Bounces out"
- SX	bnce_away_sp,0100DH,54, 09d1H	;"Bounces away"
- SX	away_side_sp,0100DH,56, 09c7H	;"Away to the side"
+ SXL	off_rim_sp,  0100DH,46, 09bfH	;"Off the rim"
+ SXL	off_frnt_sp, 0100DH,54, 09c9H	;"Off the front of the rim"
+ SXL	holes_out_sp,0100DH,58, 09adH	;"And it holes out"
+ SXL	bnce_out_sp, 0100DH,42, 09d0H	;"Bounces out"
+ SXL	bnce_away_sp,0100DH,54, 09d1H	;"Bounces away"
+ SXL	away_side_sp,0100DH,56, 09c7H	;"Away to the side"
  SX	spins_out_sp,0100DH,45, 09cbH	;"Spins out"
- SX	side_rim_sp, 0100DH,61, 09c5H	;"Off the side of the rim"
- SX	off_heel_sp, 0100DH,54, 09c3H	;"Off the heel of the rim"
+ SXL	side_rim_sp, 0100DH,61, 09c5H	;"Off the side of the rim"
+ SXL	off_heel_sp, 0100DH,54, 09c3H	;"Off the heel of the rim"
  SX	no_sp,       0100DH,30, 09ccH	;"Nooo!"
- SX	nicly_dne_sp,0100DH,69, 0a49H	;"Nicely done!"
- SX	got_skilz_sp,0100DH,67, 0a97H	;"He's got skills!"
+ SXL	nicly_dne_sp,0100DH,69, 0a49H	;"Nicely done!"
+ SXL	got_skilz_sp,0100DH,67, 0a97H	;"He's got skills!"
 
  SX	misd_evry_sp,0100DH,66, 09e2H	;"He missed everything!"
  SX	way_shrt_sp, 0100DH,57, 09dfH	;"Way short!"
  SX	misd_mile_sp,0100DH,72, 09e3H	;"Missed by a mile!"
- SX	teribl_sh_sp,0100DH,57, 09baH	;"Terrible shot!"
+ SXL	teribl_sh_sp,0100DH,57, 09baH	;"Terrible shot!"
  SX	airball_sp,  0100DH,56, 09daH	;"Airball!"
 
  SX	cannonbal_sp,0110DH,58, 095bH	;"The cannonball!"
  SX	sumrslts_sp, 0110DH,90, 096aH	;"Summersaults through the air"
  SX	goes_flyg_sp,0110DH,68, 0acdH	;"He goes flying"
  SX	hiabv_rim_sp,0110DH,49, 0ad4H	;"High above the rim"
- SX	flies_air_sp,0110DH,100,096cH	;"He flies through the air"
- SX	gldes_air_sp,0110DH,99, 096dH	;"He glides through the air"
+ SXL	flies_air_sp,0110DH,100,096cH	;"He flies through the air"
+ SXL	gldes_air_sp,0110DH,99, 096dH	;"He glides through the air"
  SX	raises_up_sp,0110DH,45, 082dH	;"Raises up"
- SX	serious_h_sp,0110DH,79, 0b03H	;"Serious hangtime"
- SX	learn_tht_sp,0110DH,54, 097aH	;"Where did he learn that!"
+ SXL	serious_h_sp,0110DH,79, 0b03H	;"Serious hangtime"
+ SXL	learn_tht_sp,0110DH,54, 097aH	;"Where did he learn that!"
  SX	goes_up_sp,  00905H,37, 0951H	;"Goes up!"
- SX	goes_hoop_sp,0110DH,59, 095fH	;"He goes to the hoop!"
+ SXL	goes_hoop_sp,0110DH,59, 095fH	;"He goes to the hoop!"
  SX	tks2_hoop_sp,0110DH,51, 0a36H	;"Takes it to the hoop!"
- SX	fly_1hdnr_sp,0110DH,76, 096eH	;"A Flying One Hander"
- SX	didnt_knw_sp,0110DH,77, 097fH	;"Didn't know he could do that!"
- SX	haning_sp,   0110DH,34, 0a0fH	;"Hanging!"
+ SXL	fly_1hdnr_sp,0110DH,76, 096eH	;"A Flying One Hander"
+ SXL	didnt_knw_sp,0110DH,77, 097fH	;"Didn't know he could do that!"
+ SXL	haning_sp,   0110DH,34, 0a0fH	;"Hanging!"
  SX	ooooooh_sp,  0110DH,65, 0af7H	;"Oooooooh!"
- SX	ooooooh2_sp, 0110DH,40, 0af7H	;"Oooooooh!"
- SX	thrgh_air_sp,0110DH,50, 096bH	;"Through the air"
- SX	way_upair_sp,0110DH,75, 0974H	;"Way up in the air!"
+ SXL	ooooooh2_sp, 0110DH,40, 0af7H	;"Oooooooh!"
+ SXL	thrgh_air_sp,0110DH,50, 096bH	;"Through the air"
+ SXL	way_upair_sp,0110DH,75, 0974H	;"Way up in the air!"
 ;DJT Start
- SX	lch_atbkt_sp,0110DH,100,0b03H	;"Serious hangtime"
+ SXL	lch_atbkt_sp,0110DH,100,0b03H	;"Serious hangtime"
 ;DJT End
- SX	catapults_sp,0110DH,49, 09abH	;"He catapults!"
+ SXL	catapults_sp,0110DH,49, 09abH	;"He catapults!"
  SX	tomahk_dk_sp,0110DH,66, 0965H	;"A tomahawk!"
  SX	tomahk_hm_sp,0110DH,79, 0966H	;"Tomahawks it home!"
 
- SX	shuld_pas_sp,0100DH,75, 0a6eH	;"He should have passed"
- SX	he_lst_bl_sp,0100DH,75, 0a74H	;"He lost the ball"
- SX	he_lostit_sp,0100DH,75, 0a77H	;"He looses it"
- SX	bal_loose_sp,0100DH,75, 0a7dH	;"The ball is loose"
+ SXL	shuld_pas_sp,0100DH,75, 0a6eH	;"He should have passed"
+ SXL	he_lst_bl_sp,0100DH,75, 0a74H	;"He lost the ball"
+ SXL	he_lostit_sp,0100DH,75, 0a77H	;"He looses it"
+ SXL	bal_loose_sp,0100DH,75, 0a7dH	;"The ball is loose"
 
  SX	fades_sp,    0100DH,21, 0b10H	;"Fades!"
  SX	fadeaway_sp, 0100DH,80, 0b11H	;"Fades away!"
@@ -330,244 +330,244 @@
  SX	leans_in_sp, 0100DH,80, 0b16H	;"Leans in"
  SX	pull_jmpr_sp,0100DH,80, 0838H	;"A pullup jumper"
  SX	bslne_lnr_sp,0100DH,45, 0b30H	;"Baseline leaner"
- SX	getslkbnc_sp,0100DH,60, 092eH	;"Gets a lucky bounce"
- SX	luky_bnce_sp,0100DH,58, 092fH	;"A lucky bounce"
- SX	per_luck_sp, 0100DH,64, 0946H	;"That was pure luck"
+ SXL	getslkbnc_sp,0100DH,60, 092eH	;"Gets a lucky bounce"
+ SXL	luky_bnce_sp,0100DH,58, 092fH	;"A lucky bounce"
+ SXL	per_luck_sp, 0100DH,64, 0946H	;"That was pure luck"
 ;DJT Start
- SX	luky_bskt_sp,0100DH,82, 0948H	;"That's a lucky basket!"
+ SXL	luky_bskt_sp,0100DH,82, 0948H	;"That's a lucky basket!"
 ;DJT End
 	
 ;DJT Start
- SX	kakaboom_sp, 0100DH,69, 091bH	;"Ka Ka Kaboom!"
- SX	kaboom1_sp,  0100DH,38, 0b2aH	;"Kaboom!"
- SX	kaboom2_sp,  0100DH,34, 091aH	;"Kaboooom!"
+ SXL	kakaboom_sp, 0100DH,69, 091bH	;"Ka Ka Kaboom!"
+ SXL	kaboom1_sp,  0100DH,38, 0b2aH	;"Kaboom!"
+ SXL	kaboom2_sp,  0100DH,34, 091aH	;"Kaboooom!"
 ;DJT End
- SX	isit_shoe_sp,0100DH,62, 091eH	;"Is it the shoes?"
+ SXL	isit_shoe_sp,0100DH,62, 091eH	;"Is it the shoes?"
 
- SX	facial_sp,   0100DH,80, 0b42H	;"Up close and personal"
+ SXL	facial_sp,   0100DH,80, 0b42H	;"Up close and personal"
 
- SX	unbelieve_sp,0100DH,53, 0931H	;"Unbelievable"
- SX	u_c_that_sp, 0100DH,65, 0932H	;"Did you see that?"
- SX	oh_man_sp,   0100DH,52, 0934H	;"Oh man!"
- SX	no_stopng_sp,0100DH,75, 0942H	;"There's no stopping him!"
- SX	postr_jam_sp,0100DH,67, 0956H	;"The poster jam!"
- SX	jam_it_in_sp,0100DH,83, 095aH	;"He jams it in!"
- SX	thndr_dnk_sp,0100DH,60, 0960H	;"Thunderous dunk!"
+ SXL	unbelieve_sp,0100DH,53, 0931H	;"Unbelievable"
+ SXL	u_c_that_sp, 0100DH,65, 0932H	;"Did you see that?"
+ SXL	oh_man_sp,   0100DH,52, 0934H	;"Oh man!"
+ SXL	no_stopng_sp,0100DH,75, 0942H	;"There's no stopping him!"
+ SXL	postr_jam_sp,0100DH,67, 0956H	;"The poster jam!"
+ SXL	jam_it_in_sp,0100DH,83, 095aH	;"He jams it in!"
+ SXL	thndr_dnk_sp,0100DH,60, 0960H	;"Thunderous dunk!"
 ;DJT Start
- SX	throws_it_sp,0100DH,66, 0963H	;"Throws it down!"
- SX	pounds_it_sp,0100DH,62, 0964H	;"Pounds it home!"
- SX	incredble_sp,0100DH,49, 0970H	;"Incredible!"
- SX	superdunk_sp,0100DH,75, 0971H	;"A Super Dunk!"
- SX	incrd_sht_sp,0100DH,75, 090eH	;"Incredible shot!"
+ SXL	throws_it_sp,0100DH,66, 0963H	;"Throws it down!"
+ SXL	pounds_it_sp,0100DH,62, 0964H	;"Pounds it home!"
+ SXL	incredble_sp,0100DH,49, 0970H	;"Incredible!"
+ SXL	superdunk_sp,0100DH,75, 0971H	;"A Super Dunk!"
+ SXL	incrd_sht_sp,0100DH,75, 090eH	;"Incredible shot!"
 ; SX	supr_dnk_sp, 0100DH,61, 0971H	;**
 ; SX	mnstr_jam_sp,0100DH,70, 0971H
- SX	outstndng_sp,0100DH,67, 0aaaH	;"Outstanding!"
+ SXL	outstndng_sp,0100DH,67, 0aaaH	;"Outstanding!"
 ;DJT End
- SX	amazing_sp,  0100DH,57, 0912H	;"Amazing!"
- SX	he_dnk_it_sp,0100DH,33, 0961H	;"He dunks it!"
- SX	dunks_it_sp, 0100DH,24, 0962H	;"Dunks it!"
- SX	jams_it_sp,  0100DH,35, 097cH	;"Jams it!"
+ SXL	amazing_sp,  0100DH,57, 0912H	;"Amazing!"
+ SXL	he_dnk_it_sp,0100DH,33, 0961H	;"He dunks it!"
+ SXL	dunks_it_sp, 0100DH,24, 0962H	;"Dunks it!"
+ SXL	jams_it_sp,  0100DH,35, 097cH	;"Jams it!"
 
- SX	spect_dnk_sp,0100DH,81, 0988H	;"Spectacular dunk!
- SX	slam_dunk_sp,0100DH,51, 0989H	;"Slam Dunk"
- SX	he_slams_sp, 0100DH,42, 098bH	;"He Slams!"
- SX	with_ajam_sp,0100DH,65, 0997H	;"Finishes with a jam"
- SX	with_aja2_sp,0100DH,49, 0998H	;"With a jam"
- SX	powr_jams_sp,0100DH,73, 09a6H	;"He powerjams"
+ SXL	spect_dnk_sp,0100DH,81, 0988H	;"Spectacular dunk!
+ SXL	slam_dunk_sp,0100DH,51, 0989H	;"Slam Dunk"
+ SXL	he_slams_sp, 0100DH,42, 098bH	;"He Slams!"
+ SXL	with_ajam_sp,0100DH,65, 0997H	;"Finishes with a jam"
+ SXL	with_aja2_sp,0100DH,49, 0998H	;"With a jam"
+ SXL	powr_jams_sp,0100DH,73, 09a6H	;"He powerjams"
 
- SX	head_fake_sp,0050DH,24, 0a8eH	;"Headfake"
- SX	the_fake_sp, 0050DH,26, 0a8fH	;"The fake"
- SX	pump_fake_sp,0050DH,30, 0a91H	;"Pump fake"
+ SXL	head_fake_sp,0050DH,24, 0a8eH	;"Headfake"
+ SXL	the_fake_sp, 0050DH,26, 0a8fH	;"The fake"
+ SXL	pump_fake_sp,0050DH,30, 0a91H	;"Pump fake"
 
- SX	hits_jmpr_sp,0100DH,25, 0906H	;"Hits the jumper"
- SX	good_4two_sp,0100DH,50, 090aH	;"Good for two!"
- SX	a_trey_sp,   0100DH,42, 082bH	;"A tray"
- SX	he_scores_sp,0100DH,56, 093bH	;"He scores!"
- SX	scores_sp,   0100DH,37, 07deH	;"Scores!"
+ SXL	hits_jmpr_sp,0100DH,25, 0906H	;"Hits the jumper"
+ SXL	good_4two_sp,0100DH,50, 090aH	;"Good for two!"
+ SXL	a_trey_sp,   0100DH,42, 082bH	;"A tray"
+ SXL	he_scores_sp,0100DH,56, 093bH	;"He scores!"
+ SXL	scores_sp,   0100DH,37, 07deH	;"Scores!"
 ;DJT Start
- SX	scores2_sp,  0100DH,52, 07dfH	;"Scoores!"
+ SXL	scores2_sp,  0100DH,52, 07dfH	;"Scoores!"
 ;DJT End
- SX	score_agn_sp,0100DH,70, 07f3H	;"Scores again!"
- SX	good_agn_sp, 0100DH,47, 07f4H	;"Good again!"
- SX	yes_sp,      0100DH,33, 0b33H	;"Yes!"
- SX	goooood_sp,  0100DH,42, 0818H	;"Good!"
- SX	goooood2_sp, 0100DH,42, 0903H	;"Good!"
- SX	money_bnk_sp,0100DH,33, 0b33H	;"Yes!"
- SX	chk_it_up_sp,0100DH,56, 093bH	;"he scores!"
- SX	good_4_3_sp, 0100DH,69, 0929H	;"Good for three!"
- SX	for_3_sp,    0100DH,58, 092aH	;"For threeee!"
- SX	thats_3_sp,  0100DH,58, 092bH	;"That's a three!"
- SX	fantastic_sp,0100DH,73, 0a99H	;"Fantastic!"
- SX	drains_it_sp,0100DH,38, 093fH	;"He drains it!"
- SX	it_falls_sp, 0100DH,42, 090dH	;"It falls"
- SX	falls_in_sp, 0100DH,48, 091fH	;"Fals in"
- SX	kncks_dwn_sp,0100DH,54, 092cH	;"Knocks it down!"
+ SXL	score_agn_sp,0100DH,70, 07f3H	;"Scores again!"
+ SXL	good_agn_sp, 0100DH,47, 07f4H	;"Good again!"
+ SXL	yes_sp,      0100DH,33, 0b33H	;"Yes!"
+ SXL	goooood_sp,  0100DH,42, 0818H	;"Good!"
+ SXL	goooood2_sp, 0100DH,42, 0903H	;"Good!"
+ SXL	money_bnk_sp,0100DH,33, 0b33H	;"Yes!"
+ SXL	chk_it_up_sp,0100DH,56, 093bH	;"he scores!"
+ SXL	good_4_3_sp, 0100DH,69, 0929H	;"Good for three!"
+ SXL	for_3_sp,    0100DH,58, 092aH	;"For threeee!"
+ SXL	thats_3_sp,  0100DH,58, 092bH	;"That's a three!"
+ SXL	fantastic_sp,0100DH,73, 0a99H	;"Fantastic!"
+ SXL	drains_it_sp,0100DH,38, 093fH	;"He drains it!"
+ SXL	it_falls_sp, 0100DH,42, 090dH	;"It falls"
+ SXL	falls_in_sp, 0100DH,48, 091fH	;"Fals in"
+ SXL	kncks_dwn_sp,0100DH,54, 092cH	;"Knocks it down!"
 ;DJT Start
- SX	and_drops_sp,0100DH,56, 0943H	;"And it drops in"
+ SXL	and_drops_sp,0100DH,56, 0943H	;"And it drops in"
 ;DJT End
- SX	dwn_well_sp, 0100DH,90, 094bH	;"And down the well it goes!"
- SX	bomshakalaka,0100DH,56, 0afcH	;"Boom Shaka Laka!"
- SX	rama_dong_sp,0100DH,80, 0b47H	;"Rama Lama Ding Dong!"
+ SXL	dwn_well_sp, 0100DH,90, 094bH	;"And down the well it goes!"
+ SXL	bomshakalaka,0100DH,56, 0afcH	;"Boom Shaka Laka!"
+ SXL	rama_dong_sp,0100DH,80, 0b47H	;"Rama Lama Ding Dong!"
 
- SX	hlftm_ldr_sp,0160DH,73, 0ae9H	;"The half time leader is.."
- SX	gmevr_ldr_sp,0160DH,73, 0aeaH	;"The player of the game is.."
+ SXL	hlftm_ldr_sp,0160DH,73, 0ae9H	;"The half time leader is.."
+ SXL	gmevr_ldr_sp,0160DH,73, 0aeaH	;"The player of the game is.."
 
  SX	spin_mv1_sp, 0100DH,60, 07f7H	;"Reeling and dealing"
  SX	spin_mv2_sp, 0100DH,60, 0991H	;"A spin and a drive"
  SX	spin_mv3_sp, 0100DH,60, 0993H	;"Spinning to the hole"
 
 ;DJT Start
- SX	chalk_it_sp, 0100DH,38, 0b48H	;"Chalk it up!"
+ SXL	chalk_it_sp, 0100DH,38, 0b48H	;"Chalk it up!"
 ;DJT End
- SX	book_it_sp,  0100DH,28, 08ffH	;"Book it!"
- SX	count_it_sp, 0100DH,39, 090bH	;"Count it!"
- SX	bingo_sp,    0100DH,41, 0ae2H	;"Bingo!"
+ SXL	book_it_sp,  0100DH,28, 08ffH	;"Book it!"
+ SXL	count_it_sp, 0100DH,39, 090bH	;"Count it!"
+ SXL	bingo_sp,    0100DH,41, 0ae2H	;"Bingo!"
 
- SX	ever_miss_sp,0100DH,77, 0a95H	;"Will he ever miss?"
- SX	hot_hand_sp, 0100DH,70, 093dH	;"He's got a hot hand!"
+ SXL	ever_miss_sp,0100DH,77, 0a95H	;"Will he ever miss?"
+ SXL	hot_hand_sp, 0100DH,70, 093dH	;"He's got a hot hand!"
  SX	on_fire_sp,  0150DH,83, 0972H	;"He's on fire!"
- SX	heatup_sp,   0130DH,54, 0b1eH	;"He's heating up"
- SX	lightn_up_sp,0120DH,68, 0aa4H	;"He's lighting it up"
- SX	smokin_sp,   0100DH,40, 0af6H	;"Smoking!"
+ SXL	heatup_sp,   0130DH,54, 0b1eH	;"He's heating up"
+ SXL	lightn_up_sp,0120DH,68, 0aa4H	;"He's lighting it up"
+ SXL	smokin_sp,   0100DH,40, 0af6H	;"Smoking!"
 
- SX	swish_sp,    0100DH,37, 0917H	;"Swish!"
+ SXL	swish_sp,    0100DH,37, 0917H	;"Swish!"
 ;DJT Start
- SX	swish2_sp,   0100DH,43, 0b29H	;"Swiss!"
+ SXL	swish2_sp,   0100DH,43, 0b29H	;"Swiss!"
 ;DJT End
- SX	rgt_thrgh_sp,0100DH,53, 0b4aH	;"Right through the net"
- SX	botm_net_sp, 0100DH,67, 0b4cH	;"Nothing but the bottom of the net"
- SX	ngbut_net_sp,0100DH,85, 0b4bH	;"All net and nothing else"
- SX	whata_sht_sp,0100DH,47, 0937H	;"What a shot!"
- SX	great_sht_sp,0100DH,54, 0935H	;"Great shot!"
+ SXL	rgt_thrgh_sp,0100DH,53, 0b4aH	;"Right through the net"
+ SXL	botm_net_sp, 0100DH,67, 0b4cH	;"Nothing but the bottom of the net"
+ SXL	ngbut_net_sp,0100DH,85, 0b4bH	;"All net and nothing else"
+ SXL	whata_sht_sp,0100DH,47, 0937H	;"What a shot!"
+ SXL	great_sht_sp,0100DH,54, 0935H	;"Great shot!"
 ;DJT Start
- SX	greatshot_sp,0100DH,47, 090fH	;"Great shot!"
+ SXL	greatshot_sp,0100DH,47, 090fH	;"Great shot!"
 ;DJT End
- SX	good_sht_sp, 0100DH,36, 0938H	;"Good shot!"
- SX	he_uncon_sp, 0100DH,61, 0914H	;"He's unconcious!"
+ SXL	good_sht_sp, 0100DH,36, 0938H	;"Good shot!"
+ SXL	he_uncon_sp, 0100DH,61, 0914H	;"He's unconcious!"
 
- SX	banked_it_sp,0100DH,27, 0829H	;"Banks it!"
- SX	a_banker_sp, 0100DH,33, 0811H	;"A Bank Shot!"
- SX	soft_glas_sp,0100DH,95, 0810H	;"Softly off the glass"
+ SXL	banked_it_sp,0100DH,27, 0829H	;"Banks it!"
+ SXL	a_banker_sp, 0100DH,33, 0811H	;"A Bank Shot!"
+ SXL	soft_glas_sp,0100DH,95, 0810H	;"Softly off the glass"
 
- SX	off_bkbrd_sp,0100DH,80, 0827H	;"Off the backboard"
- SX	off_glass_sp,0100DH,80, 083aH	;"Off the glass"
- SX	kild_smne_sp,0100DH,110,09eeH	;"That shot could have killed somebody"
- SX	off_trgt_sp, 0100DH,80, 09e1H	;"Way off target"
+ SXL	off_bkbrd_sp,0100DH,80, 0827H	;"Off the backboard"
+ SXL	off_glass_sp,0100DH,80, 083aH	;"Off the glass"
+ SXL	kild_smne_sp,0100DH,110,09eeH	;"That shot could have killed somebody"
+ SXL	off_trgt_sp, 0100DH,80, 09e1H	;"Way off target"
  SX	sht_stunk_sp,0100DH,97, 09e8H	;"That shot stunk"
- SX	wht_thnkg_sp,0100DH,88, 09edH	;"What was he thinking?"
+ SXL	wht_thnkg_sp,0100DH,88, 09edH	;"What was he thinking?"
 
- SX	fr_thw_ln_sp,0100DH,65, 0837H	;"From the free throw line"
- SX	top_key_sp,  0100DH,70, 0807H	;"From the top of the key"
- SX	frm_paint_sp,0100DH,40, 07edH	;"From the paint"
- SX	frm_wing_sp, 0100DH,38, 07e7H	;"From the wing"
- SX	lnch_jmpr_sp,0100DH,59, 083eH	;"Launces the jumper"
- SX	stp_n_pop_sp,0100DH,75, 0832H	;"Stops and pops"
- SX	fires_jumpr, 0100DH,55, 082eH	;"Fires the jumper"
- SX	ltle_jmpr_sp,0100DH,48, 07f2H	;"A little jumper"
+ SXL	fr_thw_ln_sp,0100DH,65, 0837H	;"From the free throw line"
+ SXL	top_key_sp,  0100DH,70, 0807H	;"From the top of the key"
+ SXL	frm_paint_sp,0100DH,40, 07edH	;"From the paint"
+ SXL	frm_wing_sp, 0100DH,38, 07e7H	;"From the wing"
+ SXL	lnch_jmpr_sp,0100DH,59, 083eH	;"Launces the jumper"
+ SXL	stp_n_pop_sp,0100DH,75, 0832H	;"Stops and pops"
+ SXL	fires_jumpr, 0100DH,55, 082eH	;"Fires the jumper"
+ SXL	ltle_jmpr_sp,0100DH,48, 07f2H	;"A little jumper"
 
- SX	fingr_rol_sp,0100DH,46, 080eH	;"Finger rolling"
- SX	figr_itin_sp,0100DH,90, 0901H	;"Finger rolls it in"
- SX	fingr_rl2_sp,0100DH,46, 080eH	;"Finger roll"
- SX	lay_it_up_sp,0100DH,45, 081bH	;"Lays it up"
- SX	layup_sp,    0100DH,41, 081cH	;"With a layup"
- SX	he_layup_sp, 0100DH,58, 081eH	;"He lays is up"
- SX	drv_layup_sp,0100DH,61, 0b19H	;"A driving layup"
+ SXL	fingr_rol_sp,0100DH,46, 080eH	;"Finger rolling"
+ SXL	figr_itin_sp,0100DH,90, 0901H	;"Finger rolls it in"
+ SXL	fingr_rl2_sp,0100DH,46, 080eH	;"Finger roll"
+ SXL	lay_it_up_sp,0100DH,45, 081bH	;"Lays it up"
+ SXL	layup_sp,    0100DH,41, 081cH	;"With a layup"
+ SXL	he_layup_sp, 0100DH,58, 081eH	;"He lays is up"
+ SXL	drv_layup_sp,0100DH,61, 0b19H	;"A driving layup"
 
- SX	whyyyy_sp,   0100DH,41, 0ae3H	;"Why??"
- SX	blowout_sp,  0100DH,85, 0859H	;"It's a blowout"
- SX	whoomp_sp,   0100DH,72, 085aH	;"Whoomp, there it is!"
+ SXL	whyyyy_sp,   0100DH,41, 0ae3H	;"Why??"
+ SXL	blowout_sp,  0100DH,85, 0859H	;"It's a blowout"
+ SXL	whoomp_sp,   0100DH,72, 085aH	;"Whoomp, there it is!"
 ;DJT Start
- SX	debacle_sp,  0100DH,66, 0a92H	;"What a debacle"
- SX	its_hstry_sp,0100DH,47, 085fH	;"This game is history"
- SX	strike_up_sp,0100DH,122,0b4dH	;"Strike up the band, it's almost over!"
+ SXL	debacle_sp,  0100DH,66, 0a92H	;"What a debacle"
+ SXL	its_hstry_sp,0100DH,47, 085fH	;"This game is history"
+ SXL	strike_up_sp,0100DH,122,0b4dH	;"Strike up the band, it's almost over!"
 ;DJT End
- SX	fnl_strw_sp, 0100DH,90, 0b4eH	;"There's the final straw!"
- SX	fat_sing_sp, 0100DH,115,0858H	;"The fat lady is singing!"
- SX	needshot_sp, 0100DH,72, 0ab2H	;"They need a shot here!"
- SX	run_out_sp,  0100DH,55, 0876H	;"Time running out"
+ SXL	fnl_strw_sp, 0100DH,90, 0b4eH	;"There's the final straw!"
+ SXL	fat_sing_sp, 0100DH,115,0858H	;"The fat lady is singing!"
+ SXL	needshot_sp, 0100DH,72, 0ab2H	;"They need a shot here!"
+ SXL	run_out_sp,  0100DH,55, 0876H	;"Time running out"
 ;DJT Start
- SX	just_secs_sp,0100DH,84, 0ab3H	;"Just seconds left!"
+ SXL	just_secs_sp,0100DH,84, 0ab3H	;"Just seconds left!"
 ;DJT End
 
- SX	passes_sp,   0070DH,33, 09f4H	;"Passes"
- SX	he_passes_sp,0070DH,43, 09f6H	;"He passes it"
- SX	a_pass_sp,   0070DH,33, 09fbH	;"Pass"
- SX	tosses_it_sp,0070DH,39, 09fcH	;"Tosses it"
- SX	guns_it_sp,  0070DH,43, 0a13H	;"He guns it"
+ SXL	passes_sp,   0070DH,33, 09f4H	;"Passes"
+ SXL	he_passes_sp,0070DH,43, 09f6H	;"He passes it"
+ SXL	a_pass_sp,   0070DH,33, 09fbH	;"Pass"
+ SXL	tosses_it_sp,0070DH,39, 09fcH	;"Tosses it"
+ SXL	guns_it_sp,  0070DH,43, 0a13H	;"He guns it"
 
- SX	cros_crt_sp, 0070DH,37, 0a16H	;"Cross court"
- SX	downcourt_sp,0070DH,37, 0a0aH	;"Down court"
+ SXL	cros_crt_sp, 0070DH,37, 0a16H	;"Cross court"
+ SXL	downcourt_sp,0070DH,37, 0a0aH	;"Down court"
 ;DJT Start
- SX	downcrt2_sp, 0070DH,39, 0a1eH	;"Down court"
- SX	lngpss_dc_sp,0070DH,84, 0a0bH	;"Long pass down court"
+ SXL	downcrt2_sp, 0070DH,39, 0a1eH	;"Down court"
+ SXL	lngpss_dc_sp,0070DH,84, 0a0bH	;"Long pass down court"
 ;DJT End
- SX	hev_dncrt_sp,0070DH,69, 0a1dH	;"Heaves it down court"
- SX	bnce_pass_sp,0070DH,41, 0a20H	;"Bounce pass"
- SX	dumps_it_sp, 0070DH,27, 09feH	;"Dumps it"
- SX	long_pass_sp,0070DH,85, 0a0bH	;"Long pass down court"
- SX	pas_outsd_sp,0070DH,58, 09f8H	;"A pass outside"
+ SXL	hev_dncrt_sp,0070DH,69, 0a1dH	;"Heaves it down court"
+ SXL	bnce_pass_sp,0070DH,41, 0a20H	;"Bounce pass"
+ SXL	dumps_it_sp, 0070DH,27, 09feH	;"Dumps it"
+ SXL	long_pass_sp,0070DH,85, 0a0bH	;"Long pass down court"
+ SXL	pas_outsd_sp,0070DH,58, 09f8H	;"A pass outside"
 
  SX	goal_tend_sp,0120DH,47, 0a4bH	;"Goal tending"
 
- SX	rebounds_sp, 0100DH,60, 0af3H	;"Rebounds"
- SX	tks_rbnd2_sp,0100DH,73, 0a4fH	;"Takes it off the glass"
+ SXL	rebounds_sp, 0100DH,60, 0af3H	;"Rebounds"
+ SXL	tks_rbnd2_sp,0100DH,73, 0a4fH	;"Takes it off the glass"
 ;DJT Start
- SX	tks_rbnd3_sp,0100DH,96, 0a5bH	;"He pulls one off the rim"
+ SXL	tks_rbnd3_sp,0100DH,96, 0a5bH	;"He pulls one off the rim"
 ;DJT End
- SX	grab_rock_sp,0100DH,61, 0a52H	;"Grabs the rock"
- SX	has_rebnd_sp,0100DH,64, 0a55H	;"Has the rebound"
- SX	grab_ball_sp,0100DH,64, 0a56H	;"Grabs the ball"
- SX	tks_rebnd_sp,0100DH,81, 0a57H	;"Takes the rebound"
- SX	posession_sp,0100DH,57, 0a58H	;"Has posession"
- SX	off_rebnd_sp,0100DH,89, 0a5aH	;"Offensive rebound"
- SX	pulls_off_sp,0100DH,87, 0a5bH	;"He pulls one off the rim"
- SX	with_bord_sp,0100DH,77, 0a5cH	;"He comes up with the board"
- SX	grbs_rbnd_sp,0100DH,80, 0a5dH	;"He grabs the rebound"
- SX	ynk_rim_sp,  0100DH,80, 0a5fH	;"He yanks it off the rim"
- SX	da_rebnd_sp, 0100DH,45, 0a60H	;"Rebound!"
- SX	rip_rebnd_sp,0100DH,87, 0a50H	;"Rips down the rebound"
- SX	rbnd_miss_sp,0100DH,97, 0a64H	;"Rebound missed!"
+ SXL	grab_rock_sp,0100DH,61, 0a52H	;"Grabs the rock"
+ SXL	has_rebnd_sp,0100DH,64, 0a55H	;"Has the rebound"
+ SXL	grab_ball_sp,0100DH,64, 0a56H	;"Grabs the ball"
+ SXL	tks_rebnd_sp,0100DH,81, 0a57H	;"Takes the rebound"
+ SXL	posession_sp,0100DH,57, 0a58H	;"Has posession"
+ SXL	off_rebnd_sp,0100DH,89, 0a5aH	;"Offensive rebound"
+ SXL	pulls_off_sp,0100DH,87, 0a5bH	;"He pulls one off the rim"
+ SXL	with_bord_sp,0100DH,77, 0a5cH	;"He comes up with the board"
+ SXL	grbs_rbnd_sp,0100DH,80, 0a5dH	;"He grabs the rebound"
+ SXL	ynk_rim_sp,  0100DH,80, 0a5fH	;"He yanks it off the rim"
+ SXL	da_rebnd_sp, 0100DH,45, 0a60H	;"Rebound!"
+ SXL	rip_rebnd_sp,0100DH,87, 0a50H	;"Rips down the rebound"
+ SXL	rbnd_miss_sp,0100DH,97, 0a64H	;"Rebound missed!"
 
- SX	its_blckd_sp,0130DH,47, 0a66H	;"Get that shit outta here!"
- SX	outa_here_sp,0130DH,63, 0a67H	;"Get that outta here!"
- SX	blckd_it_sp, 0130DH,29, 0a68H	;"Blocked it"
- SX	no_way_sp,   0130DH,47, 0a69H	;"No way!"
- SX	rejected_sp, 0130DH,46, 0a6aH	;"Rejected"
- SX	deflected_sp,0130DH,38, 0a6cH	;"Deflected"
+ SXL	its_blckd_sp,0130DH,47, 0a66H	;"Get that shit outta here!"
+ SXL	outa_here_sp,0130DH,63, 0a67H	;"Get that outta here!"
+ SXL	blckd_it_sp, 0130DH,29, 0a68H	;"Blocked it"
+ SXL	no_way_sp,   0130DH,47, 0a69H	;"No way!"
+ SXL	rejected_sp, 0130DH,46, 0a6aH	;"Rejected"
+ SXL	deflected_sp,0130DH,38, 0a6cH	;"Deflected"
 ;DJT look_out_sp line moved
 
- SX	stolen_sp,   0130DH,35, 0a72H	;"Stolen!"
- SX	the_steal_sp,0130DH,39, 0a73H	;"The steal!"
- SX	turnover_sp, 0130DH,48, 0a75H	;"The turnover!"
- SX	trnd_over_sp,0130DH,61, 0a76H	;"He turned it over!"
- SX	quck_hnds_sp,0130DH,46, 0a79H	;"Quick hands!"
- SX	intrceptd_sp,0130DH,48, 0a7fH	;"Intercepted!"
- SX	stripped_sp, 0130DH,29, 0a84H	;"Stripped!"
- SX	clean_pck_sp,0130DH,48, 0a83H	;"Clean pick!"
- SX	bad_pass_sp, 0130DH,56, 0a82H	;"Bad pass!"
+ SXL	stolen_sp,   0130DH,35, 0a72H	;"Stolen!"
+ SXL	the_steal_sp,0130DH,39, 0a73H	;"The steal!"
+ SXL	turnover_sp, 0130DH,48, 0a75H	;"The turnover!"
+ SXL	trnd_over_sp,0130DH,61, 0a76H	;"He turned it over!"
+ SXL	quck_hnds_sp,0130DH,46, 0a79H	;"Quick hands!"
+ SXL	intrceptd_sp,0130DH,48, 0a7fH	;"Intercepted!"
+ SXL	stripped_sp, 0130DH,29, 0a84H	;"Stripped!"
+ SXL	clean_pck_sp,0130DH,48, 0a83H	;"Clean pick!"
+ SXL	bad_pass_sp, 0130DH,56, 0a82H	;"Bad pass!"
 
- SX	flagrant_sp, 0090DH,37, 0abbH	;"Flagrant!"
- SX	to_floor_sp, 0090DH,43, 0ac6H	;"Pushed to the floor!"
- SX	to_deck_sp,  0090DH,37, 0ac7H	;"Knocked to the deck!"
+ SXL	flagrant_sp, 0090DH,37, 0abbH	;"Flagrant!"
+ SXL	to_floor_sp, 0090DH,43, 0ac6H	;"Pushed to the floor!"
+ SXL	to_deck_sp,  0090DH,37, 0ac7H	;"Knocked to the deck!"
 ;DJT Start
 ; SX	shvd_asde_sp,0090DH,67, 0acaH
 ;DJT End
- SX	tookm_out_sp,0090DH,48, 0abeH	;"Took him out!"
- SX	hamerd_hm_sp,0090DH,35, 0ad1H	;"Hammered him!"
+ SXL	tookm_out_sp,0090DH,48, 0abeH	;"Took him out!"
+ SXL	hamerd_hm_sp,0090DH,35, 0ad1H	;"Hammered him!"
  SX	into_stnd_sp,0050DH,96, 0ac4H	;"Into the stands!"
 ;AMM More unused sounds here:
 ; 0ae7 'a three sixty' 360
 ;Below is mostly unused.
- SX	treesixty_sp,0100DH,41, 0ae7H	;"A threesixty!"
- SX	fr_basel_sp, 0100DH,41, 0a29H	;"From the baseline"
- SX	fr_base2_sp, 0100DH,61, 0a2aH	;"From the base line"
- SX	grtmove_sp,  0100DH,41, 0a3aH	;"Great move!"
+ SXL	treesixty_sp,0100DH,41, 0ae7H	;"A threesixty!"
+ SXL	fr_basel_sp, 0100DH,41, 0a29H	;"From the baseline"
+ SXL	fr_base2_sp, 0100DH,61, 0a2aH	;"From the base line"
+ SXL	grtmove_sp,  0100DH,41, 0a3aH	;"Great move!"
  SX	tm_onfire_sp,0140DH,76, 0b3eH	;"The Team is on fire!"
- SX	zigzag_sp,   0100DH,75, 095cH	;"Zig Zag!"
- SX	jams_it2_sp, 0100DH,65, 0986H	;"Jams it with two hands"
- SX	intzone_sp,  0100DH,61, 0915H	;"In the zone!"
- SX	wit_a_flr_sp,0100DH,60, 099cH	;"With a flourish"
- SX	wit_a_fl2_sp,0100DH,65, 099bH	;"Finishes with a flourish"
+ SXL	zigzag_sp,   0100DH,75, 095cH	;"Zig Zag!"
+ SXL	jams_it2_sp, 0100DH,65, 0986H	;"Jams it with two hands"
+ SXL	intzone_sp,  0100DH,61, 0915H	;"In the zone!"
+ SXL	wit_a_flr_sp,0100DH,60, 099cH	;"With a flourish"
+ SXL	wit_a_fl2_sp,0100DH,65, 099bH	;"Finishes with a flourish"
 
  
 
@@ -609,42 +609,42 @@
  SX	nick_nme35,  0100DH,21, 0790H	;"Viper"
  SX	nick_nme36,  0100DH,23, 0792H	;"Zippy"
 
- SX	to_nck_nme1, 0100DH,60, 0761H	;"To Ace"
- SX	to_nck_nme2, 0100DH,60, 08c7H	;"To Bertha"
- SX	to_nck_nme3, 0100DH,60, 0759H	;"To Big Daddy"
- SX	to_nck_nme4, 0100DH,60, 0775H	;"To Bigfoot"
- SX	to_nck_nme5, 0100DH,60, 0785H	;"To Boogeyman"
- SX	to_nck_nme6, 0100DH,60, 075dH	;"To Bubba"
- SX	to_nck_nme7, 0100DH,60, 075fH	;"To Chilly"
- SX	to_nck_nme8, 0100DH,60, 08cdH	;"To Cornelius"
- SX	to_nck_nme9, 0100DH,60, 08d9H	;"To Kookoo
- SX	to_nck_nme10,0100DH,60, 078fH	;"To Dingbat
- SX	to_nck_nme11,0100DH,60, 08b9H	;"To Fat boy"
- SX	to_nck_nme12,0100DH,60, 0767H	;"To Flash"
- SX	to_nck_nme13,0100DH,60, 08d5H	;"To Frankie"
- SX	to_nck_nme14,0100DH,60, 08bdH	;"To Frankencow"
- SX	to_nck_nme15,0100DH,60, 0769H	;"To Gator
- SX	to_nck_nme16,0100DH,60, 0797H	;"To Grandpa"
- SX	to_nck_nme17,0100DH,60, 076bH	;"To Hammer"
- SX	to_nck_nme18,0100DH,60, 076dH	;"To Hawkeye"
- SX	to_nck_nme19,0100DH,60, 076fH	;"To Homeboy"
- SX	to_nck_nme20,0100DH,60, 0799H	;"To Joker"
- SX	to_nck_nme21,0100DH,60, 079bH	;"To Loverboy"
- SX	to_nck_nme22,0100DH,60, 0777H	;"To Mad Dog"
- SX	to_nck_nme23,0100DH,60, 08bfH	;"To Large Marge"
- SX	to_nck_nme24,0100DH,60, 08cbH	;"To Merlin"
+ SXL	to_nck_nme1, 0100DH,60, 0761H	;"To Ace"
+ SXL	to_nck_nme2, 0100DH,60, 08c7H	;"To Bertha"
+ SXL	to_nck_nme3, 0100DH,60, 0759H	;"To Big Daddy"
+ SXL	to_nck_nme4, 0100DH,60, 0775H	;"To Bigfoot"
+ SXL	to_nck_nme5, 0100DH,60, 0785H	;"To Boogeyman"
+ SXL	to_nck_nme6, 0100DH,60, 075dH	;"To Bubba"
+ SXL	to_nck_nme7, 0100DH,60, 075fH	;"To Chilly"
+ SXL	to_nck_nme8, 0100DH,60, 08cdH	;"To Cornelius"
+ SXL	to_nck_nme9, 0100DH,60, 08d9H	;"To Kookoo
+ SXL	to_nck_nme10,0100DH,60, 078fH	;"To Dingbat
+ SXL	to_nck_nme11,0100DH,60, 08b9H	;"To Fat boy"
+ SXL	to_nck_nme12,0100DH,60, 0767H	;"To Flash"
+ SXL	to_nck_nme13,0100DH,60, 08d5H	;"To Frankie"
+ SXL	to_nck_nme14,0100DH,60, 08bdH	;"To Frankencow"
+ SXL	to_nck_nme15,0100DH,60, 0769H	;"To Gator
+ SXL	to_nck_nme16,0100DH,60, 0797H	;"To Grandpa"
+ SXL	to_nck_nme17,0100DH,60, 076bH	;"To Hammer"
+ SXL	to_nck_nme18,0100DH,60, 076dH	;"To Hawkeye"
+ SXL	to_nck_nme19,0100DH,60, 076fH	;"To Homeboy"
+ SXL	to_nck_nme20,0100DH,60, 0799H	;"To Joker"
+ SXL	to_nck_nme21,0100DH,60, 079bH	;"To Loverboy"
+ SXL	to_nck_nme22,0100DH,60, 0777H	;"To Mad Dog"
+ SXL	to_nck_nme23,0100DH,60, 08bfH	;"To Large Marge"
+ SXL	to_nck_nme24,0100DH,60, 08cbH	;"To Merlin"
 ; SX	to_nck_nme25,0100DH,60, 08c1H
- SX	to_nck_nme26,0100DH,60, 08cfH	;"To Pongo"
- SX	to_nck_nme27,0100DH,60, 077dH	;"To Shadow"
- SX	to_nck_nme28,0100DH,60, 077fH	;"To Slim"
- SX	to_nck_nme29,0100DH,60, 0781H	;"To Snake"
- SX	to_nck_nme30,0100DH,60, 0783H	;"To Spanky"
- SX	to_nck_nme31,0100DH,60, 0787H	;"To Spider"
- SX	to_nck_nme32,0100DH,60, 0789H	;"To Spike"
- SX	to_nck_nme33,0100DH,60, 078bH	;"To Top Gun"
- SX	to_nck_nme34,0100DH,60, 078dH	;"To T. Rex"
- SX	to_nck_nme35,0100DH,60, 0791H	;"To Viper"
- SX	to_nck_nme36,0100DH,60, 0793H	;"To Zippy"
+ SXL	to_nck_nme26,0100DH,60, 08cfH	;"To Pongo"
+ SXL	to_nck_nme27,0100DH,60, 077dH	;"To Shadow"
+ SXL	to_nck_nme28,0100DH,60, 077fH	;"To Slim"
+ SXL	to_nck_nme29,0100DH,60, 0781H	;"To Snake"
+ SXL	to_nck_nme30,0100DH,60, 0783H	;"To Spanky"
+ SXL	to_nck_nme31,0100DH,60, 0787H	;"To Spider"
+ SXL	to_nck_nme32,0100DH,60, 0789H	;"To Spike"
+ SXL	to_nck_nme33,0100DH,60, 078bH	;"To Top Gun"
+ SXL	to_nck_nme34,0100DH,60, 078dH	;"To T. Rex"
+ SXL	to_nck_nme35,0100DH,60, 0791H	;"To Viper"
+ SXL	to_nck_nme36,0100DH,60, 0793H	;"To Zippy"
 
 ;
 ; Speech scripts
@@ -708,200 +708,200 @@ nickname_spch_tbl
 ****************
 full_name_speech
 
+ .word	0,0,0		;(no call) TRAE YOUNG
+ .word	0,0,0		;(no call) DOMINIQUE WILKINS
  .word	0100DH,83,1304	;BLAYLOCK,    mookie		( ALTANTA HAWKS )
- .word	0100DH,103,1424	;MUTUMBO,     dekembe
- .word	0100DH,71,1604	;LAETNER,     christian
- .word	0100DH,64,1308	;SMITH,       steve
+ .word	0,0,0		;(no call) KYLE KORVER
  .word	0,0,0
 ; .word	0100DH,63,1316	;NORMAN,      ken
 
- .word	0100DH,59,1336	;FOX,         rick			( BOSTON )
- .word	0100DH,57,0bbeh	;WALKER,      antoine
- .word	0100DH,66,1332	;RADJA,       dino
- .word	0100DH,66,1324	;BARROS,      dana
- .word	0100DH,61,1320	;BROWN,       dee
+ .word	0,0,0		;(no call) was RADJA,       dino
+ .word	0,0,0		;(no call) KEVIN MCHALE
+ .word	0,0,0		;(no call) PAUL PIERCE
+ .word	0,0,0		;(no call) JAYSON TATUM
+ .word	0,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,57,2912	;HAMER,       steve
 
+ .word	0100DH,74,1344	;JOHNSON,     larry
  .word	0100DH,65,1348	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,80,1644	;MASON,       anthony
- .word	0100DH,78,1544	;DIVAC,       vlade
  .word	0100DH,58,1356	;CURRY,       del
- .word	0,0,0
+ .word	0,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,88,1408	;MASHBURN,    jamal
 ; .word	0100DH,70,1352	;ZIDEK,       george
 
  .word	0100DH,68,0bb8h ;JORDAN,      michael		( CHICAGO )
  .word	0100DH,72,1360	;PIPPEN,      scottie
  .word	0100DH,60,1364	;RODMAN,      dennis
- .word	0100DH,70,1368	;KUKOC,       toni
- .word	0100DH,78,1372	;LONGLEY,     luke
+ .word	0,0,0		;(no call) DERRICK ROSE
+ .word	0100DH,68,1376	;KERR,        steve
 ; .word	0100DH,68,1376	;KERR,        steve
 
- .word	0100DH,69,1392	;BRANDON,     terrell		( CLEVELAND )
- .word	0100DH,76,1384	;MILLS,       chris
- .word	0100DH,70,1388	;PHILLS,      bobby
- .word	0100DH,75,1380	;HILL,        tyrone
- .word	0100DH,65,1396	;FERRY,       danny
+ .word	0,0,0		;(no call) was FERRY,       danny
+ .word	0,0,0		;(no call) KYRIE IRVING
+ .word	0,0,0		;(no call) DONOVAN MITCHELL
+ .word	0,0,0		;(no call) BRAD DAUGHERTY
+ .word	0,0,0
 
+ .word	0,0,0		;(no call) DIRK NOWITZKI
+ .word	0,0,0		;(no call) was PACK,        robert
  .word	0100DH,95,1716	;FINLEY,      michael		( DALLAS )
  .word	0100DH,81,1624	;BRADLEY,     shawn
- .word	0100DH,84,1572	;DANILOVIC,   sasha
- .word	0100DH,70,1872	;PACK,        robert
- .word	0100DH,71,1648	;HARPER,      derek
-
- .word	0100DH,78,040Eh	;ELLIS,       alphonso		( DENVER )
- .word	0100DH,64,1436	;ELLIS,       dale			
- .word	0100DH,96,1428	;McDYESS,     antonio
- .word	0100DH,100,1752	;MARCIULIONIS,sarunas
  .word	0,0,0
 
- .word	0100DH,63,1444	;HILL,        grant			( DETROIT )
+ .word	0,0,0		;(no call) NIKOLA JOKIC
+ .word	0,0,0		;(no call) JAMAL MURRAY
+ .word	0100DH,103,1424	;MUTUMBO,     dekembe
+ .word	0,0,0		;(no call) CARMELO ANTHONY
+ .word	0,0,0		;(no call) CHAUNCEY BILLUPS
+
+ .word	0,0,0		;(no call) ISIAH THOMAS
  .word	0100DH,74,1440	;DUMARS,      joe
- .word	0100DH,56,1452	;THORPE,      otis
- .word	0100DH,76,1448	;MILLS,       terry
- .word	0,0,0
+ .word	0100DH,63,1444	;HILL,        grant			( DETROIT )
+ .word	0,0,0		;(no call) BILL LAIMBEER
+ .word	0,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,77,1300	;AUGMON,      stacey
 
- .word	0100DH,76,1464	;SPREWELL,    latrell		( GOLDEN STATE )
+ .word	0,0,0		;(Curry - no call) was SMITH, joe
+ .word	0,0,0		;(no call) KLAY THOMPSON
  .word	0100DH,77,1476	;MULLIN,      chris
- .word	0100DH,65,1472	;SMITH,       joe
  .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,72,1676	;KONCAK,      jon
 
  .word	0100DH,118,1480	;OLAJUWAN,    hakeem 		( HOUSTON )
- .word	0100DH,66,0bc0h	;BARKLEY,     charles
- .word	0100DH,80,1484	;DREXLER,     clyde
- .word	0100DH,61,1568	;WILLIS,      kevin
+ .word	0,0,0		;(no call) JAMES HARDEN
+ .word	0,0,0		;(no call) YAO MING
+ .word	0,0,0		;(no call) TRACY MCGRADY
  .word	0,0,0
 ; .word	0100DH,66,2909	;HARRINGTON,  othella
 
  .word	0100DH,85,1500	;MILLER,      reggie		( INDIANA )
- .word	0100DH,78,1516	;JACKSON,     mark
- .word	0100DH,71,1508	;SMITS,       rik
- .word	0100DH,71,1504	;DAVIS,       dale
+ .word	0,0,0		;(no call) TYRESE HALIBURTON
  .word	0100DH,70,1432	;ROSE,        jalen
+ .word	0100DH,71,1508	;SMITS,       rik
+ .word	0,0,0		;(no call) CAITLIN CLARK
 ; .word	0100DH,66,2936	;DAMPIER,     erick
 
- .word	0100DH,45,1520	;VAUGHT,      loy			( CLIPPERS )
- .word	0100DH,64,1524	;ROGERS,      rodney
- .word	0100DH,72,1536	;BARRY,       brent
- .word	0100DH,75,1532	;RICHARDSON,  pooh
+ .word	0,0,0		;(no call) CHRIS PAUL
+ .word	0,0,0		;(no call) BLAKE GRIFFIN
+ .word	0,0,0		;(no call) PAUL GEORGE
+ .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,80,1528	;MURRAY,      lamond
 
- .word	0100DH,68,0bbch	;ONEAL,       shaquille		( LAKERS )
- .word	0100DH,68,1556	;JONES,       eddie
- .word	0100DH,76,1540	;VAN EXEL,    nick
  .word	0100DH,56,0bbah	;BRYANT,      kobe
- .word	0100DH,80,1488	;HORRY,       robert
+ .word	0,0,0		;(no call) was VAN EXEL,    nick
+ .word	0,0,0		;(no call) RON ARTEST
+ .word	0,0,0		;(Kareem - no call) was HORRY,       robert
+ .word	0,0,0		;(no call) JAMES WORTHY
 ; .word	0100DH,56,1958	;SCOTT,       byron
 ; .word	0100DH,62,1552	;CAMPBELL,    elden
 
- .word	0100DH,80,1460	;HARDAWAY,    tim			( MIAMI )
+ .word	0,0,0		;(no call) DWYANE WADE
  .word	0100DH,97,1560	;MOURNING,    alonzo
- .word	0100DH,88,1408	;MASHBURN,    jamal
- .word	0,0,0
- .word	0,0,0
+ .word	0100DH,80,1460	;HARDAWAY,    tim			( MIAMI )
+ .word	0,0,0		;(no call) JIMMY BUTLER
+ .word	0,0,0		;(no call) BAM ADEBAYO
 
- .word	0100DH,70,1580	;BAKER,       vin			( MILWAUKEE )
- .word	0100DH,93,1584	;ROBINSON,    glen
+ .word	0,0,0		;(Giannis - no call) was BAKER,       vin			( MILWAUKEE )
+ .word	0,0,0		;(no call) KHRIS MIDDLETON
  .word	0100DH,60,2930	;ALLEN,       ray
- .word	0100DH,71,1596	;DOUGLAS,     sherman
- .word	0100DH,54,1628	;GILLIAM,     armen
+ .word	0100DH,93,1584	;ROBINSON,    glen
+ .word	0100DH,70,1492	;CASSELL,     sam
 ; .word	0100DH,72,1955	;LANG,        andrew
 ; .word	0100DH,77,1588	;RESPERT,     shawn
 
  .word	0100DH,72,1616	;GARNETT,     kevin			( MINNESOTTA )
- .word	0100DH,73,1612	;GUGLIOTTA,   tom
- .word	0100DH,75,2951	;MARBURY,     stephon
- .word	0,0,0
+ .word	0,0,0		;(no call) ANTHONY EDWARDS
+ .word	0,0,0		;(no call) LAMELO BALL
+ .word	0100DH,76,1464	;SPREWELL,    latrell		( GOLDEN STATE )
  .word	0,0,0
 
- .word	0100DH,68,1340	;GILL,        kendall		( NEW JERSEY )
+ .word	0100DH,68,1404	;KIDD,        jason
+ .word	0100DH,71,1684	;COLEMAN,     derrick
  .word	0100DH,52,2903	;KITTLES,     kerry
- .word	0100DH,70,1492	;CASSELL,     sam
- .word	0100DH,84,1400	;JACKSON,     jim
- .word	0100DH,79,1328	;MONTROSS,    eric
+ .word	0100DH,75,2951	;MARBURY,     stephon
+ .word	0,0,0
 ; .word	0100DH,61,1632	;O'BANNON,    ed
 
  .word	0100DH,82,1640	;EWING,       patrick		( NEW YORK )
- .word	0100DH,74,1344	;JOHNSON,     larry
  .word	0100DH,76,1456	;HOUSTON,     allan
- .word	0100DH,70,1656	;STARKS,      john
  .word	0100DH,81,1652	;OAKLEY,      charles
+ .word	0100DH,70,1656	;STARKS,      john
+ .word	0,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,65,2906	;WALLACE,     john
 
+ .word	0100DH,68,0bbch	;ONEAL,       shaquille		( LAKERS )
  .word	0100DH,95,1660	;HARDAWAY,    anfernee		( ORLANDO )
- .word	0100DH,76,1664	;GRANT,       horace
  .word	0100DH,65,1668	;ANDERSON,    nick
- .word	0100DH,84,1468	;SEIKALY,     rony
- .word	0100DH,67,1672	;SCOTT,       dennis
+ .word	0,0,0		;(no call) DWIGHT HOWARD
+ .word	0100DH,76,1664	;GRANT,       horace
 
  .word	0100DH,72,2942	;IVERSON,     allen			( PHILADELPHIA )
- .word	0100DH,71,1684	;COLEMAN,     derrick
- .word	0100DH,96,1680	;STACKHOUSE,  jerry
- .word	0100DH,113,1688	;WEATHERSPOON,clarence
+ .word	0,0,0		;(no call) JOEL EMBIID
+ .word	0,0,0		;(no call) MOSES MALONE
+ .word	0,0,0		;(no call) JULIUS ERVING
  .word	0,0,0
 
- .word	0100DH,69,1700	;JOHNSON,     kevin			( PHOENIX )
- .word	0100DH,68,1404	;KIDD,        jason
- .word	0100DH,77,1712	;PERSON,      wesley
- .word	0100DH,66,1708	;MANNING,     danny
- .word	0100DH,83,1548	;CEBALLOS,    cedric
+ .word	0,0,0		;(no call) DEVIN BOOKER
+ .word	0100DH,66,0bc0h	;BARKLEY,     charles
+ .word	0,0,0		;(no call) STEVE NASH
+ .word	0,0,0		;(no call) DAN MAJERLE
+ .word	0,0,0
 ; .word	0100DH,101,1704	;TISDALE,     wayman
 
+ .word	0,0,0		;(no call) DAMIAN LILLARD
+ .word	0100DH,80,1484	;DREXLER,     clyde
+ .word	0,0,0		;(no call) LAMARCUS ALDRIDGE
  .word	0100DH,93,1728	;SABONIS,     arvydas		( PORTLAND )
- .word	0100DH,64,1620	;ANDERSON,    kenny
- .word	0100DH,94,1724	;ROBINSON,    cliff
- .word	0100DH,94,1600	;RIDER,       isaiah
  .word	0,0,0
 ; .word	0100DH,76,1736	;CHILDRESS,   randolph
 
  .word	0100DH,82,1744	;RICHMOND,    mitch			( SACRAMENTO )
- .word	0100DH,74,1564	;OWENS,       billy
- .word	0100DH,89,1420	;ABDUL-RAUF,  mahmoud
- .word	0100DH,50,1756	;EDNEY,       tyus
+ .word	0100DH,78,1544	;DIVAC,       vlade
+ .word	0100DH,31,1965	;WEBB,        spud
+ .word	0,0,0		;(no call) DEMARCUS COUSINS
  .word	0,0,0
 ; .word	0100DH,85,1748	;GRANT,       brian
 
+ .word	0,0,0		;(no call) TIM DUNCAN
  .word	0100DH,92,1764	;ROBINSON,    david			( SAN ANTONIO )
- .word	0100DH,69,1760	;ELLIOTT,     sean
- .word	0100DH,74,1768	;JOHNSON,     avery
- .word	0100DH,82,1776	;DEL NEGRO,   vinny
- .word	0,0,0
+ .word	0,0,0		;(no call) TONY PARKER
+ .word	0,0,0		;(no call) MANU GINOBILI
+ .word	0,0,0		;(no call) VICTOR WEMBANYAMA
 ; .word	0100DH,90,1696	;MAXWELL,     vernon
 
- .word	0100DH,74,1784	;PAYTON,      gary			( SEATTLE )
- .word	0100DH,64,1780	;KEMP,        shawn
- .word	0100DH,59,1792	;HAWKINS,     hersey
- .word	0100DH,57,1788	;SCHREMPF,    detlef
  .word	0,0,0
+ .word	0100DH,74,1784	;PAYTON,      gary			( SEATTLE )
+ .word	0,0,0		;(no call) RUSSELL WESTBROOK
+ .word	0100DH,64,1780	;KEMP,        shawn
+ .word	0,0,0		;(no call) SHAI GILGEOUS-ALEXANDER
 ; .word	0100DH,56,1796	;FORD,        sherell
 
- .word	0100DH,92,1804	;STOUDAMIRE,  damon			( TORONTO )
- .word	0100DH,78,1740	;WILLIAMS,    walt
- .word	0100DH,72,2927	;CAMBY,       marcus
- .word	0100DH,74,1412	;JONES,       popeye
+ .word	0,0,0		;(no call) VINCE CARTER
+ .word	0,0,0		;(no call) KAWHI LEONARD
+ .word	0,0,0		;(no call) CHRIS BOSH
+ .word	0,0,0		;(no call) DEMAR DEROZAN
  .word	0,0,0
 ; .word	0100DH,59,1800	;ROGERS,      carlos
 
  .word	0100DH,68,1824	;MALONE,      karl			( UTAH )
  .word	0100DH,79,1820	;STOCKTON,    john
  .word	0100DH,70,1828	;HORNACEK,    jeff
- .word	0100DH,64,1836	;MORRIS,      chris
+ .word	0,0,0		;(no call) PETE MARAVICH
  .word	0,0,0
 
- .word	0100DH,74,1852	;REEVES,      bryant		( VANCOUVER )
- .word	0100DH,78,1840	;ANTHONY,     greg
- .word	0100DH,66,1844	;EDWARDS,     blue
+ .word	0100DH,89,1420	;ABDUL-RAUF,  mahmoud
+ .word	0,0,0		;(no call) DESMOND BANE
+ .word	0,0,0		;(no call) PAU GASOL
  .word	0,0,0
  .word	0,0,0
 
- .word	0100DH,53,1864	;WEBBER,      chris			( WASHINGTON )
- .word	0100DH,77,1720	;STRICKLAND,  rod
  .word	0100DH,74,1860	;HOWARD,      juwan
- .word	0100DH,92,1876	;MURESAN,     gheorge
- .word	0100DH,53,1816	;MURRAY,      tracy
+ .word	0,0,0		;(no call) BRADLEY BEAL
+ .word	0100DH,53,1864	;WEBBER,      chris			( WASHINGTON )
+ .word	0,0,0		;(no call) ANTHONY DAVIS
+ .word	0,0,0
 ; .word	0100DH,69,1868	;CHEANEY,     calbert
 
 
@@ -909,200 +909,200 @@ full_name_speech
 ***********
 pass_speech		;'TO player name'
 
+ .word	0,0,0		;(no call) TRAE YOUNG
+ .word	0,0,0		;(no call) DOMINIQUE WILKINS
  .word	0100DH,54,1307	;to BLAYLOCK,    mookie		( ALTANTA HAWKS )
- .word	0100DH,67,1427	;to MUTUMBO,     dekembe
- .word	0100DH,43,1607	;to LAETNER,     christian
- .word	0100DH,43,1311	;to SMITH,       steve
+ .word	0,0,0		;(no call) KYLE KORVER
  .word	0,0,0
 ; .word	0100DH,43,1319	;to NORMAN,      ken
 
- .word	0100DH,43,1339	;to FOX,         rick		( BOSTON )
- .word	0100DH,35,07C2h	;to WALKER,      antoine
- .word	0100DH,44,1335	;to RADJA,       dino
- .word	0100DH,40,1327	;to BARROS,      dana
- .word	0100DH,42,1323	;to BROWN,       dee
+ .word	0,0,0		;(no call) was to RADJA,       dino
+ .word	0,0,0		;(no call) KEVIN MCHALE
+ .word	0,0,0		;(no call) PAUL PIERCE
+ .word	0,0,0		;(no call) JAYSON TATUM
+ .word	0,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,35,2914	;to HAMER,       steve
 
+ .word	0100DH,48,1347	;to JOHNSON,     larry
  .word	0100DH,42,1351	;to RICE,        glen		( CHARLOTTE )
- .word	0100DH,60,1647	;to MASON,       anthony
- .word	0100DH,49,1547	;to DIVAC,       vlade
  .word	0100DH,36,1359	;to CURRY,       del
- .word	0,0,0
+ .word	0,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,59,1411	;to MASHBURN,    jamal
 ; .word	0100DH,41,1355	;to ZIDEK,       george
 
  .word	0100DH,44,07bfh ;to JORDAN,      michael	( CHICAGO )
  .word	0100DH,41,1363	;to PIPPEN,      scottie
  .word	0100DH,38,1367	;to RODMAN,      dennis
- .word	0100DH,47,1371	;to KUKOC,       toni
- .word	0100DH,56,1375	;to LONGLEY,     luke
+ .word	0,0,0		;(no call) DERRICK ROSE
+ .word	0100DH,44,1379	;to KERR,        steve
 ; .word	0100DH,44,1379	;to KERR,        steve
 
- .word	0100DH,39,1395	;to BRANDON,     terrell	( CLEVELAND )
- .word	0100DH,51,1387	;to MILLS,       chris
- .word	0100DH,44,1391	;to PHILLS,      bobby
- .word	0100DH,42,1383	;to HILL,        tyrone
- .word	0100DH,38,1399	;to FERRY,       danny
+ .word	0,0,0		;(no call) was to FERRY,       danny
+ .word	0,0,0		;(no call) KYRIE IRVING
+ .word	0,0,0		;(no call) DONOVAN MITCHELL
+ .word	0,0,0		;(no call) BRAD DAUGHERTY
+ .word	0,0,0
 
+ .word	0,0,0		;(no call) DIRK NOWITZKI
+ .word	0,0,0		;(no call) was to PACK,        robert
  .word	0100DH,40,1719	;to FINLEY,      michael	( DALLAS )
  .word	0100DH,53,1627	;to BRADLEY,     shawn
- .word	0100DH,58,1575	;to DANILOVIC,   sasha
- .word	0100DH,41,1875	;to PACK,        robert
- .word	0100DH,46,1651	;to HARPER,      derek
-
- .word	0100DH,57,1439	;to ELLIS,     	 alphonso	( DENVER )
- .word	0100DH,38,1439	;to ELLIS,       dale		
- .word	0100DH,58,1431	;to McDYESS,     antonio
- .word	0100DH,58,1755	;to MARCIULIONIS,sarunas
  .word	0,0,0
 
- .word	0100DH,42,1447	;to HILL,        grant		( DETROIT )
+ .word	0,0,0		;(no call) NIKOLA JOKIC
+ .word	0,0,0		;(no call) JAMAL MURRAY
+ .word	0100DH,67,1427	;to MUTUMBO,     dekembe
+ .word	0,0,0		;(no call) CARMELO ANTHONY
+ .word	0,0,0		;(no call) CHAUNCEY BILLUPS
+
+ .word	0,0,0		;(no call) ISIAH THOMAS
  .word	0100DH,61,1443	;to DUMARS,      joe
- .word	0100DH,34,1455	;to THORPE,      otis
- .word	0100DH,40,1451	;to MILLS,       terry
- .word	0,0,0
+ .word	0100DH,42,1447	;to HILL,        grant		( DETROIT )
+ .word	0,0,0		;(no call) BILL LAIMBEER
+ .word	0,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,44,1303	;to AUGMON,      stacey
 
- .word	0100DH,52,1467	;to SPREWELL,    latrell	( GOLDEN STATE )
+ .word	0,0,0		;(Curry - no call) was SMITH, joe
+ .word	0,0,0		;(no call) KLAY THOMPSON
  .word	0100DH,52,1479	;to MULLIN,      chris
- .word	0100DH,43,1475	;to SMITH,       joe
  .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,46,1679	;to KONCAK,      jon
 
  .word	0100DH,64,1483	;to OLAJUWAN,    hakeem 	( HOUSTON )
- .word	0100DH,45,07C3h	;to BARKLEY,  	 charles
- .word	0100DH,51,1487	;to DREXLER,     clyde
- .word	0100DH,40,1571	;to WILLIS,      kevin
+ .word	0,0,0		;(no call) JAMES HARDEN
+ .word	0,0,0		;(no call) YAO MING
+ .word	0,0,0		;(no call) TRACY MCGRADY
  .word	0,0,0
 ; .word	0100DH,45,2911	;to HARRINGTON,  othella
 
  .word	0100DH,48,1503	;to MILLER,      reggie		( INDIANA )
- .word	0100DH,57,1519	;to JACKSON,     mark
- .word	0100DH,55,1511	;to SMITS,       rik
- .word	0100DH,43,1507	;to DAVIS,       dale
+ .word	0,0,0		;(no call) TYRESE HALIBURTON
  .word	0100DH,38,1435	;to ROSE,        jalen
+ .word	0100DH,55,1511	;to SMITS,       rik
+ .word	0,0,0		;(no call) CAITLIN CLARK
 ; .word	0100DH,48,2938	;to DAMPIER,     erick
 
- .word	0100DH,36,1523	;to VAUGHT,      loy		( CLIPPERS )
- .word	0100DH,43,1527	;to ROGERS,      rodney
- .word	0100DH,43,1539	;to BARRY,       brent
- .word	0100DH,54,1535	;to RICHARDSON,  pooh
+ .word	0,0,0		;(no call) CHRIS PAUL
+ .word	0,0,0		;(no call) BLAKE GRIFFIN
+ .word	0,0,0		;(no call) PAUL GEORGE
+ .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,39,1531	;to MURRAY,      lamond
 
- .word	0100DH,49,07C1h	;to ONEAL,       shaquille	( LAKERS )
- .word	0100DH,49,1559	;to JONES,       eddie
- .word	0100DH,54,1543	;to VAN EXEL,    nick
  .word	0100DH,40,07C0h	;to BRYANT,      kobe
- .word	0100DH,51,1491	;to HORRY,       robert
+ .word	0,0,0		;(no call) was to VAN EXEL,    nick
+ .word	0,0,0		;(no call) RON ARTEST
+ .word	0,0,0		;(Kareem - no call) was to HORRY,       robert
+ .word	0,0,0		;(no call) JAMES WORTHY
 ; .word	0100DH,40,1960	;to SCOTT,       byron
 ; .word	0100DH,46,1555	;to CAMPBELL,    elden
 
- .word	0100DH,56,1463	;to HARDAWAY,    tim		( MIAMI )
+ .word	0,0,0		;(no call) DWYANE WADE
  .word	0100DH,44,1563	;to MOURNING,    alonzo
- .word	0100DH,59,1411	;to MASHBURN,    jamal
- .word	0,0,0
- .word	0,0,0
+ .word	0100DH,56,1463	;to HARDAWAY,    tim		( MIAMI )
+ .word	0,0,0		;(no call) JIMMY BUTLER
+ .word	0,0,0		;(no call) BAM ADEBAYO
 
- .word	0100DH,49,1583	;to BAKER,       vin		( MILWAUKEE )
- .word	0100DH,70,1587	;to ROBINSON,    glen
+ .word	0,0,0		;(Giannis - no call) was BAKER,       vin		( MILWAUKEE )
+ .word	0,0,0		;(no call) KHRIS MIDDLETON
  .word	0100DH,44,2932	;to ALLEN,       ray
- .word	0100DH,40,1599	;to DOUGLAS,     sherman
- .word	0100DH,40,1631	;to GILLIAM,     armen
+ .word	0100DH,70,1587	;to ROBINSON,    glen
+ .word	0100DH,48,1495	;to CASSELL,     sam
 ; .word	0100DH,45,1957	;to LANG,        andrew
 ; .word	0100DH,51,1591	;to RESPERT,     shawn
 
  .word	0100DH,50,1619	;to GARNETT,     kevin		( MINNESOTTA )
- .word	0100DH,52,1615	;to GUGLIOTTA,   tom
- .word	0100DH,40,2953	;to MARBURY,     stephon
- .word	0,0,0
+ .word	0,0,0		;(no call) ANTHONY EDWARDS
+ .word	0,0,0		;(no call) LAMELO BALL
+ .word	0100DH,52,1467	;to SPREWELL,    latrell	( GOLDEN STATE )
  .word	0,0,0
 
- .word	0100DH,40,1343	;to GILL,        kendall	( NEW JERSEY )
+ .word	0100DH,41,1407	;to KIDD,        jason
+ .word	0100DH,46,1687	;to COLEMAN,     derrick
  .word	0100DH,41,2905	;to KITTLES,     kerry
- .word	0100DH,48,1495	;to CASSELL,     sam
- .word	0100DH,57,1403	;to JACKSON,     jim
- .word	0100DH,62,1331	;to MONTROSS,    eric
+ .word	0100DH,40,2953	;to MARBURY,     stephon
+ .word	0,0,0
 ; .word	0100DH,45,1635	;to O'BANNON,    ed
 
  .word	0100DH,43,1643	;to EWING,       patrick	( NEW YORK )
- .word	0100DH,48,1347	;to JOHNSON,     larry
  .word	0100DH,54,1459	;to HOUSTON,     allan
- .word	0100DH,45,1659	;to STARKS,      john
  .word	0100DH,40,1655	;to OAKLEY,      charles
+ .word	0100DH,45,1659	;to STARKS,      john
+ .word	0,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,39,2908	;to WALLACE,     john
 
+ .word	0100DH,49,07C1h	;to ONEAL,       shaquille	( LAKERS )
  .word	0100DH,56,1663	;to HARDAWAY,    anfernee	( ORLANDO )
- .word	0100DH,43,1667	;to GRANT,       horace
  .word	0100DH,43,1671	;to ANDERSON,    nick
- .word	0100DH,55,1471	;to SEIKALY,     rony
- .word	0100DH,45,1675	;to SCOTT,       dennis
+ .word	0,0,0		;(no call) DWIGHT HOWARD
+ .word	0100DH,43,1667	;to GRANT,       horace
 
  .word	0100DH,53,2944	;to IVERSON,     allen		( PHILADELPHIA )
- .word	0100DH,46,1687	;to COLEMAN,     derrick
- .word	0100DH,69,1683	;to STACKHOUSE,  jerry
- .word	0100DH,75,1691	;to WEATHERSPOON,clarence
+ .word	0,0,0		;(no call) JOEL EMBIID
+ .word	0,0,0		;(no call) MOSES MALONE
+ .word	0,0,0		;(no call) JULIUS ERVING
  .word	0,0,0
 
- .word	0100DH,48,1703	;to JOHNSON,     kevin		( PHOENIX )
- .word	0100DH,41,1407	;to KIDD,        jason
- .word	0100DH,40,1715	;to PERSON,      wesley
- .word	0100DH,38,1711	;to MANNING,     danny
- .word	0100DH,54,1551	;to CEBALLOS,    cedric
+ .word	0,0,0		;(no call) DEVIN BOOKER
+ .word	0100DH,45,07C3h	;to BARKLEY,  	 charles
+ .word	0,0,0		;(no call) STEVE NASH
+ .word	0,0,0		;(no call) DAN MAJERLE
+ .word	0,0,0
 ; .word	0100DH,61,1707	;to TISDALE,     wayman
 
+ .word	0,0,0		;(no call) DAMIAN LILLARD
+ .word	0100DH,51,1487	;to DREXLER,     clyde
+ .word	0,0,0		;(no call) LAMARCUS ALDRIDGE
  .word	0100DH,49,1731	;to SABONIS,     arvydas	( PORTLAND )
- .word	0100DH,43,1623	;to ANDERSON,    kenny
- .word	0100DH,70,1727	;to ROBINSON,    cliff
- .word	0100DH,53,1603	;to RIDER,       isaiah
  .word	0,0,0
 ; .word	0100DH,48,1739	;to CHILDRESS,   randolph
 
  .word	0100DH,51,1747	;to RICHMOND,    mitch		( SACRAMENTO )
- .word	0100DH,51,1567	;to OWENS,       billy
- .word	0100DH,61,1423	;to ABDUL-RAUF,  mahmoud
- .word	0100DH,36,1759	;to EDNEY,       tyus
+ .word	0100DH,49,1547	;to DIVAC,       vlade
+ .word	0100DH,41,1966	;to WEBB,        spud
+ .word	0,0,0		;(no call) DEMARCUS COUSINS
  .word	0,0,0
 ; .word	0100DH,43,1751	;to GRANT,       brian
 
+ .word	0,0,0		;(no call) TIM DUNCAN
  .word	0100DH,70,1767	;to ROBINSON,    david		( SAN ANTONIO )
- .word	0100DH,41,1763	;to ELLIOTT,     sean
- .word	0100DH,48,1771	;to JOHNSON,     avery
- .word	0100DH,54,1779	;to DEL NEGRO,   vinny
- .word	0,0,0
+ .word	0,0,0		;(no call) TONY PARKER
+ .word	0,0,0		;(no call) MANU GINOBILI
+ .word	0,0,0		;(no call) VICTOR WEMBANYAMA
 ; .word	0100DH,65,1699	;to MAXWELL,     vernon
 
- .word	0100DH,43,1787	;to PAYTON,      gary		( SEATTLE )
- .word	0100DH,37,1783	;to KEMP,        shawn
- .word	0100DH,44,1795	;to HAWKINS,     hersey
- .word	0100DH,41,1791	;to SCHREMPF,    detlef
  .word	0,0,0
+ .word	0100DH,43,1787	;to PAYTON,      gary		( SEATTLE )
+ .word	0,0,0		;(no call) RUSSELL WESTBROOK
+ .word	0100DH,37,1783	;to KEMP,        shawn
+ .word	0,0,0		;(no call) SHAI GILGEOUS-ALEXANDER
 ; .word	0100DH,40,1799	;to FORD,        sherell
 
- .word	0100DH,63,1807	;to STOUDAMIRE,  damon		( TORONTO )
- .word	0100DH,45,1743	;to WILLIAMS,    walt
- .word	0100DH,45,2929	;to CAMBY,       marcus
- .word	0100DH,49,1415	;to JONES,       popeye
+ .word	0,0,0		;(no call) VINCE CARTER
+ .word	0,0,0		;(no call) KAWHI LEONARD
+ .word	0,0,0		;(no call) CHRIS BOSH
+ .word	0,0,0		;(no call) DEMAR DEROZAN
  .word	0,0,0
 ; .word	0100DH,43,1803	;to ROGERS,      carlos
 
  .word	0100DH,51,1827	;to MALONE,      karl		( UTAH )
  .word	0100DH,53,1823	;to STOCKTON,    john
  .word	0100DH,49,1831	;to HORNACEK,    jeff
- .word	0100DH,39,1839	;to MORRIS,      chris
+ .word	0,0,0		;(no call) PETE MARAVICH
  .word	0,0,0
 
- .word	0100DH,48,1855	;to REEVES,      bryant		( VANCOUVER )
- .word	0100DH,40,1843	;to ANTHONY,     greg
- .word	0100DH,38,1847	;to EDWARDS,     blue
+ .word	0100DH,61,1423	;to ABDUL-RAUF,  mahmoud
+ .word	0,0,0		;(no call) DESMOND BANE
+ .word	0,0,0		;(no call) PAU GASOL
  .word	0,0,0
  .word	0,0,0
 
- .word	0100DH,28,1867	;to WEBBER,      chris		( WASHINGTON )
- .word	0100DH,51,1723	;to STRICKLAND,  rod
  .word	0100DH,43,1863	;to HOWARD,      juwan
- .word	0100DH,63,1879	;to MURESAN,     gheorge
- .word	0100DH,40,1819	;to MURRAY,      tracy
+ .word	0,0,0		;(no call) BRADLEY BEAL
+ .word	0100DH,28,1867	;to WEBBER,      chris		( WASHINGTON )
+ .word	0,0,0		;(no call) ANTHONY DAVIS
+ .word	0,0,0
 ; .word	0100DH,43,1871	;to CHEANEY,     calbert
 
 
@@ -1110,200 +1110,200 @@ pass_speech		;'TO player name'
 ***********
 name_speech 		;(last name only, excited)
 
+ .word	0,0,0		;(no call) TRAE YOUNG
+ .word	0,0,0		;(no call) DOMINIQUE WILKINS
  .word	0100DH,44,1305	;BLAYLOCK,    mookie		( ALTANTA HAWKS )
- .word	0100DH,58,1425	;MUTUMBO,     dekembe
- .word	0100DH,33,1605	;LAETNER,     christian
- .word	0100DH,33,1309	;SMITH,       steve
+ .word	0,0,0		;(no call) KYLE KORVER
  .word	0,0,0
 ; .word	0100DH,34,1317	;NORMAN,      ken
 
- .word	0100DH,33,1337	;FOX,         rick			( BOSTON )
- .word	0100DH,26,0bbdh	;WALKER,      antoine
- .word	0100DH,35,1333	;RADJA,       dino
- .word	0100DH,31,1325	;BARROS,      dana
- .word	0100DH,36,1321	;BROWN,       dee
+ .word	0,0,0		;(no call) was RADJA,       dino
+ .word	0,0,0		;(no call) KEVIN MCHALE
+ .word	0,0,0		;(no call) PAUL PIERCE
+ .word	0,0,0		;(no call) JAYSON TATUM
+ .word	0,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,26,2913	;HAMER,       steve
 
+ .word	0100DH,38,1345	;JOHNSON,     larry
  .word	0100DH,33,1349	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,51,1645	;MASON,       anthony
- .word	0100DH,39,1545	;DIVAC,       vlade
  .word	0100DH,27,1357	;CURRY,       del
- .word	0,0,0
+ .word	0,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,50,1409	;MASHBURN,    jamal
 ; .word	0100DH,32,1353	;ZIDEK,       george
 
  .word	0100DH,35,0B56h ;JORDAN,      michael		( CHICAGO )
  .word	0100DH,31,1361	;PIPPEN,      scottie
  .word	0100DH,28,1365	;RODMAN,      dennis
- .word	0100DH,38,1369	;KUKOC,       toni
- .word	0100DH,47,1373	;LONGLEY,     luke
+ .word	0,0,0		;(no call) DERRICK ROSE
+ .word	0100DH,35,1377	;KERR,        steve
 ; .word	0100DH,35,1377	;KERR,        steve
 
- .word	0100DH,30,1393	;BRANDON,     terrell		( CLEVELAND )
- .word	0100DH,42,1385	;MILLS,       chris
- .word	0100DH,35,1389	;PHILLS,      bobby
- .word	0100DH,33,1381	;HILL,        tyrone
- .word	0100DH,28,1397	;FERRY,       danny
+ .word	0,0,0		;(no call) was FERRY,       danny
+ .word	0,0,0		;(no call) KYRIE IRVING
+ .word	0,0,0		;(no call) DONOVAN MITCHELL
+ .word	0,0,0		;(no call) BRAD DAUGHERTY
+ .word	0,0,0
 
+ .word	0,0,0		;(no call) DIRK NOWITZKI
+ .word	0,0,0		;(no call) was PACK,        robert
  .word	0100DH,40,1717	;FINLEY,      michael		( DALLAS )
  .word	0100DH,43,1625	;BRADLEY,     shawn
- .word	0100DH,49,1573	;DANILOVIC,   sasha
- .word	0100DH,32,1873	;PACK,        robert
- .word	0100DH,37,1649	;HARPER,      derek
-
- .word	0100DH,48,1437	;ELLIS,       alphonso		( DENVER )
- .word	0100DH,28,1437	;ELLIS,       dale			
- .word	0100DH,49,1429	;McDYESS,     antonio
- .word	0100DH,49,1753	;MARCIULIONIS,sarunas
  .word	0,0,0
 
- .word	0100DH,33,1445	;HILL,        grant			( DETROIT )
+ .word	0,0,0		;(no call) NIKOLA JOKIC
+ .word	0,0,0		;(no call) JAMAL MURRAY
+ .word	0100DH,58,1425	;MUTUMBO,     dekembe
+ .word	0,0,0		;(no call) CARMELO ANTHONY
+ .word	0,0,0		;(no call) CHAUNCEY BILLUPS
+
+ .word	0,0,0		;(no call) ISIAH THOMAS
  .word	0100DH,46,1441	;DUMARS,      joe
- .word	0100DH,25,1453	;THORPE,      otis
- .word	0100DH,40,1449	;MILLS,       terry
- .word	0,0,0
+ .word	0100DH,33,1445	;HILL,        grant			( DETROIT )
+ .word	0,0,0		;(no call) BILL LAIMBEER
+ .word	0,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,34,1301	;AUGMON,      stacey
 
- .word	0100DH,43,1465	;SPREWELL,    latrell		( GOLDEN STATE )
+ .word	0,0,0		;(Curry - no call) was SMITH, joe
+ .word	0,0,0		;(no call) KLAY THOMPSON
  .word	0100DH,43,1477	;MULLIN,      chris
- .word	0100DH,33,1473	;SMITH,       joe
  .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,37,1677	;KONCAK,      jon
 
  .word	0100DH,55,1482	;OLAJUWAN,    hakeem		( HOUSTON )
- .word	0100DH,36,0bbfh	;BARKLEY,     charles
- .word	0100DH,41,1485	;DREXLER,     clyde
- .word	0100DH,31,1569	;WILLIS,      kevin
+ .word	0,0,0		;(no call) JAMES HARDEN
+ .word	0,0,0		;(no call) YAO MING
+ .word	0,0,0		;(no call) TRACY MCGRADY
  .word	0,0,0
 ; .word	0100DH,36,2910	;HARRINGTON,  othella
 
  .word	0100DH,39,1501	;MILLER,      reggie		( INDIANA )
- .word	0100DH,48,1517	;JACKSON,     mark
- .word	0100DH,46,1509	;SMITS,       rik
- .word	0100DH,34,1505	;DAVIS,       dale
+ .word	0,0,0		;(no call) TYRESE HALIBURTON
  .word	0100DH,29,1433	;ROSE,        jalen
+ .word	0100DH,46,1509	;SMITS,       rik
+ .word	0,0,0		;(no call) CAITLIN CLARK
 ; .word	0100DH,39,2937	;DAMPIER,     erick
 
- .word	0100DH,27,1521	;VAUGHT,      loy			( CLIPPERS )
- .word	0100DH,34,1525	;ROGERS,      rodney
- .word	0100DH,33,1537	;BARRY,       brent
- .word	0100DH,44,1533	;RICHARDSON,  pooh
+ .word	0,0,0		;(no call) CHRIS PAUL
+ .word	0,0,0		;(no call) BLAKE GRIFFIN
+ .word	0,0,0		;(no call) PAUL GEORGE
+ .word	0,0,0
  .word	0,0,0
 ; .word	0100DH,30,1529	;MURRAY,      lamond
 
- .word	0100DH,40,0bbbh	;ONEAL,       shaquille		( LAKERS )
- .word	0100DH,40,1557	;JONES,       eddie
- .word	0100DH,44,1541	;VAN EXEL,    nick
  .word	0100DH,32,0bb9h	;BRYANT,      kobe
- .word	0100DH,42,1489	;HORRY,       robert
+ .word	0,0,0		;(no call) was VAN EXEL,    nick
+ .word	0,0,0		;(no call) RON ARTEST
+ .word	0,0,0		;(Kareem - no call) was HORRY,       robert
+ .word	0,0,0		;(no call) JAMES WORTHY
 ; .word	0100DH,32,1959	;SCOTT,       byron
 ; .word	0100DH,37,1553	;CAMPBELL,    elden
 
- .word	0100DH,47,1461	;HARDAWAY,    tim			( MIAMI )
+ .word	0,0,0		;(no call) DWYANE WADE
  .word	0100DH,35,1561	;MOURNING,    alonzo
- .word	0100DH,50,1409	;MASHBURN,    jamal
- .word	0,0,0
- .word	0,0,0
+ .word	0100DH,47,1461	;HARDAWAY,    tim			( MIAMI )
+ .word	0,0,0		;(no call) JIMMY BUTLER
+ .word	0,0,0		;(no call) BAM ADEBAYO
 
- .word	0100DH,39,1581	;BAKER,       vin			( MILWAUKEE )
- .word	0100DH,61,1585	;ROBINSON,    glen
+ .word	0,0,0		;(Giannis - no call) was BAKER,       vin			( MILWAUKEE )
+ .word	0,0,0		;(no call) KHRIS MIDDLETON
  .word	0100DH,35,2931	;ALLEN,       ray
- .word	0100DH,29,1597	;DOUGLAS,     sherman
- .word	0100DH,29,1629	;GILLIAM,     armen
+ .word	0100DH,61,1585	;ROBINSON,    glen
+ .word	0100DH,38,1493	;CASSELL,     sam
 ; .word	0100DH,36,1956	;LANG,        andrew
 ; .word	0100DH,41,1589	;RESPERT,     shawn
 
  .word	0100DH,41,1617	;GARNETT,     kevin			( MINNESOTTA )
- .word	0100DH,43,1613	;GUGLIOTTA,   tom
- .word	0100DH,31,2952	;MARBURY,     stephon
- .word	0,0,0
+ .word	0,0,0		;(no call) ANTHONY EDWARDS
+ .word	0,0,0		;(no call) LAMELO BALL
+ .word	0100DH,43,1465	;SPREWELL,    latrell		( GOLDEN STATE )
  .word	0,0,0
 
- .word	0100DH,31,1341	;GILL,        kendall		( NEW JERSEY )
+ .word	0100DH,32,1405	;KIDD,        jason
+ .word	0100DH,37,1685	;COLEMAN,     derrick
  .word	0100DH,32,2904	;KITTLES,     kerry
- .word	0100DH,38,1493	;CASSELL,     sam
- .word	0100DH,48,1401	;JACKSON,     jim
- .word	0100DH,53,1329	;MONTROSS,    eric
+ .word	0100DH,31,2952	;MARBURY,     stephon
+ .word	0,0,0
 ; .word	0100DH,36,1633	;O'BANNON,    ed
 
  .word	0100DH,42,1641	;EWING,       patrick		( NEW YORK )
- .word	0100DH,38,1345	;JOHNSON,     larry
  .word	0100DH,44,1457	;HOUSTON,     allan
- .word	0100DH,36,1657	;STARKS,      john
  .word	0100DH,34,1653	;OAKLEY,      charles
+ .word	0100DH,36,1657	;STARKS,      john
+ .word	0,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,30,2907	;WALLACE,     john
 
+ .word	0100DH,40,0bbbh	;ONEAL,       shaquille		( LAKERS )
  .word	0100DH,47,1661	;HARDAWAY,    anfernee		( ORLANDO )
- .word	0100DH,34,1665	;GRANT,       horace
  .word	0100DH,33,1669	;ANDERSON,    nick
- .word	0100DH,46,1469	;SEIKALY,     rony
- .word	0100DH,36,1673	;SCOTT,       dennis
+ .word	0,0,0		;(no call) DWIGHT HOWARD
+ .word	0100DH,34,1665	;GRANT,       horace
 
  .word	0100DH,44,2943	;IVERSON,     allen			( PHILADELPHIA )
- .word	0100DH,37,1685	;COLEMAN,     derrick
- .word	0100DH,59,1681	;STACKHOUSE,  jerry
- .word	0100DH,66,1689	;WEATHERSPOON,clarence
+ .word	0,0,0		;(no call) JOEL EMBIID
+ .word	0,0,0		;(no call) MOSES MALONE
+ .word	0,0,0		;(no call) JULIUS ERVING
  .word	0,0,0
 
- .word	0100DH,38,1701	;JOHNSON,     kevin			( PHOENIX )
- .word	0100DH,32,1405	;KIDD,        jason
- .word	0100DH,34,1713	;PERSON,      wesley
- .word	0100DH,28,1709	;MANNING,     danny
- .word	0100DH,44,1549	;CEBALLOS,    cedric
+ .word	0,0,0		;(no call) DEVIN BOOKER
+ .word	0100DH,36,0bbfh	;BARKLEY,     charles
+ .word	0,0,0		;(no call) STEVE NASH
+ .word	0,0,0		;(no call) DAN MAJERLE
+ .word	0,0,0
 ; .word	0100DH,51,1705	;TISDALE,     wayman
 
+ .word	0,0,0		;(no call) DAMIAN LILLARD
+ .word	0100DH,41,1485	;DREXLER,     clyde
+ .word	0,0,0		;(no call) LAMARCUS ALDRIDGE
  .word	0100DH,40,1729	;SABONIS,     arvydas		( PORTLAND )
- .word	0100DH,33,1621	;ANDERSON,    kenny
- .word	0100DH,61,1725	;ROBINSON,    cliff
- .word	0100DH,43,1601	;RIDER,       isaiah
  .word	0,0,0
 ; .word	0100DH,38,1737	;CHILDRESS,   randolph
 
  .word	0100DH,41,1745	;RICHMOND,    mitch			( SACRAMENTO )
- .word	0100DH,41,1565	;OWENS,       billy
- .word	0100DH,51,1421	;ABDUL-RAUF,  mahmoud
- .word	0100DH,27,1757	;EDNEY,       tyus
+ .word	0100DH,39,1545	;DIVAC,       vlade
+ .word	0100DH,31,1965	;WEBB,        spud
+ .word	0,0,0		;(no call) DEMARCUS COUSINS
  .word	0,0,0
 ; .word	0100DH,34,1749	;GRANT,       brian
 
+ .word	0,0,0		;(no call) TIM DUNCAN
  .word	0100DH,61,1765	;ROBINSON,    david			( SAN ANTONIO )
- .word	0100DH,32,1761	;ELLIOTT,     sean
- .word	0100DH,38,1769	;JOHNSON,     avery
- .word	0100DH,45,1777	;DEL NEGRO,   vinny
- .word	0,0,0
+ .word	0,0,0		;(no call) TONY PARKER
+ .word	0,0,0		;(no call) MANU GINOBILI
+ .word	0,0,0		;(no call) VICTOR WEMBANYAMA
 ; .word	0100DH,56,1697	;MAXWELL,     vernon
 
- .word	0100DH,33,1785	;PAYTON,      gary			( SEATTLE )
- .word	0100DH,28,1781	;KEMP,        shawn
- .word	0100DH,35,1793	;HAWKINS,     hersey
- .word	0100DH,32,1789	;SCHREMPF,    detlef
  .word	0,0,0
+ .word	0100DH,33,1785	;PAYTON,      gary			( SEATTLE )
+ .word	0,0,0		;(no call) RUSSELL WESTBROOK
+ .word	0100DH,28,1781	;KEMP,        shawn
+ .word	0,0,0		;(no call) SHAI GILGEOUS-ALEXANDER
 ; .word	0100DH,31,1797	;FORD,        sherell
 
- .word	0100DH,54,1805	;STOUDAMIRE,  damon			( TORONTO )
- .word	0100DH,36,1741	;WILLIAMS,    walt
- .word	0100DH,36,2928	;CAMBY,       marcus
- .word	0100DH,40,1413	;JONES,       popeye
+ .word	0,0,0		;(no call) VINCE CARTER
+ .word	0,0,0		;(no call) KAWHI LEONARD
+ .word	0,0,0		;(no call) CHRIS BOSH
+ .word	0,0,0		;(no call) DEMAR DEROZAN
  .word	0,0,0
 ; .word	0100DH,34,1801	;ROGERS,      carlos
 
  .word	0100DH,42,1825	;MALONE,      karl			( UTAH )
  .word	0100DH,44,1821	;STOCKTON,    john
  .word	0100DH,40,1829	;HORNACEK,    jeff
- .word	0100DH,30,1837	;MORRIS,      chris
+ .word	0,0,0		;(no call) PETE MARAVICH
  .word	0,0,0
 
- .word	0100DH,39,1853	;REEVES,      bryant		( VANCOUVER )
- .word	0100DH,31,1841	;ANTHONY,     greg
- .word	0100DH,29,1845	;EDWARDS,     blue
+ .word	0100DH,51,1421	;ABDUL-RAUF,  mahmoud
+ .word	0,0,0		;(no call) DESMOND BANE
+ .word	0,0,0		;(no call) PAU GASOL
  .word	0,0,0
  .word	0,0,0
 
- .word	0100DH,18,1865	;WEBBER,      chris			( WASHINGTON )
- .word	0100DH,42,1721	;STRICKLAND,  rod
  .word	0100DH,34,1861	;HOWARD,      juwan
- .word	0100DH,54,1877	;MURESAN,     gheorge
- .word	0100DH,29,1817	;MURRAY,      tracy
+ .word	0,0,0		;(no call) BRADLEY BEAL
+ .word	0100DH,18,1865	;WEBBER,      chris			( WASHINGTON )
+ .word	0,0,0		;(no call) ANTHONY DAVIS
+ .word	0,0,0
 ; .word	0100DH,34,1869	;CHEANEY,     calbert
 
 

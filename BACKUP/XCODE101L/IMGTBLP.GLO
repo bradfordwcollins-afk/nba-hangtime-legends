@@ -1,12 +1,12 @@
 	.globl	NFL55_p
-	.globl	NFLW55_p
-	.globl	TR_ATLP_P
-	.globl	UN_ATLP_P
+;[pruned] .globl	NFLW55_p
+;[pruned] .globl	TR_ATLP_P
+;[pruned] .globl	UN_ATLP_P
 	.globl	SW_ATLP_P
-	.globl	VP_ATLP_P
+;[pruned] .globl	VP_ATLP_P
 	.globl	TR_ATLS_P
 	.globl	UN_ATLS_P
-	.globl	SW_ATLS_P
+;[pruned] .globl	SW_ATLS_P
 	.globl	VP_ATLS_P
 	.globl	TR_BOSP_P
 	.globl	UN_BOSP_P
@@ -26,7 +26,7 @@
 	.globl	VP_CHAS_P
 	.globl	TR_CHIP_P
 	.globl	UN_CHIP_P
-	.globl	SW_CHIP_P
+;[pruned] .globl	SW_CHIP_P
 	.globl	VP_CHIP_P
 	.globl	TR_CHIS_P
 	.globl	UN_CHIS_P
@@ -34,20 +34,20 @@
 	.globl	VP_CHIS_P
 	.globl	TR_CLEP_P
 	.globl	UN_CLEP_P
-	.globl	SW_CLEP_P
+;[pruned] .globl	SW_CLEP_P
 	.globl	VP_CLEP_P
 	.globl	TR_CLES_P
 	.globl	UN_CLES_P
-	.globl	SW_CLES_P
+;[pruned] .globl	SW_CLES_P
 	.globl	VP_CLES_P
 	.globl	TR_DALP_P
 	.globl	UN_DALP_P
-	.globl	SW_DALP_P
-	.globl	VP_DALP_P
-	.globl	TR_DALS_P
+;[pruned] .globl	SW_DALP_P
+;[pruned] .globl	VP_DALP_P
+;[pruned] .globl	TR_DALS_P
 	.globl	UN_DALS_P
 	.globl	SW_DALS_P
-	.globl	VP_DALS_P
+;[pruned] .globl	VP_DALS_P
 	.globl	TR_DENP_P
 	.globl	UN_DENP_P
 	.globl	SW_DENP_P
@@ -56,14 +56,14 @@
 	.globl	UN_DENS_P
 	.globl	SW_DENS_P
 	.globl	VP_DENS_P
-	.globl	TR_DETP_P
-	.globl	UN_DETP_P
-	.globl	SW_DETP_P
-	.globl	VP_DETP_P
+;[pruned] .globl	TR_DETP_P
+;[pruned] .globl	UN_DETP_P
+;[pruned] .globl	SW_DETP_P
+;[pruned] .globl	VP_DETP_P
 	.globl	TR_DETS_P
 	.globl	UN_DETS_P
-	.globl	SW_DETS_P
-	.globl	VP_DETS_P
+;[pruned] .globl	SW_DETS_P
+;[pruned] .globl	VP_DETS_P
 	.globl	TR_GLDP_P
 	.globl	UN_GLDP_P
 	.globl	SW_GLDP_P
@@ -80,22 +80,22 @@
 	.globl	UN_HOUS_P
 	.globl	SW_HOUS_P
 	.globl	VP_HOUS_P
-	.globl	TR_INDP_P
+;[pruned] .globl	TR_INDP_P
 	.globl	UN_INDP_P
 	.globl	SW_INDP_P
-	.globl	VP_INDP_P
+;[pruned] .globl	VP_INDP_P
 	.globl	TR_INDS_P
 	.globl	UN_INDS_P
-	.globl	SW_INDS_P
+;[pruned] .globl	SW_INDS_P
 	.globl	VP_INDS_P
 	.globl	TR_LACP_P
 	.globl	UN_LACP_P
-	.globl	SW_LACP_P
-	.globl	VP_LACP_P
+;[pruned] .globl	SW_LACP_P
+;[pruned] .globl	VP_LACP_P
 	.globl	TR_LACS_P
 	.globl	UN_LACS_P
-	.globl	SW_LACS_P
-	.globl	VP_LACS_P
+;[pruned] .globl	SW_LACS_P
+;[pruned] .globl	VP_LACS_P
 	.globl	TR_LALP_P
 	.globl	UN_LALP_P
 	.globl	SW_LALP_P
@@ -118,13 +118,13 @@
 	.globl	VP_MILP_P
 	.globl	TR_MILS_P
 	.globl	UN_MILS_P
-	.globl	SW_MILS_P
+;[pruned] .globl	SW_MILS_P
 	.globl	VP_MILS_P
-	.globl	TR_MINP_P
+;[pruned] .globl	TR_MINP_P
 	.globl	UN_MINP_P
-	.globl	SW_MINP_P
+;[pruned] .globl	SW_MINP_P
 	.globl	VP_MINP_P
-	.globl	TR_MINS_P
+;[pruned] .globl	TR_MINS_P
 	.globl	UN_MINS_P
 	.globl	SW_MINS_P
 	.globl	VP_MINS_P
@@ -134,13 +134,13 @@
 	.globl	VP_NEJP_P
 	.globl	TR_NEJS_P
 	.globl	UN_NEJS_P
-	.globl	SW_NEJS_P
-	.globl	VP_NEJS_P
+;[pruned] .globl	SW_NEJS_P
+;[pruned] .globl	VP_NEJS_P
 	.globl	TR_NEYP_P
 	.globl	UN_NEYP_P
 	.globl	SW_NEYP_P
 	.globl	VP_NEYP_P
-	.globl	TR_NEYS_P
+;[pruned] .globl	TR_NEYS_P
 	.globl	UN_NEYS_P
 	.globl	SW_NEYS_P
 	.globl	VP_NEYS_P
@@ -148,7 +148,7 @@
 	.globl	UN_ORLP_P
 	.globl	SW_ORLP_P
 	.globl	VP_ORLP_P
-	.globl	TR_ORLS_P
+;[pruned] .globl	TR_ORLS_P
 	.globl	UN_ORLS_P
 	.globl	SW_ORLS_P
 	.globl	VP_ORLS_P
@@ -164,9 +164,9 @@
 	.globl	UN_PHXP_P
 	.globl	SW_PHXP_P
 	.globl	VP_PHXP_P
-	.globl	TR_PHXS_P
+;[pruned] .globl	TR_PHXS_P
 	.globl	UN_PHXS_P
-	.globl	SW_PHXS_P
+;[pruned] .globl	SW_PHXS_P
 	.globl	VP_PHXS_P
 	.globl	TR_PORP_P
 	.globl	UN_PORP_P
@@ -192,38 +192,38 @@
 	.globl	UN_SANS_P
 	.globl	SW_SANS_P
 	.globl	VP_SANS_P
-	.globl	TR_SEAP_P
+;[pruned] .globl	TR_SEAP_P
 	.globl	UN_SEAP_P
 	.globl	SW_SEAP_P
-	.globl	VP_SEAP_P
+;[pruned] .globl	VP_SEAP_P
 	.globl	TR_SEAS_P
 	.globl	UN_SEAS_P
-	.globl	SW_SEAS_P
+;[pruned] .globl	SW_SEAS_P
 	.globl	VP_SEAS_P
 	.globl	TR_TORP_P
 	.globl	UN_TORP_P
 	.globl	SW_TORP_P
 	.globl	VP_TORP_P
-	.globl	TR_TORS_P
+;[pruned] .globl	TR_TORS_P
 	.globl	UN_TORS_P
-	.globl	SW_TORS_P
-	.globl	VP_TORS_P
+;[pruned] .globl	SW_TORS_P
+;[pruned] .globl	VP_TORS_P
 	.globl	TR_UTAP_P
 	.globl	UN_UTAP_P
-	.globl	SW_UTAP_P
+;[pruned] .globl	SW_UTAP_P
 	.globl	VP_UTAP_P
-	.globl	TR_UTAS_P
+;[pruned] .globl	TR_UTAS_P
 	.globl	UN_UTAS_P
-	.globl	SW_UTAS_P
+;[pruned] .globl	SW_UTAS_P
 	.globl	VP_UTAS_P
-	.globl	TR_VANP_P
+;[pruned] .globl	TR_VANP_P
 	.globl	UN_VANP_P
-	.globl	SW_VANP_P
-	.globl	VP_VANP_P
-	.globl	TR_VANS_P
+;[pruned] .globl	SW_VANP_P
+;[pruned] .globl	VP_VANP_P
+;[pruned] .globl	TR_VANS_P
 	.globl	UN_VANS_P
-	.globl	SW_VANS_P
-	.globl	VP_VANS_P
+;[pruned] .globl	SW_VANS_P
+;[pruned] .globl	VP_VANS_P
 	.globl	TR_WASP_P
 	.globl	UN_WASP_P
 	.globl	SW_WASP_P

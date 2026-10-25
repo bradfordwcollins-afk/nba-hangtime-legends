@@ -1,24 +1,24 @@
 	.globl	side_p
-	.global	sidebot
-	.global	sidetop
+;[pruned] .global	sidebot
+;[pruned] .global	sidetop
 	.globl	lamp_p
-	.global	lamp1
-	.global	lamp2
+;[pruned] .global	lamp1
+;[pruned] .global	lamp2
 	.globl	icon_p
 	.global	hang_logo
 	.globl	moon_p
-	.global	moon
+;[pruned] .global	moon
 	.globl	RCRT_p
-	.global	BKg1
-	.global	BKg2
+;[pruned] .global	BKg1
+;[pruned] .global	BKg2
 	.globl	fence_p
-	.global	bkwall
+;[pruned] .global	bkwall
 	.globl	city1_p
-	.global	city1
+;[pruned] .global	city1
 	.globl	city2_p
-	.global	city2
+;[pruned] .global	city2
 	.globl	city3_p
-	.global	city3
+;[pruned] .global	city3
 	.globl	gry_gry_p
 	.global	outdr1
 	.globl	grn_no_p
@@ -44,40 +44,40 @@
 	.globl	org_blk_p
 	.global	outdr12
 	.globl	PAPER_P
-	.global	PAPER1
-	.global	PAPER2
-	.global	PAPER3
-	.global	PAPER4
-	.global	PAPER5
-	.global	PAPER6
-	.global	PAPER7
-	.global	PAPER8
-	.global	PAPER9
-	.global	LGSHEET1
-	.global	LGSHEET2
-	.global	LGSHEET3
-	.global	LGSHEET4
-	.global	LGSHEET5
-	.global	LGSHEET6
-	.global	LGSHEET7
-	.global	LGSHEET8
-	.global	LGSHEET9
-	.global	SMSHEET1
-	.global	SMSHEET2
-	.global	SMSHEET3
-	.global	SMSHEET4
-	.global	SMSHEET5
-	.global	SMSHEET6
-	.global	SMSHEET7
-	.global	SMSHEET8
-	.global	SMSHEET9
-	.global	LEAF1
-	.global	LEAF2
-	.global	LEAF3
-	.global	LEAF4
-	.global	LEAF5
-	.global	LEAF6
-	.global	LEAF7
-	.global	LEAF8
+;[pruned] .global	PAPER1
+;[pruned] .global	PAPER2
+;[pruned] .global	PAPER3
+;[pruned] .global	PAPER4
+;[pruned] .global	PAPER5
+;[pruned] .global	PAPER6
+;[pruned] .global	PAPER7
+;[pruned] .global	PAPER8
+;[pruned] .global	PAPER9
+;[pruned] .global	LGSHEET1
+;[pruned] .global	LGSHEET2
+;[pruned] .global	LGSHEET3
+;[pruned] .global	LGSHEET4
+;[pruned] .global	LGSHEET5
+;[pruned] .global	LGSHEET6
+;[pruned] .global	LGSHEET7
+;[pruned] .global	LGSHEET8
+;[pruned] .global	LGSHEET9
+;[pruned] .global	SMSHEET1
+;[pruned] .global	SMSHEET2
+;[pruned] .global	SMSHEET3
+;[pruned] .global	SMSHEET4
+;[pruned] .global	SMSHEET5
+;[pruned] .global	SMSHEET6
+;[pruned] .global	SMSHEET7
+;[pruned] .global	SMSHEET8
+;[pruned] .global	SMSHEET9
+;[pruned] .global	LEAF1
+;[pruned] .global	LEAF2
+;[pruned] .global	LEAF3
+;[pruned] .global	LEAF4
+;[pruned] .global	LEAF5
+;[pruned] .global	LEAF6
+;[pruned] .global	LEAF7
+;[pruned] .global	LEAF8
 	.globl	NUSTORM_P
-	.global	STORM01
+;[pruned] .global	STORM01

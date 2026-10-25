@@ -21,89 +21,89 @@
 	.global	FFRAME19
 	.global	FFRAME20
 	.globl	HOTC_G_P
-	.global	HOTCRC01
+;[pruned] .global	HOTCRC01
 	.globl	HOTC_Y_P
-	.global	HOTCRC02
+;[pruned] .global	HOTCRC02
 	.globl	HOTC_R_P
-	.global	HOTCRC03
+;[pruned] .global	HOTCRC03
 	.globl	HOTC_B_P
-	.global	HOTCRC04
-	.global	HOTCRC05
-	.global	HOTCRC06
-	.global	HOTCRC07
-	.global	HOTCRC08
-	.global	HOTCRC09
-	.global	HOTCRC10
-	.global	HOTCRC11
-	.global	HOTCRC12
-	.global	HOTCRC13
+;[pruned] .global	HOTCRC04
+;[pruned] .global	HOTCRC05
+;[pruned] .global	HOTCRC06
+;[pruned] .global	HOTCRC07
+;[pruned] .global	HOTCRC08
+;[pruned] .global	HOTCRC09
+;[pruned] .global	HOTCRC10
+;[pruned] .global	HOTCRC11
+;[pruned] .global	HOTCRC12
+;[pruned] .global	HOTCRC13
 	.globl	HOT_P
-	.global	HOTNA_01
-	.global	HOTNA_02
-	.global	HOTNA_03
-	.global	HOTNA_04
-	.global	HOTNA_05
-	.global	HOTNA_06
-	.global	HOTNA_07
-	.global	HOTNA_08
-	.global	HOTNA_09
-	.global	HOTNA_10
-	.global	HOTNA_11
-	.global	HOTNA_12
-	.global	HOTNA_13
+;[pruned] .global	HOTNA_01
+;[pruned] .global	HOTNA_02
+;[pruned] .global	HOTNA_03
+;[pruned] .global	HOTNA_04
+;[pruned] .global	HOTNA_05
+;[pruned] .global	HOTNA_06
+;[pruned] .global	HOTNA_07
+;[pruned] .global	HOTNA_08
+;[pruned] .global	HOTNA_09
+;[pruned] .global	HOTNA_10
+;[pruned] .global	HOTNA_11
+;[pruned] .global	HOTNA_12
+;[pruned] .global	HOTNA_13
 	.globl	SMOKE_P
-	.global	SMOKE01
-	.global	SMOKE02
-	.global	SMOKE03
-	.global	SMOKE04
-	.global	SMOKE05
-	.global	SMOKE06
-	.global	SMOKE07
-	.global	SMOKE08
-	.global	SMOKE09
-	.global	SMOKE10
+;[pruned] .global	SMOKE01
+;[pruned] .global	SMOKE02
+;[pruned] .global	SMOKE03
+;[pruned] .global	SMOKE04
+;[pruned] .global	SMOKE05
+;[pruned] .global	SMOKE06
+;[pruned] .global	SMOKE07
+;[pruned] .global	SMOKE08
+;[pruned] .global	SMOKE09
+;[pruned] .global	SMOKE10
 	.globl	SALTTR_P
-	.global	SALTA01
-	.global	SALTA02
-	.global	SALTA03
-	.global	SALTA04
-	.global	SALTA05
-	.global	SALTA06
-	.global	SALTA07
-	.global	SALTA08
-	.global	SALTA09
-	.global	SALTA10
-	.global	SALTB01
-	.global	SALTB02
-	.global	SALTB03
-	.global	SALTB04
-	.global	SALTB05
-	.global	SALTB06
-	.global	SALTB07
-	.global	SALTB08
-	.global	SALTB09
-	.global	SALTB10
-	.global	SALTB11
+;[pruned] .global	SALTA01
+;[pruned] .global	SALTA02
+;[pruned] .global	SALTA03
+;[pruned] .global	SALTA04
+;[pruned] .global	SALTA05
+;[pruned] .global	SALTA06
+;[pruned] .global	SALTA07
+;[pruned] .global	SALTA08
+;[pruned] .global	SALTA09
+;[pruned] .global	SALTA10
+;[pruned] .global	SALTB01
+;[pruned] .global	SALTB02
+;[pruned] .global	SALTB03
+;[pruned] .global	SALTB04
+;[pruned] .global	SALTB05
+;[pruned] .global	SALTB06
+;[pruned] .global	SALTB07
+;[pruned] .global	SALTB08
+;[pruned] .global	SALTB09
+;[pruned] .global	SALTB10
+;[pruned] .global	SALTB11
 	.globl	XPL_BLU_P
-	.global	XPLOD_BLU
+;[pruned] .global	XPLOD_BLU
 	.globl	XPL_BRT_P
-	.global	XPLOD_BRT
+;[pruned] .global	XPLOD_BRT
 	.globl	XPLODE_P
-	.global	XPLOD_YEL
+;[pruned] .global	XPLOD_YEL
 	.globl	SMOK_B_P
-	.global	SMOK1_01
+;[pruned] .global	SMOK1_01
 	.globl	SMOK_G_P
-	.global	SMOK1_02
+;[pruned] .global	SMOK1_02
 	.globl	SMOK_O_P
-	.global	SMOK1_03
+;[pruned] .global	SMOK1_03
 	.globl	SMOK_P_P
-	.global	SMOK1_04
+;[pruned] .global	SMOK1_04
 	.globl	SMOK_W_P
-	.global	SMOK1_05
-	.global	SMOK1_06
-	.global	SMOK1_07
-	.global	SMOK1_08
-	.global	SMOK1_09
-	.global	SMOK1_10
-	.global	SMOK1_11
-	.global	SMOK1_12
+;[pruned] .global	SMOK1_05
+;[pruned] .global	SMOK1_06
+;[pruned] .global	SMOK1_07
+;[pruned] .global	SMOK1_08
+;[pruned] .global	SMOK1_09
+;[pruned] .global	SMOK1_10
+;[pruned] .global	SMOK1_11
+;[pruned] .global	SMOK1_12

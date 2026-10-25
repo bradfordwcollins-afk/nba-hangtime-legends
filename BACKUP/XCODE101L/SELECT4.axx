@@ -4370,21 +4370,21 @@ player_heads
 
 ;DJT Start
 ;00 ATLANTA
-	.long	BLY_ATL,MUT_DEN
-	.long	BLY_ATL,LAE_ATL
-	.long	BLY_ATL,SMI_ATL
+	.long	XTAE_MUG,XWIL_MUG
+	.long	XTAE_MUG,BLY_ATL
+	.long	XTAE_MUG,XKOR_MUG
 
-	.long	MUT_DEN,BLY_ATL
-	.long	MUT_DEN,LAE_ATL
-	.long	MUT_DEN,SMI_ATL
+	.long	XWIL_MUG,XTAE_MUG
+	.long	XWIL_MUG,BLY_ATL
+	.long	XWIL_MUG,XKOR_MUG
 
-	.long	LAE_ATL,BLY_ATL
-	.long	LAE_ATL,MUT_DEN
-	.long	LAE_ATL,SMI_ATL
+	.long	BLY_ATL,XTAE_MUG
+	.long	BLY_ATL,XWIL_MUG
+	.long	BLY_ATL,XKOR_MUG
 
-	.long	SMI_ATL,BLY_ATL
-	.long	SMI_ATL,MUT_DEN
-	.long	SMI_ATL,LAE_ATL
+	.long	XKOR_MUG,XTAE_MUG
+	.long	XKOR_MUG,XWIL_MUG
+	.long	XKOR_MUG,BLY_ATL
 
 	.long	0,0
 	.long	0,0
@@ -4396,198 +4396,198 @@ player_heads
 	.long	0,0
 
 ;01 BOSTON
-	.long	FOX_BOS,WALK_MUG
-	.long	FOX_BOS,RAD_BOS
-	.long	FOX_BOS,BAR_BOS
-	.long	FOX_BOS,BRO_BOS
+	.long	BRD_MUG,XMCH_MUG
+	.long	BRD_MUG,XPIE_MUG
+	.long	BRD_MUG,XTAT_MUG
+	.long	BRD_MUG,XPAR_MUG
 	
-	.long	WALK_MUG,FOX_BOS
-	.long	WALK_MUG,RAD_BOS
-	.long	WALK_MUG,BAR_BOS
-	.long	WALK_MUG,BRO_BOS
+	.long	XMCH_MUG,BRD_MUG
+	.long	XMCH_MUG,XPIE_MUG
+	.long	XMCH_MUG,XTAT_MUG
+	.long	XMCH_MUG,XPAR_MUG
 
-	.long	RAD_BOS,FOX_BOS
-	.long	RAD_BOS,WALK_MUG
-	.long	RAD_BOS,BAR_BOS
-	.long	RAD_BOS,BRO_BOS
+	.long	XPIE_MUG,BRD_MUG
+	.long	XPIE_MUG,XMCH_MUG
+	.long	XPIE_MUG,XTAT_MUG
+	.long	XPIE_MUG,XPAR_MUG
 
-	.long	BAR_BOS,FOX_BOS
-	.long	BAR_BOS,WALK_MUG
-	.long	BAR_BOS,RAD_BOS
-	.long	BAR_BOS,BRO_BOS
+	.long	XTAT_MUG,BRD_MUG
+	.long	XTAT_MUG,XMCH_MUG
+	.long	XTAT_MUG,XPIE_MUG
+	.long	XTAT_MUG,XPAR_MUG
 
-	.long	BRO_BOS,FOX_BOS
-	.long	BRO_BOS,WALK_MUG
-	.long	BRO_BOS,RAD_BOS
-	.long	BRO_BOS,BAR_BOS
+	.long	XPAR_MUG,BRD_MUG
+	.long	XPAR_MUG,XMCH_MUG
+	.long	XPAR_MUG,XPIE_MUG
+	.long	XPAR_MUG,XTAT_MUG
 
 ;02 CHARLOTTE
-	.long	RCE_CHA,MAS_NEY
-	.long	RCE_CHA,DIV_LAK
+	.long	JON_CHA,RCE_CHA
+	.long	JON_CHA,CUR_CHA
+	.long	JON_CHA,XBOG_MUG
+
+	.long	JON_CHA,MAS_DAL
+	.long	RCE_CHA,JON_CHA
 	.long	RCE_CHA,CUR_CHA
 
-	.long	MAS_NEY,RCE_CHA
-	.long	MAS_NEY,DIV_LAK
-	.long	MAS_NEY,CUR_CHA
-
-	.long	DIV_LAK,RCE_CHA
-	.long	DIV_LAK,MAS_NEY
-	.long	DIV_LAK,CUR_CHA
+	.long	RCE_CHA,XBOG_MUG
+	.long	RCE_CHA,MAS_DAL
+	.long	CUR_CHA,JON_CHA
 
 	.long	CUR_CHA,RCE_CHA
-	.long	CUR_CHA,MAS_NEY
-	.long	CUR_CHA,DIV_LAK
+	.long	CUR_CHA,XBOG_MUG
+	.long	CUR_CHA,MAS_DAL
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XBOG_MUG,JON_CHA
+	.long	XBOG_MUG,RCE_CHA
+	.long	XBOG_MUG,CUR_CHA
+	.long	XBOG_MUG,MAS_DAL
+	.long	MAS_DAL,JON_CHA
+	.long	MAS_DAL,RCE_CHA
+	.long	MAS_DAL,CUR_CHA
+	.long	MAS_DAL,XBOG_MUG
 
 ;03 CHICAGO
 	.global	ROD_CHI
 
 	.long	JOR_MUG,PIP_CHI
 	.long	JOR_MUG,ROD_CHI
-	.long	JOR_MUG,KUK_CHI
-	.long	JOR_MUG,LON_CHI
+	.long	JOR_MUG,XDRO_MUG
+	.long	JOR_MUG,KER_CHI
 
 	.long	PIP_CHI,JOR_MUG
 	.long	PIP_CHI,ROD_CHI
-	.long	PIP_CHI,KUK_CHI
-	.long	PIP_CHI,LON_CHI
+	.long	PIP_CHI,XDRO_MUG
+	.long	PIP_CHI,KER_CHI
 
 	.long	ROD_CHI,JOR_MUG
 	.long	ROD_CHI,PIP_CHI
-	.long	ROD_CHI,KUK_CHI
-	.long	ROD_CHI,LON_CHI
+	.long	ROD_CHI,XDRO_MUG
+	.long	ROD_CHI,KER_CHI
 
-	.long	KUK_CHI,JOR_MUG
-	.long	KUK_CHI,PIP_CHI
-	.long	KUK_CHI,ROD_CHI
-	.long	KUK_CHI,LON_CHI
+	.long	XDRO_MUG,JOR_MUG
+	.long	XDRO_MUG,PIP_CHI
+	.long	XDRO_MUG,ROD_CHI
+	.long	XDRO_MUG,KER_CHI
 
-	.long	LON_CHI,JOR_MUG
-	.long	LON_CHI,PIP_CHI
-	.long	LON_CHI,ROD_CHI
-	.long	LON_CHI,KUK_CHI
+	.long	KER_CHI,JOR_MUG
+	.long	KER_CHI,PIP_CHI
+	.long	KER_CHI,ROD_CHI
+	.long	KER_CHI,XDRO_MUG
 
 ;04 CLEVELAND
-	.long	BRA_CLE,MIL_CLE
-	.long	BRA_CLE,PHL_CLE
-	.long	BRA_CLE,HIL_CLE
-	.long	BRA_CLE,FER_CLE
+	.long	LBJ_MUG,XKYR_MUG
+	.long	LBJ_MUG,XMIT_MUG
+	.long	LBJ_MUG,XDAU_MUG
+	.long	XKYR_MUG,LBJ_MUG
 
-	.long	MIL_CLE,BRA_CLE
-	.long	MIL_CLE,PHL_CLE
-	.long	MIL_CLE,HIL_CLE
-	.long	MIL_CLE,FER_CLE
+	.long	XKYR_MUG,XMIT_MUG
+	.long	XKYR_MUG,XDAU_MUG
+	.long	XMIT_MUG,LBJ_MUG
+	.long	XMIT_MUG,XKYR_MUG
 
-	.long	PHL_CLE,BRA_CLE
-	.long	PHL_CLE,MIL_CLE
-	.long	PHL_CLE,HIL_CLE
-	.long	PHL_CLE,FER_CLE
+	.long	XMIT_MUG,XDAU_MUG
+	.long	XDAU_MUG,LBJ_MUG
+	.long	XDAU_MUG,XKYR_MUG
+	.long	XDAU_MUG,XMIT_MUG
 
-	.long	HIL_CLE,BRA_CLE
-	.long	HIL_CLE,MIL_CLE
-	.long	HIL_CLE,PHL_CLE
-	.long	HIL_CLE,FER_CLE
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	FER_CLE,BRA_CLE
-	.long	FER_CLE,MIL_CLE
-	.long	FER_CLE,PHL_CLE
-	.long	FER_CLE,HIL_CLE
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;05 DALLAS
+	.long	XDIR_MUG,LUK_MUG
+	.long	XDIR_MUG,FIN_PHX
+	.long	XDIR_MUG,BRA_NEJ
+	.long	LUK_MUG,XDIR_MUG
+
+	.long	LUK_MUG,FIN_PHX
+	.long	LUK_MUG,BRA_NEJ
+	.long	FIN_PHX,XDIR_MUG
+	.long	FIN_PHX,LUK_MUG
+
 	.long	FIN_PHX,BRA_NEJ
-	.long	FIN_PHX,DAN_MIA
-	.long	FIN_PHX,PAC_WAS
-	.long	FIN_PHX,HPR_NEY
-
+	.long	BRA_NEJ,XDIR_MUG
+	.long	BRA_NEJ,LUK_MUG
 	.long	BRA_NEJ,FIN_PHX
-	.long	BRA_NEJ,DAN_MIA
-	.long	BRA_NEJ,PAC_WAS
-	.long	BRA_NEJ,HPR_NEY
 
-	.long	DAN_MIA,FIN_PHX
-	.long	DAN_MIA,BRA_NEJ
-	.long	DAN_MIA,PAC_WAS
-	.long	DAN_MIA,HPR_NEY
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	PAC_WAS,FIN_PHX
-	.long	PAC_WAS,BRA_NEJ
-	.long	PAC_WAS,DAN_MIA
-	.long	PAC_WAS,HPR_NEY
-
-	.long	HPR_NEY,FIN_PHX
-	.long	HPR_NEY,BRA_NEJ
-	.long	HPR_NEY,DAN_MIA
-	.long	HPR_NEY,PAC_WAS
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;06 DENVER
-	.long	ELL_MUG,ELL_DEN
-	.long	ELL_MUG,MCD_DEN
-	.long	ELL_MUG,MAR_SAC
+	.long	XJOK_MUG,XJMU_MUG
+	.long	XJOK_MUG,MUT_DEN
+	.long	XJOK_MUG,XMEL_MUG
 	
-	.long	ELL_DEN,ELL_MUG
-	.long	ELL_DEN,MCD_DEN
-	.long	ELL_DEN,MAR_SAC
+	.long	XJOK_MUG,XBIL_MUG
+	.long	XJMU_MUG,XJOK_MUG
+	.long	XJMU_MUG,MUT_DEN
 
-	.long	MCD_DEN,ELL_MUG
-	.long	MCD_DEN,ELL_DEN
-	.long	MCD_DEN,MAR_SAC
+	.long	XJMU_MUG,XMEL_MUG
+	.long	XJMU_MUG,XBIL_MUG
+	.long	MUT_DEN,XJOK_MUG
 
-	.long	MAR_SAC,ELL_MUG
-	.long	MAR_SAC,ELL_DEN
-	.long	MAR_SAC,MCD_DEN
+	.long	MUT_DEN,XJMU_MUG
+	.long	MUT_DEN,XMEL_MUG
+	.long	MUT_DEN,XBIL_MUG
 	
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XMEL_MUG,XJOK_MUG
+	.long	XMEL_MUG,XJMU_MUG
+	.long	XMEL_MUG,MUT_DEN
+	.long	XMEL_MUG,XBIL_MUG
+	.long	XBIL_MUG,XJOK_MUG
+	.long	XBIL_MUG,XJMU_MUG
+	.long	XBIL_MUG,MUT_DEN
+	.long	XBIL_MUG,XMEL_MUG
 
 ;07 DETROIT
-	.long	HIL_DET,DUM_DET
-	.long	HIL_DET,THR_DET
-	.long	HIL_DET,MLS_DET
+	.long	XISI_MUG,DUM_DET
+	.long	XISI_MUG,HIL_DET
+	.long	XISI_MUG,XLAI_MUG
 
+	.long	XISI_MUG,XBWA_MUG
+	.long	DUM_DET,XISI_MUG
 	.long	DUM_DET,HIL_DET
-	.long	DUM_DET,THR_DET
-	.long	DUM_DET,MLS_DET
 
-	.long	THR_DET,HIL_DET
-	.long	THR_DET,DUM_DET
-	.long	THR_DET,MLS_DET
+	.long	DUM_DET,XLAI_MUG
+	.long	DUM_DET,XBWA_MUG
+	.long	HIL_DET,XISI_MUG
 
-	.long	MLS_DET,HIL_DET
-	.long	MLS_DET,DUM_DET
-	.long	MLS_DET,THR_DET
+	.long	HIL_DET,DUM_DET
+	.long	HIL_DET,XLAI_MUG
+	.long	HIL_DET,XBWA_MUG
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XLAI_MUG,XISI_MUG
+	.long	XLAI_MUG,DUM_DET
+	.long	XLAI_MUG,HIL_DET
+	.long	XLAI_MUG,XBWA_MUG
+	.long	XBWA_MUG,XISI_MUG
+	.long	XBWA_MUG,DUM_DET
+	.long	XBWA_MUG,HIL_DET
+	.long	XBWA_MUG,XLAI_MUG
 
 ;08 GOLDEN STATE
-	.long	SPR_GLD,MUL_GLD
-	.long	SPR_GLD,SMI_GLD
+	.long	STC_MUG,XKLA_MUG
+	.long	STC_MUG,MUL_GLD
 
-	.long	MUL_GLD,SPR_GLD
-	.long	MUL_GLD,SMI_GLD
+	.long	XKLA_MUG,STC_MUG
+	.long	XKLA_MUG,MUL_GLD
 
-	.long	SMI_GLD,SPR_GLD
-	.long	SMI_GLD,MUL_GLD
+	.long	MUL_GLD,STC_MUG
+	.long	MUL_GLD,XKLA_MUG
 			
 	.long	0,0
 	.long	0,0
@@ -4605,21 +4605,21 @@ player_heads
 	.long	0,0
 
 ;09 HOUSTON
-	.long	OLA_HOU,BARK_MUG
-	.long	OLA_HOU,DRX_HOU
-	.long	OLA_HOU,WLS_GLD
+	.long	OLA_HOU,XHAR_MUG
+	.long	OLA_HOU,XYAO_MUG
+	.long	OLA_HOU,XTMA_MUG
 
-	.long	BARK_MUG,OLA_HOU
-	.long	BARK_MUG,DRX_HOU
-	.long	BARK_MUG,WLS_GLD
+	.long	XHAR_MUG,OLA_HOU
+	.long	XHAR_MUG,XYAO_MUG
+	.long	XHAR_MUG,XTMA_MUG
 
-	.long	DRX_HOU,OLA_HOU
-	.long	DRX_HOU,BARK_MUG
-	.long	DRX_HOU,WLS_GLD
+	.long	XYAO_MUG,OLA_HOU
+	.long	XYAO_MUG,XHAR_MUG
+	.long	XYAO_MUG,XTMA_MUG
 
-	.long	WLS_GLD,OLA_HOU
-	.long	WLS_GLD,BARK_MUG
-	.long	WLS_GLD,DRX_HOU
+	.long	XTMA_MUG,OLA_HOU
+	.long	XTMA_MUG,XHAR_MUG
+	.long	XTMA_MUG,XYAO_MUG
 
 	.long	0,0
 	.long	0,0
@@ -4632,47 +4632,47 @@ player_heads
 
 
 ;10 INDIANA
-	.long	MIL_IND,JAC_IND
-	.long	MIL_IND,SMI_IND
-	.long	MIL_IND,DAV_IND
+	.long	MIL_IND,XHAL_MUG
 	.long	MIL_IND,ROS_DEN
+	.long	MIL_IND,SMI_IND
+	.long	MIL_IND,XCLA_MUG
 
-	.long	JAC_IND,MIL_IND
-	.long	JAC_IND,SMI_IND
-	.long	JAC_IND,DAV_IND
-	.long	JAC_IND,ROS_DEN
-
-	.long	SMI_IND,MIL_IND
-	.long	SMI_IND,JAC_IND
-	.long	SMI_IND,DAV_IND
-	.long	SMI_IND,ROS_DEN
-
-	.long	DAV_IND,MIL_IND
-	.long	DAV_IND,JAC_IND
-	.long	DAV_IND,SMI_IND
-	.long	DAV_IND,ROS_DEN
+	.long	XHAL_MUG,MIL_IND
+	.long	XHAL_MUG,ROS_DEN
+	.long	XHAL_MUG,SMI_IND
+	.long	XHAL_MUG,XCLA_MUG
 
 	.long	ROS_DEN,MIL_IND
-	.long	ROS_DEN,JAC_IND
+	.long	ROS_DEN,XHAL_MUG
 	.long	ROS_DEN,SMI_IND
-	.long	ROS_DEN,DAV_IND
+	.long	ROS_DEN,XCLA_MUG
+
+	.long	SMI_IND,MIL_IND
+	.long	SMI_IND,XHAL_MUG
+	.long	SMI_IND,ROS_DEN
+	.long	SMI_IND,XCLA_MUG
+
+	.long	XCLA_MUG,MIL_IND
+	.long	XCLA_MUG,XHAL_MUG
+	.long	XCLA_MUG,ROS_DEN
+	.long	XCLA_MUG,SMI_IND
 
 ;11 L.A. CLIPPERS
-	.long	VAU_CLP,ROG_CLP
-	.long	VAU_CLP,BAR_CLP
-	.long	VAU_CLP,RCH_CLP
+	.long	XCCP_MUG,XGRI_MUG
+	.long	XCCP_MUG,XPGE_MUG
+	.long	XGRI_MUG,XCCP_MUG
 
-	.long	ROG_CLP,VAU_CLP
-	.long	ROG_CLP,BAR_CLP
-	.long	ROG_CLP,RCH_CLP
+	.long	XGRI_MUG,XPGE_MUG
+	.long	XPGE_MUG,XCCP_MUG
+	.long	XPGE_MUG,XGRI_MUG
 
-	.long	BAR_CLP,VAU_CLP
-	.long	BAR_CLP,ROG_CLP
-	.long	BAR_CLP,RCH_CLP
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	RCH_CLP,VAU_CLP
-	.long	RCH_CLP,ROG_CLP
-	.long	RCH_CLP,BAR_CLP
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 	.long	0,0
 	.long	0,0
@@ -4685,98 +4685,98 @@ player_heads
 
 ;12 L.A. LAKERS
 
-	.long	ONE_LAL,JON_LAK
-	.long	ONE_LAL,VAN_LAK
-	.long	ONE_LAL,KOB_MUG
-	.long	ONE_LAL,HOR_HOU
+	.long	KOB_MUG,MAG_MUG
+	.long	KOB_MUG,XART_MUG
+	.long	KOB_MUG,KAR_MUG
+	.long	KOB_MUG,XWOR_MUG
 
-	.long	JON_LAK,ONE_LAL
-	.long	JON_LAK,VAN_LAK
-	.long	JON_LAK,KOB_MUG
-	.long	JON_LAK,HOR_HOU
+	.long	MAG_MUG,KOB_MUG
+	.long	MAG_MUG,XART_MUG
+	.long	MAG_MUG,KAR_MUG
+	.long	MAG_MUG,XWOR_MUG
 
-	.long	VAN_LAK,ONE_LAL
-	.long	VAN_LAK,JON_LAK
-	.long	VAN_LAK,KOB_MUG
-	.long	VAN_LAK,HOR_HOU
+	.long	XART_MUG,KOB_MUG
+	.long	XART_MUG,MAG_MUG
+	.long	XART_MUG,KAR_MUG
+	.long	XART_MUG,XWOR_MUG
 
-	.long	KOB_MUG,ONE_LAL
-	.long	KOB_MUG,JON_LAK
-	.long	KOB_MUG,VAN_LAK
-	.long	KOB_MUG,HOR_HOU
+	.long	KAR_MUG,KOB_MUG
+	.long	KAR_MUG,MAG_MUG
+	.long	KAR_MUG,XART_MUG
+	.long	KAR_MUG,XWOR_MUG
 
-	.long	HOR_HOU,ONE_LAL
-	.long	HOR_HOU,JON_LAK
-	.long	HOR_HOU,VAN_LAK
-	.long	HOR_HOU,KOB_MUG
+	.long	XWOR_MUG,KOB_MUG
+	.long	XWOR_MUG,MAG_MUG
+	.long	XWOR_MUG,XART_MUG
+	.long	XWOR_MUG,KAR_MUG
 
 ;13 MIAMI
-	.long	HRD_MIA,MOU_MIA
-	.long	HRD_MIA,MAS_DAL
+	.long	XWAD_MUG,MOU_MIA
+	.long	XWAD_MUG,HRD_MIA
 
+	.long	XWAD_MUG,XBUT_MUG
+	.long	XWAD_MUG,XBAM_MUG
+
+	.long	MOU_MIA,XWAD_MUG
 	.long	MOU_MIA,HRD_MIA
-	.long	MOU_MIA,MAS_DAL
 
-	.long	MAS_DAL,HRD_MIA
-	.long	MAS_DAL,MOU_MIA
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	MOU_MIA,XBUT_MUG
+	.long	MOU_MIA,XBAM_MUG
+	.long	HRD_MIA,XWAD_MUG
+	.long	HRD_MIA,MOU_MIA
+	.long	HRD_MIA,XBUT_MUG
+	.long	HRD_MIA,XBAM_MUG
+	.long	XBUT_MUG,XWAD_MUG
+	.long	XBUT_MUG,MOU_MIA
+	.long	XBUT_MUG,HRD_MIA
+	.long	XBUT_MUG,XBAM_MUG
+	.long	XBAM_MUG,XWAD_MUG
+	.long	XBAM_MUG,MOU_MIA
+	.long	XBAM_MUG,HRD_MIA
+	.long	XBAM_MUG,XBUT_MUG
 
 ;14 MILWAUKEE
-	.long	BAK_MLW,ROB_MLW
-	.long	BAK_MLW,ALL_COL
-	.long	BAK_MLW,DOU_MLW
-	.long	BAK_MLW,GIL_NEJ
+	.long	GIAN_MUG,XMID_MUG
+	.long	GIAN_MUG,XALL_MUG
+	.long	GIAN_MUG,ROB_MLW
+	.long	GIAN_MUG,CAS_HOU
 
-	.long	ROB_MLW,BAK_MLW
-	.long	ROB_MLW,ALL_COL
-	.long	ROB_MLW,DOU_MLW
-	.long	ROB_MLW,GIL_NEJ
+	.long	XMID_MUG,GIAN_MUG
+	.long	XMID_MUG,XALL_MUG
+	.long	XMID_MUG,ROB_MLW
+	.long	XMID_MUG,CAS_HOU
 
-	.long	ALL_COL,BAK_MLW
-	.long	ALL_COL,ROB_MLW
-	.long	ALL_COL,DOU_MLW
-	.long	ALL_COL,GIL_NEJ
+	.long	XALL_MUG,GIAN_MUG
+	.long	XALL_MUG,XMID_MUG
+	.long	XALL_MUG,ROB_MLW
+	.long	XALL_MUG,CAS_HOU
 
-	.long	DOU_MLW,BAK_MLW
-	.long	DOU_MLW,ROB_MLW
-	.long	DOU_MLW,ALL_COL
-	.long	DOU_MLW,GIL_NEJ
+	.long	ROB_MLW,GIAN_MUG
+	.long	ROB_MLW,XMID_MUG
+	.long	ROB_MLW,XALL_MUG
+	.long	ROB_MLW,CAS_HOU
 
-	.long	GIL_NEJ,BAK_MLW
-	.long	GIL_NEJ,ROB_MLW
-	.long	GIL_NEJ,ALL_COL
-	.long	GIL_NEJ,DOU_MLW
+	.long	CAS_HOU,GIAN_MUG
+	.long	CAS_HOU,XMID_MUG
+	.long	CAS_HOU,XALL_MUG
+	.long	CAS_HOU,ROB_MLW
 
 ;15 MINNESOTTA
-	.long	GAR_MIN,GUG_MIN
-	.long	GAR_MIN,MAR_COL
+	.long	XGAR_MUG,XANT_MUG
+	.long	XGAR_MUG,XLAM_MUG
 
-	.long	GUG_MIN,GAR_MIN
-	.long	GUG_MIN,MAR_COL
+	.long	XGAR_MUG,SPR_GLD
+	.long	XANT_MUG,XGAR_MUG
 
-	.long	MAR_COL,GAR_MIN
-	.long	MAR_COL,GUG_MIN
+	.long	XANT_MUG,XLAM_MUG
+	.long	XANT_MUG,SPR_GLD
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XLAM_MUG,XGAR_MUG
+	.long	XLAM_MUG,XANT_MUG
+	.long	XLAM_MUG,SPR_GLD
+	.long	SPR_GLD,XGAR_MUG
+	.long	SPR_GLD,XANT_MUG
+	.long	SPR_GLD,XLAM_MUG
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -4787,99 +4787,99 @@ player_heads
 	.long	0,0
 
 ;16 NEW JERSEY
-	.long	GLL_NEJ,KIT_COL
-	.long	GLL_NEJ,CAS_HOU
-	.long	GLL_NEJ,JAC_DAL
-	.long	GLL_NEJ,MON_BOS
+	.long	KID_DAL,COL_PHL
+	.long	KID_DAL,KIT_COL
+	.long	KID_DAL,MAR_COL
+	.long	COL_PHL,KID_DAL
 
-	.long	KIT_COL,GLL_NEJ
-	.long	KIT_COL,CAS_HOU
-	.long	KIT_COL,JAC_DAL
-	.long	KIT_COL,MON_BOS
+	.long	COL_PHL,KIT_COL
+	.long	COL_PHL,MAR_COL
+	.long	KIT_COL,KID_DAL
+	.long	KIT_COL,COL_PHL
 
-	.long	CAS_HOU,GLL_NEJ
-	.long	CAS_HOU,KIT_COL
-	.long	CAS_HOU,JAC_DAL
-	.long	CAS_HOU,MON_BOS
+	.long	KIT_COL,MAR_COL
+	.long	MAR_COL,KID_DAL
+	.long	MAR_COL,COL_PHL
+	.long	MAR_COL,KIT_COL
 
-	.long	JAC_DAL,GLL_NEJ
-	.long	JAC_DAL,KIT_COL
-	.long	JAC_DAL,CAS_HOU
-	.long	JAC_DAL,MON_BOS
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	MON_BOS,GLL_NEJ
-	.long	MON_BOS,KIT_COL
-	.long	MON_BOS,CAS_HOU
-	.long	MON_BOS,JAC_DAL
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;17 NEW YORK
-	.long	EWG_NEY,JON_CHA
 	.long	EWG_NEY,HOU_DET
-	.long	EWG_NEY,STA_NEY
 	.long	EWG_NEY,OAK_NEY
-
-	.long	JON_CHA,EWG_NEY
-	.long	JON_CHA,HOU_DET
-	.long	JON_CHA,STA_NEY
-	.long	JON_CHA,OAK_NEY
+	.long	EWG_NEY,STA_NEY
+	.long	EWG_NEY,XBRU_MUG
 
 	.long	HOU_DET,EWG_NEY
-	.long	HOU_DET,JON_CHA
-	.long	HOU_DET,STA_NEY
 	.long	HOU_DET,OAK_NEY
-
-	.long	STA_NEY,EWG_NEY
-	.long	STA_NEY,JON_CHA
-	.long	STA_NEY,HOU_DET
-	.long	STA_NEY,OAK_NEY
+	.long	HOU_DET,STA_NEY
+	.long	HOU_DET,XBRU_MUG
 
 	.long	OAK_NEY,EWG_NEY
-	.long	OAK_NEY,JON_CHA
 	.long	OAK_NEY,HOU_DET
 	.long	OAK_NEY,STA_NEY
+	.long	OAK_NEY,XBRU_MUG
+
+	.long	STA_NEY,EWG_NEY
+	.long	STA_NEY,HOU_DET
+	.long	STA_NEY,OAK_NEY
+	.long	STA_NEY,XBRU_MUG
+
+	.long	XBRU_MUG,EWG_NEY
+	.long	XBRU_MUG,HOU_DET
+	.long	XBRU_MUG,OAK_NEY
+	.long	XBRU_MUG,STA_NEY
 
 ;18 ORLANDO
-	.long	HAR_ORL,GRT_ORL
-	.long	HAR_ORL,AND_ORL
-	.long	HAR_ORL,SKL_GLD
-	.long	HAR_ORL,SCO_ORL
+	.long	ONE_LAL,HAR_ORL
+	.long	ONE_LAL,AND_ORL
+	.long	ONE_LAL,XDWI_MUG
+	.long	ONE_LAL,GRT_ORL
 
+	.long	HAR_ORL,ONE_LAL
+	.long	HAR_ORL,AND_ORL
+	.long	HAR_ORL,XDWI_MUG
+	.long	HAR_ORL,GRT_ORL
+
+	.long	AND_ORL,ONE_LAL
+	.long	AND_ORL,HAR_ORL
+	.long	AND_ORL,XDWI_MUG
+	.long	AND_ORL,GRT_ORL
+
+	.long	XDWI_MUG,ONE_LAL
+	.long	XDWI_MUG,HAR_ORL
+	.long	XDWI_MUG,AND_ORL
+	.long	XDWI_MUG,GRT_ORL
+
+	.long	GRT_ORL,ONE_LAL
 	.long	GRT_ORL,HAR_ORL
 	.long	GRT_ORL,AND_ORL
-	.long	GRT_ORL,SKL_GLD
-	.long	GRT_ORL,SCO_ORL
-
-	.long	AND_ORL,HAR_ORL
-	.long	AND_ORL,GRT_ORL
-	.long	AND_ORL,SKL_GLD
-	.long	AND_ORL,SCO_ORL
-
-	.long	SKL_GLD,HAR_ORL
-	.long	SKL_GLD,GRT_ORL
-	.long	SKL_GLD,AND_ORL
-	.long	SKL_GLD,SCO_ORL
-
-	.long	SCO_ORL,HAR_ORL
-	.long	SCO_ORL,GRT_ORL
-	.long	SCO_ORL,AND_ORL
-	.long	SCO_ORL,SKL_GLD
+	.long	GRT_ORL,XDWI_MUG
 
 ;19 PHILADELPHIA
-	.long	IVE_COL,COL_PHL
-	.long	IVE_COL,STA_PHL
-	.long	IVE_COL,WEA_PHL
+	.long	XIVE_MUG,XEMB_MUG
+	.long	XIVE_MUG,XMMA_MUG
+	.long	XIVE_MUG,XERV_MUG
 
-	.long	COL_PHL,IVE_COL
-	.long	COL_PHL,STA_PHL
-	.long	COL_PHL,WEA_PHL
+	.long	XEMB_MUG,XIVE_MUG
+	.long	XEMB_MUG,XMMA_MUG
+	.long	XEMB_MUG,XERV_MUG
 
-	.long	STA_PHL,IVE_COL
-	.long	STA_PHL,COL_PHL
-	.long	STA_PHL,WEA_PHL
+	.long	XMMA_MUG,XIVE_MUG
+	.long	XMMA_MUG,XEMB_MUG
+	.long	XMMA_MUG,XERV_MUG
 
-	.long	WEA_PHL,IVE_COL
-	.long	WEA_PHL,COL_PHL
-	.long	WEA_PHL,STA_PHL
+	.long	XERV_MUG,XIVE_MUG
+	.long	XERV_MUG,XEMB_MUG
+	.long	XERV_MUG,XMMA_MUG
 
 	.long	0,0
 	.long	0,0
@@ -4891,47 +4891,47 @@ player_heads
 	.long	0,0
 
 ;20 PHOENIX
-	.long	JOH_PHX,KID_DAL
-	.long	JOH_PHX,PER_PHX
-	.long	JOH_PHX,MAN_PHX
-	.long	JOH_PHX,CEB_LAK
+	.long	XBOO_MUG,BARK_MUG
+	.long	XBOO_MUG,XNAS_MUG
+	.long	XBOO_MUG,XMAJ_MUG
+	.long	BARK_MUG,XBOO_MUG
 
-	.long	KID_DAL,JOH_PHX
-	.long	KID_DAL,PER_PHX
-	.long	KID_DAL,MAN_PHX
-	.long	KID_DAL,CEB_LAK
+	.long	BARK_MUG,XNAS_MUG
+	.long	BARK_MUG,XMAJ_MUG
+	.long	XNAS_MUG,XBOO_MUG
+	.long	XNAS_MUG,BARK_MUG
 
-	.long	PER_PHX,JOH_PHX
-	.long	PER_PHX,KID_DAL
-	.long	PER_PHX,MAN_PHX
-	.long	PER_PHX,CEB_LAK
+	.long	XNAS_MUG,XMAJ_MUG
+	.long	XMAJ_MUG,XBOO_MUG
+	.long	XMAJ_MUG,BARK_MUG
+	.long	XMAJ_MUG,XNAS_MUG
 
-	.long	MAN_PHX,JOH_PHX
-	.long	MAN_PHX,KID_DAL
-	.long	MAN_PHX,PER_PHX
-	.long	MAN_PHX,CEB_LAK
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	CEB_LAK,JOH_PHX
-	.long	CEB_LAK,KID_DAL
-	.long	CEB_LAK,PER_PHX
-	.long	CEB_LAK,MAN_PHX
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;21 PORTLAND
-	.long	SAB_PRT,AND_CHA
-	.long	SAB_PRT,ROB_PRT
-	.long	SAB_PRT,RID_MIN
+	.long	XLIL_MUG,DRX_HOU
+	.long	XLIL_MUG,XALD_MUG
+	.long	XLIL_MUG,SAB_PRT
 
-	.long	AND_CHA,SAB_PRT
-	.long	AND_CHA,ROB_PRT
-	.long	AND_CHA,RID_MIN
+	.long	DRX_HOU,XLIL_MUG
+	.long	DRX_HOU,XALD_MUG
+	.long	DRX_HOU,SAB_PRT
 
-	.long	ROB_PRT,SAB_PRT
-	.long	ROB_PRT,AND_CHA
-	.long	ROB_PRT,RID_MIN
+	.long	XALD_MUG,XLIL_MUG
+	.long	XALD_MUG,DRX_HOU
+	.long	XALD_MUG,SAB_PRT
 
-	.long	RID_MIN,SAB_PRT
-	.long	RID_MIN,AND_CHA
-	.long	RID_MIN,ROB_PRT
+	.long	SAB_PRT,XLIL_MUG
+	.long	SAB_PRT,DRX_HOU
+	.long	SAB_PRT,XALD_MUG
 
 	.long	0,0
 	.long	0,0
@@ -4943,21 +4943,21 @@ player_heads
 	.long	0,0
 
 ;22 SACRAMENTO
-	.long	RIC_SAC,OWE_SAC
-	.long	RIC_SAC,RAF_DEN
-	.long	RIC_SAC,EDN_SAC
+	.long	RIC_SAC,DIV_LAK
+	.long	RIC_SAC,XWEB_MUG
+	.long	RIC_SAC,XCOU_MUG
 
-	.long	OWE_SAC,RIC_SAC
-	.long	OWE_SAC,RAF_DEN
-	.long	OWE_SAC,EDN_SAC
+	.long	DIV_LAK,RIC_SAC
+	.long	DIV_LAK,XWEB_MUG
+	.long	DIV_LAK,XCOU_MUG
 
-	.long	RAF_DEN,RIC_SAC
-	.long	RAF_DEN,OWE_SAC
-	.long	RAF_DEN,EDN_SAC
+	.long	XWEB_MUG,RIC_SAC
+	.long	XWEB_MUG,DIV_LAK
+	.long	XWEB_MUG,XCOU_MUG
 
-	.long	EDN_SAC,RIC_SAC
-	.long	EDN_SAC,OWE_SAC
-	.long	EDN_SAC,RAF_DEN
+	.long	XCOU_MUG,RIC_SAC
+	.long	XCOU_MUG,DIV_LAK
+	.long	XCOU_MUG,XWEB_MUG
 
 	.long	0,0
 	.long	0,0
@@ -4969,73 +4969,69 @@ player_heads
 	.long	0,0
 
 ;23 SAN ANTONIO
-	.long	ROB_SAN,ELL_SAN
-	.long	ROB_SAN,JON_SAN
-	.long	ROB_SAN,DEL_SAN
-	.long	ROB_SAN,MAX_PHL
+	.long	XDUN_MUG,ROB_SAN
+	.long	XDUN_MUG,XPRK_MUG
+	.long	XDUN_MUG,XMAN_MUG
+	.long	XDUN_MUG,XWEM_MUG
 
-	.long	ELL_SAN,ROB_SAN
-	.long	ELL_SAN,JON_SAN
-	.long	ELL_SAN,DEL_SAN
-	.long	ELL_SAN,MAX_PHL
+	.long	ROB_SAN,XDUN_MUG
+	.long	ROB_SAN,XPRK_MUG
+	.long	ROB_SAN,XMAN_MUG
+	.long	ROB_SAN,XWEM_MUG
 
-	.long	JON_SAN,ROB_SAN
-	.long	JON_SAN,ELL_SAN
-	.long	JON_SAN,DEL_SAN
-	.long	JON_SAN,MAX_PHL
+	.long	XPRK_MUG,XDUN_MUG
+	.long	XPRK_MUG,ROB_SAN
+	.long	XPRK_MUG,XMAN_MUG
+	.long	XPRK_MUG,XWEM_MUG
 
-	.long	DEL_SAN,ROB_SAN
-	.long	DEL_SAN,ELL_SAN
-	.long	DEL_SAN,JON_SAN
-	.long	DEL_SAN,MAX_PHL
+	.long	XMAN_MUG,XDUN_MUG
+	.long	XMAN_MUG,ROB_SAN
+	.long	XMAN_MUG,XPRK_MUG
+	.long	XMAN_MUG,XWEM_MUG
 
-	.long	MAX_PHL,ROB_SAN
-	.long	MAX_PHL,ELL_SAN
-	.long	MAX_PHL,JON_SAN
-	.long	MAX_PHL,DEL_SAN
+	.long	XWEM_MUG,XDUN_MUG
+	.long	XWEM_MUG,ROB_SAN
+	.long	XWEM_MUG,XPRK_MUG
+	.long	XWEM_MUG,XMAN_MUG
 
 ;24 SEATTLE
+	.long	KDU_MUG,PAY_SEA
+	.long	KDU_MUG,XWES_MUG
+	.long	KDU_MUG,KMP_SEA
+	.long	KDU_MUG,XSGA_MUG
+	.long	PAY_SEA,KDU_MUG
+	.long	PAY_SEA,XWES_MUG
 	.long	PAY_SEA,KMP_SEA
-	.long	PAY_SEA,HWK_SEA
-	.long	PAY_SEA,SCH_SEA
-
+	.long	PAY_SEA,XSGA_MUG
+	.long	XWES_MUG,KDU_MUG
+	.long	XWES_MUG,PAY_SEA
+	.long	XWES_MUG,KMP_SEA
+	.long	XWES_MUG,XSGA_MUG
+	.long	KMP_SEA,KDU_MUG
 	.long	KMP_SEA,PAY_SEA
-	.long	KMP_SEA,HWK_SEA
-	.long	KMP_SEA,SCH_SEA
-
-	.long	HWK_SEA,PAY_SEA
-	.long	HWK_SEA,KMP_SEA
-	.long	HWK_SEA,SCH_SEA
-
-	.long	SCH_SEA,PAY_SEA
-	.long	SCH_SEA,KMP_SEA
-	.long	SCH_SEA,HWK_SEA
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	KMP_SEA,XWES_MUG
+	.long	KMP_SEA,XSGA_MUG
+	.long	XSGA_MUG,KDU_MUG
+	.long	XSGA_MUG,PAY_SEA
+	.long	XSGA_MUG,XWES_MUG
+	.long	XSGA_MUG,KMP_SEA
 
 ;25 TORONTO
-	.long	STO_TOR,WIL_MIA
-	.long	STO_TOR,CAM_COL
-	.long	STO_TOR,JON_DAL
+	.long	XCAR_MUG,XKAW_MUG
+	.long	XCAR_MUG,XBOS_MUG
+	.long	XCAR_MUG,XDER_MUG
 
-	.long	WIL_MIA,STO_TOR
-	.long	WIL_MIA,CAM_COL
-	.long	WIL_MIA,JON_DAL
+	.long	XKAW_MUG,XCAR_MUG
+	.long	XKAW_MUG,XBOS_MUG
+	.long	XKAW_MUG,XDER_MUG
 
-	.long	CAM_COL,STO_TOR
-	.long	CAM_COL,WIL_MIA
-	.long	CAM_COL,JON_DAL
+	.long	XBOS_MUG,XCAR_MUG
+	.long	XBOS_MUG,XKAW_MUG
+	.long	XBOS_MUG,XDER_MUG
 
-	.long	JON_DAL,STO_TOR
-	.long	JON_DAL,WIL_MIA
-	.long	JON_DAL,CAM_COL
+	.long	XDER_MUG,XCAR_MUG
+	.long	XDER_MUG,XKAW_MUG
+	.long	XDER_MUG,XBOS_MUG
 
 	.long	0,0
 	.long	0,0
@@ -5049,19 +5045,19 @@ player_heads
 ;26 UTAH
 	.long	MLN_UTA,STK_UTA
 	.long	MLN_UTA,HRN_UTA
-	.long	MLN_UTA,MOR_UTA
+	.long	MLN_UTA,XMAR_MUG
 
 	.long	STK_UTA,MLN_UTA
 	.long	STK_UTA,HRN_UTA
-	.long	STK_UTA,MOR_UTA
+	.long	STK_UTA,XMAR_MUG
 
 	.long	HRN_UTA,MLN_UTA
 	.long	HRN_UTA,STK_UTA
-	.long	HRN_UTA,MOR_UTA
+	.long	HRN_UTA,XMAR_MUG
 
-	.long	MOR_UTA,MLN_UTA
-	.long	MOR_UTA,STK_UTA
-	.long	MOR_UTA,HRN_UTA
+	.long	XMAR_MUG,MLN_UTA
+	.long	XMAR_MUG,STK_UTA
+	.long	XMAR_MUG,HRN_UTA
 
 	.long	0,0
 	.long	0,0
@@ -5073,14 +5069,14 @@ player_heads
 	.long	0,0
 
 ;27 VANCOUVER
-	.long	REV_VAN,ANT_VAN
-	.long	REV_VAN,EDW_VAN
+	.long	RAF_DEN,XBAN_MUG
+	.long	RAF_DEN,XGAS_MUG
 
-	.long	ANT_VAN,REV_VAN
-	.long	ANT_VAN,EDW_VAN
+	.long	XBAN_MUG,RAF_DEN
+	.long	XBAN_MUG,XGAS_MUG
 
-	.long	EDW_VAN,REV_VAN
-	.long	EDW_VAN,ANT_VAN
+	.long	XGAS_MUG,RAF_DEN
+	.long	XGAS_MUG,XBAN_MUG
 
 	.long	0,0
 	.long	0,0
@@ -5098,30 +5094,30 @@ player_heads
 	.long	0,0
 
 ;28 WASHINGTON
-	.long	WEB_WAS,STR_PRT
-	.long	WEB_WAS,HWD_WAS
-	.long	WEB_WAS,MUR_WAS
-	.long	WEB_WAS,MUR_TOR
-
-	.long	STR_PRT,WEB_WAS
-	.long	STR_PRT,HWD_WAS
-	.long	STR_PRT,MUR_WAS
-	.long	STR_PRT,MUR_TOR
-
+	.long	HWD_WAS,XBEA_MUG
 	.long	HWD_WAS,WEB_WAS
-	.long	HWD_WAS,STR_PRT
-	.long	HWD_WAS,MUR_WAS
-	.long	HWD_WAS,MUR_TOR
+	.long	HWD_WAS,XADA_MUG
+	.long	XBEA_MUG,HWD_WAS
 
-	.long	MUR_WAS,WEB_WAS
-	.long	MUR_WAS,STR_PRT
-	.long	MUR_WAS,HWD_WAS
-	.long	MUR_WAS,MUR_TOR
+	.long	XBEA_MUG,WEB_WAS
+	.long	XBEA_MUG,XADA_MUG
+	.long	WEB_WAS,HWD_WAS
+	.long	WEB_WAS,XBEA_MUG
 
-	.long	MUR_TOR,WEB_WAS
-	.long	MUR_TOR,STR_PRT
-	.long	MUR_TOR,HWD_WAS
-	.long	MUR_TOR,MUR_WAS
+	.long	WEB_WAS,XADA_MUG
+	.long	XADA_MUG,HWD_WAS
+	.long	XADA_MUG,XBEA_MUG
+	.long	XADA_MUG,WEB_WAS
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 ;DJT End
 
 
@@ -5171,21 +5167,21 @@ WALLACE	.equ	11
 	.def	MARBURY,MINOR,RILEY,WALLACE
 
 ;00 ATLANTA
-	.long	BLAYLOCK,MUTUMBO
-	.long	BLAYLOCK,LAETTNER
-	.long	BLAYLOCK,SSMITH
+	.long	YOUNG,WILKINS
+	.long	YOUNG,BLAYLOCK
+	.long	YOUNG,KORVER
 
-	.long	MUTUMBO,BLAYLOCK
-	.long	MUTUMBO,LAETTNER
-	.long	MUTUMBO,SSMITH
+	.long	WILKINS,YOUNG
+	.long	WILKINS,BLAYLOCK
+	.long	WILKINS,KORVER
 
-	.long	LAETTNER,BLAYLOCK
-	.long	LAETTNER,MUTUMBO
-	.long	LAETTNER,SSMITH
+	.long	BLAYLOCK,YOUNG
+	.long	BLAYLOCK,WILKINS
+	.long	BLAYLOCK,KORVER
 
-	.long	SSMITH,BLAYLOCK
-	.long	SSMITH,MUTUMBO
-	.long	SSMITH,LAETTNER
+	.long	KORVER,YOUNG
+	.long	KORVER,WILKINS
+	.long	KORVER,BLAYLOCK
 
 	.long	0,0
 	.long	0,0
@@ -5197,196 +5193,196 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;01 BOSTON
-	.long	FOX,WALKER
-	.long	FOX,RADJA
-	.long	FOX,BARROS
-	.long	FOX,BROWN
+	.long	BIRD,MCHALE
+	.long	BIRD,PIERCE_NP
+	.long	BIRD,TATUM
+	.long	BIRD,PARISH
 
-	.long	WALKER,FOX
-	.long	WALKER,RADJA
-	.long	WALKER,BARROS
-	.long	WALKER,BROWN
+	.long	MCHALE,BIRD
+	.long	MCHALE,PIERCE_NP
+	.long	MCHALE,TATUM
+	.long	MCHALE,PARISH
 
-	.long	RADJA,FOX
-	.long	RADJA,WALKER
-	.long	RADJA,BARROS
-	.long	RADJA,BROWN
+	.long	PIERCE_NP,BIRD
+	.long	PIERCE_NP,MCHALE
+	.long	PIERCE_NP,TATUM
+	.long	PIERCE_NP,PARISH
 
-	.long	BARROS,FOX
-	.long	BARROS,WALKER
-	.long	BARROS,RADJA
-	.long	BARROS,BROWN
+	.long	TATUM,BIRD
+	.long	TATUM,MCHALE
+	.long	TATUM,PIERCE_NP
+	.long	TATUM,PARISH
 
-	.long	BROWN,FOX
-	.long	BROWN,WALKER	
-	.long	BROWN,RADJA
-	.long	BROWN,BARROS
+	.long	PARISH,BIRD
+	.long	PARISH,MCHALE
+	.long	PARISH,PIERCE_NP
+	.long	PARISH,TATUM
 
 ;02 CHARLOTTE
-	.long	RICE,MASON
-	.long	RICE,DIVAC
+	.long	JOHNSN_L,RICE
+	.long	JOHNSN_L,CURRY
+	.long	JOHNSN_L,BOGUES
+
+	.long	JOHNSN_L,MASH
+	.long	RICE,JOHNSN_L
 	.long	RICE,CURRY
 
-	.long	MASON,RICE
-	.long	MASON,DIVAC
-	.long	MASON,CURRY
-
-	.long	DIVAC,RICE
-	.long	DIVAC,MASON
-	.long	DIVAC,CURRY
+	.long	RICE,BOGUES
+	.long	RICE,MASH
+	.long	CURRY,JOHNSN_L
 
 	.long	CURRY,RICE
-	.long	CURRY,MASON
-	.long	CURRY,DIVAC
+	.long	CURRY,BOGUES
+	.long	CURRY,MASH
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	BOGUES,JOHNSN_L
+	.long	BOGUES,RICE
+	.long	BOGUES,CURRY
+	.long	BOGUES,MASH
+	.long	MASH,JOHNSN_L
+	.long	MASH,RICE
+	.long	MASH,CURRY
+	.long	MASH,BOGUES
 
 ;03 CHICAGO
 	.long	JORDAN,PIPPEN
 	.long	JORDAN,RODMAN
-	.long	JORDAN,KUKOC
-	.long	JORDAN,LONGLEY
+	.long	JORDAN,ROSE
+	.long	JORDAN,KERR
 
-	.long	PIPPEN,JORDAN	
+	.long	PIPPEN,JORDAN
 	.long	PIPPEN,RODMAN
-	.long	PIPPEN,KUKOC
-	.long	PIPPEN,LONGLEY
+	.long	PIPPEN,ROSE
+	.long	PIPPEN,KERR
 
 	.long	RODMAN,JORDAN
 	.long	RODMAN,PIPPEN
-	.long	RODMAN,KUKOC
-	.long	RODMAN,LONGLEY
+	.long	RODMAN,ROSE
+	.long	RODMAN,KERR
 
-	.long	KUKOC,JORDAN
-	.long	KUKOC,PIPPEN
-	.long	KUKOC,RODMAN
-	.long	KUKOC,LONGLEY
+	.long	ROSE,JORDAN
+	.long	ROSE,PIPPEN
+	.long	ROSE,RODMAN
+	.long	ROSE,KERR
 
-	.long	LONGLEY,JORDAN
-	.long	LONGLEY,PIPPEN
-	.long	LONGLEY,RODMAN
-	.long	LONGLEY,KUKOC
+	.long	KERR,JORDAN
+	.long	KERR,PIPPEN
+	.long	KERR,RODMAN
+	.long	KERR,ROSE
 
 ;04 CLEVELAND
-	.long	BRANDON,CMILLS
-	.long	BRANDON,PHILLS
-	.long	BRANDON,THILL
-	.long	BRANDON,FERRY
+	.long	LEBRON,IRVING
+	.long	LEBRON,MITCHE_NP
+	.long	LEBRON,DAUGHE_NP
+	.long	IRVING,LEBRON
 
-	.long	CMILLS,BRANDON
-	.long	CMILLS,PHILLS
-	.long	CMILLS,THILL
-	.long	CMILLS,FERRY
+	.long	IRVING,MITCHE_NP
+	.long	IRVING,DAUGHE_NP
+	.long	MITCHE_NP,LEBRON
+	.long	MITCHE_NP,IRVING
 
-	.long	PHILLS,BRANDON
-	.long	PHILLS,CMILLS
-	.long	PHILLS,THILL
-	.long	PHILLS,FERRY
+	.long	MITCHE_NP,DAUGHE_NP
+	.long	DAUGHE_NP,LEBRON
+	.long	DAUGHE_NP,IRVING
+	.long	DAUGHE_NP,MITCHE_NP
 
-	.long	THILL,BRANDON
-	.long	THILL,CMILLS
-	.long	THILL,PHILLS
-	.long	THILL,FERRY
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	FERRY,BRANDON
-	.long	FERRY,CMILLS
-	.long	FERRY,PHILLS
-	.long	FERRY,THILL
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;05 DALLAS
+	.long	NOWITZKI,LUKA
+	.long	NOWITZKI,FINLEY
+	.long	NOWITZKI,BRADLEY
+	.long	LUKA,NOWITZKI
+
+	.long	LUKA,FINLEY
+	.long	LUKA,BRADLEY
+	.long	FINLEY,NOWITZKI
+	.long	FINLEY,LUKA
+
 	.long	FINLEY,BRADLEY
-	.long	FINLEY,DANILOVI
-	.long	FINLEY,PACK
-	.long	FINLEY,HARPER_D
-
+	.long	BRADLEY,NOWITZKI
+	.long	BRADLEY,LUKA
 	.long	BRADLEY,FINLEY
-	.long	BRADLEY,DANILOVI
-	.long	BRADLEY,PACK
-	.long	BRADLEY,HARPER_D
 
-	.long	DANILOVI,FINLEY
-	.long	DANILOVI,BRADLEY
-	.long	DANILOVI,PACK
-	.long	DANILOVI,HARPER_D
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	PACK,FINLEY
-	.long	PACK,BRADLEY
-	.long	PACK,DANILOVI
-	.long	PACK,HARPER_D
-
-	.long	HARPER_D,FINLEY
-	.long	HARPER_D,BRADLEY
-	.long	HARPER_D,DANILOVI
-	.long	HARPER_D,PACK
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;06 DENVER
-	.long	ELLIS,D_ELLIS
-	.long	ELLIS,MCDYESS
-	.long	ELLIS,MARCIULO
+	.long	JOKIC,MURRAY_NP
+	.long	JOKIC,MUTUMBO
+	.long	JOKIC,ANTHONY
 
-	.long	D_ELLIS,ELLIS	
-	.long	D_ELLIS,MCDYESS
-	.long	D_ELLIS,MARCIULO
+	.long	JOKIC,BILLUPS
+	.long	MURRAY_NP,JOKIC
+	.long	MURRAY_NP,MUTUMBO
 
-	.long	MCDYESS,ELLIS
-	.long	MCDYESS,D_ELLIS
-	.long	MCDYESS,MARCIULO
+	.long	MURRAY_NP,ANTHONY
+	.long	MURRAY_NP,BILLUPS
+	.long	MUTUMBO,JOKIC
 
-	.long	MARCIULO,ELLIS
-	.long	MARCIULO,D_ELLIS
-	.long	MARCIULO,MCDYESS
+	.long	MUTUMBO,MURRAY_NP
+	.long	MUTUMBO,ANTHONY
+	.long	MUTUMBO,BILLUPS
 	
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	ANTHONY,JOKIC
+	.long	ANTHONY,MURRAY_NP
+	.long	ANTHONY,MUTUMBO
+	.long	ANTHONY,BILLUPS
+	.long	BILLUPS,JOKIC
+	.long	BILLUPS,MURRAY_NP
+	.long	BILLUPS,MUTUMBO
+	.long	BILLUPS,ANTHONY
 
 ;07 DETROIT
-	.long	GHILL,DUMARS
-	.long	GHILL,THORPE
-	.long	GHILL,TMILLS
+	.long	THOMAS_NP,DUMARS
+	.long	THOMAS_NP,GHILL
+	.long	THOMAS_NP,LAIMBE_NP
 
+	.long	THOMAS_NP,WALLAC_NP
+	.long	DUMARS,THOMAS_NP
 	.long	DUMARS,GHILL
-	.long	DUMARS,THORPE
-	.long	DUMARS,TMILLS
 
-	.long	THORPE,GHILL
-	.long	THORPE,DUMARS
-	.long	THORPE,TMILLS
+	.long	DUMARS,LAIMBE_NP
+	.long	DUMARS,WALLAC_NP
+	.long	GHILL,THOMAS_NP
 
-	.long	TMILLS,GHILL
-	.long	TMILLS,DUMARS
-	.long	TMILLS,THORPE
+	.long	GHILL,DUMARS
+	.long	GHILL,LAIMBE_NP
+	.long	GHILL,WALLAC_NP
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	LAIMBE_NP,THOMAS_NP
+	.long	LAIMBE_NP,DUMARS
+	.long	LAIMBE_NP,GHILL
+	.long	LAIMBE_NP,WALLAC_NP
+	.long	WALLAC_NP,THOMAS_NP
+	.long	WALLAC_NP,DUMARS
+	.long	WALLAC_NP,GHILL
+	.long	WALLAC_NP,LAIMBE_NP
 
 ;08 GOLDEN STATE
-	.long	SPREWELL,MULLIN
-	.long	SPREWELL,JSMITH
+	.long	CURRY,THOMPS_NP
+	.long	CURRY,MULLIN
 
-	.long	MULLIN,SPREWELL
-	.long	MULLIN,JSMITH
+	.long	THOMPS_NP,CURRY
+	.long	THOMPS_NP,MULLIN
 
-	.long	JSMITH,SPREWELL
-	.long	JSMITH,MULLIN
+	.long	MULLIN,CURRY
+	.long	MULLIN,THOMPS_NP
 
 	.long	0,0
 	.long	0,0
@@ -5404,21 +5400,21 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;09 HOUSTON
-	.long	OLAJUWON,BARKLEY
-	.long	OLAJUWON,DREXLER
-	.long	OLAJUWON,WILLIS
+	.long	OLAJUWON,HARDEN
+	.long	OLAJUWON,YAO
+	.long	OLAJUWON,MCGRADY
 
-	.long	BARKLEY,OLAJUWON
-	.long	BARKLEY,DREXLER
-	.long	BARKLEY,WILLIS
+	.long	HARDEN,OLAJUWON
+	.long	HARDEN,YAO
+	.long	HARDEN,MCGRADY
 
-	.long	DREXLER,OLAJUWON
-	.long	DREXLER,BARKLEY
-	.long	DREXLER,WILLIS
+	.long	YAO,OLAJUWON
+	.long	YAO,HARDEN
+	.long	YAO,MCGRADY
 
-	.long	WILLIS,OLAJUWON
-	.long	WILLIS,BARKLEY
-	.long	WILLIS,DREXLER
+	.long	MCGRADY,OLAJUWON
+	.long	MCGRADY,HARDEN
+	.long	MCGRADY,YAO
 
 	.long	0,0
 	.long	0,0
@@ -5431,47 +5427,47 @@ WALLACE	.equ	11
 
 
 ;10 INDIANA
-	.long	MILLER,MJACKSON
-	.long	MILLER,SMITS
-	.long	MILLER,DDAVIS
+	.long	MILLER,TYRESE
 	.long	MILLER,ROSE
+	.long	MILLER,SMITS
+	.long	MILLER,CLARK
 
-	.long	MJACKSON,MILLER
-	.long	MJACKSON,SMITS
-	.long	MJACKSON,DDAVIS
-	.long	MJACKSON,ROSE
-
-	.long	SMITS,MILLER
-	.long	SMITS,MJACKSON
-	.long	SMITS,DDAVIS
-	.long	SMITS,ROSE
-
-	.long	DDAVIS,MILLER
-	.long	DDAVIS,MJACKSON
-	.long	DDAVIS,SMITS
-	.long	DDAVIS,ROSE
+	.long	TYRESE,MILLER
+	.long	TYRESE,ROSE
+	.long	TYRESE,SMITS
+	.long	TYRESE,CLARK
 
 	.long	ROSE,MILLER
-	.long	ROSE,MJACKSON
+	.long	ROSE,TYRESE
 	.long	ROSE,SMITS
-	.long	ROSE,DDAVIS
+	.long	ROSE,CLARK
+
+	.long	SMITS,MILLER
+	.long	SMITS,TYRESE
+	.long	SMITS,ROSE
+	.long	SMITS,CLARK
+
+	.long	CLARK,MILLER
+	.long	CLARK,TYRESE
+	.long	CLARK,ROSE
+	.long	CLARK,SMITS
 
 ;11 L.A. CLIPPERS
-	.long	VAUGHT,RROGERS
-	.long	VAUGHT,BBARRY
-	.long	VAUGHT,PRICHARD
+	.long	PAUL_NP,GRIFFIN
+	.long	PAUL_NP,GEORGE_NP
+	.long	GRIFFIN,PAUL_NP
 
-	.long	RROGERS,VAUGHT
-	.long	RROGERS,BBARRY
-	.long	RROGERS,PRICHARD
+	.long	GRIFFIN,GEORGE_NP
+	.long	GEORGE_NP,PAUL_NP
+	.long	GEORGE_NP,GRIFFIN
 
-	.long	BBARRY,VAUGHT
-	.long	BBARRY,RROGERS
-	.long	BBARRY,PRICHARD
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	PRICHARD,VAUGHT
-	.long	PRICHARD,RROGERS
-	.long	PRICHARD,BBARRY
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 	.long	0,0
 	.long	0,0
@@ -5485,98 +5481,98 @@ WALLACE	.equ	11
 
 ;12 L.A. LAKERS
 
-	.long	ONEAL,EJONES
-	.long	ONEAL,VANEXEL
-	.long	ONEAL,BRYANT
-	.long	ONEAL,HORRY
+	.long	BRYANT,JOHNSON_M
+	.long	BRYANT,ARTEST
+	.long	BRYANT,KAREEM
+	.long	BRYANT,WORTHY_NP
 
-	.long	EJONES,ONEAL
-	.long	EJONES,VANEXEL
-	.long	EJONES,BRYANT
-	.long	EJONES,HORRY
+	.long	JOHNSON_M,BRYANT
+	.long	JOHNSON_M,ARTEST
+	.long	JOHNSON_M,KAREEM
+	.long	JOHNSON_M,WORTHY_NP
 
-	.long	VANEXEL,ONEAL
-	.long	VANEXEL,EJONES
-	.long	VANEXEL,BRYANT
-	.long	VANEXEL,HORRY
+	.long	ARTEST,BRYANT
+	.long	ARTEST,JOHNSON_M
+	.long	ARTEST,KAREEM
+	.long	ARTEST,WORTHY_NP
 
-	.long	BRYANT,ONEAL
-	.long	BRYANT,EJONES
-	.long	BRYANT,VANEXEL
-	.long	BRYANT,HORRY
+	.long	KAREEM,BRYANT
+	.long	KAREEM,JOHNSON_M
+	.long	KAREEM,ARTEST
+	.long	KAREEM,WORTHY_NP
 
-	.long	HORRY,ONEAL
-	.long	HORRY,EJONES
-	.long	HORRY,VANEXEL
-	.long	HORRY,BRYANT
+	.long	WORTHY_NP,BRYANT
+	.long	WORTHY_NP,JOHNSON_M
+	.long	WORTHY_NP,ARTEST
+	.long	WORTHY_NP,KAREEM
 
 ;13 MIAMI
-	.long	THARDAWAY,MOURN
-	.long	THARDAWAY,MASH
+	.long	WADE,MOURN
+	.long	WADE,THARDAWAY
 
+	.long	WADE,BUTLER
+	.long	WADE,ADEBAYO
+
+	.long	MOURN,WADE
 	.long	MOURN,THARDAWAY
-	.long	MOURN,MASH
 
-	.long	MASH,THARDAWAY
-	.long	MASH,MOURN
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	MOURN,BUTLER
+	.long	MOURN,ADEBAYO
+	.long	THARDAWAY,WADE
+	.long	THARDAWAY,MOURN
+	.long	THARDAWAY,BUTLER
+	.long	THARDAWAY,ADEBAYO
+	.long	BUTLER,WADE
+	.long	BUTLER,MOURN
+	.long	BUTLER,THARDAWAY
+	.long	BUTLER,ADEBAYO
+	.long	ADEBAYO,WADE
+	.long	ADEBAYO,MOURN
+	.long	ADEBAYO,THARDAWAY
+	.long	ADEBAYO,BUTLER
 
 ;14 MILWAUKEE
-	.long	BAKER,GROBINSO
-	.long	BAKER,ALLEN
-	.long	BAKER,DOUGLAS
-	.long	BAKER,GILLIAM
+	.long	GIANNIS,MIDDLETON
+	.long	GIANNIS,ALLEN
+	.long	GIANNIS,GROBINSO
+	.long	GIANNIS,CASSELL
 
-	.long	GROBINSO,BAKER
-	.long	GROBINSO,ALLEN
-	.long	GROBINSO,DOUGLAS
-	.long	GROBINSO,GILLIAM
+	.long	MIDDLETON,GIANNIS
+	.long	MIDDLETON,ALLEN
+	.long	MIDDLETON,GROBINSO
+	.long	MIDDLETON,CASSELL
 
-	.long	ALLEN,BAKER
+	.long	ALLEN,GIANNIS
+	.long	ALLEN,MIDDLETON
 	.long	ALLEN,GROBINSO
-	.long	ALLEN,DOUGLAS
-	.long	ALLEN,GILLIAM
+	.long	ALLEN,CASSELL
 
-	.long	DOUGLAS,BAKER
-	.long	DOUGLAS,GROBINSO
-	.long	DOUGLAS,ALLEN
-	.long	DOUGLAS,GILLIAM
+	.long	GROBINSO,GIANNIS
+	.long	GROBINSO,MIDDLETON
+	.long	GROBINSO,ALLEN
+	.long	GROBINSO,CASSELL
 
-	.long	GILLIAM,BAKER
-	.long	GILLIAM,GROBINSO
-	.long	GILLIAM,ALLEN
-	.long	GILLIAM,DOUGLAS
+	.long	CASSELL,GIANNIS
+	.long	CASSELL,MIDDLETON
+	.long	CASSELL,ALLEN
+	.long	CASSELL,GROBINSO
 
 ;15 MINNESOTTA
-	.long	GARNETT,GUGLI2
-	.long	GARNETT,MARBURY
+	.long	GARNETT,EDWARDS
+	.long	GARNETT,BALL_NP
 
-	.long	GUGLI2,GARNETT
-	.long	GUGLI2,MARBURY
+	.long	GARNETT,SPREWELL
+	.long	EDWARDS,GARNETT
 
-	.long	MARBURY,GARNETT
-	.long	MARBURY,GUGLI2
+	.long	EDWARDS,BALL_NP
+	.long	EDWARDS,SPREWELL
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	BALL_NP,GARNETT
+	.long	BALL_NP,EDWARDS
+	.long	BALL_NP,SPREWELL
+	.long	SPREWELL,GARNETT
+	.long	SPREWELL,EDWARDS
+	.long	SPREWELL,BALL_NP
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5587,99 +5583,99 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;16 NEW JERSEY
-	.long	GILL,KITTLES
-	.long	GILL,CASSELL
-	.long	GILL,JACK
-	.long	GILL,MONTROSS
+	.long	KIDD,COLEMAN
+	.long	KIDD,KITTLES
+	.long	KIDD,MARBURY
+	.long	COLEMAN,KIDD
 
-	.long	KITTLES,GILL
-	.long	KITTLES,CASSELL
-	.long	KITTLES,JACK
-	.long	KITTLES,MONTROSS
+	.long	COLEMAN,KITTLES
+	.long	COLEMAN,MARBURY
+	.long	KITTLES,KIDD
+	.long	KITTLES,COLEMAN
 
-	.long	CASSELL,GILL
-	.long	CASSELL,KITTLES
-	.long	CASSELL,JACK
-	.long	CASSELL,MONTROSS
+	.long	KITTLES,MARBURY
+	.long	MARBURY,KIDD
+	.long	MARBURY,COLEMAN
+	.long	MARBURY,KITTLES
 
-	.long	JACK,GILL
-	.long	JACK,KITTLES
-	.long	JACK,CASSELL
-	.long	JACK,MONTROSS
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	MONTROSS,GILL
-	.long	MONTROSS,KITTLES
-	.long	MONTROSS,CASSELL
-	.long	MONTROSS,JACK
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;17 NEW YORK
-	.long	EWING,JOHNSN_L
 	.long	EWING,HOUSTON
-	.long	EWING,STARKS
 	.long	EWING,OAKLEY
-
-	.long	JOHNSN_L,EWING
-	.long	JOHNSN_L,HOUSTON
-	.long	JOHNSN_L,STARKS
-	.long	JOHNSN_L,OAKLEY
+	.long	EWING,STARKS
+	.long	EWING,BRUNSON
 
 	.long	HOUSTON,EWING
-	.long	HOUSTON,JOHNSN_L
-	.long	HOUSTON,STARKS
 	.long	HOUSTON,OAKLEY
-
-	.long	STARKS,EWING
-	.long	STARKS,JOHNSN_L
-	.long	STARKS,HOUSTON
-	.long	STARKS,OAKLEY
+	.long	HOUSTON,STARKS
+	.long	HOUSTON,BRUNSON
 
 	.long	OAKLEY,EWING
-	.long	OAKLEY,JOHNSN_L
 	.long	OAKLEY,HOUSTON
 	.long	OAKLEY,STARKS
+	.long	OAKLEY,BRUNSON
+
+	.long	STARKS,EWING
+	.long	STARKS,HOUSTON
+	.long	STARKS,OAKLEY
+	.long	STARKS,BRUNSON
+
+	.long	BRUNSON,EWING
+	.long	BRUNSON,HOUSTON
+	.long	BRUNSON,OAKLEY
+	.long	BRUNSON,STARKS
 
 ;18 ORLANDO
-	.long	AHARDAWAY,GRANT_HC
-	.long	AHARDAWAY,NANDERSON
-	.long	AHARDAWAY,SEIKALY
-	.long	AHARDAWAY,DSCOTT
+	.long	ONEAL,AHARDAWAY
+	.long	ONEAL,NANDERSON
+	.long	ONEAL,HOWARD
+	.long	ONEAL,GRANT_HC
 
+	.long	AHARDAWAY,ONEAL
+	.long	AHARDAWAY,NANDERSON
+	.long	AHARDAWAY,HOWARD
+	.long	AHARDAWAY,GRANT_HC
+
+	.long	NANDERSON,ONEAL
+	.long	NANDERSON,AHARDAWAY
+	.long	NANDERSON,HOWARD
+	.long	NANDERSON,GRANT_HC
+
+	.long	HOWARD,ONEAL
+	.long	HOWARD,AHARDAWAY
+	.long	HOWARD,NANDERSON
+	.long	HOWARD,GRANT_HC
+
+	.long	GRANT_HC,ONEAL
 	.long	GRANT_HC,AHARDAWAY
 	.long	GRANT_HC,NANDERSON
-	.long	GRANT_HC,SEIKALY
-	.long	GRANT_HC,DSCOTT
-
-	.long	NANDERSON,AHARDAWAY
-	.long	NANDERSON,GRANT_HC
-	.long	NANDERSON,SEIKALY
-	.long	NANDERSON,DSCOTT
-
-	.long	SEIKALY,AHARDAWAY
-	.long	SEIKALY,GRANT_HC
-	.long	SEIKALY,NANDERSON
-	.long	SEIKALY,DSCOTT
-
-	.long	DSCOTT,AHARDAWAY
-	.long	DSCOTT,GRANT_HC
-	.long	DSCOTT,NANDERSON
-	.long	DSCOTT,SEIKALY
+	.long	GRANT_HC,HOWARD
 
 ;19 PHILADELPHIA
-	.long	IVERSON,COLEMAN
-	.long	IVERSON,STACKHOU
-	.long	IVERSON,WEATHSPN
+	.long	IVERSON,EMBIID
+	.long	IVERSON,MALONE_NP
+	.long	IVERSON,ERVING
 
-	.long	COLEMAN,IVERSON
-	.long	COLEMAN,STACKHOU
-	.long	COLEMAN,WEATHSPN
+	.long	EMBIID,IVERSON
+	.long	EMBIID,MALONE_NP
+	.long	EMBIID,ERVING
 
-	.long	STACKHOU,IVERSON
-	.long	STACKHOU,COLEMAN
-	.long	STACKHOU,WEATHSPN
+	.long	MALONE_NP,IVERSON
+	.long	MALONE_NP,EMBIID
+	.long	MALONE_NP,ERVING
 
-	.long	WEATHSPN,IVERSON
-	.long	WEATHSPN,COLEMAN
-	.long	WEATHSPN,STACKHOU
+	.long	ERVING,IVERSON
+	.long	ERVING,EMBIID
+	.long	ERVING,MALONE_NP
 
 	.long	0,0
 	.long	0,0
@@ -5691,47 +5687,47 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;20 PHOENIX
-	.long	KJOHNSON,KIDD
-	.long	KJOHNSON,WPERSON
-	.long	KJOHNSON,MANNING
-	.long	KJOHNSON,CEBALLOS
+	.long	BOOKER,BARKLEY
+	.long	BOOKER,NASH
+	.long	BOOKER,MAJERLE
+	.long	BARKLEY,BOOKER
 
-	.long	KIDD,KJOHNSON
-	.long	KIDD,WPERSON
-	.long	KIDD,MANNING
-	.long	KIDD,CEBALLOS
+	.long	BARKLEY,NASH
+	.long	BARKLEY,MAJERLE
+	.long	NASH,BOOKER
+	.long	NASH,BARKLEY
 
-	.long	WPERSON,KJOHNSON
-	.long	WPERSON,KIDD
-	.long	WPERSON,MANNING
-	.long	WPERSON,CEBALLOS
+	.long	NASH,MAJERLE
+	.long	MAJERLE,BOOKER
+	.long	MAJERLE,BARKLEY
+	.long	MAJERLE,NASH
 
-	.long	MANNING,KJOHNSON
-	.long	MANNING,KIDD
-	.long	MANNING,WPERSON
-	.long	MANNING,CEBALLOS
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
-	.long	CEBALLOS,KJOHNSON
-	.long	CEBALLOS,KIDD
-	.long	CEBALLOS,WPERSON
-	.long	CEBALLOS,MANNING
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;21 PORTLAND
-	.long	SABONIS,KANDERSON
-	.long	SABONIS,CROBINSON
-	.long	SABONIS,RIDER
+	.long	LILLARD,DREXLER
+	.long	LILLARD,ALDRIDGE
+	.long	LILLARD,SABONIS
 
-	.long	KANDERSON,SABONIS
-	.long	KANDERSON,CROBINSON
-	.long	KANDERSON,RIDER
+	.long	DREXLER,LILLARD
+	.long	DREXLER,ALDRIDGE
+	.long	DREXLER,SABONIS
 
-	.long	CROBINSON,SABONIS
-	.long	CROBINSON,KANDERSON
-	.long	CROBINSON,RIDER
+	.long	ALDRIDGE,LILLARD
+	.long	ALDRIDGE,DREXLER
+	.long	ALDRIDGE,SABONIS
 
-	.long	RIDER,SABONIS
-	.long	RIDER,KANDERSON
-	.long	RIDER,CROBINSON
+	.long	SABONIS,LILLARD
+	.long	SABONIS,DREXLER
+	.long	SABONIS,ALDRIDGE
 
 	.long	0,0
 	.long	0,0
@@ -5743,21 +5739,21 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;22 SACRAMENTO
-	.long	RICH,BOWENS
-	.long	RICH,ABDULRAU
-	.long	RICH,EDNEY
+	.long	RICH,DIVAC
+	.long	RICH,WEBB_NP
+	.long	RICH,COUSINS
 
-	.long	BOWENS,RICH
-	.long	BOWENS,ABDULRAU
-	.long	BOWENS,EDNEY
+	.long	DIVAC,RICH
+	.long	DIVAC,WEBB_NP
+	.long	DIVAC,COUSINS
 
-	.long	ABDULRAU,RICH
-	.long	ABDULRAU,BOWENS
-	.long	ABDULRAU,EDNEY
+	.long	WEBB_NP,RICH
+	.long	WEBB_NP,DIVAC
+	.long	WEBB_NP,COUSINS
 
-	.long	EDNEY,RICH
-	.long	EDNEY,BOWENS
-	.long	EDNEY,ABDULRAU
+	.long	COUSINS,RICH
+	.long	COUSINS,DIVAC
+	.long	COUSINS,WEBB_NP
 
 	.long	0,0
 	.long	0,0
@@ -5769,73 +5765,69 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;23 SAN ANTONIO
-	.long	DROBINSON,ELLIOT2
-	.long	DROBINSON,AJOHNSON
-	.long	DROBINSON,DELNEGRO
-	.long	DROBINSON,VMAXWELL
+	.long	DUNCAN,DROBINSON
+	.long	DUNCAN,PARKER
+	.long	DUNCAN,GINOBILI
+	.long	DUNCAN,WEMBY
 
-	.long	ELLIOT2,DROBINSON
-	.long	ELLIOT2,AJOHNSON
-	.long	ELLIOT2,DELNEGRO
-	.long	ELLIOT2,VMAXWELL
+	.long	DROBINSON,DUNCAN
+	.long	DROBINSON,PARKER
+	.long	DROBINSON,GINOBILI
+	.long	DROBINSON,WEMBY
 
-	.long	AJOHNSON,DROBINSON
-	.long	AJOHNSON,ELLIOT2
-	.long	AJOHNSON,DELNEGRO
-	.long	AJOHNSON,VMAXWELL
+	.long	PARKER,DUNCAN
+	.long	PARKER,DROBINSON
+	.long	PARKER,GINOBILI
+	.long	PARKER,WEMBY
 
-	.long	DELNEGRO,DROBINSON
-	.long	DELNEGRO,ELLIOT2
-	.long	DELNEGRO,AJOHNSON
-	.long	DELNEGRO,VMAXWELL
+	.long	GINOBILI,DUNCAN
+	.long	GINOBILI,DROBINSON
+	.long	GINOBILI,PARKER
+	.long	GINOBILI,WEMBY
 
-	.long	VMAXWELL,DROBINSON
-	.long	VMAXWELL,ELLIOT2
-	.long	VMAXWELL,AJOHNSON
-	.long	VMAXWELL,DELNEGRO
+	.long	WEMBY,DUNCAN
+	.long	WEMBY,DROBINSON
+	.long	WEMBY,PARKER
+	.long	WEMBY,GINOBILI
 
 ;24 SEATTLE
+	.long	DURANT,PAYTON
+	.long	DURANT,WESTBROOK
+	.long	DURANT,KEMP
+	.long	DURANT,SHAI
+	.long	PAYTON,DURANT
+	.long	PAYTON,WESTBROOK
 	.long	PAYTON,KEMP
-	.long	PAYTON,HAWKINS
-	.long	PAYTON,SCHREMPF
-
+	.long	PAYTON,SHAI
+	.long	WESTBROOK,DURANT
+	.long	WESTBROOK,PAYTON
+	.long	WESTBROOK,KEMP
+	.long	WESTBROOK,SHAI
+	.long	KEMP,DURANT
 	.long	KEMP,PAYTON
-	.long	KEMP,HAWKINS
-	.long	KEMP,SCHREMPF
-
-	.long	HAWKINS,PAYTON
-	.long	HAWKINS,KEMP
-	.long	HAWKINS,SCHREMPF
-
-	.long	SCHREMPF,PAYTON
-	.long	SCHREMPF,KEMP
-	.long	SCHREMPF,HAWKINS
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	KEMP,WESTBROOK
+	.long	KEMP,SHAI
+	.long	SHAI,DURANT
+	.long	SHAI,PAYTON
+	.long	SHAI,WESTBROOK
+	.long	SHAI,KEMP
 
 ;25 TORONTO
-	.long	STOUDAMI,WWILLIAM
-	.long	STOUDAMI,CAMBY
-	.long	STOUDAMI,PJONES
+	.long	CARTER,LEONARD
+	.long	CARTER,BOSH
+	.long	CARTER,DEROZAN
 
-	.long	WWILLIAM,STOUDAMI
-	.long	WWILLIAM,CAMBY
-	.long	WWILLIAM,PJONES
+	.long	LEONARD,CARTER
+	.long	LEONARD,BOSH
+	.long	LEONARD,DEROZAN
 
-	.long	CAMBY,STOUDAMI
-	.long	CAMBY,WWILLIAM
-	.long	CAMBY,PJONES
+	.long	BOSH,CARTER
+	.long	BOSH,LEONARD
+	.long	BOSH,DEROZAN
 
-	.long	PJONES,STOUDAMI
-	.long	PJONES,WWILLIAM
-	.long	PJONES,CAMBY
+	.long	DEROZAN,CARTER
+	.long	DEROZAN,LEONARD
+	.long	DEROZAN,BOSH
 
 	.long	0,0
 	.long	0,0
@@ -5849,19 +5841,19 @@ WALLACE	.equ	11
 ;26 UTAH
 	.long	MALONE_K,STOCKTON
 	.long	MALONE_K,HORNACEK
-	.long	MALONE_K,CMORRIS
+	.long	MALONE_K,MARAVICH
 
 	.long	STOCKTON,MALONE_K
 	.long	STOCKTON,HORNACEK
-	.long	STOCKTON,CMORRIS
+	.long	STOCKTON,MARAVICH
 
 	.long	HORNACEK,MALONE_K
 	.long	HORNACEK,STOCKTON
-	.long	HORNACEK,CMORRIS
+	.long	HORNACEK,MARAVICH
 
-	.long	CMORRIS,MALONE_K
-	.long	CMORRIS,STOCKTON
-	.long	CMORRIS,HORNACEK
+	.long	MARAVICH,MALONE_K
+	.long	MARAVICH,STOCKTON
+	.long	MARAVICH,HORNACEK
 
 	.long	0,0
 	.long	0,0
@@ -5873,14 +5865,14 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;27 VANCOUVER
-	.long	BREEVES,ANTHONY
-	.long	BREEVES,EDWARDS
+	.long	ABDULRAU,BANE
+	.long	ABDULRAU,GASOL
 
-	.long	ANTHONY,BREEVES
-	.long	ANTHONY,EDWARDS
+	.long	BANE,ABDULRAU
+	.long	BANE,GASOL
 
-	.long	EDWARDS,BREEVES
-	.long	EDWARDS,ANTHONY
+	.long	GASOL,ABDULRAU
+	.long	GASOL,BANE
 
 	.long	0,0
 	.long	0,0
@@ -5898,30 +5890,30 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;28 WASHINGTON
-	.long	WEBBER,STRICKLA
-	.long	WEBBER,JHOWARD
-	.long	WEBBER,MURESAN
-	.long	WEBBER,TMURRAY
-
-	.long	STRICKLA,WEBBER
-	.long	STRICKLA,JHOWARD
-	.long	STRICKLA,MURESAN
-	.long	STRICKLA,TMURRAY
-
+	.long	JHOWARD,BEAL
 	.long	JHOWARD,WEBBER
-	.long	JHOWARD,STRICKLA
-	.long	JHOWARD,MURESAN
-	.long	JHOWARD,TMURRAY
+	.long	JHOWARD,DAVIS_NP
+	.long	BEAL,JHOWARD
 
-	.long	MURESAN,WEBBER
-	.long	MURESAN,STRICKLA
-	.long	MURESAN,JHOWARD
-	.long	MURESAN,TMURRAY
+	.long	BEAL,WEBBER
+	.long	BEAL,DAVIS_NP
+	.long	WEBBER,JHOWARD
+	.long	WEBBER,BEAL
 
-	.long	TMURRAY,WEBBER
-	.long	TMURRAY,STRICKLA
-	.long	TMURRAY,JHOWARD
-	.long	TMURRAY,MURESAN
+	.long	WEBBER,DAVIS_NP
+	.long	DAVIS_NP,JHOWARD
+	.long	DAVIS_NP,BEAL
+	.long	DAVIS_NP,WEBBER
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 ;DJT End
 
 ;

@@ -63,8 +63,9 @@ def make_rom():
 
     extra = len(bin_data) % 4
     if extra:
-        print(f"Warning: misc.bin size ({len(bin_data)}) not multiple of 4, truncating")
-        bin_data = bin_data[:len(bin_data) - extra]
+        # pad (not truncate) so the last image keeps all of its bytes
+        print(f"Note: misc.bin size ({len(bin_data)}) not multiple of 4, padding")
+        bin_data = bin_data + b"\x00" * (4 - extra)
 
     print("Deinterleaving into 4 byte planes...")
     planes = [bytearray() for _ in range(4)]

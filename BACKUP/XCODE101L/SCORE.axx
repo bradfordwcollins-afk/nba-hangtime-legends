@@ -148,7 +148,7 @@
 	
 ;symbols defined in this file
 
-	.def	LED_00,LED_0,last_score,tvpanelon,LED_MAX,QUARTR01,SHOTPER
+	.def	tvpanelon,QUARTR01,SHOTPER
 	.def	sclockx
 
 ;uninitialized ram definitions

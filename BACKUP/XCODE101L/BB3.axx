@@ -71,7 +71,7 @@
 	.def	UGRCRT
 	.def	BLUCRT
 ;DJT Start
-	.def	HOTblu,HOTgrn,HOTyel,HOTred
+;[pruned] .def	HOTblu,HOTgrn,HOTyel,HOTred
 ;DJT End
 ;	.def	animate_shang ;for mame debug
 

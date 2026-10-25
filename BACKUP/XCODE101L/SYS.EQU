@@ -6,8 +6,8 @@
 
 ; globals for stack ref - built in MAIN.ASM
 
-	.global	STACKL
-	.global	STACKB
+;[pruned] .global	STACKL
+;[pruned] .global	STACKB
 	.global	STACKE
 
 

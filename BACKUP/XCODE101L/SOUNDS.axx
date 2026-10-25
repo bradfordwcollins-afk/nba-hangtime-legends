@@ -276,22 +276,22 @@ ex	.set	08000H			; flag: extended sound call !!
  SX	flail_snd,   01501H,30, 0180H
  SX	fall1_snd,   01501H,26, 0183H
  SX	land_snd,    01401H,15, 0a2H    ;(a4-tr3)
- SX	yell_snd,    01201H,100,0198H
+ SXL	yell_snd,    01201H,100,0198H
 
  SX	flsh1_snd,   00501H,19, 0177H
  SX	flsh3_snd,   00503H,19, 0179H
  SX	flsh4_snd,   00504H,19, 017aH
  SX	boo_snd,     01204H,179,01ddH	;e6
  SX	boo1_snd,    01204H,179,01ddH	;e6
- SX	tip_snd,     0200CH,23, 09eH	;19f	;9b
+ SXL	tip_snd,     0200CH,23, 09eH	;19f	;9b
  SX	eat_snd,     08501H,10, 037bH	;**
 
- SX	organ1_snd,  00504H,75, 01a6H
- SX	organ2_snd,  00504H,60, 01a8H
- SX	organ3_snd,  00504H,50, 01aaH
- SX	organ8_snd,  00504H,135,01b4H
- SX	organ9_snd,  00504H,98, 01b6H
- SX	organ10_snd, 00504H,100,01b8H
+ SXL	organ1_snd,  00504H,75, 01a6H
+ SXL	organ2_snd,  00504H,60, 01a8H
+ SXL	organ3_snd,  00504H,50, 01aaH
+ SXL	organ8_snd,  00504H,135,01b4H
+ SXL	organ9_snd,  00504H,98, 01b6H
+ SXL	organ10_snd, 00504H,100,01b8H
 
  SX	car_pass_snd,01504H,90, 01c7H
  SX	siren_snd,   01504H,145,01c9H	;** TURN UP **
@@ -303,9 +303,9 @@ ex	.set	08000H			; flag: extended sound call !!
  SX	fire_trk_snd,01504H,120,0218H
 ; SX	train_snd,   01504H,145,021aH
 
- SX	crwd_blchrs, 01504H,182,01e5H	;ed
- SX	crwd_go_team,01504H,101,01f5H	;f4
- SX	crwd_defence,01504H,186,01e1H	;eb
+ SXL	crwd_blchrs, 01504H,182,01e5H	;ed
+ SXL	crwd_go_team,01504H,101,01f5H	;f4
+ SXL	crwd_defence,01504H,186,01e1H	;eb
 
  SX	swish_snd1,  0310BH,27, 083H	;regular net
  SX	swish_snd2,  0310BH,27, 084H
@@ -391,7 +391,7 @@ ex	.set	08000H			; flag: extended sound call !!
  SX	tuneq3_snd,  00100H,100,5
  SX	tuneq3ed_snd,00100H,100,51
  SX	tuneq4_snd,  00100H,100,14
- SX	tuneq4ed_snd,00100H,100,51
+ SXL	tuneq4ed_snd,00100H,100,51
  SX	tuneot_snd,  00100H,100,5
  SX	tuneoted_snd,00100H,100,51
 

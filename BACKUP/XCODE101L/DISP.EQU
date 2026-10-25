@@ -2,23 +2,23 @@
 *.Last mod - 4/11/95 3:07
 	.globl	OFREE,OBJLST,BAKLST,DISPLAYON,SCRNRELV
 	.globl	GETOBJ,INSOBJ,DELOBJ,DELOBJA8
-	.globl	DISPLAY,OBJSTR
-	.globl	ANI,SCRTST,SCRTSTG,GANIOF,DELBOBJ
+	.globl	DISPLAY
+	.globl	ANI,SCRTST,GANIOF,DELBOBJ
 	.globl	INSBOBJ,KILBOBJ
 	.globl	PULLBOBJ,PULLOBJ,GANISAG
-	.globl	QDMA,QDMAN,GETANIXY
+	.globl	QDMA,QDMAN
 	.globl	obj_addworldxy
-	.globl	SCROLLX,SCROLLY,WORLDTLX,WORLDTLY,WORLDTL
+	.globl	WORLDTLX,WORLDTLY,WORLDTL
 	.globl	SCRNTL,SCRNLR,GSCRNREL,ADJNEWTL
-	.globl	OBJSTR,SCREENTL,SCREENLR,DMAQCUR
+	.globl	SCREENTL,SCREENLR,DMAQCUR
 	.globl	dpage,dtype
 	.globl	dmaq0cnt,dmaq1cnt,dmaq0flg,dmaq1flg
-	.globl	dmaq0,dmaq1
-	.globl	STOPOBJS
+	.globl	dmaq1
+;[pruned] .globl	STOPOBJS
 	.globl	FREEOBJ,EXISTOBJ
 	.globl	ISOBJ
 	.globl	BEGINOBJ,BEGINOBJ2
-	.globl	BEGINOBJP,BEGINOBJP2
+	.globl	BEGINOBJP2
 	.globl	obj_delc,obj_del1c,obj_aniq,obj_aniq_cnoff
 	.globl	obj_aniq_scld
 	.globl	DELOBJDIE,FRQDELDIE

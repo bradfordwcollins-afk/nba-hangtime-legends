@@ -1,4 +1,4 @@
-	.globl	robo_p
+;[pruned] .globl	robo_p
 	.global	robo_bad
 	.global	bullet_hrz
 	.global	bullet_vrt

@@ -3,8 +3,8 @@
 	.globl	GETPRC,SUCIDE,PRCSLP,PRCLSP
 	.globl	process_exist,EXISTP
 	.globl	XFERPROC
-	.globl	KILL,KILALL,KIL1C,KILALLN,KOP_1C,KOP_ALL
-	.globl	RAND,ACTIVE,FREE,PRCSTR
+	.globl	KILL,KILALL,KIL1C
+	.globl	RAND,ACTIVE,FREE
 	.globl	snd_play1,snd_play,SNDSND
 
 ;Process data structure

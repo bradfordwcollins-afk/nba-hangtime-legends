@@ -1,38 +1,38 @@
 	.globl	MARBRY_F
-	.global	MARBRY00
-	.globl	MARBRY_P
+;[pruned] .global	MARBRY00
+;[pruned] .globl	MARBRY_P
 	.global	MARBRY01
 	.globl	ALLEN_F
-	.global	ALLEN00
-	.globl	ALLEN_P
+;[pruned] .global	ALLEN00
+;[pruned] .globl	ALLEN_P
 	.global	ALLEN01
 	.globl	CAMB_F
-	.global	CAMB00
-	.globl	CAMB_P
+;[pruned] .global	CAMB00
+;[pruned] .globl	CAMB_P
 	.global	CAMB01
-	.globl	DAMP_F
-	.global	DAMP00
-	.globl	DAMP_P
+;[pruned] .globl	DAMP_F
+;[pruned] .global	DAMP00
+;[pruned] .globl	DAMP_P
 	.global	DAMP01
-	.globl	DUN_F
-	.global	DUN00
-	.globl	DUN_P
+;[pruned] .globl	DUN_F
+;[pruned] .global	DUN00
+;[pruned] .globl	DUN_P
 	.global	DUN01
-	.globl	HAM_F
-	.global	HAM00
-	.globl	HAM_P
+;[pruned] .globl	HAM_F
+;[pruned] .global	HAM00
+;[pruned] .globl	HAM_P
 	.global	HAM01
-	.globl	HARR_F
-	.global	HARR00
-	.globl	HARR_P
+;[pruned] .globl	HARR_F
+;[pruned] .global	HARR00
+;[pruned] .globl	HARR_P
 	.global	HARR01
 	.globl	IVER_F
-	.global	IVER00
-	.globl	IVER_P
+;[pruned] .global	IVER00
+;[pruned] .globl	IVER_P
 	.global	IVER01
 	.globl	KIT_F
-	.global	KIT00
-	.globl	KIT_P
+;[pruned] .global	KIT00
+;[pruned] .globl	KIT_P
 	.global	KIT01
 ;	.globl	MINR_F
 ;	.global	MINR00
@@ -42,119 +42,119 @@
 ;	.global	RILY00
 ;	.globl	RILY_P
 ;	.global	RILY01
-	.globl	WAL_F
-	.global	WAL00
-	.globl	WAL_P
+;[pruned] .globl	WAL_F
+;[pruned] .global	WAL00
+;[pruned] .globl	WAL_P
 	.global	WAL01
 	.globl	CARY_F
-	.global	CARY00
-	.globl	CARY_P
+;[pruned] .global	CARY00
+;[pruned] .globl	CARY_P
 	.global	CARY01
 	.globl	DAN_F
-	.global	DAN00
-	.globl	DAN_P
+;[pruned] .global	DAN00
+;[pruned] .globl	DAN_P
 	.global	DAN01
 	.globl	EDDIE_F
-	.global	EDDIE00
-	.globl	EDDIE_P
+;[pruned] .global	EDDIE00
+;[pruned] .globl	EDDIE_P
 	.global	EDDIE01
 	.globl	EUGG_F
-	.global	EUGG00
-	.globl	EUGG_P
+;[pruned] .global	EUGG00
+;[pruned] .globl	EUGG_P
 	.global	EUGG01
 	.globl	JEFF_F
-	.global	JEFF00
-	.globl	JEFF_P
+;[pruned] .global	JEFF00
+;[pruned] .globl	JEFF_P
 	.global	JEFF01
 	.globl	JAMIE_F
-	.global	JAMIE00
-	.globl	JAMIE_P
+;[pruned] .global	JAMIE00
+;[pruned] .globl	JAMIE_P
 	.global	JAMIE01
 	.globl	TURMEL_F
-	.global	TURMEL00
-	.globl	TURMEL_P
+;[pruned] .global	TURMEL00
+;[pruned] .globl	TURMEL_P
 	.global	TURMEL01
 	.globl	BUD_F
-	.global	BUD00
-	.globl	BUD_P
+;[pruned] .global	BUD00
+;[pruned] .globl	BUD_P
 	.global	BUD01
 	.globl	HEY_F
-	.global	HEY00
-	.globl	HEY_P
+;[pruned] .global	HEY00
+;[pruned] .globl	HEY_P
 	.global	HEY01
 	.globl	JEN_F
-	.global	JEN00
-	.globl	JEN_P
+;[pruned] .global	JEN00
+;[pruned] .globl	JEN_P
 	.global	JEN01
 	.globl	JOHNC_F
-	.global	JOHNC00
-	.globl	JOHNC_P
+;[pruned] .global	JOHNC00
+;[pruned] .globl	JOHNC_P
 	.global	JOHNC01
 	.globl	NIK_F
-	.global	NIK00
-	.globl	NIK_P
+;[pruned] .global	NIK00
+;[pruned] .globl	NIK_P
 	.global	NIK01
 	.globl	ROOT_F
-	.global	ROOT00
-	.globl	ROOT_P
+;[pruned] .global	ROOT00
+;[pruned] .globl	ROOT_P
 	.global	ROOT01
 	.globl	NEILF_F
-	.global	NEILF00
-	.globl	NEILF_P
+;[pruned] .global	NEILF00
+;[pruned] .globl	NEILF_P
 	.global	NEILF01
 	.globl	PAT_F
-	.global	PAT00
-	.globl	PAT_P
+;[pruned] .global	PAT00
+;[pruned] .globl	PAT_P
 	.global	PAT01
 	.globl	PERRY_F
-	.global	PERRY00
-	.globl	PERRY_P
+;[pruned] .global	PERRY00
+;[pruned] .globl	PERRY_P
 	.global	PERRY01
 	.globl	SAL_F
-	.global	SAL00
-	.globl	SAL_P
+;[pruned] .global	SAL00
+;[pruned] .globl	SAL_P
 	.global	SAL01
 	.globl	BOON_F
-	.global	BOON00
-	.globl	BOON_P
+;[pruned] .global	BOON00
+;[pruned] .globl	BOON_P
 	.global	BOON01
 	.globl	CARLOS_F
-	.global	CARLOS00
-	.globl	CARLOS_P
+;[pruned] .global	CARLOS00
+;[pruned] .globl	CARLOS_P
 	.global	CARLOS01
 	.globl	FIFI_F
-	.global	FIFI00
-	.globl	FIFI_P
+;[pruned] .global	FIFI00
+;[pruned] .globl	FIFI_P
 	.global	FIFI01
 	.globl	HEITH_F
-	.global	HEITH00
-	.globl	HEITH_P
+;[pruned] .global	HEITH00
+;[pruned] .globl	HEITH_P
 	.global	HEITH01
 	.globl	JASON_F
-	.global	JASON00
-	.globl	JASON_P
+;[pruned] .global	JASON00
+;[pruned] .globl	JASON_P
 	.global	JASON01
-	.globl	JOSH_F
-	.global	JOSH00
-	.globl	JOSH_P
-	.global	JOSH01
+;[pruned] .globl	JOSH_F
+;[pruned] .global	JOSH00
+;[pruned] .globl	JOSH_P
+;[pruned] .global	JOSH01
 	.globl	MARTY_F
-	.global	MARTY00
-	.globl	MARTY_P
+;[pruned] .global	MARTY00
+;[pruned] .globl	MARTY_P
 	.global	MARTY01
 	.globl	MATT_F
-	.global	MATT00
-	.globl	MATT_P
+;[pruned] .global	MATT00
+;[pruned] .globl	MATT_P
 	.global	MATT01
 	.globl	OURSL_F
-	.global	OURSL00
-	.globl	OURSL_P
+;[pruned] .global	OURSL00
+;[pruned] .globl	OURSL_P
 	.global	OURSL01
 	.globl	QUINN_F
-	.global	QUINN00
-	.globl	QUINN_P
+;[pruned] .global	QUINN00
+;[pruned] .globl	QUINN_P
 	.global	QUINN01
 	.globl	TOBIAS_F
-	.global	TOBIAS00
-	.globl	TOBIAS_P
+;[pruned] .global	TOBIAS00
+;[pruned] .globl	TOBIAS_P
 	.global	TOBIAS01

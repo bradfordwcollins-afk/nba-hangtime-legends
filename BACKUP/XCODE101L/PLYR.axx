@@ -435,7 +435,7 @@
 	.ref	swith_hnd_sp,spn_shtup_sp
 	.ref	dronesmrt
 ;symbols defined in this file
-	.def	zmnqlp
+;[pruned] .def	zmnqlp
 
 
 ;uninitialized ram definitions
@@ -3447,7 +3447,7 @@ zmnqhalted
 ;--------------------
 ; plyr # bit val (1,2,3 or 4,8,C) to tm # bit val (1 or 2)
 
-	.def	pbit_tbit
+;[pruned] .def	pbit_tbit
 	.def	pbit_tval
 
 pbit_tbit
@@ -3621,7 +3621,7 @@ teampal_t
 	.byte	BLU_C,PUR_C,BLK_C,RED_C,BLK_C
 
 ;DJT Start
-	.def	hotspot_xz_t,hotspot_xz_tend
+;[pruned] .def	hotspot_xz_t,hotspot_xz_tend
 
 hotspot_xz_t
 	.word	WRLDMID+017cH,CZMID-082H

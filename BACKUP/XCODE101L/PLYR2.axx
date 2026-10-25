@@ -123,7 +123,7 @@
 
 ;symbols defined in this file
 
-	.def	hoopl_t,hoopr_t
+;[pruned] .def	hoopl_t,hoopr_t
 
 	.if	SHADOWT
 	.def	seq_shadow_trail
@@ -4104,7 +4104,7 @@ ykhznsq2
 * They are normally passed from the sequence like this:
 * 	WLL	-1,seq_shadow_trail,[7,15]   	;rate,cnt til delete [a9,a10]
 
-	.def	do_dunkhead			;.def this so we can debug it later.
+;[pruned] .def	do_dunkhead			;.def this so we can debug it later.
  SUBRP do_dunkhead
 
 * We need to filter out players who don't have 17 heads! (So we can use custom head tables with the 17th dunk face.)

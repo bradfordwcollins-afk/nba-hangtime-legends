@@ -33,6 +33,75 @@
 ;AMM Start
 	.include	"newheads.tbl"
 	.include	"newheads.glo"
+	.globl	XMCH_P
+	.globl	XPIE_P
+	.globl	XTAT_P
+	.globl	XPAR_P
+	.globl	XBRU_P
+	.globl	XIVE_P
+	.globl	XEMB_P
+	.globl	XMMA_P
+	.globl	XERV_P
+	.globl	XCAR_P
+	.globl	XKAW_P
+	.globl	XBOS_P
+	.globl	XDER_P
+	.globl	XDRO_P
+	.globl	XKYR_P
+	.globl	XMIT_P
+	.globl	XDAU_P
+	.globl	XISI_P
+	.globl	XLAI_P
+	.globl	XBWA_P
+	.globl	XHAL_P
+	.globl	XCLA_P
+	.globl	XMID_P
+	.globl	XALL_P
+	.globl	XTAE_P
+	.globl	XWIL_P
+	.globl	XKOR_P
+	.globl	XBOG_P
+	.globl	XWAD_P
+	.globl	XBUT_P
+	.globl	XBAM_P
+	.globl	XBEA_P
+	.globl	XADA_P
+	.globl	XJOK_P
+	.globl	XJMU_P
+	.globl	XMEL_P
+	.globl	XBIL_P
+	.globl	XGAR_P
+	.globl	XANT_P
+	.globl	XLAM_P
+	.globl	XWES_P
+	.globl	XLIL_P
+	.globl	XALD_P
+	.globl	XMAR_P
+	.globl	XKLA_P
+	.globl	XCCP_P
+	.globl	XGRI_P
+	.globl	XPGE_P
+	.globl	XART_P
+	.globl	XWOR_P
+	.globl	XBOO_P
+	.globl	XMAJ_P
+	.globl	XCOU_P
+	.globl	XDIR_P
+	.globl	XHAR_P
+	.globl	XYAO_P
+	.globl	XTMA_P
+	.globl	XBAN_P
+	.globl	XGAS_P
+	.globl	XDUN_P
+	.globl	XPRK_P
+	.globl	XMAN_P
+	.globl	XWEM_P
+	.globl	LUK_P		; Luka_h pal
+	.globl	LBJ_P		; Lebron_h pal
+	.globl	KDU_P		; Durant head pal
+	.globl	STC_P		; Steph Curry head pal
+	.globl	KAR_P		; Kareem head pal
+	.globl	GIAN_P		; Giannis head pal (his frames are kept out of newheads.glo)
 ;amm End
 
 
@@ -233,6 +302,75 @@
 	.def	Term_h
 	.def	Walker_h
 	.def	Ellis_h
+	.def	Giannis_h
+	.def	Kareem_h
+	.def	Steph_h
+	.def	Durant_h
+	.def	Lebron_h
+	.def	Luka_h
+	.def	Xmch_h
+	.def	Xpie_h
+	.def	Xtat_h
+	.def	Xpar_h
+	.def	Xbru_h
+	.def	Xive_h
+	.def	Xemb_h
+	.def	Xmma_h
+	.def	Xerv_h
+	.def	Xcar_h
+	.def	Xkaw_h
+	.def	Xbos_h
+	.def	Xder_h
+	.def	Xdro_h
+	.def	Xkyr_h
+	.def	Xmit_h
+	.def	Xdau_h
+	.def	Xisi_h
+	.def	Xlai_h
+	.def	Xbwa_h
+	.def	Xhal_h
+	.def	Xcla_h
+	.def	Xmid_h
+	.def	Xall_h
+	.def	Xtae_h
+	.def	Xwil_h
+	.def	Xkor_h
+	.def	Xbog_h
+	.def	Xwad_h
+	.def	Xbut_h
+	.def	Xbam_h
+	.def	Xbea_h
+	.def	Xada_h
+	.def	Xjok_h
+	.def	Xjmu_h
+	.def	Xmel_h
+	.def	Xbil_h
+	.def	Xgar_h
+	.def	Xant_h
+	.def	Xlam_h
+	.def	Xwes_h
+	.def	Xlil_h
+	.def	Xald_h
+	.def	Xmar_h
+	.def	Xkla_h
+	.def	Xccp_h
+	.def	Xgri_h
+	.def	Xpge_h
+	.def	Xart_h
+	.def	Xwor_h
+	.def	Xboo_h
+	.def	Xmaj_h
+	.def	Xcou_h
+	.def	Xdir_h
+	.def	Xhar_h
+	.def	Xyao_h
+	.def	Xtma_h
+	.def	Xban_h
+	.def	Xgas_h
+	.def	Xdun_h
+	.def	Xprk_h
+	.def	Xman_h
+	.def	Xwem_h
 	.text
 
 ;; MARKER
@@ -284,6 +422,213 @@ Walker_h
 	
 Ellis_h
 	HDMAC2	ELLIS1
+
+Giannis_h
+	HDMAC	GIAN01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Kareem_h
+	HDMAC	KAR01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Steph_h
+	HDMAC	STC01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Durant_h
+	HDMAC	KDU01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Lebron_h
+	HDMAC	LBJ01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Luka_h
+	HDMAC	LUK01	; 16 heads, from NBA Jam 50 (Double Z & Wake)
+
+Xmch_h
+	HDMAC	XMCH01	; Jam #jamte:HDS7:McHale, from NBA Jam 50 (Double Z & Wake)
+
+Xpie_h
+	HDMAC	XPIE01	; Jam #60, from NBA Jam 50 (Double Z & Wake)
+
+Xtat_h
+	HDMAC	XTAT01	; Jam #5, from NBA Jam 50 (Double Z & Wake)
+
+Xpar_h
+	HDMAC	XPAR01	; Jam #23, from NBA Jam 50 (Double Z & Wake)
+
+Xbru_h
+	HDMAC	XBRU01	; Jam #lib|/home/claude/heads/out/BRUNSON_SRC.IMG|BRU, from NBA Jam 50 (Double Z & Wake)
+
+Xive_h
+	HDMAC	XIVE01	; Jam #81, from NBA Jam 50 (Double Z & Wake)
+
+Xemb_h
+	HDMAC	XEMB01	; Jam #1, from NBA Jam 50 (Double Z & Wake)
+
+Xmma_h
+	HDMAC	XMMA01	; Jam #jamte:HDS5:mmalone, from NBA Jam 50 (Double Z & Wake)
+
+Xerv_h
+	HDMAC	XERV01	; Jam #10, from NBA Jam 50 (Double Z & Wake)
+
+Xcar_h
+	HDMAC	XCAR01	; Jam #65, from NBA Jam 50 (Double Z & Wake)
+
+Xkaw_h
+	HDMAC	XKAW01	; Jam #19, from NBA Jam 50 (Double Z & Wake)
+
+Xbos_h
+	HDMAC	XBOS01	; Jam #41, from NBA Jam 50 (Double Z & Wake)
+
+Xder_h
+	HDMAC	XDER01	; Jam #89, from NBA Jam 50 (Double Z & Wake)
+
+Xdro_h
+	HDMAC	XDRO01	; Jam #15, from NBA Jam 50 (Double Z & Wake)
+
+Xkyr_h
+	HDMAC	XKYR01	; Jam #22, from NBA Jam 50 (Double Z & Wake)
+
+Xmit_h
+	HDMAC	XMIT01	; Jam #61, from NBA Jam 50 (Double Z & Wake)
+
+Xdau_h
+	HDMAC	XDAU01	; Jam #jamte:HDS6:daug, from NBA Jam 50 (Double Z & Wake)
+
+Xisi_h
+	HDMAC	XISI01	; Jam #jamte:HDS5:thomas, from NBA Jam 50 (Double Z & Wake)
+
+Xlai_h
+	HDMAC	XLAI01	; Jam #jamte:HDS7:Laimbeer, from NBA Jam 50 (Double Z & Wake)
+
+Xbwa_h
+	HDMAC	XBWA01	; Jam #75, from NBA Jam 50 (Double Z & Wake)
+
+Xhal_h
+	HDMAC	XHAL01	; Jam #33, from NBA Jam 50 (Double Z & Wake)
+
+Xcla_h
+	HDMAC	XCLA01	; Jam #90, from NBA Jam 50 (Double Z & Wake)
+
+Xmid_h
+	HDMAC	XMID01	; Jam #9, from NBA Jam 50 (Double Z & Wake)
+
+Xall_h
+	HDMAC	XALL01	; Jam #11, from NBA Jam 50 (Double Z & Wake)
+
+Xtae_h
+	HDMAC	XTAE01	; Jam #30, from NBA Jam 50 (Double Z & Wake)
+
+Xwil_h
+	HDMAC	XWIL01	; Jam #jamte:HDS6:wilkens, from NBA Jam 50 (Double Z & Wake)
+
+Xkor_h
+	HDMAC	XKOR01	; Jam #91, from NBA Jam 50 (Double Z & Wake)
+
+Xbog_h
+	HDMAC	XBOG01	; Jam #lib|/home/claude/heads/out/BOGUES_SRC.IMG|BOG, from NBA Jam 50 (Double Z & Wake)
+
+Xwad_h
+	HDMAC	XWAD01	; Jam #40, from NBA Jam 50 (Double Z & Wake)
+
+Xbut_h
+	HDMAC	XBUT01	; Jam #39, from NBA Jam 50 (Double Z & Wake)
+
+Xbam_h
+	HDMAC	XBAM01	; Jam #44, from NBA Jam 50 (Double Z & Wake)
+
+Xbea_h
+	HDMAC	XBEA01	; Jam #14, from NBA Jam 50 (Double Z & Wake)
+
+Xada_h
+	HDMAC	XADA01	; Jam #45, from NBA Jam 50 (Double Z & Wake)
+
+Xjok_h
+	HDMAC	XJOK01	; Jam #25, from NBA Jam 50 (Double Z & Wake)
+
+Xjmu_h
+	HDMAC	XJMU01	; Jam #42, from NBA Jam 50 (Double Z & Wake)
+
+Xmel_h
+	HDMAC	XMEL01	; Jam #24, from NBA Jam 50 (Double Z & Wake)
+
+Xbil_h
+	HDMAC	XBIL01	; Jam #86, from NBA Jam 50 (Double Z & Wake)
+
+Xgar_h
+	HDMAC	XGAR01	; Jam #17, from NBA Jam 50 (Double Z & Wake)
+
+Xant_h
+	HDMAC	XANT01	; Jam #59, from NBA Jam 50 (Double Z & Wake)
+
+Xlam_h
+	HDMAC	XLAM01	; Jam #2, from NBA Jam 50 (Double Z & Wake)
+
+Xwes_h
+	HDMAC	XWES01	; Jam #51, from NBA Jam 50 (Double Z & Wake)
+
+Xlil_h
+	HDMAC	XLIL01	; Jam #49, from NBA Jam 50 (Double Z & Wake)
+
+Xald_h
+	HDMAC	XALD01	; Jam #48, from NBA Jam 50 (Double Z & Wake)
+
+Xmar_h
+	HDMAC	XMAR01	; Jam #57, from NBA Jam 50 (Double Z & Wake)
+
+Xkla_h
+	HDMAC	XKLA01	; Jam #31, from NBA Jam 50 (Double Z & Wake)
+
+Xccp_h
+	HDMAC	XCCP01	; Jam #18, from NBA Jam 50 (Double Z & Wake)
+
+Xgri_h
+	HDMAC	XGRI01	; Jam #3, from NBA Jam 50 (Double Z & Wake)
+
+Xpge_h
+	HDMAC	XPGE01	; Jam #47, from NBA Jam 50 (Double Z & Wake)
+
+Xart_h
+	HDMAC	XART01	; Jam #46, from NBA Jam 50 (Double Z & Wake)
+
+Xwor_h
+	HDMAC	XWOR01	; Jam #jamte:HDS5:worthy, from NBA Jam 50 (Double Z & Wake)
+
+Xboo_h
+	HDMAC	XBOO01	; Jam #55, from NBA Jam 50 (Double Z & Wake)
+
+Xmaj_h
+	HDMAC	XMAJ01	; Jam #jamte:HDS3:Majerle, from NBA Jam 50 (Double Z & Wake)
+
+Xcou_h
+	HDMAC	XCOU01	; Jam #34, from NBA Jam 50 (Double Z & Wake)
+
+Xdir_h
+	HDMAC	XDIR01	; Jam #21, from NBA Jam 50 (Double Z & Wake)
+
+Xhar_h
+	HDMAC	XHAR01	; Jam #4, from NBA Jam 50 (Double Z & Wake)
+
+Xyao_h
+	HDMAC	XYAO01	; Jam #50, from NBA Jam 50 (Double Z & Wake)
+
+Xtma_h
+	HDMAC	XTMA01	; Jam #12, from NBA Jam 50 (Double Z & Wake)
+
+Xban_h
+	HDMAC	XBAN01	; Jam #84, from NBA Jam 50 (Double Z & Wake)
+
+Xgas_h
+	HDMAC	XGAS01	; Jam #72, from NBA Jam 50 (Double Z & Wake)
+
+Xdun_h
+	HDMAC	XDUN01	; Jam #52, from NBA Jam 50 (Double Z & Wake)
+
+Xprk_h
+	HDMAC	XPRK01	; Jam #58, from NBA Jam 50 (Double Z & Wake)
+
+Xman_h
+	HDMAC	XMAN01	; Jam #56, from NBA Jam 50 (Double Z & Wake)
+
+Xwem_h
+	HDMAC	XWEM01	; Jam #53, from NBA Jam 50 (Double Z & Wake)
 
 heithb_h
 	HDMAC2	HEITH01

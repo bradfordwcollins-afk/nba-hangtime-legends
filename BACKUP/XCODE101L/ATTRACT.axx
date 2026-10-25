@@ -42,7 +42,7 @@
 
 	.def	COLTAB
 	.def	creditscreen
-	.def	peeker,peeker2,peeker3
+	.def	peeker2
 
 	.ref	tuneend_snd,bounce_snd
 	.ref	tuneq1_snd,tuneq2_snd,tuneq3_snd,tuneq4_snd
@@ -411,7 +411,7 @@ bgupchknxt
 	jruc	bguplp
 
 
-	.def	pObj
+;[pruned] .def	pObj
 	.bss	pObj,32
 
 
