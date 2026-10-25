@@ -5274,8 +5274,8 @@ player_attribs
 	.word  08,07,07,10
 	.word  06,04,05,09	;DOMINIQUE WILKINS
 
-	.word  09,02,07,01
-	.word  09,01,07,08	;BLAYLOCK
+	.word  09,03,07,02
+	.word  10,02,08,07	;BLAYLOCK
 
 	.word  06,04,10,02
 	.word  04,02,05,08	;KYLE KORVER
@@ -5308,34 +5308,34 @@ player_attribs
 
 ;02 CHARLOTTE HORNETS
 
-	.word  07,07,06,08
-	.word  04,05,06,07	;JOHNSN_L
+	.word  07,09,07,10
+	.word  05,05,06,08	;JOHNSN_L
 
-	.word  07,05,10,05
-	.word  06,03,04,08	;RICE
+	.word  07,05,10,06
+	.word  06,03,05,09	;RICE
 
-	.word  07,02,09,01
-	.word  06,01,04,06	;CURRY
+	.word  07,03,09,02
+	.word  06,01,05,08	;CURRY
 
 	.word  10,01,07,00
 	.word  10,00,10,07	;MUGGSY BOGUES
 
-	.word  07,06,06,06
-	.word  04,05,05,06	;MASH
+	.word  07,06,08,07
+	.word  05,03,06,08	;MASH
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;03 CHICAGO BULLS
 
-	.word  08,06,10,09
-	.word  09,06,08,10	;JORDAN
+	.word  09,07,10,10
+	.word  10,06,08,10	;JORDAN
 
-	.word  08,06,07,09
-	.word  09,08,07,08	;PIPPEN
+	.word  09,07,07,09
+	.word  10,08,09,08	;PIPPEN
 
-	.word  07,07,01,05
-	.word  07,07,04,04	;RODMAN
+	.word  07,09,02,05
+	.word  06,07,04,06	;RODMAN
 
 	.word  10,05,07,09
 	.word  06,02,08,08	;DERRICK ROSE
@@ -5374,10 +5374,10 @@ player_attribs
 	.word  07,07,09,05
 	.word  06,03,10,10	;LUKA
 
-	.word  07,04,06,08
-	.word  07,03,06,06	;FINLEY
+	.word  08,05,08,09
+	.word  07,03,06,08	;FINLEY
 
-	.word  04,04,04,07
+	.word  04,05,04,07
 	.word  02,10,03,03	;BRADLEY
 
 	.word  00,00,00,00
@@ -5394,8 +5394,8 @@ player_attribs
 	.word  08,04,09,05
 	.word  06,02,07,10	;JAMAL MURRAY
 
-	.word  06,09,03,08
-	.word  04,10,04,07	;MUTUMBO
+	.word  05,10,03,08
+	.word  03,10,03,07	;MUTUMBO
 
 	.word  07,08,09,07
 	.word  05,03,05,09	;CARMELO ANTHONY
@@ -5411,11 +5411,11 @@ player_attribs
 	.word  10,03,08,03
 	.word  09,01,10,10	;ISIAH THOMAS
 
-	.word  07,03,07,01
-	.word  06,01,08,07	;DUMARS
+	.word  07,03,09,03
+	.word  07,01,07,09	;DUMARS
 
-	.word  08,06,08,08
-	.word  08,06,08,09	;GHILL
+	.word  09,06,08,09
+	.word  08,05,09,09	;GHILL
 
 	.word  04,09,07,04
 	.word  04,07,04,07	;BILL LAIMBEER
@@ -5434,8 +5434,8 @@ player_attribs
 	.word  07,05,10,04
 	.word  06,04,04,09	;KLAY THOMPSON
 
-	.word  05,04,09,02
-	.word  07,03,06,06	;MULLIN
+	.word  06,04,10,03
+	.word  08,03,07,08	;MULLIN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5448,8 +5448,8 @@ player_attribs
 
 ;09 HOUSTON ROCKETS
 
-	.word  06,09,06,08
-	.word  05,10,07,09	;OLAJUWON
+	.word  07,09,08,09
+	.word  07,10,07,10	;OLAJUWON
 
 	.word  08,07,09,06
 	.word  07,03,10,08	;JAMES HARDEN
@@ -5468,16 +5468,16 @@ player_attribs
 
 ;10 INDIANA PACERS
 
-	.word  07,04,10,06
-	.word  06,04,06,10	;MILLER
+	.word  07,03,10,04
+	.word  06,02,06,10	;MILLER
 
 	.word  08,02,08,04
 	.word  07,03,10,09	;TYRESE HALIBURTON
 
-	.word  07,03,06,07
-	.word  07,03,07,05	;ROSE
+	.word  07,04,08,06
+	.word  06,03,07,08	;ROSE
 
-	.word  06,08,05,07
+	.word  05,08,08,07
 	.word  02,08,04,07	;SMITS
 
 	.word  08,02,09,01
@@ -5531,11 +5531,11 @@ player_attribs
 	.word  09,06,08,10
 	.word  09,06,08,10	;DWYANE WADE
 
-	.word  07,09,06,09
-	.word  03,09,04,07	;MOURN
+	.word  07,09,07,09
+	.word  04,10,04,08	;MOURN
 
-	.word  09,04,07,01
-	.word  08,02,08,08	;THARDAWAY
+	.word  09,04,08,02
+	.word  08,01,09,09	;THARDAWAY
 
 	.word  07,07,07,07
 	.word  08,04,07,10	;JIMMY BUTLER
@@ -5557,19 +5557,19 @@ player_attribs
 	.word  08,05,10,06
 	.word  06,02,06,10	;ALLEN
 
-	.word  07,06,07,06
-	.word  06,03,04,05	;GROBINSO
+	.word  07,06,09,07
+	.word  06,03,05,07	;GROBINSO
 
-	.word  08,01,06,01
-	.word  06,01,07,05	;CASSELL
+	.word  07,04,08,02
+	.word  06,01,08,10	;CASSELL
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
 
 ;15 MINNESOTA TIMBERWOLVES
 
-	.word  07,05,06,08
-	.word  05,08,04,06	;GARNETT
+	.word  08,09,08,09
+	.word  07,09,08,09	;GARNETT
 
 	.word  09,08,08,10
 	.word  07,04,06,09	;ANTHONY EDWARDS
@@ -5577,8 +5577,8 @@ player_attribs
 	.word  08,04,08,06
 	.word  07,03,10,07	;LAMELO BALL
 
-	.word  09,04,07,08
-	.word  07,02,05,07	;SPREWELL
+	.word  09,05,08,09
+	.word  08,03,06,08	;SPREWELL
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5588,17 +5588,17 @@ player_attribs
 
 ;16 NEW JERSEY NETS
 
-	.word  09,04,05,04
-	.word  07,03,10,07	;KIDD
+	.word  09,05,06,04
+	.word  09,03,10,08	;KIDD
 
-	.word  05,07,05,06
-	.word  04,06,04,04	;COLEMAN
+	.word  06,08,07,08
+	.word  05,07,06,06	;COLEMAN
 
-	.word  07,02,06,06
-	.word  07,03,05,05	;KITTLES
+	.word  08,03,07,07
+	.word  08,03,05,06	;KITTLES
 
-	.word  08,03,06,04
-	.word  06,02,07,05	;MARBURY
+	.word  09,04,08,05
+	.word  06,01,09,08	;MARBURY
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5608,17 +5608,17 @@ player_attribs
 
 ;17 NEW YORK KNICKS
 
-	.word  06,09,06,08
-	.word  03,10,04,08	;EWING
+	.word  06,09,08,09
+	.word  04,10,04,08	;EWING
 
-	.word  08,03,08,03
-	.word  05,03,05,07	;HOUSTON
+	.word  07,04,09,05
+	.word  05,02,05,09	;HOUSTON
 
-	.word  05,08,04,06
-	.word  04,03,04,05	;OAKLEY
+	.word  05,10,05,06
+	.word  06,04,05,06	;OAKLEY
 
-	.word  08,03,07,06
-	.word  07,03,07,08	;STARKS
+	.word  08,04,08,07
+	.word  07,02,06,08	;STARKS
 
 	.word  09,04,09,03
 	.word  06,01,08,10	;JALEN BRUNSON
@@ -5628,20 +5628,20 @@ player_attribs
 
 ;18 ORLANDO MAGIC
 
-	.word  07,10,03,10
-	.word  02,09,05,09	;ONEAL
+	.word  07,10,04,10
+	.word  03,09,05,09	;ONEAL
 
-	.word  10,05,08,08
-	.word  08,05,08,08	;AHARDAWAY
+	.word  10,06,08,09
+	.word  08,05,10,09	;AHARDAWAY
 
-	.word  07,04,08,04
-	.word  06,04,04,06	;NANDERSON
+	.word  07,05,09,06
+	.word  07,03,05,06	;NANDERSON
 
 	.word  07,10,03,10
 	.word  05,10,03,05	;DWIGHT HOWARD
 
-	.word  07,08,05,07
-	.word  04,07,05,05	;GRANT_HC
+	.word  07,08,06,07
+	.word  05,07,05,07	;GRANT_HC
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
@@ -5671,8 +5671,8 @@ player_attribs
 	.word  08,04,10,05
 	.word  05,02,07,10	;DEVIN BOOKER
 
-	.word  07,08,06,08
-	.word  04,07,06,08	;BARKLEY
+	.word  08,10,07,10
+	.word  06,06,07,09	;BARKLEY
 
 	.word  08,02,10,01
 	.word  05,00,10,09	;STEVE NASH
@@ -5691,14 +5691,14 @@ player_attribs
 	.word  09,04,10,04
 	.word  05,01,08,10	;DAMIAN LILLARD
 
-	.word  08,03,07,07
-	.word  08,03,08,08	;DREXLER
+	.word  09,05,08,10
+	.word  08,04,08,09	;DREXLER
 
 	.word  05,08,08,06
 	.word  03,06,03,07	;LAMARCUS ALDRIDGE
 
-	.word  06,09,06,07
-	.word  03,08,08,08	;SABONIS
+	.word  05,10,08,07
+	.word  04,08,10,08	;SABONIS
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5708,11 +5708,11 @@ player_attribs
 
 ;22 SACRAMENTO KINGS
 
-	.word  07,05,10,03
-	.word  08,02,06,07	;RICH
+	.word  08,05,10,06
+	.word  07,02,06,09	;RICH
 
-	.word  05,08,05,05
-	.word  04,08,06,06	;DIVAC
+	.word  05,07,06,05
+	.word  04,07,09,07	;DIVAC
 
 	.word  10,02,07,09
 	.word  08,01,08,07	;SPUD WEBB
@@ -5731,8 +5731,8 @@ player_attribs
 	.word  05,09,08,07
 	.word  04,10,06,10	;TIM DUNCAN
 
-	.word  07,08,06,09
-	.word  05,10,06,08	;DROBINSON
+	.word  08,09,07,10
+	.word  07,10,06,09	;DROBINSON
 
 	.word  10,03,08,03
 	.word  06,01,08,08	;TONY PARKER
@@ -5751,13 +5751,13 @@ player_attribs
 	.word  08,06,10,08
 	.word  06,06,06,10	;DURANT
 
-	.word  10,03,08,01
-	.word  10,02,08,09	;PAYTON
+	.word  09,05,08,04
+	.word  10,02,09,09	;PAYTON
 
 	.word  10,07,06,09
 	.word  07,03,09,07	;RUSSELL WESTBROOK
 
-	.word  08,08,06,10
+	.word  08,09,06,10
 	.word  06,08,04,08	;KEMP
 
 	.word  09,04,09,06
@@ -5788,14 +5788,14 @@ player_attribs
 
 ;26 UTAH JAZZ
 
-	.word  07,10,07,09
-	.word  06,06,06,07	;MALONE_K
+	.word  07,10,08,09
+	.word  06,05,06,08	;MALONE_K
 
-	.word  08,02,08,01
-	.word  10,01,10,09	;STOCKTON
+	.word  08,03,08,01
+	.word  10,01,10,10	;STOCKTON
         
-	.word  07,03,08,02
-	.word  07,02,06,06	;HORNACEK
+	.word  07,03,09,03
+	.word  07,02,07,09	;HORNACEK
 
 	.word  08,03,09,04
 	.word  06,01,10,08	;PETE MARAVICH
@@ -5808,8 +5808,8 @@ player_attribs
 
 ;27 VANCOUVER GRIZZLIES
 
-	.word  08,02,06,01
-	.word  06,01,06,05	;ABDULRAU
+	.word  09,02,10,01
+	.word  06,01,07,09	;ABDULRAU
 
 	.word  07,06,08,05
 	.word  05,02,05,08	;DESMOND BANE
@@ -5828,14 +5828,14 @@ player_attribs
 
 ;28 WASHINGTON BULLETS
 
-	.word  06,08,05,07
-	.word  03,07,04,06	;JHOWARD
+	.word  06,08,07,07
+	.word  04,05,05,07	;JHOWARD
 
 	.word  08,05,09,06
 	.word  05,02,06,08	;BRADLEY BEAL
 
-	.word  07,08,06,08
-	.word  05,05,06,07	;WEBBER
+	.word  08,09,08,10
+	.word  06,07,09,08	;WEBBER
 
 	.word  07,09,07,09
 	.word  06,10,04,07	;ANTHONY DAVIS
