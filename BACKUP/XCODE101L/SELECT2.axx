@@ -3250,17 +3250,66 @@ team_orders
 * RETURN:	a2 = team number
 *
 *------------------------------------------------------------------------------
+	.bss	opp_seed,32
+	.ref	RAND
+TOPFRAN	.equ	(1<<_BOS)|(1<<_LAL)|(1<<_GOL)|(1<<_CHI)|(1<<_SAN)|(1<<_NY)|(1<<_PHI)|(1<<_DET)|(1<<_MI)	;top 9 by titles
+
  SUBR	get_opponent_team
 
-	movi	team_orders,a0
-xsfonext_team
-	move	*a0+,a2			;team number (0-28)
-	jrn	xsfoerr			;shouldn't happen
-	btst	a2,a1			;defeated?
-	jrnz	xsfonext_team
-	rets
-xsfoerr
+	PUSH	a0,a1,a3,a4,a5,a6
+	move	a1,a6			;teams already beaten
+	move	@opp_seed,a0,L		;per power-on seed
+	jrnz	xsfos
+	move	@RAND,a0,L
+	move	@HCOUNT,a14
+	xor	a14,a0
+	ori	1,a0
+	move	a0,@opp_seed,L
+xsfos
+	move	a6,a3
+	not	a3
+	andi	01FFFFFFFH,a3		;29 teams not yet beaten
+	move	a3,a4
+	andni	TOPFRAN,a4		;...that aren't top-5 franchises
+	jrnz	xsfop
+	andi	TOPFRAN,a3		;only the top 5 are left
+	move	a3,a4
+	jrz	xsfonone
+xsfop	clr	a5			;count the pool
+	move	a4,a1
+xsfoc	srl	1,a1
+	jrnc	xsfoc2
+	addk	1,a5
+xsfoc2	move	a1,a1
+	jrnz	xsfoc
+	xor	a6,a0			;hash(seed ^ beaten) -> 0..count-1
+	move	a0,a1
+	sll	13,a1
+	xor	a1,a0
+	move	a0,a1
+	srl	17,a1
+	xor	a1,a0
+	move	a0,a1
+	sll	5,a1
+	xor	a1,a0
+	andi	0FFH,a0
+xsfom	cmp	a5,a0
+	jrlo	xsfomd
+	sub	a5,a0
+	jruc	xsfom
+xsfomd	clr	a2			;take the a0-th team in the pool
+xsfof	btst	a2,a4
+	jrz	xsfonx
+	move	a0,a0
+	jrz	xsfodone
+	subk	1,a0
+xsfonx	addk	1,a2
+	cmpi	29,a2
+	jrlo	xsfof
+xsfonone
 	clr	a2
+xsfodone
+	PULL	a0,a1,a3,a4,a5,a6
 	rets
 
 
