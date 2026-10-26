@@ -59,12 +59,134 @@ Image TERM03 has 69 colors. Can't fit into 6 bits per pixel.
 Image TERM04 has 69 colors. Can't fit into 6 bits per pixel.
 Image TERM05 has 69 colors. Can't fit into 6 bits per pixel.
 Image TERM16 has 69 colors. Can't fit into 6 bits per pixel.
-Image ELLIS1 has 70 colors. Can't fit into 6 bits per pixel.
-Image ELLIS2 has 70 colors. Can't fit into 6 bits per pixel.
-Image ELLIS3 has 70 colors. Can't fit into 6 bits per pixel.
-Image ELLIS4 has 70 colors. Can't fit into 6 bits per pixel.
-Image ELLIS5 has 70 colors. Can't fit into 6 bits per pixel.
-Image ELLIS16 has 70 colors. Can't fit into 6 bits per pixel.
+Image XMCH01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMCH16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMMA16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XDAU16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XISI16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XLAI16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWIL16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XWOR16 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ01 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ02 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ03 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ04 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ05 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ06 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ07 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ08 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ09 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ10 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ11 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ12 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ13 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ14 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ15 has 64 colors. Can't fit into 5 bits per pixel.
+Image XMAJ16 has 64 colors. Can't fit into 5 bits per pixel.
 Image JOR_MUG has 68 colors. Can't fit into 1 bits per pixel.
 Image ONE_LAL has 68 colors. Can't fit into 1 bits per pixel.
 Image KOB_MUG has 68 colors. Can't fit into 1 bits per pixel.
@@ -73,8 +195,12 @@ Image MAG_MUG has 73 colors. Can't fit into 1 bits per pixel.
 Image BRD_MUG has 55 colors. Can't fit into 1 bits per pixel.
 Image ARN_MUG has 70 colors. Can't fit into 1 bits per pixel.
 Image TRM_MUG has 70 colors. Can't fit into 1 bits per pixel.
-Image WALK_MUG has 68 colors. Can't fit into 1 bits per pixel.
-Image ELL_MUG has 59 colors. Can't fit into 1 bits per pixel.
+Image GIAN_MUG has 72 colors. Can't fit into 1 bits per pixel.
+Image KAR_MUG has 72 colors. Can't fit into 1 bits per pixel.
+Image STC_MUG has 72 colors. Can't fit into 1 bits per pixel.
+Image KDU_MUG has 72 colors. Can't fit into 1 bits per pixel.
+Image LBJ_MUG has 72 colors. Can't fit into 1 bits per pixel.
+Image LUK_MUG has 72 colors. Can't fit into 1 bits per pixel.
 Image BACK1BR has 178 colors. Can't fit into 6 bits per pixel.
 Image BACK2BR has 178 colors. Can't fit into 6 bits per pixel.
 Image BACK3BR has 178 colors. Can't fit into 6 bits per pixel.
@@ -96,19 +222,19 @@ Image nback9br has 252 colors. Can't fit into 6 bits per pixel.
 Image nback10br has 252 colors. Can't fit into 6 bits per pixel.
 
 Bytes Loaded...
-	IMAGE RAM              3229920 dec	  3148E0 hex
+	IMAGE RAM              4190594 dec	  3FF182 hex
 
-	TOTAL LOAD             3229920 dec	  3148E0 hex
+	TOTAL LOAD             4190594 dec	  3FF182 hex
 
 Bytes Written to Raw File...
-	In IMAGE RAM records      3229920 dec	  3148E0 hex
+	In IMAGE RAM records      4190594 dec	  3FF182 hex
 
-	TOTAL bytes written       3229920 dec	  3148E0 hex, in 2 records.
+	TOTAL bytes written       4190594 dec	  3FF182 hex, in 2 records.
 
-Bytes Represented in Tables ... 3229919 dec 3148DF hex
+Bytes Represented in Tables ... 4190593 dec 3FF181 hex
 
 5 images were NOT zero-compressed because they are
 	smaller than 10 pixels wide.
 
-Skipped 6738 duplicate bytes in 8 foreground checksum matches.
+Skipped 27524 duplicate bytes in 40 foreground checksum matches.
 

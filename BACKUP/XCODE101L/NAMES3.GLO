@@ -13,6 +13,75 @@
 	.global	WALKER
 	.global	ELLIS
 	.global	D_ELLIS
+	.global	GIANNIS
+	.global	KAREEM
+	.global	DURANT
+	.global	LEBRON
+	.global	LUKA
+	.global	EMBIID
+	.global	BALL_NP
+	.global	GRIFFIN
+	.global	HARDEN
+	.global	TATUM
+	.global	MCHALE
+	.global	MIDDLETON
+	.global	ERVING
+	.global	MCGRADY
+	.global	BEAL
+	.global	ROSE_NP
+	.global	PAUL_NP
+	.global	LEONARD
+	.global	NOWITZKI
+	.global	IRVING
+	.global	PARISH
+	.global	JOKIC
+	.global	LAIMBE_NP
+	.global	YOUNG
+	.global	THOMPS_NP
+	.global	HALIBURTON
+	.global	COUSINS
+	.global	BUTLER
+	.global	WADE
+	.global	BOSH
+	.global	MURRAY_NP
+	.global	ADEBAYO
+	.global	DAVIS_NP
+	.global	ARTEST
+	.global	GEORGE_NP
+	.global	ALDRIDGE
+	.global	LILLARD
+	.global	MING
+	.global	WESTBROOK
+	.global	DUNCAN
+	.global	WEMBANYAMA
+	.global	BOOKER
+	.global	GINOBILI
+	.global	NASH
+	.global	MARAVICH
+	.global	PARKER
+	.global	PIERCE_NP
+	.global	MITCHE_NP
+	.global	CARTER
+	.global	WORTHY_NP
+	.global	GASOL
+	.global	THOMAS_NP
+	.global	MALONE_NP
+	.global	GILGEOUS
+	.global	BANE
+	.global	BILLUPS
+	.global	WALLAC_NP
+	.global	DAUGHE_NP
+	.global	BRUNSON
+	.global	DEROZAN
+	.global	CLARK
+	.global	WEBB_NP
+	.global	BOGUES
+	.global	KORVER
+	.global	JAMES_NP
+	.global	ANTETOKO
+	.global	CURRY_NP
+	.global	ABDULJAB
+	.global	DONCIC_NP
 	.global	BARKLEY
 	.global	PORTER
 	.global	MAJERLE

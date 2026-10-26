@@ -566,7 +566,7 @@ Xwes_h
 	HDMAC	XWES01	; Jam #51, from NBA Jam 50 (Double Z & Wake)
 
 Xsga_h
-	HDMAC	XSGA01	; Jam #dark|81|0.55, from NBA Jam 50 (Double Z & Wake)
+	HDMAC	XSGA01	; Jam #copy|81, from NBA Jam 50 (Double Z & Wake)
 
 Xlil_h
 	HDMAC	XLIL01	; Jam #49, from NBA Jam 50 (Double Z & Wake)

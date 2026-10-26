@@ -3957,8 +3957,8 @@ yglxinpos
 
 	SOUND1	ohmy
 
-	.ref	peeker2			;In attract.axx
-	CREATE0 peeker2
+;	.ref	peeker2			;In attract.axx
+;	CREATE0 peeker2		;removed: no head sliding in on shatter
 
 	CREATE0	board_glssnd		;fix the sound later.
 

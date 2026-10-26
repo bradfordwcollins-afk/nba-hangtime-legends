@@ -7,7 +7,7 @@ rem cleanup
 del c:\tmp\htextra\imgpal.asm
 del c:\tmp\htextra\imgpal8.asm
 loadw misc /t=c:\tmp\htextra /FI /E >haha
-pause
+rem pause
 rem shatter imgs
 del ..\shatter.tbl
 copy c:\tmp\htextra\shatter.tbl ..\shatter.tbl
