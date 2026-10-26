@@ -56,7 +56,6 @@
 	.globl	XHAL_P
 	.globl	XCLA_P
 	.globl	XMID_P
-	.globl	XALL_P
 	.globl	XTAE_P
 	.globl	XWIL_P
 	.globl	XKOR_P
@@ -331,7 +330,6 @@
 	.def	Xhal_h
 	.def	Xcla_h
 	.def	Xmid_h
-	.def	Xall_h
 	.def	Xtae_h
 	.def	Xwil_h
 	.def	Xkor_h
@@ -505,9 +503,6 @@ Xcla_h
 
 Xmid_h
 	HDMAC	XMID01	; Jam #9, from NBA Jam 50 (Double Z & Wake)
-
-Xall_h
-	HDMAC	XALL01	; Jam #11, from NBA Jam 50 (Double Z & Wake)
 
 Xtae_h
 	HDMAC	XTAE01	; Jam #30, from NBA Jam 50 (Double Z & Wake)

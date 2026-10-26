@@ -191,7 +191,6 @@
 	.ref	Xhal_h
 	.ref	Xcla_h
 	.ref	Xmid_h
-	.ref	Xall_h
 	.ref	Xtae_h
 	.ref	Xwil_h
 	.ref	Xkor_h
@@ -1142,7 +1141,7 @@ MILW_t
 	.word	6,5,9,0
 	.long	LSW_MILP_P,LSW_MILS_P,LVP_MILP_P,LVP_MILS_P
 	LWWWWWW	scale65t_t,BV8,SHT10,DNK6,DEF2,SDEF6,DSKL5	;ALLEN
-	.long	ALLEN_F, LUN_MILP_P,LUN_MILS_P, LTR_MILP_P,LTR_MILS_P,Xall_h
+	.long	ALLEN_F, LUN_MILP_P,LUN_MILS_P, LTR_MILP_P,LTR_MILS_P,allen_h
 	.word	6,5,10,3
 	.long	LSW_MILP_P,LSW_MILS_P,LVP_MILP_P,LVP_MILS_P
 	LWWWWWW	scale67f_t,BV7,SHT9,DNK7,DEF3,SDEF6,DSKL5	;GROBINSO

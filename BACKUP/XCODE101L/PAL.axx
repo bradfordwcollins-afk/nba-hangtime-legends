@@ -118,7 +118,6 @@
 	.def	XHAL_P
 	.def	XCLA_P
 	.def	XMID_P
-	.def	XALL_P
 	.def	XTAE_P
 	.def	XWIL_P
 	.def	XKOR_P
