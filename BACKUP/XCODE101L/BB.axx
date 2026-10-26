@@ -785,6 +785,19 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
 
  SUBR	plyr_strtb1
 
+	move	@GAMSTATE,a0		;attract + P1 holding all 3 buttons -> SUPER MAXIMUM SETTINGS
+	cmpi	INAMODE,a0
+	jrne	ipeqnoqs
+	move	@_switch_addr,a0,L
+	move	*a0,a0
+	not	a0
+	andi	070H,a0			;P1 shoot / pass / turbo
+	cmpi	070H,a0
+	jrne	ipeqnoqs
+	.ref	QUICK_SUPER
+	CREATE	DIAG_PID,QUICK_SUPER
+	DIE
+ipeqnoqs
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqstrtb2
 

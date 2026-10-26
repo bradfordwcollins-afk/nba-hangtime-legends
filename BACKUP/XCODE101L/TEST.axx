@@ -300,6 +300,20 @@ CKDRET
 **************************************************************************
 * DIAG - THIS IS THE ENTRY TO THE MAIN DIAGNOSTIC MENU.
 
+	.def	QUICK_SUPER
+	.ref	GO_SUPADJ
+QUICK_SUPER
+	movk	1,a0
+	move	a0,@_switch_map_mode,L
+	CALLR	DIGSRT		;test-mode screen setup (kills the attract processes)
+	CLR	A0
+	MOVE	A0,@MAIN_RET
+	MOVE	A0,@GMENULEV
+	JSRP	GO_SUPADJ	;the SUPER MAXIMUM SETTINGS page
+	clr	a0
+	move	a0,@_switch_map_mode,L
+	JRUC	DIAG_EX		;validate CMOS and restart, like leaving test mode
+
 DIAG
 	movi	AUDSTAT,a0
 	clr	a1
