@@ -122,7 +122,6 @@
 	.def	XTAE_P
 	.def	XWIL_P
 	.def	XKOR_P
-	.def	XBOG_P
 	.def	XWAD_P
 	.def	XBUT_P
 	.def	XBAM_P

@@ -189,7 +189,12 @@ ADJHSPOT	EQU	45
 ADJPROFA	EQU	46
 ADJFATAL	EQU	47	;Fatality pushes for everyone (0=on)
 ADJTURBO	EQU	48	;Unlimited turbo for everyone (0=on)
-LAST_ADJUST	equ	48
+ADJMAXBLK	EQU	49	;MAXIMUM BLOCK for everyone (0=on)
+ADJMAXPWR	EQU	50	;MAXIMUM POWER for everyone (0=on)
+ADJFASTPS	EQU	51	;FAST PASSING for everyone (0=on)
+ADJHYPSPD	EQU	52	;HYPER SPEED for everyone (0=on)
+ADJSTEALT	EQU	53	;STEALTH TURBO for everyone (0=on)
+LAST_ADJUST	equ	53
 
 ;Remember, update LINK.EQU too if you increase any ADJ's
 

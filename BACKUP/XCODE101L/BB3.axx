@@ -1331,6 +1331,12 @@ whcqset_tm
 	move	*a6,a6,L
 	move	a6,a7
 
+	cmpi	14,a3			;Bucks bench: cream at home, green away
+	jrne	whcqnmil
+	cmpi	tm2pal_t,a2
+	jrz	whcqaltc
+	jruc	whcqkeepc
+whcqnmil
 	sll	3,a3
 	sll	3,a4
 	addi	teampal_t,a3

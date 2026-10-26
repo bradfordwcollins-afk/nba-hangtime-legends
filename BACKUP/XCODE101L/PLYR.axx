@@ -608,6 +608,48 @@ csprnoturb
 	clr	a0
 	move	a0,@pup_nopush
 	move	a0,@pup_fastpass
+	movi	ADJMAXBLK,a0		;Super Maximum Settings (0 = enabled)
+	calla	GET_ADJ
+	jrnz	cspx0no
+cspx0on
+	movk	0Fh,a0			;all 4 players
+	move	a0,@pup_maxblock
+cspx0no
+	movi	ADJMAXPWR,a0		;Super Maximum Settings (0 = enabled)
+	calla	GET_ADJ
+	jrnz	cspx1no
+cspx1on
+	movk	0Fh,a0			;all 4 players
+	move	a0,@pup_maxpower
+cspx1no
+	calla	READ_DIP
+	andi	4,a0
+	jrnz	cspx2on
+	movi	ADJFASTPS,a0		;Super Maximum Settings (0 = enabled)
+	calla	GET_ADJ
+	jrnz	cspx2no
+cspx2on
+	movk	0Fh,a0			;all 4 players
+	move	a0,@pup_fastpass
+cspx2no
+	calla	READ_DIP
+	andi	32,a0
+	jrnz	cspx3on
+	movi	ADJHYPSPD,a0		;Super Maximum Settings (0 = enabled)
+	calla	GET_ADJ
+	jrnz	cspx3no
+cspx3on
+	movk	0Fh,a0			;all 4 players
+	move	a0,@pup_hypspeed
+cspx3no
+	movi	ADJSTEALT,a0		;Super Maximum Settings (0 = enabled)
+	calla	GET_ADJ
+	jrnz	cspx4no
+cspx4on
+	movk	0Fh,a0			;all 4 players
+	move	a0,@pup_trbstealth
+cspx4no
+	clr	a0
 
 ;DJT Start
 ;DJT made showhotspots work in tourney-mode
@@ -1012,7 +1054,12 @@ zmnqt1a
 	btst	1,a11
 	jrz	zmnqt1
 	SWAP	a3,a4
-zmnqt1	sll	3,a3
+zmnqt1	cmpi	14,a3			;Bucks: cream at home (team 1), green away (team 2)
+	jrne	zmnqnmil
+	btst	1,a11
+	jrz	zmnqkeepc
+	jruc	zmnqaltc
+zmnqnmil	sll	3,a3
 	sll	3,a4
 	addi	teampal_t,a3
 	addi	teampal_t,a4
@@ -3639,7 +3686,7 @@ WHT_C	.equ	6
 teampal_t
 	.byte	RED_C,GRN_C,BLU_C,RED_C,BLK_C
 	.byte	BLU_C,BLK_C,BLU_C,BLU_C,RED_C
-	.byte	BLK_C,RED_C,PUR_C,BLK_C,PUR_C
+	.byte	BLK_C,RED_C,PUR_C,BLK_C,GRN_C
 	.byte	BLU_C,BLU_C,BLU_C,BLK_C,RED_C
 	.byte	PUR_C,BLK_C,BLK_C,BLK_C,GRN_C
 	.byte	BLU_C,PUR_C,BLK_C,RED_C,BLK_C

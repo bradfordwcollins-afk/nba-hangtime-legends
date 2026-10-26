@@ -60,7 +60,6 @@
 	.globl	XTAE_P
 	.globl	XWIL_P
 	.globl	XKOR_P
-	.globl	XBOG_P
 	.globl	XWAD_P
 	.globl	XBUT_P
 	.globl	XBAM_P
@@ -336,7 +335,6 @@
 	.def	Xtae_h
 	.def	Xwil_h
 	.def	Xkor_h
-	.def	Xbog_h
 	.def	Xwad_h
 	.def	Xbut_h
 	.def	Xbam_h
@@ -519,9 +517,6 @@ Xwil_h
 
 Xkor_h
 	HDMAC	XKOR01	; Jam #91, from NBA Jam 50 (Double Z & Wake)
-
-Xbog_h
-	HDMAC	XBOG01	; Jam #lib|/home/claude/heads/out/BOGUES_SRC.IMG|BOG, from NBA Jam 50 (Double Z & Wake)
 
 Xwad_h
 	HDMAC	XWAD01	; Jam #40, from NBA Jam 50 (Double Z & Wake)

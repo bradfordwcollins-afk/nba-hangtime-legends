@@ -1233,7 +1233,7 @@ aama_rating_str
 
 	.ref	READ_DIP
 	calla	READ_DIP		;Read the dipswitches
-	btst	5,a0			;Is octopus bypass switch on?
+	clr	a0			;(DIP sw6 is now HYPER SPEED - never bypass)
 	jrnz	spxsnotocto		; br=don't do audit/volume octopus
 	CREATE0	ck_octopus2
 spxsnotocto
