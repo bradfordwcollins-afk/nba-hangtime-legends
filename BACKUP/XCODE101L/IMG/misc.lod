@@ -608,6 +608,8 @@ XBUTm.img
 ---> XBUT_MUG
 XBAMm.img
 ---> XBAM_MUG
+XSHQm.img
+---> XSHQ_MUG
 XDWIm.img
 ---> XDWI_MUG
 XBEAm.img
@@ -658,6 +660,8 @@ XNASm.img
 ---> XNAS_MUG
 XMAJm.img
 ---> XMAJ_MUG
+XDVCm.img
+---> XDVC_MUG
 XWEBm.img
 ---> XWEB_MUG
 XCOUm.img

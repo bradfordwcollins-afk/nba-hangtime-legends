@@ -4839,27 +4839,27 @@ player_heads
 	.long	XBRU_MUG,STA_NEY
 
 ;18 ORLANDO
-	.long	ONE_LAL,HAR_ORL
-	.long	ONE_LAL,AND_ORL
-	.long	ONE_LAL,XDWI_MUG
-	.long	ONE_LAL,GRT_ORL
+	.long	XSHQ_MUG,HAR_ORL
+	.long	XSHQ_MUG,AND_ORL
+	.long	XSHQ_MUG,XDWI_MUG
+	.long	XSHQ_MUG,GRT_ORL
 
-	.long	HAR_ORL,ONE_LAL
+	.long	HAR_ORL,XSHQ_MUG
 	.long	HAR_ORL,AND_ORL
 	.long	HAR_ORL,XDWI_MUG
 	.long	HAR_ORL,GRT_ORL
 
-	.long	AND_ORL,ONE_LAL
+	.long	AND_ORL,XSHQ_MUG
 	.long	AND_ORL,HAR_ORL
 	.long	AND_ORL,XDWI_MUG
 	.long	AND_ORL,GRT_ORL
 
-	.long	XDWI_MUG,ONE_LAL
+	.long	XDWI_MUG,XSHQ_MUG
 	.long	XDWI_MUG,HAR_ORL
 	.long	XDWI_MUG,AND_ORL
 	.long	XDWI_MUG,GRT_ORL
 
-	.long	GRT_ORL,ONE_LAL
+	.long	GRT_ORL,XSHQ_MUG
 	.long	GRT_ORL,HAR_ORL
 	.long	GRT_ORL,AND_ORL
 	.long	GRT_ORL,XDWI_MUG
@@ -4943,20 +4943,20 @@ player_heads
 	.long	0,0
 
 ;22 SACRAMENTO
-	.long	RIC_SAC,DIV_LAK
+	.long	RIC_SAC,XDVC_MUG
 	.long	RIC_SAC,XWEB_MUG
 	.long	RIC_SAC,XCOU_MUG
 
-	.long	DIV_LAK,RIC_SAC
-	.long	DIV_LAK,XWEB_MUG
-	.long	DIV_LAK,XCOU_MUG
+	.long	XDVC_MUG,RIC_SAC
+	.long	XDVC_MUG,XWEB_MUG
+	.long	XDVC_MUG,XCOU_MUG
 
 	.long	XWEB_MUG,RIC_SAC
-	.long	XWEB_MUG,DIV_LAK
+	.long	XWEB_MUG,XDVC_MUG
 	.long	XWEB_MUG,XCOU_MUG
 
 	.long	XCOU_MUG,RIC_SAC
-	.long	XCOU_MUG,DIV_LAK
+	.long	XCOU_MUG,XDVC_MUG
 	.long	XCOU_MUG,XWEB_MUG
 
 	.long	0,0

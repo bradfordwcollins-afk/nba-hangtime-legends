@@ -5237,7 +5237,6 @@ aqnmstr_pct
 	.ref	LUK_MUG
 	.ref	MAG_MUG
 	.ref	OAK_NEY
-	.ref	ONE_LAL
 	.ref	XADA_MUG
 	.ref	XALD_MUG
 	.ref	XALL_MUG
@@ -5262,6 +5261,7 @@ aqnmstr_pct
 	.ref	XDIR_MUG
 	.ref	XDRO_MUG
 	.ref	XDUN_MUG
+	.ref	XDVC_MUG
 	.ref	XDWI_MUG
 	.ref	XEMB_MUG
 	.ref	XERV_MUG
@@ -5295,6 +5295,7 @@ aqnmstr_pct
 	.ref	XPIE_MUG
 	.ref	XPRK_MUG
 	.ref	XSGA_MUG
+	.ref	XSHQ_MUG
 	.ref	XSTE_MUG
 	.ref	XTAE_MUG
 	.ref	XTAT_MUG
@@ -5719,7 +5720,7 @@ sxldtm_plyr_headname
 	.long	STA_NEY,NWYNSTA
 	.long	XBRU_MUG,65		;Jalen Brunson
 							;ORL
-	.long	ONE_LAL,66		;Shaquille O'Neal
+	.long	XSHQ_MUG,66		;Shaquille O'Neal
 	.long	HAR_ORL,ORLNHAR
 	.long	AND_ORL,ORLNAND
 	.long	XDWI_MUG,67		;Dwight Howard
@@ -5741,40 +5742,40 @@ sxldtm_plyr_headname
 	.long	SAB_PRT,PORNSAB
 							;SAC
 	.long	RIC_SAC,SACNRIT
-	.long	DIV_LAK,LALNDIV
-	.long	XWEB_MUG,78		;Spud Webb
-	.long	XCOU_MUG,79		;DeMarcus Cousins
+	.long	XDVC_MUG,78		;Divac
+	.long	XWEB_MUG,79		;Spud Webb
+	.long	XCOU_MUG,80		;DeMarcus Cousins
 							;SAS
-	.long	XDUN_MUG,80		;Tim Duncan
+	.long	XDUN_MUG,81		;Tim Duncan
 	.long	ROB_SAN,SANNROB
-	.long	XPRK_MUG,81		;Tony Parker
-	.long	XMAN_MUG,82		;Manu Ginobili
-	.long	XWEM_MUG,83		;Victor Wembanyama
+	.long	XPRK_MUG,82		;Tony Parker
+	.long	XMAN_MUG,83		;Manu Ginobili
+	.long	XWEM_MUG,84		;Victor Wembanyama
 							;SEA
-	.long	KDU_MUG,84		;Kevin Durant
+	.long	KDU_MUG,85		;Kevin Durant
 	.long	PAY_SEA,SEANPAY
-	.long	XWES_MUG,85		;Russell Westbrook
+	.long	XWES_MUG,86		;Russell Westbrook
 	.long	KMP_SEA,SEANKEM
-	.long	XSGA_MUG,86		;Shai Gilgeous-Alexander
+	.long	XSGA_MUG,87		;Shai Gilgeous-Alexander
 							;TOR
-	.long	XCAR_MUG,87		;Vince Carter
-	.long	XKAW_MUG,88		;Kawhi Leonard
-	.long	XBOS_MUG,89		;Chris Bosh
-	.long	XDER_MUG,90		;DeMar DeRozan
+	.long	XCAR_MUG,88		;Vince Carter
+	.long	XKAW_MUG,89		;Kawhi Leonard
+	.long	XBOS_MUG,90		;Chris Bosh
+	.long	XDER_MUG,91		;DeMar DeRozan
 							;UTA
 	.long	MLN_UTA,UTANMAL
 	.long	STK_UTA,UTANSTO
 	.long	HRN_UTA,UTANHOR
-	.long	XMAR_MUG,91		;Pete Maravich
+	.long	XMAR_MUG,92		;Pete Maravich
 							;VAN
 	.long	RAF_DEN,DENNRAU
-	.long	XBAN_MUG,92		;Desmond Bane
-	.long	XGAS_MUG,93		;Pau Gasol
+	.long	XBAN_MUG,93		;Desmond Bane
+	.long	XGAS_MUG,94		;Pau Gasol
 							;WAS
 	.long	HWD_WAS,WASNHOW
-	.long	XBEA_MUG,94		;Bradley Beal
+	.long	XBEA_MUG,95		;Bradley Beal
 	.long	WEB_WAS,WASNWEB
-	.long	XADA_MUG,95		;Anthony Davis
+	.long	XADA_MUG,96		;Anthony Davis
 
 s_allen
 	.string	"Ray Allen",0
@@ -5933,40 +5934,42 @@ s_lg63
 s_lg64
 	.string	"LaMarcus Aldridge",0
 s_lg65
-	.string	"Spud Webb",0
+	.string	"Divac",0
 s_lg66
-	.string	"DeMarcus Cousins",0
+	.string	"Spud Webb",0
 s_lg67
-	.string	"Tim Duncan",0
+	.string	"DeMarcus Cousins",0
 s_lg68
-	.string	"Tony Parker",0
+	.string	"Tim Duncan",0
 s_lg69
-	.string	"Manu Ginobili",0
+	.string	"Tony Parker",0
 s_lg70
-	.string	"Victor Wembanyama",0
+	.string	"Manu Ginobili",0
 s_lg71
-	.string	"Kevin Durant",0
+	.string	"Victor Wembanyama",0
 s_lg72
-	.string	"Russell Westbrook",0
+	.string	"Kevin Durant",0
 s_lg73
-	.string	"Shai Gilgeous-Alexander",0
+	.string	"Russell Westbrook",0
 s_lg74
-	.string	"Vince Carter",0
+	.string	"Shai Gilgeous-Alexander",0
 s_lg75
-	.string	"Kawhi Leonard",0
+	.string	"Vince Carter",0
 s_lg76
-	.string	"Chris Bosh",0
+	.string	"Kawhi Leonard",0
 s_lg77
-	.string	"DeMar DeRozan",0
+	.string	"Chris Bosh",0
 s_lg78
-	.string	"Pete Maravich",0
+	.string	"DeMar DeRozan",0
 s_lg79
-	.string	"Desmond Bane",0
+	.string	"Pete Maravich",0
 s_lg80
-	.string	"Pau Gasol",0
+	.string	"Desmond Bane",0
 s_lg81
-	.string	"Bradley Beal",0
+	.string	"Pau Gasol",0
 s_lg82
+	.string	"Bradley Beal",0
+s_lg83
 	.string	"Anthony Davis",0
 s_rookie
 	.string	"Rookie",0
@@ -6067,6 +6070,7 @@ str_name_ptrs
 	.long	s_lg80
 	.long	s_lg81
 	.long	s_lg82
+	.long	s_lg83
 
 ;DJT End
 
