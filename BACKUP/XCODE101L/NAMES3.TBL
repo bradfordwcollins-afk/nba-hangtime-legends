@@ -335,108 +335,108 @@ MALONE_NP:
 	.word   03000H
 	.long   BAST_Y_P
 GILGEOUS:
-	.word   51,10,25,0
+	.word   64,20,31,10
 	.long   09fbb1e6H
 	.word   03000H
 	.long   BAST_Y_P
 BANE:
 	.word   29,10,14,0
-	.long   09fbb7e0H
+	.long   09fbc0e6H
 	.word   03000H
 	.long   BAST_Y_P
 BILLUPS:
 	.word   44,10,21,0
-	.long   09fbbb46H
+	.long   09fbc44cH
 	.word   03000H
 	.long   BAST_Y_P
 WALLAC_NP:
 	.word   52,10,25,0
-	.long   09fbc06eH
+	.long   09fbc974H
 	.word   03000H
 	.long   BAST_Y_P
 DAUGHE_NP:
 	.word   65,10,32,0
-	.long   09fbc686H
+	.long   09fbcf8cH
 	.word   03000H
 	.long   BAST_Y_P
 BRUNSON:
 	.word   51,10,25,0
-	.long   09fbce24H
+	.long   09fbd72aH
 	.word   03000H
 	.long   BAST_Y_P
 DEROZAN:
 	.word   50,10,24,0
-	.long   09fbd41eH
+	.long   09fbdd24H
 	.word   03000H
 	.long   BAST_Y_P
 CLARK:
 	.word   38,10,18,0
-	.long   09fbd9faH
+	.long   09fbe300H
 	.word   03000H
 	.long   BAST_Y_P
 WEBB_NP:
 	.word   31,10,15,0
-	.long   09fbde6eH
+	.long   09fbe774H
 	.word   03000H
 	.long   BAST_Y_P
 BOGUES:
 	.word   42,10,20,0
-	.long   09fbe210H
+	.long   09fbeb16H
 	.word   03000H
 	.long   BAST_Y_P
 KORVER:
 	.word   45,10,22,0
-	.long   09fbe6fcH
+	.long   09fbf002H
 	.word   03000H
 	.long   BAST_Y_P
 JAMES_NP:
 	.word   37,10,18,0
-	.long   09fbec42H
+	.long   09fbf548H
 	.word   03000H
 	.long   BAST_Y_P
 ANTETOKO:
 	.word   86,10,42,0
-	.long   09fbf098H
+	.long   09fbf99eH
 	.word   03000H
 	.long   BAST_Y_P
 CURRY_NP:
 	.word   38,10,18,0
-	.long   09fbfaacH
+	.long   09fc03b2H
 	.word   03000H
 	.long   BAST_Y_P
 ABDULJAB:
 	.word   84,10,41,0
-	.long   09fbff20H
+	.long   09fc0826H
 	.word   03000H
 	.long   BAST_Y_P
 DONCIC_NP:
 	.word   39,10,19,0
-	.long   09fc08f8H
+	.long   09fc11feH
 	.word   03000H
 	.long   BAST_Y_P
 BARKLEY:
 	.word   50,10,24,0
-	.long   09fc0d8aH
+	.long   09fc1690H
 	.word   03000H
 	.long   BAST_Y_P
 PORTER:
 	.word   42,10,20,0
-	.long   09fc1366H
+	.long   09fc1c6cH
 	.word   03000H
 	.long   BAST_Y_P
 MAJERLE:
 	.word   49,10,23,0
-	.long   09fc1852H
+	.long   09fc2158H
 	.word   03000H
 	.long   BAST_Y_P
 WILKINS:
 	.word   45,10,21,0
-	.long   09fc1e10H
+	.long   09fc2716H
 	.word   03000H
 	.long   BAST_Y_P
 JOHNSON_M:
 	.word   49,10,23,0
-	.long   09fc2356H
+	.long   09fc2c5cH
 	.word   03000H
 	.long   BAST_Y_P
 	.TEXT
