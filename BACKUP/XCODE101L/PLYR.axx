@@ -1643,19 +1643,22 @@ zmnqnocol
 	subk	30-15,a2		;stupid K!!!
 	jrle	zmnqchkstag		;Chk stag?
 
-	move	@plyr_onfire,a1
-	jrz	zmnqnoflm1
 	move	@fatality,a2		;bit 0=tm1, bit 1=tm2
 	jrz	zmnqnoflm1
-	sll	3,a1
-	addi	pbit_tbit,a1,L
-	movb	*a1,a1			;Assume valid plyr_onfire
 	move	*a13(plyr_num),a3
-	srl	1,a3			;make tm # 0 or 1
-	btst	a3,a1
-	jrnz	zmnqnoflm1		;br=on the on-fire tm
+	srl	1,a3			;make tm # 0 or 1 (team being pushed)
+	movk	2,a1			;pusher's team bit: tm2 if we are tm1...
+	move	a3,a3
+	jrz	zmnqfpt
+	movk	1,a1			;...tm1 if we are tm2
+zmnqfpt
 	and	a1,a2
-	jrz	zmnqnoflm1		;br=on-fire tm fatality not set
+	jrz	zmnqnoflm1		;br=pushing tm fatality not set
+	.ref	last_pusher
+	move	@last_pusher,a1		;only a pusher who is ON FIRE throws the flaming push
+	move	@plyr_onfire,a2
+	btst	a1,a2
+	jrz	zmnqnoflm1
 	movi	500,a0			;###
 	calla	RNDPER
 	jrls	zmnqnoflm1

@@ -193,6 +193,7 @@
 ;DJT End
 	BSSX	brick_count	,16*NUMPLYRS	;# bricks each player has thrown up
 	BSSX	last_power	,16	;Player pushing has this power
+	BSSX	last_pusher	,16	;plyr # (0-3) of the last pusher
 
 ;DJT original_names removed
 ;	BSSX	fire_flags	,16	;1 if this player has been on fire (1,2,4,8)
@@ -4641,12 +4642,46 @@ pyplx	rets
 *******************************
 * Sequence - Change into fire pal
 
+	.bss	fire_keep,4*64		;per plyr: *body pal, *head pal while burning
+	.ref	pal_find,PALRAM
+
+* A0=colour map # (OPAL) -> A0=*palette loaded there, or 0
+fire_palptr
+	PUSH	a2,a3,a4
+	move	a0,a4
+	movi	PALRAM,a2
+	movi	NUMPAL,a3
+gmsjf1	move	*a2+,a0,L
+	jrz	gmsjf2
+	PUSH	a0
+	calla	pal_find
+	move	a0,a14
+	PULL	a0
+	cmp	a14,a4
+	jreq	gmsjf3
+gmsjf2	dsj	a3,gmsjf1
+	clr	a0
+gmsjf3	PULL	a2,a3,a4
+	rets
+
  SUBR	seq_strtfire
 
 ;WORD	plyr_keeppal	;Keep pal for reuse upon finish of flames
 
 	move	*a13(plyr_keeppal),a0
 	jrnz	gmsjx
+	PUSH	a2
+	move	*a13(plyr_num),a2	;remember the palettes themselves, not just their slots
+	sll	6,a2
+	addi	fire_keep,a2
+	move	*a8(OPAL),a0
+	callr	fire_palptr
+	move	a0,*a2,L
+	move	*a13(plyr_headobj_p),a1,L
+	move	*a1(OPAL),a0
+	callr	fire_palptr
+	move	a0,*a2(32),L
+	PULL	a2
 	move	*a8(OPAL),a0
 	move	a0,*a13(plyr_keeppal)
 	movi	FIREFALP,a0
@@ -4667,11 +4702,25 @@ gmsjx
 
 	move	*a13(plyr_keeppal),a0
 	jrz	blkxx
-	move	a0,*a8(OPAL)
+	PUSH	a2
+	move	*a13(plyr_num),a2
+	sll	6,a2
+	addi	fire_keep,a2
+	move	*a2,a0,L		;re-get the body palette (its slot may have been freed)
+	jrz	blkxb
+	calla	pal_getf
+	jrnz	blkxc
+blkxb	move	*a13(plyr_keeppal),a0
+blkxc	move	a0,*a8(OPAL)
 ;Do head also
-	move	*a13(plyr_hdkeeppal),a0
-	move	*a13(plyr_headobj_p),a1,L
+	move	*a2(32),a0,L
+	jrz	blkxd
+	calla	pal_getf
+	jrnz	blkxe
+blkxd	move	*a13(plyr_hdkeeppal),a0
+blkxe	move	*a13(plyr_headobj_p),a1,L
 	move	a0,*a1(OPAL)
+	PULL	a2
 	clr	a0
 	move	a0,*a13(plyr_keeppal)
 blkxx
@@ -6246,6 +6295,8 @@ gbwtnochng
 	move	*a0(PAT_POWER),a3
 gbwtmaxp
 	move	a3,@last_power		;For later analysis
+	move	*a13(plyr_num),a14
+	move	a14,@last_pusher
 
 	move	*a13(plyr_dir),a0
 	move	a0,a1
