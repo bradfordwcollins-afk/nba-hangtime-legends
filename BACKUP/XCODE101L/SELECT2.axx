@@ -3252,7 +3252,9 @@ team_orders
 *------------------------------------------------------------------------------
 	.bss	opp_seed,32
 	.ref	RAND
-TOPFRAN	.equ	(1<<_BOS)|(1<<_LAL)|(1<<_GOL)|(1<<_CHI)|(1<<_SAN)|(1<<_NY)|(1<<_PHI)|(1<<_DET)|(1<<_MI)	;top 9 by titles
+TOP5F	.equ	(1<<_BOS)|(1<<_LAL)|(1<<_GOL)|(1<<_CHI)|(1<<_SAN)	;18,17,7,6,5 titles - the last five
+TIER2F	.equ	(1<<_NY)|(1<<_PHI)|(1<<_DET)|(1<<_MI)		;3 titles each - the four before them
+TOPFRAN	.equ	TOP5F|TIER2F
 
  SUBR	get_opponent_team
 
@@ -3270,9 +3272,12 @@ xsfos
 	not	a3
 	andi	01FFFFFFFH,a3		;29 teams not yet beaten
 	move	a3,a4
-	andni	TOPFRAN,a4		;...that aren't top-5 franchises
+	andni	TOPFRAN,a4		;...that aren't title franchises (20 teams)
 	jrnz	xsfop
-	andi	TOPFRAN,a3		;only the top 5 are left
+	move	a3,a4
+	andi	TIER2F,a4		;then Knicks, Heat, 76ers, Pistons
+	jrnz	xsfop
+	andi	TOP5F,a3		;last: Bulls, Warriors, Lakers, Celtics, Spurs
 	move	a3,a4
 	jrz	xsfonone
 xsfop	clr	a5			;count the pool
