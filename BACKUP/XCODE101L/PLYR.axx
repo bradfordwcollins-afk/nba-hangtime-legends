@@ -1054,12 +1054,18 @@ zmnqt1a
 	btst	1,a11
 	jrz	zmnqt1
 	SWAP	a3,a4
-zmnqt1	cmpi	14,a3			;Bucks: cream at home (team 1), green away (team 2)
-	jrne	zmnqnmil
-	btst	1,a11
+zmnqt1	btst	1,a11			;2025-26 kits: team 1 (home) wears the home set
 	jrz	zmnqkeepc
-	jruc	zmnqaltc
-zmnqnmil	sll	3,a3
+	sll	3,a3
+	addi	awaycls_t,a3
+	movb	*a3,a3		;away team's away-set colour family
+	sll	3,a4
+	addi	homecls_t,a4
+	movb	*a4,a4		;home team's home-set colour family
+	cmp	a3,a4
+	jreq	zmnqkeepc		;clash: away team wears its home set
+	jruc	zmnqaltc		;away set
+zmnqold	sll	3,a3
 	sll	3,a4
 	addi	teampal_t,a3
 	addi	teampal_t,a4
@@ -3683,10 +3689,22 @@ WHT_C	.equ	6
 ;	27 VANCOUVER
 ;	28 WASHINGTON
 
+
+	.def	homecls_t,awaycls_t
+homecls_t
+	.byte	0,0,0,0,0,0,0,0,0,0
+	.byte	0,0,2,0,0,0,0,0,0,0
+	.byte	0,0,0,0,0,0,1,0,0
+awaycls_t
+	.byte	64,20,22,65,48,22,17,64,22,65
+	.byte	17,17,1,16,20,17,16,22,23,22
+	.byte	1,16,1,16,20,65,0,17,17
+	.even
+
 teampal_t
 	.byte	RED_C,GRN_C,BLU_C,RED_C,BLK_C
 	.byte	BLU_C,BLK_C,BLU_C,BLU_C,RED_C
-	.byte	BLK_C,RED_C,PUR_C,BLK_C,GRN_C
+	.byte	BLK_C,RED_C,PUR_C,BLK_C,PUR_C
 	.byte	BLU_C,BLU_C,BLU_C,BLK_C,RED_C
 	.byte	PUR_C,BLK_C,BLK_C,BLK_C,GRN_C
 	.byte	BLU_C,PUR_C,BLK_C,RED_C,BLK_C
