@@ -126,6 +126,7 @@
 	.def	XWAD_P
 	.def	XBUT_P
 	.def	XBAM_P
+	.def	XDWI_P
 	.def	XBEA_P
 	.def	XADA_P
 	.def	XJOK_P
@@ -140,6 +141,7 @@
 	.def	XLIL_P
 	.def	XALD_P
 	.def	XMAR_P
+	.def	XSTE_P
 	.def	XKLA_P
 	.def	XCCP_P
 	.def	XGRI_P

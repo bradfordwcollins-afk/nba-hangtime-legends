@@ -64,6 +64,7 @@
 	.globl	XWAD_P
 	.globl	XBUT_P
 	.globl	XBAM_P
+	.globl	XDWI_P
 	.globl	XBEA_P
 	.globl	XADA_P
 	.globl	XJOK_P
@@ -78,6 +79,7 @@
 	.globl	XLIL_P
 	.globl	XALD_P
 	.globl	XMAR_P
+	.globl	XSTE_P
 	.globl	XKLA_P
 	.globl	XCCP_P
 	.globl	XGRI_P
@@ -338,6 +340,7 @@
 	.def	Xwad_h
 	.def	Xbut_h
 	.def	Xbam_h
+	.def	Xdwi_h
 	.def	Xbea_h
 	.def	Xada_h
 	.def	Xjok_h
@@ -352,6 +355,7 @@
 	.def	Xlil_h
 	.def	Xald_h
 	.def	Xmar_h
+	.def	Xste_h
 	.def	Xkla_h
 	.def	Xccp_h
 	.def	Xgri_h
@@ -528,6 +532,9 @@ Xbut_h
 Xbam_h
 	HDMAC	XBAM01	; Jam #44, from NBA Jam 50 (Double Z & Wake)
 
+Xdwi_h
+	HDMAC	XDWI01	; Jam #copy|44, from NBA Jam 50 (Double Z & Wake)
+
 Xbea_h
 	HDMAC	XBEA01	; Jam #14, from NBA Jam 50 (Double Z & Wake)
 
@@ -569,6 +576,9 @@ Xald_h
 
 Xmar_h
 	HDMAC	XMAR01	; Jam #57, from NBA Jam 50 (Double Z & Wake)
+
+Xste_h
+	HDMAC	XSTE01	; Jam #29, from NBA Jam 50 (Double Z & Wake)
 
 Xkla_h
 	HDMAC	XKLA01	; Jam #31, from NBA Jam 50 (Double Z & Wake)

@@ -245,6 +245,7 @@
 	.global	CARTER
 	.global	CLARK
 	.global	COUSINS
+	.global	CURRY_NP
 	.global	DAUGHE_NP
 	.global	DAVIS_NP
 	.global	DEROZAN
@@ -283,6 +284,7 @@
 	.global	PARKER
 	.global	PAUL_NP
 	.global	PIERCE_NP
+	.global	ROSE_NP
 	.global	TATUM
 	.global	THOMAS_NP
 	.global	THOMPS_NP
