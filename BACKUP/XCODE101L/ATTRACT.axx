@@ -5225,6 +5225,87 @@ aqnmstr_pct
 	.ref	STR_PRT,PORNSTR,WEB_WAS,WASNWEB,HWD_WAS,WASNHOW
 	.ref	MUR_WAS,WASNMUR,CHE_WAS,WASNCHE
 
+	.ref	BARK_MUG
+	.ref	BRD_MUG
+	.ref	FIN_PHX
+	.ref	GIAN_MUG
+	.ref	JOR_MUG
+	.ref	KAR_MUG
+	.ref	KDU_MUG
+	.ref	KOB_MUG
+	.ref	LBJ_MUG
+	.ref	LUK_MUG
+	.ref	MAG_MUG
+	.ref	OAK_NEY
+	.ref	ONE_LAL
+	.ref	XADA_MUG
+	.ref	XALD_MUG
+	.ref	XALL_MUG
+	.ref	XANT_MUG
+	.ref	XART_MUG
+	.ref	XBAM_MUG
+	.ref	XBAN_MUG
+	.ref	XBEA_MUG
+	.ref	XBIL_MUG
+	.ref	XBOG_MUG
+	.ref	XBOO_MUG
+	.ref	XBOS_MUG
+	.ref	XBRU_MUG
+	.ref	XBUT_MUG
+	.ref	XBWA_MUG
+	.ref	XCAR_MUG
+	.ref	XCCP_MUG
+	.ref	XCLA_MUG
+	.ref	XCOU_MUG
+	.ref	XDAU_MUG
+	.ref	XDER_MUG
+	.ref	XDIR_MUG
+	.ref	XDRO_MUG
+	.ref	XDUN_MUG
+	.ref	XDWI_MUG
+	.ref	XEMB_MUG
+	.ref	XERV_MUG
+	.ref	XGAR_MUG
+	.ref	XGAS_MUG
+	.ref	XGRI_MUG
+	.ref	XHAL_MUG
+	.ref	XHAR_MUG
+	.ref	XISI_MUG
+	.ref	XIVE_MUG
+	.ref	XJMU_MUG
+	.ref	XJOK_MUG
+	.ref	XKAW_MUG
+	.ref	XKLA_MUG
+	.ref	XKOR_MUG
+	.ref	XKYR_MUG
+	.ref	XLAI_MUG
+	.ref	XLAM_MUG
+	.ref	XLIL_MUG
+	.ref	XMAJ_MUG
+	.ref	XMAN_MUG
+	.ref	XMAR_MUG
+	.ref	XMCH_MUG
+	.ref	XMEL_MUG
+	.ref	XMID_MUG
+	.ref	XMIT_MUG
+	.ref	XMMA_MUG
+	.ref	XNAS_MUG
+	.ref	XPAR_MUG
+	.ref	XPGE_MUG
+	.ref	XPIE_MUG
+	.ref	XPRK_MUG
+	.ref	XSGA_MUG
+	.ref	XSTE_MUG
+	.ref	XTAE_MUG
+	.ref	XTAT_MUG
+	.ref	XTMA_MUG
+	.ref	XWAD_MUG
+	.ref	XWEB_MUG
+	.ref	XWEM_MUG
+	.ref	XWES_MUG
+	.ref	XWIL_MUG
+	.ref	XWOR_MUG
+	.ref	XYAO_MUG
 K_GILL	.equ	WALLACE+1
 
 ******************************************************************************
@@ -5376,8 +5457,7 @@ sxldhdlp
 	move	*a11+,a2,L			;*img - name
 	jrn	sxldnl0
 
-	cmpi	K_GILL,a2
-	jrz	sxldnork
+	jruc	sxldnork			;no "Rookie" tag (Legends rosters)
 	movi	rookie_setup,a2,L
 	calla	setup_message
 
@@ -5497,7 +5577,7 @@ sxldheading_setup
 
 
 sxldstr_staring
-  .string  "RO",1,-1,"ST",1,-1,"E",1,1,"RS F",1,-3,"OR '97!",0
+  .string  "LEGENDS RO",1,-1,"ST",1,-1,"E",1,1,"RS!",0
   .even
 
 
@@ -5508,208 +5588,193 @@ sxldplayers_mod
 
 
 sxldtm_plyr_idxcnt
-	.long	[5 -4, 000 *2*32]		;ATLANTA
-	.long	[5 -4, 005 *2*32]		;BOSTON
-	.long	[5 -4, 010 *2*32]		;CHARLOTTE
-	.long	[5 -4, 015 *2*32]		;CHICAGO
-	.long	[5 -4, 020 *2*32]		;CLEVLAND
-	.long	[5 -4, 025 *2*32]		;DALLAS
-	.long	[4 -4, 030 *2*32]		;DENVER
-	.long	[4 -4, 034 *2*32]	;[5 -4,	;DETROIT
-	.long	[4 -4, 038 *2*32]		;GOLDEN STATE
-	.long	[4 -4, 042 *2*32]		;HOUSTON
-	.long	[5 -4, 046 *2*32]		;INDIANA
-	.long	[5 -4, 051 *2*32]		;L.A. CLIPPERS
-	.long	[5 -4, 056 *2*32]		;L.A. LAKERS
-	.long	[3 -4, 061 *2*32]		;MIAMI
-	.long	[5 -4, 064 *2*32]		;MILWAUKEE
-	.long	[3 -4, 069 *2*32]		;MINNESOTA
-	.long	[5 -4, 072 *2*32]		;NEW JERSEY
-	.long	[5 -4, 077 *2*32]		;NEW YORK
-	.long	[5 -4, 082 *2*32]		;ORLANDO
-	.long	[4 -4, 087 *2*32]	;[5 -4,	;PHILADELPHIA
-	.long	[5 -4, 091 *2*32]		;PHOENIX
-	.long	[5 -4, 096 *2*32]		;PORTLAND
-	.long	[5 -4, 101 *2*32]		;SACRAMENTO
-	.long	[5 -4, 106 *2*32]		;SAN ANTONIO
-	.long	[5 -4, 111 *2*32]		;SEATTLE
-	.long	[5 -4, 116 *2*32]		;TORONTO
-	.long	[4 -4, 121 *2*32]		;UTAH
-	.long	[3 -4, 125 *2*32]		;VANCOUVER
-	.long	[5 -4, 128 *2*32]		;WASHINGTON
+	.long	[4 -4, 000 *2*32]		;ATL
+	.long	[5 -4, 004 *2*32]		;BOS
+	.long	[5 -4, 009 *2*32]		;CHA
+	.long	[5 -4, 014 *2*32]		;CHI
+	.long	[4 -4, 019 *2*32]		;CLE
+	.long	[4 -4, 023 *2*32]		;DAL
+	.long	[5 -4, 027 *2*32]		;DEN
+	.long	[5 -4, 032 *2*32]		;DET
+	.long	[3 -4, 037 *2*32]		;GSW
+	.long	[4 -4, 040 *2*32]		;HOU
+	.long	[5 -4, 044 *2*32]		;IND
+	.long	[3 -4, 049 *2*32]		;LAC
+	.long	[5 -4, 052 *2*32]		;LAL
+	.long	[5 -4, 057 *2*32]		;MIA
+	.long	[5 -4, 062 *2*32]		;MIL
+	.long	[4 -4, 067 *2*32]		;MIN
+	.long	[4 -4, 071 *2*32]		;NJN
+	.long	[5 -4, 075 *2*32]		;NYK
+	.long	[5 -4, 080 *2*32]		;ORL
+	.long	[4 -4, 085 *2*32]		;PHI
+	.long	[4 -4, 089 *2*32]		;PHX
+	.long	[4 -4, 093 *2*32]		;POR
+	.long	[4 -4, 097 *2*32]		;SAC
+	.long	[5 -4, 101 *2*32]		;SAS
+	.long	[5 -4, 106 *2*32]		;SEA
+	.long	[4 -4, 111 *2*32]		;TOR
+	.long	[4 -4, 115 *2*32]		;UTA
+	.long	[3 -4, 119 *2*32]		;VAN
+	.long	[4 -4, 122 *2*32]		;WAS
 
 
 sxldtm_plyr_headname
-							;ATLANTA
+							;ATL
+	.long	XTAE_MUG,13		;Trae Young
+	.long	XWIL_MUG,14		;Dominique Wilkins
 	.long	BLY_ATL,ATLNBLA
-	.long	MUT_DEN,DENNMUT
-	.long	SMI_ATL,ATLNSMI
-	.long	LAE_ATL,ATLNLAE
-	.long	NOR_ATL,ATLNNOR
-							;BOSTON
-	.long	BRO_BOS,BOSNBRO
-	.long	HAM_COL, HAMER		;new
-	.long	BAR_BOS,BOSNBAR
-	.long	RAD_BOS,BOSNRAD
-	.long	FOX_BOS,BOSNFOX
-							;CHARLOTTE
+	.long	XKOR_MUG,15		;Kyle Korver
+							;BOS
+	.long	BRD_MUG,16		;Larry Bird
+	.long	XMCH_MUG,17		;Kevin McHale
+	.long	XPIE_MUG,18		;Paul Pierce
+	.long	XTAT_MUG,19		;Jayson Tatum
+	.long	XPAR_MUG,20		;Robert Parish
+							;CHA
+	.long	JON_CHA,CHANJOH
 	.long	RCE_CHA,CHANRIC
-	.long	MAS_NEY,NWYNMAS
-	.long	DIV_LAK,LALNDIV
-	.long	ZID_CHA,CHANZID
 	.long	CUR_CHA,CHANCUR
-							;CHICAGO
+	.long	XBOG_MUG,21		;Muggsy Bogues
+	.long	MAS_DAL,DALNMAS
+							;CHI
+	.long	JOR_MUG,22		;Michael Jordan
 	.long	PIP_CHI,CHINPIP
 	.long	ROD_CHI,CHINROD
-	.long	KUK_CHI,CHINKUK
-	.long	LON_CHI,CHINLON
+	.long	XDRO_MUG,23		;Derrick Rose
 	.long	KER_CHI,CHINKER
-							;CLEVLAND
-	.long	HIL_CLE,CLENHIL
-	.long	MIL_CLE,CLENMIL
-	.long	PHL_CLE,CLENPHI
-	.long	BRA_CLE,CLENBRA
-	.long	FER_CLE,CLENFER
-							;DALLAS
-	.long	KID_DAL,DALNKID
-	.long	HPR_NEY,NWYNHAR
-	.long	JAC_DAL,DALNJAC
-	.long	MON_BOS,BOSNMON
-	.long	MAS_DAL,DALNMAS
-							;DENVER
-	.long	MCD_DEN,DENNMcD
-	.long	MAR_SAC,SACNMAR
-	.long	JAC_IND,INDNJAC
-	.long	ELL_DEN,DENNELL
-							;DETROIT
-	.long	HIL_DET,DETNHIL
-;;	.long	RIL_COL, RILEY		;new
+							;CLE
+	.long	LBJ_MUG,24		;LeBron James
+	.long	XKYR_MUG,25		;Kyrie Irving
+	.long	XMIT_MUG,26		;Donovan Mitchell
+	.long	XDAU_MUG,27		;Brad Daugherty
+							;DAL
+	.long	XDIR_MUG,28		;Dirk Nowitzki
+	.long	LUK_MUG,29		;Luka Doncic
+	.long	FIN_PHX,30		;Michael Finley
+	.long	BRA_NEJ,NWJNBRA
+							;DEN
+	.long	XJOK_MUG,31		;Nikola Jokic
+	.long	XJMU_MUG,32		;Jamal Murray
+	.long	MUT_DEN,DENNMUT
+	.long	XMEL_MUG,33		;Carmelo Anthony
+	.long	XBIL_MUG,34		;Chauncey Billups
+							;DET
+	.long	XISI_MUG,35		;Isiah Thomas
 	.long	DUM_DET,DETNDUM
-	.long	THR_DET,DETNTHO
-	.long	AUG_ATL,ATLNAUG
-							;GOLDEN STATE
-	.long	SPR_GLD,GOLNSPR
-	.long	KON_ORL,ORLNKON
-	.long	SMI_GLD,GOLNSMI
+	.long	HIL_DET,DETNHIL
+	.long	XLAI_MUG,36		;Bill Laimbeer
+	.long	XBWA_MUG,37		;Ben Wallace
+							;GSW
+	.long	XSTE_MUG,38		;Stephen Curry
+	.long	XKLA_MUG,39		;Klay Thompson
 	.long	MUL_GLD,GOLNMUL
-							;HOUSTON
+							;HOU
 	.long	OLA_HOU,HOUNOLA
-	.long	HAR_COL, HRNGTON	;new
-	.long	DRX_HOU,HOUNDRE
-	.long	WLS_GLD,GOLNWIL
-							;INDIANA
+	.long	XHAR_MUG,40		;James Harden
+	.long	XYAO_MUG,41		;Yao Ming
+	.long	XTMA_MUG,42		;Tracy McGrady
+							;IND
 	.long	MIL_IND,INDNMIL
-	.long	DAM_COL, DAMPIER	;new
+	.long	XHAL_MUG,43		;Tyrese Haliburton
 	.long	ROS_DEN,DENNROS
 	.long	SMI_IND,INDNSMI
-	.long	DAV_IND,INDNDAV
-							;L.A. CLIPPERS
-	.long	VAU_CLP,LACNVAU
-	.long	ROG_CLP,LACNROG
-	.long	MUR_CLP,LACNMUR
-	.long	RCH_CLP,LACNRIC
-	.long	BAR_CLP,LACNBAR
-							;L.A. LAKERS
-	.long	VAN_LAK,LALNEXE
-	.long	CEB_LAK,LALNCEB
-	.long	SCO_VAN,VANNSCO
-	.long	CAM_LAK,LALNCAM
-	.long	JON_LAK,LALNJON
-							;MIAMI
+	.long	XCLA_MUG,44		;Caitlin Clark
+							;LAC
+	.long	XCCP_MUG,45		;Chris Paul
+	.long	XGRI_MUG,46		;Blake Griffin
+	.long	XPGE_MUG,47		;Paul George
+							;LAL
+	.long	KOB_MUG,48		;Kobe Bryant
+	.long	MAG_MUG,49		;Magic Johnson
+	.long	XART_MUG,50		;Ron Artest
+	.long	KAR_MUG,51		;Kareem Abdul-Jabbar
+	.long	XWOR_MUG,52		;James Worthy
+							;MIA
+	.long	XWAD_MUG,53		;Dwyane Wade
 	.long	MOU_MIA,MIANMOU
 	.long	HRD_MIA,MIANHAR
-	.long	DAN_MIA,MIANDAN
-							;MILWAUKEE
-	.long	BAK_MLW,MILNBAK
-	.long	ALL_COL, ALLEN		;new
-	.long	LNG_MIN,MINNLAN
+	.long	XBUT_MUG,54		;Jimmy Butler
+	.long	XBAM_MUG,55		;Bam Adebayo
+							;MIL
+	.long	GIAN_MUG,56		;Giannis Antetokounmpo
+	.long	XMID_MUG,57		;Khris Middleton
+	.long	XALL_MUG,58		;Ray Allen
 	.long	ROB_MLW,MILNROB
-	.long	RES_MLW,MILNRES
-							;MINNESOTA
-	.long	GUG_MIN,MINNGUG
-	.long	MAR_COL, MARBURY	;new
-	.long	GAR_MIN,MINNGAR
-							;NEW JERSEY
-	.long	GLL_NEJ, K_GILL		;fix
-	.long	KIT_COL, KITTLES	;new
-	.long	PAC_WAS,WASNPAC
-	.long	BRA_NEJ,NWJNBRA
-	.long	OBA_NEJ,NWJNOBA
-							;NEW YORK
-	.long	EWG_NEY,NWYNEWI
-	.long	WAL_COL, WALLACE	;new
-	.long	JON_CHA,CHANJOH
-	.long	STA_NEY,NWYNSTA
-	.long	HOU_DET,DETNHOU
-							;ORLANDO
-	.long	HAR_ORL,ORLNHAR
-	.long	SKL_GLD,GOLNSEI
-	.long	GRT_ORL,ORLNGRA
-	.long	AND_ORL,ORLNAND
-	.long	SCO_ORL,ORLNSCO
-							;PHILADELPHIA
-	.long	IVE_COL, IVERSON	;new
-;;	.long	MIN_COL, MINOR		;new
-	.long	STA_PHL,PHINSTA
-	.long	COL_PHL,PHINCOL
-	.long	WEA_PHL,PHINWEA
-							;PHOENIX
-	.long	JOH_PHX,PHONJOH
-	.long	TIS_PHX,PHONTIS
-	.long	MAN_PHX,PHONMAN
-	.long	HOR_HOU,HOUNHOR
 	.long	CAS_HOU,HOUNCAS
-							;PORTLAND
-	.long	ROB_PRT,PORNROB
-	.long	RID_MIN,MINNRID
+							;MIN
+	.long	XGAR_MUG,59		;Kevin Garnett
+	.long	XANT_MUG,60		;Anthony Edwards
+	.long	XLAM_MUG,61		;LaMelo Ball
+	.long	SPR_GLD,GOLNSPR
+							;NJN
+	.long	KID_DAL,DALNKID
+	.long	COL_PHL,PHINCOL
+	.long	KIT_COL,62		;Kittles
+	.long	MAR_COL,63		;Marbury
+							;NYK
+	.long	EWG_NEY,NWYNEWI
+	.long	HOU_DET,DETNHOU
+	.long	OAK_NEY,64		;Charles Oakley
+	.long	STA_NEY,NWYNSTA
+	.long	XBRU_MUG,65		;Jalen Brunson
+							;ORL
+	.long	ONE_LAL,66		;Shaquille O'Neal
+	.long	HAR_ORL,ORLNHAR
+	.long	AND_ORL,ORLNAND
+	.long	XDWI_MUG,67		;Dwight Howard
+	.long	GRT_ORL,ORLNGRA
+							;PHI
+	.long	XIVE_MUG,68		;Allen Iverson
+	.long	XEMB_MUG,69		;Joel Embiid
+	.long	XMMA_MUG,70		;Moses Malone
+	.long	XERV_MUG,71		;Julius Erving
+							;PHX
+	.long	XBOO_MUG,72		;Devin Booker
+	.long	BARK_MUG,73		;Charles Barkley
+	.long	XNAS_MUG,74		;Steve Nash
+	.long	XMAJ_MUG,75		;Dan Majerle
+							;POR
+	.long	XLIL_MUG,76		;Damian Lillard
+	.long	DRX_HOU,HOUNDRE
+	.long	XALD_MUG,77		;LaMarcus Aldridge
 	.long	SAB_PRT,PORNSAB
-	.long	AND_CHA,CHANAND
-	.long	CHI_PRT,PORNCHI
-							;SACRAMENTO
-	.long	OWE_SAC,SACNOWE
-	.long	RAF_DEN,DENNRAU
+							;SAC
 	.long	RIC_SAC,SACNRIT
-	.long	GRA_SAC,SACNGRA
-	.long	EDN_SAC,SACNEDN
-							;SAN ANTONIO
-	.long	ELL_SAN,SANNELL
+	.long	DIV_LAK,LALNDIV
+	.long	XWEB_MUG,78		;Spud Webb
+	.long	XCOU_MUG,79		;DeMarcus Cousins
+							;SAS
+	.long	XDUN_MUG,80		;Tim Duncan
 	.long	ROB_SAN,SANNROB
-	.long	MAX_PHL,PHINMAX
-	.long	JON_SAN,SANNJOH
-	.long	DEL_SAN,SANNNEG
-							;SEATTLE
-	.long	KMP_SEA,SEANKEM
+	.long	XPRK_MUG,81		;Tony Parker
+	.long	XMAN_MUG,82		;Manu Ginobili
+	.long	XWEM_MUG,83		;Victor Wembanyama
+							;SEA
+	.long	KDU_MUG,84		;Kevin Durant
 	.long	PAY_SEA,SEANPAY
-	.long	SCH_SEA,SEANSCH
-	.long	HWK_SEA,SEANHAW
-	.long	FOR_SEA,SEANFOR
-							;TORONTO
-	.long	ROG_TOR,TORNROG
-	.long	CAM_COL, CAMBY		;new
-	.long	STO_TOR,TORNSTO
-	.long	JON_DAL,DALNJON
-	.long	WIL_MIA,MIANWIL
-							;UTAH
-	.long	STK_UTA,UTANSTO
+	.long	XWES_MUG,85		;Russell Westbrook
+	.long	KMP_SEA,SEANKEM
+	.long	XSGA_MUG,86		;Shai Gilgeous-Alexander
+							;TOR
+	.long	XCAR_MUG,87		;Vince Carter
+	.long	XKAW_MUG,88		;Kawhi Leonard
+	.long	XBOS_MUG,89		;Chris Bosh
+	.long	XDER_MUG,90		;DeMar DeRozan
+							;UTA
 	.long	MLN_UTA,UTANMAL
+	.long	STK_UTA,UTANSTO
 	.long	HRN_UTA,UTANHOR
-	.long	MOR_UTA,UTANMOR
-							;VANCOUVER
-	.long	ANT_VAN,VANNANT
-	.long	EDW_VAN,VANNEDW
-	.long	REV_VAN,VANNREE
-							;WASHINGTON
-	.long	STR_PRT,PORNSTR
-	.long	WEB_WAS,WASNWEB
+	.long	XMAR_MUG,91		;Pete Maravich
+							;VAN
+	.long	RAF_DEN,DENNRAU
+	.long	XBAN_MUG,92		;Desmond Bane
+	.long	XGAS_MUG,93		;Pau Gasol
+							;WAS
 	.long	HWD_WAS,WASNHOW
-	.long	MUR_WAS,WASNMUR
-	.long	CHE_WAS,WASNCHE
-
-; Removed
-;DALNMcC,DETNMIL,HOUNSMI,INDNMcK,MIANCHA,MILNBEN,MILNDOU,MINNWEB
-;NWJNGIL,NWJNEDW,NWYNOAK,PHINRUF,PHONPER,PHONFIN,PORNWIL,SANNPER
-;TORNROB,TORNMIL,TORNMUR,UTANBEN,VANNSCO,VANNMUR
-
+	.long	XBEA_MUG,94		;Bradley Beal
+	.long	WEB_WAS,WASNWEB
+	.long	XADA_MUG,95		;Anthony Davis
 
 s_allen
 	.string	"Ray Allen",0
@@ -5737,6 +5802,172 @@ s_wallace
 s_gill
 	.string	"Kendall Gill",0
 
+s_lg0
+	.string	"Trae Young",0
+s_lg1
+	.string	"Dominique Wilkins",0
+s_lg2
+	.string	"Kyle Korver",0
+s_lg3
+	.string	"Larry Bird",0
+s_lg4
+	.string	"Kevin McHale",0
+s_lg5
+	.string	"Paul Pierce",0
+s_lg6
+	.string	"Jayson Tatum",0
+s_lg7
+	.string	"Robert Parish",0
+s_lg8
+	.string	"Muggsy Bogues",0
+s_lg9
+	.string	"Michael Jordan",0
+s_lg10
+	.string	"Derrick Rose",0
+s_lg11
+	.string	"LeBron James",0
+s_lg12
+	.string	"Kyrie Irving",0
+s_lg13
+	.string	"Donovan Mitchell",0
+s_lg14
+	.string	"Brad Daugherty",0
+s_lg15
+	.string	"Dirk Nowitzki",0
+s_lg16
+	.string	"Luka Doncic",0
+s_lg17
+	.string	"Michael Finley",0
+s_lg18
+	.string	"Nikola Jokic",0
+s_lg19
+	.string	"Jamal Murray",0
+s_lg20
+	.string	"Carmelo Anthony",0
+s_lg21
+	.string	"Chauncey Billups",0
+s_lg22
+	.string	"Isiah Thomas",0
+s_lg23
+	.string	"Bill Laimbeer",0
+s_lg24
+	.string	"Ben Wallace",0
+s_lg25
+	.string	"Stephen Curry",0
+s_lg26
+	.string	"Klay Thompson",0
+s_lg27
+	.string	"James Harden",0
+s_lg28
+	.string	"Yao Ming",0
+s_lg29
+	.string	"Tracy McGrady",0
+s_lg30
+	.string	"Tyrese Haliburton",0
+s_lg31
+	.string	"Caitlin Clark",0
+s_lg32
+	.string	"Chris Paul",0
+s_lg33
+	.string	"Blake Griffin",0
+s_lg34
+	.string	"Paul George",0
+s_lg35
+	.string	"Kobe Bryant",0
+s_lg36
+	.string	"Magic Johnson",0
+s_lg37
+	.string	"Ron Artest",0
+s_lg38
+	.string	"Kareem Abdul-Jabbar",0
+s_lg39
+	.string	"James Worthy",0
+s_lg40
+	.string	"Dwyane Wade",0
+s_lg41
+	.string	"Jimmy Butler",0
+s_lg42
+	.string	"Bam Adebayo",0
+s_lg43
+	.string	"Giannis Antetokounmpo",0
+s_lg44
+	.string	"Khris Middleton",0
+s_lg45
+	.string	"Ray Allen",0
+s_lg46
+	.string	"Kevin Garnett",0
+s_lg47
+	.string	"Anthony Edwards",0
+s_lg48
+	.string	"LaMelo Ball",0
+s_lg49
+	.string	"Kittles",0
+s_lg50
+	.string	"Marbury",0
+s_lg51
+	.string	"Charles Oakley",0
+s_lg52
+	.string	"Jalen Brunson",0
+s_lg53
+	.string	"Shaquille O'Neal",0
+s_lg54
+	.string	"Dwight Howard",0
+s_lg55
+	.string	"Allen Iverson",0
+s_lg56
+	.string	"Joel Embiid",0
+s_lg57
+	.string	"Moses Malone",0
+s_lg58
+	.string	"Julius Erving",0
+s_lg59
+	.string	"Devin Booker",0
+s_lg60
+	.string	"Charles Barkley",0
+s_lg61
+	.string	"Steve Nash",0
+s_lg62
+	.string	"Dan Majerle",0
+s_lg63
+	.string	"Damian Lillard",0
+s_lg64
+	.string	"LaMarcus Aldridge",0
+s_lg65
+	.string	"Spud Webb",0
+s_lg66
+	.string	"DeMarcus Cousins",0
+s_lg67
+	.string	"Tim Duncan",0
+s_lg68
+	.string	"Tony Parker",0
+s_lg69
+	.string	"Manu Ginobili",0
+s_lg70
+	.string	"Victor Wembanyama",0
+s_lg71
+	.string	"Kevin Durant",0
+s_lg72
+	.string	"Russell Westbrook",0
+s_lg73
+	.string	"Shai Gilgeous-Alexander",0
+s_lg74
+	.string	"Vince Carter",0
+s_lg75
+	.string	"Kawhi Leonard",0
+s_lg76
+	.string	"Chris Bosh",0
+s_lg77
+	.string	"DeMar DeRozan",0
+s_lg78
+	.string	"Pete Maravich",0
+s_lg79
+	.string	"Desmond Bane",0
+s_lg80
+	.string	"Pau Gasol",0
+s_lg81
+	.string	"Bradley Beal",0
+s_lg82
+	.string	"Anthony Davis",0
 s_rookie
 	.string	"Rookie",0
       	.even
@@ -5753,6 +5984,89 @@ str_name_ptrs
 	.long	s_harrington,s_iverson,s_kittles,s_marbury
 	.long	s_minor,s_riley,s_wallace
 	.long	s_gill
+	.long	s_lg0
+	.long	s_lg1
+	.long	s_lg2
+	.long	s_lg3
+	.long	s_lg4
+	.long	s_lg5
+	.long	s_lg6
+	.long	s_lg7
+	.long	s_lg8
+	.long	s_lg9
+	.long	s_lg10
+	.long	s_lg11
+	.long	s_lg12
+	.long	s_lg13
+	.long	s_lg14
+	.long	s_lg15
+	.long	s_lg16
+	.long	s_lg17
+	.long	s_lg18
+	.long	s_lg19
+	.long	s_lg20
+	.long	s_lg21
+	.long	s_lg22
+	.long	s_lg23
+	.long	s_lg24
+	.long	s_lg25
+	.long	s_lg26
+	.long	s_lg27
+	.long	s_lg28
+	.long	s_lg29
+	.long	s_lg30
+	.long	s_lg31
+	.long	s_lg32
+	.long	s_lg33
+	.long	s_lg34
+	.long	s_lg35
+	.long	s_lg36
+	.long	s_lg37
+	.long	s_lg38
+	.long	s_lg39
+	.long	s_lg40
+	.long	s_lg41
+	.long	s_lg42
+	.long	s_lg43
+	.long	s_lg44
+	.long	s_lg45
+	.long	s_lg46
+	.long	s_lg47
+	.long	s_lg48
+	.long	s_lg49
+	.long	s_lg50
+	.long	s_lg51
+	.long	s_lg52
+	.long	s_lg53
+	.long	s_lg54
+	.long	s_lg55
+	.long	s_lg56
+	.long	s_lg57
+	.long	s_lg58
+	.long	s_lg59
+	.long	s_lg60
+	.long	s_lg61
+	.long	s_lg62
+	.long	s_lg63
+	.long	s_lg64
+	.long	s_lg65
+	.long	s_lg66
+	.long	s_lg67
+	.long	s_lg68
+	.long	s_lg69
+	.long	s_lg70
+	.long	s_lg71
+	.long	s_lg72
+	.long	s_lg73
+	.long	s_lg74
+	.long	s_lg75
+	.long	s_lg76
+	.long	s_lg77
+	.long	s_lg78
+	.long	s_lg79
+	.long	s_lg80
+	.long	s_lg81
+	.long	s_lg82
 
 ;DJT End
 
