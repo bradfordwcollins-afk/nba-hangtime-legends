@@ -5648,10 +5648,10 @@ sxldtm_plyr_headname
 	.long	XTAT_MUG,19		;Jayson Tatum
 	.long	XPAR_MUG,20		;Robert Parish
 							;CHA
+	.long	XBOG_MUG,21		;Muggsy Bogues
+	.long	CUR_CHA,CHANCUR
 	.long	JON_CHA,CHANJOH
 	.long	RCE_CHA,CHANRIC
-	.long	CUR_CHA,CHANCUR
-	.long	XBOG_MUG,21		;Muggsy Bogues
 	.long	XJMB_MUG,22		;Mash
 							;CHI
 	.long	JOR_MUG,23		;Michael Jordan
@@ -5671,14 +5671,14 @@ sxldtm_plyr_headname
 	.long	BRA_NEJ,NWJNBRA
 							;DEN
 	.long	XJOK_MUG,32		;Nikola Jokic
-	.long	XJMU_MUG,33		;Jamal Murray
-	.long	XMTB_MUG,34		;Mutumbo
+	.long	XMTB_MUG,33		;Mutumbo
+	.long	XJMU_MUG,34		;Jamal Murray
 	.long	XMEL_MUG,35		;Carmelo Anthony
 	.long	XBIL_MUG,36		;Chauncey Billups
 							;DET
 	.long	XISI_MUG,37		;Isiah Thomas
-	.long	XDUM_MUG,38		;Dumars
-	.long	XGHL_MUG,39		;Ghill
+	.long	XGHL_MUG,38		;Ghill
+	.long	XDUM_MUG,39		;Dumars
 	.long	XLAI_MUG,40		;Bill Laimbeer
 	.long	XBWA_MUG,41		;Ben Wallace
 							;GSW
@@ -5730,10 +5730,10 @@ sxldtm_plyr_headname
 	.long	MAR_COL,72		;Marbury
 							;NYK
 	.long	EWG_NEY,NWYNEWI
-	.long	XAHN_MUG,73		;Houston
-	.long	XOAK_MUG,74		;Charles Oakley
+	.long	XBRU_MUG,73		;Jalen Brunson
+	.long	XAHN_MUG,74		;Houston
+	.long	XOAK_MUG,75		;Charles Oakley
 	.long	STA_NEY,NWYNSTA
-	.long	XBRU_MUG,75		;Jalen Brunson
 							;ORL
 	.long	XSHQ_MUG,76		;Shaquille O'Neal
 	.long	HAR_ORL,ORLNHAR
@@ -5756,9 +5756,9 @@ sxldtm_plyr_headname
 	.long	XALD_MUG,88		;LaMarcus Aldridge
 	.long	SAB_PRT,PORNSAB
 							;SAC
-	.long	XMRC_MUG,89		;Rich
+	.long	XWEB_MUG,89		;Spud Webb
 	.long	XDVC_MUG,90		;Divac
-	.long	XWEB_MUG,91		;Spud Webb
+	.long	XMRC_MUG,91		;Rich
 	.long	XCOU_MUG,92		;DeMarcus Cousins
 							;SAS
 	.long	XDUN_MUG,93		;Tim Duncan
@@ -5784,13 +5784,13 @@ sxldtm_plyr_headname
 	.long	XMAR_MUG,105		;Pete Maravich
 							;VAN
 	.long	XRAF_MUG,106		;Abdulrau
-	.long	XBAN_MUG,107		;Desmond Bane
-	.long	XGAS_MUG,108		;Pau Gasol
+	.long	XGAS_MUG,107		;Pau Gasol
+	.long	XBAN_MUG,108		;Desmond Bane
 							;WAS
-	.long	XJHW_MUG,109		;Jhoward
-	.long	XBEA_MUG,110		;Bradley Beal
 	.long	WEB_WAS,WASNWEB
-	.long	XADA_MUG,111		;Anthony Davis
+	.long	XADA_MUG,109		;Anthony Davis
+	.long	XJHW_MUG,110		;Jhoward
+	.long	XBEA_MUG,111		;Bradley Beal
 
 s_allen
 	.string	"Ray Allen",0
@@ -5859,9 +5859,9 @@ s_lg18
 s_lg19
 	.string	"Nikola Jokic",0
 s_lg20
-	.string	"Jamal Murray",0
-s_lg21
 	.string	"Mutumbo",0
+s_lg21
+	.string	"Jamal Murray",0
 s_lg22
 	.string	"Carmelo Anthony",0
 s_lg23
@@ -5869,9 +5869,9 @@ s_lg23
 s_lg24
 	.string	"Isiah Thomas",0
 s_lg25
-	.string	"Dumars",0
-s_lg26
 	.string	"Ghill",0
+s_lg26
+	.string	"Dumars",0
 s_lg27
 	.string	"Bill Laimbeer",0
 s_lg28
@@ -5939,11 +5939,11 @@ s_lg58
 s_lg59
 	.string	"Marbury",0
 s_lg60
-	.string	"Houston",0
-s_lg61
-	.string	"Charles Oakley",0
-s_lg62
 	.string	"Jalen Brunson",0
+s_lg61
+	.string	"Houston",0
+s_lg62
+	.string	"Charles Oakley",0
 s_lg63
 	.string	"Shaquille O'Neal",0
 s_lg64
@@ -5971,11 +5971,11 @@ s_lg74
 s_lg75
 	.string	"LaMarcus Aldridge",0
 s_lg76
-	.string	"Rich",0
+	.string	"Spud Webb",0
 s_lg77
 	.string	"Divac",0
 s_lg78
-	.string	"Spud Webb",0
+	.string	"Rich",0
 s_lg79
 	.string	"DeMarcus Cousins",0
 s_lg80
@@ -6007,15 +6007,15 @@ s_lg92
 s_lg93
 	.string	"Abdulrau",0
 s_lg94
-	.string	"Desmond Bane",0
-s_lg95
 	.string	"Pau Gasol",0
+s_lg95
+	.string	"Desmond Bane",0
 s_lg96
-	.string	"Jhoward",0
-s_lg97
-	.string	"Bradley Beal",0
-s_lg98
 	.string	"Anthony Davis",0
+s_lg97
+	.string	"Jhoward",0
+s_lg98
+	.string	"Bradley Beal",0
 s_rookie
 	.string	"Rookie",0
       	.even

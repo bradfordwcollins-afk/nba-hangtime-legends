@@ -125,8 +125,8 @@
 	.def	XBUT_P
 	.def	XBAM_P
 	.def	XDWI_P
-	.def	XBEA_P
 	.def	XADA_P
+	.def	XBEA_P
 	.def	XJOK_P
 	.def	XJMU_P
 	.def	XMEL_P
@@ -153,8 +153,8 @@
 	.def	XHAR_P
 	.def	XYAO_P
 	.def	XTMA_P
-	.def	XBAN_P
 	.def	XGAS_P
+	.def	XBAN_P
 	.def	XDUN_P
 	.def	XPRK_P
 	.def	XMAN_P

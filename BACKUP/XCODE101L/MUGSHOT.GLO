@@ -481,10 +481,10 @@
 	.global	XAHN_MUG
 	.globl	XOAK_MUGP
 	.global	XOAK_MUG
-	.globl	XDUM_MUGP
-	.global	XDUM_MUG
 	.globl	XGHL_MUGP
 	.global	XGHL_MUG
+	.globl	XDUM_MUGP
+	.global	XDUM_MUG
 	.globl	XSCS_MUGP
 	.global	XSCS_MUG
 	.globl	XJMB_MUGP
@@ -579,10 +579,10 @@
 	.global	XSHQ_MUG
 	.globl	XDWI_MUGP
 	.global	XDWI_MUG
-	.globl	XBEA_MUGP
-	.global	XBEA_MUG
 	.globl	XADA_MUGP
 	.global	XADA_MUG
+	.globl	XBEA_MUGP
+	.global	XBEA_MUG
 	.globl	XJOK_MUGP
 	.global	XJOK_MUG
 	.globl	XJMU_MUGP
@@ -627,10 +627,10 @@
 	.global	XNAS_MUG
 	.globl	XMAJ_MUGP
 	.global	XMAJ_MUG
-	.globl	XDVC_MUGP
-	.global	XDVC_MUG
 	.globl	XWEB_MUGP
 	.global	XWEB_MUG
+	.globl	XDVC_MUGP
+	.global	XDVC_MUG
 	.globl	XCOU_MUGP
 	.global	XCOU_MUG
 	.globl	XDIR_MUGP
@@ -641,10 +641,10 @@
 	.global	XYAO_MUG
 	.globl	XTMA_MUGP
 	.global	XTMA_MUG
-	.globl	XBAN_MUGP
-	.global	XBAN_MUG
 	.globl	XGAS_MUGP
 	.global	XGAS_MUG
+	.globl	XBAN_MUGP
+	.global	XBAN_MUG
 	.globl	XDUN_MUGP
 	.global	XDUN_MUG
 	.globl	XPRK_MUGP

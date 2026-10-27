@@ -722,10 +722,10 @@ full_name_speech
  .word	00007H,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,57,2912	;HAMER,       steve
 
+ .word	00007H,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,58,1356	;CURRY,       del
  .word	0100DH,74,1344	;JOHNSON,     larry
  .word	0100DH,65,1348	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,58,1356	;CURRY,       del
- .word	00007H,0,0		;(no call) MUGGSY BOGUES
  .word	0100DH,88,1408	;MASHBURN,    jamal
 ; .word	0100DH,70,1352	;ZIDEK,       george
 
@@ -749,14 +749,14 @@ full_name_speech
  .word	00007H,0,0
 
  .word	00007H,0,0		;(no call) NIKOLA JOKIC
- .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	0100DH,103,1424	;MUTUMBO,     dekembe
+ .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	00007H,0,0		;(no call) CARMELO ANTHONY
  .word	00007H,0,0		;(no call) CHAUNCEY BILLUPS
 
  .word	00007H,0,0		;(no call) ISIAH THOMAS
- .word	0100DH,74,1440	;DUMARS,      joe
  .word	0100DH,63,1444	;HILL,        grant			( DETROIT )
+ .word	0100DH,74,1440	;DUMARS,      joe
  .word	00007H,0,0		;(no call) BILL LAIMBEER
  .word	00007H,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,77,1300	;AUGMON,      stacey
@@ -825,10 +825,10 @@ full_name_speech
 ; .word	0100DH,61,1632	;O'BANNON,    ed
 
  .word	0100DH,82,1640	;EWING,       patrick		( NEW YORK )
+ .word	00007H,0,0		;(no call) JALEN BRUNSON
  .word	0100DH,76,1456	;HOUSTON,     allan
  .word	0100DH,81,1652	;OAKLEY,      charles
  .word	0100DH,70,1656	;STARKS,      john
- .word	00007H,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,65,2906	;WALLACE,     john
 
  .word	0100DH,68,0bbch	;ONEAL,       shaquille		( LAKERS )
@@ -857,9 +857,9 @@ full_name_speech
  .word	00007H,0,0
 ; .word	0100DH,76,1736	;CHILDRESS,   randolph
 
- .word	0100DH,82,1744	;RICHMOND,    mitch			( SACRAMENTO )
- .word	0100DH,78,1544	;DIVAC,       vlade
  .word	0100DH,31,1965	;WEBB,        spud
+ .word	0100DH,78,1544	;DIVAC,       vlade
+ .word	0100DH,82,1744	;RICHMOND,    mitch			( SACRAMENTO )
  .word	00007H,0,0		;(no call) DEMARCUS COUSINS
  .word	00007H,0,0
 ; .word	0100DH,85,1748	;GRANT,       brian
@@ -892,15 +892,15 @@ full_name_speech
  .word	00007H,0,0
 
  .word	0100DH,89,1420	;ABDUL-RAUF,  mahmoud
- .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0		;(no call) PAU GASOL
+ .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0
  .word	00007H,0,0
 
- .word	0100DH,74,1860	;HOWARD,      juwan
- .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	0100DH,53,1864	;WEBBER,      chris			( WASHINGTON )
  .word	00007H,0,0		;(no call) ANTHONY DAVIS
+ .word	0100DH,74,1860	;HOWARD,      juwan
+ .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
 ; .word	0100DH,69,1868	;CHEANEY,     calbert
 
@@ -923,10 +923,10 @@ pass_speech		;'TO player name'
  .word	00007H,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,35,2914	;to HAMER,       steve
 
+ .word	00007H,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,36,1359	;to CURRY,       del
  .word	0100DH,48,1347	;to JOHNSON,     larry
  .word	0100DH,42,1351	;to RICE,        glen		( CHARLOTTE )
- .word	0100DH,36,1359	;to CURRY,       del
- .word	00007H,0,0		;(no call) MUGGSY BOGUES
  .word	0100DH,59,1411	;to MASHBURN,    jamal
 ; .word	0100DH,41,1355	;to ZIDEK,       george
 
@@ -950,14 +950,14 @@ pass_speech		;'TO player name'
  .word	00007H,0,0
 
  .word	00007H,0,0		;(no call) NIKOLA JOKIC
- .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	0100DH,67,1427	;to MUTUMBO,     dekembe
+ .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	00007H,0,0		;(no call) CARMELO ANTHONY
  .word	00007H,0,0		;(no call) CHAUNCEY BILLUPS
 
  .word	00007H,0,0		;(no call) ISIAH THOMAS
- .word	0100DH,61,1443	;to DUMARS,      joe
  .word	0100DH,42,1447	;to HILL,        grant		( DETROIT )
+ .word	0100DH,61,1443	;to DUMARS,      joe
  .word	00007H,0,0		;(no call) BILL LAIMBEER
  .word	00007H,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,44,1303	;to AUGMON,      stacey
@@ -1026,10 +1026,10 @@ pass_speech		;'TO player name'
 ; .word	0100DH,45,1635	;to O'BANNON,    ed
 
  .word	0100DH,43,1643	;to EWING,       patrick	( NEW YORK )
+ .word	00007H,0,0		;(no call) JALEN BRUNSON
  .word	0100DH,54,1459	;to HOUSTON,     allan
  .word	0100DH,40,1655	;to OAKLEY,      charles
  .word	0100DH,45,1659	;to STARKS,      john
- .word	00007H,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,39,2908	;to WALLACE,     john
 
  .word	0100DH,49,07C1h	;to ONEAL,       shaquille	( LAKERS )
@@ -1058,9 +1058,9 @@ pass_speech		;'TO player name'
  .word	00007H,0,0
 ; .word	0100DH,48,1739	;to CHILDRESS,   randolph
 
- .word	0100DH,51,1747	;to RICHMOND,    mitch		( SACRAMENTO )
- .word	0100DH,49,1547	;to DIVAC,       vlade
  .word	0100DH,41,1966	;to WEBB,        spud
+ .word	0100DH,49,1547	;to DIVAC,       vlade
+ .word	0100DH,51,1747	;to RICHMOND,    mitch		( SACRAMENTO )
  .word	00007H,0,0		;(no call) DEMARCUS COUSINS
  .word	00007H,0,0
 ; .word	0100DH,43,1751	;to GRANT,       brian
@@ -1093,15 +1093,15 @@ pass_speech		;'TO player name'
  .word	00007H,0,0
 
  .word	0100DH,61,1423	;to ABDUL-RAUF,  mahmoud
- .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0		;(no call) PAU GASOL
+ .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0
  .word	00007H,0,0
 
- .word	0100DH,43,1863	;to HOWARD,      juwan
- .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	0100DH,28,1867	;to WEBBER,      chris		( WASHINGTON )
  .word	00007H,0,0		;(no call) ANTHONY DAVIS
+ .word	0100DH,43,1863	;to HOWARD,      juwan
+ .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
 ; .word	0100DH,43,1871	;to CHEANEY,     calbert
 
@@ -1124,10 +1124,10 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0		;(no call) ROBERT PARISH
 ; .word	0100DH,26,2913	;HAMER,       steve
 
+ .word	00007H,0,0		;(no call) MUGGSY BOGUES
+ .word	0100DH,27,1357	;CURRY,       del
  .word	0100DH,38,1345	;JOHNSON,     larry
  .word	0100DH,33,1349	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,27,1357	;CURRY,       del
- .word	00007H,0,0		;(no call) MUGGSY BOGUES
  .word	0100DH,50,1409	;MASHBURN,    jamal
 ; .word	0100DH,32,1353	;ZIDEK,       george
 
@@ -1151,14 +1151,14 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0
 
  .word	00007H,0,0		;(no call) NIKOLA JOKIC
- .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	0100DH,58,1425	;MUTUMBO,     dekembe
+ .word	00007H,0,0		;(no call) JAMAL MURRAY
  .word	00007H,0,0		;(no call) CARMELO ANTHONY
  .word	00007H,0,0		;(no call) CHAUNCEY BILLUPS
 
  .word	00007H,0,0		;(no call) ISIAH THOMAS
- .word	0100DH,46,1441	;DUMARS,      joe
  .word	0100DH,33,1445	;HILL,        grant			( DETROIT )
+ .word	0100DH,46,1441	;DUMARS,      joe
  .word	00007H,0,0		;(no call) BILL LAIMBEER
  .word	00007H,0,0		;(no call) BEN WALLACE
 ; .word	0100DH,34,1301	;AUGMON,      stacey
@@ -1227,10 +1227,10 @@ name_speech 		;(last name only, excited)
 ; .word	0100DH,36,1633	;O'BANNON,    ed
 
  .word	0100DH,42,1641	;EWING,       patrick		( NEW YORK )
+ .word	00007H,0,0		;(no call) JALEN BRUNSON
  .word	0100DH,44,1457	;HOUSTON,     allan
  .word	0100DH,34,1653	;OAKLEY,      charles
  .word	0100DH,36,1657	;STARKS,      john
- .word	00007H,0,0		;(no call) JALEN BRUNSON
 ; .word	0100DH,30,2907	;WALLACE,     john
 
  .word	0100DH,40,0bbbh	;ONEAL,       shaquille		( LAKERS )
@@ -1259,9 +1259,9 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0
 ; .word	0100DH,38,1737	;CHILDRESS,   randolph
 
- .word	0100DH,41,1745	;RICHMOND,    mitch			( SACRAMENTO )
- .word	0100DH,39,1545	;DIVAC,       vlade
  .word	0100DH,31,1965	;WEBB,        spud
+ .word	0100DH,39,1545	;DIVAC,       vlade
+ .word	0100DH,41,1745	;RICHMOND,    mitch			( SACRAMENTO )
  .word	00007H,0,0		;(no call) DEMARCUS COUSINS
  .word	00007H,0,0
 ; .word	0100DH,34,1749	;GRANT,       brian
@@ -1294,15 +1294,15 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0
 
  .word	0100DH,51,1421	;ABDUL-RAUF,  mahmoud
- .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0		;(no call) PAU GASOL
+ .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0
  .word	00007H,0,0
 
- .word	0100DH,34,1861	;HOWARD,      juwan
- .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	0100DH,18,1865	;WEBBER,      chris			( WASHINGTON )
  .word	00007H,0,0		;(no call) ANTHONY DAVIS
+ .word	0100DH,34,1861	;HOWARD,      juwan
+ .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
 ; .word	0100DH,34,1869	;CHEANEY,     calbert
 
