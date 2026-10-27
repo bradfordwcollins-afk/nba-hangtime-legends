@@ -516,10 +516,9 @@ nmugs.img
 ; auto-ppp doesn't work for these so set to 1
 ; this forces the correct choice.
 PPP> 1
+PPP> 5
 Jordan.img
 ---> JOR_MUG
-Shaq.img
----> ONE_LAL
 Kobe.img
 ---> KOB_MUG
 Barkley.img
@@ -532,20 +531,48 @@ Arnold.img
 ---> ARN_MUG
 Term.img
 ---> TRM_MUG
-Gian.img
----> GIAN_MUG
 Kar.img
 ---> KAR_MUG
-Stc.img
----> STC_MUG
 Kdu.img
 ---> KDU_MUG
 Lbj.img
 ---> LBJ_MUG
 Luk.img
 ---> LUK_MUG
+XAHNm.img
+---> XAHN_MUG
+XOAKm.img
+---> XOAK_MUG
+XDUMm.img
+---> XDUM_MUG
+XGHLm.img
+---> XGHL_MUG
+XSCSm.img
+---> XSCS_MUG
+XJMBm.img
+---> XJMB_MUG
+XHRDm.img
+---> XHRD_MUG
+XJHWm.img
+---> XJHW_MUG
+XMTBm.img
+---> XMTB_MUG
+XCDXm.img
+---> XCDX_MUG
+XMRCm.img
+---> XMRC_MUG
+XMFNm.img
+---> XMFN_MUG
+XOLAm.img
+---> XOLA_MUG
+XRAFm.img
+---> XRAF_MUG
+XDRBm.img
+---> XDRB_MUG
 ; new mugs and logos: 6 bits/pixel (64-colour palettes) to save image ROM
 PPP> 6
+Gian.img
+---> GIAN_MUG
 XMCHm.img
 ---> XMCH_MUG
 XPIEm.img
@@ -586,8 +613,12 @@ XLAIm.img
 ---> XLAI_MUG
 XBWAm.img
 ---> XBWA_MUG
+XRMIm.img
+---> XRMI_MUG
 XHALm.img
 ---> XHAL_MUG
+XJRSm.img
+---> XJRS_MUG
 XCLAm.img
 ---> XCLA_MUG
 XMIDm.img

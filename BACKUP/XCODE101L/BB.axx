@@ -785,9 +785,12 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
 
  SUBR	plyr_strtb1
 
-	move	@GAMSTATE,a0		;attract + P1 holding all 3 buttons -> SUPER MAXIMUM SETTINGS
+	move	@GAMSTATE,a0		;attract or initials / team select + P1 holding all 3 buttons -> SUPER MAXIMUM SETTINGS
 	cmpi	INAMODE,a0
+	jreq	ipeqqsck
+	cmpi	ININTRO,a0
 	jrne	ipeqnoqs
+ipeqqsck
 	move	@_switch_addr,a0,L
 	move	*a0,a0
 	not	a0

@@ -457,8 +457,6 @@
 	.global	SUB_MK2
 	.globl	JOR_MUGP
 	.global	JOR_MUG
-	.globl	ONE_LALP
-	.global	ONE_LAL
 	.globl	KOB_MUGP
 	.global	KOB_MUG
 	.globl	BARK_MUGP
@@ -471,18 +469,46 @@
 	.global	ARN_MUG
 	.globl	TRM_MUGP
 	.global	TRM_MUG
-	.globl	GIAN_MUGP
-	.global	GIAN_MUG
 	.globl	KAR_MUGP
 	.global	KAR_MUG
-	.globl	STC_MUGP
-	.global	STC_MUG
 	.globl	KDU_MUGP
 	.global	KDU_MUG
 	.globl	LBJ_MUGP
 	.global	LBJ_MUG
 	.globl	LUK_MUGP
 	.global	LUK_MUG
+	.globl	XAHN_MUGP
+	.global	XAHN_MUG
+	.globl	XOAK_MUGP
+	.global	XOAK_MUG
+	.globl	XDUM_MUGP
+	.global	XDUM_MUG
+	.globl	XGHL_MUGP
+	.global	XGHL_MUG
+	.globl	XSCS_MUGP
+	.global	XSCS_MUG
+	.globl	XJMB_MUGP
+	.global	XJMB_MUG
+	.globl	XHRD_MUGP
+	.global	XHRD_MUG
+	.globl	XJHW_MUGP
+	.global	XJHW_MUG
+	.globl	XMTB_MUGP
+	.global	XMTB_MUG
+	.globl	XCDX_MUGP
+	.global	XCDX_MUG
+	.globl	XMRC_MUGP
+	.global	XMRC_MUG
+	.globl	XMFN_MUGP
+	.global	XMFN_MUG
+	.globl	XOLA_MUGP
+	.global	XOLA_MUG
+	.globl	XRAF_MUGP
+	.global	XRAF_MUG
+	.globl	XDRB_MUGP
+	.global	XDRB_MUG
+	.globl	GIAN_MUGP
+	.global	GIAN_MUG
 	.globl	XMCH_MUGP
 	.global	XMCH_MUG
 	.globl	XPIE_MUGP
@@ -523,8 +549,12 @@
 	.global	XLAI_MUG
 	.globl	XBWA_MUGP
 	.global	XBWA_MUG
+	.globl	XRMI_MUGP
+	.global	XRMI_MUG
 	.globl	XHAL_MUGP
 	.global	XHAL_MUG
+	.globl	XJRS_MUGP
+	.global	XJRS_MUG
 	.globl	XCLA_MUGP
 	.global	XCLA_MUG
 	.globl	XMID_MUGP
