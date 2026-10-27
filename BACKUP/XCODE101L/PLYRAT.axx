@@ -189,8 +189,9 @@
 	.ref	Xlai_h
 	.ref	Xbwa_h
 	.ref	Xhal_h
-	.ref	Xcla_h
+	.ref	Xart_h
 	.ref	Xmid_h
+	.ref	Xrob_h
 	.ref	Xtae_h
 	.ref	Xwil_h
 	.ref	Xkor_h
@@ -217,7 +218,7 @@
 	.ref	Xccp_h
 	.ref	Xgri_h
 	.ref	Xpge_h
-	.ref	Xart_h
+	.ref	Xgas_h
 	.ref	Xwor_h
 	.ref	Xboo_h
 	.ref	Xmaj_h
@@ -227,7 +228,7 @@
 	.ref	Xyao_h
 	.ref	Xtma_h
 	.ref	Xmor_h
-	.ref	Xgas_h
+	.ref	Xmga_h
 	.ref	Xban_h
 	.ref	Xdun_h
 	.ref	Xprk_h
@@ -1043,9 +1044,9 @@ IND_t
 	.long	SMITS_F, LUN_INDP_P,LUN_INDS_P, LTR_INDP_P,LTR_INDS_P,Smits_h
 	.word	4,8,7,7
 	.long	LSW_INDP_P,LSW_INDS_P,LVP_INDP_P,LVP_INDS_P
-	LWWWWWW	scale60t_t,BV8,SHT9,DNK1,DEF1,SDEF6,DSKL5	;CAITLIN CLARK
-	.long	LONG_F, LUN_INDP_P,LUN_INDS_P, LTR_INDP_P,LTR_INDS_P,Xcla_h
-	.word	10,2,9,0
+	LWWWWWW	scale67f_t,BV7,SHT7,DNK6,DEF4,SDEF10,DSKL5	;RON ARTEST
+	.long	K_AND_F, LUN_INDP_P,LUN_INDS_P, LTR_INDP_P,LTR_INDS_P,Xart_h
+	.word	4,8,7,0
 	.long	LSW_INDP_P,LSW_INDS_P,LVP_INDP_P,LVP_INDS_P
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill
@@ -1090,9 +1091,9 @@ LAL_t
 	.long	NFL55_p, LUN_LALP_P,LUN_LALS_P, LTR_LALP_P,LTR_LALS_P,Magic_h
 	.word	10,6,10,2
 	.long	LSW_LALP_P,LSW_LALS_P,LVP_LALP_P,LVP_LALS_P
-	LWWWWWW	scale67f_t,BV7,SHT7,DNK6,DEF4,SDEF10,DSKL5	;RON ARTEST
-	.long	K_AND_F, LUN_LALP_P,LUN_LALS_P, LTR_LALP_P,LTR_LALS_P,Xart_h
-	.word	4,8,7,0
+	LWWWWWW	scale70t_t,BV5,SHT8,DNK7,DEF8,SDEF3,DSKL5	;PAU GASOL
+	.long	SABONI_F, LUN_LALP_P,LUN_LALS_P, LTR_LALP_P,LTR_LALS_P,Xgas_h
+	.word	7,8,7,0
 	.long	LSW_LALP_P,LSW_LALS_P,LVP_LALP_P,LVP_LALS_P
 	LWWWWWW	scale72t_t,BV6,SHT9,DNK7,DEF10,SDEF4,DSKL5	;KAREEM
 	.long	BAKER_F, LUN_LALP_P,LUN_LALS_P, LTR_LALP_P,LTR_LALS_P,Kareem_h
@@ -1149,9 +1150,9 @@ MILW_t
 	.long	GROBIN_F, LUN_MILP_P,LUN_MILS_P, LTR_MILP_P,LTR_MILS_P,Grobinson_h
 	.word	5,6,7,19
 	.long	LSW_MILP_P,LSW_MILS_P,LVP_MILP_P,LVP_MILS_P
-	LWWWWWW	scale63_t,BV7,SHT8,DNK2,DEF1,SDEF6,DSKL5	;CASSELL
-	.long	CASSEL_F, LUN_MILP_P,LUN_MILS_P, LTR_MILP_P,LTR_MILS_P,Cassel_h
-	.word	8,4,10,19
+	LWWWWWW	scale65f_t,BV8,SHT9,DNK6,DEF3,SDEF7,DSKL5	;OSCAR ROBERTSON
+	.long	Ruffin_f, LUN_MILP_P,LUN_MILS_P, LTR_MILP_P,LTR_MILS_P,Xrob_h
+	.word	10,7,10,0
 	.long	LSW_MILP_P,LSW_MILS_P,LVP_MILP_P,LVP_MILS_P
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill
@@ -1496,9 +1497,9 @@ VANCOU_t
 	.long	SSMITH_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xmor_h
 	.word	8,4,9,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
-	LWWWWWW	scale70t_t,BV5,SHT8,DNK7,DEF8,SDEF3,DSKL5	;PAU GASOL
-	.long	SABONI_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xgas_h
-	.word	7,8,7,0
+	LWWWWWW	scale71ef_t,BV4,SHT7,DNK6,DEF8,SDEF4,DSKL5	;MARC GASOL
+	.long	SABONI_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xmga_h
+	.word	8,9,7,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
 	LWWWWWW	scale65f_t,BV7,SHT8,DNK5,DEF2,SDEF5,DSKL5	;DESMOND BANE
 	.long	shiek_f, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xban_h

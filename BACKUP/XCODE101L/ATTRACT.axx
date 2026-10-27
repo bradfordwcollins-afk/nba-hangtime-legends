@@ -5254,7 +5254,6 @@ aqnmstr_pct
 	.ref	XCAR_MUG
 	.ref	XCCP_MUG
 	.ref	XCDX_MUG
-	.ref	XCLA_MUG
 	.ref	XCOU_MUG
 	.ref	XDAU_MUG
 	.ref	XDER_MUG
@@ -5294,6 +5293,7 @@ aqnmstr_pct
 	.ref	XMCH_MUG
 	.ref	XMEL_MUG
 	.ref	XMFN_MUG
+	.ref	XMGA_MUG
 	.ref	XMID_MUG
 	.ref	XMIT_MUG
 	.ref	XMMA_MUG
@@ -5308,7 +5308,7 @@ aqnmstr_pct
 	.ref	XPIE_MUG
 	.ref	XPRK_MUG
 	.ref	XRMI_MUG
-	.ref	XSCS_MUG
+	.ref	XROB_MUG
 	.ref	XSGA_MUG
 	.ref	XSHQ_MUG
 	.ref	XSTE_MUG
@@ -5695,7 +5695,7 @@ sxldtm_plyr_headname
 	.long	XHAL_MUG,49		;Tyrese Haliburton
 	.long	XJRS_MUG,50		;Rose
 	.long	SMI_IND,INDNSMI
-	.long	XCLA_MUG,51		;Caitlin Clark
+	.long	XART_MUG,51		;Ron Artest
 							;LAC
 	.long	XCCP_MUG,52		;Chris Paul
 	.long	XGRI_MUG,53		;Blake Griffin
@@ -5703,7 +5703,7 @@ sxldtm_plyr_headname
 							;LAL
 	.long	KOB_MUG,55		;Kobe Bryant
 	.long	MAG_MUG,56		;Magic Johnson
-	.long	XART_MUG,57		;Ron Artest
+	.long	XGAS_MUG,57		;Pau Gasol
 	.long	KAR_MUG,58		;Kareem Abdul-Jabbar
 	.long	XWOR_MUG,59		;James Worthy
 							;MIA
@@ -5717,7 +5717,7 @@ sxldtm_plyr_headname
 	.long	XMID_MUG,65		;Khris Middleton
 	.long	XALL_MUG,66		;Ray Allen
 	.long	ROB_MLW,MILNROB
-	.long	XSCS_MUG,67		;Cassell
+	.long	XROB_MUG,67		;Oscar Robertson
 							;MIN
 	.long	XGAR_MUG,68		;Kevin Garnett
 	.long	XANT_MUG,69		;Anthony Edwards
@@ -5784,7 +5784,7 @@ sxldtm_plyr_headname
 	.long	XMAR_MUG,105		;Pete Maravich
 							;VAN
 	.long	XMOR_MUG,106		;Ja Morant
-	.long	XGAS_MUG,107		;Pau Gasol
+	.long	XMGA_MUG,107		;Marc Gasol
 	.long	XBAN_MUG,108		;Desmond Bane
 							;WAS
 	.long	WEB_WAS,WASNWEB
@@ -5895,7 +5895,7 @@ s_lg36
 s_lg37
 	.string	"Rose",0
 s_lg38
-	.string	"Caitlin Clark",0
+	.string	"Ron Artest",0
 s_lg39
 	.string	"Chris Paul",0
 s_lg40
@@ -5907,7 +5907,7 @@ s_lg42
 s_lg43
 	.string	"Magic Johnson",0
 s_lg44
-	.string	"Ron Artest",0
+	.string	"Pau Gasol",0
 s_lg45
 	.string	"Kareem Abdul-Jabbar",0
 s_lg46
@@ -5927,7 +5927,7 @@ s_lg52
 s_lg53
 	.string	"Ray Allen",0
 s_lg54
-	.string	"Cassell",0
+	.string	"Oscar Robertson",0
 s_lg55
 	.string	"Kevin Garnett",0
 s_lg56
@@ -6007,7 +6007,7 @@ s_lg92
 s_lg93
 	.string	"Ja Morant",0
 s_lg94
-	.string	"Pau Gasol",0
+	.string	"Marc Gasol",0
 s_lg95
 	.string	"Desmond Bane",0
 s_lg96

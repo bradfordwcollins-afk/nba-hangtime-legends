@@ -243,7 +243,6 @@
 	.global	BRUNSON
 	.global	BUTLER
 	.global	CARTER
-	.global	CLARK
 	.global	COUSINS
 	.global	CURRY_NP
 	.global	DAUGHE_NP
@@ -285,6 +284,7 @@
 	.global	PARKER
 	.global	PAUL_NP
 	.global	PIERCE_NP
+	.global	ROBERT_NP
 	.global	ROSE_NP
 	.global	TATUM
 	.global	THOMAS_NP

@@ -68,13 +68,13 @@
 	.global	MALONE_NP
 	.global	GILGEOUS
 	.global	MORANT
+	.global	ROBERT_NP
 	.global	BANE
 	.global	BILLUPS
 	.global	WALLAC_NP
 	.global	DAUGHE_NP
 	.global	BRUNSON
 	.global	DEROZAN
-	.global	CLARK
 	.global	WEBB_NP
 	.global	BOGUES
 	.global	KORVER

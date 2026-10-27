@@ -75,11 +75,6 @@
 
 ;; MARKER
 ;These are pals for new players
-	.def	RAIDEN_P
-	.def	SCORPI_P
-	.def	REPTIL_P
-	.def	SUBZER_P
-	.def	SMOK_P
 	.def	JORDNEWP
 	.def	KOBE_P
 	.def	ONEAL_P
@@ -115,8 +110,9 @@
 	.def	XLAI_P
 	.def	XBWA_P
 	.def	XHAL_P
-	.def	XCLA_P
+	.def	XART_P
 	.def	XMID_P
+	.def	XROB_P
 	.def	XTAE_P
 	.def	XWIL_P
 	.def	XKOR_P
@@ -143,7 +139,7 @@
 	.def	XCCP_P
 	.def	XGRI_P
 	.def	XPGE_P
-	.def	XART_P
+	.def	XGAS_P
 	.def	XWOR_P
 	.def	XBOO_P
 	.def	XMAJ_P
@@ -153,7 +149,7 @@
 	.def	XYAO_P
 	.def	XTMA_P
 	.def	XMOR_P
-	.def	XGAS_P
+	.def	XMGA_P
 	.def	XBAN_P
 	.def	XDUN_P
 	.def	XPRK_P
