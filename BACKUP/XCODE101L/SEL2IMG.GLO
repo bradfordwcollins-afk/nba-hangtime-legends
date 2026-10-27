@@ -277,6 +277,7 @@
 	.global	MIDDLETON
 	.global	MING
 	.global	MITCHE_NP
+	.global	MORANT
 	.global	MURRAY_NP
 	.global	NASH
 	.global	NOWITZKI

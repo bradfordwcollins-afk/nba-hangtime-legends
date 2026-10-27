@@ -91,6 +91,7 @@
 	.globl	XHAR_P
 	.globl	XYAO_P
 	.globl	XTMA_P
+	.globl	XMOR_P
 	.globl	XGAS_P
 	.globl	XBAN_P
 	.globl	XDUN_P
@@ -365,6 +366,7 @@
 	.def	Xhar_h
 	.def	Xyao_h
 	.def	Xtma_h
+	.def	Xmor_h
 	.def	Xgas_h
 	.def	Xban_h
 	.def	Xdun_h
@@ -608,6 +610,9 @@ Xyao_h
 
 Xtma_h
 	HDMAC	XTMA01	; Jam #12, from NBA Jam 50 (Double Z & Wake)
+
+Xmor_h
+	HDMAC	XMOR01	; Jam #lib|/home/claude/heads/out/MORANT_SRC.IMG|MOR, from NBA Jam 50 (Double Z & Wake)
 
 Xgas_h
 	HDMAC	XGAS01	; Jam #72, from NBA Jam 50 (Double Z & Wake)

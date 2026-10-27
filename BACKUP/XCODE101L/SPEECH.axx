@@ -891,7 +891,7 @@ full_name_speech
  .word	00007H,0,0		;(no call) PETE MARAVICH
  .word	00007H,0,0
 
- .word	0100DH,89,1420	;ABDUL-RAUF,  mahmoud
+ .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) PAU GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0
@@ -1092,7 +1092,7 @@ pass_speech		;'TO player name'
  .word	00007H,0,0		;(no call) PETE MARAVICH
  .word	00007H,0,0
 
- .word	0100DH,61,1423	;to ABDUL-RAUF,  mahmoud
+ .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) PAU GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0
@@ -1293,7 +1293,7 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0		;(no call) PETE MARAVICH
  .word	00007H,0,0
 
- .word	0100DH,51,1421	;ABDUL-RAUF,  mahmoud
+ .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) PAU GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
  .word	00007H,0,0

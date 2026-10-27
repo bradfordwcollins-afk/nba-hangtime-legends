@@ -80,7 +80,6 @@
 	.def	REPTIL_P
 	.def	SUBZER_P
 	.def	SMOK_P
-	.def	JORDAN_P
 	.def	JORDNEWP
 	.def	KOBE_P
 	.def	ONEAL_P
@@ -153,6 +152,7 @@
 	.def	XHAR_P
 	.def	XYAO_P
 	.def	XTMA_P
+	.def	XMOR_P
 	.def	XGAS_P
 	.def	XBAN_P
 	.def	XDUN_P

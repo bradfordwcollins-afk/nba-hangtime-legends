@@ -5297,6 +5297,7 @@ aqnmstr_pct
 	.ref	XMID_MUG
 	.ref	XMIT_MUG
 	.ref	XMMA_MUG
+	.ref	XMOR_MUG
 	.ref	XMRC_MUG
 	.ref	XMTB_MUG
 	.ref	XNAS_MUG
@@ -5306,7 +5307,6 @@ aqnmstr_pct
 	.ref	XPGE_MUG
 	.ref	XPIE_MUG
 	.ref	XPRK_MUG
-	.ref	XRAF_MUG
 	.ref	XRMI_MUG
 	.ref	XSCS_MUG
 	.ref	XSGA_MUG
@@ -5783,7 +5783,7 @@ sxldtm_plyr_headname
 	.long	HRN_UTA,UTANHOR
 	.long	XMAR_MUG,105		;Pete Maravich
 							;VAN
-	.long	XRAF_MUG,106		;Abdulrau
+	.long	XMOR_MUG,106		;Ja Morant
 	.long	XGAS_MUG,107		;Pau Gasol
 	.long	XBAN_MUG,108		;Desmond Bane
 							;WAS
@@ -6005,7 +6005,7 @@ s_lg91
 s_lg92
 	.string	"Pete Maravich",0
 s_lg93
-	.string	"Abdulrau",0
+	.string	"Ja Morant",0
 s_lg94
 	.string	"Pau Gasol",0
 s_lg95

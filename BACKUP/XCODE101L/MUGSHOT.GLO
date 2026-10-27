@@ -503,8 +503,6 @@
 	.global	XMFN_MUG
 	.globl	XOLA_MUGP
 	.global	XOLA_MUG
-	.globl	XRAF_MUGP
-	.global	XRAF_MUG
 	.globl	XDRB_MUGP
 	.global	XDRB_MUG
 	.globl	GIAN_MUGP
@@ -641,6 +639,8 @@
 	.global	XYAO_MUG
 	.globl	XTMA_MUGP
 	.global	XTMA_MUG
+	.globl	XMOR_MUGP
+	.global	XMOR_MUG
 	.globl	XGAS_MUGP
 	.global	XGAS_MUG
 	.globl	XBAN_MUGP

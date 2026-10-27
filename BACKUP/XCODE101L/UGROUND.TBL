@@ -1,77 +1,77 @@
 	.DATA
 SPIKETST:
 	.word   186,44,0,-6
-	.long   09bd54f4H
+	.long   09bd2de1H
 	.word   00H
 	.long   SPIKEPAL
 UGRTEETH:
 	.word   246,99,0,0
-	.long   09be54b4H
+	.long   09be2da1H
 	.word   00H
 	.long   UGRTEETHP
 UGRLAVA:
 	.word   147,62,0,0
-	.long   09c14dc4H
+	.long   09c126b1H
 	.word   00H
 	.long   UGRLAVAP
 UGRTEETS:
 	.word   114,44,0,0
-	.long   09c26a94H
+	.long   09c24381H
 	.word   00H
 	.long   UGRTEETSP
 UGRBKG1:
 	.word   200,200,0,0
-	.long   09c30754H
+	.long   09c2e041H
 	.word   00H
 	.long   UGRBKG1P
 UGRBKG2:
 	.word   200,200,0,0
-	.long   09c7e954H
+	.long   09c7c241H
 	.word   00H
 	.long   UGRBKG1P
 UGRBKG3:
 	.word   200,200,0,0
-	.long   09cccb54H
+	.long   09cca441H
 	.word   00H
 	.long   UGRBKG1P
 BLUBAK1:
 	.word   200,297,0,0
-	.long   09d1ad54H
+	.long   09d18641H
 	.word   00H
 	.long   BLUBAKP
 BLUBAK2:
 	.word   200,297,0,0
-	.long   09d8ed94H
+	.long   09d8c681H
 	.word   00H
 	.long   BLUBAKP
 BLUBAK3:
 	.word   200,297,0,0
-	.long   09e02dd4H
+	.long   09e006c1H
 	.word   00H
 	.long   BLUBAKP
 STEMPLEL:
 	.word   138,149,0,-1
-	.long   09e76e14H
+	.long   09e74701H
 	.word   00H
 	.long   TEMPLEPAL
 STEMPLER:
 	.word   138,149,0,-1
-	.long   09e9f0a4H
+	.long   09e9c991H
 	.word   00H
 	.long   TEMPLEPAL
 TFENCE:
 	.word   67,36,0,0
-	.long   09ec7334H
+	.long   09ec4c21H
 	.word   00H
 	.long   TEMPLEPAL
 NEWBOT:
 	.word   88,154,0,0
-	.long   09ecbe94H
+	.long   09ec9781H
 	.word   00H
 	.long   SIDENEWP
 NEWTOP:
 	.word   88,237,0,237
-	.long   09ee6614H
+	.long   09ee3f01H
 	.word   00H
 	.long   SIDENEWP
 	.TEXT

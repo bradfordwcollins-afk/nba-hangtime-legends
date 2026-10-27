@@ -226,6 +226,7 @@
 	.ref	Xhar_h
 	.ref	Xyao_h
 	.ref	Xtma_h
+	.ref	Xmor_h
 	.ref	Xgas_h
 	.ref	Xban_h
 	.ref	Xdun_h
@@ -1491,9 +1492,9 @@ UTAH_t
 ;Pri swipe pal, Alt swipe pal, Pri vertical panel pal, Alt vertical panel pal
 
 VANCOU_t
-	LWWWWWW	scale61_t,BV9,SHT10,DNK1,DEF1,SDEF6,DSKL5	;ABDULRAU
-	.long	RAUF_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Rauf_h
-	.word	7,2,9,18
+	LWWWWWW	scale62t_t,BV10,SHT7,DNK10,DEF2,SDEF7,DSKL5	;JA MORANT
+	.long	SSMITH_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xmor_h
+	.word	8,4,9,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
 	LWWWWWW	scale70t_t,BV5,SHT8,DNK7,DEF8,SDEF3,DSKL5	;PAU GASOL
 	.long	SABONI_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xgas_h

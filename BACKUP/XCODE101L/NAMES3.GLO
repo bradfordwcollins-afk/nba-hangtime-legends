@@ -67,6 +67,7 @@
 	.global	THOMAS_NP
 	.global	MALONE_NP
 	.global	GILGEOUS
+	.global	MORANT
 	.global	BANE
 	.global	BILLUPS
 	.global	WALLAC_NP

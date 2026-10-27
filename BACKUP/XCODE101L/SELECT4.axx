@@ -5069,13 +5069,13 @@ player_heads
 	.long	0,0
 
 ;27 VANCOUVER
-	.long	XRAF_MUG,XGAS_MUG
-	.long	XRAF_MUG,XBAN_MUG
+	.long	XMOR_MUG,XGAS_MUG
+	.long	XMOR_MUG,XBAN_MUG
 
-	.long	XGAS_MUG,XRAF_MUG
+	.long	XGAS_MUG,XMOR_MUG
 	.long	XGAS_MUG,XBAN_MUG
 
-	.long	XBAN_MUG,XRAF_MUG
+	.long	XBAN_MUG,XMOR_MUG
 	.long	XBAN_MUG,XGAS_MUG
 
 	.long	0,0
@@ -5865,13 +5865,13 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;27 VANCOUVER
-	.long	ABDULRAU,GASOL
-	.long	ABDULRAU,BANE
+	.long	MORANT,GASOL
+	.long	MORANT,BANE
 
-	.long	GASOL,ABDULRAU
+	.long	GASOL,MORANT
 	.long	GASOL,BANE
 
-	.long	BANE,ABDULRAU
+	.long	BANE,MORANT
 	.long	BANE,GASOL
 
 	.long	0,0
