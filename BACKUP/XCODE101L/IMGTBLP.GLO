@@ -1,3 +1,4 @@
+	.globl	SHAQ55_p
 	.globl	NFL55_p
 ;[pruned] .globl	NFLW55_p
 ;[pruned] .globl	TR_ATLP_P
