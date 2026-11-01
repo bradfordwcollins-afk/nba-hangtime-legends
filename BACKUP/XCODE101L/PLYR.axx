@@ -3754,6 +3754,21 @@ NUM_HOTSPOTS	.equ	(hotspot_xz_tend-hotspot_xz_t)/32
 
  SUBR	plyr_setseq
 
+	.if	FATALITY
+	.ref	seq_stopfire
+	move	*a13(plyr_keeppal),a14	;Still burning from a fatality push?
+	jrz	zmnqnoburn
+	cmpi	FFALL_SEQ,a0		;Fire sequences (FFALL..FFLYBACKWB2) keep the flames
+	jrlo	zmnqputout
+	cmpi	FFLYBACKWB2_SEQ,a0
+	jrls	zmnqnoburn
+zmnqputout
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7
+	calla	seq_stopfire		;Fire seq was cut short: back to normal colours
+	PULL	a0,a1,a2,a3,a4,a5,a6,a7
+zmnqnoburn
+	.endif
+
 	cmpi	TIP_SEQ,a0
 	jrnz	zmnqbugok
 	move	@scores,a14,L
