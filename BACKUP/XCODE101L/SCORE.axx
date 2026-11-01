@@ -2289,7 +2289,7 @@ ddyunoaud
 
 	.if	TEAMZONE	
 ;TEAM METER logic
-	movk	2,a14
+	movk	3,a14			;3 per assist: full after about 10 assists
 	.ref	update_team_meter
 	calla	update_team_meter
 	.endif
@@ -3174,6 +3174,11 @@ kugnclean_up
 	.ref	balltmshotcnt
 	move	a0,@balltmshotcnt
 kugnnotmfire
+	.if	TEAMZONE
+	.ref	team_meter_reset
+	move	a11,a1			;team whose fire ended: empty its meter
+	calla	team_meter_reset
+	.endif
 	clr	a0
 	move	a0,@plyr_onfire
 

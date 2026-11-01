@@ -2478,6 +2478,10 @@ hlygsmksmk
 
  SUBRP	team_meters
 
+	callr	tz_enabled		;Team Zone switched on?
+	jrnz	hlygon
+	DIE
+hlygon
 	movi	hlygtm_mtr_init_tbl,a9,L
 
 ;team 1 team meter
@@ -2518,48 +2522,97 @@ hlygtm_mtr_init_tbl
 
 
 ***************************************
-* Update count and image for team
+* Team Zone switched on?  Dip A Team Zone (READ_DIP bit 1) or Super Max TEAM ZONE.
+* Returns A0 !0 (and NZ) when on.  Keeps every other register.
+ SUBRP	tz_enabled
+	PUSH	a1,a2,a3,a4,a5,a6,a7,a14
+	calla	READ_DIP
+	andi	2,a0
+	jrnz	tzenon
+	movi	ADJTZONE,a0
+	calla	GET_ADJ			;0 = enabled
+	jrnz	tzenoff
+tzenon	movk	1,a0
+	PULL	a1,a2,a3,a4,a5,a6,a7,a14
+	move	a0,a0
+	rets
+tzenoff	clr	a0
+	PULL	a1,a2,a3,a4,a5,a6,a7,a14
+	move	a0,a0
+	rets
+
+***************************************
+* Update count and image for team; a full meter starts that team's TEAM FIRE
 *
 * INPUT:  a1 - player number
 * 	 a14 - amount to add to meter
 *
  SUBR	update_team_meter
 
-	PUSH	a1
-
-	srl	1,a1
+	PUSH	a0,a1,a2,a3,a7,a8,a9,a14
+	callr	tz_enabled
+	jrz	hlygx
+	move	@balltmshotcnt,a0	;a team on fire already? don't fill
+	subk	TMFIRE_MINCNT,a0
+	jrge	hlygx
+	srl	1,a1			;0 = team 1 (players 0,1), 1 = team 2
 	jrnz	hlygtm2
-
-	move	@tm1_meter_cnt,a1
-	add	a14,a1
-	cmpi	NUM_MTR_IMGS,a1			;value in range ?
-	jrlo	hlygok1				;br=yes
-	movi	NUM_MTR_IMGS-1,a1		;set to max
-hlygok1	move	a1,@tm1_meter_cnt
-	sll	5,a1
-	addi	tm_meter_img_tbl,a1
-	move	*a1,a14,L			;get NEW img ptr
-	move	@tm1_meter_obj,a1,L		;get CURRENT img ptr
-	jruc	hlygchng
+	movi	tm1_meter_cnt,a3
+	move	@tm1_meter_obj,a1,L
+	movi	32,a2			;team 1 (balltmscored / tmfire_timer value)
+	jruc	hlygadd
 hlygtm2
-	move	@tm2_meter_cnt,a1
-	add	a14,a1
-	cmpi	NUM_MTR_IMGS,a1			;value in range ?
-	jrlo	hlygok2				;br=yes
-	movi	NUM_MTR_IMGS-1,a1		;set to max
-hlygok2	move	a1,@tm2_meter_cnt
-	sll	5,a1
-	addi	tm_meter_img_tbl,a1
-	move	*a1,a14,L			;get NEW img ptr.
-	move	@tm2_meter_obj,a1,L		;get CURRENT img ptr.
-hlygchng
-;	move	a14,*a1(OIMG),L			;update image
-;	move	*a14(0),*a1(OSIZE),L
-	move	*a14(0),*a1(OSAG),L
-
-	PULL	a1
+	movi	tm2_meter_cnt,a3
+	move	@tm2_meter_obj,a1,L
+	clr	a2			;team 2
+hlygadd
+	move	*a3,a0
+	add	a14,a0
+	cmpi	NUM_MTR_IMGS-1,a0	;full?
+	jrlo	hlygok
+	movi	NUM_MTR_IMGS-1,a0
+hlygok	move	a0,*a3
+	move	a0,a14
+	sll	5,a14
+	addi	tm_meter_img_tbl,a14
+	move	*a14,a14,L		;new image
+	move	a1,a1
+	jrz	hlygnoobj
+	move	*a14(ISAG),*a1(OSAG),L	;same size & palette: just point at the new art
+hlygnoobj
+	cmpi	NUM_MTR_IMGS-1,a0
+	jrne	hlygx
+	.ref	balltmscored,tmfire_timer
+	move	a2,@balltmscored	;meter full: TEAM FIRE for this team
+	movk	TMFIRE_MINCNT,a0
+	move	a0,@balltmshotcnt
+	move	a2,a9
+	CREATE	tmfireid,tmfire_timer
+hlygx
+	PULL	a0,a1,a2,a3,a7,a8,a9,a14
  	rets
- 
+
+***************************************
+* Empty a team's meter (called when its team fire ends)
+* INPUT:  a1 - team (!0 = team 1, 0 = team 2)
+ SUBR	team_meter_reset
+
+	PUSH	a0,a1,a14
+	movi	tm1_meter_cnt,a14
+	move	a1,a1
+	jrnz	hlygr1
+	movi	tm2_meter_cnt,a14
+	move	@tm2_meter_obj,a1,L
+	jruc	hlygr2
+hlygr1	move	@tm1_meter_obj,a1,L
+hlygr2	clr	a0
+	move	a0,*a14
+	move	a1,a1
+	jrz	hlygrx
+	movi	TEAMZN01,a14
+	move	*a14(ISAG),*a1(OSAG),L
+hlygrx	PULL	a0,a1,a14
+	rets
 
 tm_meter_img_tbl
 	.long	TEAMZN01

@@ -194,7 +194,8 @@ ADJMAXPWR	EQU	50	;MAXIMUM POWER for everyone (0=on)
 ADJFASTPS	EQU	51	;FAST PASSING for everyone (0=on)
 ADJHYPSPD	EQU	52	;HYPER SPEED for everyone (0=on)
 ADJSTEALT	EQU	53	;STEALTH TURBO for everyone (0=on)
-LAST_ADJUST	equ	53
+ADJTZONE	EQU	54	;TEAM ZONE meters + team fire (0=on)
+LAST_ADJUST	equ	54
 
 ;Remember, update LINK.EQU too if you increase any ADJ's
 

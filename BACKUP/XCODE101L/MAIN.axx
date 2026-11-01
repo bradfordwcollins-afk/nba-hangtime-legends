@@ -515,8 +515,7 @@ dip_init
 	move	a0,@COUNTER_MODE
 
 	move	a1,a0
-	andi	DPVALIDATOR,a0		;AQUIRE THE VALIDATOR STATUS
-	srl	DPVALIDATOR_SRL,a0
+	clr	a0			;no bill validator: its DIP switch is TEAM ZONE now
 	move	a0,@VALIDATOR		;SAVE IT
 
 	move	a1,a0

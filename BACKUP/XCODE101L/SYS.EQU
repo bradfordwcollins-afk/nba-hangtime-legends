@@ -52,7 +52,7 @@ SPARKDB	.equ	0	;Ball sparking test (Abandoned feature, EXPERIMENTAL)
 PUTBACK	.equ	0	;Putback rebounds (Abandoned feature, EXPERIMENTAL)
 FATALITY .equ	1	;Fire push fatality
 HOOKDEBUG .equ	0	;Debug dunks using hook table ;)
-TEAMZONE .equ	0	;Enable Team Zone meter (Abandoned feature, EXPERIMENTAL)
+TEAMZONE .equ	1	;Team Zone meters (runtime: Dip A Team Zone / Super Max TEAM ZONE)
 COWER	.equ	1	;Cowering player anim (Unused GFX, EXPERIMENTAL)
 STEALUP	.equ	0	;Upward swiping steal animations. (AM: I don't like these animations at all!)
 
