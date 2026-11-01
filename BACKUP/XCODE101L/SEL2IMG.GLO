@@ -243,6 +243,7 @@
 	.global	BRUNSON
 	.global	BUTLER
 	.global	CARTER
+	.global	CHAMBERLAIN
 	.global	COUSINS
 	.global	CURRY_NP
 	.global	DAUGHE_NP
@@ -252,6 +253,7 @@
 	.global	DUNCAN
 	.global	EMBIID
 	.global	ERVING
+	.global	FRAZIER
 	.global	GASOL
 	.global	MGASOL
 	.global	GEORGE_NP

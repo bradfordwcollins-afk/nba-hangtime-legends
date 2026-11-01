@@ -84,6 +84,8 @@
 	.global	ABDULJAB
 	.global	DONCIC_NP
 	.global	MGASOL
+	.global	CHAMBERLAIN
+	.global	FRAZIER
 	.global	BARKLEY
 	.global	PORTER
 	.global	MAJERLE

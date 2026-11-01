@@ -1216,584 +1216,589 @@ XAHN_MUG:
 	.long   099055faH
 	.word   05480H
 	.long   XAHN_MUGP
-XOAK_MUG:
-	.word   70,65,0,65
-	.long   0990889eH
-	.word   05480H
-	.long   XOAK_MUGP
 XGHL_MUG:
 	.word   59,62,0,62
-	.long   0990c2afH
+	.long   0990889eH
 	.word   05080H
 	.long   XGHL_MUGP
 XDUM_MUG:
 	.word   59,62,0,62
-	.long   0990f807H
+	.long   0990bdf6H
 	.word   05080H
 	.long   XDUM_MUGP
 XJMB_MUG:
 	.word   78,61,0,61
-	.long   09912f17H
+	.long   0990f506H
 	.word   05480H
 	.long   XJMB_MUGP
 XHRD_MUG:
 	.word   59,62,0,62
-	.long   099166b5H
+	.long   09912ca4H
 	.word   05580H
 	.long   XHRD_MUGP
 XJHW_MUG:
 	.word   58,63,0,63
-	.long   099196bdH
+	.long   09915cacH
 	.word   05180H
 	.long   XJHW_MUGP
 XMTB_MUG:
 	.word   60,62,0,62
-	.long   0991c58dH
+	.long   09918b7cH
 	.word   05480H
 	.long   XMTB_MUGP
 XCDX_MUG:
 	.word   70,63,0,63
-	.long   0991f72aH
+	.long   0991bd19H
 	.word   05480H
 	.long   XCDX_MUGP
 XMRC_MUG:
 	.word   55,63,0,63
-	.long   09922cdfH
+	.long   0991f2ceH
 	.word   05080H
 	.long   XMRC_MUGP
 XMFN_MUG:
 	.word   63,63,0,63
-	.long   09925ca4H
+	.long   09922293H
 	.word   05580H
 	.long   XMFN_MUGP
 XOLA_MUG:
 	.word   74,62,0,62
-	.long   09928ff7H
+	.long   099255e6H
 	.word   05480H
 	.long   XOLA_MUGP
 XDRB_MUG:
 	.word   53,63,0,63
-	.long   0992c3a6H
+	.long   09928995H
 	.word   05080H
 	.long   XDRB_MUGP
 GIAN_MUG:
 	.word   58,62,0,62
-	.long   0992f40bH
+	.long   0992b9faH
 	.word   06480H
 	.long   GIAN_MUGP
 XMCH_MUG:
 	.word   59,62,0,62
-	.long   09932b1dH
+	.long   0992f10cH
 	.word   06180H
 	.long   XMCH_MUGP
 XPIE_MUG:
 	.word   59,62,0,62
-	.long   0993616fH
+	.long   0993275eH
 	.word   06180H
 	.long   XPIE_MUGP
 XTAT_MUG:
 	.word   59,62,0,62
-	.long   099398f9H
+	.long   09935ee8H
 	.word   06480H
 	.long   XTAT_MUGP
 XPAR_MUG:
 	.word   59,62,0,62
-	.long   0993cdb3H
+	.long   099393a2H
 	.word   06480H
 	.long   XPAR_MUGP
 XBRU_MUG:
 	.word   59,62,0,62
-	.long   09940687H
+	.long   0993cc76H
 	.word   06480H
 	.long   XBRU_MUGP
+XFRA_MUG:
+	.word   59,62,0,62
+	.long   099405ecH
+	.word   06480H
+	.long   XFRA_MUGP
 XIVE_MUG:
 	.word   59,62,0,62
-	.long   09943ffdH
+	.long   099447deH
 	.word   06580H
 	.long   XIVE_MUGP
 XEMB_MUG:
 	.word   59,62,0,62
-	.long   099477c9H
+	.long   09947faaH
 	.word   06080H
 	.long   XEMB_MUGP
 XMMA_MUG:
 	.word   59,62,0,62
-	.long   0994b907H
+	.long   0994c0e8H
 	.word   06080H
 	.long   XMMA_MUGP
 XERV_MUG:
 	.word   59,62,0,62
-	.long   0994fd3fH
+	.long   09950520H
 	.word   06180H
 	.long   XERV_MUGP
 XCAR_MUG:
 	.word   59,62,0,62
-	.long   09953a93H
+	.long   09954274H
 	.word   06680H
 	.long   XCAR_MUGP
 XKAW_MUG:
 	.word   59,62,0,62
-	.long   09956bffH
+	.long   099573f8H
 	.word   06080H
 	.long   XKAW_MUGP
 XBOS_MUG:
 	.word   59,62,0,62
-	.long   0995a4a3H
+	.long   0995ac9cH
 	.word   06480H
 	.long   XBOS_MUGP
 XDER_MUG:
 	.word   59,62,0,62
-	.long   0995db01H
+	.long   0995e2faH
 	.word   06580H
 	.long   XDER_MUGP
 XDRO_MUG:
 	.word   59,62,0,62
-	.long   099614b9H
+	.long   09961cb2H
 	.word   06080H
 	.long   XDRO_MUGP
 XKYR_MUG:
 	.word   59,62,0,62
-	.long   09964d7bH
+	.long   09965574H
 	.word   06080H
 	.long   XKYR_MUGP
 XMIT_MUG:
 	.word   59,62,0,62
-	.long   09968775H
+	.long   09968f6eH
 	.word   06080H
 	.long   XMIT_MUGP
 XDAU_MUG:
 	.word   59,62,0,62
-	.long   0996c04fH
+	.long   0996c848H
 	.word   06480H
 	.long   XDAU_MUGP
 XISI_MUG:
 	.word   59,62,0,62
-	.long   0996f4afH
+	.long   0996fca8H
 	.word   06080H
 	.long   XISI_MUGP
 XLAI_MUG:
 	.word   59,62,0,62
-	.long   09972fe7H
+	.long   099737e0H
 	.word   06080H
 	.long   XLAI_MUGP
 XBWA_MUG:
 	.word   59,62,0,62
-	.long   09976c21H
+	.long   0997741aH
 	.word   06080H
 	.long   XBWA_MUGP
 XRMI_MUG:
 	.word   59,62,0,62
-	.long   0997aaefH
+	.long   0997b2e8H
 	.word   06080H
 	.long   XRMI_MUGP
 XHAL_MUG:
 	.word   59,62,0,62
-	.long   0997e105H
+	.long   0997e8feH
 	.word   06480H
 	.long   XHAL_MUGP
 XJRS_MUG:
 	.word   59,62,0,62
-	.long   099818b3H
+	.long   099820acH
 	.word   06080H
 	.long   XJRS_MUGP
 XART_MUG:
 	.word   59,62,0,62
-	.long   099851dbH
+	.long   099859d4H
 	.word   06580H
 	.long   XART_MUGP
 XMID_MUG:
 	.word   59,62,0,62
-	.long   099886efH
+	.long   09988ee8H
 	.word   06580H
 	.long   XMID_MUGP
 XALL_MUG:
 	.word   59,62,0,62
-	.long   0998bba3H
+	.long   0998c39cH
 	.word   06580H
 	.long   XALL_MUGP
 XROB_MUG:
 	.word   59,62,0,62
-	.long   0998f16bH
+	.long   0998f964H
 	.word   06480H
 	.long   XROB_MUGP
 XTAE_MUG:
 	.word   59,62,0,62
-	.long   09992d2dH
+	.long   09993526H
 	.word   06080H
 	.long   XTAE_MUGP
 XWIL_MUG:
 	.word   59,62,0,62
-	.long   09996b11H
+	.long   0999730aH
 	.word   06080H
 	.long   XWIL_MUGP
 XKOR_MUG:
 	.word   59,62,0,62
-	.long   0999a79fH
+	.long   0999af98H
 	.word   06080H
 	.long   XKOR_MUGP
 XBOG_MUG:
 	.word   59,62,0,62
-	.long   0999e667H
+	.long   0999ee60H
 	.word   06680H
 	.long   XBOG_MUGP
 XWAD_MUG:
 	.word   59,62,0,62
-	.long   099a1f47H
+	.long   099a2740H
 	.word   06080H
 	.long   XWAD_MUGP
 XBUT_MUG:
 	.word   59,62,0,62
-	.long   099a54c7H
+	.long   099a5cc0H
 	.word   06080H
 	.long   XBUT_MUGP
 XBAM_MUG:
 	.word   59,62,0,62
-	.long   099a8c87H
+	.long   099a9480H
 	.word   06580H
 	.long   XBAM_MUGP
 XSHQ_MUG:
 	.word   59,62,0,62
-	.long   099ac0dbH
+	.long   099ac8d4H
 	.word   06080H
 	.long   XSHQ_MUGP
 XDWI_MUG:
 	.word   59,62,0,62
-	.long   099afc4fH
+	.long   099b0448H
 	.word   06080H
 	.long   XDWI_MUGP
 XADA_MUG:
 	.word   59,62,0,62
-	.long   099b2ee7H
+	.long   099b36e0H
 	.word   06580H
 	.long   XADA_MUGP
 XBEA_MUG:
 	.word   59,62,0,62
-	.long   099b63d7H
+	.long   099b6bd0H
 	.word   06580H
 	.long   XBEA_MUGP
 XJOK_MUG:
 	.word   59,62,0,62
-	.long   099b9a6bH
+	.long   099ba264H
 	.word   06080H
 	.long   XJOK_MUGP
 XJMU_MUG:
 	.word   59,62,0,62
-	.long   099bd17dH
+	.long   099bd976H
 	.word   06080H
 	.long   XJMU_MUGP
 XMEL_MUG:
 	.word   59,62,0,62
-	.long   099c16b7H
+	.long   099c1eb0H
 	.word   06080H
 	.long   XMEL_MUGP
 XBIL_MUG:
 	.word   59,62,0,62
-	.long   099c4ec5H
+	.long   099c56beH
 	.word   06080H
 	.long   XBIL_MUGP
 XGAR_MUG:
 	.word   59,62,0,62
-	.long   099c84b7H
+	.long   099c8cb0H
 	.word   06180H
 	.long   XGAR_MUGP
 XANT_MUG:
 	.word   59,62,0,62
-	.long   099cb9a7H
+	.long   099cc1a0H
 	.word   06080H
 	.long   XANT_MUGP
 XLAM_MUG:
 	.word   59,62,0,62
-	.long   099cf821H
+	.long   099d001aH
 	.word   06580H
 	.long   XLAM_MUGP
 XWES_MUG:
 	.word   59,62,0,62
-	.long   099d2d35H
+	.long   099d352eH
 	.word   06180H
 	.long   XWES_MUGP
 XSGA_MUG:
 	.word   59,62,0,62
-	.long   099d6423H
+	.long   099d6c1cH
 	.word   06080H
 	.long   XSGA_MUGP
 XLIL_MUG:
 	.word   59,62,0,62
-	.long   099d9a81H
+	.long   099da27aH
 	.word   06180H
 	.long   XLIL_MUGP
 XALD_MUG:
 	.word   59,62,0,62
-	.long   099dceabH
+	.long   099dd6a4H
 	.word   06080H
 	.long   XALD_MUGP
 XMAR_MUG:
 	.word   59,62,0,62
-	.long   099e054bH
+	.long   099e0d44H
 	.word   06180H
 	.long   XMAR_MUGP
 XSTE_MUG:
 	.word   59,62,0,62
-	.long   099e443dH
+	.long   099e4c36H
 	.word   06480H
 	.long   XSTE_MUGP
 XKLA_MUG:
 	.word   59,62,0,62
-	.long   099e79b1H
+	.long   099e81aaH
 	.word   06080H
 	.long   XKLA_MUGP
+XWLT_MUG:
+	.word   59,62,0,62
+	.long   099ebad2H
+	.word   06480H
+	.long   XWLT_MUGP
 XCCP_MUG:
 	.word   59,62,0,62
-	.long   099eb2d9H
+	.long   099ef9caH
 	.word   06480H
 	.long   XCCP_MUGP
 XGRI_MUG:
 	.word   59,62,0,62
-	.long   099ee895H
+	.long   099f2f86H
 	.word   06080H
 	.long   XGRI_MUGP
 XPGE_MUG:
 	.word   59,62,0,62
-	.long   099f1fb9H
+	.long   099f66aaH
 	.word   06080H
 	.long   XPGE_MUGP
 XGAS_MUG:
 	.word   59,62,0,62
-	.long   099f5461H
+	.long   099f9b52H
 	.word   06580H
 	.long   XGAS_MUGP
 XWOR_MUG:
 	.word   59,62,0,62
-	.long   099f8a29H
+	.long   099fd11aH
 	.word   06180H
 	.long   XWOR_MUGP
 XBOO_MUG:
 	.word   59,62,0,62
-	.long   099fc46bH
+	.long   09a00b5cH
 	.word   06080H
 	.long   XBOO_MUGP
 XNAS_MUG:
 	.word   59,62,0,62
-	.long   099ff925H
+	.long   09a04016H
 	.word   06180H
 	.long   XNAS_MUGP
 XMAJ_MUG:
 	.word   59,62,0,62
-	.long   09a03385H
+	.long   09a07a76H
 	.word   06080H
 	.long   XMAJ_MUGP
 XWEB_MUG:
 	.word   59,62,0,62
-	.long   09a06e09H
+	.long   09a0b4faH
 	.word   06180H
 	.long   XWEB_MUGP
 XDVC_MUG:
 	.word   59,62,0,62
-	.long   09a0a473H
+	.long   09a0eb64H
 	.word   06080H
 	.long   XDVC_MUGP
 XCOU_MUG:
 	.word   59,62,0,62
-	.long   09a0dc75H
+	.long   09a12366H
 	.word   06580H
 	.long   XCOU_MUGP
 XDIR_MUG:
 	.word   59,62,0,62
-	.long   09a10fc1H
+	.long   09a156b2H
 	.word   06580H
 	.long   XDIR_MUGP
 XHAR_MUG:
 	.word   59,62,0,62
-	.long   09a145c5H
+	.long   09a18cb6H
 	.word   06580H
 	.long   XHAR_MUGP
 XYAO_MUG:
 	.word   59,62,0,62
-	.long   09a1794dH
+	.long   09a1c03eH
 	.word   06580H
 	.long   XYAO_MUGP
 XTMA_MUG:
 	.word   59,62,0,62
-	.long   09a1ae01H
+	.long   09a1f4f2H
 	.word   06580H
 	.long   XTMA_MUGP
 XMOR_MUG:
 	.word   59,62,0,62
-	.long   09a1e3edH
+	.long   09a22adeH
 	.word   06080H
 	.long   XMOR_MUGP
 XMGA_MUG:
 	.word   59,62,0,62
-	.long   09a220ffH
+	.long   09a267f0H
 	.word   06180H
 	.long   XMGA_MUGP
 XBAN_MUG:
 	.word   59,62,0,62
-	.long   09a2570fH
+	.long   09a29e00H
 	.word   06080H
 	.long   XBAN_MUGP
 XDUN_MUG:
 	.word   59,62,0,62
-	.long   09a28ef9H
+	.long   09a2d5eaH
 	.word   06180H
 	.long   XDUN_MUGP
 XPRK_MUG:
 	.word   59,62,0,62
-	.long   09a2c28dH
+	.long   09a3097eH
 	.word   06480H
 	.long   XPRK_MUGP
 XMAN_MUG:
 	.word   59,62,0,62
-	.long   09a2f77dH
+	.long   09a33e6eH
 	.word   06080H
 	.long   XMAN_MUGP
 XWEM_MUG:
 	.word   59,62,0,62
-	.long   09a32be9H
+	.long   09a372daH
 	.word   06080H
 	.long   XWEM_MUGP
 T_NUGS_L:
 	.word   72,72,36,36
-	.long   09a35fefH
+	.long   09a3a6e0H
 	.word   06580H
 	.long   LGP_DEN
 T_BUCKS_L:
 	.word   59,72,29,36
-	.long   09a3c343H
+	.long   09a40a34H
 	.word   06080H
 	.long   LGP_MIL
 T_CAVS_L:
 	.word   71,72,35,36
-	.long   09a41635H
+	.long   09a45d26H
 	.word   06580H
 	.long   LGP_CLE
 T_HAWKS_L:
 	.word   72,72,36,36
-	.long   09a4752dH
+	.long   09a4bc1eH
 	.word   06580H
 	.long   LGP_ATL
 T_MAVS_L:
 	.word   67,72,33,36
-	.long   09a4d911H
+	.long   09a52002H
 	.word   06580H
 	.long   LGP_DAL
 T_BLAZ_L:
 	.word   65,72,32,36
-	.long   09a5301dH
+	.long   09a5770eH
 	.word   06580H
 	.long   LGP_POR
 T_SUNS_L:
 	.word   76,63,38,31
-	.long   09a58525H
+	.long   09a5cc16H
 	.word   06a80H
 	.long   LGP_PHX
 T_MAGIC_L:
 	.word   76,56,38,28
-	.long   09a5c965H
+	.long   09a61056H
 	.word   06280H
 	.long   LGP_ORL
 T_CLIPS_L:
 	.word   72,72,36,36
-	.long   09a619cdH
+	.long   09a660beH
 	.word   06580H
 	.long   LGP_LAC
 T_KINGS_L:
 	.word   63,72,31,36
-	.long   09a67dbdH
+	.long   09a6c4aeH
 	.word   06680H
 	.long   LGP_SAC
 T_76RS_L:
 	.word   72,72,36,36
-	.long   09a6e081H
+	.long   09a72772H
 	.word   06580H
 	.long   LGP_PHI
 T_GRIZZ_L:
 	.word   76,65,38,32
-	.long   09a743b1H
+	.long   09a78aa2H
 	.word   06580H
 	.long   LGP_VAN
 T_SPURS_L:
 	.word   76,41,38,20
-	.long   09a797f1H
+	.long   09a7dee2H
 	.word   06980H
 	.long   LGP_SAS
 T_TWOLV_L:
 	.word   72,72,36,36
-	.long   09a7d119H
+	.long   09a8180aH
 	.word   06580H
 	.long   LGP_MIN
 T_WARS_L:
 	.word   72,72,36,36
-	.long   09a83461H
+	.long   09a87b52H
 	.word   06580H
 	.long   LGP_GSW
 T_PISS_L:
 	.word   72,72,36,36
-	.long   09a89761H
+	.long   09a8de52H
 	.word   06580H
 	.long   LGP_DET
 T_NETS_L:
 	.word   71,72,35,36
-	.long   09a8fb21H
+	.long   09a94212H
 	.word   06580H
 	.long   LGP_NJN
 T_HORS_L:
 	.word   76,72,38,36
-	.long   09a95875H
+	.long   09a99f66H
 	.word   06a80H
 	.long   LGP_CHA
 T_SONICS_L:
 	.word   68,72,34,36
-	.long   09a9aaf5H
+	.long   09a9f1e6H
 	.word   06580H
 	.long   LGP_SEA
 T_RAPT_L:
 	.word   72,72,36,36
-	.long   09aa0669H
+	.long   09aa4d5aH
 	.word   06580H
 	.long   LGP_TOR
 T_KNIKS_L:
 	.word   76,62,38,31
-	.long   09aa6a29H
+	.long   09aab11aH
 	.word   06580H
 	.long   LGP_NYK
 T_HEAT_L:
 	.word   69,72,34,36
-	.long   09aaaf5dH
+	.long   09aaf64eH
 	.word   06680H
 	.long   LGP_MIA
 T_LAKS_L:
 	.word   76,47,38,23
-	.long   09aaf385H
+	.long   09ab3a76H
 	.word   06580H
 	.long   LGP_LAL
 T_BULLS_L:
 	.word   76,68,38,34
-	.long   09ab2cd1H
+	.long   09ab73c2H
 	.word   06580H
 	.long   LGP_CHI
 T_CELTS_L:
 	.word   65,72,32,36
-	.long   09ab7dc9H
+	.long   09abc4baH
 	.word   06580H
 	.long   LGP_BOS
 T_PACER_L:
 	.word   72,72,36,36
-	.long   09abd87dH
+	.long   09ac1f6eH
 	.word   06580H
 	.long   LGP_IND
 T_JAZZ_L:
 	.word   78,34,39,17
-	.long   09ac3badH
+	.long   09ac829eH
 	.word   06180H
 	.long   LGP_UTA
 T_ROCKS_L:
 	.word   76,57,38,28
-	.long   09ac6e37H
+	.long   09acb528H
 	.word   06580H
 	.long   LGP_HOU
 T_BULTS_L:
 	.word   72,72,36,36
-	.long   09acb7ffH
+	.long   09acfef0H
 	.word   06580H
 	.long   LGP_WAS
 	.TEXT

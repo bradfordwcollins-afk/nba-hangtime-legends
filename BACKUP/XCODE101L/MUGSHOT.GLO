@@ -479,8 +479,6 @@
 	.global	LUK_MUG
 	.globl	XAHN_MUGP
 	.global	XAHN_MUG
-	.globl	XOAK_MUGP
-	.global	XOAK_MUG
 	.globl	XGHL_MUGP
 	.global	XGHL_MUG
 	.globl	XDUM_MUGP
@@ -515,6 +513,8 @@
 	.global	XPAR_MUG
 	.globl	XBRU_MUGP
 	.global	XBRU_MUG
+	.globl	XFRA_MUGP
+	.global	XFRA_MUG
 	.globl	XIVE_MUGP
 	.global	XIVE_MUG
 	.globl	XEMB_MUGP
@@ -609,6 +609,8 @@
 	.global	XSTE_MUG
 	.globl	XKLA_MUGP
 	.global	XKLA_MUG
+	.globl	XWLT_MUGP
+	.global	XWLT_MUG
 	.globl	XCCP_MUGP
 	.global	XCCP_MUG
 	.globl	XGRI_MUGP

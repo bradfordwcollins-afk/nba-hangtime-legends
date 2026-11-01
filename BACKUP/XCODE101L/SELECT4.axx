@@ -4583,18 +4583,18 @@ player_heads
 	.long	XSTE_MUG,XKLA_MUG
 	.long	XSTE_MUG,MUL_GLD
 
+	.long	XSTE_MUG,XWLT_MUG
 	.long	XKLA_MUG,XSTE_MUG
-	.long	XKLA_MUG,MUL_GLD
 
+	.long	XKLA_MUG,MUL_GLD
+	.long	XKLA_MUG,XWLT_MUG
+			
 	.long	MUL_GLD,XSTE_MUG
 	.long	MUL_GLD,XKLA_MUG
-			
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	MUL_GLD,XWLT_MUG
+	.long	XWLT_MUG,XSTE_MUG
+	.long	XWLT_MUG,XKLA_MUG
+	.long	XWLT_MUG,MUL_GLD
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -4815,28 +4815,28 @@ player_heads
 ;17 NEW YORK
 	.long	EWG_NEY,XBRU_MUG
 	.long	EWG_NEY,XAHN_MUG
-	.long	EWG_NEY,XOAK_MUG
-	.long	EWG_NEY,STA_NEY
-
+	.long	EWG_NEY,XFRA_MUG
 	.long	XBRU_MUG,EWG_NEY
-	.long	XBRU_MUG,XAHN_MUG
-	.long	XBRU_MUG,XOAK_MUG
-	.long	XBRU_MUG,STA_NEY
 
+	.long	XBRU_MUG,XAHN_MUG
+	.long	XBRU_MUG,XFRA_MUG
 	.long	XAHN_MUG,EWG_NEY
 	.long	XAHN_MUG,XBRU_MUG
-	.long	XAHN_MUG,XOAK_MUG
-	.long	XAHN_MUG,STA_NEY
 
-	.long	XOAK_MUG,EWG_NEY
-	.long	XOAK_MUG,XBRU_MUG
-	.long	XOAK_MUG,XAHN_MUG
-	.long	XOAK_MUG,STA_NEY
+	.long	XAHN_MUG,XFRA_MUG
+	.long	XFRA_MUG,EWG_NEY
+	.long	XFRA_MUG,XBRU_MUG
+	.long	XFRA_MUG,XAHN_MUG
 
-	.long	STA_NEY,EWG_NEY
-	.long	STA_NEY,XBRU_MUG
-	.long	STA_NEY,XAHN_MUG
-	.long	STA_NEY,XOAK_MUG
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;18 ORLANDO
 	.long	XSHQ_MUG,HAR_ORL
@@ -5378,18 +5378,18 @@ WALLACE	.equ	11
 	.long	CURRY_NP,THOMPS_NP
 	.long	CURRY_NP,MULLIN
 
+	.long	CURRY_NP,CHAMBERLAIN
 	.long	THOMPS_NP,CURRY_NP
+
 	.long	THOMPS_NP,MULLIN
+	.long	THOMPS_NP,CHAMBERLAIN
 
 	.long	MULLIN,CURRY_NP
 	.long	MULLIN,THOMPS_NP
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	MULLIN,CHAMBERLAIN
+	.long	CHAMBERLAIN,CURRY_NP
+	.long	CHAMBERLAIN,THOMPS_NP
+	.long	CHAMBERLAIN,MULLIN
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5611,28 +5611,28 @@ WALLACE	.equ	11
 ;17 NEW YORK
 	.long	EWING,BRUNSON
 	.long	EWING,HOUSTON
-	.long	EWING,OAKLEY
-	.long	EWING,STARKS
-
+	.long	EWING,FRAZIER
 	.long	BRUNSON,EWING
-	.long	BRUNSON,HOUSTON
-	.long	BRUNSON,OAKLEY
-	.long	BRUNSON,STARKS
 
+	.long	BRUNSON,HOUSTON
+	.long	BRUNSON,FRAZIER
 	.long	HOUSTON,EWING
 	.long	HOUSTON,BRUNSON
-	.long	HOUSTON,OAKLEY
-	.long	HOUSTON,STARKS
 
-	.long	OAKLEY,EWING
-	.long	OAKLEY,BRUNSON
-	.long	OAKLEY,HOUSTON
-	.long	OAKLEY,STARKS
+	.long	HOUSTON,FRAZIER
+	.long	FRAZIER,EWING
+	.long	FRAZIER,BRUNSON
+	.long	FRAZIER,HOUSTON
 
-	.long	STARKS,EWING
-	.long	STARKS,BRUNSON
-	.long	STARKS,HOUSTON
-	.long	STARKS,OAKLEY
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;18 ORLANDO
 	.long	ONEAL,AHARDAWAY

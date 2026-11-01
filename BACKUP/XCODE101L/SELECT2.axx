@@ -5491,8 +5491,8 @@ player_attribs
 	.word  06,04,10,03
 	.word  08,03,07,08	;MULLIN
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  06,10,07,10
+	.word  04,10,05,08	;WILT CHAMBERLAIN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5671,11 +5671,11 @@ player_attribs
 	.word  07,04,09,05
 	.word  05,02,05,09	;HOUSTON
 
-	.word  05,10,05,06
-	.word  06,04,05,06	;OAKLEY
+	.word  08,06,08,05
+	.word  10,03,09,10	;WALT FRAZIER
 
-	.word  08,04,08,07
-	.word  07,02,06,08	;STARKS
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 ;Speed, Power, Shoot, Dunk
 ;Steal, Block, Pass ability, Clutch
@@ -5952,7 +5952,7 @@ name_sort
  .long	NOWITZKI,DONCIC_NP,FINLEY,BRADLEY,BRADLEY		;05 DAL
  .long	JOKIC,MUTUMBO,MURRAY_NP,ANTHONY,BILLUPS		;06 DEN
  .long	THOMAS_NP,GHILL,DUMARS,LAIMBE_NP,WALLAC_NP		;07 DET
- .long	CURRY_NP,THOMPS_NP,MULLIN,MULLIN,MULLIN		;08 GSW
+ .long	CURRY_NP,THOMPS_NP,MULLIN,CHAMBERLAIN,CHAMBERLAIN		;08 GSW
  .long	OLAJUWON,HARDEN,MING,MCGRADY,MCGRADY		;09 HOU
  .long	MILLER,HALIBURTON,ROSE,SMITS,ARTEST		;10 IND
  .long	PAUL_NP,GRIFFIN,GEORGE_NP,GEORGE_NP,GEORGE_NP		;11 LAC
@@ -5961,7 +5961,7 @@ name_sort
  .long	ANTETOKO,MIDDLETON,ALLEN,GROBINSO,ROBERT_NP		;14 MIL
  .long	GARNETT,EDWARDS,BALL_NP,SPREWELL,SPREWELL		;15 MIN
  .long	KIDD,COLEMAN,KITTLES,MARBURY,MARBURY		;16 NJN
- .long	EWING,BRUNSON,HOUSTON,OAKLEY,STARKS		;17 NYK
+ .long	EWING,BRUNSON,HOUSTON,FRAZIER,FRAZIER		;17 NYK
  .long	ONEAL,AHARDAWAY,NANDERSON,HOWARD,GRANT_HC		;18 ORL
  .long	IVERSON,EMBIID,MALONE_NP,ERVING,ERVING		;19 PHI
  .long	BOOKER,BARKLEY,NASH,MAJERLE,MAJERLE		;20 PHX
@@ -6029,7 +6029,7 @@ team_sqaud_cnts
 	.word	12	;DAL (4 players)
 	.word	20	;DEN (5 players)
 	.word	20	;DET (5 players)
-	.word	6	;GSW (3 players)
+	.word	12	;GSW (4 players)
 	.word	12	;HOU (4 players)
 	.word	20	;IND (5 players)
 	.word	6	;LAC (3 players)
@@ -6038,7 +6038,7 @@ team_sqaud_cnts
 	.word	20	;MIL (5 players)
 	.word	12	;MIN (4 players)
 	.word	12	;NJN (4 players)
-	.word	20	;NYK (5 players)
+	.word	12	;NYK (4 players)
 	.word	20	;ORL (5 players)
 	.word	12	;PHI (4 players)
 	.word	12	;PHX (4 players)
