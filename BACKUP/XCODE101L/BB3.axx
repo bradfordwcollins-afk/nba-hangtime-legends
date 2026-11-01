@@ -70,6 +70,7 @@
 	.def	OUTDOOR
 	.def	UGRCRT
 	.def	BLUCRT
+	.def	BKSCRT
 ;DJT Start
 ;[pruned] .def	HOTblu,HOTgrn,HOTyel,HOTred
 ;DJT End
@@ -209,6 +210,12 @@
 	.endif
 
 	move	@pup_court,a0		;0/1/2/3 indoor/outdoor/uground/vortex
+	cmpi	2,a0			;Underground court removed (ROM room): use the Vortex
+	jrne	whcqnoug
+	movk	3,a0
+	move	a0,@pup_court
+whcqnoug
+	move	@pup_court,a0
 	jrz	whcqnext		;0 = indoor court, do normal stuff.
 	movi	whcqinit_otd_t,a11	;>Setup outdoor court objs
 
@@ -235,6 +242,16 @@ whcqgo
 	move	a0,@otdscroll_p,L
 	jruc	whcqnext
 whcqlp
+	cmpi	4003,a0			;>Home team's centre-court logo
+	jrne	whcqno4003
+	move	@team1,a0
+	cmpi	29,a0
+	jrhs	whcqnext		;not one of the 29 courts: no logo
+	sll	5,a0
+	addi	crtlogo_tbls,a0
+	move	*a0,a11,L		;continue with that team's one-object table
+	jruc	whcqnext
+whcqno4003
 	cmpi	4001,a0			;>Start process
 	jrne	whcqsvptr
 	clr	a1
@@ -792,6 +809,7 @@ whcqinit_t
 	.long	SIDECHK
 
 
+	.word	4003			;home team's centre-court logo (clt_* below)
 	.word	4000			;End
 
 
@@ -980,120 +998,159 @@ whcqinit_otd_t
 ; .long	IMG_p
 
 whcqinit_ugr_t
-;--------------------
-;The Underground
-;--------------------
-; hoops
-
-	.asg	HOOPBASE_X,X
-;FIX!!!  Alignment should be done with img ani pts, not offsets here!
-	.asg	HOOPBASE_Y-4,Y
-	.asg	CZMID,Z
-
-;Outdoor hoop setup - left side
-
-	.word	SXO-X-4,Y,Z,     0,F
-	.long	nhoopbot
-	.word	SXO-X-4,Y,Z-17, 17,F
-	.long	nback1
-	WL	4001,backboard_ani
-
-	.word	SXO-X-2,Y,Z-10, 10,F
-	.long	CHAN1B_01
-	WL	4002,rimlb
-	.word	SXO-X-2,Y,Z+10,-10,F
-	.long	CHAN1F_01
-	WL	4002,rimlf
-
-;Outdoor hoop setup - right side
-
-	.word	SXO+X+2,Y,Z,     0,FF
-	.long	nhoopbot
-	.word	SXO+X+2,Y,Z-17, 17,FF
-	.long	nback1
-	WL	4001,backboard_svrptr
-
-	.word	SXO+X,Y,Z-10, 10,FF
-	.long	CHAN1B_01
-	WL	4002,rimrb
-	.word	SXO+X,Y,Z+10,-10,FF
-	.long	CHAN1F_01
-	WL	4002,rimrf
-
-;--------------------
-; backcourt roof edge
-
-	.asg	-14,Y			;Y to realign after ZOFF
-;	.asg	-400,Y
-	.asg	CZMIN-40,Z		;Z priority back from crt top
-	.asg	40-(2*Y2Z),ZOFF		;Z off for gndpos_t element to use
-
-;--------------------
-; wall (image is 186x16 px)
-; I made SPIKETST in similar dimensions, just higher. (186x44)
-; UGRTEETHT is 246x99, not sure if that would work on real hardware/fast enough?
-
-	.asg	-28,Y			;Y to realign after ZOFF
-	.asg	CZMIN-40,Z		;Z priority back from crt top
-	.asg	40-(16*Y2Z),ZOFF	;Z off for gndpos_t element to use
-
-	.word	SXO-96-96-96-96-96,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO-96-96-96-96,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO-96-96-96,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO-96-96,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO-96,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO,Y,Z,ZOFF,F		;right from center
-	.long	UGRTEETS
-	.word	SXO+97,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO+97+97,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO+97+97+97,Y,Z,ZOFF,F
-	.long	UGRTEETS
-	.word	SXO+97+97+97+97,Y,Z,ZOFF,F
-	.long	UGRTEETS
-
-
-
-
-;--------------------
-; street lights
-
-;--------------------
-; cheerleaders
-
-;--------------------
-; side buildings
-
-;--------------------
-
-
-
-; underground backdrop 600x200
-	.asg	-88,Y			;Y to realign after ZOFF
-	.asg	210,Z			;Z priority back from crt top
-
-	.word	SXO-300,Y,Z,0,0
-	.long	UGRBKG1
-	WL	4002,city1obj
-	.word	SXO-100,Y,Z,0,0
-	.long	UGRBKG2
-	WL	4002,city2obj
-	.word	SXO+100,Y,Z,0,0
-	.long	UGRBKG3
-	WL	4002,city3obj
-
+;Underground court removed (its art made room for the centre-court logos)
 	.word	4000			;End
 
 
-;----------------------------------------------------------------------------
-; .word	X, Y, Z, Z-offset, DMA
-; .long	IMG_p
+;--------------------
+; Centre-court team logos: one floor-locked object each (Y realigns to floor row 54 via Z+ZOFF)
+	.include	"crtlogo.glo"
+crtlogo_tbls
+	.long	clt_ATL
+	.long	clt_BOS
+	.long	clt_CHA
+	.long	clt_CHI
+	.long	clt_CLE
+	.long	clt_DAL
+	.long	clt_DEN
+	.long	clt_DET
+	.long	clt_GSW
+	.long	clt_HOU
+	.long	clt_IND
+	.long	clt_LAC
+	.long	clt_LAL
+	.long	clt_MIA
+	.long	clt_MIL
+	.long	clt_MIN
+	.long	clt_NJN
+	.long	clt_NYK
+	.long	clt_ORL
+	.long	clt_PHI
+	.long	clt_PHX
+	.long	clt_POR
+	.long	clt_SAC
+	.long	clt_SAS
+	.long	clt_SEA
+	.long	clt_TOR
+	.long	clt_UTA
+	.long	clt_VAN
+	.long	clt_WAS
+clt_ATL
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_ATL
+	.word	4000
+clt_BOS
+	.word	200,-25,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_BOS
+	.word	4000
+clt_CHA
+	.word	200,-21,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_CHA
+	.word	4000
+clt_CHI
+	.word	200,-20,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_CHI
+	.word	4000
+clt_CLE
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_CLE
+	.word	4000
+clt_DAL
+	.word	200,-24,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_DAL
+	.word	4000
+clt_DEN
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_DEN
+	.word	4000
+clt_DET
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_DET
+	.word	4000
+clt_GSW
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_GSW
+	.word	4000
+clt_HOU
+	.word	200,-15,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_HOU
+	.word	4000
+clt_IND
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_IND
+	.word	4000
+clt_LAC
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_LAC
+	.word	4000
+clt_LAL
+	.word	200,-12,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_LAL
+	.word	4000
+clt_MIA
+	.word	200,-24,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_MIA
+	.word	4000
+clt_MIL
+	.word	200,-26,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_MIL
+	.word	4000
+clt_MIN
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_MIN
+	.word	4000
+clt_NJN
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_NJN
+	.word	4000
+clt_NYK
+	.word	200,-17,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_NYK
+	.word	4000
+clt_ORL
+	.word	200,-15,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_ORL
+	.word	4000
+clt_PHI
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_PHI
+	.word	4000
+clt_PHX
+	.word	200,-18,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_PHX
+	.word	4000
+clt_POR
+	.word	200,-25,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_POR
+	.word	4000
+clt_SAC
+	.word	200,-26,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_SAC
+	.word	4000
+clt_SAS
+	.word	200,-9,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_SAS
+	.word	4000
+clt_SEA
+	.word	200,-24,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_SEA
+	.word	4000
+clt_TOR
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_TOR
+	.word	4000
+clt_UTA
+	.word	200,-6,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_UTA
+	.word	4000
+clt_VAN
+	.word	200,-18,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_VAN
+	.word	4000
+clt_WAS
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_WAS
+	.word	4000
 
 whcqinit_vrt_t
 ;--------------------
@@ -4591,7 +4648,7 @@ msg_outdoor
 	.string	"Outdoor",0
 	.even
 msg_uground
-	.string	"Underground",0
+	.string	"Vortex",0
 	.even
 msg_bluvort
 	.string	"Vortex",0

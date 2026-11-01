@@ -5865,14 +5865,14 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;27 VANCOUVER
-	.long	MORANT,GASOL
+	.long	MORANT,MGASOL
 	.long	MORANT,BANE
 
-	.long	GASOL,MORANT
-	.long	GASOL,BANE
+	.long	MGASOL,MORANT
+	.long	MGASOL,BANE
 
 	.long	BANE,MORANT
-	.long	BANE,GASOL
+	.long	BANE,MGASOL
 
 	.long	0,0
 	.long	0,0

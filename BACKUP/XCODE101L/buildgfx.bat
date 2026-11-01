@@ -54,6 +54,11 @@ copy c:\tmp\htextra\dcs.* ..\
 rem Team Zone gfx
 del ..\TEAMZONE.TBL
 copy c:\tmp\htextra\TEAMZONE.TBL ..\TEAMZONE.TBL
+rem centre-court logos
+del ..\crtlogo.tbl
+del ..\crtlogo.glo
+copy c:\tmp\htextra\crtlogo.tbl ..\crtlogo.tbl
+copy c:\tmp\htextra\crtlogo.glo ..\crtlogo.glo
 rem Underground
 del ..\uground.tbl
 del ..\uground.glo

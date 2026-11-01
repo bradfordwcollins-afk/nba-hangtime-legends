@@ -20,6 +20,7 @@
 	.endif
 
 	.ref	pup_court
+	.ref	team1
 	.ref	HALT,pal_getf,FRANIMQ
 	.ref	PCNT
 	.ref	crt_colors
@@ -1063,10 +1064,12 @@ DMACRT	.equ	(((8|COURT_BC)<<12)|DMAWNZ)<<16
 	.ref	OUTDOOR
 	.ref	UGRCRT
 	.ref	BLUCRT
+	.ref	BKSCRT
 SAGCRT	.equ	COURT-IROM+(GNDI_W/2-200)*COURT_BC+BNKCRT*04000000H
 SAGOTD	.equ	OUTDOOR-IROM+(GNDI_W/2-200)*COURT_BC+BNKOTD*04000000H
 SAGUGR	.equ	UGRCRT-IROM+(GNDI_W/2-200)*COURT_BC+BNKOTD*04000000H
 SAGBLU	.equ	BLUCRT-IROM+(GNDI_W/2-200)*COURT_BC+BNKOTD*04000000H
+SAGBKS	.equ	BKSCRT-IROM+(GNDI_W/2-200)*COURT_BC+BNKOTD*04000000H	;Milwaukee Bucks home floor
 	.else
 	.ref	COURTNEW
 	.ref	OUTDOOR
@@ -1099,9 +1102,13 @@ tesrdo_x_t	move	a2,a3			;Eliminate X frac & put in table
 	movi	gndpos_t+40*16,a3	;A3=*1st court X
 	movi	SAGCRT,a6		;A6=*1st line centered of court img
 	move	@pup_court,a2		;Outdoor court?
-	jrz	tesrcrt			; br=no
-	cmpi	2,a2			;Underground?
-	jreq	ugrcrt			; br=yes
+	jrnz	tesrnotin			; br=yes, not the indoor floor
+	movi	SAGUGR,a6		;Indoor floor without the centre diamond (in the old Underground slot)
+	jruc	tesrcrt
+tesrnotin
+	move	@pup_court,a2		;Reload court type
+	cmpi	2,a2			;Underground? (removed) -> Vortex floor
+	jreq	vrtcrt			; br=yes
 	cmpi	3,a2			;Vortex?
 	jreq	vrtcrt			; br=yes
 

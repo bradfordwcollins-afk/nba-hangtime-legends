@@ -39,6 +39,8 @@
 	.include	"imgpal8.asm"
 	.include	"mugshot.tbl"
 	.include	"mugshot.glo"
+	.include	"crtlogo.tbl"	;centre-court logos
+	.include	"crtlogo.glo"
 	.include	"dcs.glo"
 	.include	"uground.glo"
 

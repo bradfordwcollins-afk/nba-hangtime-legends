@@ -2,6 +2,7 @@
 OUTDOOR	.set	0398e1f0h
 UGRCRT	.set	06000000h
 BLUCRT  .set    061ef900h
+BKSCRT	.set	063df200h
 
 sidebot:
 	.word   86,154,0,0

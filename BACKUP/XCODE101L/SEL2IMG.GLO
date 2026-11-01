@@ -253,6 +253,7 @@
 	.global	EMBIID
 	.global	ERVING
 	.global	GASOL
+	.global	MGASOL
 	.global	GEORGE_NP
 	.global	GILGEOUS
 	.global	GINOBILI
