@@ -270,6 +270,7 @@
 ;DJT End
 
 	BSSX	crt_colors	,32	;Random pal for court - NDSP1.ASM
+	BSSX	court_away	,16	;!0 = indoor game on the away team's (team2) court
 	BSSX	bkcrt_colors	,32
 ;;	BSSX	refcrt_colors	,32
 	BSSX	steals_off	,16	;!0=ticks until steals can happen
@@ -1460,6 +1461,7 @@ offpzlp	move	a0,*a1+
 	move	a0,@inmatchup
 	move	a0,@pup_tournament
 	move	a0,@pup_court			;default=INDOOR court
+	move	a0,@court_away			;default=home team's court
 	move	a0,@pup_aba			;default=regular ball
 	move	a0,@dronesmrt
 	move	a0,@fatality			;no fire pushes default
@@ -1899,10 +1901,7 @@ offpbomb_out
 
 	move	@pup_court,a14		;Outdoor court?
 	jrz	offpnootd			; br=no
-	cmpi	2,a14			;Underground court?
-	jreq	offpuground			; br=yes
-	cmpi	3,a14			;Vortex court?
-	jreq	offpvortex			; br=yes
+;Underground / Vortex courts removed: every non-zero court is the outdoor court
 
 	movk	OTD_CNT-1,a0
 	calla	RNDRNG0
@@ -1942,6 +1941,10 @@ offpgo
 	jruc	offpcrtpset
 offpnootd
 	move	@team1,a0
+	move	@court_away,a14		;Away team's court chosen on the matchup screen?
+	jrz	offphomecrt
+	move	@team2,a0
+offphomecrt
 	sll	6,a0
 ;;	sll	5,a0
 ;;	move	a0,a14

@@ -2545,7 +2545,7 @@ edzxotd
 ;	and	a14,a0
 ;	move	a0,@pup_court
 	
-	movk	3,a0			;This does!
+	movk	1,a0			;indoor or outdoor (Underground / Vortex removed)
 	calla	RNDRNG0
 	move	a0,@pup_court
 

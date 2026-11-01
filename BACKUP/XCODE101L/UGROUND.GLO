@@ -1,11 +1,1 @@
-	.globl	BLUBAKP
-	.global	BLUBAK1
-	.global	BLUBAK2
-	.global	BLUBAK3
-	.globl	TEMPLEPAL
-	.global	STEMPLEL
-	.global	STEMPLER
-	.global	TFENCE
-	.globl	SIDENEWP
-	.global	NEWBOT
-	.global	NEWTOP
+;Underground / Vortex court art removed

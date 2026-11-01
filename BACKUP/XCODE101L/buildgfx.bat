@@ -59,11 +59,7 @@ del ..\crtlogo.tbl
 del ..\crtlogo.glo
 copy c:\tmp\htextra\crtlogo.tbl ..\crtlogo.tbl
 copy c:\tmp\htextra\crtlogo.glo ..\crtlogo.glo
-rem Underground
-del ..\uground.tbl
-del ..\uground.glo
-copy c:\tmp\htextra\uground.tbl ..\uground.tbl
-copy c:\tmp\htextra\uground.glo ..\uground.glo
+rem Underground / Vortex art removed: uground.tbl / uground.glo stay as the empty stubs in the source tree
 rem unused dunks
 del ..\PLYRDSQ3.TBL
 copy c:\tmp\htextra\PLYRDSQ3.TBL ..\PLYRDSQ3.TBL

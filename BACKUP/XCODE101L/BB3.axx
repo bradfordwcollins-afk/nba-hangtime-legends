@@ -81,6 +81,7 @@
 	.ref	gndx
 	.ref	team1,team2
 	.ref	oteam1
+	.ref	court_away
 	.ref	crt_colors
 	.ref	bkcrt_colors
 ;;	.ref	refcrt_colors
@@ -210,9 +211,9 @@
 	.endif
 
 	move	@pup_court,a0		;0/1/2/3 indoor/outdoor/uground/vortex
-	cmpi	2,a0			;Underground court removed (ROM room): use the Vortex
-	jrne	whcqnoug
-	movk	3,a0
+	cmpi	2,a0			;Underground / Vortex courts removed: any other court is the outdoor one
+	jrlo	whcqnoug
+	movk	1,a0
 	move	a0,@pup_court
 whcqnoug
 	move	@pup_court,a0
@@ -245,6 +246,10 @@ whcqlp
 	cmpi	4003,a0			;>Home team's centre-court logo
 	jrne	whcqno4003
 	move	@team1,a0
+	move	@court_away,a14		;away team's court?
+	jrz	whcqhomelogo
+	move	@team2,a0
+whcqhomelogo
 	cmpi	29,a0
 	jrhs	whcqnext		;not one of the 29 courts: no logo
 	sll	5,a0
@@ -1153,166 +1158,7 @@ clt_WAS
 	.word	4000
 
 whcqinit_vrt_t
-;--------------------
-;The Vortex
-;--------------------
-; hoops
-
-	.asg	HOOPBASE_X,X
-;FIX!!!  Alignment should be done with img ani pts, not offsets here!
-	.asg	HOOPBASE_Y-4,Y
-	.asg	CZMID,Z
-
-;Outdoor hoop setup - left side
-
-	.word	SXO-X-4,Y,Z,     0,F
-	.long	nhoopbot
-	.word	SXO-X-4,Y,Z-17, 17,F
-	.long	nback1
-	WL	4001,backboard_ani
-
-	.word	SXO-X-2,Y,Z-10, 10,F
-	.long	CHAN1B_01
-	WL	4002,rimlb
-	.word	SXO-X-2,Y,Z+10,-10,F
-	.long	CHAN1F_01
-	WL	4002,rimlf
-
-;Outdoor hoop setup - right side
-
-	.word	SXO+X+2,Y,Z,     0,FF
-	.long	nhoopbot
-	.word	SXO+X+2,Y,Z-17, 17,FF
-	.long	nback1
-	WL	4001,backboard_svrptr
-
-	.word	SXO+X,Y,Z-10, 10,FF
-	.long	CHAN1B_01
-	WL	4002,rimrb
-	.word	SXO+X,Y,Z+10,-10,FF
-	.long	CHAN1F_01
-	WL	4002,rimrf
-
-;--------------------
-; backcourt roof edge
-
-	.asg	-14,Y			;Y to realign after ZOFF
-	.asg	CZMIN-40,Z		;Z priority back from crt top
-	.asg	40-(2*Y2Z),ZOFF		;Z off for gndpos_t element to use
-
-	.word	SXO-493,Y,Z,ZOFF,F
-	.long	BKg1
-	.word	SXO-326,Y,Z,ZOFF,F
-	.long	BKg2
-	.word	SXO,Y,Z,ZOFF,FF
-	.long	BKg2
-	.word	SXO,Y,Z,ZOFF,F
-	.long	BKg2
-	.word	SXO+326,Y,Z,ZOFF,FF
-	.long	BKg2
-	.word	SXO+493,Y,Z,ZOFF,FF
-	.long	BKg1
-
-
-;--------------------
-; Temple
-
-	.asg	-51,Y			;Y to realign after ZOFF
-	.asg	290,Z			;Z priority back from crt top
-	.asg	CZMIN-Z-(16*Y2Z),ZOFF	;Z off for gndpos_t element to use
-
-	.word	SXO-122,Y-99,Z,ZOFF,F  ;120 too much
-	.long	STEMPLEL
-	.word	SXO,Y-99,Z,ZOFF,F
-	.long	STEMPLER
-
-;--------------------
-; fence walls
-; this area was 6x186 = 1116 but some parts on the side not covered completely
-; the original wall was 186 wide but scaled down? to 165 in the game.? (-21)
-; TFENCE is 67 wide and 36 high. BKWALL 186 wide 16 high.
-
-	.asg	-36,Y			;Y to realign after ZOFF (was -16 ,counts from bottom)
-
-	.asg	CZMIN-40,Z		;Z priority back from crt top
-	.asg	40-(16*Y2Z),ZOFF	;Z off for gndpos_t element to use
-
-	.word	SXO-330-80-60,Y,Z,ZOFF,F
-	.long	TFENCE
-	.word	SXO-330-84,Y,Z,ZOFF,F
-	.long	TFENCE
-	.word	SXO+331+26,Y,Z,ZOFF,F
-	.long	TFENCE
-	.word	SXO+331+80,Y,Z,ZOFF,F
-	.long	TFENCE
-
-
-;--------------------
-; street lights
-
-;--------------------
-; cheerleaders
-
-	.asg	0,Y			;Y to realign after ZOFF
-	.asg	CZMIN-24,Z		;Z priority back from crt top
-	.asg	0,ZOFF			;Z off for gndpos_t element to use
-
-	.word	SXO-424,Y,Z,ZOFF,F
-	.long	CHEERA01
-	WL	4001,otd_chldr_ani_lft
-	.word	SXO+428,Y,Z,ZOFF,F
-	.long	CHEERB01
-	WL	4001,otd_chldr_ani_rgt
-
-;--------------------
-; side buildings
-
-	.asg	-33,Y			;Y to realign after ZOFF
-	.asg	CZMIN-39,Z		;Z priority back from crt top
-	.asg	39-(16*Y2Z),ZOFF	;Z off for gndpos_t element to use
-
-	.word	SXO-544,Y,Z,ZOFF,F
-	.long	NEWBOT
-	.word	SXO+540,Y,Z,ZOFF,FF
-	.long	NEWBOT
-
-
-	.asg	290,Z			;Z priority back from crt top
-	.asg	CZMIN-Z-(16*Y2Z),ZOFF	;Z off for gndpos_t element to use
-
-	.word	SXO-544,Y,Z,ZOFF,F
-	.long	NEWTOP
-	.word	SXO+540,Y,Z,ZOFF,FF
-	.long	NEWTOP
-
-;--------------------
-; Vortex backdrop
-
-	.asg	-190,Y			;Y to realign after ZOFF
-	.asg	210,Z			;Z priority back from crt top
-
-	.word	SXO-300,Y,Z,0,0
-	.long	BLUBAK1
-	WL	4002,city1obj
-	.word	SXO-100,Y,Z,0,0
-	.long	BLUBAK2
-	WL	4002,city2obj
-	.word	SXO+100,Y,Z,0,0
-	.long	BLUBAK3
-	WL	4002,city3obj
-
-;	.word	SXO-28,-140,Z+1,0,0
-;	.long	moon
-;	WL	4002,moonobj
-
-;	.word	SXO-28+360-74h+8,-140,Z+1,0,0 	;Adjusted 200 to 320
-;	.long	STORM01
-;	WL	4002,stormobj
-
-;	.word	SXO-28+360-74h+88,10,Z,0,0
-;	.long	FALL2_vda
-;	WL	4002,templeobj
-
+;Vortex court removed (ROM room)
 	.word	4000			;End
 
 ;--------------------
@@ -4255,26 +4101,25 @@ xfellp1
 	sll	32-7,a10
 	srl	32-7,a10
 
-	clr	a0
+	clr	a0			;LEFT = home team's court
+	clr	a1
 	cmpi	JOY_LEFT,a10
 	jreq	xfellp2
 
-	movk	1,a0
+	movk	1,a1			;RIGHT = away team's court (indoor)
 	cmpi	JOY_RIGHT,a10
 	jreq	xfellp2
 
-	movk	2,a0		;add case for up
+	clr	a1
+	movk	1,a0			;UP = outdoor court
 	cmpi	JOY_UP,a10
-	jreq	xfellp2
-
-	movk	3,a0		;add case for down
-	cmpi	JOY_DOWN,a10
 	jreq	xfellp2
 
 	jruc	xfellp		; None matched
 
-xfellp2					;we enter here if any of the sticks was moved l/r/u/d
+xfellp2					;we enter here if the stick was moved left/right/up
 	move	a0,@pup_court
+	move	a1,@court_away
 
 	movi	msg_doors_setup,a2,L	;this has the x/y and such for text defined. (default=BLU/unselected) 166,180
 	calla	setup_message		;sets up text printing
@@ -4324,25 +4169,7 @@ xfellp6d
 	movi	msg_uground,a4,L	;uground text
 	calla	print_string_C2		;print the text.
 
-	cmpi	JOY_DOWN,a10		;check if it's indeed DOWN
-	jrne	xfellp8c                ;it's not up, so we keep blue.
-
-xfellp8
-	movi	BAST_W_P,a11		;White font, selected item.
-	jruc	xfellp8d
-xfellp8c
-        movi	BAST_B_P,a11		;Blue font, unselected.
-xfellp8d
-	move	a11,@message_palette,L	;This sets the font color
-	move	@mess_cursx,a0		;cursor x pos
-;	addi	5,a0			;20
-	move	a0,@mess_cursx		;added to cursor
-	move	@mess_cursy,a0		;cursor x pos
-	addi	20,a0			;30
-	move	a0,@mess_cursy		;added to cursor
-	movi	msg_bluvort,a4,L	;Vortex Temple
-	calla	print_string_C2		;print the text.
-
+;(the Vortex text that sat under the others is gone)
 
 xfellp9
 ; do something here.
@@ -4410,7 +4237,10 @@ xfelcba2
 	move	*a2(ISAG),*a11(OSAG),L
 	movi	[120,0],a0,L
 	move	@pup_court,a14		;x position of spinning ball
-	jrz	xfelcbai		;0 = indoor
+	jrnz	xfelcbau		;outdoor: the top text
+	move	@court_away,a14
+	jrnz	xfelcbao		;away team's court: the right text
+	jruc	xfelcbai		;home team's court: the left text
 
 ;we need some cpmi 2/3 here to deal with the new positions for uground and vortex.
 ;beginobj2 needs
@@ -4643,12 +4473,12 @@ msg_court
 msg_doors_setup
 	PRINT_STR	bast8_ascii,5,0,166,180,BAST_B_P,0
 msg_indoor
-	.string	"Stadium",0
+	.string	"Home",0
 msg_outdoor
-	.string	"Outdoor",0
+	.string	"Away",0
 	.even
 msg_uground
-	.string	"Vortex",0
+	.string	"Outdoor",0
 	.even
 msg_bluvort
 	.string	"Vortex",0

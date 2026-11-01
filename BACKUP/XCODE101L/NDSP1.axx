@@ -1107,10 +1107,7 @@ tesrdo_x_t	move	a2,a3			;Eliminate X frac & put in table
 	jruc	tesrcrt
 tesrnotin
 	move	@pup_court,a2		;Reload court type
-	cmpi	2,a2			;Underground? (removed) -> Vortex floor
-	jreq	vrtcrt			; br=yes
-	cmpi	3,a2			;Vortex?
-	jreq	vrtcrt			; br=yes
+;Underground / Vortex courts removed: any non-zero court is the outdoor floor
 
 	movi	SAGOTD,a6		;A6=*1st line centered of court img
 	jruc	tesrcrt

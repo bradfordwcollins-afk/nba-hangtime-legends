@@ -8,9 +8,6 @@
 ; PAL for this is un UGROUND.TBL for now.
 ASM> uground1.tbl
 FRM> UGROUND2
-; Blue vortex (tiled) floor
-; PAL for this is un UGROUND.TBL for now.
-FRM> BLUFLOOR
 ; COURT PALS NEED ATTACHED TO A OBJ and are in BB.AXX
 ;
 ; Static zipped images moved from PRG rom into GFX rom.
@@ -860,15 +857,9 @@ ZOF>
 COF>
 XOF>
 PPP> 8
-ASM> UGROUND.TBL
-GLO> UGROUND.GLO
 ZOF>
 COF>
 XOF>
-COURT\BLUCOURT.IMG
----> BLUBAK1,BLUBAK2,BLUBAK3
----> STEMPLEL,STEMPLER,TFENCE
----> NEWBOT,NEWTOP
 ; The section below needs to stay the same, since we perform
 ; auto-cleanup on the IMGPAL8.ASM file and cut lines at certain points.
 ; (See IMGT.CMD for the powershell oneliners.)
