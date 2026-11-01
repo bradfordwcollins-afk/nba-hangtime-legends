@@ -40,6 +40,7 @@
 	.globl	MASON_F
 	.globl	MASON_P
 	.globl	STARKS_F
+	.globl	WILT_F		;Wilt Chamberlain body (darker STARKS_F)
 	.globl	STARKS_P
 	.globl	A_HARD_F
 	.globl	A_HARD_P

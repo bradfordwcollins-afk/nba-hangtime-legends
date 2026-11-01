@@ -2578,7 +2578,7 @@ hlygok	move	a0,*a3
 	move	*a14,a14,L		;new image
 	move	a1,a1
 	jrz	hlygnoobj
-	move	*a14(ISAG),*a1(OSAG),L	;same size & palette: just point at the new art
+	move	*a14(0),*a1(OSAG),L	;table entries point at the frame's SAG word
 hlygnoobj
 	cmpi	NUM_MTR_IMGS-1,a0
 	jrne	hlygx
@@ -2610,7 +2610,7 @@ hlygr2	clr	a0
 	move	a1,a1
 	jrz	hlygrx
 	movi	TEAMZN01,a14
-	move	*a14(ISAG),*a1(OSAG),L
+	move	*a14(0),*a1(OSAG),L		;empty meter frame
 hlygrx	PULL	a0,a1,a14
 	rets
 
