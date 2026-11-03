@@ -82,6 +82,7 @@
 	.ref	team1,team2
 	.ref	oteam1
 	.ref	court_away
+	.ref	city_names_str_tbl
 	.ref	crt_colors
 	.ref	bkcrt_colors
 ;;	.ref	refcrt_colors
@@ -4133,6 +4134,13 @@ xfellp2					;we enter here if the stick was moved left/right/up
 	move	a11,@message_palette,L  ;load white palette
 xfellp4
 	movi	msg_indoor,a4,L		;load indoor text
+	move	@team1,a14		;team1's nickname (LAKERS, BUCKS ...)
+	cmpi	29,a14
+	jrhs	xfelnm1			;secret team: keep the generic text
+	sll	6,a14
+	addi	city_names_str_tbl+32,a14
+	move	*a14,a4,L
+xfelnm1
 	calla	print_string_C2		;print the indoor string (white if it was left)
 
 	cmpi	JOY_RIGHT,a10		;since it's not left, check for right
@@ -4141,9 +4149,16 @@ xfellp4
 xfellp5
 	move	a11,@message_palette,L	;This sets the font color
 	move	@mess_cursx,a0		;cursor x pos
-	addi	70,a0			;70
+	addi	110,a0			;second team name (was 70)
 	move	a0,@mess_cursx		;added to cursor
 	movi	msg_outdoor,a4,L	;outdoor text
+	move	@team2,a14		;team2's nickname (LAKERS, BUCKS ...)
+	cmpi	29,a14
+	jrhs	xfelnm2			;secret team: keep the generic text
+	sll	6,a14
+	addi	city_names_str_tbl+32,a14
+	move	*a14,a4,L
+xfelnm2
 	calla	print_string_C2		;print the text.
 
 ; we always get get here.
@@ -4161,7 +4176,7 @@ xfellp6c
 xfellp6d
 	move	a11,@message_palette,L	;This sets the font color
 	move	@mess_cursx,a0		;cursor x pos
-	subi	35,a0			;70 ;50
+	subi	55,a0			;back to the centre (201) for Outdoor
 	move	a0,@mess_cursx		;added to cursor
 	move	@mess_cursy,a0		;cursor y pos
 	subi	10,a0			;70
@@ -4256,18 +4271,41 @@ xfelcba2
 
 ** Indoor
 xfelcbai
-	movi	[179,0],a1,L		;a1 holds Y position of this object (179 is good for Uground ,199 vort)
-	movi	[120,0],a0,L
+	move	@team1,a14
+	cmpi	29,a14
+	jrlo	xfelbw1
+	movk	29,a14			;secret team: Home / Away width
+xfelbw1
+	sll	4,a14
+	addi	court_name_w,a14
+	move	*a14,a0			;text width (pixels)
+	srl	1,a0
+	neg	a0
+	addi	134,a0			;just left of team 1's name
+	sll	16,a0
+	movi	[190,0],a1,L		;level with the names
 	jruc	xfelcba3
 ** Outdoor
 xfelcbao
-	movi	[179,0],a1,L		;a1 holds Y position of this object (179 is good for Uground ,199 vort)
-	movi	[269,0],a0,L
+	move	@team2,a14
+	cmpi	29,a14
+	jrlo	xfelbw2
+	movk	30,a14			;secret team: Home / Away width
+xfelbw2
+	sll	4,a14
+	addi	court_name_w,a14
+	move	*a14,a0			;text width (pixels)
+	move	a0,a1
+	srl	1,a1
+	sub	a1,a0
+	addi	266,a0			;just right of team 2's name
+	sll	16,a0
+	movi	[190,0],a1,L		;level with the names
 	jruc	xfelcba3
 ** Underground
 xfelcbau
-	movi	[165,0],a1,L		;Y
-	movi	[137,0],a0,L		;X
+	movi	[180,0],a1,L		;Y: level with Outdoor
+	movi	[159,0],a0,L		;X: just left of Outdoor
 	jruc	xfelcba3
 ** Vortex
 xfelcbav
@@ -4470,8 +4508,41 @@ msg_court
 	.string	"Court:",0
 	.even
 
+court_name_w			;pixel width of each team's court text (bast8 font), then Home, Away
+	.word	47
+	.word	52
+	.word	57
+	.word	38
+	.word	70
+	.word	74
+	.word	57
+	.word	53
+	.word	69
+	.word	60
+	.word	50
+	.word	60
+	.word	50
+	.word	32
+	.word	43
+	.word	63
+	.word	31
+	.word	49
+	.word	41
+	.word	39
+	.word	32
+	.word	76
+	.word	39
+	.word	41
+	.word	46
+	.word	60
+	.word	30
+	.word	62
+	.word	53
+	.word	34
+	.word	38
+	.even
 msg_doors_setup
-	PRINT_STR	bast8_ascii,5,0,166,180,BAST_B_P,0
+	PRINT_STR	bast8_ascii,5,0,146,180,BAST_B_P,0
 msg_indoor
 	.string	"Home",0
 msg_outdoor

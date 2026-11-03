@@ -28,6 +28,7 @@
 	.include	"imgtbl.glo"
 
 	.include	"leds.tbl"
+	.ref	READ_DIP
 	.include	"city.tbl"
 	.include	"arrow.tbl"
 	.include	"arrow.glo"
@@ -3054,14 +3055,43 @@ tie_eqrtrt
 kugnplay
 	SOUND1	tm_fire_tune
 kugnnoplay
+	.if	TEAMZONE
+	clr	a0				;Team Zone on? countdown goes under the team meter
+	move	a0,*a13(PDATA+96),L
+	PUSH	a9,a11
+	calla	READ_DIP
+	andi	2,a0
+	jrnz	kugntzon
+	movi	ADJTZONE,a0
+	calla	GET_ADJ				;0 = on
+	jrnz	kugntzoff
+kugntzon
+	movi	[32,0],a0
+	move	a0,*a13(PDATA+96),L
+kugntzoff
+	PULL	a9,a11
+	.endif
 
 	movi	[68,0],a10
 	move	a9,a9
 	jrnz	kugntm1
 	movi	[296,0],a10
 kugntm1
+	.if	TEAMZONE
+	move	*a13(PDATA+96),a14,L		;Team Zone on: centre it under the team's meter
+	jrz	kugntzx
+	addi	[2,0],a10			;team 2 meter centre 313.5 -> frame x 298
+	move	a9,a9
+	jrz	kugntzx
+	addi	[2,0],a10			;team 1 meter centre 87.5 -> frame x 72
+kugntzx
+	.endif
 	move	a10,a0
 	movi	[3,0],a1
+	.if	TEAMZONE
+	move	*a13(PDATA+96),a14,L
+	add	a14,a1
+	.endif
 	movi	5000,a3
 	movi	DMAWNZ|M_NOCOLL|M_SCRNREL,a4
 	movi	CLSDEAD|tmfireid,a5
@@ -3077,6 +3107,10 @@ kugntm1
 	move	a10,a0
 	addi	[8,0],a0
 	movi	[20,0],a1
+	.if	TEAMZONE
+	move	*a13(PDATA+96),a14,L
+	add	a14,a1
+	.endif
 	movi	LED_00,a2
 	subk	1,a3
 	calla	BEGINOBJ2
