@@ -595,6 +595,8 @@
 	.global	XANT_MUG
 	.globl	XLAM_MUGP
 	.global	XLAM_MUG
+	.globl	XSPR_MUGP
+	.global	XSPR_MUG
 	.globl	XWES_MUGP
 	.global	XWES_MUG
 	.globl	XSGA_MUGP
@@ -617,6 +619,8 @@
 	.global	XGRI_MUG
 	.globl	XPGE_MUGP
 	.global	XPGE_MUG
+	.globl	XDJO_MUGP
+	.global	XDJO_MUG
 	.globl	XGAS_MUGP
 	.global	XGAS_MUG
 	.globl	XWOR_MUGP
@@ -647,6 +651,8 @@
 	.global	XMGA_MUG
 	.globl	XBAN_MUGP
 	.global	XBAN_MUG
+	.globl	XZRA_MUGP
+	.global	XZRA_MUG
 	.globl	XDUN_MUGP
 	.global	XDUN_MUG
 	.globl	XPRK_MUGP

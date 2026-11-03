@@ -86,6 +86,8 @@
 	.global	MGASOL
 	.global	CHAMBERLAIN
 	.global	FRAZIER
+	.global	JORDAN_NP
+	.global	RANDOL_NP
 	.global	BARKLEY
 	.global	PORTER
 	.global	MAJERLE

@@ -266,6 +266,7 @@
 	.global	IRVING
 	.global	JAMES_NP
 	.global	JOKIC
+	.global	JORDAN_NP
 	.global	KERR
 	.global	KORVER
 	.global	LAIMBE_NP
@@ -287,6 +288,7 @@
 	.global	PARKER
 	.global	PAUL_NP
 	.global	PIERCE_NP
+	.global	RANDOL_NP
 	.global	ROBERT_NP
 	.global	ROSE_NP
 	.global	TATUM

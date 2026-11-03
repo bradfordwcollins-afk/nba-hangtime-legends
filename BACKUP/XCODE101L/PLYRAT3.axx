@@ -73,6 +73,7 @@
 	.globl	XGAR_P
 	.globl	XANT_P
 	.globl	XLAM_P
+	.globl	XSPR_P
 	.globl	XWES_P
 	.globl	XSGA_P
 	.globl	XLIL_P
@@ -83,6 +84,7 @@
 	.globl	XCCP_P
 	.globl	XGRI_P
 	.globl	XPGE_P
+	.globl	XDJO_P
 	.globl	XGAS_P
 	.globl	XWOR_P
 	.globl	XBOO_P
@@ -95,6 +97,7 @@
 	.globl	XMOR_P
 	.globl	XMGA_P
 	.globl	XBAN_P
+	.globl	XZRA_P
 	.globl	XDUN_P
 	.globl	XPRK_P
 	.globl	XMAN_P
@@ -349,6 +352,7 @@
 	.def	Xgar_h
 	.def	Xant_h
 	.def	Xlam_h
+	.def	Xspr_h
 	.def	Xwes_h
 	.def	Xsga_h
 	.def	Xlil_h
@@ -359,6 +363,7 @@
 	.def	Xccp_h
 	.def	Xgri_h
 	.def	Xpge_h
+	.def	Xdjo_h
 	.def	Xgas_h
 	.def	Xwor_h
 	.def	Xboo_h
@@ -371,6 +376,7 @@
 	.def	Xmor_h
 	.def	Xmga_h
 	.def	Xban_h
+	.def	Xzra_h
 	.def	Xdun_h
 	.def	Xprk_h
 	.def	Xman_h
@@ -559,6 +565,9 @@ Xant_h
 Xlam_h
 	HDMAC	XLAM01	; Jam #2, from NBA Jam 50 (Double Z & Wake)
 
+Xspr_h
+	HDMAC	XSPR01	; Jam #lib|/home/claude/heads/out/SPREWELL_SRC.IMG|SPR, from NBA Jam 50 (Double Z & Wake)
+
 Xwes_h
 	HDMAC	XWES01	; Jam #51, from NBA Jam 50 (Double Z & Wake)
 
@@ -588,6 +597,9 @@ Xgri_h
 
 Xpge_h
 	HDMAC	XPGE01	; Jam #47, from NBA Jam 50 (Double Z & Wake)
+
+Xdjo_h
+	HDMAC	XDJO01	; Jam #copy|46, from NBA Jam 50 (Double Z & Wake)
 
 Xgas_h
 	HDMAC	XGAS01	; Jam #72, from NBA Jam 50 (Double Z & Wake)
@@ -624,6 +636,9 @@ Xmga_h
 
 Xban_h
 	HDMAC	XBAN01	; Jam #84, from NBA Jam 50 (Double Z & Wake)
+
+Xzra_h
+	HDMAC	XZRA01	; Jam #dim|34|0.83, from NBA Jam 50 (Double Z & Wake)
 
 Xdun_h
 	HDMAC	XDUN01	; Jam #52, from NBA Jam 50 (Double Z & Wake)

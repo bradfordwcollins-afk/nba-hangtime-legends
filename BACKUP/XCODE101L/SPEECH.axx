@@ -785,7 +785,7 @@ full_name_speech
  .word	00007H,0,0		;(no call) CHRIS PAUL
  .word	00007H,0,0		;(no call) BLAKE GRIFFIN
  .word	00007H,0,0		;(no call) PAUL GEORGE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) DEANDRE JORDAN
  .word	00007H,0,0
 ; .word	0100DH,80,1528	;MURRAY,      lamond
 
@@ -894,7 +894,7 @@ full_name_speech
  .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) MARC GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) ZACH RANDOLPH
  .word	00007H,0,0
 
  .word	0100DH,53,1864	;WEBBER,      chris			( WASHINGTON )
@@ -986,7 +986,7 @@ pass_speech		;'TO player name'
  .word	00007H,0,0		;(no call) CHRIS PAUL
  .word	00007H,0,0		;(no call) BLAKE GRIFFIN
  .word	00007H,0,0		;(no call) PAUL GEORGE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) DEANDRE JORDAN
  .word	00007H,0,0
 ; .word	0100DH,39,1531	;to MURRAY,      lamond
 
@@ -1095,7 +1095,7 @@ pass_speech		;'TO player name'
  .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) MARC GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) ZACH RANDOLPH
  .word	00007H,0,0
 
  .word	0100DH,28,1867	;to WEBBER,      chris		( WASHINGTON )
@@ -1187,7 +1187,7 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0		;(no call) CHRIS PAUL
  .word	00007H,0,0		;(no call) BLAKE GRIFFIN
  .word	00007H,0,0		;(no call) PAUL GEORGE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) DEANDRE JORDAN
  .word	00007H,0,0
 ; .word	0100DH,30,1529	;MURRAY,      lamond
 
@@ -1296,7 +1296,7 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0		;(no call) JA MORANT
  .word	00007H,0,0		;(no call) MARC GASOL
  .word	00007H,0,0		;(no call) DESMOND BANE
- .word	00007H,0,0
+ .word	00007H,0,0		;(no call) ZACH RANDOLPH
  .word	00007H,0,0
 
  .word	0100DH,18,1865	;WEBBER,      chris			( WASHINGTON )

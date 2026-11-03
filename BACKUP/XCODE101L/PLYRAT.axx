@@ -208,6 +208,7 @@
 	.ref	Xgar_h
 	.ref	Xant_h
 	.ref	Xlam_h
+	.ref	Xspr_h
 	.ref	Xwes_h
 	.ref	Xsga_h
 	.ref	Xlil_h
@@ -218,6 +219,7 @@
 	.ref	Xccp_h
 	.ref	Xgri_h
 	.ref	Xpge_h
+	.ref	Xdjo_h
 	.ref	Xgas_h
 	.ref	Xwor_h
 	.ref	Xboo_h
@@ -230,6 +232,7 @@
 	.ref	Xmor_h
 	.ref	Xmga_h
 	.ref	Xban_h
+	.ref	Xzra_h
 	.ref	Xdun_h
 	.ref	Xprk_h
 	.ref	Xman_h
@@ -1067,14 +1070,14 @@ LAC_t
 	.long	hawkins_f, LUN_LACP_P,LUN_LACS_P, LTR_LACP_P,LTR_LACS_P,Xpge_h
 	.word	6,6,8,0
 	.long	LSW_LACP_P,LSW_LACS_P,LVP_LACP_P,LVP_LACS_P
-	LWWWWWW	scale68t_t,BV8,SHT8,DNK8,DEF5,SDEF9,DSKL5	;PAUL GEORGE (dead slot)
-	.long	hawkins_f, LUN_LACP_P,LUN_LACS_P, LTR_LACP_P,LTR_LACS_P,Xpge_h
-	.word	6,6,8,0
+	LWWWWWW	scale611ef_t,BV6,SHT1,DNK10,DEF10,SDEF4,DSKL5	;DEANDRE JORDAN
+	.long	K_AND_F, LUN_LACP_P,LUN_LACS_P, LTR_LACP_P,LTR_LACS_P,Xdjo_h
+	.word	3,10,5,0
 	.long	LSW_LACP_P,LSW_LACS_P,LVP_LACP_P,LVP_LACS_P
 ;kill
-	LWWWWWW	scale68t_t,BV8,SHT8,DNK8,DEF5,SDEF9,DSKL5	;PAUL GEORGE (dead slot)
-	.long	hawkins_f, LUN_LACP_P,LUN_LACS_P, LTR_LACP_P,LTR_LACS_P,Xpge_h
-	.word	6,6,8,0
+	LWWWWWW	scale611ef_t,BV6,SHT1,DNK10,DEF10,SDEF4,DSKL5	;DEANDRE JORDAN (dead slot)
+	.long	K_AND_F, LUN_LACP_P,LUN_LACS_P, LTR_LACP_P,LTR_LACS_P,Xdjo_h
+	.word	3,10,5,0
 	.long	LSW_LACP_P,LSW_LACS_P,LVP_LACP_P,LVP_LACS_P
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill
@@ -1175,12 +1178,12 @@ MINN_t
 	.long	LSW_MINP_P,LSW_MINS_P,LVP_MINP_P,LVP_MINS_P
 ;kill
 	LWWWWWW	scale65_t,BV9,SHT8,DNK9,DEF3,SDEF8,DSKL5	;SPREWELL
-	.long	SPREWE_F, LUN_MINP_P,LUN_MINS_P, LTR_MINP_P,LTR_MINS_P,Sprewell_h
+	.long	pippin_f, LUN_MINP_P,LUN_MINS_P, LTR_MINP_P,LTR_MINS_P,Xspr_h
 	.word	6,5,8,2
 	.long	LSW_MINP_P,LSW_MINS_P,LVP_MINP_P,LVP_MINS_P
 ;kill
 	LWWWWWW	scale65_t,BV9,SHT8,DNK9,DEF3,SDEF8,DSKL5	;SPREWELL (dead slot)
-	.long	SPREWE_F, LUN_MINP_P,LUN_MINS_P, LTR_MINP_P,LTR_MINS_P,Sprewell_h
+	.long	pippin_f, LUN_MINP_P,LUN_MINS_P, LTR_MINP_P,LTR_MINS_P,Xspr_h
 	.word	6,5,8,2
 	.long	LSW_MINP_P,LSW_MINS_P,LVP_MINP_P,LVP_MINS_P
 
@@ -1506,14 +1509,14 @@ VANCOU_t
 	.word	5,6,8,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
 ;kill
-	LWWWWWW	scale65f_t,BV7,SHT8,DNK5,DEF2,SDEF5,DSKL5	;DESMOND BANE (dead slot)
-	.long	shiek_f, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xban_h
-	.word	5,6,8,0
+	LWWWWWW	scale69f_t,BV4,SHT6,DNK6,DEF5,SDEF4,DSKL5	;ZACH RANDOLPH
+	.long	MASON_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xzra_h
+	.word	5,10,7,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
 ;kill
-	LWWWWWW	scale65f_t,BV7,SHT8,DNK5,DEF2,SDEF5,DSKL5	;DESMOND BANE (dead slot)
-	.long	shiek_f, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xban_h
-	.word	5,6,8,0
+	LWWWWWW	scale69f_t,BV4,SHT6,DNK6,DEF5,SDEF4,DSKL5	;ZACH RANDOLPH (dead slot)
+	.long	MASON_F, LUN_VANP_P,LUN_VANS_P, LTR_VANP_P,LTR_VANS_P,Xzra_h
+	.word	5,10,7,0
 	.long	LSW_VANP_P,LSW_VANS_P,LVP_VANP_P,LVP_VANS_P
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill

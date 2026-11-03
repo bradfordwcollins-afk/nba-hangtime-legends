@@ -131,6 +131,7 @@
 	.def	XGAR_P
 	.def	XANT_P
 	.def	XLAM_P
+	.def	XSPR_P
 	.def	XWES_P
 	.def	XSGA_P
 	.def	XLIL_P
@@ -141,6 +142,7 @@
 	.def	XCCP_P
 	.def	XGRI_P
 	.def	XPGE_P
+	.def	XDJO_P
 	.def	XGAS_P
 	.def	XWOR_P
 	.def	XBOO_P
@@ -153,6 +155,7 @@
 	.def	XMOR_P
 	.def	XMGA_P
 	.def	XBAN_P
+	.def	XZRA_P
 	.def	XDUN_P
 	.def	XPRK_P
 	.def	XMAN_P

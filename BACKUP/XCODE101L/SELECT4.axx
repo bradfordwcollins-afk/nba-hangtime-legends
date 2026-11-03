@@ -4660,19 +4660,19 @@ player_heads
 ;11 L.A. CLIPPERS
 	.long	XCCP_MUG,XGRI_MUG
 	.long	XCCP_MUG,XPGE_MUG
-	.long	XGRI_MUG,XCCP_MUG
+	.long	XCCP_MUG,XDJO_MUG
 
+	.long	XGRI_MUG,XCCP_MUG
 	.long	XGRI_MUG,XPGE_MUG
+	.long	XGRI_MUG,XDJO_MUG
+
 	.long	XPGE_MUG,XCCP_MUG
 	.long	XPGE_MUG,XGRI_MUG
+	.long	XPGE_MUG,XDJO_MUG
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XDJO_MUG,XCCP_MUG
+	.long	XDJO_MUG,XGRI_MUG
+	.long	XDJO_MUG,XPGE_MUG
 
 	.long	0,0
 	.long	0,0
@@ -4765,18 +4765,18 @@ player_heads
 	.long	XGAR_MUG,XANT_MUG
 	.long	XGAR_MUG,XLAM_MUG
 
-	.long	XGAR_MUG,SPR_GLD
+	.long	XGAR_MUG,XSPR_MUG
 	.long	XANT_MUG,XGAR_MUG
 
 	.long	XANT_MUG,XLAM_MUG
-	.long	XANT_MUG,SPR_GLD
+	.long	XANT_MUG,XSPR_MUG
 
 	.long	XLAM_MUG,XGAR_MUG
 	.long	XLAM_MUG,XANT_MUG
-	.long	XLAM_MUG,SPR_GLD
-	.long	SPR_GLD,XGAR_MUG
-	.long	SPR_GLD,XANT_MUG
-	.long	SPR_GLD,XLAM_MUG
+	.long	XLAM_MUG,XSPR_MUG
+	.long	XSPR_MUG,XGAR_MUG
+	.long	XSPR_MUG,XANT_MUG
+	.long	XSPR_MUG,XLAM_MUG
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5072,18 +5072,18 @@ player_heads
 	.long	XMOR_MUG,XMGA_MUG
 	.long	XMOR_MUG,XBAN_MUG
 
+	.long	XMOR_MUG,XZRA_MUG
 	.long	XMGA_MUG,XMOR_MUG
+
 	.long	XMGA_MUG,XBAN_MUG
+	.long	XMGA_MUG,XZRA_MUG
 
 	.long	XBAN_MUG,XMOR_MUG
 	.long	XBAN_MUG,XMGA_MUG
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XBAN_MUG,XZRA_MUG
+	.long	XZRA_MUG,XMOR_MUG
+	.long	XZRA_MUG,XMGA_MUG
+	.long	XZRA_MUG,XBAN_MUG
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5455,19 +5455,19 @@ WALLACE	.equ	11
 ;11 L.A. CLIPPERS
 	.long	PAUL_NP,GRIFFIN
 	.long	PAUL_NP,GEORGE_NP
-	.long	GRIFFIN,PAUL_NP
+	.long	PAUL_NP,JORDAN_NP
 
+	.long	GRIFFIN,PAUL_NP
 	.long	GRIFFIN,GEORGE_NP
+	.long	GRIFFIN,JORDAN_NP
+
 	.long	GEORGE_NP,PAUL_NP
 	.long	GEORGE_NP,GRIFFIN
+	.long	GEORGE_NP,JORDAN_NP
 
-	.long	0,0
-	.long	0,0
-	.long	0,0
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	JORDAN_NP,PAUL_NP
+	.long	JORDAN_NP,GRIFFIN
+	.long	JORDAN_NP,GEORGE_NP
 
 	.long	0,0
 	.long	0,0
@@ -5868,18 +5868,18 @@ WALLACE	.equ	11
 	.long	MORANT,MGASOL
 	.long	MORANT,BANE
 
+	.long	MORANT,RANDOL_NP
 	.long	MGASOL,MORANT
+
 	.long	MGASOL,BANE
+	.long	MGASOL,RANDOL_NP
 
 	.long	BANE,MORANT
 	.long	BANE,MGASOL
-
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	BANE,RANDOL_NP
+	.long	RANDOL_NP,MORANT
+	.long	RANDOL_NP,MGASOL
+	.long	RANDOL_NP,BANE
 	.long	0,0
 	.long	0,0
 	.long	0,0

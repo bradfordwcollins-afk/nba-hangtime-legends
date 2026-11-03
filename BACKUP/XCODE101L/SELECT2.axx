@@ -5551,8 +5551,8 @@ player_attribs
 	.word  08,06,08,08
 	.word  09,05,06,08	;PAUL GEORGE
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  06,10,01,10
+	.word  04,10,03,05	;DEANDRE JORDAN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5871,8 +5871,8 @@ player_attribs
 	.word  07,06,08,05
 	.word  05,02,05,08	;DESMOND BANE
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  04,10,06,06
+	.word  04,05,05,07	;ZACH RANDOLPH
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5955,7 +5955,7 @@ name_sort
  .long	CURRY_NP,THOMPS_NP,MULLIN,CHAMBERLAIN,CHAMBERLAIN		;08 GSW
  .long	OLAJUWON,HARDEN,MING,MCGRADY,MCGRADY		;09 HOU
  .long	MILLER,HALIBURTON,ROSE,SMITS,ARTEST		;10 IND
- .long	PAUL_NP,GRIFFIN,GEORGE_NP,GEORGE_NP,GEORGE_NP		;11 LAC
+ .long	PAUL_NP,GRIFFIN,GEORGE_NP,JORDAN_NP,JORDAN_NP		;11 LAC
  .long	BRYANT,JOHNSON_M,GASOL,ABDULJAB,WORTHY_NP		;12 LAL
  .long	WADE,MOURN,THARDAWAY,BUTLER,ADEBAYO		;13 MIA
  .long	ANTETOKO,MIDDLETON,ALLEN,GROBINSO,ROBERT_NP		;14 MIL
@@ -5971,7 +5971,7 @@ name_sort
  .long	DURANT,PAYTON,WESTBROOK,KEMP,GILGEOUS		;24 SEA
  .long	CARTER,LEONARD,BOSH,DEROZAN,DEROZAN		;25 TOR
  .long	MALONE_K,STOCKTON,HORNACEK,MARAVICH,MARAVICH		;26 UTA
- .long	MORANT,MGASOL,BANE,BANE,BANE		;27 VAN
+ .long	MORANT,MGASOL,BANE,RANDOL_NP,RANDOL_NP		;27 VAN
  .long	WEBBER,DAVIS_NP,JHOWARD,BEAL,BEAL		;28 WAS
  .long	0
 
@@ -6032,7 +6032,7 @@ team_sqaud_cnts
 	.word	12	;GSW (4 players)
 	.word	12	;HOU (4 players)
 	.word	20	;IND (5 players)
-	.word	6	;LAC (3 players)
+	.word	12	;LAC (4 players)
 	.word	20	;LAL (5 players)
 	.word	20	;MIA (5 players)
 	.word	20	;MIL (5 players)
@@ -6048,7 +6048,7 @@ team_sqaud_cnts
 	.word	20	;SEA (5 players)
 	.word	12	;TOR (4 players)
 	.word	12	;UTA (4 players)
-	.word	6	;VAN (3 players)
+	.word	12	;VAN (4 players)
 	.word	12	;WAS (4 players)
 
 ;-----------------------------------------------------------------------------
