@@ -2291,6 +2291,11 @@ ddyunoaud
 	.if	TEAMZONE	
 ;TEAM METER logic
 	movk	3,a14			;3 per assist: full after about 10 assists
+	.ref	was_alley_shot
+	move	@was_alley_shot,a0	;alley-oop? fills twice as fast
+	jrz	ddyunoal
+	movk	6,a14
+ddyunoal
 	.ref	update_team_meter
 	calla	update_team_meter
 	.endif

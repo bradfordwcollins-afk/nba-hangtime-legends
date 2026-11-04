@@ -1977,6 +1977,17 @@ vusbclear_next
 *-----------------------------------------------------------------------------
 
  SUBR	inc_player_stat
+	.if	TEAMZONE
+	cmpi	PS_STEALS,a0		;steal or block: Team Zone meter +3 (like an assist)
+	jreq	ipstz
+	cmpi	PS_BLOCKS,a0
+	jrne	ipsnotz
+ipstz
+	.ref	update_team_meter
+	movk	3,a14
+	calla	update_team_meter	;a1 = player number (kept)
+ipsnotz
+	.endif
 
 	movi	PS_SIZE,a14
 	mpyu	a14,a1			;player number * PS_SIZE

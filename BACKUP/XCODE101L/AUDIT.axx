@@ -352,22 +352,58 @@ noqax	DIE
 ********************************
 * THE FOLLOWING COIN ROUTINES ARE PROCESSES!
 
-LCOIN	MOVK	ADJLMULT,A8	;CMOS RAM ADJUST
+LCOIN
+	.if	TEAMZONE
+	.ref	tz_coin_fire
+	clr	a0			;Team Zone: full meter + coin = TEAM FIRE
+	calla	tz_coin_fire
+	jrz	lcoin_tz
+	DIE
+lcoin_tz
+	.endif
+	MOVK	ADJLMULT,A8	;CMOS RAM ADJUST
 	MOVI	LC_FLAG,A10	;LEFT COIN FLAG
 	MOVI	AUDLCOIN,A11	;AUDIT NUMBER
 	JRUC	VALID_COIN
 
-CCOIN	MOVK	ADJCMULT,A8
+CCOIN
+	.if	TEAMZONE
+	.ref	tz_coin_fire
+	movk	1,a0			;Team Zone: full meter + coin = TEAM FIRE
+	calla	tz_coin_fire
+	jrz	ccoin_tz
+	DIE
+ccoin_tz
+	.endif
+	MOVK	ADJCMULT,A8
 	MOVI	CC_FLAG,A10	;CENTER COIN FLAG
 	MOVI	AUDCCOIN,A11
 	JRUC	VALID_COIN
 
-RCOIN	MOVK	ADJRMULT,A8
+RCOIN
+	.if	TEAMZONE
+	.ref	tz_coin_fire
+	clr	a0			;Team Zone: full meter + coin = TEAM FIRE
+	calla	tz_coin_fire
+	jrz	rcoin_tz
+	DIE
+rcoin_tz
+	.endif
+	MOVK	ADJRMULT,A8
 	MOVI	RC_FLAG,A10	;RYTE COIN FLAG
 	MOVI	AUDRCOIN,A11
 	JRUC	VALID_COIN
 
-XCOIN	MOVK	ADJXMULT,A8
+XCOIN
+	.if	TEAMZONE
+	.ref	tz_coin_fire
+	movk	1,a0			;Team Zone: full meter + coin = TEAM FIRE
+	calla	tz_coin_fire
+	jrz	xcoin_tz
+	DIE
+xcoin_tz
+	.endif
+	MOVK	ADJXMULT,A8
 	MOVI	XC_FLAG,A10	;XTRA (FOURTH) COIN FLAG
 	MOVI	AUDXCOIN,A11
 	JRUC	VALID_COIN

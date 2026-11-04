@@ -2579,18 +2579,50 @@ hlygok	move	a0,*a3
 	move	a1,a1
 	jrz	hlygnoobj
 	move	*a14(0),*a1(OSAG),L	;table entries point at the frame's SAG word
-hlygnoobj
-	cmpi	NUM_MTR_IMGS-1,a0
-	jrne	hlygx
+hlygnoobj				;a full meter waits for the team's coin button (tz_coin_fire)
+hlygx
+	PULL	a0,a1,a2,a3,a7,a8,a9,a14
+ 	rets
+
+***************************************
+* Coin button pressed: start this team's TEAM FIRE if its meter is full.
+* INPUT:  a0 - 0 = team 1 (coin 1 / 2), 1 = team 2 (coin 3 / 4)
+* RETURNS a0 !0 (and NZ) when the team fire was started (the coin is then not a credit).
+ SUBR	tz_coin_fire
+
+	PUSH	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	a0,a3
+	move	@GAMSTATE,a14
+	cmpi	INGAME,a14
+	jrne	tzcfno
+	move	@HALT,a14		;not while the game is stopped
+	jrnz	tzcfno
+	callr	tz_enabled
+	jrz	tzcfno
+	move	@balltmshotcnt,a14	;a team already on fire?
+	subk	TMFIRE_MINCNT,a14
+	jrge	tzcfno
+	move	a3,a3
+	jrnz	tzcft2
+	move	@tm1_meter_cnt,a14
+	movi	32,a2			;team 1 (balltmscored / tmfire_timer value)
+	jruc	tzcfchk
+tzcft2	move	@tm2_meter_cnt,a14
+	clr	a2			;team 2
+tzcfchk	cmpi	NUM_MTR_IMGS-1,a14	;meter full?
+	jrne	tzcfno
 	.ref	balltmscored,tmfire_timer
-	move	a2,@balltmscored	;meter full: TEAM FIRE for this team
+	move	a2,@balltmscored	;TEAM FIRE for this team
 	movk	TMFIRE_MINCNT,a0
 	move	a0,@balltmshotcnt
 	move	a2,a9
 	CREATE	tmfireid,tmfire_timer
-hlygx
-	PULL	a0,a1,a2,a3,a7,a8,a9,a14
- 	rets
+	movk	1,a0
+	jruc	tzcfx
+tzcfno	clr	a0
+tzcfx	PULL	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	a0,a0
+	rets
 
 ***************************************
 * Empty a team's meter (called when its team fire ends)
