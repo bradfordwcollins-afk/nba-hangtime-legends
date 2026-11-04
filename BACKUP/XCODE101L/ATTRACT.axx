@@ -3828,10 +3828,10 @@ isbxstr_h0a
 ;	.string	"PLAYERS",0
 
 isbxstr_h1
-	.string	"COLLEGE",0
+	.string	"HALL OF",0
 ;	.string	"CREATE",0
 isbxstr_h1a
-	.string	"ROOKIES",0
+	.string	"FAMERS",0
 ;	.string	"PLAYER",0
 
 isbxstr_h2
