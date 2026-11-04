@@ -4283,7 +4283,7 @@ xfelbw1
 	neg	a0
 	addi	134,a0			;just left of team 1's name
 	sll	16,a0
-	movi	[190,0],a1,L		;level with the names
+	movi	[179,0],a1,L		;level with the names (original height)
 	jruc	xfelcba3
 ** Outdoor
 xfelcbao
@@ -4300,11 +4300,11 @@ xfelbw2
 	sub	a1,a0
 	addi	266,a0			;just right of team 2's name
 	sll	16,a0
-	movi	[190,0],a1,L		;level with the names
+	movi	[179,0],a1,L		;level with the names (original height)
 	jruc	xfelcba3
 ** Underground
 xfelcbau
-	movi	[180,0],a1,L		;Y: level with Outdoor
+	movi	[165,0],a1,L		;Y: level with Outdoor (original height)
 	movi	[159,0],a0,L		;X: just left of Outdoor
 	jruc	xfelcba3
 ** Vortex
