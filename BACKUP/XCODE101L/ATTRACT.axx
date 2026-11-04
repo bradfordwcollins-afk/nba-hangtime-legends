@@ -3821,10 +3821,10 @@ isbxstr_heading
 	.asg	1,CR		    
 
 isbxstr_h0
-	.string	"1997",0
+	.string	"LEGENDS",0
 ;	.string	"150 NBA",0
 isbxstr_h0a
-	.string	"LINEUPS",0
+	.string	"ROSTERS",0
 ;	.string	"PLAYERS",0
 
 isbxstr_h1
