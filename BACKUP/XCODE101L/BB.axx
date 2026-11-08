@@ -2515,7 +2515,81 @@ hlygon
 	move	*a9,a2,L		;image			;Y
 	calla	BEGINOBJ2
 	move	a8,@tm2_meter_obj,L	;keep *obj
+	CREATE0	tz_press		;flashing PRESS COIN under a full meter
  	DIE
+
+***************************************
+* Flashing "PRESS COIN" under each team's meter while it is full and the
+* coin would start that team's fire.
+	.ref	TZPRESS,obj_on,obj_off
+ SUBRP	tz_press
+
+	move	@GAMSTATE,a0
+	cmpi	INGAME,a0
+	jreq	tzpgo
+	DIE
+tzpgo
+	movi	[59,0],a0
+	movi	[36,0],a1
+	movi	TZPRESS,a2
+	movi	300,a3			;meters' z
+	movi	DMAWNZ|M_NOCOLL|M_SCRNREL,a4
+	movi	CLSDEAD,a5
+	clr	a6
+	clr	a7
+	calla	BEGINOBJ2
+	calla	obj_off
+	move	a8,a10			;team 1's
+	movi	[285,0],a0
+	movi	[36,0],a1
+	movi	TZPRESS,a2
+	movi	300,a3			;meters' z
+	movi	DMAWNZ|M_NOCOLL|M_SCRNREL,a4
+	movi	CLSDEAD,a5
+	clr	a6
+	clr	a7
+	calla	BEGINOBJ2
+	calla	obj_off
+	move	a8,a11			;team 2's
+	clr	a9			;flash phase
+tzplp
+	SLEEPK	15
+	move	@GAMSTATE,a0
+	cmpi	INGAME,a0
+	jreq	tzpok
+	DIE				;game over: leave the objects alone
+tzpok
+	xori	1,a9
+	move	a10,a8
+	movi	32,a2
+	move	@tm1_meter_cnt,a3
+	callr	tzp_show
+	move	a11,a8
+	clr	a2
+	move	@tm2_meter_cnt,a3
+	callr	tzp_show
+	jruc	tzplp
+
+* a8 = *obj, a2 = team (32 = team 1, 0 = team 2), a3 = its meter count, a9 = phase
+tzp_show
+	move	a9,a9
+	jrz	tzpoff
+	move	@HALT,a14
+	jrnz	tzpoff
+	cmpi	NUM_MTR_IMGS-1,a3	;full?
+	jrne	tzpoff
+	move	@injfire_team,a14	;INJURY FIRE lit: coin does nothing
+	jrnn	tzpoff
+	move	@tmfire2_team,a14	;both teams already on fire
+	jrnn	tzpoff
+	move	@balltmshotcnt,a14
+	subk	TMFIRE_MINCNT,a14
+	jrlt	tzpon
+	move	@balltmscored,a14	;this team is the one on fire?
+	cmp	a2,a14
+	jreq	tzpoff
+tzpon	jauc	obj_on
+tzpoff	jauc	obj_off
 
 
 ;	.asg	25,TM_METR_Y
