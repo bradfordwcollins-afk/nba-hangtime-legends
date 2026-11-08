@@ -230,6 +230,9 @@
 	; minutes or so.  Since it's always treated as an unsigned value
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
+	BSSX	game_rules	,16	;0 normal, 1 block party, 2 triple threat, 3 oop city, 4 dunkfest
+	BSSX	rules_show	,16	;!0 = GAME RULES not NORMAL: show it on the matchup screen / tip-off
+	BSSX	rules_random	,16	;!0 = GAME RULES = RANDOM (matchup roulette)
 	BSSX	smax_allow	,16	;!0 = CHOOSE OPTION screen up (Super Max shortcut allowed)
 	BSSX	smax_hold	,16	;frames SHOOT+PASS+TURBO held
 	BSSX	injfire_team	,16	;INJURY FIRE team (32 = team 1, 0 = team 2, neg = none)
@@ -1577,6 +1580,7 @@ offpzlp	move	a0,*a1+
 	move	a0,@pup_aba			;default=regular ball
 	move	a0,@dronesmrt
 	move	a0,@fatality			;no fire pushes default
+	callr	rules_pick			;GAME RULES for this game
 
 	.ref	clear_secret_powerup_ram
 	calla	clear_secret_powerup_ram
@@ -1983,6 +1987,13 @@ offpbomb_out
 	move	a14,@tmfire2_team
 	clr	a14
 	move	a14,@smax_allow
+	move	@GAMSTATE,a14		;attract demo: normal rules
+	cmpi	INAMODE,a14
+	jrne	rlsnodemo
+	clr	a14
+	move	a14,@game_rules
+	move	a14,@rules_show
+rlsnodemo
 	move	a0,@injfire_all
 	.if	TEAMZONE
 	move	a0,@tm1_meter_cnt
@@ -3030,9 +3041,9 @@ injrx	PULL	a10,a11,a14
 	cmpi	3,a1
 	jrhi	bkpx
 	move	a1,a3
-	movi	ADJHUGE,a0
-	calla	GET_ADJ			;0 = BLOCK PARTY on
-	jrnz	bkpx
+	move	@game_rules,a0		;BLOCK PARTY rules?
+	cmpi	1,a0
+	jrne	bkpx
 	movi	scores+16,a2		;team 1 blocked: team 2 loses a point
 	srl	1,a3
 	jrz	bkpt
@@ -3047,6 +3058,74 @@ bkpt	move	*a2,a0
 bkpx	PULL	a10,a11,a14
 	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
 	rets
+
+***************************************
+* GAME RULES for a new game (CMOS ADJHUGE): 1 normal, 2 block party, 3 triple
+* threat, 4 oop city, 5 dunkfest, 6 random (0 = old BLOCK PARTY on).
+* Keeps all registers.
+ SUBRP	rules_pick
+
+	PUSH	a0,a1,a2,a14
+	clr	a2
+	move	a2,@rules_random
+	movi	ADJHUGE,a0
+	calla	GET_ADJ
+	jrnz	rpk1
+	movk	2,a0			;old BLOCK PARTY on
+rpk1	cmpi	6,a0
+	jrlo	rpkset
+	jrhi	rpknorm
+	movk	1,a2			;RANDOM
+	move	a2,@rules_random
+	movi	99,a0
+	calla	RNDRNG0			;0-99
+	movi	rpk_weights,a1
+	clr	a2
+rpkw	move	*a1+,a14
+	cmp	a14,a0
+	jrlo	rpkgot
+	addk	1,a2
+	cmpi	4,a2
+	jrlo	rpkw
+rpkgot	move	a2,a0
+	jruc	rpkst
+rpknorm	movk	1,a0
+rpkset	subk	1,a0			;1-5 -> 0-4
+rpkst	move	a0,@game_rules
+	move	@rules_random,a1
+	or	a0,a1
+	move	a1,@rules_show
+	PULL	a0,a1,a2,a14
+	rets
+
+rpk_weights				;cumulative: normal 24, block 22, triple 22, oop 22, dunkfest 10
+	.word	24,46,68,90
+
+	.def	rules_name_t,rules_tip_t
+rules_name_t
+	.long	rln0,rln1,rln2,rln3,rln4
+rules_tip_t
+	.long	rlt0,rlt1,rlt2,rlt3,rlt4
+rln0	.string	"NORMAL",0
+	.even
+rln1	.string	"BLOCK PARTY",0
+	.even
+rln2	.string	"TRIPLE THREAT",0
+	.even
+rln3	.string	"OOP CITY",0
+	.even
+rln4	.string	"DUNKFEST",0
+	.even
+rlt0	.string	"NORMAL RULES",0
+	.even
+rlt1	.string	"BLOCK PARTY RULES",0
+	.even
+rlt2	.string	"TRIPLE THREAT RULES",0
+	.even
+rlt3	.string	"OOP CITY RULES",0
+	.even
+rlt4	.string	"DUNKFEST RULES",0
+	.even
 
 tm_meter_img_tbl
 	.long	TEAMZN01

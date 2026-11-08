@@ -9370,6 +9370,14 @@ rlyvnohf
 
  SUBRP	plyr_referee
 
+	move	@gmqrtr,a14		;opening tip: show the GAME RULES
+	jrnz	lwcnnorl
+	.ref	rules_show,rules_tip_msg
+	move	@rules_show,a14
+	jrz	lwcnnorl
+	CREATE0	rules_tip_msg
+lwcnnorl
+
 
 	.asg	12,REFCTR_OX		;Ref Xoff so toss to be centered
 

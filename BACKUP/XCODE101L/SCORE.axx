@@ -3620,6 +3620,33 @@ knibdoannc_snd
 	DIE
 
 
+********************************
+* Opening tip: "xxx RULES" flashes for 3 seconds
+ SUBR	rules_tip_msg
+
+	SLEEP	30
+	movi	knibln0_setup,a2
+	calla	setup_message
+	movi	CLSDEAD|123,a0
+	move	a0,@mess_objid
+	movi	120-8-44,a0
+	move	a0,@mess_cursy
+	.ref	game_rules,rules_tip_t
+	move	@game_rules,a4
+	sll	5,a4
+	addi	rules_tip_t,a4
+	move	*a4,a4,L
+	calla	print_string_C2
+	CREATE0	flash_blu_txt
+	move	a0,a9
+	SOUND1	win_snd
+	SLEEP	TSEC*3
+	move	a9,a0
+	calla	KILL
+	movi	CLSDEAD|123,a0
+	calla	obj_del1c		;delete text
+	DIE
+
 knibln0_setup
 	PRINT_STR	brush20_ascii,13,0,200,70,BRSH_B_P,0
 

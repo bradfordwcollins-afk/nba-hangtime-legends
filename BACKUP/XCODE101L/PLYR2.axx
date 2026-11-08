@@ -1957,6 +1957,7 @@ zdikleft
 	addi	scores,a0		;+Base
 	move	@ballptsforshot,a1
 	move	a1,a3
+	callr	rules_points		;GAME RULES: a1 = points for this basket
 	calla	score_add
 
 	clr	a0
@@ -4641,6 +4642,50 @@ pyplx	rets
 	move	*a8(OZVEL),a0,L
 	sla	1,a0
 	move	a0,*a13(plyr_kpzvel),L
+	rets
+
+*******************************
+* GAME RULES points for the basket just made.
+* INPUT/OUTPUT: a1 = points (2 / 3).  Keeps all other registers.
+rules_points
+	PUSH	a0,a2,a14
+	.ref	game_rules
+	move	@game_rules,a14
+	cmpi	2,a14
+	jrlo	rlpx			;normal / block party: as shot
+	move	@ballpnumshot,a0
+	sll	5,a0
+	addi	plyrproc_t,a0
+	move	*a0,a0,L		;shooter *proc
+	cmpi	2,a14
+	jrne	rlpnot3
+	cmpi	3,a1			;TRIPLE THREAT: 3s are 3, the rest 1
+	jreq	rlpx
+	movk	1,a1
+	jruc	rlpx
+rlpnot3	cmpi	3,a14
+	jrne	rlpdunk
+	move	*a0(plyr_seq),a2	;OOP CITY: alley-oops 3, double dunks 4
+	cmpi	DDUNK_RECV_SEQ,a2
+	jrne	rlpnodd
+	movk	4,a1
+	jruc	rlpx
+rlpnodd	cmpi	ALLEYOOP1_SEQ,a2
+	jrlo	rlpoop2
+	cmpi	ALLEYOOP14_SEQ,a2
+	jrls	rlpoop
+rlpoop2	.ref	was_alley_shot
+	move	@was_alley_shot,a2	;alley-oop layup?
+	jrz	rlpx
+rlpoop	movk	3,a1
+	jruc	rlpx
+rlpdunk	move	*a0(plyr_seqflgs),a2	;DUNKFEST: dunks 3, the rest 1
+	btst	DUNK_B,a2
+	jrz	rlpone
+	movk	3,a1
+	jruc	rlpx
+rlpone	movk	1,a1
+rlpx	PULL	a0,a2,a14
 	rets
 
 *******************************

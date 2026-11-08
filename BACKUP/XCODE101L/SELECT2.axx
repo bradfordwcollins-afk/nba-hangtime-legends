@@ -1992,6 +1992,11 @@ szwetmpop
 
 	.ref	start_powerups
 	CREATE	SMOVE_PID,start_powerups
+	.ref	rules_show
+	move	@rules_show,a14		;GAME RULES line (RANDOM: roulette)
+	jrz	szwenorl
+	CREATE0	rules_vs
+szwenorl
 
 	SLEEPK	1
 
@@ -5020,6 +5025,69 @@ matchup_mod
 	.long	VSSCRBMOD
 	.word	0,10		;x,y
 	.long	0
+
+******************************************************************************
+* Matchup screen: "GAME RULES: xxx"; RANDOM spins through the rule sets and lands on the pick
+	.ref	game_rules,rules_random,rules_name_t,opt_scr_cur,opt_scr_sel
+rules_vs
+	SLEEP	40
+	move	@rules_random,a14
+	jrz	rvsfinal
+	movk	4,a0
+	calla	RNDRNG0
+	move	a0,a9			;start on a random name
+	movi	rvs_delays,a10
+rvslp	move	*a10+,a11
+	jrz	rvsfinal
+	movi	rvs_setup_b,a2
+	move	a9,a4
+	callr	rvs_print
+	SOUND1	opt_scr_cur
+	move	a11,a0
+	calla	PRCSLP
+	addk	1,a9
+	cmpi	5,a9
+	jrlo	rvslp
+	clr	a9
+	jruc	rvslp
+rvsfinal
+	movi	rvs_setup_w,a2
+	move	@game_rules,a4
+	callr	rvs_print
+	SOUND1	opt_scr_sel
+	DIE
+
+* a2 = *setup, a4 = rule # 0-4
+rvs_print
+	PUSH	a2,a4,a9,a10,a11
+	movi	TYPTEXT+9,a0
+	calla	obj_del1c		;old line
+	PULL	a2,a4,a9,a10,a11
+	PUSH	a4,a9,a10,a11
+	calla	setup_message
+	movi	TYPTEXT+9,a0
+	move	a0,@mess_objid
+	movi	rvs_lbl,a4
+	calla	copy_rom_string
+	PULL	a4,a9,a10,a11
+	PUSH	a9,a10,a11
+	sll	5,a4
+	addi	rules_name_t,a4
+	move	*a4,a4,L
+	calla	concat_rom_string
+	calla	print_string_C
+	PULL	a9,a10,a11
+	rets
+
+rvs_delays
+	.word	4,4,4,4,4,4,5,5,6,6,7,8,9,11,13,16,20,0
+rvs_setup_b
+	PRINT_STR	bast8_ascii,5,0,200,229,BAST_R_P,0
+rvs_setup_w
+	PRINT_STR	bast8_ascii,5,0,200,229,BAST_W_P,0
+rvs_lbl
+	.string	"GAME RULES: ",0
+	.even
 
 bsd_stat_str_setup
 ;DJT Start
