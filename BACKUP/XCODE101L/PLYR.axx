@@ -1054,8 +1054,16 @@ zmnqt1a
 	btst	1,a11
 	jrz	zmnqt1
 	SWAP	a3,a4
-zmnqt1	btst	1,a11			;2025-26 kits: team 1 (home) wears the home set
+zmnqt1
+	.ref	court_away
+	move	@court_away,a14		;team 2's court picked? team 2 wears home, team 1 away
+	jrz	zmnqhc
+	btst	1,a11
+	jrnz	zmnqkeepc
+	jruc	zmnqawy
+zmnqhc	btst	1,a11			;2025-26 kits: team 1 (home) wears the home set
 	jrz	zmnqkeepc
+zmnqawy
 	sll	3,a3
 	addi	awaycls_t,a3
 	movb	*a3,a3		;away team's away-set colour family

@@ -1236,8 +1236,14 @@ whcqset_tm
 	move	a6,a7
 
 	.ref	homecls_t,awaycls_t
-	cmpi	tm2pal_t,a2		;bench: team 1 (home) wears the home set
+	move	@court_away,a14		;team 2's court picked? its bench wears home, team 1's away
+	jrz	whcqhc
+	cmpi	tm2pal_t,a2
+	jreq	whcqkeepc
+	jruc	whcqawy
+whcqhc	cmpi	tm2pal_t,a2		;bench: team 1 (home) wears the home set
 	jrnz	whcqkeepc
+whcqawy
 	sll	3,a3
 	addi	awaycls_t,a3
 	movb	*a3,a3
