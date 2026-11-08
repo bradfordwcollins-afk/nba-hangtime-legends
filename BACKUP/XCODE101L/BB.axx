@@ -231,6 +231,7 @@
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
 	BSSX	injfire_team	,16	;INJURY FIRE team (32 = team 1, 0 = team 2, neg = none)
+	BSSX	tmfire2_team	,16	;second (coin) team fire: 32 = team 1, 0 = team 2, neg = none
 	BSSX	injfire_all	,16	;!0 = both teams have INJURY FIRE (everybody on fire)
 	.even
 	BSSX	PCNT		,32	;Main loop cnt
@@ -1871,6 +1872,7 @@ offpbomb_out
 	move	a0,@balltmshotcnt
 	movi	-1,a14
 	move	a14,@injfire_team	;no INJURY FIRE yet this game
+	move	a14,@tmfire2_team
 	move	a0,@injfire_all
 	.if	TEAMZONE
 	move	a0,@tm1_meter_cnt
@@ -2558,9 +2560,6 @@ tzenoff	clr	a0
 	PUSH	a0,a1,a2,a3,a7,a8,a9,a14
 	callr	tz_enabled
 	jrz	hlygx
-	move	@balltmshotcnt,a0	;a team on fire already? don't fill
-	subk	TMFIRE_MINCNT,a0
-	jrge	hlygx
 	srl	1,a1			;0 = team 1 (players 0,1), 1 = team 2
 	jrnz	hlygtm2
 	movi	tm1_meter_cnt,a3
@@ -2572,6 +2571,16 @@ hlygtm2
 	move	@tm2_meter_obj,a1,L
 	clr	a2			;team 2
 hlygadd
+	move	@tmfire2_team,a0	;this team on fire? don't fill
+	cmp	a2,a0
+	jreq	hlygx
+	move	@balltmshotcnt,a0
+	subk	TMFIRE_MINCNT,a0
+	jrlt	hlygfill
+	move	@balltmscored,a0
+	cmp	a2,a0
+	jreq	hlygx
+hlygfill
 	move	*a3,a0
 	add	a14,a0
 	cmpi	NUM_MTR_IMGS-1,a0	;full?
@@ -2613,9 +2622,16 @@ tzcfteam
 	jrnz	tzcfno
 	callr	tz_enabled
 	jrz	tzcfno
-	move	@balltmshotcnt,a14	;a team already on fire?
+	move	@injfire_team,a14	;INJURY FIRE lit: no coin fires
+	jrnn	tzcfno
+	move	@tmfire2_team,a14	;both teams already on fire?
+	jrnn	tzcfno
+	clr	a5			;a5 = 1: the other team is on fire already
+	move	@balltmshotcnt,a14
 	subk	TMFIRE_MINCNT,a14
-	jrge	tzcfno
+	jrlt	tzcfone
+	movk	1,a5
+tzcfone
 	move	a3,a3
 	jrnz	tzcft2
 	move	@tm1_meter_cnt,a14
@@ -2626,6 +2642,17 @@ tzcft2	move	@tm2_meter_cnt,a14
 tzcfchk	cmpi	NUM_MTR_IMGS-1,a14	;meter full?
 	jrne	tzcfno
 	.ref	balltmscored,tmfire_timer
+	move	a5,a5
+	jrz	tzcffirst
+	move	@balltmscored,a14
+	cmp	a2,a14
+	jreq	tzcfno			;this team is the one on fire
+	move	a2,@tmfire2_team	;second TEAM FIRE: both teams on fire
+	move	a2,a9
+	CREATE	tmfire2id,tmfire_timer
+	movk	1,a0
+	jruc	tzcfx
+tzcffirst
 	move	a2,@balltmscored	;TEAM FIRE for this team
 	movk	TMFIRE_MINCNT,a0
 	move	a0,@balltmshotcnt
@@ -2729,6 +2756,8 @@ injfire_cnt_tbl
 * Trashes scratch (callers save)
  SUBRP	injfire_start
 
+	move	@tmfire2_team,a14	;two team fires lit: put both out first
+	jrnn	injsnew
 	move	@balltmshotcnt,a14
 	subk	TMFIRE_MINCNT,a14
 	jrn	injsnew			;no team fire right now
@@ -2738,6 +2767,10 @@ injfire_cnt_tbl
 injsnew
 	movi	tmfireid,a0		;put out any other team fire
 	calla	KIL1C
+	movi	tmfire2id,a0
+	calla	KIL1C
+	movi	-1,a0
+	move	a0,@tmfire2_team
 	movi	CLSDEAD|tmfireid,a0
 	calla	obj_del1c
 	.if	TEAMZONE

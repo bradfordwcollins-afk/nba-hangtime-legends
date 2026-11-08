@@ -409,8 +409,12 @@ qiyxskipgt
 	jrn	qiyxnotmfire		; br=no
 
 	.ref	injfire_all
+	.ref	tmfire2_team
 	move	@injfire_all,a14	;INJURY FIRE both teams: all 4 players on fire
-	jrz	qiyxnoall
+	jrnz	qiyxall
+	move	@tmfire2_team,a14	;two team fires: all 4 players on fire
+	jrn	qiyxnoall
+qiyxall
 	movk	15,a2
 	cmpi	15,a3
 	jreq	qiyxchkownr
@@ -2157,6 +2161,16 @@ zdikply1st
 	movk	1,a4			;Set new # times last plyr scored
 
 zdiksavefire
+	move	@tmfire2_team,a14	;two team fires: the scoring team keeps its fire,
+	jrn	zdikdualx		; the other one goes out
+	cmp	a2,a14
+	jrne	zdikdual1
+	move	a14,a5			;second fire's team scored: it takes over
+	movk	TMFIRE_MINCNT,a7
+zdikdual1
+	movi	-1,a14
+	move	a14,@tmfire2_team
+zdikdualx
 	.ref	injfire_team
 	move	@injfire_team,a14	;INJURY FIRE: that team stays on fire
 	jrn	zdikinjx

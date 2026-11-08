@@ -3046,7 +3046,7 @@ tie_eqrtrt
  SUBR	tmfire_timer
 
 	.ref	injfire_team,injfire_all,obj_off,EXISTP,balltmscored
-	.ref	LEDINF
+	.ref	LEDINF,tmfire2_team
 	move	@injfire_team,a14	;INJURY FIRE owns team fire the rest of the game
 	jrn	kugnifok
 	movi	tmfireid,a0
@@ -3175,7 +3175,7 @@ kugnlp
 	move	*a8(OCTRL),a1
 	calla	obj_aniq
 kugninf2
-	jruc	kugnifnorm
+	jruc	kugnstill
 kugnifown
 	movk	TMFIRE_MINCNT,a14
 	move	a14,@balltmshotcnt
@@ -3189,9 +3189,16 @@ kugnifown
 kugninf1
 kugnifnorm
 
+	move	@tmfire2_team,a14	;the second team fire?
+	cmp	a11,a14
+	jreq	kugnstill
 	move	@balltmshotcnt,a14	;Team stil on-fire?
 	subk	TMFIRE_MINCNT,a14
 	jrn	kugnnotmfire		; br=no
+	move	@balltmscored,a14	;still this team's fire?
+	cmp	a11,a14
+	jrne	kugnnotmfire
+kugnstill
 
 	move	*a13(PDATA),A14,L	;Fire-frame ani *table
 	move	*a14+,a0,L
@@ -3259,6 +3266,15 @@ kugnclean_up
 ;DJT Start
 	SOUND1	tfire_outsnd		;Team fire done sound
 ;DJT End
+	move	@tmfire2_team,a14	;two team fires?
+	jrn	kugncuone
+	movi	-1,a0
+	move	a0,@tmfire2_team
+	cmp	a11,a14
+	jreq	kugnnotmfire		;the second fire ran out
+	move	a14,@balltmscored	;the first ran out: the second takes over
+	jruc	kugnnotmfire
+kugncuone
 	clr	a0
 	.ref	balltmshotcnt
 	move	a0,@balltmshotcnt
@@ -3269,8 +3285,13 @@ kugnnotmfire
 	calla	team_meter_reset
 	.endif
 	clr	a0
-	move	a0,@plyr_onfire
+	move	a0,@plyr_onfire		;(a fire still lit relights its team)
 
+	move	@tmfire2_team,a14	;another team fire still lit? keep its tune
+	jrnn	kugnnoplay1
+	move	@balltmshotcnt,a14
+	subk	TMFIRE_MINCNT,a14
+	jrge	kugnnoplay1
 	move	@pup_nomusic,a14
 	jrz	kugnplay1
 	move	@GAMSTATE,a14
