@@ -3331,7 +3331,7 @@ dnb_1
 	calla	update_bball_palettes
 
 	.ref	SMAXHINT,smax_allow
-	movi	[95,0],a0		;SHOOT+PASS+TURBO = SUPERMAX SETTINGS (flashes)
+	movi	[77,0],a0		;SHOOT+PASS+TURBO+START = SUPERMAX SETTINGS (flashes)
 	movi	[164,0],a1
 	movi	SMAXHINT,a2
 	movi	90,a3
@@ -3500,7 +3500,7 @@ smax_hint_tick
 	move	@smax_hint_cnt,a0
 	addk	1,a0
 	move	a0,@smax_hint_cnt
-	btst	4,a0			;16 frames on / 16 off
+	btst	5,a0			;32 frames on / 32 off
 	jrz	shtoff
 	calla	obj_on
 	jruc	shtx

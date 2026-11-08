@@ -564,7 +564,6 @@ mainpok
 
 	calla	cr_cntrs_update		;And blink the top messages
 	callr	switch_unstack
-	callr	smax_poll		;SHOOT+PASS+TURBO held -> SUPER MAXIMUM SETTINGS
 	calla	snd_update		;Update the sound calls
 	calla	joy_read
 
@@ -680,6 +679,47 @@ mjyeskipit
 ***************************************************************
 * Super Max shortcut (main loop): any player holding SHOOT+PASS+TURBO for
 * 30 frames on the attract screens or the CHOOSE OPTION menu.
+***************************************************************
+* Start button pressed while that player holds SHOOT+PASS+TURBO, on the attract
+* screens or the CHOOSE OPTION menu -> SUPER MAXIMUM SETTINGS.
+* INPUT:  a0 - start switch 0-3 (P1-P4).  RETURNS a0 !0 (NZ) when it started the menu.
+ SUBRP	smax_start
+
+	PUSH	a1,a2,a7
+	move	@GAMSTATE,a1
+	cmpi	INAMODE,a1
+	jreq	smsok
+	cmpi	INGAME,a1		;never in a game
+	jreq	smsno
+	move	a1,a1
+	jrn	smsno			;(diagnostics)
+	move	@smax_allow,a1		;CHOOSE OPTION screen?
+	jrz	smsno
+smsok
+	move	@_switch_addr,a1,L	;P1 / P2
+	btst	1,a0
+	jrz	smsrd
+	move	@_switch2_addr,a1,L	;P3 / P4
+smsrd	move	*a1,a1
+	not	a1
+	movi	070H,a2			;shoot / pass / turbo (0 = pressed)
+	btst	0,a0
+	jrz	smsmsk
+	movi	07000H,a2
+smsmsk	and	a2,a1
+	cmp	a2,a1
+	jrne	smsno
+	clr	a1
+	move	a1,@smax_allow
+	.ref	QUICK_SUPER
+	CREATE	DIAG_PID,QUICK_SUPER
+	movk	1,a0
+	jruc	smsx
+smsno	clr	a0
+smsx	PULL	a1,a2,a7
+	move	a0,a0
+	rets
+
  SUBRP	smax_poll
 
 	move	@GAMSTATE,a0
@@ -845,7 +885,10 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
 
  SUBR	plyr_strtb1
 
-	jruc	ipeqnoqs		;(Super Max shortcut is now SHOOT+PASS+TURBO held: smax_poll)
+	clr	a0			;player 1's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
+	callr	smax_start
+	jrz	ipeqnoqs
+	DIE
 	move	@_switch_addr,a0,L
 	move	*a0,a0
 	not	a0
@@ -878,6 +921,11 @@ ipeqnoqs
 ;-------------------
  SUBR	plyr_strtb2
 
+	movk	1,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
+	callr	smax_start
+	jrz	ipeqsm2
+	DIE
+ipeqsm2
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqstrtb3
 ipeqstrtb2
@@ -900,6 +948,11 @@ ipeqstrtb2
 ;-------------------
  SUBR	plyr_strtb3
 
+	movk	2,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
+	callr	smax_start
+	jrz	ipeqsm3
+	DIE
+ipeqsm3
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqpsb_x
 ipeqstrtb3
@@ -922,6 +975,11 @@ ipeqstrtb3
 ;-------------------
  SUBR	plyr_strtb4
 
+	movk	3,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
+	callr	smax_start
+	jrz	ipeqsm4
+	DIE
+ipeqsm4
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqpsb_x
 
