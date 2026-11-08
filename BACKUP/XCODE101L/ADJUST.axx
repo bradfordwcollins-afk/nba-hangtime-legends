@@ -2654,7 +2654,7 @@ MESS_BABY
 	.even
 
 MESS_HUGE
-	.string "HUGE HEAD MODE",0
+	.string "BLOCK PARTY",0
 	.even
 
 MESS_HOTSPOT
@@ -3685,9 +3685,9 @@ BABY_0	.string	"ENABLE OR DISABLE BABY",0
 BABY_1	.string	"SIZED PLAYERS.",0
 	.even
 
-HUGE_0	.string "ENABLE OR DISABLE HUGE",0
+HUGE_0	.string "EACH BLOCK = -1 POINT FOR",0
 	.even
-HUGE_1	.string "PLAYER HEADS (FUNKO) MODE.",0
+HUGE_1	.string "THE OTHER TEAM (MIN 0).",0
 	.even
 
 HSPOT_0	.string "ENABLE OR DISABLE HOTSPOT",0

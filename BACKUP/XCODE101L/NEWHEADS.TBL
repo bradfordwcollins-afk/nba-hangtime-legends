@@ -1,6302 +1,6302 @@
 	.DATA
 JORD1:
 	.word   24,33,11,28
-	.long   09295b15H
+	.long   09298081H
 	.word   00H
 	.long   JORDNEWP
 JORD2:
 	.word   24,34,11,29
-	.long   092973d5H
+	.long   09299941H
 	.word   00H
 	.long   JORDNEWP
 JORD3:
 	.word   27,31,8,25
-	.long   09298d55H
+	.long   0929b2c1H
 	.word   00H
 	.long   JORDNEWP
 JORD4:
 	.word   24,35,9,31
-	.long   0929a77dH
+	.long   0929cce9H
 	.word   00H
 	.long   JORDNEWP
 JORD5:
 	.word   25,36,11,33
-	.long   0929c1bdH
+	.long   0929e729H
 	.word   00H
 	.long   JORDNEWP
 JORD6:
 	.word   31,33,23,26
-	.long   0929ddddH
+	.long   092a0349H
 	.word   00H
 	.long   JORDNEWP
 JORD7:
 	.word   28,32,7,25
-	.long   0929fdd5H
+	.long   092a2341H
 	.word   00H
 	.long   JORDNEWP
 JORD8:
 	.word   28,33,3,24
-	.long   092a19d5H
+	.long   092a3f41H
 	.word   00H
 	.long   JORDNEWP
 JORD9:
 	.word   26,34,5,28
-	.long   092a36b5H
+	.long   092a5c21H
 	.word   00H
 	.long   JORDNEWP
 JORD10:
 	.word   25,37,11,31
-	.long   092a5255H
+	.long   092a77c1H
 	.word   00H
 	.long   JORDNEWP
 JORD11:
 	.word   22,25,10,12
-	.long   092a6f3dH
+	.long   092a94a9H
 	.word   00H
 	.long   JORDNEWP
 JORD12:
 	.word   28,28,18,25
-	.long   092a806dH
+	.long   092aa5d9H
 	.word   00H
 	.long   JORDNEWP
 JORD13:
 	.word   31,30,20,26
-	.long   092a98edH
+	.long   092abe59H
 	.word   00H
 	.long   JORDNEWP
 JORD14:
 	.word   26,32,15,27
-	.long   092ab5fdH
+	.long   092adb69H
 	.word   00H
 	.long   JORDNEWP
 JORD15:
 	.word   23,32,11,28
-	.long   092acffdH
+	.long   092af569H
 	.word   00H
 	.long   JORDNEWP
 JORD16:
 	.word   31,27,27,17
-	.long   092ae6fdH
+	.long   092b0c69H
 	.word   00H
 	.long   JORDNEWP
 JORD17:
 	.word   25,36,11,33
-	.long   092b0125H
+	.long   092b2691H
 	.word   00H
 	.long   JORDNEWP
 KOBE01:
 	.word   27,35,12,32
-	.long   092b1d45H
+	.long   092b42b1H
 	.word   00H
 	.long   KOBE_P
 KOBE02:
 	.word   28,35,13,32
-	.long   092b3acdH
+	.long   092b6039H
 	.word   00H
 	.long   KOBE_P
 KOBE03:
 	.word   31,35,13,30
-	.long   092b596dH
+	.long   092b7ed9H
 	.word   00H
 	.long   KOBE_P
 KOBE04:
 	.word   30,36,9,33
-	.long   092b7b55H
+	.long   092ba0c1H
 	.word   00H
 	.long   KOBE_P
 KOBE05:
 	.word   27,37,13,35
-	.long   092b9d15H
+	.long   092bc281H
 	.word   00H
 	.long   KOBE_P
 KOBE16:
 	.word   35,31,34,19
-	.long   092bbc4dH
+	.long   092be1b9H
 	.word   00H
 	.long   KOBE_P
 KOBE17:
 	.word   37,37,13,35
-	.long   092bde35H
+	.long   092c03a1H
 	.word   00H
 	.long   KOBE_P
 ONEAL01:
 	.word   25,35,11,32
-	.long   092c08fdH
+	.long   092c2e69H
 	.word   06000H
 	.long   ONEAL_P
 ONEAL02:
 	.word   26,35,10,32
-	.long   092c1d7fH
+	.long   092c42ebH
 	.word   06000H
 	.long   ONEAL_P
 ONEAL03:
 	.word   30,38,12,34
-	.long   092c32d3H
+	.long   092c583fH
 	.word   06000H
 	.long   ONEAL_P
 ONEAL04:
 	.word   24,41,10,38
-	.long   092c4d8bH
+	.long   092c72f7H
 	.word   06000H
 	.long   ONEAL_P
 ONEAL05:
 	.word   28,42,14,39
-	.long   092c649bH
+	.long   092c8a07H
 	.word   06000H
 	.long   ONEAL_P
 ONEAL16:
 	.word   38,30,35,19
-	.long   092c802bH
+	.long   092ca597H
 	.word   06000H
 	.long   ONEAL_P
 BARKLEY1:
 	.word   28,34,14,31
-	.long   092c9ae3H
+	.long   092cc04fH
 	.word   06000H
 	.long   BARKLEY_P
 BARKLEY2:
 	.word   29,35,13,31
-	.long   092cb133H
+	.long   092cd69fH
 	.word   06000H
 	.long   BARKLEY_P
 BARKLEY3:
 	.word   32,35,12,31
-	.long   092cc8fdH
+	.long   092cee69H
 	.word   06000H
 	.long   BARKLEY_P
 BARKLEY4:
 	.word   27,36,9,35
-	.long   092ce33dH
+	.long   092d08a9H
 	.word   06000H
 	.long   BARKLEY_P
 BARKLEY5:
 	.word   27,37,13,33
-	.long   092cfa05H
+	.long   092d1f71H
 	.word   06000H
 	.long   BARKLEY_P
 BARKLEY16:
 	.word   35,32,34,24
-	.long   092d116fH
+	.long   092d36dbH
 	.word   06000H
 	.long   BARKLEY_P
 MAG01:
 	.word   26,35,11,32
-	.long   092d2bafH
+	.long   092d511bH
 	.word   06000H
 	.long   MAG_P
 MAG02:
 	.word   28,35,12,31
-	.long   092d4103H
+	.long   092d666fH
 	.word   06000H
 	.long   MAG_P
 MAG03:
 	.word   32,36,13,33
-	.long   092d57fbH
+	.long   092d7d67H
 	.word   06000H
 	.long   MAG_P
 MAG04:
 	.word   28,36,9,33
-	.long   092d72fbH
+	.long   092d9867H
 	.word   06000H
 	.long   MAG_P
 MAG05:
 	.word   25,37,11,33
-	.long   092d8a9bH
+	.long   092db007H
 	.word   06000H
 	.long   MAG_P
 MAG16:
 	.word   34,30,32,20
-	.long   092da049H
+	.long   092dc5b5H
 	.word   06000H
 	.long   MAG_P
 BIRD01:
 	.word   29,42,14,40
-	.long   092db831H
+	.long   092ddd9dH
 	.word   06000H
 	.long   BIRD_P
 BIRD02:
 	.word   31,35,13,32
-	.long   092dd4bdH
+	.long   092dfa29H
 	.word   06000H
 	.long   BIRD_P
 BIRD03:
 	.word   32,35,14,31
-	.long   092dee2bH
+	.long   092e1397H
 	.word   06000H
 	.long   BIRD_P
 BIRD04:
 	.word   30,36,13,34
-	.long   092e086bH
+	.long   092e2dd7H
 	.word   06000H
 	.long   BIRD_P
 BIRD05:
 	.word   29,44,14,39
-	.long   092e21bbH
+	.long   092e4727H
 	.word   06000H
 	.long   BIRD_P
 BIRD16:
 	.word   35,32,31,22
-	.long   092e3fa3H
+	.long   092e650fH
 	.word   06000H
 	.long   BIRD_P
 ARNOLD01:
 	.word   28,35,13,32
-	.long   092e59e3H
+	.long   092e7f4fH
 	.word   06000H
 	.long   ARNOLD_P
 ARNOLD02:
 	.word   28,35,11,32
-	.long   092e70dbH
+	.long   092e9647H
 	.word   06000H
 	.long   ARNOLD_P
 ARNOLD03:
 	.word   27,38,12,34
-	.long   092e87d3H
+	.long   092ead3fH
 	.word   06000H
 	.long   ARNOLD_P
 ARNOLD04:
 	.word   26,36,11,33
-	.long   092e9fdfH
+	.long   092ec54bH
 	.word   06000H
 	.long   ARNOLD_P
 ARNOLD05:
 	.word   27,42,12,40
-	.long   092eb5cfH
+	.long   092edb3bH
 	.word   06000H
 	.long   ARNOLD_P
 ARNOLD16:
 	.word   38,27,34,21
-	.long   092ed063H
+	.long   092ef5cfH
 	.word   06000H
 	.long   ARNOLD_P
 TERM01:
 	.word   28,37,14,34
-	.long   092ee86fH
+	.long   092f0ddbH
 	.word   00H
 	.long   TERM_P
 TERM02:
 	.word   28,34,13,32
-	.long   092f08cfH
+	.long   092f2e3bH
 	.word   00H
 	.long   TERM_P
 TERM03:
 	.word   33,40,12,35
-	.long   092f268fH
+	.long   092f4bfbH
 	.word   00H
 	.long   TERM_P
 TERM04:
 	.word   29,37,10,34
-	.long   092f4fcfH
+	.long   092f753bH
 	.word   00H
 	.long   TERM_P
 TERM05:
 	.word   27,43,13,40
-	.long   092f7157H
+	.long   092f96c3H
 	.word   00H
 	.long   TERM_P
 TERM16:
 	.word   35,29,31,19
-	.long   092f959fH
+	.long   092fbb0bH
 	.word   00H
 	.long   TERM_P
 GIAN01:
 	.word   26,36,11,33
-	.long   092fb557H
+	.long   092fdac3H
 	.word   06000H
 	.long   GIAN_P
 GIAN02:
 	.word   29,35,15,32
-	.long   092fcb47H
+	.long   092ff0b3H
 	.word   06000H
 	.long   GIAN_P
 GIAN03:
 	.word   31,37,7,31
-	.long   092fe311H
+	.long   0930087dH
 	.word   06000H
 	.long   GIAN_P
 GIAN04:
 	.word   27,36,9,32
-	.long   092ffdf3H
+	.long   0930235fH
 	.word   06000H
 	.long   GIAN_P
 GIAN05:
 	.word   26,38,13,35
-	.long   093014bbH
+	.long   09303a27H
 	.word   06000H
 	.long   GIAN_P
 GIAN06:
 	.word   31,35,20,26
-	.long   09302be3H
+	.long   0930514fH
 	.word   06000H
 	.long   GIAN_P
 GIAN07:
 	.word   33,36,5,31
-	.long   09304551H
+	.long   09306abdH
 	.word   06000H
 	.long   GIAN_P
 GIAN08:
 	.word   36,35,2,22
-	.long   09306129H
+	.long   09308695H
 	.word   06000H
 	.long   GIAN_P
 GIAN09:
 	.word   34,36,5,26
-	.long   09307eb1H
+	.long   0930a41dH
 	.word   06000H
 	.long   GIAN_P
 GIAN10:
 	.word   31,37,12,30
-	.long   09309b61H
+	.long   0930c0cdH
 	.word   06000H
 	.long   GIAN_P
 GIAN11:
 	.word   27,26,13,15
-	.long   0930b643H
+	.long   0930dbafH
 	.word   06000H
 	.long   GIAN_P
 GIAN12:
 	.word   31,35,17,33
-	.long   0930c6b7H
+	.long   0930ec23H
 	.word   06000H
 	.long   GIAN_P
 GIAN13:
 	.word   28,37,18,32
-	.long   0930e025H
+	.long   09310591H
 	.word   06000H
 	.long   GIAN_P
 GIAN14:
 	.word   23,36,12,31
-	.long   0930f86dH
+	.long   09311dd9H
 	.word   06000H
 	.long   GIAN_P
 GIAN15:
 	.word   26,37,14,34
-	.long   09310bd5H
+	.long   09313141H
 	.word   06000H
 	.long   GIAN_P
 GIAN16:
 	.word   37,31,33,19
-	.long   09312261H
+	.long   093147cdH
 	.word   06000H
 	.long   GIAN_P
 KAR01:
 	.word   30,38,13,34
-	.long   09313d43H
+	.long   093162afH
 	.word   06000H
 	.long   KAR_P
 KAR02:
 	.word   31,37,16,34
-	.long   093157fbH
+	.long   09317d67H
 	.word   06000H
 	.long   KAR_P
 KAR03:
 	.word   30,34,6,29
-	.long   093172ddH
+	.long   09319849H
 	.word   06000H
 	.long   KAR_P
 KAR04:
 	.word   29,36,9,32
-	.long   09318ac5H
+	.long   0931b031H
 	.word   06000H
 	.long   KAR_P
 KAR05:
 	.word   29,37,15,34
-	.long   0931a33dH
+	.long   0931c8a9H
 	.word   06000H
 	.long   KAR_P
 KAR06:
 	.word   35,35,23,26
-	.long   0931bc63H
+	.long   0931e1cfH
 	.word   06000H
 	.long   KAR_P
 KAR07:
 	.word   34,37,6,32
-	.long   0931d919H
+	.long   0931fe85H
 	.word   06000H
 	.long   KAR_P
 KAR08:
 	.word   30,33,2,21
-	.long   0931f695H
+	.long   09321c01H
 	.word   06000H
 	.long   KAR_P
 KAR09:
 	.word   30,34,4,25
-	.long   09320dc9H
+	.long   09323335H
 	.word   06000H
 	.long   KAR_P
 KAR10:
 	.word   30,37,11,30
-	.long   093225b1H
+	.long   09324b1dH
 	.word   06000H
 	.long   KAR_P
 KAR11:
 	.word   23,23,11,13
-	.long   09323fb5H
+	.long   09326521H
 	.word   06000H
 	.long   KAR_P
 KAR12:
 	.word   35,36,19,34
-	.long   09324c1bH
+	.long   09327187H
 	.word   06000H
 	.long   KAR_P
 KAR13:
 	.word   30,38,20,33
-	.long   093269a3H
+	.long   09328f0fH
 	.word   06000H
 	.long   KAR_P
 KAR14:
 	.word   30,37,16,32
-	.long   0932845bH
+	.long   0932a9c7H
 	.word   06000H
 	.long   KAR_P
 KAR15:
 	.word   33,37,17,34
-	.long   09329e5fH
+	.long   0932c3cbH
 	.word   06000H
 	.long   KAR_P
 KAR16:
 	.word   35,35,31,22
-	.long   0932bafdH
+	.long   0932e069H
 	.word   06000H
 	.long   KAR_P
 STC01:
 	.word   29,36,12,33
-	.long   0932d7b3H
+	.long   0932fd1fH
 	.word   06000H
 	.long   STC_P
 STC02:
 	.word   31,36,16,33
-	.long   0932f02bH
+	.long   09331597H
 	.word   06000H
 	.long   STC_P
 STC03:
 	.word   34,37,7,31
-	.long   09330a53H
+	.long   09332fbfH
 	.word   06000H
 	.long   STC_P
 STC04:
 	.word   28,38,9,33
-	.long   093327cfH
+	.long   09334d3bH
 	.word   06000H
 	.long   STC_P
 STC05:
 	.word   28,37,14,34
-	.long   093340bfH
+	.long   0933662bH
 	.word   06000H
 	.long   STC_P
 STC06:
 	.word   35,35,23,26
-	.long   09335907H
+	.long   09337e73H
 	.word   06000H
 	.long   STC_P
 STC07:
 	.word   33,37,5,32
-	.long   093375bdH
+	.long   09339b29H
 	.word   06000H
 	.long   STC_P
 STC08:
 	.word   37,35,2,22
-	.long   0933925bH
+	.long   0933b7c7H
 	.word   06000H
 	.long   STC_P
 STC09:
 	.word   37,37,5,27
-	.long   0933b0b5H
+	.long   0933d621H
 	.word   06000H
 	.long   STC_P
 STC10:
 	.word   33,37,13,30
-	.long   0933d0cbH
+	.long   0933f637H
 	.word   06000H
 	.long   STC_P
 STC11:
 	.word   29,27,14,16
-	.long   0933ed69H
+	.long   093412d5H
 	.word   06000H
 	.long   STC_P
 STC12:
 	.word   35,36,19,34
-	.long   0933ffc3H
+	.long   0934252fH
 	.word   06000H
 	.long   STC_P
 STC13:
 	.word   30,38,20,33
-	.long   09341d4bH
+	.long   093442b7H
 	.word   06000H
 	.long   STC_P
 STC14:
 	.word   28,37,14,32
-	.long   09343803H
+	.long   09345d6fH
 	.word   06000H
 	.long   STC_P
 STC15:
 	.word   28,37,15,34
-	.long   0934504bH
+	.long   093475b7H
 	.word   06000H
 	.long   STC_P
 STC16:
 	.word   37,32,33,20
-	.long   09346893H
+	.long   09348dffH
 	.word   06000H
 	.long   STC_P
 KDU01:
 	.word   28,34,12,31
-	.long   09348453H
+	.long   0934a9bfH
 	.word   06000H
 	.long   KDU_P
 KDU02:
 	.word   28,34,15,31
-	.long   09349aa3H
+	.long   0934c00fH
 	.word   06000H
 	.long   KDU_P
 KDU03:
 	.word   33,37,7,31
-	.long   0934b0f3H
+	.long   0934d65fH
 	.word   06000H
 	.long   KDU_P
 KDU04:
 	.word   31,38,10,33
-	.long   0934cd91H
+	.long   0934f2fdH
 	.word   06000H
 	.long   KDU_P
 KDU05:
 	.word   26,36,13,33
-	.long   0934e92dH
+	.long   09350e99H
 	.word   06000H
 	.long   KDU_P
 KDU06:
 	.word   30,34,20,25
-	.long   0934ff1dH
+	.long   09352489H
 	.word   06000H
 	.long   KDU_P
 KDU07:
 	.word   31,34,5,29
-	.long   09351705H
+	.long   09353c71H
 	.word   06000H
 	.long   KDU_P
 KDU08:
 	.word   37,33,2,21
-	.long   09352fb9H
+	.long   09355525H
 	.word   06000H
 	.long   KDU_P
 KDU09:
 	.word   37,37,5,27
-	.long   09354c57H
+	.long   093571c3H
 	.word   06000H
 	.long   KDU_P
 KDU10:
 	.word   36,37,14,30
-	.long   09356c6dH
+	.long   093591d9H
 	.word   06000H
 	.long   KDU_P
 KDU11:
 	.word   26,23,12,13
-	.long   09358ba5H
+	.long   0935b111H
 	.word   06000H
 	.long   KDU_P
 KDU12:
 	.word   30,34,16,32
-	.long   093599a9H
+	.long   0935bf15H
 	.word   06000H
 	.long   KDU_P
 KDU13:
 	.word   29,38,19,33
-	.long   0935b191H
+	.long   0935d6fdH
 	.word   06000H
 	.long   KDU_P
 KDU14:
 	.word   24,37,12,32
-	.long   0935cb65H
+	.long   0935f0d1H
 	.word   06000H
 	.long   KDU_P
 KDU15:
 	.word   27,37,14,34
-	.long   0935e035H
+	.long   093605a1H
 	.word   06000H
 	.long   KDU_P
 KDU16:
 	.word   37,32,33,20
-	.long   0935f79fH
+	.long   09361d0bH
 	.word   06000H
 	.long   KDU_P
 LBJ01:
 	.word   29,33,12,30
-	.long   0936135fH
+	.long   093638cbH
 	.word   06000H
 	.long   LBJ_P
 LBJ02:
 	.word   28,35,15,32
-	.long   093629cdH
+	.long   09364f39H
 	.word   06000H
 	.long   LBJ_P
 LBJ03:
 	.word   28,38,6,32
-	.long   093640c5H
+	.long   09366631H
 	.word   06000H
 	.long   LBJ_P
 LBJ04:
 	.word   28,36,9,32
-	.long   093659b5H
+	.long   09367f21H
 	.word   06000H
 	.long   LBJ_P
 LBJ05:
 	.word   27,37,14,34
-	.long   09367155H
+	.long   093696c1H
 	.word   06000H
 	.long   LBJ_P
 LBJ06:
 	.word   34,33,22,24
-	.long   093688bfH
+	.long   0936ae2bH
 	.word   06000H
 	.long   LBJ_P
 LBJ07:
 	.word   35,36,6,31
-	.long   0936a30bH
+	.long   0936c877H
 	.word   06000H
 	.long   LBJ_P
 LBJ08:
 	.word   37,32,2,20
-	.long   0936c093H
+	.long   0936e5ffH
 	.word   06000H
 	.long   LBJ_P
 LBJ09:
 	.word   34,37,5,27
-	.long   0936dc53H
+	.long   093701bfH
 	.word   06000H
 	.long   LBJ_P
 LBJ10:
 	.word   36,37,14,30
-	.long   0936f9cfH
+	.long   09371f3bH
 	.word   06000H
 	.long   LBJ_P
 LBJ11:
 	.word   24,26,12,15
-	.long   09371907H
+	.long   09373e73H
 	.word   06000H
 	.long   LBJ_P
 LBJ12:
 	.word   34,33,19,31
-	.long   093727a7H
+	.long   09374d13H
 	.word   06000H
 	.long   LBJ_P
 LBJ13:
 	.word   29,38,19,33
-	.long   093741f3H
+	.long   0937675fH
 	.word   06000H
 	.long   LBJ_P
 LBJ14:
 	.word   23,36,12,31
-	.long   09375bc7H
+	.long   09378133H
 	.word   06000H
 	.long   LBJ_P
 LBJ15:
 	.word   27,37,14,34
-	.long   09376f2fH
+	.long   0937949bH
 	.word   06000H
 	.long   LBJ_P
 LBJ16:
 	.word   38,27,34,17
-	.long   09378699H
+	.long   0937ac05H
 	.word   06000H
 	.long   LBJ_P
 LUK01:
 	.word   28,35,12,32
-	.long   09379ea5H
+	.long   0937c411H
 	.word   06000H
 	.long   LUK_P
 LUK02:
 	.word   34,36,18,33
-	.long   0937b59dH
+	.long   0937db09H
 	.word   06000H
 	.long   LUK_P
 LUK03:
 	.word   31,38,7,32
-	.long   0937d24dH
+	.long   0937f7b9H
 	.word   06000H
 	.long   LUK_P
 LUK04:
 	.word   30,36,10,32
-	.long   0937ede9H
+	.long   09381355H
 	.word   06000H
 	.long   LUK_P
 LUK05:
 	.word   28,37,14,34
-	.long   09380739H
+	.long   09382ca5H
 	.word   06000H
 	.long   LUK_P
 LUK06:
 	.word   35,35,23,26
-	.long   09381f81H
+	.long   093844edH
 	.word   06000H
 	.long   LUK_P
 LUK07:
 	.word   34,36,6,31
-	.long   09383c37H
+	.long   093861a3H
 	.word   06000H
 	.long   LUK_P
 LUK08:
 	.word   37,35,2,22
-	.long   093858e7H
+	.long   09387e53H
 	.word   06000H
 	.long   LUK_P
 LUK09:
 	.word   37,37,5,27
-	.long   09387741H
+	.long   09389cadH
 	.word   06000H
 	.long   LUK_P
 LUK10:
 	.word   34,37,13,30
-	.long   09389757H
+	.long   0938bcc3H
 	.word   06000H
 	.long   LUK_P
 LUK11:
 	.word   28,27,14,16
-	.long   0938b4d3H
+	.long   0938da3fH
 	.word   06000H
 	.long   LUK_P
 LUK12:
 	.word   35,35,19,33
-	.long   0938c68bH
+	.long   0938ebf7H
 	.word   06000H
 	.long   LUK_P
 LUK13:
 	.word   33,38,22,33
-	.long   0938e341H
+	.long   093908adH
 	.word   06000H
 	.long   LUK_P
 LUK14:
 	.word   28,37,14,32
-	.long   093900a5H
+	.long   09392611H
 	.word   06000H
 	.long   LUK_P
 LUK15:
 	.word   30,37,16,34
-	.long   093918edH
+	.long   09393e59H
 	.word   06000H
 	.long   LUK_P
 LUK16:
 	.word   37,31,33,19
-	.long   093932f1H
+	.long   0939585dH
 	.word   06000H
 	.long   LUK_P
 XMCH01:
 	.word   25,32,11,29
-	.long   09394dd3H
+	.long   0939733fH
 	.word   00H
 	.long   XMCH_P
 XMCH02:
 	.word   29,31,12,28
-	.long   093966d3H
+	.long   09398c3fH
 	.word   00H
 	.long   XMCH_P
 XMCH03:
 	.word   29,31,10,28
-	.long   093982ebH
+	.long   0939a857H
 	.word   00H
 	.long   XMCH_P
 XMCH04:
 	.word   23,33,7,29
-	.long   09399f03H
+	.long   0939c46fH
 	.word   00H
 	.long   XMCH_P
 XMCH05:
 	.word   25,32,11,29
-	.long   0939b6bbH
+	.long   0939dc27H
 	.word   00H
 	.long   XMCH_P
 XMCH06:
 	.word   32,29,17,23
-	.long   0939cfbbH
+	.long   0939f527H
 	.word   00H
 	.long   XMCH_P
 XMCH07:
 	.word   31,31,8,26
-	.long   0939ecbbH
+	.long   093a1227H
 	.word   00H
 	.long   XMCH_P
 XMCH08:
 	.word   33,34,6,27
-	.long   093a0ac3H
+	.long   093a302fH
 	.word   00H
 	.long   XMCH_P
 XMCH09:
 	.word   29,34,7,30
-	.long   093a2dd3H
+	.long   093a533fH
 	.word   00H
 	.long   XMCH_P
 XMCH10:
 	.word   24,31,11,25
-	.long   093a4ca3H
+	.long   093a720fH
 	.word   00H
 	.long   XMCH_P
 XMCH11:
 	.word   23,22,10,17
-	.long   093a63e3H
+	.long   093a894fH
 	.word   00H
 	.long   XMCH_P
 XMCH12:
 	.word   33,25,18,23
-	.long   093a73b3H
+	.long   093a991fH
 	.word   00H
 	.long   XMCH_P
 XMCH13:
 	.word   33,27,18,23
-	.long   093a8d7bH
+	.long   093ab2e7H
 	.word   00H
 	.long   XMCH_P
 XMCH14:
 	.word   27,29,13,25
-	.long   093aa953H
+	.long   093acebfH
 	.word   00H
 	.long   XMCH_P
 XMCH15:
 	.word   25,29,11,26
-	.long   093ac1cbH
+	.long   093ae737H
 	.word   00H
 	.long   XMCH_P
 XMCH16:
 	.word   30,29,28,19
-	.long   093ad873H
+	.long   093afddfH
 	.word   00H
 	.long   XMCH_P
 XPIE01:
 	.word   26,34,11,31
-	.long   093af3a3H
+	.long   093b190fH
 	.word   05000H
 	.long   XPIE_P
 XPIE02:
 	.word   24,36,12,33
-	.long   093b04e7H
+	.long   093b2a53H
 	.word   05000H
 	.long   XPIE_P
 XPIE03:
 	.word   24,36,5,30
-	.long   093b15c7H
+	.long   093b3b33H
 	.word   05000H
 	.long   XPIE_P
 XPIE04:
 	.word   27,36,9,32
-	.long   093b26a7H
+	.long   093b4c13H
 	.word   05000H
 	.long   XPIE_P
 XPIE05:
 	.word   24,36,12,33
-	.long   093b39a3H
+	.long   093b5f0fH
 	.word   05000H
 	.long   XPIE_P
 XPIE06:
 	.word   33,35,22,26
-	.long   093b4a83H
+	.long   093b6fefH
 	.word   05000H
 	.long   XPIE_P
 XPIE07:
 	.word   31,37,5,32
-	.long   093b6112H
+	.long   093b867eH
 	.word   05000H
 	.long   XPIE_P
 XPIE08:
 	.word   27,35,2,22
-	.long   093b7779H
+	.long   093b9ce5H
 	.word   05000H
 	.long   XPIE_P
 XPIE09:
 	.word   26,36,4,26
-	.long   093b89eeH
+	.long   093baf5aH
 	.word   05000H
 	.long   XPIE_P
 XPIE10:
 	.word   27,37,10,30
-	.long   093b9c36H
+	.long   093bc1a2H
 	.word   05000H
 	.long   XPIE_P
 XPIE11:
 	.word   29,27,14,16
-	.long   093bafb9H
+	.long   093bd525H
 	.word   05000H
 	.long   XPIE_P
 XPIE12:
 	.word   33,35,18,33
-	.long   093bbf04H
+	.long   093be470H
 	.word   05000H
 	.long   XPIE_P
 XPIE13:
 	.word   24,35,16,31
-	.long   093bd593H
+	.long   093bfaffH
 	.word   05000H
 	.long   XPIE_P
 XPIE14:
 	.word   24,36,12,31
-	.long   093be5fbH
+	.long   093c0b67H
 	.word   05000H
 	.long   XPIE_P
 XPIE15:
 	.word   26,37,14,34
-	.long   093bf6dbH
+	.long   093c1c47H
 	.word   05000H
 	.long   XPIE_P
 XPIE16:
 	.word   31,35,27,22
-	.long   093c09a5H
+	.long   093c2f11H
 	.word   05000H
 	.long   XPIE_P
 XTAT01:
 	.word   29,35,12,32
-	.long   093c1ed6H
+	.long   093c4442H
 	.word   05000H
 	.long   XTAT_P
 XTAT02:
 	.word   28,35,15,32
-	.long   093c32a9H
+	.long   093c5815H
 	.word   05000H
 	.long   XTAT_P
 XTAT03:
 	.word   33,36,7,30
-	.long   093c45cdH
+	.long   093c6b39H
 	.word   05000H
 	.long   XTAT_P
 XTAT04:
 	.word   29,36,9,32
-	.long   093c5d01H
+	.long   093c826dH
 	.word   05000H
 	.long   XTAT_P
 XTAT05:
 	.word   27,36,14,33
-	.long   093c7165H
+	.long   093c96d1H
 	.word   05000H
 	.long   XTAT_P
 XTAT06:
 	.word   34,35,22,26
-	.long   093c8461H
+	.long   093ca9cdH
 	.word   05000H
 	.long   XTAT_P
 XTAT07:
 	.word   35,35,6,30
-	.long   093c9b9fH
+	.long   093cc10bH
 	.word   05000H
 	.long   XTAT_P
 XTAT08:
 	.word   36,35,2,22
-	.long   093cb38cH
+	.long   093cd8f8H
 	.word   05000H
 	.long   XTAT_P
 XTAT09:
 	.word   31,34,4,25
-	.long   093ccc28H
+	.long   093cf194H
 	.word   05000H
 	.long   XTAT_P
 XTAT10:
 	.word   29,36,11,29
-	.long   093ce0beH
+	.long   093d062aH
 	.word   05000H
 	.long   XTAT_P
 XTAT11:
 	.word   26,26,12,15
-	.long   093cf522H
+	.long   093d1a8eH
 	.word   05000H
 	.long   XTAT_P
 XTAT12:
 	.word   34,35,19,33
-	.long   093d0256H
+	.long   093d27c2H
 	.word   05000H
 	.long   XTAT_P
 XTAT13:
 	.word   28,35,18,31
-	.long   093d1994H
+	.long   093d3f00H
 	.word   05000H
 	.long   XTAT_P
 XTAT14:
 	.word   26,35,13,30
-	.long   093d2cb8H
+	.long   093d5224H
 	.word   05000H
 	.long   XTAT_P
 XTAT15:
 	.word   28,36,15,33
-	.long   093d3e7eH
+	.long   093d63eaH
 	.word   05000H
 	.long   XTAT_P
 XTAT16:
 	.word   36,32,32,20
-	.long   093d522eH
+	.long   093d779aH
 	.word   05000H
 	.long   XTAT_P
 XPAR01:
 	.word   27,38,11,34
-	.long   093d68aeH
+	.long   093d8e1aH
 	.word   05000H
 	.long   XPAR_P
 XPAR02:
 	.word   29,35,15,32
-	.long   093d7cb8H
+	.long   093da224H
 	.word   05000H
 	.long   XPAR_P
 XPAR03:
 	.word   33,37,7,31
-	.long   093d908bH
+	.long   093db5f7H
 	.word   05000H
 	.long   XPAR_P
 XPAR04:
 	.word   28,38,9,33
-	.long   093da864H
+	.long   093dcdd0H
 	.word   05000H
 	.long   XPAR_P
 XPAR05:
 	.word   29,36,15,33
-	.long   093dbd2cH
+	.long   093de298H
 	.word   05000H
 	.long   XPAR_P
 XPAR06:
 	.word   35,34,23,25
-	.long   093dd190H
+	.long   093df6fcH
 	.word   05000H
 	.long   XPAR_P
 XPAR07:
 	.word   29,37,5,32
-	.long   093de8ceH
+	.long   093e0e3aH
 	.word   05000H
 	.long   XPAR_P
 XPAR08:
 	.word   37,33,2,21
-	.long   093dfdc3H
+	.long   093e232fH
 	.word   05000H
 	.long   XPAR_P
 XPAR09:
 	.word   30,36,4,26
-	.long   093e159cH
+	.long   093e3b08H
 	.word   05000H
 	.long   XPAR_P
 XPAR10:
 	.word   27,36,10,29
-	.long   093e2ab4H
+	.long   093e5020H
 	.word   05000H
 	.long   XPAR_P
 XPAR11:
 	.word   24,24,12,14
-	.long   093e3db0H
+	.long   093e631cH
 	.word   05000H
 	.long   XPAR_P
 XPAR12:
 	.word   35,34,19,32
-	.long   093e48f0H
+	.long   093e6e5cH
 	.word   05000H
 	.long   XPAR_P
 XPAR13:
 	.word   26,35,17,31
-	.long   093e602eH
+	.long   093e859aH
 	.word   05000H
 	.long   XPAR_P
 XPAR14:
 	.word   27,35,14,30
-	.long   093e71f4H
+	.long   093e9760H
 	.word   05000H
 	.long   XPAR_P
 XPAR15:
 	.word   27,36,14,33
-	.long   093e8469H
+	.long   093ea9d5H
 	.word   05000H
 	.long   XPAR_P
 XPAR16:
 	.word   31,35,27,22
-	.long   093e9765H
+	.long   093ebcd1H
 	.word   05000H
 	.long   XPAR_P
 XBRU01:
 	.word   38,41,16,37
-	.long   093eac96H
+	.long   093ed202H
 	.word   05000H
 	.long   XBRU_P
 XBRU02:
 	.word   34,41,18,37
-	.long   093ecb04H
+	.long   093ef070H
 	.word   05000H
 	.long   XBRU_P
 XBRU03:
 	.word   33,41,7,35
-	.long   093ee63eH
+	.long   093f0baaH
 	.word   05000H
 	.long   XBRU_P
 XBRU04:
 	.word   32,41,10,36
-	.long   093f00abH
+	.long   093f2617H
 	.word   05000H
 	.long   XBRU_P
 XBRU05:
 	.word   30,40,15,37
-	.long   093f1a4bH
+	.long   093f3fb7H
 	.word   05000H
 	.long   XBRU_P
 XBRU06:
 	.word   37,42,24,31
-	.long   093f31bbH
+	.long   093f5727H
 	.word   05000H
 	.long   XBRU_P
 XBRU07:
 	.word   37,43,6,38
-	.long   093f5015H
+	.long   093f7581H
 	.word   05000H
 	.long   XBRU_P
 XBRU08:
 	.word   35,39,2,25
-	.long   093f6f28H
+	.long   093f9494H
 	.word   05000H
 	.long   XBRU_P
 XBRU09:
 	.word   38,39,5,29
-	.long   093f89d1H
+	.long   093faf3dH
 	.word   05000H
 	.long   XBRU_P
 XBRU10:
 	.word   33,41,13,33
-	.long   093fa6c3H
+	.long   093fcc2fH
 	.word   05000H
 	.long   XBRU_P
 XBRU11:
 	.word   38,24,18,14
-	.long   093fc130H
+	.long   093fe69cH
 	.word   05000H
 	.long   XBRU_P
 XBRU12:
 	.word   39,40,21,38
-	.long   093fd300H
+	.long   093ff86cH
 	.word   05000H
 	.long   XBRU_P
 XBRU13:
 	.word   35,41,23,36
-	.long   093ff178H
+	.long   094016e4H
 	.word   05000H
 	.long   XBRU_P
 XBRU14:
 	.word   41,39,21,34
-	.long   09400d7fH
+	.long   094032ebH
 	.word   05000H
 	.long   XBRU_P
 XBRU15:
 	.word   33,41,17,37
-	.long   09402cbaH
+	.long   09405226H
 	.word   05000H
 	.long   XBRU_P
 XBRU16:
 	.word   42,31,37,19
-	.long   09404727H
+	.long   09406c93H
 	.word   05000H
 	.long   XBRU_P
 XIVE01:
 	.word   26,33,11,30
-	.long   09406095H
+	.long   09408601H
 	.word   05000H
 	.long   XIVE_P
 XIVE02:
 	.word   29,33,15,30
-	.long   09407157H
+	.long   094096c3H
 	.word   05000H
 	.long   XIVE_P
 XIVE03:
 	.word   33,34,7,29
-	.long   09408408H
+	.long   0940a974H
 	.word   05000H
 	.long   XIVE_P
 XIVE04:
 	.word   30,35,10,31
-	.long   094099f2H
+	.long   0940bf5eH
 	.word   05000H
 	.long   XIVE_P
 XIVE05:
 	.word   27,36,14,33
-	.long   0940ae74H
+	.long   0940d3e0H
 	.word   05000H
 	.long   XIVE_P
 XIVE06:
 	.word   31,30,20,22
-	.long   0940c170H
+	.long   0940e6dcH
 	.word   05000H
 	.long   XIVE_P
 XIVE07:
 	.word   35,35,6,30
-	.long   0940d39aH
+	.long   0940f906H
 	.word   05000H
 	.long   XIVE_P
 XIVE08:
 	.word   34,32,2,20
-	.long   0940eb87H
+	.long   094110f3H
 	.word   05000H
 	.long   XIVE_P
 XIVE09:
 	.word   35,36,5,26
-	.long   094100c7H
+	.long   09412633H
 	.word   05000H
 	.long   XIVE_P
 XIVE10:
 	.word   29,34,11,27
-	.long   09411963H
+	.long   09413ecfH
 	.word   05000H
 	.long   XIVE_P
 XIVE11:
 	.word   26,26,12,15
-	.long   09412ca5H
+	.long   09415211H
 	.word   05000H
 	.long   XIVE_P
 XIVE12:
 	.word   31,30,17,28
-	.long   094139d9H
+	.long   09415f45H
 	.word   05000H
 	.long   XIVE_P
 XIVE13:
 	.word   31,37,20,32
-	.long   09414c03H
+	.long   0941716fH
 	.word   05000H
 	.long   XIVE_P
 XIVE14:
 	.word   27,35,14,30
-	.long   0941626aH
+	.long   094187d6H
 	.word   05000H
 	.long   XIVE_P
 XIVE15:
 	.word   27,36,14,33
-	.long   094174dfH
+	.long   09419a4bH
 	.word   05000H
 	.long   XIVE_P
 XIVE16:
 	.word   33,32,29,20
-	.long   094187dbH
+	.long   0941ad47H
 	.word   05000H
 	.long   XIVE_P
 XEMB01:
 	.word   31,36,13,33
-	.long   09419c7bH
+	.long   0941c1e7H
 	.word   05000H
 	.long   XEMB_P
 XEMB02:
 	.word   28,36,15,33
-	.long   0941b247H
+	.long   0941d7b3H
 	.word   05000H
 	.long   XEMB_P
 XEMB03:
 	.word   35,38,8,32
-	.long   0941c5f7H
+	.long   0941eb63H
 	.word   05000H
 	.long   XEMB_P
 XEMB04:
 	.word   30,38,10,33
-	.long   0941dff1H
+	.long   0942055dH
 	.word   05000H
 	.long   XEMB_P
 XEMB05:
 	.word   33,38,17,35
-	.long   0941f635H
+	.long   09421ba1H
 	.word   05000H
 	.long   XEMB_P
 XEMB06:
 	.word   33,35,22,26
-	.long   09420eb3H
+	.long   0942341fH
 	.word   05000H
 	.long   XEMB_P
 XEMB07:
 	.word   30,37,5,32
-	.long   09422542H
+	.long   09424aaeH
 	.word   05000H
 	.long   XEMB_P
 XEMB08:
 	.word   37,35,2,22
-	.long   09423af0H
+	.long   0942605cH
 	.word   05000H
 	.long   XEMB_P
 XEMB09:
 	.word   37,37,5,27
-	.long   0942543bH
+	.long   094279a7H
 	.word   05000H
 	.long   XEMB_P
 XEMB10:
 	.word   31,37,12,30
-	.long   09426ef8H
+	.long   09429464H
 	.word   05000H
 	.long   XEMB_P
 XEMB11:
 	.word   31,32,15,19
-	.long   0942855fH
+	.long   0942aacbH
 	.word   05000H
 	.long   XEMB_P
 XEMB12:
 	.word   33,36,18,34
-	.long   094298bfH
+	.long   0942be2bH
 	.word   05000H
 	.long   XEMB_P
 XEMB13:
 	.word   34,38,22,33
-	.long   0942aff3H
+	.long   0942d55fH
 	.word   05000H
 	.long   XEMB_P
 XEMB14:
 	.word   31,36,16,31
-	.long   0942c92fH
+	.long   0942ee9bH
 	.word   05000H
 	.long   XEMB_P
 XEMB15:
 	.word   33,37,17,34
-	.long   0942defbH
+	.long   09430467H
 	.word   05000H
 	.long   XEMB_P
 XEMB16:
 	.word   37,34,33,21
-	.long   0942f6d4H
+	.long   09431c40H
 	.word   05000H
 	.long   XEMB_P
 XMMA01:
 	.word   24,28,11,25
-	.long   09430f66H
+	.long   094334d2H
 	.word   00H
 	.long   XMMA_P
 XMMA02:
 	.word   24,27,11,25
-	.long   09432466H
+	.long   094349d2H
 	.word   00H
 	.long   XMMA_P
 XMMA03:
 	.word   29,31,10,27
-	.long   094338a6H
+	.long   09435e12H
 	.word   00H
 	.long   XMMA_P
 XMMA04:
 	.word   24,31,8,29
-	.long   094354beH
+	.long   09437a2aH
 	.word   00H
 	.long   XMMA_P
 XMMA05:
 	.word   23,29,11,26
-	.long   09436bfeH
+	.long   0943916aH
 	.word   00H
 	.long   XMMA_P
 XMMA06:
 	.word   28,24,15,22
-	.long   094380d6H
+	.long   0943a642H
 	.word   00H
 	.long   XMMA_P
 XMMA07:
 	.word   26,28,7,25
-	.long   094395d6H
+	.long   0943bb42H
 	.word   00H
 	.long   XMMA_P
 XMMA08:
 	.word   27,34,7,26
-	.long   0943ac96H
+	.long   0943d202H
 	.word   00H
 	.long   XMMA_P
 XMMA09:
 	.word   25,32,6,28
-	.long   0943c946H
+	.long   0943eeb2H
 	.word   00H
 	.long   XMMA_P
 XMMA10:
 	.word   24,30,10,25
-	.long   0943e246H
+	.long   094407b2H
 	.word   00H
 	.long   XMMA_P
 XMMA11:
 	.word   23,23,10,18
-	.long   0943f8c6H
+	.long   09441e32H
 	.word   00H
 	.long   XMMA_P
 XMMA12:
 	.word   27,25,15,23
-	.long   0944094eH
+	.long   09442ebaH
 	.word   00H
 	.long   XMMA_P
 XMMA13:
 	.word   33,26,16,22
-	.long   09441e66H
+	.long   094443d2H
 	.word   00H
 	.long   XMMA_P
 XMMA14:
 	.word   26,28,16,25
-	.long   09443936H
+	.long   09445ea2H
 	.word   00H
 	.long   XMMA_P
 XMMA15:
 	.word   24,27,12,24
-	.long   09444ff6H
+	.long   09447562H
 	.word   00H
 	.long   XMMA_P
 XMMA16:
 	.word   31,25,27,21
-	.long   09446436H
+	.long   094489a2H
 	.word   00H
 	.long   XMMA_P
 XERV01:
 	.word   27,35,11,32
-	.long   09447c6eH
+	.long   0944a1daH
 	.word   05000H
 	.long   XERV_P
 XERV02:
 	.word   28,36,15,33
-	.long   09448ee3H
+	.long   0944b44fH
 	.word   05000H
 	.long   XERV_P
 XERV03:
 	.word   34,37,7,31
-	.long   0944a293H
+	.long   0944c7ffH
 	.word   05000H
 	.long   XERV_P
 XERV04:
 	.word   30,38,10,33
-	.long   0944bb25H
+	.long   0944e091H
 	.word   05000H
 	.long   XERV_P
 XERV05:
 	.word   26,37,13,34
-	.long   0944d169H
+	.long   0944f6d5H
 	.word   05000H
 	.long   XERV_P
 XERV06:
 	.word   29,31,19,23
-	.long   0944e433H
+	.long   0945099fH
 	.word   05000H
 	.long   XERV_P
 XERV07:
 	.word   30,37,5,32
-	.long   0944f5c2H
+	.long   09451b2eH
 	.word   05000H
 	.long   XERV_P
 XERV08:
 	.word   34,35,2,22
-	.long   09450b70H
+	.long   094530dcH
 	.word   05000H
 	.long   XERV_P
 XERV09:
 	.word   28,36,4,26
-	.long   094522aeH
+	.long   0945481aH
 	.word   05000H
 	.long   XERV_P
 XERV10:
 	.word   33,36,13,29
-	.long   0945365eH
+	.long   09455bcaH
 	.word   05000H
 	.long   XERV_P
 XERV11:
 	.word   27,27,13,16
-	.long   09454d92H
+	.long   094572feH
 	.word   05000H
 	.long   XERV_P
 XERV12:
 	.word   29,32,16,30
-	.long   09455bcfH
+	.long   0945813bH
 	.word   05000H
 	.long   XERV_P
 XERV13:
 	.word   28,37,18,32
-	.long   09456defH
+	.long   0945935bH
 	.word   05000H
 	.long   XERV_P
 XERV14:
 	.word   26,37,13,32
-	.long   0945822bH
+	.long   0945a797H
 	.word   05000H
 	.long   XERV_P
 XERV15:
 	.word   27,37,14,34
-	.long   094594f5H
+	.long   0945ba61H
 	.word   05000H
 	.long   XERV_P
 XERV16:
 	.word   31,32,27,20
-	.long   0945a878H
+	.long   0945cde4H
 	.word   05000H
 	.long   XERV_P
 XCAR01:
 	.word   23,30,10,27
-	.long   0945bbd8H
+	.long   0945e144H
 	.word   05000H
 	.long   XCAR_P
 XCAR02:
 	.word   23,33,12,30
-	.long   0945c952H
+	.long   0945eebeH
 	.word   05000H
 	.long   XCAR_P
 XCAR03:
 	.word   31,34,7,29
-	.long   0945d825H
+	.long   0945fd91H
 	.word   05000H
 	.long   XCAR_P
 XCAR04:
 	.word   29,35,9,31
-	.long   0945ecbbH
+	.long   09461227H
 	.word   05000H
 	.long   XCAR_P
 XCAR05:
 	.word   24,35,12,32
-	.long   0946008eH
+	.long   094625faH
 	.word   05000H
 	.long   XCAR_P
 XCAR06:
 	.word   31,29,20,21
-	.long   094610f6H
+	.long   09463662H
 	.word   05000H
 	.long   XCAR_P
 XCAR07:
 	.word   30,33,5,28
-	.long   09462285H
+	.long   094647f1H
 	.word   05000H
 	.long   XCAR_P
 XCAR08:
 	.word   34,32,2,20
-	.long   094635dbH
+	.long   09465b47H
 	.word   05000H
 	.long   XCAR_P
 XCAR09:
 	.word   34,34,5,25
-	.long   09464b1bH
+	.long   09467087H
 	.word   05000H
 	.long   XCAR_P
 XCAR10:
 	.word   28,30,11,24
-	.long   094661afH
+	.long   0946871bH
 	.word   05000H
 	.long   XCAR_P
 XCAR11:
 	.word   23,24,11,14
-	.long   09467217H
+	.long   09469783H
 	.word   05000H
 	.long   XCAR_P
 XCAR12:
 	.word   31,29,17,27
-	.long   09467cdfH
+	.long   0946a24bH
 	.word   05000H
 	.long   XCAR_P
 XCAR13:
 	.word   29,34,19,30
-	.long   09468e6eH
+	.long   0946b3daH
 	.word   05000H
 	.long   XCAR_P
 XCAR14:
 	.word   22,33,11,29
-	.long   0946a1b0H
+	.long   0946c71cH
 	.word   05000H
 	.long   XCAR_P
 XCAR15:
 	.word   24,35,13,32
-	.long   0946afdeH
+	.long   0946d54aH
 	.word   05000H
 	.long   XCAR_P
 XCAR16:
 	.word   29,32,25,20
-	.long   0946c046H
+	.long   0946e5b2H
 	.word   05000H
 	.long   XCAR_P
 XKAW01:
 	.word   27,35,11,32
-	.long   0946d266H
+	.long   0946f7d2H
 	.word   05000H
 	.long   XKAW_P
 XKAW02:
 	.word   30,35,16,32
-	.long   0946e4dbH
+	.long   09470a47H
 	.word   05000H
 	.long   XKAW_P
 XKAW03:
 	.word   34,36,7,30
-	.long   0946f95dH
+	.long   09471ec9H
 	.word   05000H
 	.long   XKAW_P
 XKAW04:
 	.word   26,38,8,33
-	.long   09471145H
+	.long   094736b1H
 	.word   05000H
 	.long   XKAW_P
 XKAW05:
 	.word   27,38,14,35
-	.long   09472491H
+	.long   094749fdH
 	.word   05000H
 	.long   XKAW_P
 XKAW06:
 	.word   34,35,22,26
-	.long   0947389bH
+	.long   09475e07H
 	.word   05000H
 	.long   XKAW_P
 XKAW07:
 	.word   31,36,5,31
-	.long   09474fd9H
+	.long   09477545H
 	.word   05000H
 	.long   XKAW_P
 XKAW08:
 	.word   37,35,2,22
-	.long   094765a5H
+	.long   09478b11H
 	.word   05000H
 	.long   XKAW_P
 XKAW09:
 	.word   33,36,5,26
-	.long   09477ef0H
+	.long   0947a45cH
 	.word   05000H
 	.long   XKAW_P
 XKAW10:
 	.word   33,37,13,30
-	.long   09479624H
+	.long   0947bb90H
 	.word   05000H
 	.long   XKAW_P
 XKAW11:
 	.word   26,29,12,17
-	.long   0947adfdH
+	.long   0947d369H
 	.word   05000H
 	.long   XKAW_P
 XKAW12:
 	.word   34,36,19,34
-	.long   0947bcb7H
+	.long   0947e223H
 	.word   05000H
 	.long   XKAW_P
 XKAW13:
 	.word   28,38,18,33
-	.long   0947d49fH
+	.long   0947fa0bH
 	.word   05000H
 	.long   XKAW_P
 XKAW14:
 	.word   26,36,13,31
-	.long   0947e967H
+	.long   09480ed3H
 	.word   05000H
 	.long   XKAW_P
 XKAW15:
 	.word   29,37,15,34
-	.long   0947fbafH
+	.long   0948211bH
 	.word   05000H
 	.long   XKAW_P
 XKAW16:
 	.word   36,32,32,20
-	.long   094810a4H
+	.long   09483610H
 	.word   05000H
 	.long   XKAW_P
 XBOS01:
 	.word   29,36,12,33
-	.long   09482724H
+	.long   09484c90H
 	.word   05000H
 	.long   XBOS_P
 XBOS02:
 	.word   29,35,15,32
-	.long   09483b88H
+	.long   094860f4H
 	.word   05000H
 	.long   XBOS_P
 XBOS03:
 	.word   29,34,6,29
-	.long   09484f5bH
+	.long   094874c7H
 	.word   05000H
 	.long   XBOS_P
 XBOS04:
 	.word   28,36,9,32
-	.long   0948629dH
+	.long   09488809H
 	.word   05000H
 	.long   XBOS_P
 XBOS05:
 	.word   29,36,15,33
-	.long   0948764dH
+	.long   09489bb9H
 	.word   05000H
 	.long   XBOS_P
 XBOS06:
 	.word   31,29,20,21
-	.long   09488ab1H
+	.long   0948b01dH
 	.word   05000H
 	.long   XBOS_P
 XBOS07:
 	.word   31,33,5,28
-	.long   09489c40H
+	.long   0948c1acH
 	.word   05000H
 	.long   XBOS_P
 XBOS08:
 	.word   28,35,2,22
-	.long   0948b03bH
+	.long   0948d5a7H
 	.word   05000H
 	.long   XBOS_P
 XBOS09:
 	.word   30,36,4,26
-	.long   0948c35fH
+	.long   0948e8cbH
 	.word   05000H
 	.long   XBOS_P
 XBOS10:
 	.word   28,37,11,30
-	.long   0948d877H
+	.long   0948fde3H
 	.word   05000H
 	.long   XBOS_P
 XBOS11:
 	.word   23,24,11,14
-	.long   0948ecb3H
+	.long   0949121fH
 	.word   05000H
 	.long   XBOS_P
 XBOS12:
 	.word   31,28,17,26
-	.long   0948f77bH
+	.long   09491ce7H
 	.word   05000H
 	.long   XBOS_P
 XBOS13:
 	.word   30,37,20,32
-	.long   0949086fH
+	.long   09492ddbH
 	.word   05000H
 	.long   XBOS_P
 XBOS14:
 	.word   28,36,14,31
-	.long   09491e1dH
+	.long   09494389H
 	.word   05000H
 	.long   XBOS_P
 XBOS15:
 	.word   28,37,15,34
-	.long   094931cdH
+	.long   09495739H
 	.word   05000H
 	.long   XBOS_P
 XBOS16:
 	.word   28,32,24,20
-	.long   09494609H
+	.long   09496b75H
 	.word   05000H
 	.long   XBOS_P
 XDER01:
 	.word   30,34,13,31
-	.long   09495789H
+	.long   09497cf5H
 	.word   05000H
 	.long   XDER_P
 XDER02:
 	.word   28,35,15,32
-	.long   09496b75H
+	.long   094990e1H
 	.word   05000H
 	.long   XDER_P
 XDER03:
 	.word   35,38,8,32
-	.long   09497e99H
+	.long   0949a405H
 	.word   05000H
 	.long   XDER_P
 XDER04:
 	.word   27,36,9,32
-	.long   09499893H
+	.long   0949bdffH
 	.word   05000H
 	.long   XDER_P
 XDER05:
 	.word   30,38,15,35
-	.long   0949ab8fH
+	.long   0949d0fbH
 	.word   05000H
 	.long   XDER_P
 XDER06:
 	.word   33,33,22,24
-	.long   0949c1d3H
+	.long   0949e73fH
 	.word   05000H
 	.long   XDER_P
 XDER07:
 	.word   30,36,5,31
-	.long   0949d718H
+	.long   0949fc84H
 	.word   05000H
 	.long   XDER_P
 XDER08:
 	.word   37,32,2,20
-	.long   0949ec30H
+	.long   094a119cH
 	.word   05000H
 	.long   XDER_P
 XDER09:
 	.word   31,36,4,26
-	.long   094a0350H
+	.long   094a28bcH
 	.word   05000H
 	.long   XDER_P
 XDER10:
 	.word   33,37,13,30
-	.long   094a191cH
+	.long   094a3e88H
 	.word   05000H
 	.long   XDER_P
 XDER11:
 	.word   27,29,13,17
-	.long   094a30f5H
+	.long   094a5661H
 	.word   05000H
 	.long   XDER_P
 XDER12:
 	.word   33,33,18,31
-	.long   094a4040H
+	.long   094a65acH
 	.word   05000H
 	.long   XDER_P
 XDER13:
 	.word   28,38,18,33
-	.long   094a5585H
+	.long   094a7af1H
 	.word   05000H
 	.long   XDER_P
 XDER14:
 	.word   26,37,13,32
-	.long   094a6a4dH
+	.long   094a8fb9H
 	.word   05000H
 	.long   XDER_P
 XDER15:
 	.word   33,37,17,34
-	.long   094a7d17H
+	.long   094aa283H
 	.word   05000H
 	.long   XDER_P
 XDER16:
 	.word   37,35,33,22
-	.long   094a94f0H
+	.long   094aba5cH
 	.word   05000H
 	.long   XDER_P
 XDRO01:
 	.word   29,36,12,33
-	.long   094aae3bH
+	.long   094ad3a7H
 	.word   05000H
 	.long   XDRO_P
 XDRO02:
 	.word   26,35,14,32
-	.long   094ac29fH
+	.long   094ae80bH
 	.word   05000H
 	.long   XDRO_P
 XDRO03:
 	.word   31,38,7,32
-	.long   094ad465H
+	.long   094af9d1H
 	.word   05000H
 	.long   XDRO_P
 XDRO04:
 	.word   29,36,9,32
-	.long   094aeb67H
+	.long   094b10d3H
 	.word   05000H
 	.long   XDRO_P
 XDRO05:
 	.word   29,36,15,33
-	.long   094affcbH
+	.long   094b2537H
 	.word   05000H
 	.long   XDRO_P
 XDRO06:
 	.word   31,29,20,21
-	.long   094b142fH
+	.long   094b399bH
 	.word   05000H
 	.long   XDRO_P
 XDRO07:
 	.word   31,33,5,28
-	.long   094b25beH
+	.long   094b4b2aH
 	.word   05000H
 	.long   XDRO_P
 XDRO08:
 	.word   34,35,2,22
-	.long   094b39b9H
+	.long   094b5f25H
 	.word   05000H
 	.long   XDRO_P
 XDRO09:
 	.word   26,34,4,25
-	.long   094b50f7H
+	.long   094b7663H
 	.word   05000H
 	.long   XDRO_P
 XDRO10:
 	.word   34,37,13,30
-	.long   094b623bH
+	.long   094b87a7H
 	.word   05000H
 	.long   XDRO_P
 XDRO11:
 	.word   23,24,11,14
-	.long   094b7acdH
+	.long   094ba039H
 	.word   05000H
 	.long   XDRO_P
 XDRO12:
 	.word   31,28,17,26
-	.long   094b8595H
+	.long   094bab01H
 	.word   05000H
 	.long   XDRO_P
 XDRO13:
 	.word   26,35,17,31
-	.long   094b9689H
+	.long   094bbbf5H
 	.word   05000H
 	.long   XDRO_P
 XDRO14:
 	.word   24,35,12,30
-	.long   094ba84fH
+	.long   094bcdbbH
 	.word   05000H
 	.long   XDRO_P
 XDRO15:
 	.word   28,35,15,32
-	.long   094bb8b7H
+	.long   094bde23H
 	.word   05000H
 	.long   XDRO_P
 XDRO16:
 	.word   28,32,24,20
-	.long   094bcbdbH
+	.long   094bf147H
 	.word   05000H
 	.long   XDRO_P
 XKYR01:
 	.word   29,36,12,33
-	.long   094bdd5bH
+	.long   094c02c7H
 	.word   05000H
 	.long   XKYR_P
 XKYR02:
 	.word   28,35,15,32
-	.long   094bf1bfH
+	.long   094c172bH
 	.word   05000H
 	.long   XKYR_P
 XKYR03:
 	.word   31,37,7,31
-	.long   094c04e3H
+	.long   094c2a4fH
 	.word   05000H
 	.long   XKYR_P
 XKYR04:
 	.word   26,36,8,32
-	.long   094c1b4aH
+	.long   094c40b6H
 	.word   05000H
 	.long   XKYR_P
 XKYR05:
 	.word   29,37,15,34
-	.long   094c2d92H
+	.long   094c52feH
 	.word   05000H
 	.long   XKYR_P
 XKYR06:
 	.word   35,35,23,26
-	.long   094c4287H
+	.long   094c67f3H
 	.word   05000H
 	.long   XKYR_P
 XKYR07:
 	.word   31,37,5,32
-	.long   094c5a74H
+	.long   094c7fe0H
 	.word   05000H
 	.long   XKYR_P
 XKYR08:
 	.word   36,33,2,21
-	.long   094c70dbH
+	.long   094c9647H
 	.word   05000H
 	.long   XKYR_P
 XKYR09:
 	.word   31,36,4,26
-	.long   094c880fH
+	.long   094cad7bH
 	.word   05000H
 	.long   XKYR_P
 XKYR10:
 	.word   30,37,11,30
-	.long   094c9ddbH
+	.long   094cc347H
 	.word   05000H
 	.long   XKYR_P
 XKYR11:
 	.word   27,27,13,16
-	.long   094cb389H
+	.long   094cd8f5H
 	.word   05000H
 	.long   XKYR_P
 XKYR12:
 	.word   35,36,19,34
-	.long   094cc1c6H
+	.long   094ce732H
 	.word   05000H
 	.long   XKYR_P
 XKYR13:
 	.word   31,38,20,33
-	.long   094cda62H
+	.long   094cffceH
 	.word   05000H
 	.long   XKYR_P
 XKYR14:
 	.word   26,36,13,31
-	.long   094cf164H
+	.long   094d16d0H
 	.word   05000H
 	.long   XKYR_P
 XKYR15:
 	.word   26,37,14,34
-	.long   094d03acH
+	.long   094d2918H
 	.word   05000H
 	.long   XKYR_P
 XKYR16:
 	.word   36,31,32,19
-	.long   094d1676H
+	.long   094d3be2H
 	.word   05000H
 	.long   XKYR_P
 XMIT01:
 	.word   30,35,13,32
-	.long   094d2c42H
+	.long   094d51aeH
 	.word   05000H
 	.long   XMIT_P
 XMIT02:
 	.word   29,35,15,32
-	.long   094d40c4H
+	.long   094d6630H
 	.word   05000H
 	.long   XMIT_P
 XMIT03:
 	.word   33,36,7,30
-	.long   094d5497H
+	.long   094d7a03H
 	.word   05000H
 	.long   XMIT_P
 XMIT04:
 	.word   30,36,10,32
-	.long   094d6bcbH
+	.long   094d9137H
 	.word   05000H
 	.long   XMIT_P
 XMIT05:
 	.word   27,36,14,33
-	.long   094d80e3H
+	.long   094da64fH
 	.word   05000H
 	.long   XMIT_P
 XMIT06:
 	.word   30,35,20,26
-	.long   094d93dfH
+	.long   094db94bH
 	.word   05000H
 	.long   XMIT_P
 XMIT07:
 	.word   31,36,5,31
-	.long   094da861H
+	.long   094dcdcdH
 	.word   05000H
 	.long   XMIT_P
 XMIT08:
 	.word   36,35,2,22
-	.long   094dbe2dH
+	.long   094de399H
 	.word   05000H
 	.long   XMIT_P
 XMIT09:
 	.word   36,34,5,25
-	.long   094dd6c9H
+	.long   094dfc35H
 	.word   05000H
 	.long   XMIT_P
 XMIT10:
 	.word   30,36,11,29
-	.long   094deeb1H
+	.long   094e141dH
 	.word   05000H
 	.long   XMIT_P
 XMIT11:
 	.word   30,29,14,17
-	.long   094e03c9H
+	.long   094e2935H
 	.word   05000H
 	.long   XMIT_P
 XMIT12:
 	.word   30,35,16,33
-	.long   094e14c7H
+	.long   094e3a33H
 	.word   05000H
 	.long   XMIT_P
 XMIT13:
 	.word   29,35,19,31
-	.long   094e2949H
+	.long   094e4eb5H
 	.word   05000H
 	.long   XMIT_P
 XMIT14:
 	.word   28,36,14,31
-	.long   094e3d1cH
+	.long   094e6288H
 	.word   05000H
 	.long   XMIT_P
 XMIT15:
 	.word   28,36,15,33
-	.long   094e50ccH
+	.long   094e7638H
 	.word   05000H
 	.long   XMIT_P
 XMIT16:
 	.word   36,32,32,20
-	.long   094e647cH
+	.long   094e89e8H
 	.word   05000H
 	.long   XMIT_P
 XDAU01:
 	.word   23,26,11,24
-	.long   094e7afcH
+	.long   094ea068H
 	.word   00H
 	.long   XDAU_P
 XDAU02:
 	.word   24,26,12,25
-	.long   094e8dacH
+	.long   094eb318H
 	.word   00H
 	.long   XDAU_P
 XDAU03:
 	.word   27,29,9,27
-	.long   094ea12cH
+	.long   094ec698H
 	.word   00H
 	.long   XDAU_P
 XDAU04:
 	.word   24,31,7,28
-	.long   094eb9a4H
+	.long   094edf10H
 	.word   00H
 	.long   XDAU_P
 XDAU05:
 	.word   24,30,11,27
-	.long   094ed0e4H
+	.long   094ef650H
 	.word   00H
 	.long   XDAU_P
 XDAU06:
 	.word   27,24,15,21
-	.long   094ee764H
+	.long   094f0cd0H
 	.word   00H
 	.long   XDAU_P
 XDAU07:
 	.word   26,28,7,25
-	.long   094efba4H
+	.long   094f2110H
 	.word   00H
 	.long   XDAU_P
 XDAU08:
 	.word   29,32,6,26
-	.long   094f1264H
+	.long   094f37d0H
 	.word   00H
 	.long   XDAU_P
 XDAU09:
 	.word   24,31,4,27
-	.long   094f2f64H
+	.long   094f54d0H
 	.word   00H
 	.long   XDAU_P
 XDAU10:
 	.word   22,29,10,24
-	.long   094f46a4H
+	.long   094f6c10H
 	.word   00H
 	.long   XDAU_P
 XDAU11:
 	.word   20,21,8,17
-	.long   094f5a94H
+	.long   094f8000H
 	.word   00H
 	.long   XDAU_P
 XDAU12:
 	.word   25,24,13,22
-	.long   094f67b4H
+	.long   094f8d20H
 	.word   00H
 	.long   XDAU_P
 XDAU13:
 	.word   30,27,15,23
-	.long   094f7a74H
+	.long   094f9fe0H
 	.word   00H
 	.long   XDAU_P
 XDAU14:
 	.word   25,28,12,25
-	.long   094f93c4H
+	.long   094fb930H
 	.word   00H
 	.long   XDAU_P
 XDAU15:
 	.word   24,29,11,26
-	.long   094fa9a4H
+	.long   094fcf10H
 	.word   00H
 	.long   XDAU_P
 XDAU16:
 	.word   29,26,28,20
-	.long   094fbf64H
+	.long   094fe4d0H
 	.word   00H
 	.long   XDAU_P
 XISI01:
 	.word   23,27,10,25
-	.long   094fd6f4H
+	.long   094ffc60H
 	.word   00H
 	.long   XISI_P
 XISI02:
 	.word   24,26,10,24
-	.long   094fea5cH
+	.long   09500fc8H
 	.word   00H
 	.long   XISI_P
 XISI03:
 	.word   30,29,11,26
-	.long   094ffddcH
+	.long   09502348H
 	.word   00H
 	.long   XISI_P
 XISI04:
 	.word   23,30,7,27
-	.long   0950190cH
+	.long   09503e78H
 	.word   00H
 	.long   XISI_P
 XISI05:
 	.word   21,29,10,26
-	.long   09502e9cH
+	.long   09505408H
 	.word   00H
 	.long   XISI_P
 XISI06:
 	.word   27,25,15,23
-	.long   095041a4H
+	.long   09506710H
 	.word   00H
 	.long   XISI_P
 XISI07:
 	.word   27,27,7,25
-	.long   095056bcH
+	.long   09507c28H
 	.word   00H
 	.long   XISI_P
 XISI08:
 	.word   28,33,7,27
-	.long   09506d84H
+	.long   095092f0H
 	.word   00H
 	.long   XISI_P
 XISI09:
 	.word   27,32,7,28
-	.long   09508a64H
+	.long   0950afd0H
 	.word   00H
 	.long   XISI_P
 XISI10:
 	.word   22,29,10,24
-	.long   0950a564H
+	.long   0950cad0H
 	.word   00H
 	.long   XISI_P
 XISI11:
 	.word   21,21,10,16
-	.long   0950b954H
+	.long   0950dec0H
 	.word   00H
 	.long   XISI_P
 XISI12:
 	.word   29,28,16,26
-	.long   0950c71cH
+	.long   0950ec88H
 	.word   00H
 	.long   XISI_P
 XISI13:
 	.word   33,26,18,22
-	.long   0950e07cH
+	.long   095105e8H
 	.word   00H
 	.long   XISI_P
 XISI14:
 	.word   27,28,15,25
-	.long   0950fb4cH
+	.long   095120b8H
 	.word   00H
 	.long   XISI_P
 XISI15:
 	.word   23,27,10,24
-	.long   095112ecH
+	.long   09513858H
 	.word   00H
 	.long   XISI_P
 XISI16:
 	.word   30,25,27,20
-	.long   09512654H
+	.long   09514bc0H
 	.word   00H
 	.long   XISI_P
 XLAI01:
 	.word   23,29,10,26
-	.long   09513dc4H
+	.long   09516330H
 	.word   00H
 	.long   XLAI_P
 XLAI02:
 	.word   27,26,12,23
-	.long   0951529cH
+	.long   09517808H
 	.word   00H
 	.long   XLAI_P
 XLAI03:
 	.word   29,30,10,27
-	.long   0951688cH
+	.long   09518df8H
 	.word   00H
 	.long   XLAI_P
 XLAI04:
 	.word   25,30,8,27
-	.long   095183bcH
+	.long   0951a928H
 	.word   00H
 	.long   XLAI_P
 XLAI05:
 	.word   23,29,10,26
-	.long   09519b2cH
+	.long   0951c098H
 	.word   00H
 	.long   XLAI_P
 XLAI06:
 	.word   26,28,15,22
-	.long   0951b004H
+	.long   0951d570H
 	.word   00H
 	.long   XLAI_P
 XLAI07:
 	.word   25,27,6,23
-	.long   0951c6c4H
+	.long   0951ec30H
 	.word   00H
 	.long   XLAI_P
 XLAI08:
 	.word   31,33,4,24
-	.long   0951dbdcH
+	.long   09520148H
 	.word   00H
 	.long   XLAI_P
 XLAI09:
 	.word   27,32,7,29
-	.long   0951fbd4H
+	.long   09522140H
 	.word   00H
 	.long   XLAI_P
 XLAI10:
 	.word   23,30,10,25
-	.long   095216d4H
+	.long   09523c40H
 	.word   00H
 	.long   XLAI_P
 XLAI11:
 	.word   22,21,11,16
-	.long   09522c64H
+	.long   095251d0H
 	.word   00H
 	.long   XLAI_P
 XLAI12:
 	.word   30,24,15,22
-	.long   09523ad4H
+	.long   09526040H
 	.word   00H
 	.long   XLAI_P
 XLAI13:
 	.word   32,27,16,23
-	.long   09525154H
+	.long   095276c0H
 	.word   00H
 	.long   XLAI_P
 XLAI14:
 	.word   24,28,12,24
-	.long   09526c54H
+	.long   095291c0H
 	.word   00H
 	.long   XLAI_P
 XLAI15:
 	.word   23,28,11,25
-	.long   09528154H
+	.long   0952a6c0H
 	.word   00H
 	.long   XLAI_P
 XLAI16:
 	.word   30,28,26,20
-	.long   09529574H
+	.long   0952bae0H
 	.word   00H
 	.long   XLAI_P
 XBWA01:
 	.word   28,35,12,32
-	.long   0952afb4H
+	.long   0952d520H
 	.word   05000H
 	.long   XBWA_P
 XBWA02:
 	.word   29,36,15,33
-	.long   0952c2d8H
+	.long   0952e844H
 	.word   05000H
 	.long   XBWA_P
 XBWA03:
 	.word   33,36,7,30
-	.long   0952d73cH
+	.long   0952fca8H
 	.word   05000H
 	.long   XBWA_P
 XBWA04:
 	.word   27,36,9,32
-	.long   0952ee70H
+	.long   095313dcH
 	.word   05000H
 	.long   XBWA_P
 XBWA05:
 	.word   24,36,12,33
-	.long   0953016cH
+	.long   095326d8H
 	.word   05000H
 	.long   XBWA_P
 XBWA06:
 	.word   30,33,20,24
-	.long   0953124cH
+	.long   095337b8H
 	.word   05000H
 	.long   XBWA_P
 XBWA07:
 	.word   34,34,6,29
-	.long   095325a2H
+	.long   09534b0eH
 	.word   05000H
 	.long   XBWA_P
 XBWA08:
 	.word   30,35,2,22
-	.long   09533c36H
+	.long   095361a2H
 	.word   05000H
 	.long   XBWA_P
 XBWA09:
 	.word   34,37,5,27
-	.long   095350b8H
+	.long   09537624H
 	.word   05000H
 	.long   XBWA_P
 XBWA10:
 	.word   27,37,10,30
-	.long   0953694aH
+	.long   09538eb6H
 	.word   05000H
 	.long   XBWA_P
 XBWA11:
 	.word   28,32,14,19
-	.long   09537ccdH
+	.long   0953a239H
 	.word   05000H
 	.long   XBWA_P
 XBWA12:
 	.word   30,33,16,31
-	.long   09538e4dH
+	.long   0953b3b9H
 	.word   05000H
 	.long   XBWA_P
 XBWA13:
 	.word   26,37,17,32
-	.long   0953a1a3H
+	.long   0953c70fH
 	.word   05000H
 	.long   XBWA_P
 XBWA14:
 	.word   23,36,12,31
-	.long   0953b46dH
+	.long   0953d9d9H
 	.word   05000H
 	.long   XBWA_P
 XBWA15:
 	.word   23,36,12,33
-	.long   0953c499H
+	.long   0953ea05H
 	.word   05000H
 	.long   XBWA_P
 XBWA16:
 	.word   31,32,27,20
-	.long   0953d4c5H
+	.long   0953fa31H
 	.word   05000H
 	.long   XBWA_P
 XHAL01:
 	.word   26,34,11,31
-	.long   0953e825H
+	.long   09540d91H
 	.word   05000H
 	.long   XHAL_P
 XHAL02:
 	.word   26,35,14,32
-	.long   0953f969H
+	.long   09541ed5H
 	.word   05000H
 	.long   XHAL_P
 XHAL03:
 	.word   30,37,6,31
-	.long   09540b2fH
+	.long   0954309bH
 	.word   05000H
 	.long   XHAL_P
 XHAL04:
 	.word   26,36,8,32
-	.long   095420ddH
+	.long   09544649H
 	.word   05000H
 	.long   XHAL_P
 XHAL05:
 	.word   26,38,13,35
-	.long   09543325H
+	.long   09545891H
 	.word   05000H
 	.long   XHAL_P
 XHAL06:
 	.word   27,31,18,23
-	.long   09544671H
+	.long   09546bddH
 	.word   05000H
 	.long   XHAL_P
 XHAL07:
 	.word   30,33,5,28
-	.long   095456caH
+	.long   09547c36H
 	.word   05000H
 	.long   XHAL_P
 XHAL08:
 	.word   35,35,2,22
-	.long   09546a20H
+	.long   09548f8cH
 	.word   05000H
 	.long   XHAL_P
 XHAL09:
 	.word   29,36,4,26
-	.long   0954820dH
+	.long   0954a779H
 	.word   05000H
 	.long   XHAL_P
 XHAL10:
 	.word   31,37,12,30
-	.long   09549671H
+	.long   0954bbddH
 	.word   05000H
 	.long   XHAL_P
 XHAL11:
 	.word   27,27,13,16
-	.long   0954acd8H
+	.long   0954d244H
 	.word   05000H
 	.long   XHAL_P
 XHAL12:
 	.word   27,32,15,30
-	.long   0954bb15H
+	.long   0954e081H
 	.word   05000H
 	.long   XHAL_P
 XHAL13:
 	.word   29,37,19,32
-	.long   0954cbf5H
+	.long   0954f161H
 	.word   05000H
 	.long   XHAL_P
 XHAL14:
 	.word   22,35,11,30
-	.long   0954e0eaH
+	.long   09550656H
 	.word   05000H
 	.long   XHAL_P
 XHAL15:
 	.word   26,37,14,34
-	.long   0954eff4H
+	.long   09551560H
 	.word   05000H
 	.long   XHAL_P
 XHAL16:
 	.word   35,34,31,22
-	.long   095502beH
+	.long   0955282aH
 	.word   05000H
 	.long   XHAL_P
 XART01:
 	.word   27,34,11,31
-	.long   095519fcH
+	.long   09553f68H
 	.word   05000H
 	.long   XART_P
 XART02:
 	.word   27,35,14,32
-	.long   09552beaH
+	.long   09555156H
 	.word   05000H
 	.long   XART_P
 XART03:
 	.word   37,38,8,32
-	.long   09553e5fH
+	.long   095563cbH
 	.word   05000H
 	.long   XART_P
 XART04:
 	.word   30,38,10,33
-	.long   095559d5H
+	.long   09557f41H
 	.word   05000H
 	.long   XART_P
 XART05:
 	.word   30,38,15,35
-	.long   09557019H
+	.long   09559585H
 	.word   05000H
 	.long   XART_P
 XART06:
 	.word   31,35,20,26
-	.long   0955865dH
+	.long   0955abc9H
 	.word   05000H
 	.long   XART_P
 XART07:
 	.word   29,35,5,30
-	.long   09559b8eH
+	.long   0955c0faH
 	.word   05000H
 	.long   XART_P
 XART08:
 	.word   31,36,2,23
-	.long   0955af61H
+	.long   0955d4cdH
 	.word   05000H
 	.long   XART_P
 XART09:
 	.word   31,37,4,27
-	.long   0955c52dH
+	.long   0955ea99H
 	.word   05000H
 	.long   XART_P
 XART10:
 	.word   29,37,11,30
-	.long   0955db94H
+	.long   09560100H
 	.word   05000H
 	.long   XART_P
 XART11:
 	.word   24,24,12,14
-	.long   0955f089H
+	.long   095615f5H
 	.word   05000H
 	.long   XART_P
 XART12:
 	.word   31,35,17,33
-	.long   0955fbc9H
+	.long   09562135H
 	.word   05000H
 	.long   XART_P
 XART13:
 	.word   31,38,20,33
-	.long   095610faH
+	.long   09563666H
 	.word   05000H
 	.long   XART_P
 XART14:
 	.word   30,37,16,32
-	.long   095627fcH
+	.long   09564d68H
 	.word   05000H
 	.long   XART_P
 XART15:
 	.word   30,37,16,34
-	.long   09563daaH
+	.long   09566316H
 	.word   05000H
 	.long   XART_P
 XART16:
 	.word   29,34,25,21
-	.long   09565358H
+	.long   095678c4H
 	.word   05000H
 	.long   XART_P
 XMID01:
 	.word   29,35,12,32
-	.long   0956669aH
+	.long   09568c06H
 	.word   05000H
 	.long   XMID_P
 XMID02:
 	.word   28,36,15,33
-	.long   09567a6dH
+	.long   09569fd9H
 	.word   05000H
 	.long   XMID_P
 XMID03:
 	.word   35,37,8,31
-	.long   09568e1dH
+	.long   0956b389H
 	.word   05000H
 	.long   XMID_P
 XMID04:
 	.word   29,38,9,33
-	.long   0956a768H
+	.long   0956ccd4H
 	.word   05000H
 	.long   XMID_P
 XMID05:
 	.word   27,38,14,35
-	.long   0956bceeH
+	.long   0956e25aH
 	.word   05000H
 	.long   XMID_P
 XMID06:
 	.word   35,35,23,26
-	.long   0956d0f8H
+	.long   0956f664H
 	.word   05000H
 	.long   XMID_P
 XMID07:
 	.word   30,35,5,30
-	.long   0956e8e5H
+	.long   09570e51H
 	.word   05000H
 	.long   XMID_P
 XMID08:
 	.word   37,32,2,20
-	.long   0956fd67H
+	.long   095722d3H
 	.word   05000H
 	.long   XMID_P
 XMID09:
 	.word   33,36,5,26
-	.long   09571487H
+	.long   095739f3H
 	.word   05000H
 	.long   XMID_P
 XMID10:
 	.word   30,37,11,30
-	.long   09572bbbH
+	.long   09575127H
 	.word   05000H
 	.long   XMID_P
 XMID11:
 	.word   23,26,11,15
-	.long   09574169H
+	.long   095766d5H
 	.word   05000H
 	.long   XMID_P
 XMID12:
 	.word   35,35,19,33
-	.long   09574d17H
+	.long   09577283H
 	.word   05000H
 	.long   XMID_P
 XMID13:
 	.word   29,38,19,33
-	.long   09576504H
+	.long   09578a70H
 	.word   05000H
 	.long   XMID_P
 XMID14:
 	.word   27,36,14,31
-	.long   09577a8aH
+	.long   09579ff6H
 	.word   05000H
 	.long   XMID_P
 XMID15:
 	.word   27,37,14,34
-	.long   09578d86H
+	.long   0957b2f2H
 	.word   05000H
 	.long   XMID_P
 XMID16:
 	.word   37,34,33,21
-	.long   0957a109H
+	.long   0957c675H
 	.word   05000H
 	.long   XMID_P
 XROB01:
 	.word   28,39,12,35
-	.long   0957b99bH
+	.long   0957df07H
 	.word   04000H
 	.long   XROB_P
 XROB02:
 	.word   31,37,16,34
-	.long   0957caabH
+	.long   0957f017H
 	.word   04000H
 	.long   XROB_P
 XROB03:
 	.word   33,41,7,35
-	.long   0957dc97H
+	.long   09580203H
 	.word   04000H
 	.long   XROB_P
 XROB04:
 	.word   32,41,10,36
-	.long   0957f1bbH
+	.long   09581727H
 	.word   04000H
 	.long   XROB_P
 XROB05:
 	.word   28,40,14,37
-	.long   0958063bH
+	.long   09582ba7H
 	.word   04000H
 	.long   XROB_P
 XROB06:
 	.word   33,36,22,27
-	.long   095817bbH
+	.long   09583d27H
 	.word   04000H
 	.long   XROB_P
 XROB07:
 	.word   36,38,6,33
-	.long   09582a4bH
+	.long   09584fb7H
 	.word   04000H
 	.long   XROB_P
 XROB08:
 	.word   34,39,2,25
-	.long   09583fabH
+	.long   09586517H
 	.word   04000H
 	.long   XROB_P
 XROB09:
 	.word   36,41,5,30
-	.long   09585463H
+	.long   095879cfH
 	.word   04000H
 	.long   XROB_P
 XROB10:
 	.word   32,41,12,33
-	.long   09586b73H
+	.long   095890dfH
 	.word   04000H
 	.long   XROB_P
 XROB11:
 	.word   28,23,14,13
-	.long   09587ff3H
+	.long   0958a55fH
 	.word   04000H
 	.long   XROB_P
 XROB12:
 	.word   33,36,18,34
-	.long   09588a03H
+	.long   0958af6fH
 	.word   04000H
 	.long   XROB_P
 XROB13:
 	.word   36,41,24,36
-	.long   09589c93H
+	.long   0958c1ffH
 	.word   04000H
 	.long   XROB_P
 XROB14:
 	.word   29,39,15,34
-	.long   0958b3a3H
+	.long   0958d90fH
 	.word   04000H
 	.long   XROB_P
 XROB15:
 	.word   30,41,16,37
-	.long   0958c54fH
+	.long   0958eabbH
 	.word   04000H
 	.long   XROB_P
 XROB16:
 	.word   42,27,37,17
-	.long   0958d887H
+	.long   0958fdf3H
 	.word   04000H
 	.long   XROB_P
 XTAE01:
 	.word   34,34,14,31
-	.long   0958ea3fH
+	.long   09590fabH
 	.word   05000H
 	.long   XTAE_P
 XTAE02:
 	.word   29,35,15,32
-	.long   095900d3H
+	.long   0959263fH
 	.word   05000H
 	.long   XTAE_P
 XTAE03:
 	.word   35,36,8,30
-	.long   095914a6H
+	.long   09593a12H
 	.word   05000H
 	.long   XTAE_P
 XTAE04:
 	.word   30,36,10,32
-	.long   09592d42H
+	.long   095952aeH
 	.word   05000H
 	.long   XTAE_P
 XTAE05:
 	.word   31,36,16,33
-	.long   0959425aH
+	.long   095967c6H
 	.word   05000H
 	.long   XTAE_P
 XTAE06:
 	.word   33,35,22,26
-	.long   09595826H
+	.long   09597d92H
 	.word   05000H
 	.long   XTAE_P
 XTAE07:
 	.word   33,36,5,31
-	.long   09596eb5H
+	.long   09599421H
 	.word   05000H
 	.long   XTAE_P
 XTAE08:
 	.word   36,35,2,22
-	.long   095985e9H
+	.long   0959ab55H
 	.word   05000H
 	.long   XTAE_P
 XTAE09:
 	.word   29,34,4,25
-	.long   09599e85H
+	.long   0959c3f1H
 	.word   05000H
 	.long   XTAE_P
 XTAE10:
 	.word   30,36,11,29
-	.long   0959b1c7H
+	.long   0959d733H
 	.word   05000H
 	.long   XTAE_P
 XTAE11:
 	.word   24,24,12,14
-	.long   0959c6dfH
+	.long   0959ec4bH
 	.word   05000H
 	.long   XTAE_P
 XTAE12:
 	.word   33,35,18,33
-	.long   0959d21fH
+	.long   0959f78bH
 	.word   05000H
 	.long   XTAE_P
 XTAE13:
 	.word   33,35,22,31
-	.long   0959e8aeH
+	.long   095a0e1aH
 	.word   05000H
 	.long   XTAE_P
 XTAE14:
 	.word   30,35,16,30
-	.long   0959ff3dH
+	.long   095a24a9H
 	.word   05000H
 	.long   XTAE_P
 XTAE15:
 	.word   30,37,16,34
-	.long   095a13bfH
+	.long   095a392bH
 	.word   05000H
 	.long   XTAE_P
 XTAE16:
 	.word   36,34,32,21
-	.long   095a296dH
+	.long   095a4ed9H
 	.word   05000H
 	.long   XTAE_P
 XWIL01:
 	.word   23,28,11,25
-	.long   095a4155H
+	.long   095a66c1H
 	.word   00H
 	.long   XWIL_P
 XWIL02:
 	.word   26,27,13,25
-	.long   095a5575H
+	.long   095a7ae1H
 	.word   00H
 	.long   XWIL_P
 XWIL03:
 	.word   29,31,13,28
-	.long   095a6b65H
+	.long   095a90d1H
 	.word   00H
 	.long   XWIL_P
 XWIL04:
 	.word   25,31,8,29
-	.long   095a877dH
+	.long   095aace9H
 	.word   00H
 	.long   XWIL_P
 XWIL05:
 	.word   24,32,11,29
-	.long   095a9fb5H
+	.long   095ac521H
 	.word   00H
 	.long   XWIL_P
 XWIL06:
 	.word   27,27,16,24
-	.long   095ab7b5H
+	.long   095add21H
 	.word   00H
 	.long   XWIL_P
 XWIL07:
 	.word   29,31,8,29
-	.long   095ace7dH
+	.long   095af3e9H
 	.word   00H
 	.long   XWIL_P
 XWIL08:
 	.word   29,35,5,28
-	.long   095aea95H
+	.long   095b1001H
 	.word   00H
 	.long   XWIL_P
 XWIL09:
 	.word   28,33,7,29
-	.long   095b0a4dH
+	.long   095b2fb9H
 	.word   00H
 	.long   XWIL_P
 XWIL10:
 	.word   24,30,10,26
-	.long   095b272dH
+	.long   095b4c99H
 	.word   00H
 	.long   XWIL_P
 XWIL11:
 	.word   22,22,10,18
-	.long   095b3dadH
+	.long   095b6319H
 	.word   00H
 	.long   XWIL_P
 XWIL12:
 	.word   30,29,16,27
-	.long   095b4ccdH
+	.long   095b7239H
 	.word   00H
 	.long   XWIL_P
 XWIL13:
 	.word   33,29,19,25
-	.long   095b67fdH
+	.long   095b8d69H
 	.word   00H
 	.long   XWIL_P
 XWIL14:
 	.word   28,30,15,27
-	.long   095b85e5H
+	.long   095bab51H
 	.word   00H
 	.long   XWIL_P
 XWIL15:
 	.word   23,27,11,25
-	.long   095ba025H
+	.long   095bc591H
 	.word   00H
 	.long   XWIL_P
 XWIL16:
 	.word   31,28,28,21
-	.long   095bb38dH
+	.long   095bd8f9H
 	.word   00H
 	.long   XWIL_P
 XKOR01:
 	.word   29,34,12,31
-	.long   095bceadH
+	.long   095bf419H
 	.word   05000H
 	.long   XKOR_P
 XKOR02:
 	.word   33,31,17,28
-	.long   095be1efH
+	.long   095c075bH
 	.word   05000H
 	.long   XKOR_P
 XKOR03:
 	.word   31,34,7,29
-	.long   095bf5eaH
+	.long   095c1b56H
 	.word   05000H
 	.long   XKOR_P
 XKOR04:
 	.word   29,36,9,32
-	.long   095c0a80H
+	.long   095c2fecH
 	.word   05000H
 	.long   XKOR_P
 XKOR05:
 	.word   28,36,14,33
-	.long   095c1ee4H
+	.long   095c4450H
 	.word   05000H
 	.long   XKOR_P
 XKOR06:
 	.word   33,30,22,22
-	.long   095c3294H
+	.long   095c5800H
 	.word   05000H
 	.long   XKOR_P
 XKOR07:
 	.word   30,35,5,30
-	.long   095c45eaH
+	.long   095c6b56H
 	.word   05000H
 	.long   XKOR_P
 XKOR08:
 	.word   29,35,2,22
-	.long   095c5a6cH
+	.long   095c7fd8H
 	.word   05000H
 	.long   XKOR_P
 XKOR09:
 	.word   34,34,5,25
-	.long   095c6e3fH
+	.long   095c93abH
 	.word   05000H
 	.long   XKOR_P
 XKOR10:
 	.word   28,35,11,28
-	.long   095c84d3H
+	.long   095caa3fH
 	.word   05000H
 	.long   XKOR_P
 XKOR11:
 	.word   26,29,12,17
-	.long   095c97f7H
+	.long   095cbd63H
 	.word   05000H
 	.long   XKOR_P
 XKOR12:
 	.word   33,30,18,28
-	.long   095ca6b1H
+	.long   095ccc1dH
 	.word   05000H
 	.long   XKOR_P
 XKOR13:
 	.word   27,35,18,31
-	.long   095cba07H
+	.long   095cdf73H
 	.word   05000H
 	.long   XKOR_P
 XKOR14:
 	.word   29,35,15,30
-	.long   095ccc7cH
+	.long   095cf1e8H
 	.word   05000H
 	.long   XKOR_P
 XKOR15:
 	.word   27,35,14,32
-	.long   095ce04fH
+	.long   095d05bbH
 	.word   05000H
 	.long   XKOR_P
 XKOR16:
 	.word   30,34,26,21
-	.long   095cf2c4H
+	.long   095d1830H
 	.word   05000H
 	.long   XKOR_P
 XWAD01:
 	.word   28,35,12,32
-	.long   095d06b0H
+	.long   095d2c1cH
 	.word   05000H
 	.long   XWAD_P
 XWAD02:
 	.word   28,35,15,32
-	.long   095d19d4H
+	.long   095d3f40H
 	.word   05000H
 	.long   XWAD_P
 XWAD03:
 	.word   30,37,6,31
-	.long   095d2cf8H
+	.long   095d5264H
 	.word   05000H
 	.long   XWAD_P
 XWAD04:
 	.word   31,38,10,33
-	.long   095d42a6H
+	.long   095d6812H
 	.word   05000H
 	.long   XWAD_P
 XWAD05:
 	.word   28,36,14,33
-	.long   095d59a8H
+	.long   095d7f14H
 	.word   05000H
 	.long   XWAD_P
 XWAD06:
 	.word   29,34,19,25
-	.long   095d6d58H
+	.long   095d92c4H
 	.word   05000H
 	.long   XWAD_P
 XWAD07:
 	.word   30,36,5,31
-	.long   095d809aH
+	.long   095da606H
 	.word   05000H
 	.long   XWAD_P
 XWAD08:
 	.word   30,35,2,22
-	.long   095d95b2H
+	.long   095dbb1eH
 	.word   05000H
 	.long   XWAD_P
 XWAD09:
 	.word   26,36,4,26
-	.long   095daa34H
+	.long   095dcfa0H
 	.word   05000H
 	.long   XWAD_P
 XWAD10:
 	.word   28,35,11,28
-	.long   095dbc7cH
+	.long   095de1e8H
 	.word   05000H
 	.long   XWAD_P
 XWAD11:
 	.word   26,24,12,14
-	.long   095dcfa0H
+	.long   095df50cH
 	.word   05000H
 	.long   XWAD_P
 XWAD12:
 	.word   29,34,16,32
-	.long   095ddbd0H
+	.long   095e013cH
 	.word   05000H
 	.long   XWAD_P
 XWAD13:
 	.word   26,37,17,32
-	.long   095def12H
+	.long   095e147eH
 	.word   05000H
 	.long   XWAD_P
 XWAD14:
 	.word   31,37,16,32
-	.long   095e01dcH
+	.long   095e2748H
 	.word   05000H
 	.long   XWAD_P
 XWAD15:
 	.word   31,37,16,34
-	.long   095e1843H
+	.long   095e3dafH
 	.word   05000H
 	.long   XWAD_P
 XWAD16:
 	.word   28,34,24,21
-	.long   095e2eaaH
+	.long   095e5416H
 	.word   05000H
 	.long   XWAD_P
 XBUT01:
 	.word   36,35,15,32
-	.long   095e4142H
+	.long   095e66aeH
 	.word   05000H
 	.long   XBUT_P
 XBUT02:
 	.word   31,35,16,32
-	.long   095e59deH
+	.long   095e7f4aH
 	.word   05000H
 	.long   XBUT_P
 XBUT03:
 	.word   35,36,8,30
-	.long   095e6f0fH
+	.long   095e947bH
 	.word   05000H
 	.long   XBUT_P
 XBUT04:
 	.word   35,36,11,32
-	.long   095e87abH
+	.long   095ead17H
 	.word   05000H
 	.long   XBUT_P
 XBUT05:
 	.word   36,36,18,33
-	.long   095ea047H
+	.long   095ec5b3H
 	.word   05000H
 	.long   XBUT_P
 XBUT06:
 	.word   30,35,20,26
-	.long   095eb997H
+	.long   095edf03H
 	.word   05000H
 	.long   XBUT_P
 XBUT07:
 	.word   36,36,6,31
-	.long   095ece19H
+	.long   095ef385H
 	.word   05000H
 	.long   XBUT_P
 XBUT08:
 	.word   36,35,2,22
-	.long   095ee769H
+	.long   095f0cd5H
 	.word   05000H
 	.long   XBUT_P
 XBUT09:
 	.word   35,34,5,25
-	.long   095f0005H
+	.long   095f2571H
 	.word   05000H
 	.long   XBUT_P
 XBUT10:
 	.word   29,36,11,29
-	.long   095f1743H
+	.long   095f3cafH
 	.word   05000H
 	.long   XBUT_P
 XBUT11:
 	.word   36,34,18,20
-	.long   095f2ba7H
+	.long   095f5113H
 	.word   05000H
 	.long   XBUT_P
 XBUT12:
 	.word   30,35,16,33
-	.long   095f438fH
+	.long   095f68fbH
 	.word   05000H
 	.long   XBUT_P
 XBUT13:
 	.word   36,35,24,31
-	.long   095f5811H
+	.long   095f7d7dH
 	.word   05000H
 	.long   XBUT_P
 XBUT14:
 	.word   36,35,19,30
-	.long   095f70adH
+	.long   095f9619H
 	.word   05000H
 	.long   XBUT_P
 XBUT15:
 	.word   36,34,19,31
-	.long   095f8949H
+	.long   095faeb5H
 	.word   05000H
 	.long   XBUT_P
 XBUT16:
 	.word   36,34,32,21
-	.long   095fa131H
+	.long   095fc69dH
 	.word   05000H
 	.long   XBUT_P
 XBAM01:
 	.word   28,38,12,34
-	.long   095fb919H
+	.long   095fde85H
 	.word   05000H
 	.long   XBAM_P
 XBAM02:
 	.word   28,37,15,34
-	.long   095fcde1H
+	.long   095ff34dH
 	.word   05000H
 	.long   XBAM_P
 XBAM03:
 	.word   29,37,6,31
-	.long   095fe21dH
+	.long   09600789H
 	.word   05000H
 	.long   XBAM_P
 XBAM04:
 	.word   27,36,9,32
-	.long   095ff712H
+	.long   09601c7eH
 	.word   05000H
 	.long   XBAM_P
 XBAM05:
 	.word   28,38,14,35
-	.long   09600a0eH
+	.long   09602f7aH
 	.word   05000H
 	.long   XBAM_P
 XBAM06:
 	.word   37,33,24,24
-	.long   09601ed6H
+	.long   09604442H
 	.word   05000H
 	.long   XBAM_P
 XBAM07:
 	.word   33,34,5,29
-	.long   096036afH
+	.long   09605c1bH
 	.word   05000H
 	.long   XBAM_P
 XBAM08:
 	.word   33,35,2,22
-	.long   09604c99H
+	.long   09607205H
 	.word   05000H
 	.long   XBAM_P
 XBAM09:
 	.word   36,32,5,23
-	.long   09606328H
+	.long   09608894H
 	.word   05000H
 	.long   XBAM_P
 XBAM10:
 	.word   33,37,13,30
-	.long   096079a8H
+	.long   09609f14H
 	.word   05000H
 	.long   XBAM_P
 XBAM11:
 	.word   24,26,12,15
-	.long   09609181H
+	.long   0960b6edH
 	.word   05000H
 	.long   XBAM_P
 XBAM12:
 	.word   37,33,20,31
-	.long   09609db1H
+	.long   0960c31dH
 	.word   05000H
 	.long   XBAM_P
 XBAM13:
 	.word   29,37,19,32
-	.long   0960b58aH
+	.long   0960daf6H
 	.word   05000H
 	.long   XBAM_P
 XBAM14:
 	.word   28,37,14,32
-	.long   0960ca7fH
+	.long   0960efebH
 	.word   05000H
 	.long   XBAM_P
 XBAM15:
 	.word   26,37,14,34
-	.long   0960debbH
+	.long   09610427H
 	.word   05000H
 	.long   XBAM_P
 XBAM16:
 	.word   34,32,30,20
-	.long   0960f185H
+	.long   096116f1H
 	.word   05000H
 	.long   XBAM_P
 XDWI01:
 	.word   28,38,12,34
-	.long   095fb919H
+	.long   095fde85H
 	.word   05000H
 	.long   XDWI_P
 XDWI02:
 	.word   28,37,15,34
-	.long   095fcde1H
+	.long   095ff34dH
 	.word   05000H
 	.long   XDWI_P
 XDWI03:
 	.word   29,37,6,31
-	.long   095fe21dH
+	.long   09600789H
 	.word   05000H
 	.long   XDWI_P
 XDWI04:
 	.word   27,36,9,32
-	.long   095ff712H
+	.long   09601c7eH
 	.word   05000H
 	.long   XDWI_P
 XDWI05:
 	.word   28,38,14,35
-	.long   09600a0eH
+	.long   09602f7aH
 	.word   05000H
 	.long   XDWI_P
 XDWI06:
 	.word   37,33,24,24
-	.long   09601ed6H
+	.long   09604442H
 	.word   05000H
 	.long   XDWI_P
 XDWI07:
 	.word   33,34,5,29
-	.long   096036afH
+	.long   09605c1bH
 	.word   05000H
 	.long   XDWI_P
 XDWI08:
 	.word   33,35,2,22
-	.long   09604c99H
+	.long   09607205H
 	.word   05000H
 	.long   XDWI_P
 XDWI09:
 	.word   36,32,5,23
-	.long   09606328H
+	.long   09608894H
 	.word   05000H
 	.long   XDWI_P
 XDWI10:
 	.word   33,37,13,30
-	.long   096079a8H
+	.long   09609f14H
 	.word   05000H
 	.long   XDWI_P
 XDWI11:
 	.word   24,26,12,15
-	.long   09609181H
+	.long   0960b6edH
 	.word   05000H
 	.long   XDWI_P
 XDWI12:
 	.word   37,33,20,31
-	.long   09609db1H
+	.long   0960c31dH
 	.word   05000H
 	.long   XDWI_P
 XDWI13:
 	.word   29,37,19,32
-	.long   0960b58aH
+	.long   0960daf6H
 	.word   05000H
 	.long   XDWI_P
 XDWI14:
 	.word   28,37,14,32
-	.long   0960ca7fH
+	.long   0960efebH
 	.word   05000H
 	.long   XDWI_P
 XDWI15:
 	.word   26,37,14,34
-	.long   0960debbH
+	.long   09610427H
 	.word   05000H
 	.long   XDWI_P
 XDWI16:
 	.word   34,32,30,20
-	.long   0960f185H
+	.long   096116f1H
 	.word   05000H
 	.long   XDWI_P
 XADA01:
 	.word   33,34,14,31
-	.long   096106c5H
+	.long   09612c31H
 	.word   05000H
 	.long   XADA_P
 XADA02:
 	.word   31,36,16,33
-	.long   09611cafH
+	.long   0961421bH
 	.word   05000H
 	.long   XADA_P
 XADA03:
 	.word   36,37,8,32
-	.long   0961327bH
+	.long   096157e7H
 	.word   05000H
 	.long   XADA_P
 XADA04:
 	.word   31,38,10,33
-	.long   09614c7fH
+	.long   096171ebH
 	.word   05000H
 	.long   XADA_P
 XADA05:
 	.word   31,38,16,35
-	.long   09616381H
+	.long   096188edH
 	.word   05000H
 	.long   XADA_P
 XADA06:
 	.word   33,35,22,26
-	.long   09617a83H
+	.long   09619fefH
 	.word   05000H
 	.long   XADA_P
 XADA07:
 	.word   34,37,6,32
-	.long   09619112H
+	.long   0961b67eH
 	.word   05000H
 	.long   XADA_P
 XADA08:
 	.word   37,35,2,22
-	.long   0961a9a4H
+	.long   0961cf10H
 	.word   05000H
 	.long   XADA_P
 XADA09:
 	.word   34,37,5,27
-	.long   0961c2efH
+	.long   0961e85bH
 	.word   05000H
 	.long   XADA_P
 XADA10:
 	.word   34,37,13,30
-	.long   0961db81H
+	.long   096200edH
 	.word   05000H
 	.long   XADA_P
 XADA11:
 	.word   29,31,14,18
-	.long   0961f413H
+	.long   0962197fH
 	.word   05000H
 	.long   XADA_P
 XADA12:
 	.word   33,36,18,34
-	.long   096205a2H
+	.long   09622b0eH
 	.word   05000H
 	.long   XADA_P
 XADA13:
 	.word   35,38,23,33
-	.long   09621cd6H
+	.long   09624242H
 	.word   05000H
 	.long   XADA_P
 XADA14:
 	.word   31,37,16,32
-	.long   096236d0H
+	.long   09625c3cH
 	.word   05000H
 	.long   XADA_P
 XADA15:
 	.word   33,37,17,34
-	.long   09624d37H
+	.long   096272a3H
 	.word   05000H
 	.long   XADA_P
 XADA16:
 	.word   37,35,33,22
-	.long   09626510H
+	.long   09628a7cH
 	.word   05000H
 	.long   XADA_P
 XBEA01:
 	.word   29,35,12,32
-	.long   09627e5bH
+	.long   0962a3c7H
 	.word   05000H
 	.long   XBEA_P
 XBEA02:
 	.word   29,35,15,32
-	.long   0962922eH
+	.long   0962b79aH
 	.word   05000H
 	.long   XBEA_P
 XBEA03:
 	.word   35,36,8,30
-	.long   0962a601H
+	.long   0962cb6dH
 	.word   05000H
 	.long   XBEA_P
 XBEA04:
 	.word   28,36,9,32
-	.long   0962be9dH
+	.long   0962e409H
 	.word   05000H
 	.long   XBEA_P
 XBEA05:
 	.word   29,37,15,34
-	.long   0962d24dH
+	.long   0962f7b9H
 	.word   05000H
 	.long   XBEA_P
 XBEA06:
 	.word   34,34,22,25
-	.long   0962e742H
+	.long   09630caeH
 	.word   05000H
 	.long   XBEA_P
 XBEA07:
 	.word   33,36,5,31
-	.long   0962fdd6H
+	.long   09632342H
 	.word   05000H
 	.long   XBEA_P
 XBEA08:
 	.word   37,32,2,20
-	.long   0963150aH
+	.long   09633a76H
 	.word   05000H
 	.long   XBEA_P
 XBEA09:
 	.word   35,37,5,27
-	.long   09632c2aH
+	.long   09635196H
 	.word   05000H
 	.long   XBEA_P
 XBEA10:
 	.word   33,36,13,29
-	.long   09634575H
+	.long   09636ae1H
 	.word   05000H
 	.long   XBEA_P
 XBEA11:
 	.word   28,29,14,17
-	.long   09635ca9H
+	.long   09638215H
 	.word   05000H
 	.long   XBEA_P
 XBEA12:
 	.word   34,34,19,32
-	.long   09636c85H
+	.long   096391f1H
 	.word   05000H
 	.long   XBEA_P
 XBEA13:
 	.word   33,38,22,33
-	.long   09638319H
+	.long   0963a885H
 	.word   05000H
 	.long   XBEA_P
 XBEA14:
 	.word   26,37,13,32
-	.long   09639b97H
+	.long   0963c103H
 	.word   05000H
 	.long   XBEA_P
 XBEA15:
 	.word   30,35,16,32
-	.long   0963ae61H
+	.long   0963d3cdH
 	.word   05000H
 	.long   XBEA_P
 XBEA16:
 	.word   36,34,32,21
-	.long   0963c2e3H
+	.long   0963e84fH
 	.word   05000H
 	.long   XBEA_P
 XJOK01:
 	.word   29,35,12,32
-	.long   0963dacbH
+	.long   09640037H
 	.word   05000H
 	.long   XJOK_P
 XJOK02:
 	.word   29,35,15,32
-	.long   0963ee9eH
+	.long   0964140aH
 	.word   05000H
 	.long   XJOK_P
 XJOK03:
 	.word   36,37,8,31
-	.long   09640271H
+	.long   096427ddH
 	.word   05000H
 	.long   XJOK_P
 XJOK04:
 	.word   28,36,9,32
-	.long   09641c75H
+	.long   096441e1H
 	.word   05000H
 	.long   XJOK_P
 XJOK05:
 	.word   29,37,15,34
-	.long   09643025H
+	.long   09645591H
 	.word   05000H
 	.long   XJOK_P
 XJOK06:
 	.word   33,35,22,26
-	.long   0964451aH
+	.long   09646a86H
 	.word   05000H
 	.long   XJOK_P
 XJOK07:
 	.word   34,36,6,31
-	.long   09645ba9H
+	.long   09648115H
 	.word   05000H
 	.long   XJOK_P
 XJOK08:
 	.word   36,35,2,22
-	.long   09647391H
+	.long   096498fdH
 	.word   05000H
 	.long   XJOK_P
 XJOK09:
 	.word   34,36,5,26
-	.long   09648c2dH
+	.long   0964b199H
 	.word   05000H
 	.long   XJOK_P
 XJOK10:
 	.word   31,37,12,30
-	.long   0964a415H
+	.long   0964c981H
 	.word   05000H
 	.long   XJOK_P
 XJOK11:
 	.word   26,26,12,15
-	.long   0964ba7cH
+	.long   0964dfe8H
 	.word   05000H
 	.long   XJOK_P
 XJOK12:
 	.word   33,35,18,33
-	.long   0964c7b0H
+	.long   0964ed1cH
 	.word   05000H
 	.long   XJOK_P
 XJOK13:
 	.word   29,38,19,33
-	.long   0964de3fH
+	.long   096503abH
 	.word   05000H
 	.long   XJOK_P
 XJOK14:
 	.word   26,36,13,31
-	.long   0964f3c5H
+	.long   09651931H
 	.word   05000H
 	.long   XJOK_P
 XJOK15:
 	.word   29,37,15,34
-	.long   0965060dH
+	.long   09652b79H
 	.word   05000H
 	.long   XJOK_P
 XJOK16:
 	.word   37,35,33,22
-	.long   09651b02H
+	.long   0965406eH
 	.word   05000H
 	.long   XJOK_P
 XJMU01:
 	.word   30,34,13,31
-	.long   0965344dH
+	.long   096559b9H
 	.word   05000H
 	.long   XJMU_P
 XJMU02:
 	.word   28,34,15,31
-	.long   09654839H
+	.long   09656da5H
 	.word   05000H
 	.long   XJMU_P
 XJMU03:
 	.word   34,36,7,30
-	.long   09655ad1H
+	.long   0965803dH
 	.word   05000H
 	.long   XJMU_P
 XJMU04:
 	.word   31,36,10,32
-	.long   096572b9H
+	.long   09659825H
 	.word   05000H
 	.long   XJMU_P
 XJMU05:
 	.word   31,35,16,32
-	.long   09658885H
+	.long   0965adf1H
 	.word   05000H
 	.long   XJMU_P
 XJMU06:
 	.word   36,31,24,23
-	.long   09659db6H
+	.long   0965c322H
 	.word   05000H
 	.long   XJMU_P
 XJMU07:
 	.word   33,37,5,32
-	.long   0965b382H
+	.long   0965d8eeH
 	.word   05000H
 	.long   XJMU_P
 XJMU08:
 	.word   36,32,2,20
-	.long   0965cb5bH
+	.long   0965f0c7H
 	.word   05000H
 	.long   XJMU_P
 XJMU09:
 	.word   35,37,5,27
-	.long   0965e1dbH
+	.long   09660747H
 	.word   05000H
 	.long   XJMU_P
 XJMU10:
 	.word   37,34,14,27
-	.long   0965fb26H
+	.long   09662092H
 	.word   05000H
 	.long   XJMU_P
 XJMU11:
 	.word   30,27,14,16
-	.long   096613b8H
+	.long   09663924H
 	.word   05000H
 	.long   XJMU_P
 XJMU12:
 	.word   36,32,20,30
-	.long   0966238aH
+	.long   096648f6H
 	.word   05000H
 	.long   XJMU_P
 XJMU13:
 	.word   35,38,23,33
-	.long   09663a0aH
+	.long   09665f76H
 	.word   05000H
 	.long   XJMU_P
 XJMU14:
 	.word   31,33,16,29
-	.long   09665404H
+	.long   09667970H
 	.word   05000H
 	.long   XJMU_P
 XJMU15:
 	.word   31,35,16,32
-	.long   096667ffH
+	.long   09668d6bH
 	.word   05000H
 	.long   XJMU_P
 XJMU16:
 	.word   34,34,30,22
-	.long   09667d30H
+	.long   0966a29cH
 	.word   05000H
 	.long   XJMU_P
 XMEL01:
 	.word   26,35,11,32
-	.long   096693c4H
+	.long   0966b930H
 	.word   05000H
 	.long   XMEL_P
 XMEL02:
 	.word   29,36,15,33
-	.long   0966a58aH
+	.long   0966caf6H
 	.word   05000H
 	.long   XMEL_P
 XMEL03:
 	.word   33,37,7,31
-	.long   0966b9eeH
+	.long   0966df5aH
 	.word   05000H
 	.long   XMEL_P
 XMEL04:
 	.word   28,35,9,31
-	.long   0966d1c7H
+	.long   0966f733H
 	.word   05000H
 	.long   XMEL_P
 XMEL05:
 	.word   27,36,14,33
-	.long   0966e4ebH
+	.long   09670a57H
 	.word   05000H
 	.long   XMEL_P
 XMEL06:
 	.word   29,34,19,25
-	.long   0966f7e7H
+	.long   09671d53H
 	.word   05000H
 	.long   XMEL_P
 XMEL07:
 	.word   29,36,5,31
-	.long   09670b29H
+	.long   09673095H
 	.word   05000H
 	.long   XMEL_P
 XMEL08:
 	.word   37,32,2,20
-	.long   09671f8dH
+	.long   096744f9H
 	.word   05000H
 	.long   XMEL_P
 XMEL09:
 	.word   33,37,5,27
-	.long   096736adH
+	.long   09675c19H
 	.word   05000H
 	.long   XMEL_P
 XMEL10:
 	.word   33,35,13,28
-	.long   09674e86H
+	.long   096773f2H
 	.word   05000H
 	.long   XMEL_P
 XMEL11:
 	.word   28,29,14,17
-	.long   09676515H
+	.long   09678a81H
 	.word   05000H
 	.long   XMEL_P
 XMEL12:
 	.word   29,34,16,32
-	.long   096774f1H
+	.long   09679a5dH
 	.word   05000H
 	.long   XMEL_P
 XMEL13:
 	.word   33,38,22,33
-	.long   09678833H
+	.long   0967ad9fH
 	.word   05000H
 	.long   XMEL_P
 XMEL14:
 	.word   26,37,13,32
-	.long   0967a0b1H
+	.long   0967c61dH
 	.word   05000H
 	.long   XMEL_P
 XMEL15:
 	.word   26,34,14,31
-	.long   0967b37bH
+	.long   0967d8e7H
 	.word   05000H
 	.long   XMEL_P
 XMEL16:
 	.word   29,32,25,20
-	.long   0967c4bfH
+	.long   0967ea2bH
 	.word   05000H
 	.long   XMEL_P
 XBIL01:
 	.word   27,35,11,32
-	.long   0967d6dfH
+	.long   0967fc4bH
 	.word   05000H
 	.long   XBIL_P
 XBIL02:
 	.word   28,35,15,32
-	.long   0967e954H
+	.long   09680ec0H
 	.word   05000H
 	.long   XBIL_P
 XBIL03:
 	.word   31,36,7,30
-	.long   0967fc78H
+	.long   096821e4H
 	.word   05000H
 	.long   XBIL_P
 XBIL04:
 	.word   28,36,9,32
-	.long   09681244H
+	.long   096837b0H
 	.word   05000H
 	.long   XBIL_P
 XBIL05:
 	.word   26,37,13,34
-	.long   096825f4H
+	.long   09684b60H
 	.word   05000H
 	.long   XBIL_P
 XBIL06:
 	.word   30,29,20,21
-	.long   096838beH
+	.long   09685e2aH
 	.word   05000H
 	.long   XBIL_P
 XBIL07:
 	.word   30,29,5,25
-	.long   096849bcH
+	.long   09686f28H
 	.word   05000H
 	.long   XBIL_P
 XBIL08:
 	.word   30,35,2,22
-	.long   09685abaH
+	.long   09688026H
 	.word   05000H
 	.long   XBIL_P
 XBIL09:
 	.word   27,36,4,26
-	.long   09686f3cH
+	.long   096894a8H
 	.word   05000H
 	.long   XBIL_P
 XBIL10:
 	.word   31,37,12,30
-	.long   09688238H
+	.long   0968a7a4H
 	.word   05000H
 	.long   XBIL_P
 XBIL11:
 	.word   26,23,12,13
-	.long   0968989fH
+	.long   0968be0bH
 	.word   05000H
 	.long   XBIL_P
 XBIL12:
 	.word   30,28,16,26
-	.long   0968a44dH
+	.long   0968c9b9H
 	.word   05000H
 	.long   XBIL_P
 XBIL13:
 	.word   27,38,18,33
-	.long   0968b4b5H
+	.long   0968da21H
 	.word   05000H
 	.long   XBIL_P
 XBIL14:
 	.word   24,33,12,29
-	.long   0968c8bfH
+	.long   0968ee2bH
 	.word   05000H
 	.long   XBIL_P
 XBIL15:
 	.word   31,37,16,34
-	.long   0968d837H
+	.long   0968fda3H
 	.word   05000H
 	.long   XBIL_P
 XBIL16:
 	.word   30,32,26,20
-	.long   0968ee9eH
+	.long   0969140aH
 	.word   05000H
 	.long   XBIL_P
 XGAR01:
 	.word   30,35,13,32
-	.long   0969015eH
+	.long   096926caH
 	.word   05000H
 	.long   XGAR_P
 XGAR02:
 	.word   26,33,14,30
-	.long   096915e0H
+	.long   09693b4cH
 	.word   05000H
 	.long   XGAR_P
 XGAR03:
 	.word   30,38,6,32
-	.long   096926a2H
+	.long   09694c0eH
 	.word   05000H
 	.long   XGAR_P
 XGAR04:
 	.word   28,36,9,32
-	.long   09693ce6H
+	.long   09696252H
 	.word   05000H
 	.long   XGAR_P
 XGAR05:
 	.word   27,35,14,32
-	.long   09695096H
+	.long   09697602H
 	.word   05000H
 	.long   XGAR_P
 XGAR06:
 	.word   28,33,18,24
-	.long   0969630bH
+	.long   09698877H
 	.word   05000H
 	.long   XGAR_P
 XGAR07:
 	.word   33,33,5,28
-	.long   09697517H
+	.long   09699a83H
 	.word   05000H
 	.long   XGAR_P
 XGAR08:
 	.word   28,35,2,22
-	.long   09698a5cH
+	.long   0969afc8H
 	.word   05000H
 	.long   XGAR_P
 XGAR09:
 	.word   28,36,4,26
-	.long   09699d80H
+	.long   0969c2ecH
 	.word   05000H
 	.long   XGAR_P
 XGAR10:
 	.word   28,37,11,30
-	.long   0969b130H
+	.long   0969d69cH
 	.word   05000H
 	.long   XGAR_P
 XGAR11:
 	.word   26,23,12,13
-	.long   0969c56cH
+	.long   0969ead8H
 	.word   05000H
 	.long   XGAR_P
 XGAR12:
 	.word   28,33,15,31
-	.long   0969d11aH
+	.long   0969f686H
 	.word   05000H
 	.long   XGAR_P
 XGAR13:
 	.word   29,37,19,32
-	.long   0969e326H
+	.long   096a0892H
 	.word   05000H
 	.long   XGAR_P
 XGAR14:
 	.word   28,36,14,31
-	.long   0969f81bH
+	.long   096a1d87H
 	.word   05000H
 	.long   XGAR_P
 XGAR15:
 	.word   28,37,15,34
-	.long   096a0bcbH
+	.long   096a3137H
 	.word   05000H
 	.long   XGAR_P
 XGAR16:
 	.word   33,32,29,20
-	.long   096a2007H
+	.long   096a4573H
 	.word   05000H
 	.long   XGAR_P
 XANT01:
 	.word   35,36,15,33
-	.long   096a34a7H
+	.long   096a5a13H
 	.word   05000H
 	.long   XANT_P
 XANT02:
 	.word   34,35,18,32
-	.long   096a4d43H
+	.long   096a72afH
 	.word   05000H
 	.long   XANT_P
 XANT03:
 	.word   37,37,8,31
-	.long   096a6481H
+	.long   096a89edH
 	.word   05000H
 	.long   XANT_P
 XANT04:
 	.word   35,38,11,33
-	.long   096a7f3eH
+	.long   096aa4aaH
 	.word   05000H
 	.long   XANT_P
 XANT05:
 	.word   34,38,17,35
-	.long   096a9938H
+	.long   096abea4H
 	.word   05000H
 	.long   XANT_P
 XANT06:
 	.word   36,35,24,26
-	.long   096ab274H
+	.long   096ad7e0H
 	.word   05000H
 	.long   XANT_P
 XANT07:
 	.word   37,37,6,32
-	.long   096acb10H
+	.long   096af07cH
 	.word   05000H
 	.long   XANT_P
 XANT08:
 	.word   38,35,2,22
-	.long   096ae5cdH
+	.long   096b0b39H
 	.word   05000H
 	.long   XANT_P
 XANT09:
 	.word   37,37,5,27
-	.long   096affc7H
+	.long   096b2533H
 	.word   05000H
 	.long   XANT_P
 XANT10:
 	.word   35,36,13,29
-	.long   096b1a84H
+	.long   096b3ff0H
 	.word   05000H
 	.long   XANT_P
 XANT11:
 	.word   28,29,14,17
-	.long   096b3320H
+	.long   096b588cH
 	.word   05000H
 	.long   XANT_P
 XANT12:
 	.word   36,35,20,33
-	.long   096b42fcH
+	.long   096b6868H
 	.word   05000H
 	.long   XANT_P
 XANT13:
 	.word   34,35,22,31
-	.long   096b5b98H
+	.long   096b8104H
 	.word   05000H
 	.long   XANT_P
 XANT14:
 	.word   33,36,17,31
-	.long   096b72d6H
+	.long   096b9842H
 	.word   05000H
 	.long   XANT_P
 XANT15:
 	.word   35,37,19,34
-	.long   096b8a0aH
+	.long   096baf76H
 	.word   05000H
 	.long   XANT_P
 XANT16:
 	.word   37,35,33,22
-	.long   096ba355H
+	.long   096bc8c1H
 	.word   05000H
 	.long   XANT_P
 XLAM01:
 	.word   31,36,13,33
-	.long   096bbca0H
+	.long   096be20cH
 	.word   05000H
 	.long   XLAM_P
 XLAM02:
 	.word   35,36,18,33
-	.long   096bd26cH
+	.long   096bf7d8H
 	.word   05000H
 	.long   XLAM_P
 XLAM03:
 	.word   36,38,8,32
-	.long   096beb08H
+	.long   096c1074H
 	.word   05000H
 	.long   XLAM_P
 XLAM04:
 	.word   35,38,11,33
-	.long   096c05c0H
+	.long   096c2b2cH
 	.word   05000H
 	.long   XLAM_P
 XLAM05:
 	.word   30,38,15,35
-	.long   096c1fbaH
+	.long   096c4526H
 	.word   05000H
 	.long   XLAM_P
 XLAM06:
 	.word   33,36,22,27
-	.long   096c35feH
+	.long   096c5b6aH
 	.word   05000H
 	.long   XLAM_P
 XLAM07:
 	.word   36,37,6,32
-	.long   096c4d32H
+	.long   096c729eH
 	.word   05000H
 	.long   XLAM_P
 XLAM08:
 	.word   36,36,2,23
-	.long   096c6736H
+	.long   096c8ca2H
 	.word   05000H
 	.long   XLAM_P
 XLAM09:
 	.word   37,37,5,27
-	.long   096c8086H
+	.long   096ca5f2H
 	.word   05000H
 	.long   XLAM_P
 XLAM10:
 	.word   33,37,13,30
-	.long   096c9b43H
+	.long   096cc0afH
 	.word   05000H
 	.long   XLAM_P
 XLAM11:
 	.word   33,29,16,17
-	.long   096cb31cH
+	.long   096cd888H
 	.word   05000H
 	.long   XLAM_P
 XLAM12:
 	.word   33,36,18,34
-	.long   096cc5cdH
+	.long   096ceb39H
 	.word   05000H
 	.long   XLAM_P
 XLAM13:
 	.word   35,38,23,33
-	.long   096cdd01H
+	.long   096d026dH
 	.word   05000H
 	.long   XLAM_P
 XLAM14:
 	.word   33,37,17,32
-	.long   096cf6fbH
+	.long   096d1c67H
 	.word   05000H
 	.long   XLAM_P
 XLAM15:
 	.word   31,37,16,34
-	.long   096d0ed4H
+	.long   096d3440H
 	.word   05000H
 	.long   XLAM_P
 XLAM16:
 	.word   37,35,33,22
-	.long   096d253bH
+	.long   096d4aa7H
 	.word   05000H
 	.long   XLAM_P
 XSPR01:
 	.word   32,36,13,33
-	.long   096d3e86H
+	.long   096d63f2H
 	.word   05000H
 	.long   XSPR_P
 XSPR02:
 	.word   30,37,16,34
-	.long   096d5506H
+	.long   096d7a72H
 	.word   05000H
 	.long   XSPR_P
 XSPR03:
 	.word   33,41,7,35
-	.long   096d6ab4H
+	.long   096d9020H
 	.word   05000H
 	.long   XSPR_P
 XSPR04:
 	.word   34,41,11,36
-	.long   096d8521H
+	.long   096daa8dH
 	.word   05000H
 	.long   XSPR_P
 XSPR05:
 	.word   31,40,16,37
-	.long   096da05bH
+	.long   096dc5c7H
 	.word   05000H
 	.long   XSPR_P
 XSPR06:
 	.word   36,35,24,26
-	.long   096db893H
+	.long   096dddffH
 	.word   05000H
 	.long   XSPR_P
 XSPR07:
 	.word   32,38,5,33
-	.long   096dd12fH
+	.long   096df69bH
 	.word   05000H
 	.long   XSPR_P
 XSPR08:
 	.word   37,39,2,25
-	.long   096de8efH
+	.long   096e0e5bH
 	.word   05000H
 	.long   XSPR_P
 XSPR09:
 	.word   37,41,5,30
-	.long   096e051eH
+	.long   096e2a8aH
 	.word   05000H
 	.long   XSPR_P
 XSPR10:
 	.word   32,41,12,33
-	.long   096e22bfH
+	.long   096e482bH
 	.word   05000H
 	.long   XSPR_P
 XSPR11:
 	.word   32,22,16,13
-	.long   096e3c5fH
+	.long   096e61cbH
 	.word   05000H
 	.long   XSPR_P
 XSPR12:
 	.word   36,35,20,33
-	.long   096e4a1fH
+	.long   096e6f8bH
 	.word   05000H
 	.long   XSPR_P
 XSPR13:
 	.word   28,42,18,37
-	.long   096e62bbH
+	.long   096e8827H
 	.word   05000H
 	.long   XSPR_P
 XSPR14:
 	.word   35,39,18,34
-	.long   096e79b3H
+	.long   096e9f1fH
 	.word   05000H
 	.long   XSPR_P
 XSPR15:
 	.word   36,41,19,37
-	.long   096e945cH
+	.long   096eb9c8H
 	.word   05000H
 	.long   XSPR_P
 XSPR16:
 	.word   41,31,36,19
-	.long   096eb130H
+	.long   096ed69cH
 	.word   05000H
 	.long   XSPR_P
 XWES01:
 	.word   29,34,12,31
-	.long   096eca03H
+	.long   096eef6fH
 	.word   05000H
 	.long   XWES_P
 XWES02:
 	.word   28,34,15,31
-	.long   096edd45H
+	.long   096f02b1H
 	.word   05000H
 	.long   XWES_P
 XWES03:
 	.word   30,37,6,31
-	.long   096eefddH
+	.long   096f1549H
 	.word   05000H
 	.long   XWES_P
 XWES04:
 	.word   30,36,10,32
-	.long   096f058bH
+	.long   096f2af7H
 	.word   05000H
 	.long   XWES_P
 XWES05:
 	.word   28,36,14,33
-	.long   096f1aa3H
+	.long   096f400fH
 	.word   05000H
 	.long   XWES_P
 XWES06:
 	.word   30,35,20,26
-	.long   096f2e53H
+	.long   096f53bfH
 	.word   05000H
 	.long   XWES_P
 XWES07:
 	.word   31,35,5,31
-	.long   096f42d5H
+	.long   096f6841H
 	.word   05000H
 	.long   XWES_P
 XWES08:
 	.word   31,36,2,23
-	.long   096f5806H
+	.long   096f7d72H
 	.word   05000H
 	.long   XWES_P
 XWES09:
 	.word   31,38,4,28
-	.long   096f6dd2H
+	.long   096f933eH
 	.word   05000H
 	.long   XWES_P
 XWES10:
 	.word   29,37,11,30
-	.long   096f84d4H
+	.long   096faa40H
 	.word   05000H
 	.long   XWES_P
 XWES11:
 	.word   24,26,12,15
-	.long   096f99c9H
+	.long   096fbf35H
 	.word   05000H
 	.long   XWES_P
 XWES12:
 	.word   30,35,16,33
-	.long   096fa5f9H
+	.long   096fcb65H
 	.word   05000H
 	.long   XWES_P
 XWES13:
 	.word   28,38,18,33
-	.long   096fba7bH
+	.long   096fdfe7H
 	.word   05000H
 	.long   XWES_P
 XWES14:
 	.word   28,37,14,32
-	.long   096fcf43H
+	.long   096ff4afH
 	.word   05000H
 	.long   XWES_P
 XWES15:
 	.word   29,37,15,34
-	.long   096fe37fH
+	.long   097008ebH
 	.word   05000H
 	.long   XWES_P
 XWES16:
 	.word   31,32,27,20
-	.long   096ff874H
+	.long   09701de0H
 	.word   05000H
 	.long   XWES_P
 XSGA01:
 	.word   26,33,11,30
-	.long   09406095H
+	.long   09408601H
 	.word   05000H
 	.long   XSGA_P
 XSGA02:
 	.word   29,33,15,30
-	.long   09407157H
+	.long   094096c3H
 	.word   05000H
 	.long   XSGA_P
 XSGA03:
 	.word   33,34,7,29
-	.long   09408408H
+	.long   0940a974H
 	.word   05000H
 	.long   XSGA_P
 XSGA04:
 	.word   30,35,10,31
-	.long   094099f2H
+	.long   0940bf5eH
 	.word   05000H
 	.long   XSGA_P
 XSGA05:
 	.word   27,36,14,33
-	.long   0940ae74H
+	.long   0940d3e0H
 	.word   05000H
 	.long   XSGA_P
 XSGA06:
 	.word   31,30,20,22
-	.long   0940c170H
+	.long   0940e6dcH
 	.word   05000H
 	.long   XSGA_P
 XSGA07:
 	.word   35,35,6,30
-	.long   0940d39aH
+	.long   0940f906H
 	.word   05000H
 	.long   XSGA_P
 XSGA08:
 	.word   34,32,2,20
-	.long   0940eb87H
+	.long   094110f3H
 	.word   05000H
 	.long   XSGA_P
 XSGA09:
 	.word   35,36,5,26
-	.long   094100c7H
+	.long   09412633H
 	.word   05000H
 	.long   XSGA_P
 XSGA10:
 	.word   29,34,11,27
-	.long   09411963H
+	.long   09413ecfH
 	.word   05000H
 	.long   XSGA_P
 XSGA11:
 	.word   26,26,12,15
-	.long   09412ca5H
+	.long   09415211H
 	.word   05000H
 	.long   XSGA_P
 XSGA12:
 	.word   31,30,17,28
-	.long   094139d9H
+	.long   09415f45H
 	.word   05000H
 	.long   XSGA_P
 XSGA13:
 	.word   31,37,20,32
-	.long   09414c03H
+	.long   0941716fH
 	.word   05000H
 	.long   XSGA_P
 XSGA14:
 	.word   27,35,14,30
-	.long   0941626aH
+	.long   094187d6H
 	.word   05000H
 	.long   XSGA_P
 XSGA15:
 	.word   27,36,14,33
-	.long   094174dfH
+	.long   09419a4bH
 	.word   05000H
 	.long   XSGA_P
 XSGA16:
 	.word   33,32,29,20
-	.long   094187dbH
+	.long   0941ad47H
 	.word   05000H
 	.long   XSGA_P
 XLIL01:
 	.word   24,34,10,31
-	.long   09700bd4H
+	.long   09703140H
 	.word   05000H
 	.long   XLIL_P
 XLIL02:
 	.word   27,35,14,32
-	.long   09701bc4H
+	.long   09704130H
 	.word   05000H
 	.long   XLIL_P
 XLIL03:
 	.word   34,37,7,31
-	.long   09702e39H
+	.long   097053a5H
 	.word   05000H
 	.long   XLIL_P
 XLIL04:
 	.word   27,36,9,32
-	.long   097046cbH
+	.long   09706c37H
 	.word   05000H
 	.long   XLIL_P
 XLIL05:
 	.word   27,37,14,34
-	.long   097059c7H
+	.long   09707f33H
 	.word   05000H
 	.long   XLIL_P
 XLIL06:
 	.word   33,35,22,26
-	.long   09706d4aH
+	.long   097092b6H
 	.word   05000H
 	.long   XLIL_P
 XLIL07:
 	.word   29,35,5,30
-	.long   097083d9H
+	.long   0970a945H
 	.word   05000H
 	.long   XLIL_P
 XLIL08:
 	.word   36,32,2,20
-	.long   097097acH
+	.long   0970bd18H
 	.word   05000H
 	.long   XLIL_P
 XLIL09:
 	.word   31,34,4,25
-	.long   0970ae2cH
+	.long   0970d398H
 	.word   05000H
 	.long   XLIL_P
 XLIL10:
 	.word   29,37,11,30
-	.long   0970c2c2H
+	.long   0970e82eH
 	.word   05000H
 	.long   XLIL_P
 XLIL11:
 	.word   26,23,12,13
-	.long   0970d7b7H
+	.long   0970fd23H
 	.word   05000H
 	.long   XLIL_P
 XLIL12:
 	.word   33,35,18,33
-	.long   0970e365H
+	.long   097108d1H
 	.word   05000H
 	.long   XLIL_P
 XLIL13:
 	.word   27,35,18,31
-	.long   0970f9f4H
+	.long   09711f60H
 	.word   05000H
 	.long   XLIL_P
 XLIL14:
 	.word   23,36,12,31
-	.long   09710c69H
+	.long   097131d5H
 	.word   05000H
 	.long   XLIL_P
 XLIL15:
 	.word   23,37,12,34
-	.long   09711c95H
+	.long   09714201H
 	.word   05000H
 	.long   XLIL_P
 XLIL16:
 	.word   37,32,33,20
-	.long   09712d34H
+	.long   097152a0H
 	.word   05000H
 	.long   XLIL_P
 XALD01:
 	.word   24,33,10,30
-	.long   09714454H
+	.long   097169c0H
 	.word   05000H
 	.long   XALD_P
 XALD02:
 	.word   26,33,14,30
-	.long   097153ccH
+	.long   09717938H
 	.word   05000H
 	.long   XALD_P
 XALD03:
 	.word   33,34,7,29
-	.long   0971648eH
+	.long   097189faH
 	.word   05000H
 	.long   XALD_P
 XALD04:
 	.word   26,35,8,31
-	.long   09717a78H
+	.long   09719fe4H
 	.word   05000H
 	.long   XALD_P
 XALD05:
 	.word   24,34,12,31
-	.long   09718c3eH
+	.long   0971b1aaH
 	.word   05000H
 	.long   XALD_P
 XALD06:
 	.word   30,29,20,21
-	.long   09719c2eH
+	.long   0971c19aH
 	.word   05000H
 	.long   XALD_P
 XALD07:
 	.word   30,33,5,28
-	.long   0971ad2cH
+	.long   0971d298H
 	.word   05000H
 	.long   XALD_P
 XALD08:
 	.word   35,32,2,20
-	.long   0971c082H
+	.long   0971e5eeH
 	.word   05000H
 	.long   XALD_P
 XALD09:
 	.word   35,36,5,26
-	.long   0971d662H
+	.long   0971fbceH
 	.word   05000H
 	.long   XALD_P
 XALD10:
 	.word   29,34,11,27
-	.long   0971eefeH
+	.long   0972146aH
 	.word   05000H
 	.long   XALD_P
 XALD11:
 	.word   23,23,11,13
-	.long   09720240H
+	.long   097227acH
 	.word   05000H
 	.long   XALD_P
 XALD12:
 	.word   30,29,16,27
-	.long   09720c95H
+	.long   09723201H
 	.word   05000H
 	.long   XALD_P
 XALD13:
 	.word   30,34,20,30
-	.long   09721d93H
+	.long   097242ffH
 	.word   05000H
 	.long   XALD_P
 XALD14:
 	.word   26,33,13,29
-	.long   0972317fH
+	.long   097256ebH
 	.word   05000H
 	.long   XALD_P
 XALD15:
 	.word   24,35,13,32
-	.long   09724241H
+	.long   097267adH
 	.word   05000H
 	.long   XALD_P
 XALD16:
 	.word   30,29,26,19
-	.long   097252a9H
+	.long   09727815H
 	.word   05000H
 	.long   XALD_P
 XMAR01:
 	.word   30,36,13,33
-	.long   097263a7H
+	.long   09728913H
 	.word   05000H
 	.long   XMAR_P
 XMAR02:
 	.word   30,37,16,34
-	.long   097278bfH
+	.long   09729e2bH
 	.word   05000H
 	.long   XMAR_P
 XMAR03:
 	.word   30,36,6,30
-	.long   09728e6dH
+	.long   0972b3d9H
 	.word   05000H
 	.long   XMAR_P
 XMAR04:
 	.word   31,38,10,33
-	.long   0972a385H
+	.long   0972c8f1H
 	.word   05000H
 	.long   XMAR_P
 XMAR05:
 	.word   31,38,16,35
-	.long   0972ba87H
+	.long   0972dff3H
 	.word   05000H
 	.long   XMAR_P
 XMAR06:
 	.word   35,35,23,26
-	.long   0972d189H
+	.long   0972f6f5H
 	.word   05000H
 	.long   XMAR_P
 XMAR07:
 	.word   33,35,5,30
-	.long   0972e976H
+	.long   09730ee2H
 	.word   05000H
 	.long   XMAR_P
 XMAR08:
 	.word   33,35,2,22
-	.long   09730005H
+	.long   09732571H
 	.word   05000H
 	.long   XMAR_P
 XMAR09:
 	.word   29,36,4,26
-	.long   09731694H
+	.long   09733c00H
 	.word   05000H
 	.long   XMAR_P
 XMAR10:
 	.word   29,37,11,30
-	.long   09732af8H
+	.long   09735064H
 	.word   05000H
 	.long   XMAR_P
 XMAR11:
 	.word   26,27,12,16
-	.long   09733fedH
+	.long   09736559H
 	.word   05000H
 	.long   XMAR_P
 XMAR12:
 	.word   35,36,19,34
-	.long   09734da3H
+	.long   0973730fH
 	.word   05000H
 	.long   XMAR_P
 XMAR13:
 	.word   29,37,19,32
-	.long   0973663fH
+	.long   09738babH
 	.word   05000H
 	.long   XMAR_P
 XMAR14:
 	.word   28,36,14,31
-	.long   09737b34H
+	.long   0973a0a0H
 	.word   05000H
 	.long   XMAR_P
 XMAR15:
 	.word   29,37,15,34
-	.long   09738ee4H
+	.long   0973b450H
 	.word   05000H
 	.long   XMAR_P
 XMAR16:
 	.word   37,35,33,22
-	.long   0973a3d9H
+	.long   0973c945H
 	.word   05000H
 	.long   XMAR_P
 XSTE01:
 	.word   29,36,12,33
-	.long   0973bd24H
+	.long   0973e290H
 	.word   05000H
 	.long   XSTE_P
 XSTE02:
 	.word   31,36,16,33
-	.long   0973d188H
+	.long   0973f6f4H
 	.word   05000H
 	.long   XSTE_P
 XSTE03:
 	.word   34,37,7,31
-	.long   0973e754H
+	.long   09740cc0H
 	.word   05000H
 	.long   XSTE_P
 XSTE04:
 	.word   28,38,9,33
-	.long   0973ffe6H
+	.long   09742552H
 	.word   05000H
 	.long   XSTE_P
 XSTE05:
 	.word   28,37,14,34
-	.long   097414aeH
+	.long   09743a1aH
 	.word   05000H
 	.long   XSTE_P
 XSTE06:
 	.word   35,35,23,26
-	.long   097428eaH
+	.long   09744e56H
 	.word   05000H
 	.long   XSTE_P
 XSTE07:
 	.word   33,37,5,32
-	.long   097440d7H
+	.long   09746643H
 	.word   05000H
 	.long   XSTE_P
 XSTE08:
 	.word   37,35,2,22
-	.long   097458b0H
+	.long   09747e1cH
 	.word   05000H
 	.long   XSTE_P
 XSTE09:
 	.word   37,37,5,27
-	.long   097471fbH
+	.long   09749767H
 	.word   05000H
 	.long   XSTE_P
 XSTE10:
 	.word   33,37,13,30
-	.long   09748cb8H
+	.long   0974b224H
 	.word   05000H
 	.long   XSTE_P
 XSTE11:
 	.word   29,27,14,16
-	.long   0974a491H
+	.long   0974c9fdH
 	.word   05000H
 	.long   XSTE_P
 XSTE12:
 	.word   35,36,19,34
-	.long   0974b3dcH
+	.long   0974d948H
 	.word   05000H
 	.long   XSTE_P
 XSTE13:
 	.word   30,38,20,33
-	.long   0974cc78H
+	.long   0974f1e4H
 	.word   05000H
 	.long   XSTE_P
 XSTE14:
 	.word   28,37,14,32
-	.long   0974e2bcH
+	.long   09750828H
 	.word   05000H
 	.long   XSTE_P
 XSTE15:
 	.word   28,37,15,34
-	.long   0974f6f8H
+	.long   09751c64H
 	.word   05000H
 	.long   XSTE_P
 XSTE16:
 	.word   37,32,33,20
-	.long   09750b34H
+	.long   097530a0H
 	.word   05000H
 	.long   XSTE_P
 XKLA01:
 	.word   31,36,13,33
-	.long   09752254H
+	.long   097547c0H
 	.word   05000H
 	.long   XKLA_P
 XKLA02:
 	.word   30,33,16,30
-	.long   09753820H
+	.long   09755d8cH
 	.word   05000H
 	.long   XKLA_P
 XKLA03:
 	.word   28,37,6,31
-	.long   09754b76H
+	.long   097570e2H
 	.word   05000H
 	.long   XKLA_P
 XKLA04:
 	.word   29,38,9,33
-	.long   09755fb2H
+	.long   0975851eH
 	.word   05000H
 	.long   XKLA_P
 XKLA05:
 	.word   26,36,13,33
-	.long   09757538H
+	.long   09759aa4H
 	.word   05000H
 	.long   XKLA_P
 XKLA06:
 	.word   29,35,19,26
-	.long   09758780H
+	.long   0975acecH
 	.word   05000H
 	.long   XKLA_P
 XKLA07:
 	.word   29,34,5,29
-	.long   09759b53H
+	.long   0975c0bfH
 	.word   05000H
 	.long   XKLA_P
 XKLA08:
 	.word   29,35,2,22
-	.long   0975ae95H
+	.long   0975d401H
 	.word   05000H
 	.long   XKLA_P
 XKLA09:
 	.word   29,33,4,24
-	.long   0975c268H
+	.long   0975e7d4H
 	.word   05000H
 	.long   XKLA_P
 XKLA10:
 	.word   28,37,11,30
-	.long   0975d519H
+	.long   0975fa85H
 	.word   05000H
 	.long   XKLA_P
 XKLA11:
 	.word   24,24,12,14
-	.long   0975e955H
+	.long   09760ec1H
 	.word   05000H
 	.long   XKLA_P
 XKLA12:
 	.word   29,35,16,33
-	.long   0975f495H
+	.long   09761a01H
 	.word   05000H
 	.long   XKLA_P
 XKLA13:
 	.word   27,38,18,33
-	.long   09760868H
+	.long   09762dd4H
 	.word   05000H
 	.long   XKLA_P
 XKLA14:
 	.word   23,35,12,30
-	.long   09761c72H
+	.long   097641deH
 	.word   05000H
 	.long   XKLA_P
 XKLA15:
 	.word   22,37,11,34
-	.long   09762c2bH
+	.long   09765197H
 	.word   05000H
 	.long   XKLA_P
 XKLA16:
 	.word   31,35,27,22
-	.long   09763c11H
+	.long   0976617dH
 	.word   05000H
 	.long   XKLA_P
 XCCP01:
 	.word   29,35,12,32
-	.long   09765142H
+	.long   097676aeH
 	.word   05000H
 	.long   XCCP_P
 XCCP02:
 	.word   29,35,15,32
-	.long   09766515H
+	.long   09768a81H
 	.word   05000H
 	.long   XCCP_P
 XCCP03:
 	.word   30,36,6,30
-	.long   097678e8H
+	.long   09769e54H
 	.word   05000H
 	.long   XCCP_P
 XCCP04:
 	.word   24,36,8,32
-	.long   09768e00H
+	.long   0976b36cH
 	.word   05000H
 	.long   XCCP_P
 XCCP05:
 	.word   28,37,14,34
-	.long   09769ee0H
+	.long   0976c44cH
 	.word   05000H
 	.long   XCCP_P
 XCCP06:
 	.word   34,35,22,26
-	.long   0976b31cH
+	.long   0976d888H
 	.word   05000H
 	.long   XCCP_P
 XCCP07:
 	.word   31,37,5,32
-	.long   0976ca5aH
+	.long   0976efc6H
 	.word   05000H
 	.long   XCCP_P
 XCCP08:
 	.word   36,35,2,22
-	.long   0976e0c1H
+	.long   0977062dH
 	.word   05000H
 	.long   XCCP_P
 XCCP09:
 	.word   34,36,5,26
-	.long   0976f95dH
+	.long   09771ec9H
 	.word   05000H
 	.long   XCCP_P
 XCCP10:
 	.word   31,37,12,30
-	.long   09771145H
+	.long   097736b1H
 	.word   05000H
 	.long   XCCP_P
 XCCP11:
 	.word   26,24,12,14
-	.long   097727acH
+	.long   09774d18H
 	.word   05000H
 	.long   XCCP_P
 XCCP12:
 	.word   34,36,19,34
-	.long   097733dcH
+	.long   09775948H
 	.word   05000H
 	.long   XCCP_P
 XCCP13:
 	.word   28,37,18,32
-	.long   09774bc4H
+	.long   09777130H
 	.word   05000H
 	.long   XCCP_P
 XCCP14:
 	.word   26,36,13,31
-	.long   09776000H
+	.long   0977856cH
 	.word   05000H
 	.long   XCCP_P
 XCCP15:
 	.word   28,37,15,34
-	.long   09777248H
+	.long   097797b4H
 	.word   05000H
 	.long   XCCP_P
 XCCP16:
 	.word   36,29,32,18
-	.long   09778684H
+	.long   0977abf0H
 	.word   05000H
 	.long   XCCP_P
 XGRI01:
 	.word   29,34,12,31
-	.long   09779ae8H
+	.long   0977c054H
 	.word   05000H
 	.long   XGRI_P
 XGRI02:
 	.word   28,33,15,30
-	.long   0977ae2aH
+	.long   0977d396H
 	.word   05000H
 	.long   XGRI_P
 XGRI03:
 	.word   30,34,6,29
-	.long   0977c036H
+	.long   0977e5a2H
 	.word   05000H
 	.long   XGRI_P
 XGRI04:
 	.word   28,35,9,31
-	.long   0977d422H
+	.long   0977f98eH
 	.word   05000H
 	.long   XGRI_P
 XGRI05:
 	.word   28,35,14,32
-	.long   0977e746H
+	.long   09780cb2H
 	.word   05000H
 	.long   XGRI_P
 XGRI06:
 	.word   29,33,19,24
-	.long   0977fa6aH
+	.long   09781fd6H
 	.word   05000H
 	.long   XGRI_P
 XGRI07:
 	.word   31,29,5,25
-	.long   09780d1bH
+	.long   09783287H
 	.word   05000H
 	.long   XGRI_P
 XGRI08:
 	.word   35,32,2,20
-	.long   09781eaaH
+	.long   09784416H
 	.word   05000H
 	.long   XGRI_P
 XGRI09:
 	.word   34,34,5,25
-	.long   0978348aH
+	.long   097859f6H
 	.word   05000H
 	.long   XGRI_P
 XGRI10:
 	.word   31,34,12,27
-	.long   09784b1eH
+	.long   0978708aH
 	.word   05000H
 	.long   XGRI_P
 XGRI11:
 	.word   24,23,12,13
-	.long   09785fb4H
+	.long   09788520H
 	.word   05000H
 	.long   XGRI_P
 XGRI12:
 	.word   29,33,16,31
-	.long   09786a7cH
+	.long   09788fe8H
 	.word   05000H
 	.long   XGRI_P
 XGRI13:
 	.word   29,34,19,30
-	.long   09787d2dH
+	.long   0978a299H
 	.word   05000H
 	.long   XGRI_P
 XGRI14:
 	.word   27,33,14,29
-	.long   0978906fH
+	.long   0978b5dbH
 	.word   05000H
 	.long   XGRI_P
 XGRI15:
 	.word   24,34,13,31
-	.long   0978a1d6H
+	.long   0978c742H
 	.word   05000H
 	.long   XGRI_P
 XGRI16:
 	.word   30,32,26,20
-	.long   0978b1c6H
+	.long   0978d732H
 	.word   05000H
 	.long   XGRI_P
 XPGE01:
 	.word   29,35,12,32
-	.long   0978c486H
+	.long   0978e9f2H
 	.word   05000H
 	.long   XPGE_P
 XPGE02:
 	.word   29,36,15,33
-	.long   0978d859H
+	.long   0978fdc5H
 	.word   05000H
 	.long   XPGE_P
 XPGE03:
 	.word   35,37,8,32
-	.long   0978ecbdH
+	.long   09791229H
 	.word   05000H
 	.long   XPGE_P
 XPGE04:
 	.word   27,38,9,33
-	.long   09790608H
+	.long   09792b74H
 	.word   05000H
 	.long   XPGE_P
 XPGE05:
 	.word   29,38,15,35
-	.long   09791a12H
+	.long   09793f7eH
 	.word   05000H
 	.long   XPGE_P
 XPGE06:
 	.word   34,36,22,27
-	.long   09792f98H
+	.long   09795504H
 	.word   05000H
 	.long   XPGE_P
 XPGE07:
 	.word   35,37,6,32
-	.long   09794780H
+	.long   09796cecH
 	.word   05000H
 	.long   XPGE_P
 XPGE08:
 	.word   37,35,2,22
-	.long   097960cbH
+	.long   09798637H
 	.word   05000H
 	.long   XPGE_P
 XPGE09:
 	.word   35,37,5,27
-	.long   09797a16H
+	.long   09799f82H
 	.word   05000H
 	.long   XPGE_P
 XPGE10:
 	.word   27,37,10,30
-	.long   09799361H
+	.long   0979b8cdH
 	.word   05000H
 	.long   XPGE_P
 XPGE11:
 	.word   27,27,13,16
-	.long   0979a6e4H
+	.long   0979cc50H
 	.word   05000H
 	.long   XPGE_P
 XPGE12:
 	.word   34,36,19,34
-	.long   0979b521H
+	.long   0979da8dH
 	.word   05000H
 	.long   XPGE_P
 XPGE13:
 	.word   35,38,23,33
-	.long   0979cd09H
+	.long   0979f275H
 	.word   05000H
 	.long   XPGE_P
 XPGE14:
 	.word   27,37,14,32
-	.long   0979e703H
+	.long   097a0c6fH
 	.word   05000H
 	.long   XPGE_P
 XPGE15:
 	.word   24,37,13,34
-	.long   0979fa86H
+	.long   097a1ff2H
 	.word   05000H
 	.long   XPGE_P
 XPGE16:
 	.word   37,34,33,21
-	.long   097a0bdeH
+	.long   097a314aH
 	.word   05000H
 	.long   XPGE_P
 XDJO01:
 	.word   27,34,11,31
-	.long   095519fcH
+	.long   09553f68H
 	.word   05000H
 	.long   XDJO_P
 XDJO02:
 	.word   27,35,14,32
-	.long   09552beaH
+	.long   09555156H
 	.word   05000H
 	.long   XDJO_P
 XDJO03:
 	.word   37,38,8,32
-	.long   09553e5fH
+	.long   095563cbH
 	.word   05000H
 	.long   XDJO_P
 XDJO04:
 	.word   30,38,10,33
-	.long   095559d5H
+	.long   09557f41H
 	.word   05000H
 	.long   XDJO_P
 XDJO05:
 	.word   30,38,15,35
-	.long   09557019H
+	.long   09559585H
 	.word   05000H
 	.long   XDJO_P
 XDJO06:
 	.word   31,35,20,26
-	.long   0955865dH
+	.long   0955abc9H
 	.word   05000H
 	.long   XDJO_P
 XDJO07:
 	.word   29,35,5,30
-	.long   09559b8eH
+	.long   0955c0faH
 	.word   05000H
 	.long   XDJO_P
 XDJO08:
 	.word   31,36,2,23
-	.long   0955af61H
+	.long   0955d4cdH
 	.word   05000H
 	.long   XDJO_P
 XDJO09:
 	.word   31,37,4,27
-	.long   0955c52dH
+	.long   0955ea99H
 	.word   05000H
 	.long   XDJO_P
 XDJO10:
 	.word   29,37,11,30
-	.long   0955db94H
+	.long   09560100H
 	.word   05000H
 	.long   XDJO_P
 XDJO11:
 	.word   24,24,12,14
-	.long   0955f089H
+	.long   095615f5H
 	.word   05000H
 	.long   XDJO_P
 XDJO12:
 	.word   31,35,17,33
-	.long   0955fbc9H
+	.long   09562135H
 	.word   05000H
 	.long   XDJO_P
 XDJO13:
 	.word   31,38,20,33
-	.long   095610faH
+	.long   09563666H
 	.word   05000H
 	.long   XDJO_P
 XDJO14:
 	.word   30,37,16,32
-	.long   095627fcH
+	.long   09564d68H
 	.word   05000H
 	.long   XDJO_P
 XDJO15:
 	.word   30,37,16,34
-	.long   09563daaH
+	.long   09566316H
 	.word   05000H
 	.long   XDJO_P
 XDJO16:
 	.word   29,34,25,21
-	.long   09565358H
+	.long   095678c4H
 	.word   05000H
 	.long   XDJO_P
 XGAS01:
 	.word   28,35,12,32
-	.long   097a2470H
+	.long   097a49dcH
 	.word   05000H
 	.long   XGAS_P
 XGAS02:
 	.word   28,36,15,33
-	.long   097a3794H
+	.long   097a5d00H
 	.word   05000H
 	.long   XGAS_P
 XGAS03:
 	.word   31,37,7,31
-	.long   097a4b44H
+	.long   097a70b0H
 	.word   05000H
 	.long   XGAS_P
 XGAS04:
 	.word   26,36,8,32
-	.long   097a61abH
+	.long   097a8717H
 	.word   05000H
 	.long   XGAS_P
 XGAS05:
 	.word   24,38,12,35
-	.long   097a73f3H
+	.long   097a995fH
 	.word   05000H
 	.long   XGAS_P
 XGAS06:
 	.word   33,34,22,25
-	.long   097a85c3H
+	.long   097aab2fH
 	.word   05000H
 	.long   XGAS_P
 XGAS07:
 	.word   30,36,5,31
-	.long   097a9badH
+	.long   097ac119H
 	.word   05000H
 	.long   XGAS_P
 XGAS08:
 	.word   31,32,2,20
-	.long   097ab0c5H
+	.long   097ad631H
 	.word   05000H
 	.long   XGAS_P
 XGAS09:
 	.word   36,36,5,26
-	.long   097ac425H
+	.long   097ae991H
 	.word   05000H
 	.long   XGAS_P
 XGAS10:
 	.word   26,37,10,30
-	.long   097add75H
+	.long   097b02e1H
 	.word   05000H
 	.long   XGAS_P
 XGAS11:
 	.word   26,24,12,14
-	.long   097af03fH
+	.long   097b15abH
 	.word   05000H
 	.long   XGAS_P
 XGAS12:
 	.word   33,34,18,32
-	.long   097afc6fH
+	.long   097b21dbH
 	.word   05000H
 	.long   XGAS_P
 XGAS13:
 	.word   29,38,19,33
-	.long   097b1259H
+	.long   097b37c5H
 	.word   05000H
 	.long   XGAS_P
 XGAS14:
 	.word   23,36,12,31
-	.long   097b27dfH
+	.long   097b4d4bH
 	.word   05000H
 	.long   XGAS_P
 XGAS15:
 	.word   28,37,15,34
-	.long   097b380bH
+	.long   097b5d77H
 	.word   05000H
 	.long   XGAS_P
 XGAS16:
 	.word   33,34,29,22
-	.long   097b4c47H
+	.long   097b71b3H
 	.word   05000H
 	.long   XGAS_P
 XWOR01:
 	.word   23,28,10,25
-	.long   097b6231H
+	.long   097b879dH
 	.word   00H
 	.long   XWOR_P
 XWOR02:
 	.word   24,26,11,23
-	.long   097b7651H
+	.long   097b9bbdH
 	.word   00H
 	.long   XWOR_P
 XWOR03:
 	.word   28,29,9,26
-	.long   097b89d1H
+	.long   097baf3dH
 	.word   00H
 	.long   XWOR_P
 XWOR04:
 	.word   26,30,8,27
-	.long   097ba331H
+	.long   097bc89dH
 	.word   00H
 	.long   XWOR_P
 XWOR05:
 	.word   23,30,10,27
-	.long   097bbb91H
+	.long   097be0fdH
 	.word   00H
 	.long   XWOR_P
 XWOR06:
 	.word   27,25,15,22
-	.long   097bd121H
+	.long   097bf68dH
 	.word   00H
 	.long   XWOR_P
 XWOR07:
 	.word   28,28,7,26
-	.long   097be639H
+	.long   097c0ba5H
 	.word   00H
 	.long   XWOR_P
 XWOR08:
 	.word   26,31,3,24
-	.long   097bfeb9H
+	.long   097c2425H
 	.word   00H
 	.long   XWOR_P
 XWOR09:
 	.word   27,32,6,28
-	.long   097c17e9H
+	.long   097c3d55H
 	.word   00H
 	.long   XWOR_P
 XWOR10:
 	.word   23,30,10,25
-	.long   097c32e9H
+	.long   097c5855H
 	.word   00H
 	.long   XWOR_P
 XWOR11:
 	.word   20,21,9,17
-	.long   097c4879H
+	.long   097c6de5H
 	.word   00H
 	.long   XWOR_P
 XWOR12:
 	.word   28,27,16,25
-	.long   097c5599H
+	.long   097c7b05H
 	.word   00H
 	.long   XWOR_P
 XWOR13:
 	.word   33,26,19,22
-	.long   097c6d39H
+	.long   097c92a5H
 	.word   00H
 	.long   XWOR_P
 XWOR14:
 	.word   27,27,15,24
-	.long   097c8809H
+	.long   097cad75H
 	.word   00H
 	.long   XWOR_P
 XWOR15:
 	.word   23,28,10,25
-	.long   097c9ed1H
+	.long   097cc43dH
 	.word   00H
 	.long   XWOR_P
 XWOR16:
 	.word   29,24,27,19
-	.long   097cb2f1H
+	.long   097cd85dH
 	.word   00H
 	.long   XWOR_P
 XBOO01:
 	.word   30,35,13,32
-	.long   097cc8b1H
+	.long   097cee1dH
 	.word   05000H
 	.long   XBOO_P
 XBOO02:
 	.word   27,37,14,34
-	.long   097cdd33H
+	.long   097d029fH
 	.word   05000H
 	.long   XBOO_P
 XBOO03:
 	.word   33,37,7,32
-	.long   097cf0b6H
+	.long   097d1622H
 	.word   05000H
 	.long   XBOO_P
 XBOO04:
 	.word   28,38,9,33
-	.long   097d088fH
+	.long   097d2dfbH
 	.word   05000H
 	.long   XBOO_P
 XBOO05:
 	.word   26,38,13,35
-	.long   097d1d57H
+	.long   097d42c3H
 	.word   05000H
 	.long   XBOO_P
 XBOO06:
 	.word   36,35,24,26
-	.long   097d30a3H
+	.long   097d560fH
 	.word   05000H
 	.long   XBOO_P
 XBOO07:
 	.word   30,37,5,32
-	.long   097d493fH
+	.long   097d6eabH
 	.word   05000H
 	.long   XBOO_P
 XBOO08:
 	.word   38,35,2,22
-	.long   097d5eedH
+	.long   097d8459H
 	.word   05000H
 	.long   XBOO_P
 XBOO09:
 	.word   34,37,5,27
-	.long   097d78e7H
+	.long   097d9e53H
 	.word   05000H
 	.long   XBOO_P
 XBOO10:
 	.word   33,37,13,30
-	.long   097d9179H
+	.long   097db6e5H
 	.word   05000H
 	.long   XBOO_P
 XBOO11:
 	.word   24,26,12,15
-	.long   097da952H
+	.long   097dcebeH
 	.word   05000H
 	.long   XBOO_P
 XBOO12:
 	.word   36,35,20,33
-	.long   097db582H
+	.long   097ddaeeH
 	.word   05000H
 	.long   XBOO_P
 XBOO13:
 	.word   27,37,18,32
-	.long   097dce1eH
+	.long   097df38aH
 	.word   05000H
 	.long   XBOO_P
 XBOO14:
 	.word   24,37,12,32
-	.long   097de1a1H
+	.long   097e070dH
 	.word   05000H
 	.long   XBOO_P
 XBOO15:
 	.word   26,37,14,34
-	.long   097df2f9H
+	.long   097e1865H
 	.word   05000H
 	.long   XBOO_P
 XBOO16:
 	.word   37,32,33,20
-	.long   097e05c3H
+	.long   097e2b2fH
 	.word   05000H
 	.long   XBOO_P
 XMAJ01:
 	.word   23,27,10,24
-	.long   097e1ce3H
+	.long   097e424fH
 	.word   00H
 	.long   XMAJ_P
 XMAJ02:
 	.word   27,27,12,24
-	.long   097e304bH
+	.long   097e55b7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ03:
 	.word   27,31,9,28
-	.long   097e4713H
+	.long   097e6c7fH
 	.word   00H
 	.long   XMAJ_P
 XMAJ04:
 	.word   24,32,7,29
-	.long   097e613bH
+	.long   097e86a7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ05:
 	.word   22,31,10,28
-	.long   097e793bH
+	.long   097e9ea7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ06:
 	.word   28,28,15,22
-	.long   097e8e8bH
+	.long   097eb3f7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ07:
 	.word   25,30,6,26
-	.long   097ea70bH
+	.long   097ecc77H
 	.word   00H
 	.long   XMAJ_P
 XMAJ08:
 	.word   30,32,5,26
-	.long   097ebe7bH
+	.long   097ee3e7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ09:
 	.word   27,32,6,29
-	.long   097edc7bH
+	.long   097f01e7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ10:
 	.word   24,30,11,25
-	.long   097ef77bH
+	.long   097f1ce7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ11:
 	.word   22,21,10,17
-	.long   097f0dfbH
+	.long   097f3367H
 	.word   00H
 	.long   XMAJ_P
 XMAJ12:
 	.word   30,26,17,24
-	.long   097f1c6bH
+	.long   097f41d7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ13:
 	.word   31,27,16,23
-	.long   097f34cbH
+	.long   097f5a37H
 	.word   00H
 	.long   XMAJ_P
 XMAJ14:
 	.word   27,29,14,26
-	.long   097f4ef3H
+	.long   097f745fH
 	.word   00H
 	.long   XMAJ_P
 XMAJ15:
 	.word   22,29,10,26
-	.long   097f676bH
+	.long   097f8cd7H
 	.word   00H
 	.long   XMAJ_P
 XMAJ16:
 	.word   30,25,27,20
-	.long   097f7b5bH
+	.long   097fa0c7H
 	.word   00H
 	.long   XMAJ_P
 XCOU01:
 	.word   30,36,13,33
-	.long   097f92cbH
+	.long   097fb837H
 	.word   05000H
 	.long   XCOU_P
 XCOU02:
 	.word   29,36,15,33
-	.long   097fa7e3H
+	.long   097fcd4fH
 	.word   05000H
 	.long   XCOU_P
 XCOU03:
 	.word   28,37,6,31
-	.long   097fbc47H
+	.long   097fe1b3H
 	.word   05000H
 	.long   XCOU_P
 XCOU04:
 	.word   28,36,9,32
-	.long   097fd083H
+	.long   097ff5efH
 	.word   05000H
 	.long   XCOU_P
 XCOU05:
 	.word   31,38,16,35
-	.long   097fe433H
+	.long   0980099fH
 	.word   05000H
 	.long   XCOU_P
 XCOU06:
 	.word   27,31,18,23
-	.long   097ffb35H
+	.long   098020a1H
 	.word   05000H
 	.long   XCOU_P
 XCOU07:
 	.word   30,33,5,28
-	.long   09800b8eH
+	.long   098030faH
 	.word   05000H
 	.long   XCOU_P
 XCOU08:
 	.word   33,33,2,21
-	.long   09801ee4H
+	.long   09804450H
 	.word   05000H
 	.long   XCOU_P
 XCOU09:
 	.word   28,36,4,26
-	.long   09803429H
+	.long   09805995H
 	.word   05000H
 	.long   XCOU_P
 XCOU10:
 	.word   33,37,13,30
-	.long   098047d9H
+	.long   09806d45H
 	.word   05000H
 	.long   XCOU_P
 XCOU11:
 	.word   26,24,12,14
-	.long   09805fb2H
+	.long   0980851eH
 	.word   05000H
 	.long   XCOU_P
 XCOU12:
 	.word   27,32,15,30
-	.long   09806be2H
+	.long   0980914eH
 	.word   05000H
 	.long   XCOU_P
 XCOU13:
 	.word   31,38,20,33
-	.long   09807cc2H
+	.long   0980a22eH
 	.word   05000H
 	.long   XCOU_P
 XCOU14:
 	.word   31,37,16,32
-	.long   098093c4H
+	.long   0980b930H
 	.word   05000H
 	.long   XCOU_P
 XCOU15:
 	.word   31,37,16,34
-	.long   0980aa2bH
+	.long   0980cf97H
 	.word   05000H
 	.long   XCOU_P
 XCOU16:
 	.word   35,35,31,22
-	.long   0980c092H
+	.long   0980e5feH
 	.word   05000H
 	.long   XCOU_P
 XDIR01:
 	.word   28,33,12,30
-	.long   0980d87fH
+	.long   0980fdebH
 	.word   05000H
 	.long   XDIR_P
 XDIR02:
 	.word   30,31,16,28
-	.long   0980ea8bH
+	.long   09810ff7H
 	.word   05000H
 	.long   XDIR_P
 XDIR03:
 	.word   31,34,7,29
-	.long   0980fcb5H
+	.long   09812221H
 	.word   05000H
 	.long   XDIR_P
 XDIR04:
 	.word   30,35,10,31
-	.long   0981114bH
+	.long   098136b7H
 	.word   05000H
 	.long   XDIR_P
 XDIR05:
 	.word   27,35,14,32
-	.long   098125cdH
+	.long   09814b39H
 	.word   05000H
 	.long   XDIR_P
 XDIR06:
 	.word   28,30,18,22
-	.long   09813842H
+	.long   09815daeH
 	.word   05000H
 	.long   XDIR_P
 XDIR07:
 	.word   30,29,5,25
-	.long   098148aaH
+	.long   09816e16H
 	.word   05000H
 	.long   XDIR_P
 XDIR08:
 	.word   35,33,2,21
-	.long   098159a8H
+	.long   09817f14H
 	.word   05000H
 	.long   XDIR_P
 XDIR09:
 	.word   36,36,5,26
-	.long   09817037H
+	.long   098195a3H
 	.word   05000H
 	.long   XDIR_P
 XDIR10:
 	.word   29,35,11,28
-	.long   09818987H
+	.long   0981aef3H
 	.word   05000H
 	.long   XDIR_P
 XDIR11:
 	.word   26,24,12,14
-	.long   09819d5aH
+	.long   0981c2c6H
 	.word   05000H
 	.long   XDIR_P
 XDIR12:
 	.word   28,30,15,28
-	.long   0981a98aH
+	.long   0981cef6H
 	.word   05000H
 	.long   XDIR_P
 XDIR13:
 	.word   34,34,22,30
-	.long   0981b9f2H
+	.long   0981df5eH
 	.word   05000H
 	.long   XDIR_P
 XDIR14:
 	.word   27,35,14,30
-	.long   0981d086H
+	.long   0981f5f2H
 	.word   05000H
 	.long   XDIR_P
 XDIR15:
 	.word   27,35,14,32
-	.long   0981e2fbH
+	.long   09820867H
 	.word   05000H
 	.long   XDIR_P
 XDIR16:
 	.word   31,32,27,20
-	.long   0981f570H
+	.long   09821adcH
 	.word   05000H
 	.long   XDIR_P
 XHAR01:
 	.word   29,36,12,33
-	.long   098208d0H
+	.long   09822e3cH
 	.word   05000H
 	.long   XHAR_P
 XHAR02:
 	.word   31,36,16,33
-	.long   09821d34H
+	.long   098242a0H
 	.word   05000H
 	.long   XHAR_P
 XHAR03:
 	.word   37,38,8,32
-	.long   09823300H
+	.long   0982586cH
 	.word   05000H
 	.long   XHAR_P
 XHAR04:
 	.word   33,38,11,33
-	.long   09824e76H
+	.long   098273e2H
 	.word   05000H
 	.long   XHAR_P
 XHAR05:
 	.word   29,38,15,35
-	.long   098266f4H
+	.long   09828c60H
 	.word   05000H
 	.long   XHAR_P
 XHAR06:
 	.word   35,36,23,27
-	.long   09827c7aH
+	.long   0982a1e6H
 	.word   05000H
 	.long   XHAR_P
 XHAR07:
 	.word   33,37,5,32
-	.long   09829516H
+	.long   0982ba82H
 	.word   05000H
 	.long   XHAR_P
 XHAR08:
 	.word   37,35,2,22
-	.long   0982acefH
+	.long   0982d25bH
 	.word   05000H
 	.long   XHAR_P
 XHAR09:
 	.word   35,37,5,27
-	.long   0982c63aH
+	.long   0982eba6H
 	.word   05000H
 	.long   XHAR_P
 XHAR10:
 	.word   35,37,13,30
-	.long   0982df85H
+	.long   098304f1H
 	.word   05000H
 	.long   XHAR_P
 XHAR11:
 	.word   27,29,13,17
-	.long   0982f8d0H
+	.long   09831e3cH
 	.word   05000H
 	.long   XHAR_P
 XHAR12:
 	.word   35,36,19,34
-	.long   0983081bH
+	.long   09832d87H
 	.word   05000H
 	.long   XHAR_P
 XHAR13:
 	.word   31,38,20,33
-	.long   098320b7H
+	.long   09834623H
 	.word   05000H
 	.long   XHAR_P
 XHAR14:
 	.word   27,37,14,32
-	.long   098337b9H
+	.long   09835d25H
 	.word   05000H
 	.long   XHAR_P
 XHAR15:
 	.word   27,37,14,34
-	.long   09834b3cH
+	.long   098370a8H
 	.word   05000H
 	.long   XHAR_P
 XHAR16:
 	.word   37,35,33,22
-	.long   09835ebfH
+	.long   0983842bH
 	.word   05000H
 	.long   XHAR_P
 XYAO01:
 	.word   29,34,12,31
-	.long   0983780aH
+	.long   09839d76H
 	.word   05000H
 	.long   XYAO_P
 XYAO02:
 	.word   26,35,14,32
-	.long   09838b4cH
+	.long   0983b0b8H
 	.word   05000H
 	.long   XYAO_P
 XYAO03:
 	.word   24,34,5,29
-	.long   09839d12H
+	.long   0983c27eH
 	.word   05000H
 	.long   XYAO_P
 XYAO04:
 	.word   28,35,9,31
-	.long   0983ad02H
+	.long   0983d26eH
 	.word   05000H
 	.long   XYAO_P
 XYAO05:
 	.word   24,35,12,32
-	.long   0983c026H
+	.long   0983e592H
 	.word   05000H
 	.long   XYAO_P
 XYAO06:
 	.word   33,30,22,22
-	.long   0983d08eH
+	.long   0983f5faH
 	.word   05000H
 	.long   XYAO_P
 XYAO07:
 	.word   28,33,4,28
-	.long   0983e3e4H
+	.long   09840950H
 	.word   05000H
 	.long   XYAO_P
 XYAO08:
 	.word   26,33,2,21
-	.long   0983f5f0H
+	.long   09841b5cH
 	.word   05000H
 	.long   XYAO_P
 XYAO09:
 	.word   24,33,3,24
-	.long   098406b2H
+	.long   09842c1eH
 	.word   05000H
 	.long   XYAO_P
 XYAO10:
 	.word   26,34,10,27
-	.long   0984162aH
+	.long   09843b96H
 	.word   05000H
 	.long   XYAO_P
 XYAO11:
 	.word   24,23,12,13
-	.long   0984276eH
+	.long   09844cdaH
 	.word   05000H
 	.long   XYAO_P
 XYAO12:
 	.word   33,30,18,28
-	.long   09843236H
+	.long   098457a2H
 	.word   05000H
 	.long   XYAO_P
 XYAO13:
 	.word   24,34,16,30
-	.long   0984458cH
+	.long   09846af8H
 	.word   05000H
 	.long   XYAO_P
 XYAO14:
 	.word   24,32,12,28
-	.long   0984557cH
+	.long   09847ae8H
 	.word   05000H
 	.long   XYAO_P
 XYAO15:
 	.word   24,35,13,32
-	.long   0984647cH
+	.long   098489e8H
 	.word   05000H
 	.long   XYAO_P
 XYAO16:
 	.word   29,32,25,20
-	.long   098474e4H
+	.long   09849a50H
 	.word   05000H
 	.long   XYAO_P
 XTMA01:
 	.word   29,35,12,32
-	.long   09848704H
+	.long   0984ac70H
 	.word   05000H
 	.long   XTMA_P
 XTMA02:
 	.word   29,37,15,34
-	.long   09849ad7H
+	.long   0984c043H
 	.word   05000H
 	.long   XTMA_P
 XTMA03:
 	.word   30,37,6,31
-	.long   0984afccH
+	.long   0984d538H
 	.word   05000H
 	.long   XTMA_P
 XTMA04:
 	.word   29,36,9,32
-	.long   0984c57aH
+	.long   0984eae6H
 	.word   05000H
 	.long   XTMA_P
 XTMA05:
 	.word   29,38,15,35
-	.long   0984d9deH
+	.long   0984ff4aH
 	.word   05000H
 	.long   XTMA_P
 XTMA06:
 	.word   34,35,22,26
-	.long   0984ef64H
+	.long   098514d0H
 	.word   05000H
 	.long   XTMA_P
 XTMA07:
 	.word   33,37,5,32
-	.long   098506a2H
+	.long   09852c0eH
 	.word   05000H
 	.long   XTMA_P
 XTMA08:
 	.word   36,33,2,21
-	.long   09851e7bH
+	.long   098543e7H
 	.word   05000H
 	.long   XTMA_P
 XTMA09:
 	.word   35,37,5,27
-	.long   098535afH
+	.long   09855b1bH
 	.word   05000H
 	.long   XTMA_P
 XTMA10:
 	.word   31,37,12,30
-	.long   09854efaH
+	.long   09857466H
 	.word   05000H
 	.long   XTMA_P
 XTMA11:
 	.word   26,24,12,14
-	.long   09856561H
+	.long   09858acdH
 	.word   05000H
 	.long   XTMA_P
 XTMA12:
 	.word   34,35,19,33
-	.long   09857191H
+	.long   098596fdH
 	.word   05000H
 	.long   XTMA_P
 XTMA13:
 	.word   34,38,22,33
-	.long   098588cfH
+	.long   0985ae3bH
 	.word   05000H
 	.long   XTMA_P
 XTMA14:
 	.word   29,37,15,32
-	.long   0985a20bH
+	.long   0985c777H
 	.word   05000H
 	.long   XTMA_P
 XTMA15:
 	.word   29,37,15,34
-	.long   0985b700H
+	.long   0985dc6cH
 	.word   05000H
 	.long   XTMA_P
 XTMA16:
 	.word   34,34,30,21
-	.long   0985cbf5H
+	.long   0985f161H
 	.word   05000H
 	.long   XTMA_P
 XMOR01:
 	.word   32,41,13,37
-	.long   0985e289H
+	.long   098607f5H
 	.word   04000H
 	.long   XMOR_P
 XMOR02:
 	.word   28,41,15,37
-	.long   0985f709H
+	.long   09861c75H
 	.word   04000H
 	.long   XMOR_P
 XMOR03:
 	.word   32,41,7,35
-	.long   098608f9H
+	.long   09862e65H
 	.word   04000H
 	.long   XMOR_P
 XMOR04:
 	.word   34,41,11,36
-	.long   09861d79H
+	.long   098642e5H
 	.word   04000H
 	.long   XMOR_P
 XMOR05:
 	.word   30,40,15,37
-	.long   09863341H
+	.long   098658adH
 	.word   04000H
 	.long   XMOR_P
 XMOR06:
 	.word   30,40,20,30
-	.long   09864601H
+	.long   09866b6dH
 	.word   04000H
 	.long   XMOR_P
 XMOR07:
 	.word   29,42,5,36
-	.long   098658c1H
+	.long   09867e2dH
 	.word   04000H
 	.long   XMOR_P
 XMOR08:
 	.word   33,39,2,25
-	.long   09866bc9H
+	.long   09869135H
 	.word   04000H
 	.long   XMOR_P
 XMOR09:
 	.word   36,41,5,30
-	.long   09867fe5H
+	.long   0986a551H
 	.word   04000H
 	.long   XMOR_P
 XMOR10:
 	.word   30,41,11,33
-	.long   098696f5H
+	.long   0986bc61H
 	.word   04000H
 	.long   XMOR_P
 XMOR11:
 	.word   32,24,16,14
-	.long   0986aa2dH
+	.long   0986cf99H
 	.word   04000H
 	.long   XMOR_P
 XMOR12:
 	.word   35,40,19,38
-	.long   0986b62dH
+	.long   0986db99H
 	.word   04000H
 	.long   XMOR_P
 XMOR13:
 	.word   31,41,20,36
-	.long   0986cc0dH
+	.long   0986f179H
 	.word   04000H
 	.long   XMOR_P
 XMOR14:
 	.word   36,39,19,34
-	.long   0986dfe9H
+	.long   09870555H
 	.word   04000H
 	.long   XMOR_P
 XMOR15:
 	.word   32,41,17,37
-	.long   0986f5d9H
+	.long   09871b45H
 	.word   04000H
 	.long   XMOR_P
 XMOR16:
 	.word   42,31,37,19
-	.long   09870a59H
+	.long   09872fc5H
 	.word   04000H
 	.long   XMOR_P
 XMGA01:
 	.word   31,36,13,33
-	.long   09871eb1H
+	.long   0987441dH
 	.word   05000H
 	.long   XMGA_P
 XMGA02:
 	.word   27,35,14,32
-	.long   0987347dH
+	.long   098759e9H
 	.word   05000H
 	.long   XMGA_P
 XMGA03:
 	.word   33,37,7,31
-	.long   098746f2H
+	.long   09876c5eH
 	.word   05000H
 	.long   XMGA_P
 XMGA04:
 	.word   29,36,9,32
-	.long   09875ecbH
+	.long   09878437H
 	.word   05000H
 	.long   XMGA_P
 XMGA05:
 	.word   26,36,13,33
-	.long   0987732fH
+	.long   0987989bH
 	.word   05000H
 	.long   XMGA_P
 XMGA06:
 	.word   36,34,24,25
-	.long   09878577H
+	.long   0987aae3H
 	.word   05000H
 	.long   XMGA_P
 XMGA07:
 	.word   30,36,5,31
-	.long   09879d5fH
+	.long   0987c2cbH
 	.word   05000H
 	.long   XMGA_P
 XMGA08:
 	.word   35,35,2,22
-	.long   0987b277H
+	.long   0987d7e3H
 	.word   05000H
 	.long   XMGA_P
 XMGA09:
 	.word   34,37,5,27
-	.long   0987ca64H
+	.long   0987efd0H
 	.word   05000H
 	.long   XMGA_P
 XMGA10:
 	.word   31,35,12,28
-	.long   0987e2f6H
+	.long   09880862H
 	.word   05000H
 	.long   XMGA_P
 XMGA11:
 	.word   28,26,14,15
-	.long   0987f827H
+	.long   09881d93H
 	.word   05000H
 	.long   XMGA_P
 XMGA12:
 	.word   36,34,20,32
-	.long   0988065fH
+	.long   09882bcbH
 	.word   05000H
 	.long   XMGA_P
 XMGA13:
 	.word   30,37,20,32
-	.long   09881e47H
+	.long   098843b3H
 	.word   05000H
 	.long   XMGA_P
 XMGA14:
 	.word   28,37,14,32
-	.long   098833f5H
+	.long   09885961H
 	.word   05000H
 	.long   XMGA_P
 XMGA15:
 	.word   27,35,14,32
-	.long   09884831H
+	.long   09886d9dH
 	.word   05000H
 	.long   XMGA_P
 XMGA16:
 	.word   30,34,26,21
-	.long   09885aa6H
+	.long   09888012H
 	.word   05000H
 	.long   XMGA_P
 XBAN01:
 	.word   29,34,12,31
-	.long   09886e92H
+	.long   098893feH
 	.word   05000H
 	.long   XBAN_P
 XBAN02:
 	.word   29,35,15,32
-	.long   098881d4H
+	.long   0988a740H
 	.word   05000H
 	.long   XBAN_P
 XBAN03:
 	.word   31,36,7,30
-	.long   098895a7H
+	.long   0988bb13H
 	.word   05000H
 	.long   XBAN_P
 XBAN04:
 	.word   30,36,10,32
-	.long   0988ab73H
+	.long   0988d0dfH
 	.word   05000H
 	.long   XBAN_P
 XBAN05:
 	.word   27,36,14,33
-	.long   0988c08bH
+	.long   0988e5f7H
 	.word   05000H
 	.long   XBAN_P
 XBAN06:
 	.word   33,35,22,26
-	.long   0988d387H
+	.long   0988f8f3H
 	.word   05000H
 	.long   XBAN_P
 XBAN07:
 	.word   31,36,5,31
-	.long   0988ea16H
+	.long   09890f82H
 	.word   05000H
 	.long   XBAN_P
 XBAN08:
 	.word   35,35,2,22
-	.long   0988ffe2H
+	.long   0989254eH
 	.word   05000H
 	.long   XBAN_P
 XBAN09:
 	.word   34,34,5,25
-	.long   098917cfH
+	.long   09893d3bH
 	.word   05000H
 	.long   XBAN_P
 XBAN10:
 	.word   31,36,12,29
-	.long   09892e63H
+	.long   098953cfH
 	.word   05000H
 	.long   XBAN_P
 XBAN11:
 	.word   23,26,11,15
-	.long   0989442fH
+	.long   0989699bH
 	.word   05000H
 	.long   XBAN_P
 XBAN12:
 	.word   33,35,18,33
-	.long   09894fddH
+	.long   09897549H
 	.word   05000H
 	.long   XBAN_P
 XBAN13:
 	.word   27,35,18,31
-	.long   0989666cH
+	.long   09898bd8H
 	.word   05000H
 	.long   XBAN_P
 XBAN14:
 	.word   26,36,13,31
-	.long   098978e1H
+	.long   09899e4dH
 	.word   05000H
 	.long   XBAN_P
 XBAN15:
 	.word   26,36,14,33
-	.long   09898b29H
+	.long   0989b095H
 	.word   05000H
 	.long   XBAN_P
 XBAN16:
 	.word   36,31,32,19
-	.long   09899d71H
+	.long   0989c2ddH
 	.word   05000H
 	.long   XBAN_P
 XZRA01:
 	.word   30,36,13,33
-	.long   097f92cbH
+	.long   097fb837H
 	.word   05000H
 	.long   XZRA_P
 XZRA02:
 	.word   29,36,15,33
-	.long   097fa7e3H
+	.long   097fcd4fH
 	.word   05000H
 	.long   XZRA_P
 XZRA03:
 	.word   28,37,6,31
-	.long   097fbc47H
+	.long   097fe1b3H
 	.word   05000H
 	.long   XZRA_P
 XZRA04:
 	.word   28,36,9,32
-	.long   097fd083H
+	.long   097ff5efH
 	.word   05000H
 	.long   XZRA_P
 XZRA05:
 	.word   31,38,16,35
-	.long   097fe433H
+	.long   0980099fH
 	.word   05000H
 	.long   XZRA_P
 XZRA06:
 	.word   27,31,18,23
-	.long   097ffb35H
+	.long   098020a1H
 	.word   05000H
 	.long   XZRA_P
 XZRA07:
 	.word   30,33,5,28
-	.long   09800b8eH
+	.long   098030faH
 	.word   05000H
 	.long   XZRA_P
 XZRA08:
 	.word   33,33,2,21
-	.long   09801ee4H
+	.long   09804450H
 	.word   05000H
 	.long   XZRA_P
 XZRA09:
 	.word   28,36,4,26
-	.long   09803429H
+	.long   09805995H
 	.word   05000H
 	.long   XZRA_P
 XZRA10:
 	.word   33,37,13,30
-	.long   098047d9H
+	.long   09806d45H
 	.word   05000H
 	.long   XZRA_P
 XZRA11:
 	.word   26,24,12,14
-	.long   09805fb2H
+	.long   0980851eH
 	.word   05000H
 	.long   XZRA_P
 XZRA12:
 	.word   27,32,15,30
-	.long   09806be2H
+	.long   0980914eH
 	.word   05000H
 	.long   XZRA_P
 XZRA13:
 	.word   31,38,20,33
-	.long   09807cc2H
+	.long   0980a22eH
 	.word   05000H
 	.long   XZRA_P
 XZRA14:
 	.word   31,37,16,32
-	.long   098093c4H
+	.long   0980b930H
 	.word   05000H
 	.long   XZRA_P
 XZRA15:
 	.word   31,37,16,34
-	.long   0980aa2bH
+	.long   0980cf97H
 	.word   05000H
 	.long   XZRA_P
 XZRA16:
 	.word   35,35,31,22
-	.long   0980c092H
+	.long   0980e5feH
 	.word   05000H
 	.long   XZRA_P
 XDUN01:
 	.word   29,35,12,32
-	.long   0989b33dH
+	.long   0989d8a9H
 	.word   05000H
 	.long   XDUN_P
 XDUN02:
 	.word   29,35,15,32
-	.long   0989c710H
+	.long   0989ec7cH
 	.word   05000H
 	.long   XDUN_P
 XDUN03:
 	.word   31,36,7,30
-	.long   0989dae3H
+	.long   098a004fH
 	.word   05000H
 	.long   XDUN_P
 XDUN04:
 	.word   27,36,9,32
-	.long   0989f0afH
+	.long   098a161bH
 	.word   05000H
 	.long   XDUN_P
 XDUN05:
 	.word   28,38,14,35
-	.long   098a03abH
+	.long   098a2917H
 	.word   05000H
 	.long   XDUN_P
 XDUN06:
 	.word   28,35,18,26
-	.long   098a1873H
+	.long   098a3ddfH
 	.word   05000H
 	.long   XDUN_P
 XDUN07:
 	.word   29,36,5,31
-	.long   098a2b97H
+	.long   098a5103H
 	.word   05000H
 	.long   XDUN_P
 XDUN08:
 	.word   31,35,2,22
-	.long   098a3ffbH
+	.long   098a6567H
 	.word   05000H
 	.long   XDUN_P
 XDUN09:
 	.word   30,34,4,25
-	.long   098a552cH
+	.long   098a7a98H
 	.word   05000H
 	.long   XDUN_P
 XDUN10:
 	.word   31,37,12,30
-	.long   098a6918H
+	.long   098a8e84H
 	.word   05000H
 	.long   XDUN_P
 XDUN11:
 	.word   26,23,12,13
-	.long   098a7f7fH
+	.long   098aa4ebH
 	.word   05000H
 	.long   XDUN_P
 XDUN12:
 	.word   28,36,15,34
-	.long   098a8b2dH
+	.long   098ab099H
 	.word   05000H
 	.long   XDUN_P
 XDUN13:
 	.word   30,34,20,30
-	.long   098a9eddH
+	.long   098ac449H
 	.word   05000H
 	.long   XDUN_P
 XDUN14:
 	.word   28,36,14,31
-	.long   098ab2c9H
+	.long   098ad835H
 	.word   05000H
 	.long   XDUN_P
 XDUN15:
 	.word   28,37,15,34
-	.long   098ac679H
+	.long   098aebe5H
 	.word   05000H
 	.long   XDUN_P
 XDUN16:
 	.word   33,34,29,21
-	.long   098adab5H
+	.long   098b0021H
 	.word   05000H
 	.long   XDUN_P
 XPRK01:
 	.word   29,38,12,34
-	.long   098af09fH
+	.long   098b160bH
 	.word   05000H
 	.long   XPRK_P
 XPRK02:
 	.word   29,37,15,34
-	.long   098b0625H
+	.long   098b2b91H
 	.word   05000H
 	.long   XPRK_P
 XPRK03:
 	.word   31,38,7,32
-	.long   098b1b1aH
+	.long   098b4086H
 	.word   05000H
 	.long   XPRK_P
 XPRK04:
 	.word   29,38,9,33
-	.long   098b321cH
+	.long   098b5788H
 	.word   05000H
 	.long   XPRK_P
 XPRK05:
 	.word   27,37,14,34
-	.long   098b47a2H
+	.long   098b6d0eH
 	.word   05000H
 	.long   XPRK_P
 XPRK06:
 	.word   34,35,22,26
-	.long   098b5b25H
+	.long   098b8091H
 	.word   05000H
 	.long   XPRK_P
 XPRK07:
 	.word   29,33,5,28
-	.long   098b7263H
+	.long   098b97cfH
 	.word   05000H
 	.long   XPRK_P
 XPRK08:
 	.word   33,35,2,22
-	.long   098b8514H
+	.long   098baa80H
 	.word   05000H
 	.long   XPRK_P
 XPRK09:
 	.word   30,36,4,26
-	.long   098b9ba3H
+	.long   098bc10fH
 	.word   05000H
 	.long   XPRK_P
 XPRK10:
 	.word   29,37,11,30
-	.long   098bb0bbH
+	.long   098bd627H
 	.word   05000H
 	.long   XPRK_P
 XPRK11:
 	.word   26,24,12,14
-	.long   098bc5b0H
+	.long   098beb1cH
 	.word   05000H
 	.long   XPRK_P
 XPRK12:
 	.word   34,35,19,33
-	.long   098bd1e0H
+	.long   098bf74cH
 	.word   05000H
 	.long   XPRK_P
 XPRK13:
 	.word   30,38,20,33
-	.long   098be91eH
+	.long   098c0e8aH
 	.word   05000H
 	.long   XPRK_P
 XPRK14:
 	.word   28,37,14,32
-	.long   098bff62H
+	.long   098c24ceH
 	.word   05000H
 	.long   XPRK_P
 XPRK15:
 	.word   28,37,15,34
-	.long   098c139eH
+	.long   098c390aH
 	.word   05000H
 	.long   XPRK_P
 XPRK16:
 	.word   35,35,31,22
-	.long   098c27daH
+	.long   098c4d46H
 	.word   05000H
 	.long   XPRK_P
 XMAN01:
 	.word   27,33,11,30
-	.long   098c3fc7H
+	.long   098c6533H
 	.word   05000H
 	.long   XMAN_P
 XMAN02:
 	.word   30,35,16,32
-	.long   098c512eH
+	.long   098c769aH
 	.word   05000H
 	.long   XMAN_P
 XMAN03:
 	.word   30,34,6,29
-	.long   098c65b0H
+	.long   098c8b1cH
 	.word   05000H
 	.long   XMAN_P
 XMAN04:
 	.word   27,35,9,31
-	.long   098c799cH
+	.long   098c9f08H
 	.word   05000H
 	.long   XMAN_P
 XMAN05:
 	.word   24,35,12,32
-	.long   098c8c11H
+	.long   098cb17dH
 	.word   05000H
 	.long   XMAN_P
 XMAN06:
 	.word   33,35,22,26
-	.long   098c9c79H
+	.long   098cc1e5H
 	.word   05000H
 	.long   XMAN_P
 XMAN07:
 	.word   27,35,4,30
-	.long   098cb308H
+	.long   098cd874H
 	.word   05000H
 	.long   XMAN_P
 XMAN08:
 	.word   36,32,2,20
-	.long   098cc57dH
+	.long   098ceae9H
 	.word   05000H
 	.long   XMAN_P
 XMAN09:
 	.word   30,34,4,25
-	.long   098cdbfdH
+	.long   098d0169H
 	.word   05000H
 	.long   XMAN_P
 XMAN10:
 	.word   29,34,11,27
-	.long   098cefe9H
+	.long   098d1555H
 	.word   05000H
 	.long   XMAN_P
 XMAN11:
 	.word   22,24,10,14
-	.long   098d032bH
+	.long   098d2897H
 	.word   05000H
 	.long   XMAN_P
 XMAN12:
 	.word   33,35,18,33
-	.long   098d0d7bH
+	.long   098d32e7H
 	.word   05000H
 	.long   XMAN_P
 XMAN13:
 	.word   31,34,20,30
-	.long   098d240aH
+	.long   098d4976H
 	.word   05000H
 	.long   XMAN_P
 XMAN14:
 	.word   27,33,14,29
-	.long   098d38a0H
+	.long   098d5e0cH
 	.word   05000H
 	.long   XMAN_P
 XMAN15:
 	.word   24,35,13,32
-	.long   098d4a07H
+	.long   098d6f73H
 	.word   05000H
 	.long   XMAN_P
 XMAN16:
 	.word   30,32,26,20
-	.long   098d5a6fH
+	.long   098d7fdbH
 	.word   05000H
 	.long   XMAN_P
 XWEM01:
 	.word   30,36,13,33
-	.long   098d6d2fH
+	.long   098d929bH
 	.word   05000H
 	.long   XWEM_P
 XWEM02:
 	.word   30,37,16,34
-	.long   098d8247H
+	.long   098da7b3H
 	.word   05000H
 	.long   XWEM_P
 XWEM03:
 	.word   31,36,7,30
-	.long   098d97f5H
+	.long   098dbd61H
 	.word   05000H
 	.long   XWEM_P
 XWEM04:
 	.word   30,38,10,33
-	.long   098dadc1H
+	.long   098dd32dH
 	.word   05000H
 	.long   XWEM_P
 XWEM05:
 	.word   28,37,14,34
-	.long   098dc405H
+	.long   098de971H
 	.word   05000H
 	.long   XWEM_P
 XWEM06:
 	.word   31,34,20,25
-	.long   098dd841H
+	.long   098dfdadH
 	.word   05000H
 	.long   XWEM_P
 XWEM07:
 	.word   31,35,5,30
-	.long   098decd7H
+	.long   098e1243H
 	.word   05000H
 	.long   XWEM_P
 XWEM08:
 	.word   29,35,2,22
-	.long   098e0208H
+	.long   098e2774H
 	.word   05000H
 	.long   XWEM_P
 XWEM09:
 	.word   31,36,4,26
-	.long   098e15dbH
+	.long   098e3b47H
 	.word   05000H
 	.long   XWEM_P
 XWEM10:
 	.word   27,37,10,30
-	.long   098e2ba7H
+	.long   098e5113H
 	.word   05000H
 	.long   XWEM_P
 XWEM11:
 	.word   26,23,12,13
-	.long   098e3f2aH
+	.long   098e6496H
 	.word   05000H
 	.long   XWEM_P
 XWEM12:
 	.word   31,34,17,32
-	.long   098e4ad8H
+	.long   098e7044H
 	.word   05000H
 	.long   XWEM_P
 XWEM13:
 	.word   27,37,18,32
-	.long   098e5f6eH
+	.long   098e84daH
 	.word   05000H
 	.long   XWEM_P
 XWEM14:
 	.word   29,37,15,32
-	.long   098e72f1H
+	.long   098e985dH
 	.word   05000H
 	.long   XWEM_P
 XWEM15:
 	.word   30,37,16,34
-	.long   098e87e6H
+	.long   098ead52H
 	.word   05000H
 	.long   XWEM_P
 XWEM16:
 	.word   37,35,33,22
-	.long   098e9d94H
+	.long   098ec300H
 	.word   05000H
 	.long   XWEM_P
 	.TEXT

@@ -303,6 +303,8 @@ CKDRET
 	.def	QUICK_SUPER
 	.ref	GO_SUPADJ
 QUICK_SUPER
+	.ref	smax_refund
+	calla	smax_refund		;players already in get their start credits back
 	movk	1,a0
 	move	a0,@_switch_map_mode,L
 	CALLR	DIGSRT		;test-mode screen setup (kills the attract processes)

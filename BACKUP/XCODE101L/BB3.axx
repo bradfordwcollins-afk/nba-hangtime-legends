@@ -4028,7 +4028,7 @@ sp_cmos_1
 sp_cmos_2
 	movi	ADJHUGE,a0		;Get value from CMOS
 	calla	GET_ADJ			;0-1
-	jrnz	sp_cmos_3		;Off? 
+	jruc	sp_cmos_3		;slot now used by BLOCK PARTY 
 
 ;a9=0-3 for player
 	move	@pup_hugehead,a0

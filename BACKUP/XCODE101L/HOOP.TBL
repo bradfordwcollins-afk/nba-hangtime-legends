@@ -995,97 +995,97 @@ nhoopbot:
 	.DATA
 BACK1BR:
 	.word   90,73,-28,181
-	.long   09b17534H
+	.long   09b19aa0H
 	.word   0780H
 	.long   HOOP_P
 BACK2BR:
 	.word   89,73,-28,181
-	.long   09b1f2fcH
+	.long   09b21868H
 	.word   0780H
 	.long   HOOP_P
 BACK3BR:
 	.word   87,73,-28,181
-	.long   09b26dacH
+	.long   09b29318H
 	.word   0280H
 	.long   HOOP_P
 BACK4BR:
 	.word   86,73,-28,181
-	.long   09b2e3ecH
+	.long   09b30958H
 	.word   0280H
 	.long   HOOP_P
 BACK5BR:
 	.word   85,73,-28,181
-	.long   09b35814H
+	.long   09b37d80H
 	.word   0280H
 	.long   HOOP_P
 BACK6BR:
 	.word   83,73,-28,181
-	.long   09b3c914H
+	.long   09b3ee80H
 	.word   0280H
 	.long   HOOP_P
 BACK7BR:
 	.word   82,73,-28,181
-	.long   09b437acH
+	.long   09b45d18H
 	.word   0280H
 	.long   HOOP_P
 BACK8BR:
 	.word   79,73,-28,181
-	.long   09b4a4c4H
+	.long   09b4ca30H
 	.word   0280H
 	.long   HOOP_P
 BACK9BR:
 	.word   77,73,-28,181
-	.long   09b50af4H
+	.long   09b53060H
 	.word   0280H
 	.long   HOOP_P
 nback1br:
 	.word   130,98,14,175
-	.long   09b56decH
+	.long   09b59358H
 	.word   0f80H
 	.long   NHOOP_p
 nback2br:
 	.word   129,98,14,175
-	.long   09b65fdcH
+	.long   09b68548H
 	.word   0f80H
 	.long   NHOOP_p
 nback3br:
 	.word   128,98,14,175
-	.long   09b74f7cH
+	.long   09b774e8H
 	.word   0f80H
 	.long   NHOOP_p
 nback4br:
 	.word   126,98,14,175
-	.long   09b83d0cH
+	.long   09b86278H
 	.word   0f80H
 	.long   NHOOP_p
 nback5br:
 	.word   125,98,14,175
-	.long   09b9263cH
+	.long   09b94ba8H
 	.word   0f80H
 	.long   NHOOP_p
 nback6br:
 	.word   123,98,14,175
-	.long   09ba0c9cH
+	.long   09ba3208H
 	.word   0f80H
 	.long   NHOOP_p
 nback7br:
 	.word   122,98,14,175
-	.long   09baec5cH
+	.long   09bb11c8H
 	.word   0f80H
 	.long   NHOOP_p
 nback8br:
 	.word   121,98,14,175
-	.long   09bbcb4cH
+	.long   09bbf0b8H
 	.word   0f80H
 	.long   NHOOP_p
 nback9br:
 	.word   119,98,14,175
-	.long   09bcafacH
+	.long   09bcd518H
 	.word   0f80H
 	.long   NHOOP_p
 nback10br:
 	.word   118,98,14,175
-	.long   09bd8e2cH
+	.long   09bdb398H
 	.word   0f80H
 	.long   NHOOP_p
 	.TEXT

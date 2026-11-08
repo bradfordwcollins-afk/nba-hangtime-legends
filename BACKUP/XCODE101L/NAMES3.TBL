@@ -1,472 +1,472 @@
 	.DATA
 RAIDEN:
 	.word   39,10,17,0
-	.long   09be69dcH
+	.long   09be8f48H
 	.word   03000H
 	.long   BAST_Y_P
 SCORPION:
 	.word   53,10,24,0
-	.long   09be6e6eH
+	.long   09be93daH
 	.word   03000H
 	.long   BAST_Y_P
 SUBZER:
 	.word   53,10,26,0
-	.long   09be74a4H
+	.long   09be9a10H
 	.word   03000H
 	.long   BAST_Y_P
 REPTILE:
 	.word   43,10,20,0
-	.long   09be7adaH
+	.long   09bea046H
 	.word   03000H
 	.long   BAST_Y_P
 SM0K3:
 	.word   38,10,17,0
-	.long   09be7fe4H
+	.long   09bea550H
 	.word   03000H
 	.long   BAST_Y_P
 JORDAN:
 	.word   43,10,20,0
-	.long   09be8458H
+	.long   09bea9c4H
 	.word   03000H
 	.long   BAST_Y_P
 BRYANT:
 	.word   44,10,21,0
-	.long   09be8962H
+	.long   09beaeceH
 	.word   03000H
 	.long   BAST_Y_P
 ONEAL:
 	.word   38,10,17,0
-	.long   09be8e8aH
+	.long   09beb3f6H
 	.word   03000H
 	.long   BAST_Y_P
 BIRD:
 	.word   25,10,10,0
-	.long   09be92feH
+	.long   09beb86aH
 	.word   03000H
 	.long   BAST_Y_P
 TERMINATOR:
 	.word   32,10,16,0
-	.long   09be95ecH
+	.long   09bebb58H
 	.word   03000H
 	.long   BAST_Y_P
 ARNOLD:
 	.word   43,10,22,0
-	.long   09be99acH
+	.long   09bebf18H
 	.word   03000H
 	.long   BAST_Y_P
 WALKER:
 	.word   45,10,22,0
-	.long   09be9eb6H
+	.long   09bec422H
 	.word   03000H
 	.long   BAST_Y_P
 ELLIS:
 	.word   38,10,17,0
-	.long   09bea3fcH
+	.long   09bec968H
 	.word   03000H
 	.long   BAST_Y_P
 D_ELLIS:
 	.word   39,10,16,0
-	.long   09bea870H
+	.long   09becddcH
 	.word   03000H
 	.long   BAST_Y_P
 GIANNIS:
 	.word   43,10,21,0
-	.long   09bead02H
+	.long   09bed26eH
 	.word   03000H
 	.long   BAST_Y_P
 KAREEM:
 	.word   45,10,22,0
-	.long   09beb20cH
+	.long   09bed778H
 	.word   03000H
 	.long   BAST_Y_P
 DURANT:
 	.word   45,10,22,0
-	.long   09beb752H
+	.long   09bedcbeH
 	.word   03000H
 	.long   BAST_Y_P
 LEBRON:
 	.word   41,10,20,0
-	.long   09bebc98H
+	.long   09bee204H
 	.word   03000H
 	.long   BAST_Y_P
 LUKA:
 	.word   30,10,14,0
-	.long   09bec166H
+	.long   09bee6d2H
 	.word   03000H
 	.long   BAST_Y_P
 EMBIID:
 	.word   36,10,17,0
-	.long   09bec4eaH
+	.long   09beea56H
 	.word   03000H
 	.long   BAST_Y_P
 BALL_NP:
 	.word   28,10,13,0
-	.long   09bec922H
+	.long   09beee8eH
 	.word   03000H
 	.long   BAST_Y_P
 GRIFFIN:
 	.word   41,10,20,0
-	.long   09becc6aH
+	.long   09bef1d6H
 	.word   03000H
 	.long   BAST_Y_P
 HARDEN:
 	.word   44,10,21,0
-	.long   09bed138H
+	.long   09bef6a4H
 	.word   03000H
 	.long   BAST_Y_P
 TATUM:
 	.word   39,10,19,0
-	.long   09bed660H
+	.long   09befbccH
 	.word   03000H
 	.long   BAST_Y_P
 MCHALE:
 	.word   44,10,21,0
-	.long   09bedaf2H
+	.long   09bf005eH
 	.word   03000H
 	.long   BAST_Y_P
 MIDDLETON:
 	.word   60,10,29,0
-	.long   09bee01aH
+	.long   09bf0586H
 	.word   03000H
 	.long   BAST_Y_P
 ERVING:
 	.word   39,10,19,0
-	.long   09bee722H
+	.long   09bf0c8eH
 	.word   03000H
 	.long   BAST_Y_P
 MCGRADY:
 	.word   54,10,26,0
-	.long   09beebb4H
+	.long   09bf1120H
 	.word   03000H
 	.long   BAST_Y_P
 BEAL:
 	.word   28,10,13,0
-	.long   09bef208H
+	.long   09bf1774H
 	.word   03000H
 	.long   BAST_Y_P
 ROSE_NP:
 	.word   29,10,14,0
-	.long   09bef550H
+	.long   09bf1abcH
 	.word   03000H
 	.long   BAST_Y_P
 PAUL_NP:
 	.word   29,10,14,0
-	.long   09bef8b6H
+	.long   09bf1e22H
 	.word   03000H
 	.long   BAST_Y_P
 LEONARD:
 	.word   50,10,24,0
-	.long   09befc1cH
+	.long   09bf2188H
 	.word   03000H
 	.long   BAST_Y_P
 NOWITZKI:
 	.word   52,10,25,0
-	.long   09bf01f8H
+	.long   09bf2764H
 	.word   03000H
 	.long   BAST_Y_P
 IRVING:
 	.word   36,10,17,0
-	.long   09bf0810H
+	.long   09bf2d7cH
 	.word   03000H
 	.long   BAST_Y_P
 PARISH:
 	.word   41,10,20,0
-	.long   09bf0c48H
+	.long   09bf31b4H
 	.word   03000H
 	.long   BAST_Y_P
 JOKIC:
 	.word   32,10,15,0
-	.long   09bf1116H
+	.long   09bf3682H
 	.word   03000H
 	.long   BAST_Y_P
 LAIMBE_NP:
 	.word   54,10,26,0
-	.long   09bf14d6H
+	.long   09bf3a42H
 	.word   03000H
 	.long   BAST_Y_P
 YOUNG:
 	.word   36,10,17,0
-	.long   09bf1b2aH
+	.long   09bf4096H
 	.word   03000H
 	.long   BAST_Y_P
 THOMPS_NP:
 	.word   59,10,29,0
-	.long   09bf1f62H
+	.long   09bf44ceH
 	.word   03000H
 	.long   BAST_Y_P
 HALIBURTON:
 	.word   68,10,33,0
-	.long   09bf264cH
+	.long   09bf4bb8H
 	.word   03000H
 	.long   BAST_Y_P
 COUSINS:
 	.word   46,10,22,0
-	.long   09bf2e44H
+	.long   09bf53b0H
 	.word   03000H
 	.long   BAST_Y_P
 BUTLER:
 	.word   42,10,20,0
-	.long   09bf33a8H
+	.long   09bf5914H
 	.word   03000H
 	.long   BAST_Y_P
 WADE:
 	.word   32,10,15,0
-	.long   09bf3894H
+	.long   09bf5e00H
 	.word   03000H
 	.long   BAST_Y_P
 BOSH:
 	.word   29,10,14,0
-	.long   09bf3c54H
+	.long   09bf61c0H
 	.word   03000H
 	.long   BAST_Y_P
 MURRAY_NP:
 	.word   48,10,23,0
-	.long   09bf3fbaH
+	.long   09bf6526H
 	.word   03000H
 	.long   BAST_Y_P
 ADEBAYO:
 	.word   51,10,25,0
-	.long   09bf455aH
+	.long   09bf6ac6H
 	.word   03000H
 	.long   BAST_Y_P
 DAVIS_NP:
 	.word   33,10,16,0
-	.long   09bf4b54H
+	.long   09bf70c0H
 	.word   03000H
 	.long   BAST_Y_P
 ARTEST:
 	.word   44,10,21,0
-	.long   09bf4f32H
+	.long   09bf749eH
 	.word   03000H
 	.long   BAST_Y_P
 GEORGE_NP:
 	.word   42,10,20,0
-	.long   09bf545aH
+	.long   09bf79c6H
 	.word   03000H
 	.long   BAST_Y_P
 ALDRIDGE:
 	.word   53,10,26,0
-	.long   09bf5946H
+	.long   09bf7eb2H
 	.word   03000H
 	.long   BAST_Y_P
 LILLARD:
 	.word   45,10,22,0
-	.long   09bf5f7cH
+	.long   09bf84e8H
 	.word   03000H
 	.long   BAST_Y_P
 MING:
 	.word   27,10,13,0
-	.long   09bf64c2H
+	.long   09bf8a2eH
 	.word   03000H
 	.long   BAST_Y_P
 WESTBROOK:
 	.word   68,10,33,0
-	.long   09bf67ecH
+	.long   09bf8d58H
 	.word   03000H
 	.long   BAST_Y_P
 DUNCAN:
 	.word   44,10,21,0
-	.long   09bf6fe4H
+	.long   09bf9550H
 	.word   03000H
 	.long   BAST_Y_P
 WEMBANYAMA:
 	.word   80,10,39,0
-	.long   09bf750cH
+	.long   09bf9a78H
 	.word   03000H
 	.long   BAST_Y_P
 BOOKER:
 	.word   44,10,21,0
-	.long   09bf7e6cH
+	.long   09bfa3d8H
 	.word   03000H
 	.long   BAST_Y_P
 GINOBILI:
 	.word   44,10,21,0
-	.long   09bf8394H
+	.long   09bfa900H
 	.word   03000H
 	.long   BAST_Y_P
 NASH:
 	.word   30,10,14,0
-	.long   09bf88bcH
+	.long   09bfae28H
 	.word   03000H
 	.long   BAST_Y_P
 MARAVICH:
 	.word   58,10,28,0
-	.long   09bf8c40H
+	.long   09bfb1acH
 	.word   03000H
 	.long   BAST_Y_P
 PARKER:
 	.word   46,10,22,0
-	.long   09bf930cH
+	.long   09bfb878H
 	.word   03000H
 	.long   BAST_Y_P
 PIERCE_NP:
 	.word   38,10,18,0
-	.long   09bf9870H
+	.long   09bfbddcH
 	.word   03000H
 	.long   BAST_Y_P
 MITCHE_NP:
 	.word   52,10,25,0
-	.long   09bf9ce4H
+	.long   09bfc250H
 	.word   03000H
 	.long   BAST_Y_P
 CARTER:
 	.word   45,10,22,0
-	.long   09bfa2fcH
+	.long   09bfc868H
 	.word   03000H
 	.long   BAST_Y_P
 WORTHY_NP:
 	.word   47,10,23,0
-	.long   09bfa842H
+	.long   09bfcdaeH
 	.word   03000H
 	.long   BAST_Y_P
 GASOL:
 	.word   36,10,17,0
-	.long   09bfadc4H
+	.long   09bfd330H
 	.word   03000H
 	.long   BAST_Y_P
 THOMAS_NP:
 	.word   46,10,22,0
-	.long   09bfb1fcH
+	.long   09bfd768H
 	.word   03000H
 	.long   BAST_Y_P
 MALONE_NP:
 	.word   44,10,21,0
-	.long   09bfb760H
+	.long   09bfdcccH
 	.word   03000H
 	.long   BAST_Y_P
 GILGEOUS:
 	.word   64,20,31,10
-	.long   09bfbc88H
+	.long   09bfe1f4H
 	.word   03000H
 	.long   BAST_Y_P
 MORANT:
 	.word   47,10,23,0
-	.long   09bfcb88H
+	.long   09bff0f4H
 	.word   03000H
 	.long   BAST_Y_P
 ROBERT_NP:
 	.word   65,10,32,0
-	.long   09bfd10aH
+	.long   09bff676H
 	.word   03000H
 	.long   BAST_Y_P
 BANE:
 	.word   29,10,14,0
-	.long   09bfd8a8H
+	.long   09bffe14H
 	.word   03000H
 	.long   BAST_Y_P
 BILLUPS:
 	.word   44,10,21,0
-	.long   09bfdc0eH
+	.long   09c0017aH
 	.word   03000H
 	.long   BAST_Y_P
 WALLAC_NP:
 	.word   52,10,25,0
-	.long   09bfe136H
+	.long   09c006a2H
 	.word   03000H
 	.long   BAST_Y_P
 DAUGHE_NP:
 	.word   65,10,32,0
-	.long   09bfe74eH
+	.long   09c00cbaH
 	.word   03000H
 	.long   BAST_Y_P
 BRUNSON:
 	.word   51,10,25,0
-	.long   09bfeeecH
+	.long   09c01458H
 	.word   03000H
 	.long   BAST_Y_P
 DEROZAN:
 	.word   50,10,24,0
-	.long   09bff4e6H
+	.long   09c01a52H
 	.word   03000H
 	.long   BAST_Y_P
 WEBB_NP:
 	.word   31,10,15,0
-	.long   09bffac2H
+	.long   09c0202eH
 	.word   03000H
 	.long   BAST_Y_P
 BOGUES:
 	.word   42,10,20,0
-	.long   09bffe64H
+	.long   09c023d0H
 	.word   03000H
 	.long   BAST_Y_P
 KORVER:
 	.word   45,10,22,0
-	.long   09c00350H
+	.long   09c028bcH
 	.word   03000H
 	.long   BAST_Y_P
 JAMES_NP:
 	.word   37,10,18,0
-	.long   09c00896H
+	.long   09c02e02H
 	.word   03000H
 	.long   BAST_Y_P
 ANTETOKO:
 	.word   86,10,42,0
-	.long   09c00cecH
+	.long   09c03258H
 	.word   03000H
 	.long   BAST_Y_P
 CURRY_NP:
 	.word   38,10,18,0
-	.long   09c01700H
+	.long   09c03c6cH
 	.word   03000H
 	.long   BAST_Y_P
 ABDULJAB:
 	.word   84,10,41,0
-	.long   09c01b74H
+	.long   09c040e0H
 	.word   03000H
 	.long   BAST_Y_P
 DONCIC_NP:
 	.word   39,10,19,0
-	.long   09c0254cH
+	.long   09c04ab8H
 	.word   03000H
 	.long   BAST_Y_P
 MGASOL:
 	.word   37,10,18,0
-	.long   09c029deH
+	.long   09c04f4aH
 	.word   03000H
 	.long   BAST_Y_P
 CHAMBERLAIN:
 	.word   77,10,38,0
-	.long   09c02e34H
+	.long   09c053a0H
 	.word   03000H
 	.long   BAST_Y_P
 FRAZIER:
 	.word   46,10,22,0
-	.long   09c0373aH
+	.long   09c05ca6H
 	.word   03000H
 	.long   BAST_Y_P
 JORDAN_NP:
 	.word   44,10,21,0
-	.long   09c03c9eH
+	.long   09c0620aH
 	.word   03000H
 	.long   BAST_Y_P
 RANDOL_NP:
 	.word   58,10,28,0
-	.long   09c041c6H
+	.long   09c06732H
 	.word   03000H
 	.long   BAST_Y_P
 BARKLEY:
 	.word   50,10,24,0
-	.long   09c04892H
+	.long   09c06dfeH
 	.word   03000H
 	.long   BAST_Y_P
 PORTER:
 	.word   42,10,20,0
-	.long   09c04e6eH
+	.long   09c073daH
 	.word   03000H
 	.long   BAST_Y_P
 MAJERLE:
 	.word   49,10,23,0
-	.long   09c0535aH
+	.long   09c078c6H
 	.word   03000H
 	.long   BAST_Y_P
 WILKINS:
 	.word   45,10,21,0
-	.long   09c05918H
+	.long   09c07e84H
 	.word   03000H
 	.long   BAST_Y_P
 JOHNSON_M:
 	.word   49,10,23,0
-	.long   09c05e5eH
+	.long   09c083caH
 	.word   03000H
 	.long   BAST_Y_P
 	.TEXT

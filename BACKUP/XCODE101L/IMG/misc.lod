@@ -245,6 +245,9 @@ LEDINF.IMG
 ;Team Zone: flashing PRESS COIN under a full meter
 TZPRESS.IMG
 ---> TZPRESS
+;CHOOSE OPTION screen: SHOOT+PASS+TURBO = SUPERMAX SETTINGS
+SMAXHINT.IMG
+---> SMAXHINT
 ASM> newheads.tbl
 GLO> newheads.glo
 PPP> 6

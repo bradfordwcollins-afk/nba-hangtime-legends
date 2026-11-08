@@ -3330,6 +3330,21 @@ dnb_1
 	calla	update_bball_text_pals
 	calla	update_bball_palettes
 
+	.ref	SMAXHINT,smax_allow
+	movi	[95,0],a0		;SHOOT+PASS+TURBO = SUPERMAX SETTINGS (flashes)
+	movi	[164,0],a1
+	movi	SMAXHINT,a2
+	movi	90,a3
+	movi	DMAWNZ,a4
+	movi	OPTION_STUFF,a5
+	clr	a6
+	clr	a7
+	calla	BEGINOBJ2
+	calla	obj_off
+	move	a8,@smax_hint_obj,L
+	clr	a0
+	move	a0,@smax_hint_cnt
+
 	.ref	pregame_tune
 	SOUND1	pregame_tune
 
@@ -3401,6 +3416,7 @@ exosupdateX
 	calla	update_bball_text_pals
 exosno_change
 	SLEEPK	1
+	callr	smax_hint_tick		;flash the Super Max hint
 
 	move	@force_selection,a0
 	jrz	exosno_timeout			;timeout yet ?
@@ -3419,6 +3435,7 @@ exosno_timeout
 ; Player hit a button...or timer expired
 ;
 exostimeout
+	callr	smax_hint_hide
 	SOUND1	opt_scr_sel
 
 	move	@cur_pos,a0
@@ -3469,6 +3486,38 @@ exostmeout2
 	RETP
 
 ;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+; Super Max hint on the CHOOSE OPTION screen
+	.bss	smax_hint_obj,32
+	.bss	smax_hint_cnt,16
+smax_hint_tick
+	PUSH	a0,a8,a14
+	movk	1,a0
+	move	a0,@smax_allow		;shortcut allowed while the menu waits
+	move	@smax_hint_obj,a8,L
+	jrz	shtx
+	move	@smax_hint_cnt,a0
+	addk	1,a0
+	move	a0,@smax_hint_cnt
+	btst	4,a0			;16 frames on / 16 off
+	jrz	shtoff
+	calla	obj_on
+	jruc	shtx
+shtoff	calla	obj_off
+shtx	PULL	a0,a8,a14
+	rets
+
+smax_hint_hide
+	PUSH	a0,a8,a14
+	clr	a0
+	move	a0,@smax_allow
+	move	@smax_hint_obj,a8,L
+	jrz	shhx
+	calla	obj_off
+shhx	PULL	a0,a8,a14
+	rets
+
 ;-----------------------------------------------------------------------------
  SUBR	del_winner_stay_free_msg
 

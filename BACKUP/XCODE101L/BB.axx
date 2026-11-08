@@ -230,6 +230,8 @@
 	; minutes or so.  Since it's always treated as an unsigned value
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
+	BSSX	smax_allow	,16	;!0 = CHOOSE OPTION screen up (Super Max shortcut allowed)
+	BSSX	smax_hold	,16	;frames SHOOT+PASS+TURBO held
 	BSSX	injfire_team	,16	;INJURY FIRE team (32 = team 1, 0 = team 2, neg = none)
 	BSSX	tmfire2_team	,16	;second (coin) team fire: 32 = team 1, 0 = team 2, neg = none
 	BSSX	injfire_all	,16	;!0 = both teams have INJURY FIRE (everybody on fire)
@@ -562,6 +564,7 @@ mainpok
 
 	calla	cr_cntrs_update		;And blink the top messages
 	callr	switch_unstack
+	callr	smax_poll		;SHOOT+PASS+TURBO held -> SUPER MAXIMUM SETTINGS
 	calla	snd_update		;Update the sound calls
 	calla	joy_read
 
@@ -673,6 +676,58 @@ mjyeskipit
 	jruc	mainlp
 
 
+
+***************************************************************
+* Super Max shortcut (main loop): any player holding SHOOT+PASS+TURBO for
+* 30 frames on the attract screens or the CHOOSE OPTION menu.
+ SUBRP	smax_poll
+
+	move	@GAMSTATE,a0
+	cmpi	INAMODE,a0
+	jreq	smpchk
+	cmpi	INGAME,a0		;never in a game
+	jreq	smpclr
+	move	@smax_allow,a0		;CHOOSE OPTION screen?
+	jrz	smpclr
+	move	@GAMSTATE,a0
+	jrn	smpclr			;(diagnostics)
+smpchk
+	move	@_switch_addr,a0,L	;P1 bits 4-6, P2 bits 12-14 (0 = pressed)
+	move	*a0,a0
+	not	a0
+	move	a0,a1
+	andi	070H,a1
+	cmpi	070H,a1
+	jreq	smphold
+	andi	07000H,a0
+	cmpi	07000H,a0
+	jreq	smphold
+	move	@_switch2_addr,a0,L	;P3 / P4
+	move	*a0,a0
+	not	a0
+	move	a0,a1
+	andi	070H,a1
+	cmpi	070H,a1
+	jreq	smphold
+	andi	07000H,a0
+	cmpi	07000H,a0
+	jreq	smphold
+smpclr
+	clr	a0
+	move	a0,@smax_hold
+	rets
+smphold
+	move	@smax_hold,a0
+	addk	1,a0
+	move	a0,@smax_hold
+	cmpi	30,a0			;held half a second? (once)
+	jrne	smpx
+	clr	a0
+	move	a0,@smax_allow
+	movi	ACTIVE,a13		;*Proc list
+	.ref	QUICK_SUPER
+	CREATE	DIAG_PID,QUICK_SUPER
+smpx	rets
 
 ***************************************************************
 * Unstack switch queue
@@ -790,12 +845,7 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
 
  SUBR	plyr_strtb1
 
-	move	@GAMSTATE,a0		;attract or initials / team select + P1 holding all 3 buttons -> SUPER MAXIMUM SETTINGS
-	cmpi	INAMODE,a0
-	jreq	ipeqqsck
-	cmpi	ININTRO,a0
-	jrne	ipeqnoqs
-ipeqqsck
+	jruc	ipeqnoqs		;(Super Max shortcut is now SHOOT+PASS+TURBO held: smax_poll)
 	move	@_switch_addr,a0,L
 	move	*a0,a0
 	not	a0
@@ -1873,6 +1923,8 @@ offpbomb_out
 	movi	-1,a14
 	move	a14,@injfire_team	;no INJURY FIRE yet this game
 	move	a14,@tmfire2_team
+	clr	a14
+	move	a14,@smax_allow
 	move	a0,@injfire_all
 	.if	TEAMZONE
 	move	a0,@tm1_meter_cnt
@@ -2899,6 +2951,33 @@ injr2	move	@injfire_all,a14
 	andi	32,a9
 	callr	injfire_start2
 injrx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	rets
+
+***************************************
+* BLOCK PARTY (Super Max menu): a block takes 1 point off the other team (not below 0)
+* INPUT:  a1 - blocker's player number (0-3).  Keeps all registers.
+ SUBR	block_party
+
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	@GAMSTATE,a14
+	cmpi	INGAME,a14
+	jrne	bkpx
+	cmpi	3,a1
+	jrhi	bkpx
+	move	a1,a3
+	movi	ADJHUGE,a0
+	calla	GET_ADJ			;0 = BLOCK PARTY on
+	jrnz	bkpx
+	movi	scores+16,a2		;team 1 blocked: team 2 loses a point
+	srl	1,a3
+	jrz	bkpt
+	movi	scores,a2		;team 2 blocked: team 1 loses a point
+bkpt	move	*a2,a0
+	jrle	bkpx			;0 stays 0
+	dec	a0
+	move	a0,*a2
+	calla	prt_top_scores		;update the scores at the top
+bkpx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
 	rets
 
 tm_meter_img_tbl

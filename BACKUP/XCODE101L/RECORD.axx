@@ -1977,6 +1977,11 @@ vusbclear_next
 *-----------------------------------------------------------------------------
 
  SUBR	inc_player_stat
+	cmpi	PS_BLOCKS,a0		;BLOCK PARTY: a block costs the other team a point
+	jrne	ipsnobp
+	.ref	block_party
+	calla	block_party		;keeps all registers
+ipsnobp
 	.if	TEAMZONE
 	cmpi	PS_STEALS,a0		;steal or block: Team Zone meter +3 (like an assist)
 	jreq	ipstz
