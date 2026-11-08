@@ -2668,6 +2668,7 @@ TUBE_LR_P:
 *****************************************************************************
 * Create stats title images (on the STAT page)
 ******************************************************************************
+	.ref	HLFSTAT2		;labels with INJ T/G
  SUBR	create_stat_titles
 	
 	movi	stat_title_tbl,a10,L
@@ -2679,7 +2680,7 @@ TUBE_LR_P:
 cst_1
 	move	*a10+,a0,L				;X coor.
 	move	*a10+,a1,L				;Y coor.
-	movi	HLFSTATS,a2,L
+	movi	HLFSTAT2,a2,L
 	calla	BEGINOBJ2
 	cmpi	stat_title_tbl_end,a10
 	jrlo	cst_1

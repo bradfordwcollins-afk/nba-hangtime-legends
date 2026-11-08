@@ -3045,6 +3045,19 @@ tie_eqrtrt
 
  SUBR	tmfire_timer
 
+	.ref	injfire_team,obj_off,EXISTP,balltmscored
+	move	@injfire_team,a14	;INJURY FIRE owns team fire the rest of the game
+	jrn	kugnifok
+	cmp	a9,a14
+	jrne	kugnifdie		;other team can't go on fire
+	movi	tmfireid,a0
+	movi	0FFFFH,a1
+	calla	EXISTP
+	jrz	kugnifok		;only one fire process
+kugnifdie
+	DIE
+kugnifok
+
 	.ref	tm_onfire_sp
 	SOUND1	tm_onfire_sp
 	CREATE0	tm_zone_msg
@@ -3144,6 +3157,15 @@ kugnlp
 	move	@HALT,a0
 	jrnz	kugnlp
 
+	move	@injfire_team,a14	;INJURY FIRE team: stays lit, no countdown
+	cmp	a11,a14
+	jrne	kugnifnorm
+	movk	TMFIRE_MINCNT,a14
+	move	a14,@balltmshotcnt
+	move	a11,@balltmscored
+	calla	obj_off			;a8 = countdown LED (hidden)
+kugnifnorm
+
 	move	@balltmshotcnt,a14	;Team stil on-fire?
 	subk	TMFIRE_MINCNT,a14
 	jrn	kugnnotmfire		; br=no
@@ -3188,6 +3210,9 @@ kugnt1
 	jrz	kugnlptick
 
 kugncont
+	move	@injfire_team,a14
+	cmp	a11,a14
+	jreq	kugnlptick		;INJURY FIRE never runs out
 
 	move	*a13(PDATA+32),a14,L
 	cmpi	LED_0,a14

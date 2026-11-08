@@ -548,6 +548,7 @@ PS_OFF_REB	equ	7
 PS_DEF_REB	equ	8
 PS_STEALS	equ	9
 PS_FREE_TRY	equ	10
+PS_INJ_GIVEN	equ	10	;(free throws are never used) injuries given: pushes that knock down an opponent
 PS_TURNOVERS	equ	11
 PS_ASSISTS	equ	12
 PS_INJURY	equ	13

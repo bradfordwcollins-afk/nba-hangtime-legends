@@ -3589,8 +3589,8 @@ edcxstr_h38a
 	.string "category includes slap aways and",1
 	.string	"clear outs of ball carriers.",1
 	.string	" ",1
-	.string	"The injured category represents how",1
-	.string "many times you were cleared out!",0
+	.string	"The injured row shows times you were",1
+	.string "cleared out / you cleared others out!",0
 
 edcxstr_h39
 	.string "Layup out of dunks",0
@@ -5081,8 +5081,8 @@ aqnmzippo2
 	addi	8*YSPACING1,a0
 	move	a0,@mess_cursy
 
-	move	*a13(HTS_STARTX),a0
-	addi	COLOFF1+8,a0
+	move	*a13(HTS_STARTX),a0	;taken / given  (like the FG row)
+	addi	COLOFF1,a0
 	move	a0,@mess_cursx
 
 	move	*a13(HTS_STATSADDR),a10,L
@@ -5091,6 +5091,22 @@ aqnmzippo2
 	calla	dec_to_asc
 	calla	copy_string
 	calla	print_string_R
+
+	move	*a13(HTS_STARTX),a0
+	addi	COLOFF1,a0
+	move	a0,@mess_cursx
+	movi	aqnmstr_slash,a4
+	calla	print_string2
+
+	move	*a13(HTS_STARTX),a0
+	addi	COLOFF1+6,a0
+	move	a0,@mess_cursx
+	move	*a13(HTS_STATSADDR),a10,L
+	move	*a10(PS_INJ_GIVEN*10h),a0
+	movi	99,a1			;max value
+	calla	dec_to_asc
+	calla	copy_string
+	calla	print_string
 
 *** turnovers
 

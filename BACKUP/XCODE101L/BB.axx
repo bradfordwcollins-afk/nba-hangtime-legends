@@ -230,6 +230,8 @@
 	; minutes or so.  Since it's always treated as an unsigned value
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
+	BSSX	injfire_team	,16	;INJURY FIRE team (32 = team 1, 0 = team 2, neg = none)
+	.even
 	BSSX	PCNT		,32	;Main loop cnt
 ;;;;	BSSX	PCNT		,16	;Main loop cnt
 
@@ -1866,6 +1868,8 @@ offpbomb_out
 	move	a0,@SHK_ON
 	move	a0,@ballnumscored
 	move	a0,@balltmshotcnt
+	movi	-1,a14
+	move	a14,@injfire_team	;no INJURY FIRE yet this game
 	.if	TEAMZONE
 	move	a0,@tm1_meter_cnt
 	move	a0,@tm2_meter_cnt
@@ -2586,11 +2590,19 @@ hlygx
 
 ***************************************
 * Coin button pressed: start this team's TEAM FIRE if its meter is full.
-* INPUT:  a0 - 0 = team 1 (coin 1 / 2), 1 = team 2 (coin 3 / 4)
+* INPUT:  a0 - coin switch 0-3 (left, right, 3rd, 4th)
+*         4 player kit: coins 1 / 2 = team 1, coins 3 / 4 = team 2
+*         2 player kit: coin 1 = team 1 (player 1), coin 2 = team 2 (player 2)  (3rd / 4th: same as 1st / 2nd)
 * RETURNS a0 !0 (and NZ) when the team fire was started (the coin is then not a credit).
  SUBR	tz_coin_fire
 
 	PUSH	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	@TWOPLAYERS,a14		;0 = 4 player kit, 1 = 2 player kit
+	jrz	tzcf4p
+	andi	1,a0			;2 player kit: 2nd / 4th coin = team 2
+	jruc	tzcfteam
+tzcf4p	srl	1,a0			;4 player kit: coins 3 / 4 = team 2
+tzcfteam
 	move	a0,a3
 	move	@GAMSTATE,a14
 	cmpi	INGAME,a14
@@ -2644,6 +2656,98 @@ hlygr2	clr	a0
 	movi	TEAMZN01,a14
 	move	*a14(0),*a1(OSAG),L		;empty meter frame
 hlygrx	PULL	a0,a1,a14
+	rets
+
+***************************************
+* INJURY FIRE (Super Max menu): once a team's injuries given reach the
+* selected count, that team is on TEAM FIRE for the rest of the game.
+* The first team to reach it keeps it.
+* INPUT:  a1 - pusher player number (0-3)
+ SUBR	injfire_check
+
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	@GAMSTATE,a14
+	cmpi	INGAME,a14
+	jrne	injcx
+	move	@injfire_team,a14	;a team already has it?
+	jrnn	injcx
+	cmpi	3,a1
+	jrhi	injcx
+	move	a1,a3
+	movi	ADJBABY,a0
+	calla	GET_ADJ			;1 = off, 2-9 = 20..75
+	subk	2,a0
+	jrn	injcx
+	cmpi	7,a0
+	jrhi	injcx
+	sll	4,a0
+	addi	injfire_cnt_tbl,a0
+	move	*a0,a2			;injuries needed
+	.ref	player_stats
+	movi	player_stats+(PS_INJ_GIVEN*16),a4
+	movi	32,a9			;team 1 (balltmscored / tmfire_timer value)
+	srl	1,a3			;players 0-1 = team 1, 2-3 = team 2
+	jrz	injct1
+	addi	PS_SIZE*2*16,a4
+	clr	a9			;team 2
+injct1
+	move	*a4,a0
+	move	*a4(PS_SIZE*16),a14	;teammate
+	add	a14,a0
+	cmp	a2,a0
+	jrlo	injcx
+	move	a9,@injfire_team
+	callr	injfire_start
+injcx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	rets
+
+injfire_cnt_tbl
+	.word	20,30,40,50,60,65,70,75
+
+***************************************
+* Start the INJURY FIRE team's fire (puts out the other team's fire)
+* INPUT:  a9 - team (32 = team 1, 0 = team 2)
+* Trashes scratch (callers save)
+ SUBRP	injfire_start
+
+	move	@balltmshotcnt,a14
+	subk	TMFIRE_MINCNT,a14
+	jrn	injsnew			;no team fire right now
+	move	@balltmscored,a14
+	cmp	a9,a14
+	jreq	injsx			;already on fire: its timer now keeps it lit
+injsnew
+	movi	tmfireid,a0		;put out any other team fire
+	calla	KIL1C
+	movi	CLSDEAD|tmfireid,a0
+	calla	obj_del1c
+	.if	TEAMZONE
+	move	a9,a1			;the other team's zone meter empties
+	not	a1
+	andi	32,a1
+	calla	team_meter_reset
+	.endif
+	move	a9,@balltmscored
+	movk	TMFIRE_MINCNT,a0
+	move	a0,@balltmshotcnt
+	CREATE	tmfireid,tmfire_timer
+injsx	rets
+
+***************************************
+* New period: relight the INJURY FIRE if its process is gone
+ SUBR	injfire_resume
+
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	move	@injfire_team,a9
+	jrn	injrx
+	movi	tmfireid,a0
+	movi	0FFFFH,a1
+	calla	EXISTP
+	jrnz	injrx			;still burning
+	clr	a0
+	move	a0,@balltmshotcnt
+	callr	injfire_start
+injrx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
 	rets
 
 tm_meter_img_tbl

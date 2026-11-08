@@ -236,6 +236,9 @@ CLGVAN.IMG
 ---> CLG_VAN
 CLGWAS.IMG
 ---> CLG_WAS
+;stats-page labels: INJURED -> INJ T/G (taken / given)
+HLFSTAT2.IMG
+---> HLFSTAT2
 ASM> newheads.tbl
 GLO> newheads.glo
 PPP> 6

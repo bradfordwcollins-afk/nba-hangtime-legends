@@ -2148,6 +2148,12 @@ zdikply1st
 	movk	1,a4			;Set new # times last plyr scored
 
 zdiksavefire
+	.ref	injfire_team
+	move	@injfire_team,a14	;INJURY FIRE: that team stays on fire
+	jrn	zdikinjx
+	move	a14,a5
+	movk	TMFIRE_MINCNT,a7
+zdikinjx
 	move	a7,*a3			;Save # times last team-shot scored
 	move	a5,-*a3			;Save last team-shot scored (0=tm2,32=tm1)
 	move	a4,-*a3			;Save # times last plyr scored
@@ -4623,6 +4629,21 @@ pyplx	rets
 	move	*a13(plyr_num),a1
 	calla	inc_player_stat
 
+	move	@last_pusher,a0		;the pusher (other team) gets an injury GIVEN
+	cmpi	3,a0
+	jrhi	sqinjx
+	move	*a13(plyr_num),a1
+	xor	a0,a1
+	srl	1,a1			;same team? (players 0-1 / 2-3)
+	jrz	sqinjx
+	move	a0,a1
+	PUSH	a1
+	movk	PS_INJ_GIVEN,a0
+	calla	inc_player_stat
+	PULL	a1
+	.ref	injfire_check
+	calla	injfire_check		;enough to light the INJURY FIRE?
+sqinjx
 	rets
 
 *******************************

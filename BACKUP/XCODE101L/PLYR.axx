@@ -10546,6 +10546,8 @@ uclynx	addi	PDSIZE,a2
 
 
 uclytob
+	.ref	injfire_resume
+	calla	injfire_resume
 ;DJT Start
 	move	@plyr_onfire,a0
 	jrnz	uclynodrnfr

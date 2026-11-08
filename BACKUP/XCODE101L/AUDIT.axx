@@ -369,7 +369,7 @@ lcoin_tz
 CCOIN
 	.if	TEAMZONE
 	.ref	tz_coin_fire
-	movk	1,a0			;Team Zone: full meter + coin = TEAM FIRE
+	movk	2,a0			;Team Zone: full meter + coin = TEAM FIRE
 	calla	tz_coin_fire
 	jrz	ccoin_tz
 	DIE
@@ -383,7 +383,7 @@ ccoin_tz
 RCOIN
 	.if	TEAMZONE
 	.ref	tz_coin_fire
-	clr	a0			;Team Zone: full meter + coin = TEAM FIRE
+	movk	1,a0			;Team Zone: full meter + coin = TEAM FIRE
 	calla	tz_coin_fire
 	jrz	rcoin_tz
 	DIE
@@ -397,7 +397,7 @@ rcoin_tz
 XCOIN
 	.if	TEAMZONE
 	.ref	tz_coin_fire
-	movk	1,a0			;Team Zone: full meter + coin = TEAM FIRE
+	movk	3,a0			;Team Zone: full meter + coin = TEAM FIRE
 	calla	tz_coin_fire
 	jrz	xcoin_tz
 	DIE
@@ -3106,7 +3106,7 @@ FACTORY_TABLE
 	.WORD   1	;HANGTIME FIG	40	;Rubberbanding type
 	.WORD	1	;ADJIDIOT	41	;Idiot boxes en/disabled.
 	.WORD	1	;ADJABA		42	;Basketball Type
-	.WORD	1	;ADJBABY	43	;Baby sized players
+	.WORD	1	;ADJBABY	43	;INJURY FIRE (1 = OFF, 2-9 = 20..75)
 	.WORD	1	;ADJHUGE	44	;Huge Head Mode (Funko pop style)
 	.WORD	1	;ADJHSPOT	45	;Show Hotspot
 	.WORD	1	;ADJPROFA	46	;Profanity

@@ -4018,7 +4018,7 @@ sp_cmoslp
 sp_cmos_1
 	movi	ADJBABY,a0		;Get value from CMOS
 	calla	GET_ADJ			;0-1
-	jrnz	sp_cmos_2		;Off? 
+	jruc	sp_cmos_2		;slot now used by INJURY FIRE 
 
 	movk	3,a0
 	.ref	pup_baby
