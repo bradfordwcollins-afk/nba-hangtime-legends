@@ -408,6 +408,15 @@ qiyxskipgt
 	subk	TMFIRE_MINCNT,a4
 	jrn	qiyxnotmfire		; br=no
 
+	.ref	injfire_all
+	move	@injfire_all,a14	;INJURY FIRE both teams: all 4 players on fire
+	jrz	qiyxnoall
+	movk	15,a2
+	cmpi	15,a3
+	jreq	qiyxchkownr
+	clr	a3			;(re)light everybody
+	jruc	qiyxchkownr
+qiyxnoall
 	movk	2+1,a2			;Set team 1 on-fire
 	move	a1,a1			;Was it team 1?
 	jrnz	qiyxchkownr		; br=yes

@@ -1,72 +1,72 @@
 	.DATA
 TEAMZN30:
-	.long   09afdf4eH
+	.long   09afe2cdH
 TEAMZN29:
-	.long   09afea24H
+	.long   09afeda3H
 TEAMZN28:
-	.long   09aff4faH
+	.long   09aff879H
 TEAMZN27:
-	.long   09afffd0H
+	.long   09b0034fH
 TEAMZN26:
-	.long   09b00aa6H
+	.long   09b00e25H
 TEAMZN25:
-	.long   09b0157cH
+	.long   09b018fbH
 TEAMZN24:
-	.long   09b02052H
+	.long   09b023d1H
 TEAMZN23:
-	.long   09b02b28H
+	.long   09b02ea7H
 TEAMZN22:
-	.long   09b035feH
+	.long   09b0397dH
 TEAMZN21:
-	.long   09b040d4H
+	.long   09b04453H
 TEAMZN20:
-	.long   09b04baaH
+	.long   09b04f29H
 TEAMZN19:
-	.long   09b05680H
+	.long   09b059ffH
 TEAMZN18:
-	.long   09b06156H
+	.long   09b064d5H
 TEAMZN17:
-	.long   09b06c2cH
+	.long   09b06fabH
 TEAMZN16:
-	.long   09b07702H
+	.long   09b07a81H
 TEAMZN15:
-	.long   09b081d8H
+	.long   09b08557H
 TEAMZN14:
-	.long   09b08caeH
+	.long   09b0902dH
 TEAMZN13:
-	.long   09b09784H
+	.long   09b09b03H
 TEAMZN12:
-	.long   09b0a25aH
+	.long   09b0a5d9H
 TEAMZN11:
-	.long   09b0ad30H
+	.long   09b0b0afH
 TEAMZN10:
-	.long   09b0b806H
+	.long   09b0bb85H
 TEAMZN09:
-	.long   09b0c2dcH
+	.long   09b0c65bH
 TEAMZN08:
-	.long   09b0cdb2H
+	.long   09b0d131H
 TEAMZN07:
-	.long   09b0d888H
+	.long   09b0dc07H
 TEAMZN06:
-	.long   09b0e35eH
+	.long   09b0e6ddH
 TEAMZN05:
-	.long   09b0ee34H
+	.long   09b0f1b3H
 TEAMZN04:
-	.long   09b0f90aH
+	.long   09b0fc89H
 TEAMZN03:
-	.long   09b103e0H
+	.long   09b1075fH
 TEAMZN02:
-	.long   09b10eb6H
+	.long   09b11235H
 TEAMZN01:
-	.long   09b1198cH
+	.long   09b11d0bH
 TEAMZN_01r:
 	.word   67,7,0,0
-	.long   09b1198cH
+	.long   09b11d0bH
 	.word   06080H
 	.long   TEAMZ_R_P
 TEAMZN_01b:
 	.word   67,7,0,0
-	.long   09b1198cH
+	.long   09b11d0bH
 	.word   06080H
 	.long   TEAMZ_B_P
 	.TEXT

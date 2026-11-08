@@ -239,6 +239,9 @@ CLGWAS.IMG
 ;stats-page labels: INJURED -> INJ T/G (taken / given)
 HLFSTAT2.IMG
 ---> HLFSTAT2
+;INJURY FIRE: infinity in the team-fire countdown box
+LEDINF.IMG
+---> LEDINF
 ASM> newheads.tbl
 GLO> newheads.glo
 PPP> 6

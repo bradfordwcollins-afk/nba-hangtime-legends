@@ -3045,15 +3045,20 @@ tie_eqrtrt
 
  SUBR	tmfire_timer
 
-	.ref	injfire_team,obj_off,EXISTP,balltmscored
+	.ref	injfire_team,injfire_all,obj_off,EXISTP,balltmscored
+	.ref	LEDINF
 	move	@injfire_team,a14	;INJURY FIRE owns team fire the rest of the game
 	jrn	kugnifok
-	cmp	a9,a14
-	jrne	kugnifdie		;other team can't go on fire
 	movi	tmfireid,a0
+	cmp	a9,a14
+	jreq	kugnifone		;the INJURY FIRE team
+	move	@injfire_all,a14
+	jrz	kugnifdie		;other team can't go on fire
+	movi	tmfire2id,a0		;BOTH TEAMS: the second team
+kugnifone
 	movi	0FFFFH,a1
 	calla	EXISTP
-	jrz	kugnifok		;only one fire process
+	jrz	kugnifok		;only one fire process per team
 kugnifdie
 	DIE
 kugnifok
@@ -3158,12 +3163,30 @@ kugnlp
 	jrnz	kugnlp
 
 	move	@injfire_team,a14	;INJURY FIRE team: stays lit, no countdown
+	jrn	kugnifnorm
 	cmp	a11,a14
-	jrne	kugnifnorm
+	jreq	kugnifown
+	move	@injfire_all,a14
+	jrz	kugnifnorm
+	movi	LEDINF,a0		;countdown box shows infinity
+	move	*a8(OIMG),a14,L
+	cmp	a0,a14
+	jreq	kugninf2
+	move	*a8(OCTRL),a1
+	calla	obj_aniq
+kugninf2
+	jruc	kugnifnorm
+kugnifown
 	movk	TMFIRE_MINCNT,a14
 	move	a14,@balltmshotcnt
 	move	a11,@balltmscored
-	calla	obj_off			;a8 = countdown LED (hidden)
+	movi	LEDINF,a0		;countdown box shows infinity
+	move	*a8(OIMG),a14,L
+	cmp	a0,a14
+	jreq	kugninf1
+	move	*a8(OCTRL),a1
+	calla	obj_aniq
+kugninf1
 kugnifnorm
 
 	move	@balltmshotcnt,a14	;Team stil on-fire?
@@ -3210,6 +3233,8 @@ kugnt1
 	jrz	kugnlptick
 
 kugncont
+	move	@injfire_all,a14
+	jrnz	kugnlptick		;BOTH TEAMS lit: never runs out
 	move	@injfire_team,a14
 	cmp	a11,a14
 	jreq	kugnlptick		;INJURY FIRE never runs out

@@ -243,6 +243,7 @@ adpid		.equ	147
 takepid		.equ	148
 
 tmfireid	.equ	149
+tmfire2id	.equ	249		;INJURY FIRE: second team's fire (both teams)
 flashpid	.equ	150		;For flash_me routine
 
 VOLBTN_PID	.equ	149h		;coin door volume button

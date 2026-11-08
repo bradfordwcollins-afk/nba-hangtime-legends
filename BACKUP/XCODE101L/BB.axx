@@ -231,6 +231,7 @@
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
 	BSSX	injfire_team	,16	;INJURY FIRE team (32 = team 1, 0 = team 2, neg = none)
+	BSSX	injfire_all	,16	;!0 = both teams have INJURY FIRE (everybody on fire)
 	.even
 	BSSX	PCNT		,32	;Main loop cnt
 ;;;;	BSSX	PCNT		,16	;Main loop cnt
@@ -1870,6 +1871,7 @@ offpbomb_out
 	move	a0,@balltmshotcnt
 	movi	-1,a14
 	move	a14,@injfire_team	;no INJURY FIRE yet this game
+	move	a0,@injfire_all
 	.if	TEAMZONE
 	move	a0,@tm1_meter_cnt
 	move	a0,@tm2_meter_cnt
@@ -2669,17 +2671,20 @@ hlygrx	PULL	a0,a1,a14
 	move	@GAMSTATE,a14
 	cmpi	INGAME,a14
 	jrne	injcx
-	move	@injfire_team,a14	;a team already has it?
-	jrnn	injcx
+	move	@injfire_all,a14	;both teams have it already?
+	jrnz	injcx
 	cmpi	3,a1
 	jrhi	injcx
 	move	a1,a3
 	movi	ADJBABY,a0
-	calla	GET_ADJ			;1 = off, 2-9 = 20..75
+	calla	GET_ADJ			;1 = off, 2-17 = 20..75 first / both
 	subk	2,a0
 	jrn	injcx
-	cmpi	7,a0
+	cmpi	15,a0
 	jrhi	injcx
+	move	a0,a5
+	andi	1,a5			;a5 = 1: BOTH TEAMS
+	srl	1,a0
 	sll	4,a0
 	addi	injfire_cnt_tbl,a0
 	move	*a0,a2			;injuries needed
@@ -2691,13 +2696,27 @@ hlygrx	PULL	a0,a1,a14
 	addi	PS_SIZE*2*16,a4
 	clr	a9			;team 2
 injct1
+	move	@injfire_team,a14	;a team already has it?
+	jrn	injcfirst
+	cmp	a9,a14
+	jreq	injcx			;this team already has it
+	move	a5,a5
+	jrz	injcx			;FIRST TEAM: only one team gets it
+injcfirst
 	move	*a4,a0
 	move	*a4(PS_SIZE*16),a14	;teammate
 	add	a14,a0
 	cmp	a2,a0
 	jrlo	injcx
+	move	@injfire_team,a14
+	jrnn	injcsecond
 	move	a9,@injfire_team
 	callr	injfire_start
+	jruc	injcx
+injcsecond
+	movk	1,a14			;BOTH TEAMS: second team lights up too
+	move	a14,@injfire_all
+	callr	injfire_start2
 injcx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
 	rets
 
@@ -2735,6 +2754,20 @@ injsx	rets
 
 ***************************************
 * New period: relight the INJURY FIRE if its process is gone
+***************************************
+* BOTH TEAMS: start the second team's fire (process tmfire2id)
+* INPUT:  a9 - team (32 = team 1, 0 = team 2)
+ SUBRP	injfire_start2
+
+	.if	TEAMZONE
+	move	a9,a1			;its zone meter: empty
+	calla	team_meter_reset
+	.endif
+	CREATE	tmfire2id,tmfire_timer
+	rets
+
+***************************************
+* New period: relight the INJURY FIRE(s) if the process is gone
  SUBR	injfire_resume
 
 	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
@@ -2743,10 +2776,21 @@ injsx	rets
 	movi	tmfireid,a0
 	movi	0FFFFH,a1
 	calla	EXISTP
-	jrnz	injrx			;still burning
+	jrnz	injr2			;still burning
 	clr	a0
 	move	a0,@balltmshotcnt
+	move	@injfire_team,a9
 	callr	injfire_start
+injr2	move	@injfire_all,a14
+	jrz	injrx
+	movi	tmfire2id,a0
+	movi	0FFFFH,a1
+	calla	EXISTP
+	jrnz	injrx
+	move	@injfire_team,a9	;the other team
+	not	a9
+	andi	32,a9
+	callr	injfire_start2
 injrx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
 	rets
 
