@@ -2791,7 +2791,8 @@ hlygx
 * RETURNS a0 !0 (and NZ) when the team fire was started (the coin is then not a credit).
  SUBR	tz_coin_fire
 
-	PUSH	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	PUSH	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10
+	PUSH	a11,a14
 	move	@TWOPLAYERS,a14		;0 = 4 player kit, 1 = 2 player kit
 	jrz	tzcf4p
 	andi	1,a0			;2 player kit: 2nd / 4th coin = team 2
@@ -2845,7 +2846,8 @@ tzcffirst
 	movk	1,a0
 	jruc	tzcfx
 tzcfno	clr	a0
-tzcfx	PULL	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+tzcfx	PULL	a11,a14
+	PULL	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10
 	move	a0,a0
 	rets
 
@@ -2878,7 +2880,8 @@ hlygrx	PULL	a0,a1,a14
 * INPUT:  a1 - pusher player number (0-3)
  SUBR	injfire_check
 
-	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
+	PUSH	a10,a11,a14
 	move	@GAMSTATE,a14
 	cmpi	INGAME,a14
 	jrne	injcx
@@ -2928,7 +2931,8 @@ injcsecond
 	movk	1,a14			;BOTH TEAMS: second team lights up too
 	move	a14,@injfire_all
 	callr	injfire_start2
-injcx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+injcx	PULL	a10,a11,a14
+	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
 	rets
 
 injfire_cnt_tbl
@@ -2987,7 +2991,8 @@ injsx	rets
 * New period: relight the INJURY FIRE(s) if the process is gone
  SUBR	injfire_resume
 
-	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
+	PUSH	a10,a11,a14
 	move	@injfire_team,a9
 	jrn	injrx
 	movi	tmfireid,a0
@@ -3008,7 +3013,8 @@ injr2	move	@injfire_all,a14
 	not	a9
 	andi	32,a9
 	callr	injfire_start2
-injrx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+injrx	PULL	a10,a11,a14
+	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
 	rets
 
 ***************************************
@@ -3016,7 +3022,8 @@ injrx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
 * INPUT:  a1 - blocker's player number (0-3).  Keeps all registers.
  SUBR	block_party
 
-	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	PUSH	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
+	PUSH	a10,a11,a14
 	move	@GAMSTATE,a14
 	cmpi	INGAME,a14
 	jrne	bkpx
@@ -3035,7 +3042,10 @@ bkpt	move	*a2,a0
 	dec	a0
 	move	a0,*a2
 	calla	prt_top_scores		;update the scores at the top
-bkpx	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a14
+	.ref	score_showtvpanel
+	CREATE0	score_showtvpanel	;pop up the score panel with the new score
+bkpx	PULL	a10,a11,a14
+	PULL	a0,a1,a2,a3,a4,a5,a6,a7,a8,a9
 	rets
 
 tm_meter_img_tbl
