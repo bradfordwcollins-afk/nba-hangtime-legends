@@ -2685,7 +2685,7 @@ MESS_HYPSPD
 	.string "HYPER SPEED",0
 	.even
 MESS_STEALT
-	.string "STEALTH TURBO",0
+	.string "NO GOALTENDING",0
 	.even
 
 
@@ -3744,9 +3744,9 @@ HYPSPD_0	.string "HYPER SPEED FOR ALL",0
 	.even
 HYPSPD_1	.string "PLAYERS, NO CODE NEEDED.",0
 	.even
-STEALT_0	.string "STEALTH TURBO FOR ALL",0
+STEALT_0	.string "GOALTENDING IS NEVER",0
 	.even
-STEALT_1	.string "PLAYERS, NO CODE NEEDED.",0
+STEALT_1	.string "CALLED: EVERY SWAT COUNTS.",0
 	.even
 
 ;DJT Start

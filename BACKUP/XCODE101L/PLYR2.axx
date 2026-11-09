@@ -2909,6 +2909,10 @@ udhxnoow
 	cmp	a1,a14
 	jreq	udhxnxt			;Same team?
 
+	movi	ADJSTEALT,a0		;Super Max NO GOALTENDING (0 = on): a clean block
+	calla	GET_ADJ
+	jrz	udhxnogt
+
 ;Turmell, allow ball to be blocked at peak of arc
 	move	*a8(OYVEL),a0,L
 	move	a0,a2

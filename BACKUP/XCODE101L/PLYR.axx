@@ -642,9 +642,7 @@ cspx3on
 	movk	0Fh,a0			;all 4 players
 	move	a0,@pup_hypspeed
 cspx3no
-	movi	ADJSTEALT,a0		;Super Maximum Settings (0 = enabled)
-	calla	GET_ADJ
-	jrnz	cspx4no
+	jruc	cspx4no			;(ADJSTEALT is now NO GOALTENDING)
 cspx4on
 	movk	0Fh,a0			;all 4 players
 	move	a0,@pup_trbstealth
