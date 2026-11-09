@@ -1641,9 +1641,7 @@ gludzippo
 	.ref	cheer4_snd
  	SOUND1	cheer4_snd
 
-	movk	ADJFREPL,a0			;ARE WE IN FREE PLAY?
-	calla	GET_ADJ
-	jrnz	pgpfexit
+	jruc	pgpfexit			;(winner-stays message removed)
 
 	movi	ADJWINMODE,a0
 	calla	GET_ADJ
