@@ -3181,7 +3181,7 @@ rules_name_t
 	.long	rln0,rln1,rln2,rln3,rln4
 rules_tip_t
 	.long	rlt0,rlt1,rlt2,rlt3,rlt4
-rln0	.string	"NORMAL",0
+rln0	.string	"NBA",0
 	.even
 rln1	.string	"BLOCK PARTY",0
 	.even
@@ -3191,7 +3191,7 @@ rln3	.string	"OOP CITY",0
 	.even
 rln4	.string	"DUNKFEST",0
 	.even
-rlt0	.string	"NORMAL RULES",0
+rlt0	.string	"NBA RULES",0
 	.even
 rlt1	.string	"BLOCK PARTY RULES",0
 	.even

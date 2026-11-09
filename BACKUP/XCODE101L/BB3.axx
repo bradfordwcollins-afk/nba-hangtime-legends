@@ -4092,6 +4092,7 @@ xfelTIMEOUT	.equ	60
 
 sp_court
 	clr	a0
+	move	a0,@court_rnd
 	move	a0,*a13(PDATA),L
 	move	a0,*a13(PDATA+32),L
 
@@ -4122,9 +4123,28 @@ xfellp1
 	cmpi	JOY_UP,a10
 	jreq	xfellp2
 
-	jruc	xfellp		; None matched
+	cmpi	JOY_DOWN,a10		;DOWN = random court (home / away / outdoor)
+	jrne	xfellp		; None matched
+	movk	2,a0
+	calla	RNDRNG0
+	move	a0,a14
+	clr	a0
+	clr	a1
+	cmpi	1,a14
+	jrne	xfrn2
+	movk	1,a1			;away team's court
+	jruc	xfrnset
+xfrn2	cmpi	2,a14
+	jrne	xfrnset
+	movk	1,a0			;outdoor
+xfrnset	movk	1,a14
+	move	a14,@court_rnd
+	jruc	xfellp2b
 
 xfellp2					;we enter here if the stick was moved left/right/up
+	clr	a14
+	move	a14,@court_rnd
+xfellp2b
 	move	a0,@pup_court
 	move	a1,@court_away
 
@@ -4189,6 +4209,17 @@ xfellp6d
 	move	a0,@mess_cursy		;added to cursor
 	movi	msg_uground,a4,L	;uground text
 	calla	print_string_C2		;print the text.
+
+	movi	BAST_B_P,a11		;Random: under the team names
+	cmpi	JOY_DOWN,a10
+	jrne	xfrnpal
+	movi	BAST_W_P,a11
+xfrnpal	move	a11,@message_palette,L
+	move	@mess_cursy,a0
+	addi	20,a0
+	move	a0,@mess_cursy
+	movi	msg_random,a4,L
+	calla	print_string_C2
 
 ;(the Vortex text that sat under the others is gone)
 
@@ -4257,6 +4288,8 @@ xfelcba1
 xfelcba2
 	move	*a2(ISAG),*a11(OSAG),L
 	movi	[120,0],a0,L
+	move	@court_rnd,a14		;random: the bottom text
+	jrnz	xfelcbar
 	move	@pup_court,a14		;x position of spinning ball
 	jrnz	xfelcbau		;outdoor: the top text
 	move	@court_away,a14
@@ -4312,6 +4345,11 @@ xfelbw2
 xfelcbau
 	movi	[165,0],a1,L		;Y: level with Outdoor (original height)
 	movi	[159,0],a0,L		;X: just left of Outdoor
+	jruc	xfelcba3
+** Random
+xfelcbar
+	movi	[185,0],a1,L		;Y: level with Random
+	movi	[162,0],a0,L		;X: just left of Random
 	jruc	xfelcba3
 ** Vortex
 xfelcbav
@@ -4557,6 +4595,10 @@ msg_outdoor
 msg_uground
 	.string	"Outdoor",0
 	.even
+msg_random
+	.string	"Random",0
+	.even
+	.bss	court_rnd,16		;!0 = Random picked on the matchup screen
 msg_bluvort
 	.string	"Vortex",0
 	.even

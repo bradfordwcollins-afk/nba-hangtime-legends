@@ -3689,9 +3689,9 @@ HUGE_0	.string "SCORING RULES FOR GAMES.",0
 	.even
 HUGE_1	.string "RANDOM: PICKED ON MATCHUP.",0
 	.even
-HUGE_3	.string "FACTORY SETTING: NORMAL",0
+HUGE_3	.string "FACTORY SETTING: NBA RULES",0
 	.even
-RULE_N1	.string "NORMAL",0
+RULE_N1	.string "NBA RULES",0
 	.even
 RULE_N2	.string "BLOCK PARTY",0
 	.even
