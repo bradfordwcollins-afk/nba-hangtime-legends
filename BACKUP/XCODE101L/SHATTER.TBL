@@ -1,472 +1,472 @@
 	.DATA
 shard1_1:
 	.word   3,1,0,0
-	.long   09b194e8H
+	.long   09b1a0b8H
 	.word   06000H
 	.long   HOOP_p3
 shard1_2:
 	.word   3,2,0,0
-	.long   09b194faH
+	.long   09b1a0caH
 	.word   06000H
 	.long   HOOP_p3
 shard1_3:
 	.word   3,2,0,0
-	.long   09b1951eH
+	.long   09b1a0eeH
 	.word   06000H
 	.long   HOOP_p3
 shard1_4:
 	.word   3,2,0,0
-	.long   09b19542H
+	.long   09b1a112H
 	.word   06000H
 	.long   HOOP_p3
 shard1_5:
 	.word   3,1,0,0
-	.long   09b19566H
+	.long   09b1a136H
 	.word   06000H
 	.long   HOOP_p3
 shard1_6:
 	.word   3,2,0,0
-	.long   09b19578H
+	.long   09b1a148H
 	.word   06000H
 	.long   HOOP_p3
 shard1_7:
 	.word   3,2,0,0
-	.long   09b1959cH
+	.long   09b1a16cH
 	.word   06000H
 	.long   HOOP_p3
 shard1_8:
 	.word   3,2,0,0
-	.long   09b195c0H
+	.long   09b1a190H
 	.word   06000H
 	.long   HOOP_p3
 shard2_1:
 	.word   3,2,1,0
-	.long   09b195e4H
+	.long   09b1a1b4H
 	.word   06000H
 	.long   HOOP_p3
 shard2_2:
 	.word   3,3,1,1
-	.long   09b19608H
+	.long   09b1a1d8H
 	.word   06000H
 	.long   HOOP_p3
 shard2_3:
 	.word   3,3,0,1
-	.long   09b1963eH
+	.long   09b1a20eH
 	.word   06000H
 	.long   HOOP_p3
 shard2_4:
 	.word   3,3,1,1
-	.long   09b19674H
+	.long   09b1a244H
 	.word   06000H
 	.long   HOOP_p3
 shard2_5:
 	.word   3,2,1,0
-	.long   09b196aaH
+	.long   09b1a27aH
 	.word   06000H
 	.long   HOOP_p3
 shard2_6:
 	.word   3,3,0,1
-	.long   09b196ceH
+	.long   09b1a29eH
 	.word   06000H
 	.long   HOOP_p3
 shard2_7:
 	.word   3,3,0,1
-	.long   09b19704H
+	.long   09b1a2d4H
 	.word   06000H
 	.long   HOOP_p3
 shard2_8:
 	.word   3,3,1,1
-	.long   09b1973aH
+	.long   09b1a30aH
 	.word   06000H
 	.long   HOOP_p3
 shard3_1:
 	.word   4,4,1,1
-	.long   09b19770H
+	.long   09b1a340H
 	.word   06000H
 	.long   HOOP_p3
 shard3_2:
 	.word   4,4,1,1
-	.long   09b197d0H
+	.long   09b1a3a0H
 	.word   06000H
 	.long   HOOP_p3
 shard3_3:
 	.word   4,4,1,1
-	.long   09b19830H
+	.long   09b1a400H
 	.word   06000H
 	.long   HOOP_p3
 shard3_4:
 	.word   4,2,1,0
-	.long   09b19890H
+	.long   09b1a460H
 	.word   06000H
 	.long   HOOP_p3
 shard3_5:
 	.word   4,1,1,0
-	.long   09b198c0H
+	.long   09b1a490H
 	.word   06000H
 	.long   HOOP_p3
 shard3_6:
 	.word   3,3,1,1
-	.long   09b198d8H
+	.long   09b1a4a8H
 	.word   06000H
 	.long   HOOP_p3
 shard3_7:
 	.word   4,4,1,1
-	.long   09b1990eH
+	.long   09b1a4deH
 	.word   06000H
 	.long   HOOP_p3
 shard3_8:
 	.word   4,4,1,1
-	.long   09b1996eH
+	.long   09b1a53eH
 	.word   06000H
 	.long   HOOP_p3
 shard3_9:
 	.word   4,4,1,1
-	.long   09b199ceH
+	.long   09b1a59eH
 	.word   06000H
 	.long   HOOP_p3
 shard3_10:
 	.word   3,1,1,0
-	.long   09b19a2eH
+	.long   09b1a5feH
 	.word   06000H
 	.long   HOOP_p3
 shard3_11:
 	.word   4,1,1,0
-	.long   09b19a40H
+	.long   09b1a610H
 	.word   06000H
 	.long   HOOP_p3
 shard3_12:
 	.word   3,3,1,1
-	.long   09b19a58H
+	.long   09b1a628H
 	.word   06000H
 	.long   HOOP_p3
 shard4_1:
 	.word   6,4,2,1
-	.long   09b19a8eH
+	.long   09b1a65eH
 	.word   06000H
 	.long   HOOP_p3
 shard4_2:
 	.word   7,5,3,2
-	.long   09b19b1eH
+	.long   09b1a6eeH
 	.word   06000H
 	.long   HOOP_p3
 shard4_3:
 	.word   5,5,2,2
-	.long   09b19bf0H
+	.long   09b1a7c0H
 	.word   06000H
 	.long   HOOP_p3
 shard4_4:
 	.word   3,4,0,1
-	.long   09b19c86H
+	.long   09b1a856H
 	.word   06000H
 	.long   HOOP_p3
 shard4_5:
 	.word   3,4,1,1
-	.long   09b19cceH
+	.long   09b1a89eH
 	.word   06000H
 	.long   HOOP_p3
 shard4_6:
 	.word   6,4,2,1
-	.long   09b19d16H
+	.long   09b1a8e6H
 	.word   06000H
 	.long   HOOP_p3
 shard4_7:
 	.word   7,5,3,2
-	.long   09b19da6H
+	.long   09b1a976H
 	.word   06000H
 	.long   HOOP_p3
 shard4_8:
 	.word   5,5,2,2
-	.long   09b19e78H
+	.long   09b1aa48H
 	.word   06000H
 	.long   HOOP_p3
 shard4_9:
 	.word   3,5,0,2
-	.long   09b19f0eH
+	.long   09b1aadeH
 	.word   06000H
 	.long   HOOP_p3
 shard4_10:
 	.word   3,4,1,1
-	.long   09b19f68H
+	.long   09b1ab38H
 	.word   06000H
 	.long   HOOP_p3
 shard5_1:
 	.word   4,4,1,1
-	.long   09b19fb0H
+	.long   09b1ab80H
 	.word   06000H
 	.long   HOOP_p3
 shard5_2:
 	.word   5,3,2,1
-	.long   09b1a010H
+	.long   09b1abe0H
 	.word   06000H
 	.long   HOOP_p3
 shard5_3:
 	.word   4,4,1,1
-	.long   09b1a06aH
+	.long   09b1ac3aH
 	.word   06000H
 	.long   HOOP_p3
 shard5_4:
 	.word   3,5,1,2
-	.long   09b1a0caH
+	.long   09b1ac9aH
 	.word   06000H
 	.long   HOOP_p3
 shard5_5:
 	.word   4,4,1,1
-	.long   09b1a124H
+	.long   09b1acf4H
 	.word   06000H
 	.long   HOOP_p3
 shard5_6:
 	.word   5,3,2,1
-	.long   09b1a184H
+	.long   09b1ad54H
 	.word   06000H
 	.long   HOOP_p3
 shard5_7:
 	.word   4,4,1,1
-	.long   09b1a1deH
+	.long   09b1adaeH
 	.word   06000H
 	.long   HOOP_p3
 shard5_8:
 	.word   3,5,1,2
-	.long   09b1a23eH
+	.long   09b1ae0eH
 	.word   06000H
 	.long   HOOP_p3
 shard6_1:
 	.word   3,2,0,0
-	.long   09b1a298H
+	.long   09b1ae68H
 	.word   06000H
 	.long   HOOP_p3
 shard6_2:
 	.word   3,3,0,1
-	.long   09b1a2bcH
+	.long   09b1ae8cH
 	.word   06000H
 	.long   HOOP_p3
 shard6_3:
 	.word   3,3,0,1
-	.long   09b1a2f2H
+	.long   09b1aec2H
 	.word   06000H
 	.long   HOOP_p3
 shard6_4:
 	.word   3,3,0,1
-	.long   09b1a328H
+	.long   09b1aef8H
 	.word   06000H
 	.long   HOOP_p3
 shard6_5:
 	.word   3,3,0,1
-	.long   09b1a35eH
+	.long   09b1af2eH
 	.word   06000H
 	.long   HOOP_p3
 shard6_6:
 	.word   3,3,0,1
-	.long   09b1a394H
+	.long   09b1af64H
 	.word   06000H
 	.long   HOOP_p3
 shard6_7:
 	.word   3,3,0,1
-	.long   09b1a3caH
+	.long   09b1af9aH
 	.word   06000H
 	.long   HOOP_p3
 shard6_8:
 	.word   3,3,0,1
-	.long   09b1a400H
+	.long   09b1afd0H
 	.word   06000H
 	.long   HOOP_p3
 shard7_1:
 	.word   5,5,2,2
-	.long   09b1a436H
+	.long   09b1b006H
 	.word   06000H
 	.long   HOOP_p3
 shard7_2:
 	.word   5,5,2,2
-	.long   09b1a4ccH
+	.long   09b1b09cH
 	.word   06000H
 	.long   HOOP_p3
 shard7_3:
 	.word   3,4,1,1
-	.long   09b1a562H
+	.long   09b1b132H
 	.word   06000H
 	.long   HOOP_p3
 shard7_4:
 	.word   3,4,0,1
-	.long   09b1a5aaH
+	.long   09b1b17aH
 	.word   06000H
 	.long   HOOP_p3
 shard7_5:
 	.word   3,5,1,2
-	.long   09b1a5f2H
+	.long   09b1b1c2H
 	.word   06000H
 	.long   HOOP_p3
 shard7_6:
 	.word   5,5,2,2
-	.long   09b1a64cH
+	.long   09b1b21cH
 	.word   06000H
 	.long   HOOP_p3
 shard7_7:
 	.word   5,6,2,2
-	.long   09b1a6e2H
+	.long   09b1b2b2H
 	.word   06000H
 	.long   HOOP_p3
 shard7_8:
 	.word   3,6,1,2
-	.long   09b1a796H
+	.long   09b1b366H
 	.word   06000H
 	.long   HOOP_p3
 shard7_9:
 	.word   3,6,0,2
-	.long   09b1a802H
+	.long   09b1b3d2H
 	.word   06000H
 	.long   HOOP_p3
 shard7_10:
 	.word   3,6,1,2
-	.long   09b1a86eH
+	.long   09b1b43eH
 	.word   06000H
 	.long   HOOP_p3
 shard8_1:
 	.word   3,2,0,0
-	.long   09b1a8daH
+	.long   09b1b4aaH
 	.word   06000H
 	.long   HOOP_p3
 shard8_2:
 	.word   3,2,0,0
-	.long   09b1a8feH
+	.long   09b1b4ceH
 	.word   06000H
 	.long   HOOP_p3
 shard8_3:
 	.word   3,1,0,0
-	.long   09b1a922H
+	.long   09b1b4f2H
 	.word   06000H
 	.long   HOOP_p3
 shard8_4:
 	.word   3,1,0,0
-	.long   09b1a934H
+	.long   09b1b504H
 	.word   06000H
 	.long   HOOP_p3
 shard8_5:
 	.word   3,1,0,0
-	.long   09b1a946H
+	.long   09b1b516H
 	.word   06000H
 	.long   HOOP_p3
 shard8_6:
 	.word   3,1,0,0
-	.long   09b1a958H
+	.long   09b1b528H
 	.word   06000H
 	.long   HOOP_p3
 shard8_7:
 	.word   3,2,0,0
-	.long   09b1a96aH
+	.long   09b1b53aH
 	.word   06000H
 	.long   HOOP_p3
 shard8_8:
 	.word   3,2,0,0
-	.long   09b1a98eH
+	.long   09b1b55eH
 	.word   06000H
 	.long   HOOP_p3
 shard8_9:
 	.word   3,2,0,0
-	.long   09b1a9b2H
+	.long   09b1b582H
 	.word   06000H
 	.long   HOOP_p3
 shard8_10:
 	.word   3,2,0,0
-	.long   09b1a9d6H
+	.long   09b1b5a6H
 	.word   06000H
 	.long   HOOP_p3
 shat1_1:
 	.word   10,4,4,1
-	.long   09b1a9faH
+	.long   09b1b5caH
 	.word   06000H
 	.long   HOOP_p3
 shat1_2:
 	.word   15,5,7,2
-	.long   09b1aaeaH
+	.long   09b1b6baH
 	.word   06000H
 	.long   HOOP_p3
 shat1_3:
 	.word   20,5,9,2
-	.long   09b1acacH
+	.long   09b1b87cH
 	.word   06000H
 	.long   HOOP_p3
 shat1_4:
 	.word   30,7,14,3
-	.long   09b1af04H
+	.long   09b1bad4H
 	.word   06000H
 	.long   HOOP_p3
 shat1_5:
 	.word   41,9,20,4
-	.long   09b1b3f0H
+	.long   09b1bfc0H
 	.word   06000H
 	.long   HOOP_p3
 shat2_1:
 	.word   7,5,3,2
-	.long   09b1bc96H
+	.long   09b1c866H
 	.word   06000H
 	.long   HOOP_p3
 shat2_2:
 	.word   10,5,4,2
-	.long   09b1bd68H
+	.long   09b1c938H
 	.word   06000H
 	.long   HOOP_p3
 shat2_3:
 	.word   18,7,8,3
-	.long   09b1be94H
+	.long   09b1ca64H
 	.word   06000H
 	.long   HOOP_p3
 shat2_4:
 	.word   27,8,13,3
-	.long   09b1c188H
+	.long   09b1cd58H
 	.word   06000H
 	.long   HOOP_p3
 shat2_5:
 	.word   39,9,19,4
-	.long   09b1c698H
+	.long   09b1d268H
 	.word   06000H
 	.long   HOOP_p3
 shat3_1:
 	.word   3,2,1,0
-	.long   09b1ced2H
+	.long   09b1daa2H
 	.word   06000H
 	.long   HOOP_p3
 shat3_2:
 	.word   4,2,1,0
-	.long   09b1cef6H
+	.long   09b1dac6H
 	.word   06000H
 	.long   HOOP_p3
 shat3_3:
 	.word   8,2,3,0
-	.long   09b1cf26H
+	.long   09b1daf6H
 	.word   06000H
 	.long   HOOP_p3
 shat3_4:
 	.word   12,4,5,1
-	.long   09b1cf86H
+	.long   09b1db56H
 	.word   06000H
 	.long   HOOP_p3
 shat3_5:
 	.word   20,5,9,2
-	.long   09b1d0a6H
+	.long   09b1dc76H
 	.word   06000H
 	.long   HOOP_p3
 shat4_1:
 	.word   3,1,0,0
-	.long   09b1d2feH
+	.long   09b1deceH
 	.word   06000H
 	.long   HOOP_p3
 shat4_2:
 	.word   4,4,1,1
-	.long   09b1d310H
+	.long   09b1dee0H
 	.word   06000H
 	.long   HOOP_p3
 shat4_3:
 	.word   8,5,3,2
-	.long   09b1d370H
+	.long   09b1df40H
 	.word   06000H
 	.long   HOOP_p3
 shat4_4:
 	.word   14,5,6,2
-	.long   09b1d460H
+	.long   09b1e030H
 	.word   06000H
 	.long   HOOP_p3
 shat4_5:
 	.word   12,6,5,2
-	.long   09b1d604H
+	.long   09b1e1d4H
 	.word   06000H
 	.long   HOOP_p3
 	.TEXT
