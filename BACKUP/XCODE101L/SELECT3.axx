@@ -3331,7 +3331,7 @@ dnb_1
 	calla	update_bball_palettes
 
 	.ref	SMAXHINT,smax_allow
-	movi	[77,0],a0		;SHOOT+PASS+TURBO+START = SUPERMAX SETTINGS (flashes)
+	movi	[114,0],a0		;START+COIN = SUPERMAX SETTINGS (flashes)
 	movi	[164,0],a1
 	movi	SMAXHINT,a2
 	movi	90,a3

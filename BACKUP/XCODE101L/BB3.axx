@@ -4003,7 +4003,7 @@ lnizlp
 	movi	msg_ababall,a4,L
 	movi	pwrup_snds,a11
 
-	jruc	pupmsg
+	jruc	pupflash		;(no "ABA Ball" text: GAME RULES uses that spot)
 ;DJT End
 
 *******************************************************************************
@@ -4075,7 +4075,7 @@ sp_cmos_4
 	movi	msg_ababall,a4,L
 	movi	pwrup_snds,a11
 
-	jruc	pupmsg
+	jruc	pupflash		;(no "ABA Ball" text: GAME RULES uses that spot)
 sp_cmos_end
 	DIE 	;check of we can still select court!
 

@@ -686,42 +686,112 @@ mjyeskipit
 * Start button pressed while that player holds SHOOT+PASS+TURBO, on the attract
 * screens or the CHOOSE OPTION menu -> SUPER MAXIMUM SETTINGS.
 * INPUT:  a0 - start switch 0-3 (P1-P4).  RETURNS a0 !0 (NZ) when it started the menu.
+***************************************************************
+* Super Max shortcut allowed? (attract screens or the CHOOSE OPTION menu)
+* Returns Z = no.  Keeps all registers but a14.
+smax_ok
+	move	@GAMSTATE,a14
+	cmpi	INAMODE,a14
+	jreq	smokyes
+	cmpi	INGAME,a14		;never in a game
+	jreq	smokno
+	move	a14,a14
+	jrn	smokno			;(diagnostics)
+	move	@smax_allow,a14		;CHOOSE OPTION screen?
+	jrz	smokno
+smokyes	movk	1,a14
+	rets
+smokno	clr	a14
+	rets
+
+***************************************************************
+* START pressed while a COIN switch is held -> SUPER MAXIMUM SETTINGS
+* RETURNS a0 !0 (NZ) when it started the menu.
  SUBRP	smax_start
 
 	PUSH	a1,a2,a7
-	move	@GAMSTATE,a1
-	cmpi	INAMODE,a1
-	jreq	smsok
-	cmpi	INGAME,a1		;never in a game
-	jreq	smsno
-	move	a1,a1
-	jrn	smsno			;(diagnostics)
-	move	@smax_allow,a1		;CHOOSE OPTION screen?
+	callr	smax_ok
 	jrz	smsno
-smsok
-	move	@_switch_addr,a1,L	;P1 / P2
-	btst	1,a0
-	jrz	smsrd
-	move	@_switch2_addr,a1,L	;P3 / P4
-smsrd	move	*a1,a1
+	move	@_coin_addr,a1,L
+	move	*a1,a1
 	not	a1
-	movi	070H,a2			;shoot / pass / turbo (0 = pressed)
-	btst	0,a0
-	jrz	smsmsk
-	movi	07000H,a2
-smsmsk	and	a2,a1
-	cmp	a2,a1
-	jrne	smsno
-	clr	a1
-	move	a1,@smax_allow
-	.ref	QUICK_SUPER
-	CREATE	DIAG_PID,QUICK_SUPER
+	andi	0183H,a1		;coins 1-4 (0 = pressed)
+	jrz	smsno
+	callr	smax_go
 	movk	1,a0
 	jruc	smsx
 smsno	clr	a0
 smsx	PULL	a1,a2,a7
 	move	a0,a0
 	rets
+
+***************************************************************
+* COIN pressed while a START switch is held -> SUPER MAXIMUM SETTINGS
+* RETURNS NZ when it started the menu (the coin is then not credited).  Keeps a0.
+ SUBRP	smax_coin
+
+	PUSH	a0,a1,a2,a7
+	callr	smax_ok
+	jrz	smcno
+	move	@_coin_addr,a1,L
+	move	*a1,a1
+	not	a1
+	andi	0624H,a1		;starts 1-4 (0 = pressed)
+	jrz	smcno
+	callr	smax_go
+	movk	1,a14
+	jruc	smcx
+smcno	clr	a14
+smcx	PULL	a0,a1,a2,a7
+	move	a14,a14
+	rets
+
+smax_go
+	clr	a1
+	move	a1,@smax_allow
+	.ref	QUICK_SUPER
+	CREATE	DIAG_PID,QUICK_SUPER
+	rets
+
+***************************************************************
+* Attract start: players who were on the CHOOSE OPTION menu when Super Max
+* was opened press START again (automatically).  Called by amode_start.
+ SUBR	smax_rejoin_chk
+
+	PUSH	a0,a1,a7
+	.ref	smax_rejoin_get
+	calla	smax_rejoin_get		;a0 = PSTATUS saved (and cleared)
+	jrz	smrjx
+	move	a0,a9
+	CREATE	0A0F1H,smax_rejoin	;(PID 8000H+: survives WIPEOUT)
+smrjx	PULL	a0,a1,a7
+	rets
+
+smax_rejoin
+	SLEEP	40
+	clr	a10			;slot #
+smrjlp	btst	0,a9
+	jrz	smrjnx
+	movi	TSEC*15/2,a11		;joins not allowed on the first (player info) screen
+smrjw	move	@GAMSTATE,a0
+	cmpi	INPLYRINFO,a0
+	jrne	smrjgo
+	SLEEPK	2
+	dsj	a11,smrjw
+smrjgo	move	a10,a0
+	sll	5,a0
+	addi	smrj_t,a0
+	move	*a0,a7,L
+	movi	0,a1			;(same as a START press)
+	calla	GETPRC
+	SLEEP	20
+smrjnx	srl	1,a9
+	addk	1,a10
+	cmpi	4,a10
+	jrlo	smrjlp
+	DIE
+
+smrj_t	.long	ipeqslot0,ipeqstrtb2,ipeqstrtb3,ipeqslot3
 
  SUBRP	smax_poll
 
@@ -904,7 +974,7 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
 ipeqnoqs
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqstrtb2
-
+ipeqslot0
 	clr	a8			;A8=Player #
 	movi	P1DATA,a11		;A11=*plyr data
 
@@ -985,7 +1055,7 @@ ipeqstrtb3
 ipeqsm4
 	move	@TWOPLAYERS,a0		;0 = NO, 1 = YES 2 players
 	jrnz	ipeqpsb_x
-
+ipeqslot3
 	movk	3,a8
 	movi	P4DATA,a11
 
@@ -2802,6 +2872,11 @@ hlygx
 * RETURNS a0 !0 (and NZ) when the team fire was started (the coin is then not a credit).
  SUBR	tz_coin_fire
 
+	callr	smax_coin		;START held + COIN -> SUPER MAXIMUM SETTINGS
+	jrz	tzcfgo
+	movk	1,a0			;(coin not credited)
+	rets
+tzcfgo
 	PUSH	a1,a2,a3,a4,a5,a6,a7,a8,a9,a10
 	PUSH	a11,a14
 	move	@TWOPLAYERS,a14		;0 = 4 player kit, 1 = 2 player kit

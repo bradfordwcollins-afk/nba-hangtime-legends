@@ -5082,9 +5082,9 @@ rvs_print
 rvs_delays
 	.word	4,4,4,4,4,4,5,5,6,6,7,8,9,11,13,16,20,0
 rvs_setup_b
-	PRINT_STR	bast8_ascii,5,0,200,229,BAST_R_P,0
+	PRINT_STR	bast8_ascii,5,0,200,84,BAST_R_P,0
 rvs_setup_w
-	PRINT_STR	bast8_ascii,5,0,200,229,BAST_W_P,0
+	PRINT_STR	bast8_ascii,5,0,200,84,BAST_W_P,0
 rvs_lbl
 	.string	"GAME RULES: ",0
 	.even

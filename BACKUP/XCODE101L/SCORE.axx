@@ -1566,7 +1566,11 @@ xo
 	movk	SCOREBRD_Y+2,a1
 	jruc	prt_cr
 freep
-	movi	FREEPLT,a2
+	.ref	game_rules,RULPL0,RULPL1,RULPL2,RULPL3,RULPL4
+	move	@game_rules,a2		;GAME RULES plate instead of FREE PLAY
+	sll	5,a2
+	addi	rulpl_t,a2
+	move	*a2,a2,L
 	movi	SCOREBRD_X,a0
 	movi	SCOREBRD_Y,a1
 prt_cr
@@ -1581,6 +1585,8 @@ prt_cr
 
 	PULL	a8,a9
 	rets
+
+rulpl_t	.long	RULPL0,RULPL1,RULPL2,RULPL3,RULPL4
 
 vqhvcreds	.long	CRED_00,CRED_00+9*16*01,CRED_00+9*16*02,CRED_00+9*16*03,CRED_00+9*16*04
 	.long	CRED_00+9*16*05,CRED_00+9*16*06,CRED_00+9*16*07,CRED_00+9*16*08,CRED_00+9*16*09

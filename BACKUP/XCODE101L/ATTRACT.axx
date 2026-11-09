@@ -293,6 +293,8 @@ bgupnxt	move	*a0,a0,L
 	movi	AMODE_PID,a1
 	movi	amode,a7
 	calla	GETPRC
+	.ref	smax_rejoin_chk
+	calla	smax_rejoin_chk		;back from Super Max: players start again
 
 	clr	a0
 	move	a0,@HALT
