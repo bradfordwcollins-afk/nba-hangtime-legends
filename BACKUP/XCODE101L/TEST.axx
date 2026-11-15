@@ -311,7 +311,17 @@ QUICK_SUPER
 	CLR	A0
 	MOVE	A0,@MAIN_RET
 	MOVE	A0,@GMENULEV
+	.ref	smax_to_diag
+	MOVE	A0,@smax_to_diag
 	JSRP	GO_SUPADJ	;the SUPER MAXIMUM SETTINGS page
+	MOVE	@smax_to_diag,A0	;RETURN TO TEST MENU picked?
+	JRZ	QSNODIAG
+	CLR	A0
+	MOVE	A0,@smax_to_diag
+	MOVE	A0,@MAIN_RET
+	MOVE	A0,@GMENULEV
+	JRUC	DIAG_RESTART	;the operator test menu
+QSNODIAG
 	clr	a0
 	move	a0,@_switch_map_mode,L
 	JRUC	DIAG_EX		;validate CMOS and restart, like leaving test mode
