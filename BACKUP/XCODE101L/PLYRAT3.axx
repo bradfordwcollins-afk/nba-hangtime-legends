@@ -991,10 +991,6 @@ VMaxwell_h
 DEllis_h
 	HDMAC	DELLIS1
 
-	.END
-
-
-
 *** body palettes built from the head (install_custom_flesh.py)
 	.def	CARTER_F,PARISH_F
 	.even
@@ -1016,3 +1012,8 @@ PARISH_F
 	.word	034A4H,034A2H,034A0H,034A0H,02C62H,03060H,02C60H,02C60H
 	.word	02064H,02C41H,02041H,02440H,02020H,01C20H,02000H,01C00H
 	.word	01800H,01800H,01000H,00C00H,00800H
+
+	.END
+
+
+
