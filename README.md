@@ -91,6 +91,7 @@ Leaving it returns joined players to the CHOOSE OPTION menu (their credits are r
 - **Injuries given**: pushes that injure an opponent. The halftime / final stats INJURED row reads taken / given (INJ T/G).
 
 ### Fixes and polish
+- Spin move: the turbo double-tap window is wider (~0.24 s instead of ~0.15 s).
 - 2-player cabinet: player 2 can activate Team Zone.
 - Fatality-push fire palette glitch fixed; fatality pushes only by an on-fire pusher.
 - DCS "call 0" sound cut-out fixed.

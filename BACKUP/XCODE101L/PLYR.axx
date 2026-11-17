@@ -2525,8 +2525,8 @@ zmnqnomv
 	move	a0,*a13(plyr_tbutn)
 	subk	1,a14
 	jrlt	zmnqnoelbo			;Too quick?
-	subk	8-1,a14
-	jrgt	zmnqnoelbo			;Too late?
+	subk	13-1,a14
+	jrgt	zmnqnoelbo			;Too late? (13 ticks = ~0.24 s; was 8)
 
 	move	*a13(plyr_seq),a14
 	cmpi	STNDWB_SEQ,a14
