@@ -97,7 +97,7 @@ Leaving it returns joined players to the CHOOSE OPTION menu (their credits are r
 - DCS "call 0" sound cut-out fixed.
 - Garbled select-screen mugs / logos fixed; shatter peeker head removed.
 - "Winner stays on free" message removed from the CHOOSE OPTION screen.
-- Title screen SUPER / LEGENDS.
+- Title screen SUPER / LEGENDS; power-up screen "HANGTIME LEGENDS" with the build date.
 
 ### DIP switches (FBNeo `nbamhtg`)
 Fatality Pushes, Unlimited Turbo, Fast Passing, Hyper Speed, Team Zone, plus the original cabinet / coinage switches.

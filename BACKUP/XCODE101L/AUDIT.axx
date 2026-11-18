@@ -97,6 +97,7 @@ COINCNT2	.EQU	COINCNTR+8
 	.def	P_CONT	
 	.def	PUT_ADJ
 	.def	ROM_NAME
+	.def	BOOT_NAME
 	.def	STRCAT
 	.def	UNIT_CLR
 	.def	WAIT_MUT
@@ -3112,6 +3113,8 @@ ROM_NAME
 ;	.byte	"MAX HANGTIME - VER L1.0 11/08/96",0	;Last dedicated v#
 	.byte	"SUPER MAX HANGTIME - VER M1.05 31/05/26",0	;Last dedicated v#
 ;DJT End
+BOOT_NAME				;boot screen title (ROM_NAME is the CMOS id: unchanged)
+	.byte	"HANGTIME LEGENDS 11/17/26",0
 
 	.even
 

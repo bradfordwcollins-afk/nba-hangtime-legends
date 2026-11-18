@@ -1782,8 +1782,8 @@ struct BurnDriver BurnDrvNbamhtx = {
 // Asure rebuild + Giannis Antetokounmpo replacing Vin Baker (personal build)
 
 static struct BurnRomInfo nbamhtgRomDesc[] = {
-	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xc668d748, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
-	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x917b99a5, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xbe026532, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
+	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x657d43c6, 1 | BRF_PRG | BRF_ESS }, //  1
 
 	{ "l1.0_nba_hangtime_u_2_music_spch.u2",		0x100000, 0x3f0b0d0a, 2 | BRF_PRG | BRF_ESS }, //  2 DCS Sound Banks
 	{ "l1.0_nba_hangtime_u_3_music_spch.u3",		0x100000, 0xec1db988, 2 | BRF_PRG | BRF_ESS }, //  3
