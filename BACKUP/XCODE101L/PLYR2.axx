@@ -754,6 +754,7 @@ qiyxset_divs
 qiyxadj_targx
 	move	@cntl_team,a0		;Adj TARGX to team in control
 	jrn	qiyxnoteam			;Team 0 or 1 or no team if -
+	calla	tm_side_a0		;(sides switched: lead the other way)
 	jrnz	qiyxadj_t1
 	addi	SCRL_EDGE_OFF*2,a3	;2x to fall thru the SUBI
 qiyxadj_t1
