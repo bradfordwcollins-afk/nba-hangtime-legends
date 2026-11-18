@@ -689,6 +689,9 @@ cspx4no
 
  SUBR	plyr_start
 
+	clr	a14
+	move	a14,@sides_swap	;new game: team 1 attacks the right basket
+
 ;	movk	1,a0
 ;	move	a0,@0fff80000H,L
 
@@ -954,6 +957,14 @@ zmnqnot2
 	neg	a14
 	addi	WRLDMID,a14
 zmnqhs_px
+	MMTM	SP,A1
+	move	@sides_swap,a1
+	jrz	zmnqhs_ns
+	subi	WRLDMID,a14
+	neg	a14
+	addi	WRLDMID,a14
+zmnqhs_ns
+	MMFM	SP,A1
 	move	a14,*a13(plyr_hotspotx)
 	move	*a0,a14
 	move	a14,*a13(plyr_hotspotz)
@@ -1367,8 +1378,9 @@ zmnqskipq
 	movi	HOOPLX,a0
 	movi	HOOPRX,a1
 	move	*a13(plyr_num),a14
-	subk	2,a14
-	jrlt	zmnqsethp
+	srl	1,a14
+	calla	tm_side
+	jrz	zmnqsethp
 	SWAP	a0,a1
 zmnqsethp	move	a0,*a13(plyr_myhoopx)
 	move	a1,*a13(plyr_ohoopx)
@@ -4802,6 +4814,7 @@ sloutryhk1
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	sloureg			;Team1?
 
 	move	*a8(OXPOS),a14
@@ -4847,6 +4860,7 @@ sloutryhk2
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	sloutryhk2a		;Team1?
 ;Yes team 1
 	movk	10h,a9			;Fix wrong way hookshot!
@@ -4861,6 +4875,7 @@ sloutryhk2a
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	slourega			;Team1?
 
 	move	*a8(OXPOS),a14
@@ -4905,6 +4920,7 @@ slouahook
 
 	move	*a13(plyr_num),a2
 	srl	1,a2
+	calla	tm_side_a2
 	jrz	sloutg1			;Team1?
 	cmpi	5,a14
 	jrlt	sloutag1			;Team 2 behind hoop
@@ -4939,6 +4955,7 @@ sloutag1
 	srl	32-3,a0			;Kill frac
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	sloulhoop			;Team2?
 	subk	5,a0
 	jrlt	sloutrydunk
@@ -5615,6 +5632,7 @@ slouqucklay2
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrz	sloux			;Team1?
 	movi	M_FLIPH,a14
 	move	a14,*a13(plyr_anirevff)
@@ -5698,6 +5716,7 @@ slouhs1	move	*a13(plyr_dir),a7
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrz	sloux			;Team1?
 	movi	M_FLIPH,a14
 	move	a14,*a13(plyr_anirevff)
@@ -5739,8 +5758,9 @@ slousj2
 	move	a0,@pt3_tval
 	dec	a0
 	move	*a13(plyr_num),a14
-	subk	2,a14
-	jrlt	slou3pt1
+	srl	1,a14
+	calla	tm_side
+	jrz	slou3pt1
 	neg	a0
 slou3pt1	addi	WRLDMID,a0
 	move	*a8(OXANI+16),a14
@@ -5805,6 +5825,7 @@ sloucontxy
 	movk	UNDR_HOOP_SHT_SEQ,a0	;for team 2
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	sloutem2				;br=team1
 	movk	UNDR_HOOP_SHT_SEQ2,a0
 sloutem2
@@ -10560,6 +10581,7 @@ uclynx	addi	PDSIZE,a2
 
 
 uclytob
+	calla	sides_update		;halftime / 1st OT: switch baskets
 	.ref	injfire_resume
 	calla	injfire_resume
 ;DJT Start
@@ -11016,6 +11038,87 @@ nofade_t			;Pals not to fade
 
 
 
+
+	.sect	"shit"			;(free rom area at the top, ROMTV: the main rom is full)
+*******************************
+* Teams switch sides at halftime and in the 1st overtime (install_sides.py)
+* sides_swap: 0 = team 1 attacks the right basket, 1 = the left one
+
+	.bss	sides_swap,16
+	.def	sides_swap
+
+* A14 = team (0/1) -> A14 = side (team XOR sides_swap), Z set if 0
+ SUBR	tm_side
+	MMTM	SP,A0
+	move	@sides_swap,a0
+	xor	a0,a14
+	MMFM	SP,A0
+	move	a14,a14
+	rets
+
+* A14 = 0 / !0 (team) -> side 0/1, Z set if 0
+ SUBR	tm_side_nz
+	move	a14,a14
+	jrz	tmsdnz0
+	movk	1,a14
+tmsdnz0	jruc	tm_side
+
+ SUBR	tm_side_a0
+	MMTM	SP,A1
+	move	@sides_swap,a1
+	xor	a1,a0
+	MMFM	SP,A1
+	move	a0,a0
+	rets
+
+ SUBR	tm_side_a1
+	MMTM	SP,A0
+	move	@sides_swap,a0
+	xor	a0,a1
+	MMFM	SP,A0
+	move	a1,a1
+	rets
+
+ SUBR	tm_side_a2
+	MMTM	SP,A0
+	move	@sides_swap,a0
+	xor	a0,a2
+	MMFM	SP,A0
+	move	a2,a2
+	rets
+
+* Start of a period: Q3/Q4 swapped, Q1/Q2/OT normal. On a change the live players' hoops / hot spots swap.
+ SUBR	sides_update
+	MMTM	SP,A0,A1,A2,A3,A4
+	clr	a1
+	move	@gmqrtr,a0
+	cmpi	2,a0
+	jrlt	sdup1
+	cmpi	3,a0
+	jrgt	sdup1
+	movk	1,a1
+sdup1	move	@sides_swap,a0
+	cmp	a0,a1
+	jreq	sdupx
+	move	a1,@sides_swap
+	movi	plyrproc_t,a2
+	movk	NUMPLYRS,a3
+sduplp	move	*a2+,a4,L
+	jrz	sdupnx
+	move	*a4(plyr_myhoopx),a0
+	move	*a4(plyr_ohoopx),a1
+	move	a1,*a4(plyr_myhoopx)
+	move	a0,*a4(plyr_ohoopx)
+	move	*a4(plyr_hotspotx),a0
+	subi	WRLDMID,a0
+	neg	a0
+	addi	WRLDMID,a0
+	move	a0,*a4(plyr_hotspotx)
+sdupnx	dsj	a3,sduplp
+sdupx	MMFM	SP,A0,A1,A2,A3,A4
+	rets
+	.text
+
 *******************************
 * Player goaltended (Process)
 * A11=*Plyr obj
@@ -11336,7 +11439,8 @@ sitkoutlp
 	callr	plyrtob_moveo3		;Move other plyrs to their spots
 
 	movi	-IBX_OOB,a0		;Set X per team inbounding
-	move	a11,a11
+	move	a11,a14
+	calla	tm_side_nz
 	jrz	sitkoutl			;Team2 on def
 	neg	a0
 sitkoutl	addi	WRLDMID,a0
@@ -11489,7 +11593,8 @@ sitkpassing
 sitkruninlp
 	SLEEPK	1			;Wait till inbounder is back on court
 	movi	-IBX_CRT,a0		;Set X per team inbounding
-	move	a11,a11
+	move	a11,a14
+	calla	tm_side_nz
 	jrz	sitkoutl2			;Team2 on def
 	neg	a0
 sitkoutl2	addi	WRLDMID,a0
@@ -11608,6 +11713,16 @@ sitkgoclock
 	movk	2,a2				;Plyr 3 receives
 	movi	jdbwt2_setup_table,a10
 jdbwsetib
+	move	@sides_swap,a14		;sides switched: mirrored set-up
+	jrz	jdbwnsw
+	move	a11,a11
+	jrz	jdbwm1
+	movi	jdbwt2m_setup_table,a10	;team 2 inbounds on the left
+	movi	[WRLDMID-200-MAX_VIEW1+15,0],a1
+	jruc	jdbwnsw
+jdbwm1	movi	jdbwt1m_setup_table,a10	;team 1 inbounds on the right
+	movi	[WRLDMID-200+MAX_VIEW1-15,0],a1
+jdbwnsw
 	move	a0,@inbound		;Inbounding team
 	move	a1,@WORLDTLX,L
 	subi	[WRLDMID-200,0],a1
@@ -11678,6 +11793,30 @@ jdbwt1_setup_table
 	.word	5,IBZ_DEF2,	WRLDMID-IBX_DEF,	60h	;ply,z,x,face
 	.endif
 
+	.sect	"shit"
+;sides switched: team 1 inbounds on the right
+jdbwt1m_setup_table
+	.word	0,IBZ_OOB,	WRLDMID+IBX_OOB,	60h	;ply,z,x,face
+	.word	1,IBZ_INB,	WRLDMID+IBX_INB,	20h	;ply,z,x,face
+	.word	2,IBZ_DEF1,	WRLDMID+IBX_DEF,	20h	;ply,z,x,face
+	.word	3,IBZ_DEF2,	WRLDMID+IBX_DEF,	20h	;ply,z,x,face
+	.if DRONES_2MORE
+	.word	4,IBZ_DEF1,	WRLDMID+IBX_DEF,	20h
+	.word	5,IBZ_DEF2,	WRLDMID+IBX_DEF,	20h
+	.endif
+
+;sides switched: team 2 inbounds on the left
+jdbwt2m_setup_table
+	.word	3,IBZ_OOB,	WRLDMID-IBX_OOB,	20h	;ply,z,x,face
+	.word	2,IBZ_INB,	WRLDMID-IBX_INB,	60h	;ply,z,x,face
+	.word	0,IBZ_DEF1,	WRLDMID-IBX_DEF,	60h	;ply,z,x,face
+	.word	1,IBZ_DEF2,	WRLDMID-IBX_DEF,	60h	;ply,z,x,face
+	.if DRONES_2MORE
+	.word	4,IBZ_DEF1,	WRLDMID-IBX_DEF,	60h
+	.word	5,IBZ_DEF2,	WRLDMID-IBX_DEF,	60h
+	.endif
+
+	.text
 ;normal setup	(right)
 jdbwt2_setup_table
 	.word	3,IBZ_OOB,	WRLDMID+IBX_OOB,	60h	;ply,z,x,face
@@ -11763,7 +11902,8 @@ vduqoutlp
 	callr	plyrtob_moveo3		;Move other plyrs to their spots
 
 	movi	-IBX_OOB,a0		;Set X per team inbounding
-	move	a11,a11
+	move	a11,a14
+	calla	tm_side_nz
 	jrz	vduqoutl			;Team2 on def
 	neg	a0
 vduqoutl	addi	WRLDMID,a0
@@ -11912,7 +12052,8 @@ kcdyaclp
 
 	movi	-IBX_DEF,a0		;Set X's per team inbounding
 	movi	-IBX_INB,a4
-	move	a11,a11
+	move	a11,a14
+	calla	tm_side_nz
 	jrz	nfhqt2			;Team1 gets?
 	neg	a0
 	neg	a4

@@ -38,6 +38,7 @@
 
 ;sounds external
 
+	.ref	tm_side,tm_side_a0,tm_side_a1,sides_swap
 	.ref	FLAME_F_13,FLAME2F_13
 
 	.ref	ohmy,intercept,into_stnd_sp
@@ -654,6 +655,7 @@ qiyxskpcol
 qiyxscroll
 	move	@inbound,a0		;Doing an inbound?
 	jrn	qiyxnot_inbounding
+	calla	tm_side_a0
 qiyxdunking
 	jrnz	qiyxib_rgt
 	movi	[WRLDMID-200-MAX_VIEW1,0],a3	;TARGX = lft side limit
@@ -712,6 +714,7 @@ qiyxplyr_shooting			;(TARGX = ball X, A5 = plyrpnumlast)
 	move	*a5(plyr_seqflgs),a1
 	btst	DUNK_B,a1		;Is it a dunk? No if 0
 	jrz	qiyxnot_dunking
+	calla	tm_side_a0
 	subk	1,a0			;Yes. Dec team control for condition
 
 
@@ -1954,6 +1957,11 @@ zdiklow
 	clr	a0			;Team 1
 	movk	32,a2
 zdikleft
+	move	@sides_swap,a14		;sides switched: the other team's basket
+	jrz	zdiknsw
+	xori	16,a0
+	xori	32,a2
+zdiknsw
 	addi	scores,a0		;+Base
 	move	@ballptsforshot,a1
 	move	a1,a3
@@ -4080,6 +4088,7 @@ tpiknxt	dsj	a3,tpiklp
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrz	ykhztm1				;br=team 1, right hoop
 	cmpi	HOOPLX-16,a0
 	jrhs	ykhznsq0				;br=player not behind hoop
@@ -5964,8 +5973,9 @@ ngrvf2_l	LW	nflash4,2
 
 wgrbyes
 	move	*a13(plyr_num),a0
-	cmpi	2,a0
-	jrlt	wgrbnofix
+	srl	1,a0
+	calla	tm_side_a0
+	jrz	wgrbnofix
 	addk	9,a7
 ;	addk	1,a7
 wgrbnofix
@@ -6013,8 +6023,9 @@ wgrbnoadjst
 	callr	rnd
 	addi	04000H,a0
 	move	*a13(plyr_num),a1
-	subk	2,a1
-	jrge	wgrbt2
+	srl	1,a1
+	calla	tm_side_a1
+	jrnz	wgrbt2
 	neg	a0
 wgrbt2	movi	-GRAVB*40,a3		;Up
 	jruc	wgrbsetxyz

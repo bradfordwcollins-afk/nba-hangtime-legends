@@ -689,6 +689,7 @@ mjyeskipit
 ***************************************************************
 * Super Max shortcut allowed? (attract screens or the CHOOSE OPTION menu)
 * Returns Z = no.  Keeps all registers but a14.
+	.sect	"shit"		;(free rom area: the main rom is full)
 smax_ok
 	move	@GAMSTATE,a14
 	cmpi	INAMODE,a14
@@ -792,6 +793,7 @@ smrjnx	srl	1,a9
 	DIE
 
 smrj_t	.long	ipeqslot0,ipeqstrtb2,ipeqstrtb3,ipeqslot3
+	.text
 
  SUBRP	smax_poll
 
@@ -959,7 +961,7 @@ switch_t	;(Process ID or 0, *Routine)	;Put in audit??
  SUBR	plyr_strtb1
 
 	clr	a0			;player 1's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
-	callr	smax_start
+	calla	smax_start
 	jrz	ipeqnoqs
 	DIE
 	move	@_switch_addr,a0,L
@@ -995,7 +997,7 @@ ipeqslot0
  SUBR	plyr_strtb2
 
 	movk	1,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
-	callr	smax_start
+	calla	smax_start
 	jrz	ipeqsm2
 	DIE
 ipeqsm2
@@ -1022,7 +1024,7 @@ ipeqstrtb2
  SUBR	plyr_strtb3
 
 	movk	2,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
-	callr	smax_start
+	calla	smax_start
 	jrz	ipeqsm3
 	DIE
 ipeqsm3
@@ -1049,7 +1051,7 @@ ipeqstrtb3
  SUBR	plyr_strtb4
 
 	movk	3,a0		;this player's SHOOT+PASS+TURBO held + START -> SUPER MAXIMUM SETTINGS
-	callr	smax_start
+	calla	smax_start
 	jrz	ipeqsm4
 	DIE
 ipeqsm4
@@ -2872,7 +2874,7 @@ hlygx
 * RETURNS a0 !0 (and NZ) when the team fire was started (the coin is then not a credit).
  SUBR	tz_coin_fire
 
-	callr	smax_coin		;START held + COIN -> SUPER MAXIMUM SETTINGS
+	calla	smax_coin		;START held + COIN -> SUPER MAXIMUM SETTINGS
 	jrz	tzcfgo
 	movk	1,a0			;(coin not credited)
 	rets

@@ -37,6 +37,7 @@
 
 ;symbols externally defined
 
+	.ref	tm_side
 	.ref	plyrobj_t,plyrproc_t
 	.ref	ballobj_p
 	.ref	ballpnum,ballpnumshot
@@ -1721,8 +1722,9 @@ ytfqwob
 
 	move	*a0+,a1
 	move	*a13(plyr_num),a14
-	subk	2,a14
-	jrlt	ytfqlft
+	srl	1,a14
+	calla	tm_side
+	jrz	ytfqlft
 	neg	a1
 ytfqlft
 	addi	WRLDMID,a1

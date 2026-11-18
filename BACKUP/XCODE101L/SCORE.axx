@@ -28,6 +28,7 @@
 	.include	"imgtbl.glo"
 
 	.include	"leds.tbl"
+	.ref	tm_side_nz
 	.ref	READ_DIP
 	.include	"city.tbl"
 	.include	"arrow.tbl"
@@ -3342,6 +3343,9 @@ aibdok
 
 	PUSH	a7,a8
 
+	move	a0,a14			;team -> side (sides switch at halftime)
+	calla	tm_side_nz
+	move	a14,a0
 	move	a0,a8
 
 	movi	clockid,a0

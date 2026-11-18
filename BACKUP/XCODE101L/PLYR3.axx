@@ -54,6 +54,7 @@
 ;symbols externally defined
 
 ;DJT Start
+	.ref	tm_side
 	.ref	game_time
 ;DJT End
 	.ref	gug1,BEdwrd1
@@ -823,6 +824,7 @@ dbuqtvout
 
 	move	*a13(plyr_num),a14
 	srl	1,a14
+	calla	tm_side
 	jrnz	dbuqfdtm2				;br=team 1
 
 	cmpi	JOY_LEFT,a0
@@ -4052,7 +4054,11 @@ wjfoynorm
 
 	movi	HOOPLX-13,a0
 	subk	2,a11
-	jrge	wjfop23
+	move	a11,a14
+	addk	2,a14
+	srl	1,a14
+	calla	tm_side
+	jrnz	wjfop23
 	movi	HOOPRX+13,a0
 	neg	a6
 wjfop23

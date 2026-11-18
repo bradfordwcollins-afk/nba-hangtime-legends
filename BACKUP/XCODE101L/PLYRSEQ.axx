@@ -46,6 +46,7 @@
 
 ;sounds external
 
+	.ref	tm_side_a0
 	.ref	swipe_snd
 
 ;symbols externally defined
@@ -1631,6 +1632,7 @@ set_vels
 	movi	00f000h,a14
 	move	*a13(plyr_num),a0
 	srl	1,a0
+	calla	tm_side_a0
 	jrnz	sxv_1			;br=team 2
 	movi	-00f000h,a14
 sxv_1	move	a14,*a8(OXVEL),L
@@ -1644,6 +1646,7 @@ set_vels2
 	movi	00f000h,a14
 	move	*a13(plyr_num),a0
 	srl	1,a0
+	calla	tm_side_a0
 	jrnz	sxv2_1			;br=team 2
 	movi	-00f000h,a14
 sxv2_1	move	a14,*a8(OXVEL),L
@@ -1657,6 +1660,7 @@ set_vels3
 	movi	006000h,a14
 	move	*a13(plyr_num),a0
 	srl	1,a0
+	calla	tm_side_a0
 	jrnz	sxv3_1			;br=team 2
 	movi	-006000h,a14
 sxv3_1	move	a14,*a8(OXVEL),L
@@ -1895,8 +1899,9 @@ lower_jump
 ;Give seq a little x drift
 	movi	010000H,a2		;For this desperation shot, we
 	move	*a13(plyr_num),a0	;need some x velocity
-	subk	2,a0
-	jrlt	fvptok
+	srl	1,a0
+	calla	tm_side_a0
+	jrz	fvptok
 	movi	-010000H,a2
 fvptok	move	a2,*a8(OXVEL),L
 	rets
