@@ -91,7 +91,7 @@ Leaving it returns joined players to the CHOOSE OPTION menu (their credits are r
 - **Injuries given**: pushes that injure an opponent. The halftime / final stats INJURED row reads taken / given (INJ T/G).
 
 ### Fixes and polish
-- Teams switch baskets at halftime, and again at the start of the 1st overtime.
+- Teams switch baskets at halftime, and again at the start of the 1st overtime (nets swish / burn / bend and the board shatters at the basket actually scored on).
 - Spin move: the turbo double-tap window is wider (~0.24 s instead of ~0.15 s).
 - 2-player cabinet: player 2 can activate Team Zone.
 - Fatality-push fire palette glitch fixed; fatality pushes only by an on-fire pusher.

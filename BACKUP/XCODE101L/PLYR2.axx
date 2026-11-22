@@ -2296,7 +2296,11 @@ zdikhotshk
 zdiknosalt
 	PULL	a1,a6,a10,a11
 zdiknothot
-	move	a2,a0
+	move	a2,a0			;team that scored (0=tm2,32=tm1)
+	move	@sides_swap,a14		;sides switched: its basket is the other one
+	jrz	zdiknasw
+	xori	32,a0
+zdiknasw
 	calla	net_ani			;Do net ani
 
 	move	a11,a0
@@ -2450,6 +2454,10 @@ zdikdoit
 	movi	HOOP_PID,a0
 	calla	KIL1C
 	move	a2,a0
+	move	@sides_swap,a14		;sides switched: the other basket
+	jrz	zdikshsw
+	xori	32,a0
+zdikshsw
 	movk	18,a1			;Big rim bend 10swsh? 11swsh? 12
 	calla	net_ani
 ;	movk	18,a10			;Big shake (JamTE value)
