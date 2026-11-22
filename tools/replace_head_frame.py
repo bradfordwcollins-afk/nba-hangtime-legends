@@ -7,7 +7,7 @@ sys.path.insert(0, __import__("os").path.dirname(__file__)); import imglib
 from PIL import Image
 ap = argparse.ArgumentParser(); ap.add_argument("lib"); ap.add_argument("frame", type=int); ap.add_argument("photo")
 ap.add_argument("box"); ap.add_argument("ellipse"); ap.add_argument("--flip", action="store_true"); ap.add_argument("--out")
-ap.add_argument("--refs", default="3,5,8,14"); ap.add_argument("--reflib"); ap.add_argument("--hair", action="store_true"); ap.add_argument("--height", type=int, default=0)
+ap.add_argument("--refs", default="3,5,8,14"); ap.add_argument("--reflib"); ap.add_argument("--hair", action="store_true"); ap.add_argument("--darkhair", type=float, default=0); ap.add_argument("--hairframe", type=int, default=2); ap.add_argument("--hairtop", type=float, default=0.6); ap.add_argument("--height", type=int, default=0)
 a = ap.parse_args()
 b, ii, pp = imglib.read_lib(a.lib); k = a.frame - 1
 pal = pp[ii[k]["pal"] - imglib.PAL_BASE]["colors"]
@@ -30,6 +30,22 @@ for r in (int(v) - 1 for v in a.refs.split(",")):
     im = ri[r]; p2 = rp[im["pal"] - imglib.PAL_BASE]["colors"]
     ref += [p2[c] for c in imglib.pixels(rb, im) if c and isskin(p2[c])]
 hp = head.load(); orig_img = head.copy(); orig_hp = orig_img.load()
+hairmask = Image.new("L", head.size, 0)
+if a.darkhair:
+    hm = hairmask.load()
+    for y in range(int(head.height * a.hairtop)):
+        for x in range(head.width):
+            c = hp[x, y]
+            if c[3] > 110 and 0.3 * c[0] + 0.59 * c[1] + 0.11 * c[2] < a.darkhair: hm[x, y] = 255
+    import numpy as _np
+    from scipy import ndimage as _nd
+    _m = _np.asarray(hairmask) > 0
+    _m = _nd.binary_opening(_m, iterations=2)
+    _lab, _n = _nd.label(_m)
+    _op = _np.asarray(head)[..., 3] > 110
+    _top = _np.argmax(_op.any(1))
+    _keep = [i for i in range(1, _n + 1) if _np.nonzero(_lab == i)[0].min() <= _top + 0.12 * head.height and (_lab == i).sum() > 0.01 * _op.sum()]
+    hairmask = Image.fromarray((_np.isin(_lab, _keep) * 255).astype(_np.uint8))
 import numpy as np
 from scipy import ndimage
 cand = np.array([[hp[x, y][3] > 110 and isband(hp[x, y]) for x in range(head.width)] for y in range(head.height)])
@@ -52,12 +68,19 @@ mask = Image.new("L", head.size, 0); mp = mask.load()
 for (x, y) in band: mp[x, y] = 255
 sm = head.resize((W, H), Image.LANCZOS); lum_s = lumimg.resize((W, H), Image.LANCZOS); m_s = mask.resize((W, H), Image.LANCZOS)
 neutral = [i for i in range(1, len(pal)) if isband(pal[i])]
+hm_s = hairmask.resize((W, H), Image.LANCZOS)
+hrb, hri, hrp = (rb, ri, rp)
+hairidx = sorted(set(c for c in imglib.pixels(hrb, hri[a.hairframe - 1]) if c), key=lambda i: sum(pal[i][:3]))
+hairidx = [i for i in hairidx if sum(pal[i][:3]) / 3 < 45] or hairidx[:4]
 skinpal = [i for i in range(1, len(pal)) if not isband(pal[i])]
 out = []
 for y in range(H):
     for x in range(W):
         c = sm.getpixel((x, y))
         if c[3] <= 110: out.append(0); continue
+        if a.darkhair and hm_s.getpixel((x, y)) > 140:
+            l = sum(orig_img.resize((W, H), Image.LANCZOS).getpixel((x, y))[:3]) / 3 if False else None
+            out.append(hairidx[min(len(hairidx) - 1, (x * 7 + y * 3) % 3)]); continue
         if m_s.getpixel((x, y)) > 127 and neutral:
             l = lum_s.getpixel((x, y)) * 255 / max(1, m_s.getpixel((x, y)))
             out.append(min(neutral, key=lambda i: abs(sum(pal[i]) / 3 - l))); continue
