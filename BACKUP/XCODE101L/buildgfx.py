@@ -113,6 +113,32 @@ def fix_palette():
     print("Wrote IMGPAL8.ASM")
 
 
+# Program ROM .text is full: the image headers / palettes of these heads go to the spare "shit" section.
+SPARE_HEADS = ["XBOG", "XSTE", "XKLA"]
+
+
+def move_to_spare():
+    script_dir = Path(__file__).parent.resolve()
+    import re
+    for fname, pat in (("NEWHEADS.TBL", r"^(%s)\d\d:"), ("IMGPAL8.ASM", r"^(%s)_P:")):
+        path = script_dir / fname
+        if not path.exists():
+            path = script_dir / fname.lower()
+        lines = path.read_text().split("\n")
+        out, inside = [], False
+        rx = re.compile(pat % "|".join(SPARE_HEADS))
+        for ln in lines:
+            label = re.match(r"^\w+:", ln)
+            if label and rx.match(ln) and not inside:
+                out += ['\t.sect\t"shit"', "\t.even"]; inside = True
+            elif label and inside and not rx.match(ln):
+                out += ["\t.text"]; inside = False
+            out.append(ln)
+        if inside: out.append("\t.text")
+        path.write_text("\n".join(out))
+        print(f"Moved {', '.join(SPARE_HEADS)} to the spare section in {path.name}")
+
+
 def main():
     script_dir = Path(__file__).parent.resolve()
 
@@ -140,6 +166,7 @@ def main():
 
     make_rom()
     fix_palette()
+    move_to_spare()
 
 
 if __name__ == "__main__":

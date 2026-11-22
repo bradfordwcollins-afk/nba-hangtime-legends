@@ -80,6 +80,7 @@
 	.globl	XALD_P
 	.globl	XMAR_P
 	.globl	XSTE_P
+	.globl	XBOG_P
 	.globl	XKLA_P
 	.globl	XCCP_P
 	.globl	XGRI_P
@@ -359,6 +360,7 @@
 	.def	Xald_h
 	.def	Xmar_h
 	.def	Xste_h
+	.def	Xbog_h
 	.def	Xkla_h
 	.def	Xccp_h
 	.def	Xgri_h
@@ -582,6 +584,12 @@ Xald_h
 
 Xmar_h
 	HDMAC	XMAR01	; Jam #57, from NBA Jam 50 (Double Z & Wake)
+
+	.sect	"shit"
+	.even
+Xbog_h
+	HDMAC	XBOG01	; Muggsy Bogues, from photos
+	.text
 
 Xste_h
 	HDMAC	XSTE01	; Jam #29, from NBA Jam 50 (Double Z & Wake)

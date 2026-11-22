@@ -222,6 +222,7 @@
 	.ref	Xgar_h
 	.ref	Xant_h
 	.ref	Xlam_h
+	.ref	Xbog_h
 	.ref	Xspr_h
 	.ref	Xwes_h
 	.ref	Xsga_h
@@ -817,7 +818,7 @@ BOST_t
 
 CHAR_t
 	LWWWWWW	scale57et_t,BV10,SHT7,DNK0,DEF0,SDEF10,DSKL5	;MUGGSY BOGUES
-	.long	ALLEN_F, LUN_CHAP_P,LUN_CHAS_P, LTR_CHAP_P,LTR_CHAS_P,allen_h
+	.long	ALLEN_F, LUN_CHAP_P,LUN_CHAS_P, LTR_CHAP_P,LTR_CHAS_P,Xbog_h
 	.word	10,1,7,0
 	.long	LSW_CHAP_P,LSW_CHAS_P,LVP_CHAP_P,LVP_CHAS_P
 	LWWWWWW	scale65_t,BV7,SHT9,DNK2,DEF1,SDEF6,DSKL5	;CURRY

@@ -138,6 +138,7 @@
 	.def	XALD_P
 	.def	XMAR_P
 	.def	XSTE_P
+	.def	XBOG_P
 	.def	XKLA_P
 	.def	XCCP_P
 	.def	XGRI_P
