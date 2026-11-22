@@ -1752,10 +1752,10 @@ static struct BurnRomInfo nbamhtxRomDesc[] = {
 	{ "l1.0_nba_hangtime_u_119_image_rom.u119",		0x100000, 0xb4f604ea, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 2) }, // 20
 	{ "l1.0_nba_hangtime_u_118_image_rom.u118",		0x100000, 0xa257b973, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 3) }, // 21
 
-	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x9ed34893, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
-	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x0657fd47, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
-	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0xb4cd301d, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
-	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x1347c0b5, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
+	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x784a2196, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
+	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0xfa046a03, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
+	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x04754d06, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
+	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x1d9c6cf3, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
 	
 	{ "l1.0_nba_hangtime_u_113_image_rom.u113",		0x100000, 0xd712a779, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 0) }, // 26 GFX Bank 5
 	{ "l1.0_nba_hangtime_u_112_image_rom.u112",		0x100000, 0x644e1bca, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 1) }, // 27
@@ -1810,10 +1810,10 @@ static struct BurnRomInfo nbamhtgRomDesc[] = {
 	{ "l1.0_nba_hangtime_u_119_image_rom.u119",		0x100000, 0xb4f604ea, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 2) }, // 20
 	{ "l1.0_nba_hangtime_u_118_image_rom.u118",		0x100000, 0xa257b973, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 3) }, // 21
 
-	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x9ed34893, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
-	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x0657fd47, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
-	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0xb4cd301d, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
-	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x1347c0b5, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
+	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x784a2196, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
+	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0xfa046a03, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
+	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x04754d06, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
+	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x1d9c6cf3, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
 	
 	{ "l1.0_nba_hangtime_u_113_image_rom.u113",		0x100000, 0xd712a779, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 0) }, // 26 GFX Bank 5
 	{ "l1.0_nba_hangtime_u_112_image_rom.u112",		0x100000, 0x644e1bca, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 1) }, // 27
