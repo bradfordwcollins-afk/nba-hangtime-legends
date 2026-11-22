@@ -40,7 +40,7 @@ def write_lib(path, b, imgs, pals, new):
     body = bytearray(b[:28])
     pal_offs = []
     for p in pals:
-        pal_offs.append(len(body)); body += struct.pack(f"<{p['n']}H", *p["words"])
+        pal_offs.append(len(body)); body += struct.pack(f"<{len(p['words'])}H", *p["words"])
     img_offs, dims = [], []
     for k, im in enumerate(imgs):
         if k in new: w, h, ax, ay, px = new[k]
@@ -52,6 +52,6 @@ def write_lib(path, b, imgs, pals, new):
         rec = bytearray(im["rec"]); struct.pack_into("<HhhHHHI", rec, 16, im["flags"], ax, ay, w, h, im["pal"], off); body += rec
     nimg, npal, odir = struct.unpack_from("<HHI", b, 0)
     for i, p in enumerate(pals):
-        r = bytearray(b[odir + nimg * 50 + i * 26: odir + nimg * 50 + i * 26 + 26]); struct.pack_into("<I", r, 14, pal_offs[i]); body += r
+        r = bytearray(b[odir + nimg * 50 + i * 26: odir + nimg * 50 + i * 26 + 26]); struct.pack_into("<HI", r, 12, len(p["words"]), pal_offs[i]); body += r
     struct.pack_into("<HHI", body, 0, nimg, npal, diro)
     open(path, "wb").write(body)
