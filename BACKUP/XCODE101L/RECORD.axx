@@ -5595,7 +5595,7 @@ hwpjt12	.string	"L.A. LAKERS",0
 hwpjt13	.string	"MIAMI HEAT",0
 hwpjt14	.string	"MILWAUKEE BUCKS",0
 hwpjt15	.string	"MINNESOTA TIMBERWLVS",0
-hwpjt16	.string	"NEW JERSEY NETS",0
+hwpjt16	.string	"BROOKLYN NETS",0
 hwpjt17	.string	"NEW YORK KNICKS",0
 hwpjt18	.string	"ORLANDO MAGIC",0
 hwpjt19	.string	"PHILADELPHIA 76ERS",0
@@ -5606,7 +5606,7 @@ hwpjt23	.string	"SAN ANTONIO SPURS",0
 hwpjt24	.string	"SEATTLE SUPERSONICS",0
 hwpjt25	.string	"TORONTO RAPTORS",0
 hwpjt26	.string	"UTAH JAZZ",0
-hwpjt27	.string	"VANCOUVER GRIZZLIES",0
+hwpjt27	.string	"MEMPHIS GRIZZLIES",0
 hwpjt28	.string	"WASHINGTON WIZARDS",0
 hwpjt29	.string	"USA DREAM TEAM",0
 hwpjt30	.string	"NEW ORLEANS PELICANS",0

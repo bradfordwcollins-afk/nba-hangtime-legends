@@ -1604,7 +1604,7 @@ tm_city_spch_tbl
  .word	0100DH,37,04d8H		;13 MIAMI
  .word	0100DH,39,04dbH		;14 MILWAUKEE
  .word	0100DH,39,04deH		;15 MINNESOTTA
- .word	0100DH,38,04e1H		;16 NEW JERSEY
+ .word	0100DH,22,04e2H		;16 BROOKLYN		"Nets" (no "Brooklyn" call)
  .word	0100DH,37,04e4H		;17 NEW YORK
  .word	0100DH,41,04e7H		;18 ORLANDO
  .word	0100DH,44,04eaH		;19 PHILADELPHIA
@@ -1615,7 +1615,7 @@ tm_city_spch_tbl
  .word	0100DH,34,04f9H		;24 SEATTLE
  .word	0100DH,40,04fcH		;26 TORONTO
  .word	0100DH,32,04ffH		;26 UTAH
- .word	0100DH,38,0502H		;27 VANCOUVER
+ .word	0100DH,39,0503H		;27 MEMPHIS		"Grizzlies" (no "Memphis" call)
  .word	0100DH,44,0505H		;28 WASHINGTON
  .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	00007H,0,0		;30 NEW ORLEANS (no call)
@@ -1639,7 +1639,7 @@ full_tm_name_spch_tbl
  .word	0100DH,64 ,04d7H		;13 MIAMI		"Heat"
  .word	0100DH,82 ,04daH		;14 MILWAUKEE		"Bucks"
  .word	0100DH,94 ,04ddH		;15 MINNESOTTA		"Timberwolves"
- .word	0100DH,81 ,04e0H		;16 NEW JERSEY		"Nets"
+ .word	0100DH,22,04e2H		;16 BROOKLYN		"Nets" (no "Brooklyn" call)
  .word	0100DH,76 ,04e3H		;17 NEW YORK		"Knicks"
  .word	0100DH,81 ,04e6H		;18 ORLANDO		"Magic"
  .word	0100DH,117,04e9H		;19 PHILADELPHIA	"Sixers"
@@ -1650,7 +1650,7 @@ full_tm_name_spch_tbl
  .word	0100DH,100,04f8H		;24 SEATTLE		"Supersonics"
  .word	0100DH,93 ,04fbH		;26 TORONTO		"Raptors"
  .word	0100DH,82 ,04feH		;26 UTAH		"Jazz"
- .word	0100DH,104,0501H		;27 VANCOUVER		"Grizzlies"
+ .word	0100DH,39,0503H		;27 MEMPHIS		"Grizzlies" (no "Memphis" call)
  .word	0100DH,44,0505H		;28 WASHINGTON		"Washington" (no "Wizards" call)
  .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	00007H,0,0		;30 NEW ORLEANS (no call)

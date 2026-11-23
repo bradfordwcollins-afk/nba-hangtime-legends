@@ -23,7 +23,7 @@
 	.include	"sys.equ"
 	.include	"gsp.equ"
 	.include	"imgtbl.glo"
-	.ref	city_drm,city_nop
+	.ref	city_drm,city_nop,city_mem,city_bkn
 	.include	"bgndtbl.glo"
 	.include	"game.equ"
 	.include	"audit.equ"
@@ -1853,7 +1853,7 @@ bast8_ascii
  .long	city_mia		;MIAMI
  .long	city_mil		;MILWAUKEE
  .long	city_min		;MINNESOTA
- .long	city_nej		;NEW JERSEY
+ .long	city_bkn		;BROOKLYN (was New Jersey)
  .long	city_ney		;NEW YORK
  .long	city_orl		;ORLANDO
  .long	city_phi		;PHILADELPHIA
@@ -1864,7 +1864,7 @@ bast8_ascii
  .long	city_sea		;SEATTLE
  .long	city_tor		;TORONTO (new)
  .long	city_uta		;UTAH
- .long	city_van		;VANCOUVER (new)
+ .long	city_mem		;MEMPHIS (was Vancouver)
  .long	city_was		;WASHINGTON
  .long	city_drm		;DREAM TEAM
  .long	city_nop		;NEW ORLEANS

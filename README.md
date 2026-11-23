@@ -60,6 +60,8 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - **New Orleans Pelicans** (31st team): Anthony Davis (moved from Washington), David West and Jrue Holiday
   (both new players with their own heads and headshots), in navy/gold, with the Pelicans logo on the select
   screen and centre court. Washington keeps Webber, Howard and Beal.
+- Vancouver is now **Memphis** and New Jersey is now **Brooklyn**; the select list is in alphabetical order
+  (Dream Team last). Washington are the Wizards.
 - Centre-court logos for every team; lanes and aprons coloured to match the jerseys, smoothed shading.
 - Matchup-screen court choice: **Home / Away / Outdoor / Random** (team names shown).
   The Underground and Vortex courts were removed to free image ROM.

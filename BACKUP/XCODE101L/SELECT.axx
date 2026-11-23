@@ -673,10 +673,9 @@ mlirwait_for_players
 	CREATE0	team1_random_select
 	clr	a9
 	calla	create_name_backplate
-	clr	a0
+	movk	1,a0				;list pos 1 = Chicago (Brooklyn is above it)
 	move	a0,@tm1_cur_pos
-	addi	MIDDLE_TEAM_NAME-1,a0
-	move	a0,@team1
+	calla	set_team1_team_nbr
 	calla	create_team1_city_names
 
 	clr	a0
@@ -1006,10 +1005,9 @@ mlirwait_for_players2
 	CREATE0	team2_random_select
 	movk	1,a9
 	calla	create_name_backplate
-	clr	a0
+	movk	1,a0				;list pos 1 = Chicago (Brooklyn is above it)
 	move	a0,@tm2_cur_pos
-	addi	MIDDLE_TEAM_NAME-1,a0		;wasn't zero relative
-	move	a0,@team2
+	calla	set_team2_team_nbr
 	calla	create_team2_city_names
 
 	clr	a0

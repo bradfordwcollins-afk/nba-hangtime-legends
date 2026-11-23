@@ -21,6 +21,7 @@
 	.include	"gsp.equ"
 
 	.include	"imgtbl.glo"
+	.ref	city_mem,city_bkn
 	.include	"imgtbl2.glo"
 	.include	"bgndtbl.glo"
 	.include	"game.equ"
@@ -540,7 +541,7 @@ uniform_img_tbl
 	.long	city_mia
 	.long	city_mil
 	.long	city_min
-	.long	city_nej
+	.long	city_bkn
 	.long	city_ney
 	.long	city_orl
 	.long	city_phi
@@ -551,7 +552,7 @@ uniform_img_tbl
 	.long	city_sea
 	.long	city_tor
 	.long	city_uta
-	.long	city_van
+	.long	city_mem
 	.long	city_was
 	.long	CUST1
 	.long	CUST2

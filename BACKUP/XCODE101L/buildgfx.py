@@ -144,7 +144,7 @@ def patch_names3():
     import re
     path = Path(__file__).parent.resolve() / "NAMES3.TBL"
     t = path.read_text()
-    t = re.sub(r"(\n(?:DREAM|NOLA):\n(?:.*\n){3})\t\.long\s+BAST_Y_P", r"\1\t.long   BST18Y_P", t)
+    t = re.sub(r"(\n(?:DREAM|NOLA|MEMPH|BRKLN):\n(?:.*\n){3})\t\.long\s+BAST_Y_P", r"\1\t.long   BST18Y_P", t)
     path.write_text(t)
     print("Patched DREAM palette in NAMES3.TBL")
 

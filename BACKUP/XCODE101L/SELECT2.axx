@@ -36,7 +36,8 @@
 	.include	"mugshot.glo"
 	.include	"sel2img.glo"	; trimmed imgtbl.glo (memory)
 	.ref	city_drm,DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING
-	.ref	city_nop,DWEST,HOLIDAY
+	.ref	city_nop,DWEST,HOLIDAY,city_mem,city_bkn
+	.ref	bast8_ascii
 	.include	"imgtblp.glo"
 	.include	"imgtbl2.glo"
 	.include	"imgtbl7.glo"
@@ -1577,12 +1578,9 @@ fnzcshadows
 ;
 	movi	[X1,0],a0		;x val
 	movi	[Y1,0],a1		;y val
-	move	@team1,a2
-	move	a2,a14
-	sll	4,a14				;word length
-	sll	5,a2				;LONG length
-	add	a14,a2
-	addi	city_table_start,a2
+	move	@team1,a2			;city name img by team # (the select list is in display order)
+	sll	5,a2
+	addi	bast8_ascii+90H*32,a2
 	move	*a2,a2,L
 	movi	300,a3			;z pos
 	movi	DMAWNZ|M_SCRNREL,a4		;DMA flags
@@ -1596,12 +1594,9 @@ fnzcshadows
 ;
 	movi	[X1,0],a0		;x val
 	movi	[Y2,0],a1		;y val
-	move	@team2,a2
-	move	a2,a14
-	sll	4,a14				;word length
-	sll	5,a2				;LONG length
-	add	a14,a2
-	addi	city_table_start,a2
+	move	@team2,a2			;city name img by team # (the select list is in display order)
+	sll	5,a2
+	addi	bast8_ascii+90H*32,a2
 	move	*a2,a2,L
 	movi	BAST_W_P,b0,L
 	calla	BEGINOBJP2		;plot TEAM2 CITY NAME
@@ -5234,7 +5229,7 @@ min_str
 min2_str
 	.string	"T'WOLVES",0
 new_str
-	.string	"NEW JERSEY",0
+	.string	"BROOKLYN",0
 new2_str
 	.string	"NETS",0
 ney_str
@@ -5278,7 +5273,7 @@ tor_str
 tor2_str
 	.string	"RAPTORS",0
 van_str
-	.string	"VANCOUVER",0
+	.string	"MEMPHIS",0
 van2_str
 	.string	"GRIZZLIES",0
 was_str
@@ -5347,13 +5342,14 @@ logos
 ;
 ; Its used for the CURSOR control on the new team select screen
 ;-----------------------------------------------------------------------------
-	LW	city_van,_VAN
+	LW	city_tor,_TOR
+	LW	city_uta,_UTA
 	LW	city_was,_WAS
 	LW	city_drm,_DRM
-	LW	city_nop,_NOP
 city_table_start
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
+	LW	city_bkn,_NJ		;Brooklyn (New Jersey's slot)
 	LW	city_cha,_CHA
 	LW	city_chi,_CHI
 	LW	city_cle,_CLE
@@ -5366,10 +5362,11 @@ city_table_start
 	LW	city_lac,_LAC
 	LW	city_lal,_LAL
 ;;	LW	city_los,_LOS
+	LW	city_mem,_VAN		;Memphis (Vancouver's slot)
 	LW	city_mia,_MI
 	LW	city_mil,_MIL
 	LW	city_min,_MIN
-	LW	city_nej,_NJ
+	LW	city_nop,_NOP
 	LW	city_ney,_NY
 	LW	city_orl,_ORL
 	LW	city_phi,_PHI
@@ -5380,18 +5377,16 @@ city_table_start
 	LW	city_sea,_SEA
 	LW	city_tor,_TOR
 	LW	city_uta,_UTA
-	LW	city_van,_VAN
 	LW	city_was,_WAS
 	LW	city_drm,_DRM
-	LW	city_nop,_NOP
 city_table_end
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
+	LW	city_bkn,_NJ
 	LW	city_cha,_CHA
 	LW	city_chi,_CHI
 	LW	city_cle,_CLE
 	LW	city_dal,_DAL
-	LW	city_den,_DEN
 city_table_end2
 
 	
