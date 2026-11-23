@@ -629,14 +629,13 @@ mlirwait_loop3
 	clr	a0
 	move	a0,@tm1_random_sel			;not in random select mode
 	move	a0,@tm2_random_sel			;not in random select mode
-	movi	NUM_TEAMS-1,a0			;0-29
-	calla	RNDRNG0				;random team
-	move	a0,@tm1_random_team_nbr
-	movi	NUM_TEAMS-1,a0			;0-29
-	calla	RNDRNG0				;random team
-	move	a0,@tm2_random_team_nbr
-	movk	15,a0
+	movi	NUM_TEAMS-1,a0			;random spin length: 30 + 0..30 steps
+	calla	RNDRNG0				;(lands on any team with equal odds)
+	addk	30,a0
 	move	a0,@tm1_random_cycle_cnt
+	movi	NUM_TEAMS-1,a0
+	calla	RNDRNG0
+	addk	30,a0
 	move	a0,@tm2_random_cycle_cnt
 	rets
 
@@ -687,6 +686,15 @@ mlirrj_1
 	jrnz	mlirrj1_die			;br=in halftime substitutions
 
 	callr	update_tm1_rnd_select_ram
+	move	@tm1_random_sel,a0		;random spin: slow down over the last 10 steps
+	jrle	mlirsl1
+	move	@tm1_random_cycle_cnt,a0
+	subk	10,a0
+	jrge	mlirsl1
+	neg	a0
+	sll	2,a0				;4,8..36 extra ticks per step
+	calla	PRCSLP
+mlirsl1
 ;DJT Start
 	move	@tm1_cur_pos,a2
 ;DJT End
@@ -796,19 +804,12 @@ t1rs_2
 
 	move	@tm1_random_sel,a0		;in random select mode ?
 	jrle	mlirut1_1				;br=nope
-	move	@tm1_random_cycle_cnt,a0
-	dec	a0
+	move	@tm1_random_cycle_cnt,a0	;steps left (random 30-60): spin fast,
+	dec	a0				;then slow down over the last 10
 	move	a0,@tm1_random_cycle_cnt
 	move	a0,a0
-	jrge	mlirut1_1				;br=not done cycling yet
-;
-; Done cycling...now move cursor until get to random team
-;
+	jrgt	mlirut1_1				;br=still spinning
 mlirut1_0
-	move	@tm1_random_team_nbr,a0
-	move	@team1,a1
-	cmp	a0,a1		       		;at random team ?
-	jrne	mlirut1_1				;br=nope
 	movi	-1,a0
 	move	a0,@tm1_random_sel     ;can't change team but can change heads
 	SOUND1	sel_rndmend1
@@ -1019,6 +1020,15 @@ mlirrj_2
 	jrnz	mlirrj2_die			;br=in halftime substitutions
 
 	callr	update_tm2_rnd_select_ram
+	move	@tm2_random_sel,a0		;random spin: slow down over the last 10 steps
+	jrle	mlirsl2
+	move	@tm2_random_cycle_cnt,a0
+	subk	10,a0
+	jrge	mlirsl2
+	neg	a0
+	sll	2,a0				;4,8..36 extra ticks per step
+	calla	PRCSLP
+mlirsl2
 ;DJT Start
 	move	@tm2_cur_pos,a2
 ;DJT End
@@ -1128,19 +1138,12 @@ t2rs_2
 
 	move	@tm2_random_sel,a0		;in random select mode or done?
 	jrle	mlirut2_1				;br=nope
-	move	@tm2_random_cycle_cnt,a0
-	dec	a0
+	move	@tm2_random_cycle_cnt,a0	;steps left (random 30-60): spin fast,
+	dec	a0				;then slow down over the last 10
 	move	a0,@tm2_random_cycle_cnt
 	move	a0,a0
-	jrge	mlirut2_1				;br=not done cycling yet
-;
-; Done cycling...now move cursor until get to random team
-;
+	jrgt	mlirut2_1				;br=still spinning
 mlirut2_0
-	move	@tm2_random_team_nbr,a0
-	move	@team2,a1
-	cmp	a0,a1		       		;at random team ?
-	jrne	mlirut2_1				;br=nope
 	movi	-1,a0
 	move	a0,@tm2_random_sel     ;can't change team but can change heads
 	SOUND1	sel_rndmend2

@@ -51,6 +51,8 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - Record mode: random opponent order, finishing with the title franchises.
 
 ### Teams, uniforms and courts
+- **Random team**: on the team select screen hold Up and press Turbo. The list spins fast, slows down and
+  lands on a random team (any team, equal odds). The header now also flashes "UP+TURBO FOR RANDOM".
 - 2025-26 team colours and home / away kits for every team, with a colour-clash check.
 - **Jerseys follow the court**: whoever's court is picked wears home (outdoor = default).
 - New select-screen logos for all 29 teams.

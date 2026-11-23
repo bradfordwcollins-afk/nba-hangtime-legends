@@ -36,7 +36,7 @@
 	.include	"mugshot.glo"
 	.include	"sel2img.glo"	; trimmed imgtbl.glo (memory)
 	.ref	city_drm,DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING
-	.ref	city_nop,DWEST,HOLIDAY,city_mem,city_bkn
+	.ref	city_nop,DWEST,HOLIDAY,city_mem,city_bkn,PRESSRAND
 	.ref	bast8_ascii
 	.include	"imgtblp.glo"
 	.include	"imgtbl2.glo"
@@ -3836,6 +3836,16 @@ qqtdlp
 	move	a0,*a8(OPAL)
 
 	movi	PRESSPASS,a0		;* image
+	movi	DMAWNZ,a1		;DMA flags
+	calla	obj_aniq		;change object image
+
+	SLEEP	90
+
+	movi	PRESS_P,a0
+	calla	pal_getf
+	move	a0,*a8(OPAL)
+
+	movi	PRESSRAND,a0		;"UP+TURBO FOR RANDOM"
 	movi	DMAWNZ,a1		;DMA flags
 	calla	obj_aniq		;change object image
 	jruc	qqtdlp
