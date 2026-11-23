@@ -4687,7 +4687,7 @@ rules_points
 	jruc	rlpx
 rlpnot3	cmpi	3,a14
 	jrne	rlpdunk
-	move	*a0(plyr_seq),a2	;OOP CITY: alley-oops 3, double dunks 4
+	move	*a0(plyr_seq),a2	;OOP CITY: alley-oops 4, double dunks 4
 	cmpi	DDUNK_RECV_SEQ,a2
 	jrne	rlpnodd
 	movk	4,a1
@@ -4699,7 +4699,7 @@ rlpnodd	cmpi	ALLEYOOP1_SEQ,a2
 rlpoop2	.ref	was_alley_shot
 	move	@was_alley_shot,a2	;alley-oop layup?
 	jrz	rlpx
-rlpoop	movk	3,a1
+rlpoop	movk	4,a1
 	jruc	rlpx
 rlpdunk	move	*a0(plyr_seqflgs),a2	;DUNKFEST: dunks 3, the rest 1
 	btst	DUNK_B,a2
