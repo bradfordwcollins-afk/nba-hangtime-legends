@@ -5284,7 +5284,7 @@ van2_str
 was_str
 	.string	"WASHINGTON",0
 was2_str
-	.string	"BULLETS",0
+	.string	"WIZARDS",0
 dre_str
 	.string	"DREAM TEAM",0
 dre2_str

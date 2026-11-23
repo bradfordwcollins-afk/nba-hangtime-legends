@@ -5607,7 +5607,7 @@ hwpjt24	.string	"SEATTLE SUPERSONICS",0
 hwpjt25	.string	"TORONTO RAPTORS",0
 hwpjt26	.string	"UTAH JAZZ",0
 hwpjt27	.string	"VANCOUVER GRIZZLIES",0
-hwpjt28	.string	"WASHINGTON BULLETS",0
+hwpjt28	.string	"WASHINGTON WIZARDS",0
 hwpjt29	.string	"USA DREAM TEAM",0
 hwpjt30	.string	"NEW ORLEANS PELICANS",0
 	.even

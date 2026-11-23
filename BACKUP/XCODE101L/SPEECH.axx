@@ -1581,7 +1581,7 @@ tm_name_spch_tbl
  .word	0100DH,39,04fdH		;26 TORONTO		"Raptors"
  .word	0100DH,33,0500H		;26 UTAH		"Jazz"
  .word	0100DH,39,0503H		;27 VANCOUVER		"Grizzlies"
- .word	0100DH,22,0506H		;28 WASHINGTON		"Bullets"
+ .word	0100DH,44,0505H		;28 WASHINGTON		"Washington" (no "Wizards" call)
  .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	00007H,0,0		;30 NEW ORLEANS (no call)
  .word	0100DH,42,0818H		;GOOD!!!
@@ -1651,7 +1651,7 @@ full_tm_name_spch_tbl
  .word	0100DH,93 ,04fbH		;26 TORONTO		"Raptors"
  .word	0100DH,82 ,04feH		;26 UTAH		"Jazz"
  .word	0100DH,104,0501H		;27 VANCOUVER		"Grizzlies"
- .word	0100DH,82 ,0504H		;28 WASHINGTON		"Bullets"
+ .word	0100DH,44,0505H		;28 WASHINGTON		"Washington" (no "Wizards" call)
  .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	00007H,0,0		;30 NEW ORLEANS (no call)
  .word	0100DH,60 ,0504H		;GOOD!!!

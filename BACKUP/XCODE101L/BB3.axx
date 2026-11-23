@@ -4591,7 +4591,7 @@ court_name_w			;pixel width of each team's court text (bast8 font), then Home, A
 	.word	60
 	.word	30
 	.word	62
-	.word	53
+	.word	58
 	.word	24			;DREAM TEAM (USA)
 	.word	62			;PELICANS
 	.word	34
