@@ -69,7 +69,7 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 |--------|--------------|
 | **TEAM ZONE** | Turns the Team Zone meters on / off |
 | **INJURY FIRE** | OFF, or 20–75 injuries given (FIRST TEAM or BOTH TEAMS): reach it and that team is on fire for the rest of the game (∞ in the countdown box) |
-| **GAME RULES** | NBA RULES / BLOCK PARTY / TRIPLE THREAT / OOP CITY / DUNKFEST / STREET BALL / RANDOM |
+| **GAME RULES** | NBA RULES / BLOCK PARTY / TRIPLE THREAT / OOP CITY / DUNKFEST / STREET BALL / IN THE ZONE / RANDOM |
 | **NO GOALTENDING** | Goaltending is never called — every swat is a block |
 | **FATALITY PUSHES** | On-fire pushers can send players flying in flames |
 | **UNLIMITED TURBO**, fast passing, hyper speed | Also on the DIP switches |
@@ -82,6 +82,7 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - **Oop City** — alley-oops and double dunks are worth 4.
 - **Dunkfest** — dunks are worth 3, every other basket 1.
 - **Street Ball** — 2-pointers are worth 1, 3-pointers 2.
+- **In The Zone** — a player on fire (own fire or team fire) scores 3 for a 2-pointer and 4 for a 3-pointer.
 - **Random** — picked per game on the versus screen with a roulette (Dunkfest is the rarest).
   The rule set shows on the versus screen, at the opening tip and on the in-game scoreboard plate.
 

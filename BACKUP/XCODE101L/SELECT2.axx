@@ -5033,7 +5033,7 @@ rules_vs
 	SLEEP	40
 	move	@rules_random,a14
 	jrz	rvsfinal
-	movk	5,a0
+	movk	6,a0
 	calla	RNDRNG0
 	move	a0,a9			;start on a random name
 	movi	rvs_delays,a10
@@ -5046,7 +5046,7 @@ rvslp	move	*a10+,a11
 	move	a11,a0
 	calla	PRCSLP
 	addk	1,a9
-	cmpi	6,a9
+	cmpi	7,a9
 	jrlo	rvslp
 	clr	a9
 	jruc	rvslp

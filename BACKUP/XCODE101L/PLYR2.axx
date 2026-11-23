@@ -4689,7 +4689,15 @@ rlpnot3	cmpi	5,a14
 	jrne	rlpnot5
 	subk	1,a1			;STREET BALL: 2s are 1, 3s are 2
 	jruc	rlpx
-rlpnot5	cmpi	3,a14
+rlpnot5	cmpi	6,a14
+	jrne	rlpnot6
+	move	@ballpnumshot,a14	;IN THE ZONE: on-fire shooter scores +1 (3 / 4)
+	move	@plyr_onfire,a2
+	btst	a14,a2
+	jrz	rlpx
+	addk	1,a1
+	jruc	rlpx
+rlpnot6	cmpi	3,a14
 	jrne	rlpdunk
 	move	*a0(plyr_seq),a2	;OOP CITY: alley-oops 4, double dunks 4
 	cmpi	DDUNK_RECV_SEQ,a2

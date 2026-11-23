@@ -230,7 +230,7 @@
 	; minutes or so.  Since it's always treated as an unsigned value
 	; anyway, it's perfectly safe to continue using it as a word. - JS
 	.even
-	BSSX	game_rules	,16	;0 normal, 1 block party, 2 triple threat, 3 oop city, 4 dunkfest, 5 street ball
+	BSSX	game_rules	,16	;0 normal, 1 block party, 2 triple threat, 3 oop city, 4 dunkfest, 5 street ball, 6 in the zone
 	BSSX	rules_show	,16	;!0 = GAME RULES not NORMAL: show it on the matchup screen / tip-off
 	BSSX	rules_random	,16	;!0 = GAME RULES = RANDOM (matchup roulette)
 	BSSX	smax_allow	,16	;!0 = CHOOSE OPTION screen up (Super Max shortcut allowed)
@@ -3138,7 +3138,7 @@ bkpx	PULL	a10,a11,a14
 
 ***************************************
 * GAME RULES for a new game (CMOS ADJHUGE): 1 normal, 2 block party, 3 triple
-* threat, 4 oop city, 5 dunkfest, 6 street ball, 7 random (0 = old BLOCK PARTY on).
+* threat, 4 oop city, 5 dunkfest, 6 street ball, 7 in the zone, 8 random (0 = old BLOCK PARTY on).
 * Keeps all registers.
  SUBRP	rules_pick
 
@@ -3149,7 +3149,7 @@ bkpx	PULL	a10,a11,a14
 	calla	GET_ADJ
 	jrnz	rpk1
 	movk	2,a0			;old BLOCK PARTY on
-rpk1	cmpi	7,a0
+rpk1	cmpi	8,a0
 	jrlo	rpkset
 	jrhi	rpknorm
 	movk	1,a2			;RANDOM
@@ -3162,12 +3162,12 @@ rpkw	move	*a1+,a14
 	cmp	a14,a0
 	jrlo	rpkgot
 	addk	1,a2
-	cmpi	5,a2
+	cmpi	6,a2
 	jrlo	rpkw
 rpkgot	move	a2,a0
 	jruc	rpkst
 rpknorm	movk	1,a0
-rpkset	subk	1,a0			;1-6 -> 0-5
+rpkset	subk	1,a0			;1-7 -> 0-6
 rpkst	move	a0,@game_rules
 	move	@rules_random,a1
 	or	a0,a1
@@ -3175,14 +3175,14 @@ rpkst	move	a0,@game_rules
 	PULL	a0,a1,a2,a14
 	rets
 
-rpk_weights				;cumulative: normal 20, block 17, triple 17, oop 17, dunkfest 12, street ball 17
-	.word	20,37,54,71,83
+rpk_weights				;cumulative: normal 16, block 14, triple 14, oop 14, dunkfest 10, street ball 16, in the zone 16
+	.word	16,30,44,58,68,84
 
 	.def	rules_name_t,rules_tip_t
 rules_name_t
-	.long	rln0,rln1,rln2,rln3,rln4,rln5
+	.long	rln0,rln1,rln2,rln3,rln4,rln5,rln6
 rules_tip_t
-	.long	rlt0,rlt1,rlt2,rlt3,rlt4,rlt5
+	.long	rlt0,rlt1,rlt2,rlt3,rlt4,rlt5,rlt6
 rln0	.string	"NBA",0
 	.even
 rln1	.string	"BLOCK PARTY",0
@@ -3195,6 +3195,8 @@ rln4	.string	"DUNKFEST",0
 	.even
 rln5	.string	"STREET BALL",0
 	.even
+rln6	.string	"IN THE ZONE",0
+	.even
 rlt0	.string	"NBA RULES",0
 	.even
 rlt1	.string	"BLOCK PARTY RULES",0
@@ -3206,6 +3208,8 @@ rlt3	.string	"OOP CITY RULES",0
 rlt4	.string	"DUNKFEST RULES",0
 	.even
 rlt5	.string	"STREET BALL RULES",0
+	.even
+rlt6	.string	"IN THE ZONE RULES",0
 	.even
 
 tm_meter_img_tbl

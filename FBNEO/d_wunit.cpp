@@ -1511,8 +1511,8 @@ There are known "M" versions (EX: MAX HANGTIME - VER M1.0 11/08/96 ), but it's n
 */
 
 static struct BurnRomInfo nbamhtRomDesc[] = {
-	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xce0b44e6, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010
-	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x1c57d8a2, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xcb375ddd, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010
+	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x606d78de, 1 | BRF_PRG | BRF_ESS }, //  1
 
 	{ "l1.0_nba_hangtime_u_2_music_spch.u2",		0x100000, 0x3f0b0d0a, 2 | BRF_PRG | BRF_ESS }, //  2 DCS sound banks
 	{ "l1.0_nba_hangtime_u_3_music_spch.u3",		0x100000, 0xec1db988, 2 | BRF_PRG | BRF_ESS }, //  3
@@ -1724,8 +1724,8 @@ struct BurnDriver BurnDrvNbamhtp = {
 // https://github.com/Asure/nba-hangtime-rebuild
 
 static struct BurnRomInfo nbamhtxRomDesc[] = {
-	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xce0b44e6, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
-	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x1c57d8a2, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xcb375ddd, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
+	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x606d78de, 1 | BRF_PRG | BRF_ESS }, //  1
 
 	{ "l1.0_nba_hangtime_u_2_music_spch.u2",		0x100000, 0x3f0b0d0a, 2 | BRF_PRG | BRF_ESS }, //  2 DCS Sound Banks
 	{ "l1.0_nba_hangtime_u_3_music_spch.u3",		0x100000, 0xec1db988, 2 | BRF_PRG | BRF_ESS }, //  3
@@ -1752,10 +1752,10 @@ static struct BurnRomInfo nbamhtxRomDesc[] = {
 	{ "l1.0_nba_hangtime_u_119_image_rom.u119",		0x100000, 0xb4f604ea, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 2) }, // 20
 	{ "l1.0_nba_hangtime_u_118_image_rom.u118",		0x100000, 0xa257b973, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 3) }, // 21
 
-	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x086ce77a, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
-	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x3b9e9ae8, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
-	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x107f8995, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
-	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0xde90e35a, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
+	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x269f9f76, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
+	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x651d4cb6, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
+	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x71619afa, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
+	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x0aff4ddb, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
 	
 	{ "l1.0_nba_hangtime_u_113_image_rom.u113",		0x100000, 0xd712a779, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 0) }, // 26 GFX Bank 5
 	{ "l1.0_nba_hangtime_u_112_image_rom.u112",		0x100000, 0x644e1bca, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 1) }, // 27
@@ -1782,8 +1782,8 @@ struct BurnDriver BurnDrvNbamhtx = {
 // Asure rebuild + Giannis Antetokounmpo replacing Vin Baker (personal build)
 
 static struct BurnRomInfo nbamhtgRomDesc[] = {
-	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xce0b44e6, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
-	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x1c57d8a2, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "l1.03_maximum_hangtime_u54_l_version.u54",	0x080000, 0xcb375ddd, 1 | BRF_PRG | BRF_ESS }, //  0 TMS34010 CPU
+	{ "l1.03_maximum_hangtime_u63_l_version.u63",	0x080000, 0x606d78de, 1 | BRF_PRG | BRF_ESS }, //  1
 
 	{ "l1.0_nba_hangtime_u_2_music_spch.u2",		0x100000, 0x3f0b0d0a, 2 | BRF_PRG | BRF_ESS }, //  2 DCS Sound Banks
 	{ "l1.0_nba_hangtime_u_3_music_spch.u3",		0x100000, 0xec1db988, 2 | BRF_PRG | BRF_ESS }, //  3
@@ -1810,10 +1810,10 @@ static struct BurnRomInfo nbamhtgRomDesc[] = {
 	{ "l1.0_nba_hangtime_u_119_image_rom.u119",		0x100000, 0xb4f604ea, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 2) }, // 20
 	{ "l1.0_nba_hangtime_u_118_image_rom.u118",		0x100000, 0xa257b973, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x0c, 3) }, // 21
 
-	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x086ce77a, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
-	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x3b9e9ae8, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
-	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x107f8995, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
-	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0xde90e35a, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
+	{ "l1.0_nba_hangtime_u_117_image_rom.u117",		0x100000, 0x269f9f76, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 0) }, // 22 GFX Bank 4 (Fixed from 0x0c)
+	{ "l1.0_nba_hangtime_u_116_image_rom.u116",		0x100000, 0x651d4cb6, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 1) }, // 23
+	{ "l1.0_nba_hangtime_u_115_image_rom.u115",		0x100000, 0x71619afa, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 2) }, // 24
+	{ "l1.0_nba_hangtime_u_114_image_rom.u114",		0x100000, 0x0aff4ddb, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x10, 3) }, // 25
 	
 	{ "l1.0_nba_hangtime_u_113_image_rom.u113",		0x100000, 0xd712a779, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 0) }, // 26 GFX Bank 5
 	{ "l1.0_nba_hangtime_u_112_image_rom.u112",		0x100000, 0x644e1bca, 3 | BRF_GRA | BRF_ESS | WUNIT_GFX(0x14, 1) }, // 27

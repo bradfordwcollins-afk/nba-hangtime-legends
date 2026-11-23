@@ -3167,7 +3167,7 @@ FACTORY_TABLE
 	.WORD	1	;ADJIDIOT	41	;Idiot boxes en/disabled.
 	.WORD	1	;ADJABA		42	;Basketball Type
 	.WORD	1	;ADJBABY	43	;INJURY FIRE (1 = OFF, 2-17 = 20..75 first / both)
-	.WORD	1	;ADJHUGE	44	;GAME RULES (1 normal .. 6 street ball, 7 random)
+	.WORD	1	;ADJHUGE	44	;GAME RULES (1 normal .. 6 street ball, 7 in the zone, 8 random)
 	.WORD	1	;ADJHSPOT	45	;Show Hotspot
 	.WORD	1	;ADJPROFA	46	;Profanity
 	.WORD	1	;ADJFATAL	47	;Fatality pushes (1=off)
