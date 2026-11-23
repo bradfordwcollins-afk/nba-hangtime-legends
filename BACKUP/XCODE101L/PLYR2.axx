@@ -3992,10 +3992,23 @@ ysmvcrwd_noise_sp_tbl
 
 	PUSH	a2,a3,a4,a5,a6
 
+	movi	ADJRUBBEROLD,a0		;rubberbanding: 0 max, 1 normal, 2 none
+	calla	GET_ADJ
+	move	a0,a2
+
 	movi	scores,a14
 	move	*a14+,a0
 	move	*a14+,a4
 	sub	a0,a4			;+ if losing, - if winning
+
+	subk	1,a2
+	jrz	tpikrbok		;normal
+	jrlt	tpikrbmx
+	clr	a4			;none: no catch-up for anyone
+	jruc	tpikrbok
+tpikrbmx
+	sll	1,a4			;max: double the catch-up
+tpikrbok
 
 	move	@PSTATUS,a5
 

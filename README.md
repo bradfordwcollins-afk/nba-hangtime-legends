@@ -78,6 +78,7 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 | Option | What it does |
 |--------|--------------|
 | **TEAM ZONE** | Turns the Team Zone meters on / off |
+| **RUBBERBANDING** | MAX (double catch-up for the team behind) / NORMAL / NONE (no catch-up for anyone, CPU included) |
 | **INJURY FIRE** | OFF, or 20–75 injuries given (FIRST TEAM or BOTH TEAMS): reach it and that team is on fire for the rest of the game (∞ in the countdown box) |
 | **GAME RULES** | NBA RULES / BLOCK PARTY / TRIPLE THREAT / OOP CITY / DUNKFEST / STREET BALL / IN THE ZONE / RANDOM |
 | **NO GOALTENDING** | Goaltending is never called — every swat is a block |

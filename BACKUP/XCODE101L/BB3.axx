@@ -221,24 +221,7 @@ whcqnoug
 	jrz	whcqnext		;0 = indoor court, do normal stuff.
 	movi	whcqinit_otd_t,a11	;>Setup outdoor court objs
 
-
-;new court cases
-	cmpi	2,a0
-	jreq	whcqugrinit		;uground
-	cmpi	3,a0
-	jreq	whcqvortinit		;vortex
-;
-
-	jruc	whcqgo			;it wasn't any of those? Init normal outdoor then.
-
-whcqugrinit
-	movi	whcqinit_ugr_t,a11	;>Setup underground court objs
-	jruc	whcqgo
-whcqvortinit
-	movi	whcqinit_vrt_t,a11	;>Setup vortex court objs
-	jruc	whcqgo
-
-whcqgo
+;Underground / Vortex court set-ups removed (ROM room)
 
 	CREATE0	otd_scroller		;>Outdoor court scroll initializer (also used for the others)
 	move	a0,@otdscroll_p,L
@@ -1003,9 +986,6 @@ whcqinit_otd_t
 ; .word	X, Y, Z, Z-offset, DMA
 ; .long	IMG_p
 
-whcqinit_ugr_t
-;Underground court removed (its art made room for the centre-court logos)
-	.word	4000			;End
 
 
 ;--------------------
@@ -1168,9 +1148,6 @@ clt_NOP
 	.long	CLG_NOP
 	.word	4000
 
-whcqinit_vrt_t
-;Vortex court removed (ROM room)
-	.word	4000			;End
 
 ;--------------------
 
@@ -4306,18 +4283,6 @@ xfelcba2
 	jrnz	xfelcbao		;away team's court: the right text
 	jruc	xfelcbai		;home team's court: the left text
 
-;we need some cpmi 2/3 here to deal with the new positions for uground and vortex.
-;beginobj2 needs
-
-	cmpi	1,a14
-	jreq	xfelcbao		;outdoor
-
-	cmpi	2,a14
-	jreq	xfelcbau		;uground
-
-	cmpi	3,a14
-	jreq	xfelcbav		;vortex
-
 ** Indoor
 xfelcbai
 	move	@team1,a14
@@ -4361,11 +4326,6 @@ xfelcbar
 	movi	[185,0],a1,L		;Y: level with Random
 	movi	[162,0],a0,L		;X: just left of Random
 	jruc	xfelcba3
-** Vortex
-xfelcbav
-	movi	[189,0],a1,L
-	movi	[160,0],a0,L		;269 for right x position of spinning ball (vortex
-
 ** 
 xfelcba3
 	move	a0,*a11(OXVAL),L	;update xpos 
@@ -4611,9 +4571,6 @@ msg_random
 	.string	"Random",0
 	.even
 	.bss	court_rnd,16		;!0 = Random picked on the matchup screen
-msg_bluvort
-	.string	"Vortex",0
-	.even
 
 ;;msg_nodrift_setup
 ;;	.ref		bast7t_ascii
