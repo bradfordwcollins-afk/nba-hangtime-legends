@@ -5253,6 +5253,7 @@ aqnmstr_pct
 	.ref	LBJ_MUG
 	.ref	LUK_MUG
 	.ref	MAG_MUG
+	.ref	XDWE_MUG,XHOL_MUG
 	.ref	XADA_MUG
 	.ref	XAHN_MUG
 	.ref	XALD_MUG
@@ -5654,8 +5655,9 @@ sxldtm_plyr_idxcnt
 	.long	[4 -4, 112 *2*32]		;TOR
 	.long	[4 -4, 116 *2*32]		;UTA
 	.long	[4 -4, 120 *2*32]		;VAN
-	.long	[4 -4, 124 *2*32]		;WAS
-	.long	[5 -4, 128 *2*32]		;USA DREAM TEAM
+	.long	[3 -4, 124 *2*32]		;WAS
+	.long	[5 -4, 127 *2*32]		;USA DREAM TEAM
+	.long	[3 -4, 132 *2*32]		;NOP
 
 
 sxldtm_plyr_headname
@@ -5813,7 +5815,6 @@ sxldtm_plyr_headname
 	.long	XZRA_MUG,112		;Zach Randolph
 							;WAS
 	.long	WEB_WAS,WASNWEB
-	.long	XADA_MUG,113		;Anthony Davis
 	.long	XJHW_MUG,114		;Jhoward
 	.long	XBEA_MUG,115		;Bradley Beal
 							;USA DREAM TEAM
@@ -5822,6 +5823,10 @@ sxldtm_plyr_headname
 	.long	BRD_MUG,16		;Larry Bird
 	.long	BARK_MUG,86		;Charles Barkley
 	.long	EWG_NEY,NWYNEWI
+							;NOP
+	.long	XADA_MUG,113		;Anthony Davis
+	.long	XDWE_MUG,116		;David West
+	.long	XHOL_MUG,117		;Jrue Holiday
 
 s_allen
 	.string	"Ray Allen",0
@@ -6055,6 +6060,10 @@ s_lg101
 	.string	"Jhoward",0
 s_lg102
 	.string	"Bradley Beal",0
+s_lg103
+	.string	"David West",0
+s_lg104
+	.string	"Jrue Holiday",0
 s_rookie
 	.string	"Rookie",0
       	.even
@@ -6174,6 +6183,8 @@ str_name_ptrs
 	.long	s_lg100
 	.long	s_lg101
 	.long	s_lg102
+	.long	s_lg103
+	.long	s_lg104
 
 ;DJT End
 
@@ -6385,7 +6396,7 @@ xjlfstr_vs
 ;xjlfstr_hd3	.string	89h,0		;"NBA TEAMS"
 ;xjlfstr_all	.string	" ",8ch,0	;" ALL"
 xjlfstr_hd1	.string "DEFEATED ",0	;"DEFEATED XX"
-xjlfstr_hd2	.string	"OF THE 30",0	;"OF THE 30"
+xjlfstr_hd2	.string	"OF THE 31",0	;"OF THE 31"
 xjlfstr_hd3	.string	"NBA TEAMS",0	;"NBA TEAMS"
 ;xjlfstr_all	.string	" ALL",0	;" ALL"
 xjlfstr_all	.string	" 29",0		;" ALL"
@@ -6781,7 +6792,7 @@ LN0_setup
 strings	.long	bvcqs1,bvcqs2,bvcqs3,bvcqs4,bvcqs5,bvcqs6,bvcqs7,bvcqs8,bvcqs9,bvcqs10
 	.long	bvcqs11,bvcqs12,bvcqs13,bvcqs14,bvcqs15,bvcqs16,bvcqs17,bvcqs18,bvcqs19,bvcqs20
 	.long	bvcqs21,bvcqs22,bvcqs23,bvcqs24,bvcqs25,bvcqs26,bvcqs27,bvcqs28
-	.long	bvcqs29,bvcqsusa,bvcqs30
+	.long	bvcqs29,bvcqsusa,bvcqspel,bvcqs30
 
 bvcqs1	.word	96
 	.string	"H",1,-6,"A",1,4,"W",1,-5,"K",1,-5,"S",0
@@ -6843,6 +6854,8 @@ bvcqs29	.word	83
 	.string	"B",1,-1,"U",1,-5,"L",1,1,"L",1,1,"E",1,1,"T",1,-5,"S",0
 bvcqsusa	.word	130
 	.string	"U",1,-3,"S",1,-3,"A",0
+bvcqspel	.word	70
+	.string	"P",1,-3,"E",1,-4,"L",1,-1,"I",1,-3,"C",1,-2,"A",1,-3,"N",1,-3,"S",0
 bvcqs30	.word	29
 	.string	"T",1,-6,"H",1,-6,"E C",1,-4,"H",1,-6,"A",1,2,"M",1,-5,"P",1,-2,"S",0
 

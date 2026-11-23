@@ -45,6 +45,7 @@
 	.ref	ATRIBUTEBMOD,OPTSCRBMOD,ATRBKITBMOD
 	.ref	M_FIF_P
 	.ref	DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING
+	.ref	DWEST,HOLIDAY
 	.ref	M_MAT_P,M_JOS_P,M_HEI_P,M_CRL_P,M_MAR_P
 	.ref	M_BOO_P,M_QUI_P,M_TOB_P,M_OUR_P,M_JAS_P
 
@@ -5095,26 +5096,22 @@ player_heads
 	.long	0,0
 
 ;28 WASHINGTON
-	.long	WEB_WAS,XADA_MUG
 	.long	WEB_WAS,XJHW_MUG
 	.long	WEB_WAS,XBEA_MUG
-	.long	XADA_MUG,WEB_WAS
-
-	.long	XADA_MUG,XJHW_MUG
-	.long	XADA_MUG,XBEA_MUG
 	.long	XJHW_MUG,WEB_WAS
-	.long	XJHW_MUG,XADA_MUG
-
 	.long	XJHW_MUG,XBEA_MUG
 	.long	XBEA_MUG,WEB_WAS
-	.long	XBEA_MUG,XADA_MUG
 	.long	XBEA_MUG,XJHW_MUG
-
 	.long	0,0
 	.long	0,0
 	.long	0,0
 	.long	0,0
-
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5141,6 +5138,15 @@ player_heads
 	.long	EWG_NEY,MAG_MUG
 	.long	EWG_NEY,BRD_MUG
 	.long	EWG_NEY,BARK_MUG
+
+;30 NEW ORLEANS PELICANS
+	.long	XADA_MUG,XDWE_MUG
+	.long	XADA_MUG,XHOL_MUG
+	.long	XDWE_MUG,XADA_MUG
+	.long	XDWE_MUG,XHOL_MUG
+	.long	XHOL_MUG,XADA_MUG
+	.long	XHOL_MUG,XDWE_MUG
+	.long	0,0			;end marker
 ;DJT End
 
 
@@ -5913,26 +5919,22 @@ WALLACE	.equ	11
 	.long	0,0
 
 ;28 WASHINGTON
-	.long	WEBBER,DAVIS_NP
 	.long	WEBBER,JHOWARD
 	.long	WEBBER,BEAL
-	.long	DAVIS_NP,WEBBER
-
-	.long	DAVIS_NP,JHOWARD
-	.long	DAVIS_NP,BEAL
 	.long	JHOWARD,WEBBER
-	.long	JHOWARD,DAVIS_NP
-
 	.long	JHOWARD,BEAL
 	.long	BEAL,WEBBER
-	.long	BEAL,DAVIS_NP
 	.long	BEAL,JHOWARD
-
 	.long	0,0
 	.long	0,0
 	.long	0,0
 	.long	0,0
-
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5959,6 +5961,15 @@ WALLACE	.equ	11
 	.long	DT_EWING,DT_MAGIC
 	.long	DT_EWING,DT_BIRD
 	.long	DT_EWING,DT_BARKLEY
+
+;30 NEW ORLEANS PELICANS
+	.long	DAVIS_NP,DWEST
+	.long	DAVIS_NP,HOLIDAY
+	.long	DWEST,DAVIS_NP
+	.long	DWEST,HOLIDAY
+	.long	HOLIDAY,DAVIS_NP
+	.long	HOLIDAY,DWEST
+	.long	0,0			;end marker
 ;DJT End
 
 ;

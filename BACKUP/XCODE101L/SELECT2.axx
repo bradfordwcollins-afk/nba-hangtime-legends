@@ -36,6 +36,7 @@
 	.include	"mugshot.glo"
 	.include	"sel2img.glo"	; trimmed imgtbl.glo (memory)
 	.ref	city_drm,DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING
+	.ref	city_nop,DWEST,HOLIDAY
 	.include	"imgtblp.glo"
 	.include	"imgtbl2.glo"
 	.include	"imgtbl7.glo"
@@ -3215,6 +3216,7 @@ _UTA	.equ	26
 _VAN	.equ	27
 _WAS	.equ	28
 _DRM	.equ	29
+_NOP	.equ	30
 
 team_orders
 	.word	_VAN	;27	29
@@ -3278,7 +3280,7 @@ TOPFRAN	.equ	TOP5F|TIER2F|DREAMF
 xsfos
 	move	a6,a3
 	not	a3
-	andi	03FFFFFFFH,a3		;30 teams not yet beaten
+	andi	ALL_TMS_DEFEATD,a3	;teams not yet beaten
 	move	a3,a4
 	andni	TOPFRAN,a4		;...that aren't title franchises (20 teams)
 	jrnz	xsfop
@@ -5164,6 +5166,7 @@ city_names_str_tbl
 	.long	van_str,van2_str
 	.long	was_str,was2_str
 	.long	dre_str,dre2_str
+	.long	nop_str,nop2_str
 			   
 
 atl_str
@@ -5286,6 +5289,10 @@ dre_str
 	.string	"DREAM TEAM",0
 dre2_str
 	.string	"USA",0
+nop_str
+	.string	"NEW ORLEANS",0
+nop2_str
+	.string	"PELICANS",0
 	.even
 
 
@@ -5331,6 +5338,7 @@ logos
 	.long	T_GRIZZ_L		;27 VANCOUVER
 	.long	T_BULTS_L		;28 WASHINGTON	(150)
 	.long	T_DREAM_L		;29 DREAM TEAM
+	.long	T_PELS_L		;30 NEW ORLEANS PELICANS
 ;FIX!!! Defeated all teams special logo
 	.long	T_BULTS		; Special team
 
@@ -5339,10 +5347,10 @@ logos
 ;
 ; Its used for the CURSOR control on the new team select screen
 ;-----------------------------------------------------------------------------
-	LW	city_uta,_UTA
 	LW	city_van,_VAN
 	LW	city_was,_WAS
 	LW	city_drm,_DRM
+	LW	city_nop,_NOP
 city_table_start
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
@@ -5375,6 +5383,7 @@ city_table_start
 	LW	city_van,_VAN
 	LW	city_was,_WAS
 	LW	city_drm,_DRM
+	LW	city_nop,_NOP
 city_table_end
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
@@ -5966,14 +5975,14 @@ player_attribs
 	.word  08,09,08,10
 	.word  06,07,09,08	;WEBBER
 
-	.word  07,09,07,09
-	.word  06,10,04,07	;ANTHONY DAVIS
-
 	.word  06,08,07,07
 	.word  04,05,05,07	;JHOWARD
 
 	.word  08,05,09,06
 	.word  05,02,06,08	;BRADLEY BEAL
+
+	.word  00,00,00,00
+	.word  00,00,00,00
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -5994,6 +6003,16 @@ player_attribs
 
 	.word  06,09,08,09
 	.word  04,10,04,08	;EWING
+;30 NEW ORLEANS PELICANS
+
+	.word  07,09,07,09
+	.word  06,10,04,07	;ANTHONY DAVIS
+
+	.word  06,08,08,07
+	.word  05,06,06,08	;DAVID WEST
+
+	.word  08,06,08,05
+	.word  09,03,08,09	;JRUE HOLIDAY
 ;DJT End
 
 ;FIX!!!
@@ -6070,8 +6089,9 @@ name_sort
  .long	CARTER,LEONARD,BOSH,DEROZAN,DEROZAN		;25 TOR
  .long	MALONE_K,STOCKTON,HORNACEK,MARAVICH,MARAVICH		;26 UTA
  .long	MORANT,MGASOL,BANE,RANDOL_NP,RANDOL_NP		;27 VAN
- .long	WEBBER,DAVIS_NP,JHOWARD,BEAL,BEAL		;28 WAS
+ .long	WEBBER,JHOWARD,BEAL,BEAL,BEAL		;28 WAS
  .long	DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING	;29 DREAM TEAM
+ .long	DAVIS_NP,DWEST,HOLIDAY,HOLIDAY,HOLIDAY	;30 NEW ORLEANS
  .long	0
 
 ;Removed
@@ -6148,8 +6168,9 @@ team_sqaud_cnts
 	.word	12	;TOR (4 players)
 	.word	12	;UTA (4 players)
 	.word	12	;VAN (4 players)
-	.word	12	;WAS (4 players)
+	.word	6	;WAS (3 players)
 	.word	20	;DREAM TEAM (5 players)
+	.word	6	;NOP (3 players)
 
 ;-----------------------------------------------------------------------------
 ;-----------------------------------------------------------------------------

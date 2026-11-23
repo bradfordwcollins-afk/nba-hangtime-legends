@@ -156,6 +156,8 @@
 	.def	XYAO_P
 	.def	XTMA_P
 	.def	XMOR_P
+	.def	XHOL_P
+	.def	XDWE_P
 	.def	XMGA_P
 	.def	XBAN_P
 	.def	XZRA_P

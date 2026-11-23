@@ -98,6 +98,8 @@
 	.globl	XYAO_P
 	.globl	XTMA_P
 	.globl	XMOR_P
+	.globl	XHOL_P
+	.globl	XDWE_P
 	.globl	XMGA_P
 	.globl	XBAN_P
 	.globl	XZRA_P
@@ -380,6 +382,8 @@
 	.def	Xyao_h
 	.def	Xtma_h
 	.def	Xmor_h
+	.def	Xhol_h
+	.def	Xdwe_h
 	.def	Xmga_h
 	.def	Xban_h
 	.def	Xzra_h
@@ -643,6 +647,12 @@ Xyao_h
 
 Xtma_h
 	HDMAC	XTMA01	; Jam #12, from NBA Jam 50 (Double Z & Wake)
+
+Xhol_h
+	HDMAC	XHOL01	; Jrue Holiday, from photos (Ja Morant's back angles)
+
+Xdwe_h
+	HDMAC	XDWE01	; David West: Tracy McGrady's old head
 
 Xmor_h
 	HDMAC	XMOR01	; Jam #lib|/home/claude/heads/out/MORANT_SRC.IMG|MOR, from NBA Jam 50 (Double Z & Wake)

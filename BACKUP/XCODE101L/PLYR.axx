@@ -3715,11 +3715,11 @@ WHT_C	.equ	6
 homecls_t
 	.byte	0,0,0,0,0,0,0,0,0,0
 	.byte	0,0,2,0,0,0,0,0,0,0
-	.byte	0,0,0,0,0,0,0,0,0,0
+	.byte	0,0,0,0,0,0,0,0,0,0,0
 awaycls_t
 	.byte	64,20,22,65,48,22,17,64,22,65
 	.byte	17,17,1,16,20,17,16,22,23,22
-	.byte	1,16,1,16,20,65,1,17,17,17
+	.byte	1,16,1,16,20,65,1,17,17,17,17
 	.even
 
 teampal_t
@@ -3729,6 +3729,7 @@ teampal_t
 	.byte	BLU_C,BLU_C,BLU_C,BLK_C,RED_C
 	.byte	PUR_C,BLK_C,BLK_C,BLK_C,GRN_C
 	.byte	BLU_C,PUR_C,BLK_C,RED_C,RED_C
+	.byte	BLU_C
 
 ;DJT Start
 ;[pruned] .def	hotspot_xz_t,hotspot_xz_tend

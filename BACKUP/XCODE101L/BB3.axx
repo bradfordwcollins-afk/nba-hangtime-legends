@@ -1042,6 +1042,7 @@ crtlogo_tbls
 	.long	clt_VAN
 	.long	clt_WAS
 	.long	clt_DRM
+	.long	clt_NOP
 clt_ATL
 	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
 	.long	CLG_ATL
@@ -1161,6 +1162,10 @@ clt_WAS
 clt_DRM
 	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
 	.long	CLG_DRM
+	.word	4000
+clt_NOP
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_NOP
 	.word	4000
 
 whcqinit_vrt_t
@@ -4588,6 +4593,7 @@ court_name_w			;pixel width of each team's court text (bast8 font), then Home, A
 	.word	62
 	.word	53
 	.word	24			;DREAM TEAM (USA)
+	.word	62			;PELICANS
 	.word	34
 	.word	38
 	.even

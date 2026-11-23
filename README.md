@@ -56,7 +56,10 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - New select-screen logos for all 29 teams.
 - **USA Dream Team** (30th team, after Washington): Jordan, Magic, Bird, Barkley and Ewing in red/white/blue,
   with its own logo, centre-court logo and audits-free slot. In the 1-player run it's the final boss:
-  you face it after beating the other 29 teams.
+  you face it after beating every other team.
+- **New Orleans Pelicans** (31st team): Anthony Davis (moved from Washington), David West and Jrue Holiday
+  (both new players with their own heads and headshots), in navy/gold, with the Pelicans logo on the select
+  screen and centre court. Washington keeps Webber, Howard and Beal.
 - Centre-court logos for every team; lanes and aprons coloured to match the jerseys, smoothed shading.
 - Matchup-screen court choice: **Home / Away / Outdoor / Random** (team names shown).
   The Underground and Vortex courts were removed to free image ROM.

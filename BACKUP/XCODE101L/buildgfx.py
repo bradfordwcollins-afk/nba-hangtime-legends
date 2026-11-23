@@ -114,7 +114,7 @@ def fix_palette():
 
 
 # Program ROM .text is full: the image headers / palettes of these heads go to the spare "shit" section.
-SPARE_HEADS = ["XBOG", "XPMA", "XSPU", "XSTE", "XKLA", "XKOR", "XTMA", "XANT"]
+SPARE_HEADS = ["XBOG", "XPMA", "XSPU", "XSTE", "XKLA", "XKOR", "XTMA", "XANT", "XHOL"]
 
 
 def move_to_spare():
@@ -144,7 +144,7 @@ def patch_names3():
     import re
     path = Path(__file__).parent.resolve() / "NAMES3.TBL"
     t = path.read_text()
-    t = re.sub(r"(\nDREAM:\n(?:.*\n){3})\t\.long\s+BAST_Y_P", r"\1\t.long   BST18Y_P", t)
+    t = re.sub(r"(\n(?:DREAM|NOLA):\n(?:.*\n){3})\t\.long\s+BAST_Y_P", r"\1\t.long   BST18Y_P", t)
     path.write_text(t)
     print("Patched DREAM palette in NAMES3.TBL")
 

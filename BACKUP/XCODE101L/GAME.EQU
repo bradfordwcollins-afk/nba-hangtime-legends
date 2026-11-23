@@ -21,7 +21,7 @@ NUM_PRECORDS	equ	195  ;(for 8K CMOS)  increased size of record..make sure they a
 
 ;DJT End
 TRIVIA_PTS_NEEDED 	equ	100
-ALL_TMS_DEFEATD		equ	3fffffffh
+ALL_TMS_DEFEATD		equ	7fffffffh
 NUM_BUTTONS		equ	8
 NUM_ATTRIBS		equ	8
 NUM_HEADS		equ	5
@@ -120,7 +120,7 @@ SPACE_CHAR	equ	29 ;(1 relative)
 NUM_ISPRO	equ	7	;after 7 wins
 NUM_ISCHAMP	equ	24	;after 24 wins
 ;DJT End
-NUM_TEAMS	equ	30
+NUM_TEAMS	equ	31
 NAME_LETTERS	equ	6	;characters for players NAME
 
 ;

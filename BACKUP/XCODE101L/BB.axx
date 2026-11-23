@@ -39,7 +39,7 @@
 	.include	"imgtblp.glo"
 
 	.if	DEBUGCRT
-	.include	"uground.pal"
+;	.include	"uground.pal"	;Underground / Vortex palettes removed (ROM room)
 	.endif
 
 	.if	TEAMZONE
@@ -2112,24 +2112,6 @@ rlsnodemo
 	move	*a2(ICMAP),a0,L
 	move	a0,@crt_colors,L
 	jruc	offpgo
-offpuground				;underground pal selection
-	movk	UGR_CNT-1,a0
-	calla	RNDRNG0
-	sll	5,a0
-	addi	ugr_pal_objs,a0
-	move	*a0,a2,L
-	move	*a2(ICMAP),a0,L
-	move	a0,@crt_colors,L
-	jruc	offpgo
-offpvortex				;vortex pal selection
-	movk	VRT_CNT-1,a0
-	calla	RNDRNG0
-	sll	5,a0
-	addi	vrt_pal_objs,a0
-	move	*a0,a2,L
-	move	*a2(ICMAP),a0,L
-	move	a0,@crt_colors,L
-
 offpgo
 	clr	a0
 	clr	a1
@@ -2324,18 +2306,6 @@ COLTAB_RNBW
 ;--------------------
 ; Team court palettes
 
-ugr_pal_objs
-	.long	UCRT01,UCRT01
-	;,UCRT01,UCRT01,UCRT01,UCRT01,UCRT01
-	;.long	UCRT01,UCRT01,UCRT01,UCRT01,UCRT01,UCRT01
-UGR_CNT	.equ	($-ugr_pal_objs)/32
-
-vrt_pal_objs
-	.long	BLUPAL,BLUPAL
-	;,BLUPAL,BLUPAL,BLUPAL,BLUPAL,BLUPAL
-	;.long	BLUPAL,BLUPAL,BLUPAL,BLUPAL,BLUPAL,BLUPAL
-VRT_CNT	.equ	($-vrt_pal_objs)/32
-
 otd_pal_objs							;outdoor.tbl has these objs w/ pals attached to them.
 	.long	outdr1,outdr2,outdr3,outdr4,outdr5,outdr6
 	.long	outdr7,outdr8,outdr9,outdr10,outdr11,outdr12
@@ -2358,6 +2328,7 @@ crt_pals
 	.long	CRT_UTA_p,BK_UTA_P,CRT_VAN_p,BK_VAN_P
 	.long	CRT_WAS_p,BK_WAS_P
 	.long	CRT_WAS_p,BK_WAS_P		;USA DREAM TEAM: Washington's red/white/blue floor
+	.long	CRT_DEN_p,BK_DEN_P		;NEW ORLEANS: Denver's navy/gold floor
 
 ;crt_pals
 ;	.long	CRT_ATL_P,BK_ATL_P,REF_DET_P,CRT_BOS_P,BK_BOS_P,REF_DET_P
@@ -2385,7 +2356,7 @@ crt_pals_z
 	.long	CRT_NEJ_p+32,CRT_NEY_p+32,CRT_ORL_p+32,CRT_PHI_p+32
 	.long	CRT_PHO_p+32,CRT_POR_p+32,CRT_SAC_p+32,CRT_SAN_p+32
 	.long	CRT_SEA_p+32,CRT_TOR_p+32,CRT_UTA_p+32,CRT_VAN_p+32
-	.long	CRT_WAS_p+32,CRT_WAS_p+32
+	.long	CRT_WAS_p+32,CRT_WAS_p+32,CRT_DEN_p+32
 
 
 ;--------------------
