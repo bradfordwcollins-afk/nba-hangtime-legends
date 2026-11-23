@@ -224,6 +224,7 @@
 	.ref	Xlam_h
 	.ref	Xbog_h
 	.ref	Xpma_h
+	.ref	Xspu_h
 	.ref	Xspr_h
 	.ref	Xwes_h
 	.ref	Xsga_h
@@ -1374,7 +1375,7 @@ PORT_t
 
 SAC_t
 	LWWWWWW	scale57et_t,BV10,SHT7,DNK9,DEF1,SDEF8,DSKL5	;SPUD WEBB
-	.long	Webb_f, LUN_SACP_P,LUN_SACS_P, LTR_SACP_P,LTR_SACS_P,Webb_h
+	.long	Webb_f, LUN_SACP_P,LUN_SACS_P, LTR_SACP_P,LTR_SACS_P,Xspu_h
 	.word	8,2,7,0
 	.long	LSW_SACP_P,LSW_SACS_P,LVP_SACP_P,LVP_SACS_P
 	LWWWWWW	scale71_t,BV5,SHT6,DNK5,DEF7,SDEF4,DSKL5	;DIVAC
@@ -1943,7 +1944,7 @@ VP_CUS10P:
 ;;	.long	FL27_p, UN_4_p,UN_14_p, TR_7_p,TR_4_p,Brad_h
 ;;	.word	6,5,1	
 ;;	LWWWWWW	scale57_t,BV10,SHT6,DNK10,DEF0,SDEF7,DSKL_8
-;;	.long	FL52_p, UN_5_p,UN_14_p, TR_2_p,TR_7_p,Webb_h
+;;	.long	FL52_p, UN_5_p,UN_14_p, TR_2_p,TR_7_p,Xspu_h
 ;;	.word	3,0,4	
 ;;	LWWWWWW	scale63_t,BV8,SHT7,DNK0,DEF2,SDEF4,DSKL1
 ;;	.long	FL36_p, UN_9_p,UN_14_p, TR_4_p,TR_7_p,Dumars_h
@@ -2425,7 +2426,7 @@ spechds_t
 	.long	SW_BOSP_P,SW_MILP_P,VP_MILP_P,VP_MILS_P		;S. DOUGLAS
 
 	LWWWWWW	scale57_t,BV10,SHT5,DNK9,DEF0,SDEF7,DSKL_8
-	.long	Webb_f, UN_MINP_P,UN_MINS_P, TR_SANS_P,TR_SANS_P,Webb_h
+	.long	Webb_f, UN_MINP_P,UN_MINS_P, TR_SANS_P,TR_SANS_P,Xspu_h
 	.word	6,0,5,9
 	.long	SW_SANP_P,SW_MINS_P,VP_MINS_P,VP_MINP_P		;S. WEBB
 
