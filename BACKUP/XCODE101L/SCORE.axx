@@ -138,7 +138,7 @@
 	.ref	team1,team2
 	.ref	gndpos_t
 	.ref	plyr_takeoutball3
-	.ref	ballpnumshot,ballpnum
+	.ref	ballpnumshot,ballpnum,my_ballpnumlast
 	.ref	ballobj_p
 	.ref	get_all_buttons_down
 	.ref	get_all_starts_down
@@ -3517,7 +3517,9 @@ aibdtag1X
 	CREATE0	shot_text
 	CREATE0	shot_clock_speech
 
-	move	@ballpnum,a11
+	move	@ballpnum,a11		;who has the ball
+	jrnn	aibdok1
+	move	@my_ballpnumlast,a11	;loose (pass/tip): the team that last had it
 	jrnn	aibdok1
 	move	@ballpnumshot,a11
 aibdok1
