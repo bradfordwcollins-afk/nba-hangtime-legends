@@ -54,6 +54,9 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - 2025-26 team colours and home / away kits for every team, with a colour-clash check.
 - **Jerseys follow the court**: whoever's court is picked wears home (outdoor = default).
 - New select-screen logos for all 29 teams.
+- **USA Dream Team** (30th team, after Washington): Jordan, Magic, Bird, Barkley and Ewing in red/white/blue,
+  with its own logo, centre-court logo and audits-free slot. In the 1-player run it's the final boss:
+  you face it after beating the other 29 teams.
 - Centre-court logos for every team; lanes and aprons coloured to match the jerseys, smoothed shading.
 - Matchup-screen court choice: **Home / Away / Outdoor / Random** (team names shown).
   The Underground and Vortex courts were removed to free image ROM.

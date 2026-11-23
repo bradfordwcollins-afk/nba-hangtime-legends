@@ -5576,7 +5576,7 @@ hwpjteam_names
 	.long	hwpjt12,hwpjt13,hwpjt14,hwpjt15
 	.long	hwpjt16,hwpjt17,hwpjt18,hwpjt19
 	.long	hwpjt20,hwpjt21,hwpjt22,hwpjt23
-	.long	hwpjt24,hwpjt25,hwpjt26,hwpjt27,hwpjt28
+	.long	hwpjt24,hwpjt25,hwpjt26,hwpjt27,hwpjt28,hwpjt29
 
 
 hwpjt0	.string	"ATLANTA HAWKS",0
@@ -5608,6 +5608,7 @@ hwpjt25	.string	"TORONTO RAPTORS",0
 hwpjt26	.string	"UTAH JAZZ",0
 hwpjt27	.string	"VANCOUVER GRIZZLIES",0
 hwpjt28	.string	"WASHINGTON BULLETS",0
+hwpjt29	.string	"USA DREAM TEAM",0
 	.even
 
 

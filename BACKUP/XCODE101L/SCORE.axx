@@ -26,6 +26,7 @@
 	.include	"audit.equ"
 
 	.include	"imgtbl.glo"
+	.ref	DREAM
 
 	.include	"leds.tbl"
 	.ref	tm_side_nz
@@ -2732,7 +2733,7 @@ tnkvnx2
 team_nms
 	.long	ATL,BOST,CHAR,CHI,CLEV,DAL,DEN,DET,GOLDN,HOU,IND,LA_CLIP
 	.long	LA_LAKS,MIAMI,MILW,MINN,NJ,NY,ORL,PHIL,PHX,PORT,SAC,SANANT
-	.long	SEA,TORO,UTAH,VANC,WASH,WASH,WASH,WASH
+	.long	SEA,TORO,UTAH,VANC,WASH,DREAM,WASH,WASH
 
 
 ********************************

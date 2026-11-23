@@ -952,8 +952,11 @@ mlirselct1
 	move	@gmqrtr,a0
 	jrnz	mlirskp
 	move	@team1,a0
+	cmpi	NUM_TEAMS-1,a0		;Dream Team has no audit slot
+	jreq	mlirdt1
 	addi	AUD_ATL,a0
 	calla	AUD1			;inc audit
+mlirdt1
 	move	@team1,a8
 	CREATE0	call_team_name
 mlirskp
@@ -1283,8 +1286,11 @@ mlirselct2
 	move	@gmqrtr,a0
 	jrnz	mlirskp2
 	move	@team2,a0
+	cmpi	NUM_TEAMS-1,a0		;Dream Team has no audit slot
+	jreq	mlirdt2
 	addi	AUD_ATL,a0
 	calla	AUD1			;inc audit
+mlirdt2
 	move	@team2,a8
 	CREATE0	call_team_name
 mlirskp2
@@ -1857,6 +1863,10 @@ zgiyinsert
 	cmpi	AUD_ATL,a0
 	jrhs	zgiynext_audit
 
+	movi	NUM_TEAMS-1,a0			;Dream Team (no audit) is always last
+	move	a0,@sorted_teams+(NUM_TEAMS-1)*16
+	clr	a0
+	move	a0,@teams_pop+(NUM_TEAMS-1)*32,L
 	rets
 
 

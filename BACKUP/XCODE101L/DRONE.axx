@@ -2296,7 +2296,7 @@ shqvminok
 	jrge	shqvt1
 	move	@team2,a1
 shqvt1
-	cmpi	29,a1
+	cmpi	NUM_TEAMS,a1
 	jrlo	shqvtnumok
 	movk	1,a1
 shqvtnumok
@@ -2376,6 +2376,7 @@ shqvtdmin_t
 	.byte	 8, 4, 4,  5, 5, 5,  6, 6, 6,  7, 7, 6	;UTA 5
 	TMDIFF						;VAN   29
 	.byte	4,-4,-3, -3,-3,-2, -2,-2,-1, -1,-1,-1	;WAS 17
+	.byte	 14,11,12, 14,12,13, 14,15,16, 18,18,18 ;USA DREAM TEAM (final boss)
 
 ;;	.byte	6,-3,-1, -3,-2,-3, -2,-2,-2, -1, 0,-1	;ATL 11
 ;;	TMDIFF						;BOS   21

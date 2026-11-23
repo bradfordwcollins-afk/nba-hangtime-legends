@@ -35,6 +35,7 @@
 
 	.include	"mugshot.glo"
 	.include	"sel2img.glo"	; trimmed imgtbl.glo (memory)
+	.ref	city_drm,DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING
 	.include	"imgtblp.glo"
 	.include	"imgtbl2.glo"
 	.include	"imgtbl7.glo"
@@ -3213,6 +3214,7 @@ _TOR	.equ	25
 _UTA	.equ	26
 _VAN	.equ	27
 _WAS	.equ	28
+_DRM	.equ	29
 
 team_orders
 	.word	_VAN	;27	29
@@ -3259,7 +3261,8 @@ team_orders
 	.ref	RAND
 TOP5F	.equ	(1<<_BOS)|(1<<_LAL)|(1<<_GOL)|(1<<_CHI)|(1<<_SAN)	;18,17,7,6,5 titles - the last five
 TIER2F	.equ	(1<<_NY)|(1<<_PHI)|(1<<_DET)|(1<<_MI)		;3 titles each - the four before them
-TOPFRAN	.equ	TOP5F|TIER2F
+DREAMF	.equ	(1<<_DRM)					;Dream Team - the final boss
+TOPFRAN	.equ	TOP5F|TIER2F|DREAMF
 
  SUBR	get_opponent_team
 
@@ -3275,14 +3278,17 @@ TOPFRAN	.equ	TOP5F|TIER2F
 xsfos
 	move	a6,a3
 	not	a3
-	andi	01FFFFFFFH,a3		;29 teams not yet beaten
+	andi	03FFFFFFFH,a3		;30 teams not yet beaten
 	move	a3,a4
 	andni	TOPFRAN,a4		;...that aren't title franchises (20 teams)
 	jrnz	xsfop
 	move	a3,a4
 	andi	TIER2F,a4		;then Knicks, Heat, 76ers, Pistons
 	jrnz	xsfop
-	andi	TOP5F,a3		;last: Bulls, Warriors, Lakers, Celtics, Spurs
+	move	a3,a4
+	andi	TOP5F,a4		;then Bulls, Warriors, Lakers, Celtics, Spurs
+	jrnz	xsfop
+	andi	DREAMF,a3		;last: the Dream Team
 	move	a3,a4
 	jrz	xsfonone
 xsfop	clr	a5			;count the pool
@@ -3314,7 +3320,7 @@ xsfof	btst	a2,a4
 	jrz	xsfodone
 	subk	1,a0
 xsfonx	addk	1,a2
-	cmpi	29,a2
+	cmpi	NUM_TEAMS,a2
 	jrlo	xsfof
 xsfonone
 	clr	a2
@@ -5157,6 +5163,7 @@ city_names_str_tbl
 	.long	uta_str,uta2_str
 	.long	van_str,van2_str
 	.long	was_str,was2_str
+	.long	dre_str,dre2_str
 			   
 
 atl_str
@@ -5275,6 +5282,10 @@ was_str
 	.string	"WASHINGTON",0
 was2_str
 	.string	"BULLETS",0
+dre_str
+	.string	"DREAM TEAM",0
+dre2_str
+	.string	"USA",0
 	.even
 
 
@@ -5319,6 +5330,7 @@ logos
 ;DJT End
 	.long	T_GRIZZ_L		;27 VANCOUVER
 	.long	T_BULTS_L		;28 WASHINGTON	(150)
+	.long	T_DREAM_L		;29 DREAM TEAM
 ;FIX!!! Defeated all teams special logo
 	.long	T_BULTS		; Special team
 
@@ -5327,10 +5339,10 @@ logos
 ;
 ; Its used for the CURSOR control on the new team select screen
 ;-----------------------------------------------------------------------------
-	LW	city_tor,_TOR
 	LW	city_uta,_UTA
 	LW	city_van,_VAN
 	LW	city_was,_WAS
+	LW	city_drm,_DRM
 city_table_start
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
@@ -5362,6 +5374,7 @@ city_table_start
 	LW	city_uta,_UTA
 	LW	city_van,_VAN
 	LW	city_was,_WAS
+	LW	city_drm,_DRM
 city_table_end
 	LW	city_atl,_ATL
 	LW	city_bos,_BOS
@@ -5964,6 +5977,23 @@ player_attribs
 
 	.word  00,00,00,00
 	.word  00,00,00,00
+
+;29 DREAM TEAM
+
+	.word  09,07,10,10
+	.word  10,06,08,10	;JORDAN
+
+	.word  10,06,07,07
+	.word  10,04,10,10	;MAGIC
+
+	.word  08,07,10,06
+	.word  08,06,09,10	;BIRD
+
+	.word  08,10,07,10
+	.word  06,06,07,09	;BARKLEY
+
+	.word  06,09,08,09
+	.word  04,10,04,08	;EWING
 ;DJT End
 
 ;FIX!!!
@@ -6041,6 +6071,7 @@ name_sort
  .long	MALONE_K,STOCKTON,HORNACEK,MARAVICH,MARAVICH		;26 UTA
  .long	MORANT,MGASOL,BANE,RANDOL_NP,RANDOL_NP		;27 VAN
  .long	WEBBER,DAVIS_NP,JHOWARD,BEAL,BEAL		;28 WAS
+ .long	DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING	;29 DREAM TEAM
  .long	0
 
 ;Removed
@@ -6118,6 +6149,7 @@ team_sqaud_cnts
 	.word	12	;UTA (4 players)
 	.word	12	;VAN (4 players)
 	.word	12	;WAS (4 players)
+	.word	20	;DREAM TEAM (5 players)
 
 ;-----------------------------------------------------------------------------
 ;-----------------------------------------------------------------------------

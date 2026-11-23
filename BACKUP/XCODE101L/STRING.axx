@@ -23,6 +23,7 @@
 	.include	"sys.equ"
 	.include	"gsp.equ"
 	.include	"imgtbl.glo"
+	.ref	city_drm
 	.include	"bgndtbl.glo"
 	.include	"game.equ"
 	.include	"audit.equ"
@@ -1865,6 +1866,7 @@ bast8_ascii
  .long	city_uta		;UTAH
  .long	city_van		;VANCOUVER (new)
  .long	city_was		;WASHINGTON
+ .long	city_drm		;DREAM TEAM
 
 
 bast10_ascii

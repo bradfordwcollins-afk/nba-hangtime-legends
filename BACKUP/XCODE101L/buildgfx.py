@@ -114,7 +114,7 @@ def fix_palette():
 
 
 # Program ROM .text is full: the image headers / palettes of these heads go to the spare "shit" section.
-SPARE_HEADS = ["XBOG", "XPMA", "XSPU", "XSTE", "XKLA"]
+SPARE_HEADS = ["XBOG", "XPMA", "XSPU", "XSTE", "XKLA", "XKOR", "XTMA", "XANT"]
 
 
 def move_to_spare():
@@ -137,6 +137,16 @@ def move_to_spare():
         if inside: out.append("\t.text")
         path.write_text("\n".join(out))
         print(f"Moved {', '.join(SPARE_HEADS)} to the spare section in {path.name}")
+
+
+def patch_names3():
+    """The big DREAM TEAM scoreboard name lives in the names3 library but uses the BST18Y big-font palette."""
+    import re
+    path = Path(__file__).parent.resolve() / "NAMES3.TBL"
+    t = path.read_text()
+    t = re.sub(r"(\nDREAM:\n(?:.*\n){3})\t\.long\s+BAST_Y_P", r"\1\t.long   BST18Y_P", t)
+    path.write_text(t)
+    print("Patched DREAM palette in NAMES3.TBL")
 
 
 def main():
@@ -167,6 +177,7 @@ def main():
     make_rom()
     fix_palette()
     move_to_spare()
+    patch_names3()
 
 
 if __name__ == "__main__":

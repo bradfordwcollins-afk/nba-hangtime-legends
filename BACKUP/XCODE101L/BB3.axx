@@ -251,8 +251,8 @@ whcqlp
 	jrz	whcqhomelogo
 	move	@team2,a0
 whcqhomelogo
-	cmpi	29,a0
-	jrhs	whcqnext		;not one of the 29 courts: no logo
+	cmpi	NUM_TEAMS,a0
+	jrhs	whcqnext		;not one of the team courts: no logo
 	sll	5,a0
 	addi	crtlogo_tbls,a0
 	move	*a0,a11,L		;continue with that team's one-object table
@@ -1041,6 +1041,7 @@ crtlogo_tbls
 	.long	clt_UTA
 	.long	clt_VAN
 	.long	clt_WAS
+	.long	clt_DRM
 clt_ATL
 	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
 	.long	CLG_ATL
@@ -1156,6 +1157,10 @@ clt_VAN
 clt_WAS
 	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
 	.long	CLG_WAS
+	.word	4000
+clt_DRM
+	.word	200,-22,CZMIN-90,90+54*8/3,M_3DQ|M_NOSCALE
+	.long	CLG_DRM
 	.word	4000
 
 whcqinit_vrt_t
@@ -4161,7 +4166,7 @@ xfellp2b
 xfellp4
 	movi	msg_indoor,a4,L		;load indoor text
 	move	@team1,a14		;team1's nickname (LAKERS, BUCKS ...)
-	cmpi	29,a14
+	cmpi	NUM_TEAMS,a14
 	jrhs	xfelnm1			;secret team: keep the generic text
 	sll	6,a14
 	addi	city_names_str_tbl+32,a14
@@ -4179,7 +4184,7 @@ xfellp5
 	move	a0,@mess_cursx		;added to cursor
 	movi	msg_outdoor,a4,L	;outdoor text
 	move	@team2,a14		;team2's nickname (LAKERS, BUCKS ...)
-	cmpi	29,a14
+	cmpi	NUM_TEAMS,a14
 	jrhs	xfelnm2			;secret team: keep the generic text
 	sll	6,a14
 	addi	city_names_str_tbl+32,a14
@@ -4311,9 +4316,9 @@ xfelcba2
 ** Indoor
 xfelcbai
 	move	@team1,a14
-	cmpi	29,a14
+	cmpi	NUM_TEAMS,a14
 	jrlo	xfelbw1
-	movk	29,a14			;secret team: Home / Away width
+	movk	NUM_TEAMS,a14			;secret team: Home / Away width
 xfelbw1
 	sll	4,a14
 	addi	court_name_w,a14
@@ -4327,9 +4332,9 @@ xfelbw1
 ** Outdoor
 xfelcbao
 	move	@team2,a14
-	cmpi	29,a14
+	cmpi	NUM_TEAMS,a14
 	jrlo	xfelbw2
-	movk	30,a14			;secret team: Home / Away width
+	movk	NUM_TEAMS+1,a14			;secret team: Home / Away width
 xfelbw2
 	sll	4,a14
 	addi	court_name_w,a14
@@ -4582,6 +4587,7 @@ court_name_w			;pixel width of each team's court text (bast8 font), then Home, A
 	.word	30
 	.word	62
 	.word	53
+	.word	24			;DREAM TEAM (USA)
 	.word	34
 	.word	38
 	.even

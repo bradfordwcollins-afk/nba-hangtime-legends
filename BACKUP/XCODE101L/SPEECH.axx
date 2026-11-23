@@ -902,6 +902,11 @@ full_name_speech
  .word	0100DH,74,1860	;HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
+ .word	0100DH,68,0bb8h	;DREAM TEAM JORDAN
+ .word	00007H,0,0	;DREAM TEAM MAGIC
+ .word	00007H,0,0	;DREAM TEAM BIRD
+ .word	0100DH,66,0bc0h	;DREAM TEAM BARKLEY
+ .word	0100DH,82,1640	;DREAM TEAM EWING
 ; .word	0100DH,69,1868	;CHEANEY,     calbert
 
 
@@ -1103,6 +1108,11 @@ pass_speech		;'TO player name'
  .word	0100DH,43,1863	;to HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
+ .word	0100DH,44,07bfh	;DREAM TEAM JORDAN
+ .word	00007H,0,0	;DREAM TEAM MAGIC
+ .word	00007H,0,0	;DREAM TEAM BIRD
+ .word	0100DH,45,07C3h	;DREAM TEAM BARKLEY
+ .word	0100DH,43,1643	;DREAM TEAM EWING
 ; .word	0100DH,43,1871	;to CHEANEY,     calbert
 
 
@@ -1304,6 +1314,11 @@ name_speech 		;(last name only, excited)
  .word	0100DH,34,1861	;HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
  .word	00007H,0,0
+ .word	0100DH,35,0B56h	;DREAM TEAM JORDAN
+ .word	00007H,0,0	;DREAM TEAM MAGIC
+ .word	00007H,0,0	;DREAM TEAM BIRD
+ .word	0100DH,36,0bbfh	;DREAM TEAM BARKLEY
+ .word	0100DH,42,1641	;DREAM TEAM EWING
 ; .word	0100DH,34,1869	;CHEANEY,     calbert
 
 
@@ -1558,6 +1573,7 @@ tm_name_spch_tbl
  .word	0100DH,33,0500H		;26 UTAH		"Jazz"
  .word	0100DH,39,0503H		;27 VANCOUVER		"Grizzlies"
  .word	0100DH,22,0506H		;28 WASHINGTON		"Bullets"
+ .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	0100DH,42,0818H		;GOOD!!!
  .word	0100DH,42,0818H		;GOOD!!!
 
@@ -1591,6 +1607,7 @@ tm_city_spch_tbl
  .word	0100DH,32,04ffH		;26 UTAH
  .word	0100DH,38,0502H		;27 VANCOUVER
  .word	0100DH,44,0505H		;28 WASHINGTON
+ .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	0100DH,42,0818H		;GOOD!!!
  .word	0100DH,42,0818H		;GOOD!!!
 
@@ -1624,6 +1641,7 @@ full_tm_name_spch_tbl
  .word	0100DH,82 ,04feH		;26 UTAH		"Jazz"
  .word	0100DH,104,0501H		;27 VANCOUVER		"Grizzlies"
  .word	0100DH,82 ,0504H		;28 WASHINGTON		"Bullets"
+ .word	00007H,0,0		;29 DREAM TEAM (no call)
  .word	0100DH,60 ,0504H		;GOOD!!!
  .word	0100DH,60 ,0504H		;GOOD!!!
 

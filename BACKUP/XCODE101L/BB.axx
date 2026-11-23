@@ -2357,6 +2357,7 @@ crt_pals
 	.long	CRT_SEA_p,BK_SEA_P,CRT_TOR_p,BK_TOR_P
 	.long	CRT_UTA_p,BK_UTA_P,CRT_VAN_p,BK_VAN_P
 	.long	CRT_WAS_p,BK_WAS_P
+	.long	CRT_WAS_p,BK_WAS_P		;USA DREAM TEAM: Washington's red/white/blue floor
 
 ;crt_pals
 ;	.long	CRT_ATL_P,BK_ATL_P,REF_DET_P,CRT_BOS_P,BK_BOS_P,REF_DET_P
@@ -2384,7 +2385,7 @@ crt_pals_z
 	.long	CRT_NEJ_p+32,CRT_NEY_p+32,CRT_ORL_p+32,CRT_PHI_p+32
 	.long	CRT_PHO_p+32,CRT_POR_p+32,CRT_SAC_p+32,CRT_SAN_p+32
 	.long	CRT_SEA_p+32,CRT_TOR_p+32,CRT_UTA_p+32,CRT_VAN_p+32
-	.long	CRT_WAS_p+32
+	.long	CRT_WAS_p+32,CRT_WAS_p+32
 
 
 ;--------------------
