@@ -4685,7 +4685,11 @@ rules_points
 	jreq	rlpx
 	movk	1,a1
 	jruc	rlpx
-rlpnot3	cmpi	3,a14
+rlpnot3	cmpi	5,a14
+	jrne	rlpnot5
+	subk	1,a1			;STREET BALL: 2s are 1, 3s are 2
+	jruc	rlpx
+rlpnot5	cmpi	3,a14
 	jrne	rlpdunk
 	move	*a0(plyr_seq),a2	;OOP CITY: alley-oops 4, double dunks 4
 	cmpi	DDUNK_RECV_SEQ,a2
