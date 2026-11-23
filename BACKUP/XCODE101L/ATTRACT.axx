@@ -5655,9 +5655,9 @@ sxldtm_plyr_idxcnt
 	.long	[4 -4, 112 *2*32]		;TOR
 	.long	[4 -4, 116 *2*32]		;UTA
 	.long	[4 -4, 120 *2*32]		;VAN
-	.long	[3 -4, 124 *2*32]		;WAS
-	.long	[5 -4, 127 *2*32]		;USA DREAM TEAM
-	.long	[4 -4, 132 *2*32]		;NOP
+	.long	[4 -4, 124 *2*32]		;WAS
+	.long	[5 -4, 128 *2*32]		;USA DREAM TEAM
+	.long	[4 -4, 133 *2*32]		;NOP
 
 
 sxldtm_plyr_headname
@@ -5817,6 +5817,7 @@ sxldtm_plyr_headname
 	.long	WEB_WAS,WASNWEB
 	.long	XJHW_MUG,114		;Jhoward
 	.long	XBEA_MUG,115		;Bradley Beal
+	.long	MUR_WAS,WASNMUR		;Gheorghe Muresan
 							;USA DREAM TEAM
 	.long	JOR_MUG,23		;Michael Jordan
 	.long	MAG_MUG,58		;Magic Johnson

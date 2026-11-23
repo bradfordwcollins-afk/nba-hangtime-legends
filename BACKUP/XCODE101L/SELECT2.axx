@@ -5946,8 +5946,8 @@ player_attribs
 	.word  08,05,09,06
 	.word  05,02,06,08	;BRADLEY BEAL
 
-	.word  00,00,00,00
-	.word  00,00,00,00
+	.word  02,09,05,06
+	.word  02,10,03,05	;GHEORGHE MURESAN
 
 	.word  00,00,00,00
 	.word  00,00,00,00
@@ -6057,7 +6057,7 @@ name_sort
  .long	CARTER,LEONARD,BOSH,DEROZAN,DEROZAN		;25 TOR
  .long	MALONE_K,STOCKTON,HORNACEK,MARAVICH,MARAVICH		;26 UTA
  .long	MORANT,MGASOL,BANE,RANDOL_NP,RANDOL_NP		;27 VAN
- .long	WEBBER,JHOWARD,BEAL,BEAL,BEAL		;28 WAS
+ .long	WEBBER,JHOWARD,BEAL,MURESAN,MURESAN		;28 WAS
  .long	DT_JORDAN,DT_MAGIC,DT_BIRD,DT_BARKLEY,DT_EWING	;29 DREAM TEAM
  .long	DAVIS_NP,DWEST,HOLIDAY,MASH,MASH	;30 NEW ORLEANS
  .long	0
@@ -6136,7 +6136,7 @@ team_sqaud_cnts
 	.word	12	;TOR (4 players)
 	.word	12	;UTA (4 players)
 	.word	12	;VAN (4 players)
-	.word	6	;WAS (3 players)
+	.word	12	;WAS (4 players)
 	.word	20	;DREAM TEAM (5 players)
 	.word	12	;NOP (4 players)
 

@@ -900,7 +900,7 @@ full_name_speech
  .word	0100DH,53,1864	;WEBBER,      chris			( WASHINGTON )
  .word	0100DH,74,1860	;HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
- .word	00007H,0,0
+ .word	0100DH,92,1876	;MURESAN,     gheorge (Washington)
  .word	00007H,0,0
  .word	0100DH,68,0bb8h	;DREAM TEAM JORDAN
  .word	00007H,0,0	;DREAM TEAM MAGIC
@@ -1110,7 +1110,7 @@ pass_speech		;'TO player name'
  .word	0100DH,28,1867	;to WEBBER,      chris		( WASHINGTON )
  .word	0100DH,43,1863	;to HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
- .word	00007H,0,0
+ .word	0100DH,63,1879	;to MURESAN,     gheorge (Washington)
  .word	00007H,0,0
  .word	0100DH,44,07bfh	;DREAM TEAM JORDAN
  .word	00007H,0,0	;DREAM TEAM MAGIC
@@ -1320,7 +1320,7 @@ name_speech 		;(last name only, excited)
  .word	0100DH,18,1865	;WEBBER,      chris			( WASHINGTON )
  .word	0100DH,34,1861	;HOWARD,      juwan
  .word	00007H,0,0		;(no call) BRADLEY BEAL
- .word	00007H,0,0
+ .word	0100DH,54,1877	;MURESAN,     gheorge (Washington)
  .word	00007H,0,0
  .word	0100DH,35,0B56h	;DREAM TEAM JORDAN
  .word	00007H,0,0	;DREAM TEAM MAGIC

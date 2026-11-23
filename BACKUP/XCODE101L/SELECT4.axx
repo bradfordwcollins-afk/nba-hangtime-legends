@@ -5094,16 +5094,16 @@ player_heads
 ;28 WASHINGTON
 	.long	WEB_WAS,XJHW_MUG
 	.long	WEB_WAS,XBEA_MUG
+	.long	WEB_WAS,MUR_WAS
 	.long	XJHW_MUG,WEB_WAS
 	.long	XJHW_MUG,XBEA_MUG
+	.long	XJHW_MUG,MUR_WAS
 	.long	XBEA_MUG,WEB_WAS
 	.long	XBEA_MUG,XJHW_MUG
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	XBEA_MUG,MUR_WAS
+	.long	MUR_WAS,WEB_WAS
+	.long	MUR_WAS,XJHW_MUG
+	.long	MUR_WAS,XBEA_MUG
 	.long	0,0
 	.long	0,0
 	.long	0,0
@@ -5919,16 +5919,16 @@ WALLACE	.equ	11
 ;28 WASHINGTON
 	.long	WEBBER,JHOWARD
 	.long	WEBBER,BEAL
+	.long	WEBBER,MURESAN
 	.long	JHOWARD,WEBBER
 	.long	JHOWARD,BEAL
+	.long	JHOWARD,MURESAN
 	.long	BEAL,WEBBER
 	.long	BEAL,JHOWARD
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
-	.long	0,0
+	.long	BEAL,MURESAN
+	.long	MURESAN,WEBBER
+	.long	MURESAN,JHOWARD
+	.long	MURESAN,BEAL
 	.long	0,0
 	.long	0,0
 	.long	0,0
