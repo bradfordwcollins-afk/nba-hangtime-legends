@@ -4427,27 +4427,23 @@ player_heads
 	.long	XBOG_MUG,CUR_CHA
 	.long	XBOG_MUG,JON_CHA
 	.long	XBOG_MUG,RCE_CHA
-
-	.long	XBOG_MUG,XJMB_MUG
 	.long	CUR_CHA,XBOG_MUG
 	.long	CUR_CHA,JON_CHA
-
 	.long	CUR_CHA,RCE_CHA
-	.long	CUR_CHA,XJMB_MUG
 	.long	JON_CHA,XBOG_MUG
-
 	.long	JON_CHA,CUR_CHA
 	.long	JON_CHA,RCE_CHA
-	.long	JON_CHA,XJMB_MUG
-
 	.long	RCE_CHA,XBOG_MUG
 	.long	RCE_CHA,CUR_CHA
 	.long	RCE_CHA,JON_CHA
-	.long	RCE_CHA,XJMB_MUG
-	.long	XJMB_MUG,XBOG_MUG
-	.long	XJMB_MUG,CUR_CHA
-	.long	XJMB_MUG,JON_CHA
-	.long	XJMB_MUG,RCE_CHA
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;03 CHICAGO
 	.global	ROD_CHI
@@ -5142,10 +5138,16 @@ player_heads
 ;30 NEW ORLEANS PELICANS
 	.long	XADA_MUG,XDWE_MUG
 	.long	XADA_MUG,XHOL_MUG
+	.long	XADA_MUG,XJMB_MUG
 	.long	XDWE_MUG,XADA_MUG
 	.long	XDWE_MUG,XHOL_MUG
+	.long	XDWE_MUG,XJMB_MUG
 	.long	XHOL_MUG,XADA_MUG
 	.long	XHOL_MUG,XDWE_MUG
+	.long	XHOL_MUG,XJMB_MUG
+	.long	XJMB_MUG,XADA_MUG
+	.long	XJMB_MUG,XDWE_MUG
+	.long	XJMB_MUG,XHOL_MUG
 	.long	0,0			;end marker
 ;DJT End
 
@@ -5251,27 +5253,23 @@ WALLACE	.equ	11
 	.long	BOGUES,CURRY
 	.long	BOGUES,JOHNSN_L
 	.long	BOGUES,RICE
-
-	.long	BOGUES,MASH
 	.long	CURRY,BOGUES
 	.long	CURRY,JOHNSN_L
-
 	.long	CURRY,RICE
-	.long	CURRY,MASH
 	.long	JOHNSN_L,BOGUES
-
 	.long	JOHNSN_L,CURRY
 	.long	JOHNSN_L,RICE
-	.long	JOHNSN_L,MASH
-
 	.long	RICE,BOGUES
 	.long	RICE,CURRY
 	.long	RICE,JOHNSN_L
-	.long	RICE,MASH
-	.long	MASH,BOGUES
-	.long	MASH,CURRY
-	.long	MASH,JOHNSN_L
-	.long	MASH,RICE
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
+	.long	0,0
 
 ;03 CHICAGO
 	.long	JORDAN,PIPPEN
@@ -5965,10 +5963,16 @@ WALLACE	.equ	11
 ;30 NEW ORLEANS PELICANS
 	.long	DAVIS_NP,DWEST
 	.long	DAVIS_NP,HOLIDAY
+	.long	DAVIS_NP,MASH
 	.long	DWEST,DAVIS_NP
 	.long	DWEST,HOLIDAY
+	.long	DWEST,MASH
 	.long	HOLIDAY,DAVIS_NP
 	.long	HOLIDAY,DWEST
+	.long	HOLIDAY,MASH
+	.long	MASH,DAVIS_NP
+	.long	MASH,DWEST
+	.long	MASH,HOLIDAY
 	.long	0,0			;end marker
 ;DJT End
 

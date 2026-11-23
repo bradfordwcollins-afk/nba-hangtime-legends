@@ -726,7 +726,7 @@ full_name_speech
  .word	0100DH,58,1356	;CURRY,       del
  .word	0100DH,74,1344	;JOHNSON,     larry
  .word	0100DH,65,1348	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,88,1408	;MASHBURN,    jamal
+ .word	00007H,0,0		;(Mashburn moved to New Orleans)
 ; .word	0100DH,70,1352	;ZIDEK,       george
 
  .word	0100DH,68,0bb8h ;JORDAN,      michael		( CHICAGO )
@@ -910,6 +910,7 @@ full_name_speech
  .word	00007H,0,0	;NEW ORLEANS ANTHONY DAVIS
  .word	00007H,0,0	;(no call) DAVID WEST
  .word	00007H,0,0	;(no call) JRUE HOLIDAY
+ .word	0100DH,88,1408	;NEW ORLEANS MASHBURN
 ; .word	0100DH,69,1868	;CHEANEY,     calbert
 
 
@@ -935,7 +936,7 @@ pass_speech		;'TO player name'
  .word	0100DH,36,1359	;to CURRY,       del
  .word	0100DH,48,1347	;to JOHNSON,     larry
  .word	0100DH,42,1351	;to RICE,        glen		( CHARLOTTE )
- .word	0100DH,59,1411	;to MASHBURN,    jamal
+ .word	00007H,0,0		;(Mashburn moved to New Orleans)
 ; .word	0100DH,41,1355	;to ZIDEK,       george
 
  .word	0100DH,44,07bfh ;to JORDAN,      michael	( CHICAGO )
@@ -1119,6 +1120,7 @@ pass_speech		;'TO player name'
  .word	00007H,0,0	;NEW ORLEANS ANTHONY DAVIS
  .word	00007H,0,0	;(no call) DAVID WEST
  .word	00007H,0,0	;(no call) JRUE HOLIDAY
+ .word	0100DH,59,1411	;NEW ORLEANS MASHBURN
 ; .word	0100DH,43,1871	;to CHEANEY,     calbert
 
 
@@ -1144,7 +1146,7 @@ name_speech 		;(last name only, excited)
  .word	0100DH,27,1357	;CURRY,       del
  .word	0100DH,38,1345	;JOHNSON,     larry
  .word	0100DH,33,1349	;RICE,        glen			( CHARLOTTE )
- .word	0100DH,50,1409	;MASHBURN,    jamal
+ .word	00007H,0,0		;(Mashburn moved to New Orleans)
 ; .word	0100DH,32,1353	;ZIDEK,       george
 
  .word	0100DH,35,0B56h ;JORDAN,      michael		( CHICAGO )
@@ -1328,6 +1330,7 @@ name_speech 		;(last name only, excited)
  .word	00007H,0,0	;NEW ORLEANS ANTHONY DAVIS
  .word	00007H,0,0	;(no call) DAVID WEST
  .word	00007H,0,0	;(no call) JRUE HOLIDAY
+ .word	0100DH,50,1409	;NEW ORLEANS MASHBURN
 ; .word	0100DH,34,1869	;CHEANEY,     calbert
 
 

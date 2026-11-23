@@ -57,7 +57,7 @@ Every team mixes its all-time greats with today's stars (3–5 players per team)
 - **USA Dream Team** (30th team, after Washington): Jordan, Magic, Bird, Barkley and Ewing in red/white/blue,
   with its own logo, centre-court logo and audits-free slot. In the 1-player run it's the final boss:
   you face it after beating every other team.
-- **New Orleans Pelicans** (31st team): Anthony Davis (moved from Washington), David West and Jrue Holiday
+- **New Orleans Pelicans** (31st team): Anthony Davis (from Washington), Jamal Mashburn (from Charlotte), David West and Jrue Holiday
   (both new players with their own heads and headshots), in navy/gold, with the Pelicans logo on the select
   screen and centre court. Washington keeps Webber, Howard and Beal.
 - Vancouver is now **Memphis** and New Jersey is now **Brooklyn**; the select list is in alphabetical order

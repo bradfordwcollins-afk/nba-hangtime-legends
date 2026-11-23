@@ -5579,6 +5579,7 @@ hwpjteam_names
 	.long	hwpjt24,hwpjt25,hwpjt26,hwpjt27,hwpjt28,hwpjt29,hwpjt30
 
 
+	.sect	"shit"			;team names in the spare section (program ROM room)
 hwpjt0	.string	"ATLANTA HAWKS",0
 hwpjt1	.string	"BOSTON CELTICS",0
 hwpjt2	.string	"CHARLOTTE HORNETS",0
@@ -5588,6 +5589,8 @@ hwpjt5	.string	"DALLAS MAVERICKS",0
 hwpjt6	.string	"DENVER NUGGETS",0
 hwpjt7	.string	"DETROIT PISTONS",0
 hwpjt8	.string	"GOLDEN ST. WARRIORS",0
+	.even
+	.text
 hwpjt9	.string	"HOUSTON ROCKETS",0
 hwpjt10	.string	"INDIANA PACERS",0
 hwpjt11	.string	"L.A. CLIPPERS",0

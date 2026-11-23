@@ -837,9 +837,9 @@ CHAR_t
 	.word	5,5,9,13
 	.long	LSW_CHAP_P,LSW_CHAS_P,LVP_CHAP_P,LVP_CHAS_P
 ;kill
-	LWWWWWW	scale68f_t,BV7,SHT8,DNK7,DEF3,SDEF5,DSKL5	;MASH
-	.long	MASH_F, LUN_CHAP_P,LUN_CHAS_P, LTR_CHAP_P,LTR_CHAS_P,Mash_h
-	.word	6,6,8,5
+	LWWWWWW	scale68_t,BV7,SHT10,DNK6,DEF3,SDEF6,DSKL5	;RICE (dead slot - Mashburn moved to New Orleans)
+	.long	Rice_f, LUN_CHAP_P,LUN_CHAS_P, LTR_CHAP_P,LTR_CHAS_P,Rice_h
+	.word	5,5,9,13
 	.long	LSW_CHAP_P,LSW_CHAS_P,LVP_CHAP_P,LVP_CHAS_P
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill
@@ -1599,7 +1599,10 @@ PELS_t
 	.long	SSMITH_F, LUN_DENP_P,LUN_DENS_P, LTR_DENP_P,LTR_DENS_P,Xhol_h
 	.word	8,6,9,0
 	.long	LSW_DENP_P,LSW_DENS_P,LVP_DENP_P,LVP_DENS_P
-;Last team: no dead slots needed after Holiday (ROM room)
+	LWWWWWW	scale68f_t,BV7,SHT8,DNK7,DEF3,SDEF5,DSKL5	;JAMAL MASHBURN (from Charlotte)
+	.long	MASH_F, LUN_DENP_P,LUN_DENS_P, LTR_DENP_P,LTR_DENS_P,Mash_h
+	.word	6,6,8,5
+	.long	LSW_DENP_P,LSW_DENS_P,LVP_DENP_P,LVP_DENS_P
 
 
 ;Size, speed, shot%, dunks, block defense, steals, drone skill

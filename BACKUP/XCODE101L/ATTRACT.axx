@@ -5629,7 +5629,7 @@ sxldplayers_mod
 sxldtm_plyr_idxcnt
 	.long	[4 -4, 000 *2*32]		;ATL
 	.long	[5 -4, 004 *2*32]		;BOS
-	.long	[5 -4, 009 *2*32]		;CHA
+	.long	[4 -4, 009 *2*32]		;CHA (Mashburn moved to New Orleans)
 	.long	[5 -4, 014 *2*32]		;CHI
 	.long	[4 -4, 019 *2*32]		;CLE
 	.long	[4 -4, 023 *2*32]		;DAL
@@ -5657,7 +5657,7 @@ sxldtm_plyr_idxcnt
 	.long	[4 -4, 120 *2*32]		;VAN
 	.long	[3 -4, 124 *2*32]		;WAS
 	.long	[5 -4, 127 *2*32]		;USA DREAM TEAM
-	.long	[3 -4, 132 *2*32]		;NOP
+	.long	[4 -4, 132 *2*32]		;NOP
 
 
 sxldtm_plyr_headname
@@ -5827,6 +5827,7 @@ sxldtm_plyr_headname
 	.long	XADA_MUG,113		;Anthony Davis
 	.long	XDWE_MUG,116		;David West
 	.long	XHOL_MUG,117		;Jrue Holiday
+	.long	XJMB_MUG,22		;Jamal Mashburn
 
 s_allen
 	.string	"Ray Allen",0
