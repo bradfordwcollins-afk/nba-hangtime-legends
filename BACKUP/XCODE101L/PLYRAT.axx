@@ -223,6 +223,7 @@
 	.ref	Xant_h
 	.ref	Xlam_h
 	.ref	Xbog_h
+	.ref	Xpma_h
 	.ref	Xspr_h
 	.ref	Xwes_h
 	.ref	Xsga_h
@@ -1496,12 +1497,12 @@ UTAH_t
 	.word	7,3,9,16
 	.long	LSW_UTAP_P,LSW_UTAS_P,LVP_UTAP_P,LVP_UTAS_P
 	LWWWWWW	scale65et_t,BV8,SHT9,DNK4,DEF1,SDEF6,DSKL5	;PETE MARAVICH
-	.long	MONTRO_F, LUN_UTAP_P,LUN_UTAS_P, LTR_UTAP_P,LTR_UTAS_P,Xmar_h
+	.long	MONTRO_F, LUN_UTAP_P,LUN_UTAS_P, LTR_UTAP_P,LTR_UTAS_P,Xpma_h
 	.word	10,3,8,0
 	.long	LSW_UTAP_P,LSW_UTAS_P,LVP_UTAP_P,LVP_UTAS_P
 ;kill
 	LWWWWWW	scale65et_t,BV8,SHT9,DNK4,DEF1,SDEF6,DSKL5	;PETE MARAVICH (dead slot)
-	.long	MONTRO_F, LUN_UTAP_P,LUN_UTAS_P, LTR_UTAP_P,LTR_UTAS_P,Xmar_h
+	.long	MONTRO_F, LUN_UTAP_P,LUN_UTAS_P, LTR_UTAP_P,LTR_UTAS_P,Xpma_h
 	.word	10,3,8,0
 	.long	LSW_UTAP_P,LSW_UTAS_P,LVP_UTAP_P,LVP_UTAS_P
 

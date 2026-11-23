@@ -81,6 +81,7 @@
 	.globl	XMAR_P
 	.globl	XSTE_P
 	.globl	XBOG_P
+	.globl	XPMA_P
 	.globl	XKLA_P
 	.globl	XCCP_P
 	.globl	XGRI_P
@@ -361,6 +362,7 @@
 	.def	Xmar_h
 	.def	Xste_h
 	.def	Xbog_h
+	.def	Xpma_h
 	.def	Xkla_h
 	.def	Xccp_h
 	.def	Xgri_h
@@ -589,6 +591,8 @@ Xmar_h
 	.even
 Xbog_h
 	HDMAC	XBOG01	; Muggsy Bogues, from photos
+Xpma_h
+	HDMAC	XPMA01	; Pete Maravich, from photos
 	.text
 
 Xste_h

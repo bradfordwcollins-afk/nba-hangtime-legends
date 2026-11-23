@@ -114,7 +114,7 @@ def fix_palette():
 
 
 # Program ROM .text is full: the image headers / palettes of these heads go to the spare "shit" section.
-SPARE_HEADS = ["XBOG", "XSTE", "XKLA"]
+SPARE_HEADS = ["XBOG", "XPMA", "XSTE", "XKLA"]
 
 
 def move_to_spare():
